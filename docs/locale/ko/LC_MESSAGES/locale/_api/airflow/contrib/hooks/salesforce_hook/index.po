@@ -1,0 +1,188 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C)
+# This file is distributed under the same license as the Airflow package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Airflow 1.10.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-04-03 17:47+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../_api/airflow/contrib/hooks/salesforce_hook/index.rst:4
+msgid ":mod:`airflow.contrib.hooks.salesforce_hook`"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/salesforce_hook/index.rst:10
+msgid ""
+"This module contains a Salesforce Hook which allows you to connect to "
+"your Salesforce instance, retrieve data from it, and write that data to a"
+" file for other uses."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/salesforce_hook/index.rst:15
+msgid "NOTE:   this hook also relies on the simple_salesforce package:"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/salesforce_hook/index.rst:16
+msgid "https://github.com/simple-salesforce/simple-salesforce"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/salesforce_hook/index.rst:27
+msgid "Module Contents"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/salesforce_hook/index.rst:36
+msgid "Bases::class:`airflow.hooks.base_hook.BaseHook`"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/salesforce_hook/index.rst:47
+msgid "Sign into Salesforce."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/salesforce_hook/index.rst:49
+msgid "If we have already signed it, this will just return the original object"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/salesforce_hook/index.rst:58
+msgid "Make a query to Salesforce.  Returns result in dictionary"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/salesforce_hook/index.rst
+msgid "Parameters"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/salesforce_hook/index.rst:60
+msgid "The query to make to Salesforce"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/salesforce_hook/index.rst:69
+msgid "Get the description of an object from Salesforce."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/salesforce_hook/index.rst:71
+msgid ""
+"This description is the object's schema and some extra metadata that "
+"Salesforce stores for each object"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/salesforce_hook/index.rst:74
+msgid "Name of the Salesforce object that we are getting a description of."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/salesforce_hook/index.rst:84
+msgid "Get a list of all available fields for an object."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/salesforce_hook/index.rst:86
+msgid "This only returns the names of the fields."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/salesforce_hook/index.rst:102
+msgid ""
+"Get all instances of the `object` from Salesforce. For each model, only "
+"get the fields specified in fields."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/salesforce_hook/index.rst:105
+msgid "All we really do underneath the hood is run:"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/salesforce_hook/index.rst:106
+msgid "SELECT <fields> FROM <obj>;"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/salesforce_hook/index.rst:115
+msgid "Convert a column of a dataframe to UNIX timestamps if applicable"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/salesforce_hook/index.rst:117
+msgid "A Series object representing a column of a dataframe."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/salesforce_hook/index.rst:126
+msgid "Write query results to file."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/salesforce_hook/index.rst:135
+msgid "Acceptable formats are:"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/salesforce_hook/index.rst:129
+msgid "csv:"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/salesforce_hook/index.rst:130
+msgid "comma-separated-values file.  This is the default format."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/salesforce_hook/index.rst:131
+msgid "json:"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/salesforce_hook/index.rst:132
+msgid "JSON array.  Each element in the array is a different row."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/salesforce_hook/index.rst:135
+msgid "ndjson:"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/salesforce_hook/index.rst:134
+msgid ""
+"JSON array but each element is new-line delimited instead of comma "
+"delimited like in `json`"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/salesforce_hook/index.rst:137
+msgid ""
+"This requires a significant amount of cleanup. Pandas doesn't handle "
+"output to CSV and json in a uniform way. This is especially painful for "
+"datetime types. Pandas wants to write them as strings in CSV, but as "
+"millisecond Unix timestamps."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/salesforce_hook/index.rst:143
+msgid ""
+"By default, this function will try and leave all values as they are "
+"represented in Salesforce. You use the `coerce_to_timestamp` flag to "
+"force all datetimes to become Unix timestamps (UTC). This is can be "
+"greatly beneficial as it will make all of your datetime fields look the "
+"same, and makes it easier to work with in other database environments"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/salesforce_hook/index.rst:151
+msgid "the results from a SQL query"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/salesforce_hook/index.rst:152
+msgid "the name of the file where the data should be dumped to"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/salesforce_hook/index.rst:154
+msgid "the format you want the output in. *Default:* csv."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/salesforce_hook/index.rst:156
+msgid ""
+"True if you want all datetime fields to be converted into Unix "
+"timestamps. False if you want them to be left in the same format as they "
+"were in Salesforce. Leaving the value as False will result in datetimes "
+"being strings. *Defaults to False*"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/salesforce_hook/index.rst:163
+msgid ""
+"*(optional)* True if you want to add a Unix timestamp field to the "
+"resulting data that marks when the data was fetched from Salesforce. "
+"*Default: False*."
+msgstr ""
+

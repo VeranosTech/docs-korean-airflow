@@ -1,0 +1,63 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C)
+# This file is distributed under the same license as the Airflow package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Airflow 1.10.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-04-03 17:47+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../_api/airflow/operators/dagrun_operator/index.rst:4
+msgid ":mod:`airflow.operators.dagrun_operator`"
+msgstr ""
+
+#: ../../_api/airflow/operators/dagrun_operator/index.rst:15
+msgid "Module Contents"
+msgstr ""
+
+#: ../../_api/airflow/operators/dagrun_operator/index.rst:24
+msgid "Bases::class:`object`"
+msgstr ""
+
+#: ../../_api/airflow/operators/dagrun_operator/index.rst:39
+msgid "Bases::class:`airflow.models.BaseOperator`"
+msgstr ""
+
+#: ../../_api/airflow/operators/dagrun_operator/index.rst:43
+msgid "Triggers a DAG run for a specified ``dag_id``"
+msgstr ""
+
+#: ../../_api/airflow/operators/dagrun_operator/index.rst
+msgid "Parameters"
+msgstr ""
+
+#: ../../_api/airflow/operators/dagrun_operator/index.rst:45
+msgid "the dag_id to trigger (templated)"
+msgstr ""
+
+#: ../../_api/airflow/operators/dagrun_operator/index.rst:47
+msgid ""
+"a reference to a python function that will be called while passing it the"
+" ``context`` object and a placeholder object ``obj`` for your callable to"
+" fill and return if you want a DagRun created. This ``obj`` object "
+"contains a ``run_id`` and ``payload`` attribute that you can modify in "
+"your function. The ``run_id`` should be a unique identifier for that DAG "
+"run, and the payload has to be a picklable object that will be made "
+"available to your tasks while executing that DAG run. Your function "
+"header should look like ``def foo(context, dag_run_obj):``"
+msgstr ""
+
+#: ../../_api/airflow/operators/dagrun_operator/index.rst:57
+msgid "Execution date for the dag (templated)"
+msgstr ""
+

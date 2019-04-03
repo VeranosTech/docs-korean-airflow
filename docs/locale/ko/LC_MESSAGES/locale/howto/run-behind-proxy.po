@@ -1,0 +1,71 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C)
+# This file is distributed under the same license as the Airflow package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Airflow 1.10.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-04-03 17:47+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../howto/run-behind-proxy.rst:19
+msgid "Running Airflow behind a reverse proxy"
+msgstr ""
+
+#: ../../howto/run-behind-proxy.rst:21
+msgid ""
+"Airflow can be set up behind a reverse proxy, with the ability to set its"
+" endpoint with great flexibility."
+msgstr ""
+
+#: ../../howto/run-behind-proxy.rst:24
+msgid "For example, you can configure your reverse proxy to get:"
+msgstr ""
+
+#: ../../howto/run-behind-proxy.rst:30
+msgid "To do so, you need to set the following setting in your `airflow.cfg`::"
+msgstr ""
+
+#: ../../howto/run-behind-proxy.rst:34
+msgid ""
+"Additionally if you use Celery Executor, you can get Flower in "
+"`/myorg/flower` with::"
+msgstr ""
+
+#: ../../howto/run-behind-proxy.rst:38
+msgid "Your reverse proxy (ex: nginx) should be configured as follow:"
+msgstr ""
+
+#: ../../howto/run-behind-proxy.rst:40
+msgid ""
+"pass the url and http header as it for the Airflow webserver, without any"
+" rewrite, for example::"
+msgstr ""
+
+#: ../../howto/run-behind-proxy.rst:56
+msgid "rewrite the url for the flower endpoint::"
+msgstr ""
+
+#: ../../howto/run-behind-proxy.rst:73
+msgid ""
+"To ensure that Airflow generates URLs with the correct scheme when "
+"running behind a TLS-terminating proxy, you should configure the proxy to"
+" set the `X-Forwarded-Proto` header, and enable the `ProxyFix` middleware"
+" in your `airflow.cfg`::"
+msgstr ""
+
+#: ../../howto/run-behind-proxy.rst:81
+msgid ""
+"You should only enable the `ProxyFix` middleware when running Airflow "
+"behind a trusted proxy (AWS ELB, nginx, etc.)."
+msgstr ""
+

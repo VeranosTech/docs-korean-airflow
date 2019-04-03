@@ -1,0 +1,87 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C)
+# This file is distributed under the same license as the Airflow package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Airflow 1.10.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-04-03 17:47+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../_api/airflow/operators/mysql_to_hive/index.rst:4
+msgid ":mod:`airflow.operators.mysql_to_hive`"
+msgstr ""
+
+#: ../../_api/airflow/operators/mysql_to_hive/index.rst:15
+msgid "Module Contents"
+msgstr ""
+
+#: ../../_api/airflow/operators/mysql_to_hive/index.rst:24
+msgid "Bases::class:`airflow.models.BaseOperator`"
+msgstr ""
+
+#: ../../_api/airflow/operators/mysql_to_hive/index.rst:28
+msgid ""
+"Moves data from MySql to Hive. The operator runs your query against "
+"MySQL, stores the file locally before loading it into a Hive table. If "
+"the ``create`` or ``recreate`` arguments are set to ``True``, a ``CREATE "
+"TABLE`` and ``DROP TABLE`` statements are generated. Hive data types are "
+"inferred from the cursor's metadata. Note that the table generated in "
+"Hive uses ``STORED AS textfile`` which isn't the most efficient "
+"serialization format. If a large amount of data is loaded and/or if the "
+"table gets queried considerably, you may want to use this operator only "
+"to stage the data into a temporary table before loading it into its final"
+" destination using a ``HiveOperator``."
+msgstr ""
+
+#: ../../_api/airflow/operators/mysql_to_hive/index.rst
+msgid "Parameters"
+msgstr ""
+
+#: ../../_api/airflow/operators/mysql_to_hive/index.rst:40
+msgid "SQL query to execute against the MySQL database. (templated)"
+msgstr ""
+
+#: ../../_api/airflow/operators/mysql_to_hive/index.rst:42
+msgid ""
+"target Hive table, use dot notation to target a specific database. "
+"(templated)"
+msgstr ""
+
+#: ../../_api/airflow/operators/mysql_to_hive/index.rst:45
+msgid "whether to create the table if it doesn't exist"
+msgstr ""
+
+#: ../../_api/airflow/operators/mysql_to_hive/index.rst:47
+msgid "whether to drop and recreate the table at every execution"
+msgstr ""
+
+#: ../../_api/airflow/operators/mysql_to_hive/index.rst:50
+msgid "target partition as a dict of partition columns and values. (templated)"
+msgstr ""
+
+#: ../../_api/airflow/operators/mysql_to_hive/index.rst:53
+msgid "field delimiter in the file"
+msgstr ""
+
+#: ../../_api/airflow/operators/mysql_to_hive/index.rst:55
+msgid "source mysql connection"
+msgstr ""
+
+#: ../../_api/airflow/operators/mysql_to_hive/index.rst:57
+msgid "destination hive connection"
+msgstr ""
+
+#: ../../_api/airflow/operators/mysql_to_hive/index.rst:59
+msgid "TBLPROPERTIES of the hive table being created"
+msgstr ""
+

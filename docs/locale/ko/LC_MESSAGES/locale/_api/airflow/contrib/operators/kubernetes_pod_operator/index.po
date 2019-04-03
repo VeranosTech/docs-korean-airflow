@@ -1,0 +1,151 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C)
+# This file is distributed under the same license as the Airflow package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Airflow 1.10.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-04-03 17:47+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../_api/airflow/contrib/operators/kubernetes_pod_operator/index.rst:4
+msgid ":mod:`airflow.contrib.operators.kubernetes_pod_operator`"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/kubernetes_pod_operator/index.rst:15
+msgid "Module Contents"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/kubernetes_pod_operator/index.rst:24
+msgid "Bases::class:`airflow.models.BaseOperator`"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/kubernetes_pod_operator/index.rst:28
+msgid "Execute a task in a Kubernetes Pod"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/kubernetes_pod_operator/index.rst
+msgid "Parameters"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/kubernetes_pod_operator/index.rst:30
+msgid ""
+"Docker image you wish to launch. Defaults to dockerhub.io, but fully "
+"qualified URLS will point to custom repositories"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/kubernetes_pod_operator/index.rst:33
+msgid "the namespace to run within kubernetes"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/kubernetes_pod_operator/index.rst:35
+msgid ""
+"entrypoint of the container. (templated) The docker images's entrypoint "
+"is used if this is not provide."
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/kubernetes_pod_operator/index.rst:38
+msgid ""
+"arguments of the entrypoint. (templated) The docker image's CMD is used "
+"if this is not provided."
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/kubernetes_pod_operator/index.rst:41
+msgid "Specify a policy to cache or always pull an image"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/kubernetes_pod_operator/index.rst:43
+msgid ""
+"Any image pull secrets to be given to the pod. If more than one secret is"
+" required, provide a comma separated list: secret_a,secret_b"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/kubernetes_pod_operator/index.rst:47
+msgid "volumeMounts for launched pod"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/kubernetes_pod_operator/index.rst:49
+msgid "volumes for launched pod. Includes ConfigMaps and PersistentVolumes"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/kubernetes_pod_operator/index.rst:51
+msgid "labels to apply to the Pod"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/kubernetes_pod_operator/index.rst:53
+msgid "timeout in seconds to startup the pod"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/kubernetes_pod_operator/index.rst:55
+msgid "name of the task you want to run, will be used to generate a pod id"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/kubernetes_pod_operator/index.rst:58
+msgid "Environment variables initialized in the container. (templated)"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/kubernetes_pod_operator/index.rst:60
+msgid ""
+"Kubernetes secrets to inject in the container, They can be exposed as "
+"environment vars or files in a volume."
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/kubernetes_pod_operator/index.rst:63
+msgid "run kubernetes client with in_cluster configuration"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/kubernetes_pod_operator/index.rst:65
+msgid ""
+"context that points to kubernetes cluster. Ignored when in_cluster is "
+"True. If None, current-context is used."
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/kubernetes_pod_operator/index.rst:68
+msgid "get the stdout of the container as logs of the tasks"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/kubernetes_pod_operator/index.rst:70
+msgid "A dict containing a group of affinity scheduling rules"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/kubernetes_pod_operator/index.rst:72
+msgid "A dict containing a group of scheduling rules"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/kubernetes_pod_operator/index.rst:74
+msgid "The path to the Kubernetes config file"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/kubernetes_pod_operator/index.rst:76
+msgid ""
+"If True, the content of the file /airflow/xcom/return.json in the "
+"container will also be pushed to an XCom when the container completes."
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/kubernetes_pod_operator/index.rst:80
+msgid ""
+"What to do when the pod reaches its final state, or the execution is "
+"interrupted. If False (default): do nothing, If True: delete the pod"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/kubernetes_pod_operator/index.rst:84
+msgid "If True enable host networking on the pod"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/kubernetes_pod_operator/index.rst:86
+msgid "A list of kubernetes tolerations"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/kubernetes_pod_operator/index.rst:88
+msgid "A list of configmap names objects that we want mount as env variables"
+msgstr ""
+

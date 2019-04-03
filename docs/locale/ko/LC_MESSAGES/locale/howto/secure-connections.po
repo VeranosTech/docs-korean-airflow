@@ -1,0 +1,101 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C)
+# This file is distributed under the same license as the Airflow package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Airflow 1.10.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-04-03 17:47+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../howto/secure-connections.rst:19
+msgid "Securing Connections"
+msgstr ""
+
+#: ../../howto/secure-connections.rst:21
+msgid ""
+"By default, Airflow will save the passwords for the connection in plain "
+"text within the metadata database. The ``crypto`` package is highly "
+"recommended during installation. The ``crypto`` package does require that"
+" your operating system has ``libffi-dev`` installed."
+msgstr ""
+
+#: ../../howto/secure-connections.rst:26
+msgid ""
+"If ``crypto`` package was not installed initially, it means that your "
+"Fernet key in ``airflow.cfg`` is empty."
+msgstr ""
+
+#: ../../howto/secure-connections.rst:28
+msgid ""
+"You can still enable encryption for passwords within connections by "
+"following below steps:"
+msgstr ""
+
+#: ../../howto/secure-connections.rst:30
+msgid "Install crypto package ``pip install 'apache-airflow[crypto]'``"
+msgstr ""
+
+#: ../../howto/secure-connections.rst:31
+msgid ""
+"Generate fernet_key, using this code snippet below. ``fernet_key`` must "
+"be a base64-encoded 32-byte key:"
+msgstr ""
+
+#: ../../howto/secure-connections.rst:39
+msgid ""
+"Replace ``airflow.cfg`` fernet_key value with the one from `Step 2`. "
+"*Alternatively,* you can store your fernet_key in OS environment variable"
+" - You do not need to change ``airflow.cfg`` in this case as Airflow will"
+" use environment variable over the value in ``airflow.cfg``:"
+msgstr ""
+
+#: ../../howto/secure-connections.rst:46
+msgid "Restart the webserver"
+msgstr ""
+
+#: ../../howto/secure-connections.rst:47
+msgid ""
+"For existing connections (the ones that you had defined before installing"
+" ``airflow[crypto]`` and creating a Fernet key), you need to open each "
+"connection in the connection admin UI, re-type the password, and save the"
+" change"
+msgstr ""
+
+#: ../../howto/secure-connections.rst:50
+msgid "Rotating encryption keys"
+msgstr ""
+
+#: ../../howto/secure-connections.rst:52
+msgid ""
+"Once connection credentials and variables have been encrypted using a "
+"fernet key, changing the key will cause decryption of existing "
+"credentials to fail. To rotate the fernet key without invalidating "
+"existing encrypted values, prepend the new key to the ``fernet_key`` "
+"setting, run ``airflow rotate_fernet_key``, and then drop the original "
+"key from ``fernet_keys``:"
+msgstr ""
+
+#: ../../howto/secure-connections.rst:59
+msgid "Set ``fernet_key`` to ``new_fernet_key,old_fernet_key``"
+msgstr ""
+
+#: ../../howto/secure-connections.rst:60
+msgid ""
+"Run ``airflow rotate_fernet_key`` to re-encrypt existing credentials with"
+" the new fernet key"
+msgstr ""
+
+#: ../../howto/secure-connections.rst:61
+msgid "Set ``fernet_key`` to ``new_fernet_key``"
+msgstr ""
+

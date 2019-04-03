@@ -1,0 +1,67 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C)
+# This file is distributed under the same license as the Airflow package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Airflow 1.10.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-04-03 17:47+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../howto/run-with-systemd.rst:19
+msgid "Running Airflow with systemd"
+msgstr ""
+
+#: ../../howto/run-with-systemd.rst:21
+msgid ""
+"Airflow can integrate with systemd based systems. This makes watching "
+"your daemons easy as `systemd` can take care of restarting a daemon on "
+"failures."
+msgstr ""
+
+#: ../../howto/run-with-systemd.rst:24
+msgid ""
+"In the ``scripts/systemd`` directory, you can find unit files that have "
+"been tested on Redhat based systems. These files can be used as-is by "
+"copying them over to ``/usr/lib/systemd/system``."
+msgstr ""
+
+#: ../../howto/run-with-systemd.rst:28
+msgid ""
+"The following **assumptions** have been made while creating these unit "
+"files:"
+msgstr ""
+
+#: ../../howto/run-with-systemd.rst:30
+msgid "Airflow runs as the following `user:group` ``airflow:airflow``."
+msgstr ""
+
+#: ../../howto/run-with-systemd.rst:31
+msgid "Airflow runs on a Redhat based system."
+msgstr ""
+
+#: ../../howto/run-with-systemd.rst:33
+msgid "If this is not the case, appropriate changes will need to be made."
+msgstr ""
+
+#: ../../howto/run-with-systemd.rst:35
+msgid ""
+"Please **note** that environment configuration is picked up from "
+"``/etc/sysconfig/airflow``."
+msgstr ""
+
+#: ../../howto/run-with-systemd.rst:37
+msgid ""
+"An example file is supplied within ``scripts/systemd``. You can also "
+"define configuration at ``AIRFLOW_HOME`` or ``AIRFLOW_CONFIG``."
+msgstr ""
+

@@ -1,0 +1,64 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C)
+# This file is distributed under the same license as the Airflow package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Airflow 1.10.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-04-03 17:47+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../_api/airflow/contrib/operators/jira_operator/index.rst:4
+msgid ":mod:`airflow.contrib.operators.jira_operator`"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/jira_operator/index.rst:15
+msgid "Module Contents"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/jira_operator/index.rst:24
+msgid "Bases::class:`airflow.models.BaseOperator`"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/jira_operator/index.rst:28
+msgid ""
+"JiraOperator to interact and perform action on Jira issue tracking "
+"system. This operator is designed to use Jira Python SDK: "
+"http://jira.readthedocs.io"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/jira_operator/index.rst
+msgid "Parameters"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/jira_operator/index.rst:31
+msgid "reference to a pre-defined Jira Connection"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/jira_operator/index.rst:33
+msgid "method name from Jira Python SDK to be called"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/jira_operator/index.rst:35
+msgid "required method parameters for the jira_method. (templated)"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/jira_operator/index.rst:37
+msgid "function to further process the response from Jira"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/jira_operator/index.rst:39
+msgid ""
+"function or operator to get jira resource on which the provided "
+"jira_method will be executed"
+msgstr ""
+

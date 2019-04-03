@@ -1,0 +1,289 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C)
+# This file is distributed under the same license as the Airflow package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Airflow 1.10.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-04-03 17:47+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../_api/airflow/contrib/operators/gcp_bigtable_operator/index.rst:4
+msgid ":mod:`airflow.contrib.operators.gcp_bigtable_operator`"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/gcp_bigtable_operator/index.rst:15
+msgid "Module Contents"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/gcp_bigtable_operator/index.rst:24
+msgid "Bases::class:`object`"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/gcp_bigtable_operator/index.rst:28
+msgid "Common class for Cloud Bigtable operators for validating required fields."
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/gcp_bigtable_operator/index.rst:58
+#: ../../_api/airflow/contrib/operators/gcp_bigtable_operator/index.rst:144
+#: ../../_api/airflow/contrib/operators/gcp_bigtable_operator/index.rst:203
+#: ../../_api/airflow/contrib/operators/gcp_bigtable_operator/index.rst:279
+#: ../../_api/airflow/contrib/operators/gcp_bigtable_operator/index.rst:342
+msgid ""
+"Bases::class:`airflow.models.BaseOperator`, "
+":class:`airflow.contrib.operators.gcp_bigtable_operator.BigtableValidationMixin`"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/gcp_bigtable_operator/index.rst:62
+msgid ""
+"Creates a new Cloud Bigtable instance. If the Cloud Bigtable instance "
+"with the given ID exists, the operator does not compare its configuration"
+" and immediately succeeds. No changes are made to the existing instance."
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/gcp_bigtable_operator/index.rst:67
+msgid ""
+"For more details about instance creation have a look at the reference: "
+"https://googleapis.github.io/google-cloud-"
+"python/latest/bigtable/instance.html#google.cloud.bigtable.instance.Instance.create"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/gcp_bigtable_operator/index.rst:71
+msgid ""
+"For more information on how to use this operator, take a look at the "
+"guide: :ref:`howto/operator:BigtableInstanceCreateOperator`"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/gcp_bigtable_operator/index.rst
+msgid "Parameters"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/gcp_bigtable_operator/index.rst:75
+msgid "The ID of the Cloud Bigtable instance to create."
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/gcp_bigtable_operator/index.rst:77
+msgid "The ID for main cluster for the new instance."
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/gcp_bigtable_operator/index.rst:79
+msgid ""
+"The zone for main cluster See "
+"https://cloud.google.com/bigtable/docs/locations for more details."
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/gcp_bigtable_operator/index.rst:82
+#: ../../_api/airflow/contrib/operators/gcp_bigtable_operator/index.rst:159
+msgid ""
+"Optional, the ID of the GCP project.  If set to None or missing, the "
+"default project_id from the GCP connection is used."
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/gcp_bigtable_operator/index.rst:85
+msgid "(optional) The ID for replica cluster for the new instance."
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/gcp_bigtable_operator/index.rst:87
+msgid "(optional)  The zone for replica cluster."
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/gcp_bigtable_operator/index.rst:89
+msgid "(optional) The type of the instance."
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/gcp_bigtable_operator/index.rst:91
+msgid ""
+"(optional) Human-readable name of the instance. Defaults to "
+"``instance_id``."
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/gcp_bigtable_operator/index.rst:94
+msgid "(optional) Dictionary of labels to associate with the instance."
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/gcp_bigtable_operator/index.rst:97
+msgid "(optional) Number of nodes for cluster."
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/gcp_bigtable_operator/index.rst:99
+msgid "(optional) The type of storage."
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/gcp_bigtable_operator/index.rst:101
+msgid ""
+"(optional) timeout (in seconds) for instance creation. If None is not "
+"specified, Operator will wait indefinitely."
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/gcp_bigtable_operator/index.rst:148
+msgid ""
+"Deletes the Cloud Bigtable instance, including its clusters and all "
+"related tables."
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/gcp_bigtable_operator/index.rst:150
+msgid ""
+"For more details about deleting instance have a look at the reference: "
+"https://googleapis.github.io/google-cloud-"
+"python/latest/bigtable/instance.html#google.cloud.bigtable.instance.Instance.delete"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/gcp_bigtable_operator/index.rst:154
+msgid ""
+"For more information on how to use this operator, take a look at the "
+"guide: :ref:`howto/operator:BigtableInstanceDeleteOperator`"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/gcp_bigtable_operator/index.rst:158
+msgid "The ID of the Cloud Bigtable instance to delete."
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/gcp_bigtable_operator/index.rst:207
+msgid "Creates the table in the Cloud Bigtable instance."
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/gcp_bigtable_operator/index.rst:209
+msgid ""
+"For more details about creating table have a look at the reference: "
+"https://googleapis.github.io/google-cloud-"
+"python/latest/bigtable/table.html#google.cloud.bigtable.table.Table.create"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/gcp_bigtable_operator/index.rst:213
+msgid ""
+"For more information on how to use this operator, take a look at the "
+"guide: :ref:`howto/operator:BigtableTableCreateOperator`"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/gcp_bigtable_operator/index.rst:217
+msgid "The ID of the Cloud Bigtable instance that will hold the new table."
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/gcp_bigtable_operator/index.rst:220
+msgid "The ID of the table to be created."
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/gcp_bigtable_operator/index.rst:222
+#: ../../_api/airflow/contrib/operators/gcp_bigtable_operator/index.rst:297
+msgid ""
+"Optional, the ID of the GCP project. If set to None or missing, the "
+"default project_id from the GCP connection is used."
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/gcp_bigtable_operator/index.rst:225
+msgid ""
+"(Optional) list of row keys in bytes that will be used to initially split"
+" the table into several tablets."
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/gcp_bigtable_operator/index.rst:228
+msgid ""
+"(Optional) A map columns to create. The key is the column_id str and the "
+"value is a "
+":class:`google.cloud.bigtable.column_family.GarbageCollectionRule`"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/gcp_bigtable_operator/index.rst:283
+msgid "Deletes the Cloud Bigtable table."
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/gcp_bigtable_operator/index.rst:285
+msgid ""
+"For more details about deleting table have a look at the reference: "
+"https://googleapis.github.io/google-cloud-"
+"python/latest/bigtable/table.html#google.cloud.bigtable.table.Table.delete"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/gcp_bigtable_operator/index.rst:289
+msgid ""
+"For more information on how to use this operator, take a look at the "
+"guide: :ref:`howto/operator:BigtableTableDeleteOperator`"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/gcp_bigtable_operator/index.rst:293
+#: ../../_api/airflow/contrib/operators/gcp_bigtable_operator/index.rst:357
+#: ../../_api/airflow/contrib/operators/gcp_bigtable_operator/index.rst:420
+msgid "The ID of the Cloud Bigtable instance."
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/gcp_bigtable_operator/index.rst:295
+msgid "The ID of the table to be deleted."
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/gcp_bigtable_operator/index.rst
+msgid "parm app_profile_id"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/gcp_bigtable_operator/index.rst:300
+msgid "Application profile."
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/gcp_bigtable_operator/index.rst:346
+msgid "Updates a Cloud Bigtable cluster."
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/gcp_bigtable_operator/index.rst:348
+msgid ""
+"For more details about updating a Cloud Bigtable cluster, have a look at "
+"the reference: https://googleapis.github.io/google-cloud-"
+"python/latest/bigtable/cluster.html#google.cloud.bigtable.cluster.Cluster.update"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/gcp_bigtable_operator/index.rst:353
+msgid ""
+"For more information on how to use this operator, take a look at the "
+"guide: :ref:`howto/operator:BigtableClusterUpdateOperator`"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/gcp_bigtable_operator/index.rst:359
+msgid "The ID of the Cloud Bigtable cluster to update."
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/gcp_bigtable_operator/index.rst:361
+msgid "The desired number of nodes for the Cloud Bigtable cluster."
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/gcp_bigtable_operator/index.rst:363
+#: ../../_api/airflow/contrib/operators/gcp_bigtable_operator/index.rst:424
+msgid "Optional, the ID of the GCP project."
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/gcp_bigtable_operator/index.rst:405
+msgid ""
+"Bases::class:`airflow.sensors.base_sensor_operator.BaseSensorOperator`, "
+":class:`airflow.contrib.operators.gcp_bigtable_operator.BigtableValidationMixin`"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/gcp_bigtable_operator/index.rst:409
+msgid ""
+"Sensor that waits for Cloud Bigtable table to be fully replicated to its "
+"clusters. No exception will be raised if the instance or the table does "
+"not exist."
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/gcp_bigtable_operator/index.rst:412
+msgid ""
+"For more details about cluster states for a table, have a look at the "
+"reference: https://googleapis.github.io/google-cloud-"
+"python/latest/bigtable/table.html#google.cloud.bigtable.table.Table.get_cluster_states"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/gcp_bigtable_operator/index.rst:416
+msgid ""
+"For more information on how to use this operator, take a look at the "
+"guide: :ref:`howto/operator:BigtableTableWaitForReplicationSensor`"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/gcp_bigtable_operator/index.rst:422
+msgid "The ID of the table to check replication status."
+msgstr ""
+

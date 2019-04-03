@@ -1,0 +1,118 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C)
+# This file is distributed under the same license as the Airflow package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Airflow 1.10.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-04-03 17:47+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../howto/executor/use-celery.rst:19
+msgid "Scaling Out with Celery"
+msgstr ""
+
+#: ../../howto/executor/use-celery.rst:21
+msgid ""
+"``CeleryExecutor`` is one of the ways you can scale out the number of "
+"workers. For this to work, you need to setup a Celery backend "
+"(**RabbitMQ**, **Redis**, ...) and change your ``airflow.cfg`` to point "
+"the executor parameter to ``CeleryExecutor`` and provide the related "
+"Celery settings."
+msgstr ""
+
+#: ../../howto/executor/use-celery.rst:26
+msgid ""
+"For more information about setting up a Celery broker, refer to the "
+"exhaustive `Celery documentation on the topic "
+"<http://docs.celeryproject.org/en/latest/getting-"
+"started/brokers/index.html>`_."
+msgstr ""
+
+#: ../../howto/executor/use-celery.rst:29
+msgid "Here are a few imperative requirements for your workers:"
+msgstr ""
+
+#: ../../howto/executor/use-celery.rst:31
+msgid "``airflow`` needs to be installed, and the CLI needs to be in the path"
+msgstr ""
+
+#: ../../howto/executor/use-celery.rst:32
+msgid "Airflow configuration settings should be homogeneous across the cluster"
+msgstr ""
+
+#: ../../howto/executor/use-celery.rst:33
+msgid ""
+"Operators that are executed on the worker need to have their dependencies"
+" met in that context. For example, if you use the ``HiveOperator``, the "
+"hive CLI needs to be installed on that box, or if you use the "
+"``MySqlOperator``, the required Python library needs to be available in "
+"the ``PYTHONPATH`` somehow"
+msgstr ""
+
+#: ../../howto/executor/use-celery.rst:38
+msgid ""
+"The worker needs to have access to its ``DAGS_FOLDER``, and you need to "
+"synchronize the filesystems by your own means. A common setup would be to"
+" store your DAGS_FOLDER in a Git repository and sync it across machines "
+"using Chef, Puppet, Ansible, or whatever you use to configure machines in"
+" your environment. If all your boxes have a common mount point, having "
+"your pipelines files shared there should work as well"
+msgstr ""
+
+#: ../../howto/executor/use-celery.rst:46
+msgid ""
+"To kick off a worker, you need to setup Airflow and kick off the worker "
+"subcommand"
+msgstr ""
+
+#: ../../howto/executor/use-celery.rst:53
+msgid ""
+"Your worker should start picking up tasks as soon as they get fired in "
+"its direction."
+msgstr ""
+
+#: ../../howto/executor/use-celery.rst:56
+msgid ""
+"Note that you can also run \"Celery Flower\", a web UI built on top of "
+"Celery, to monitor your workers. You can use the shortcut command "
+"``airflow flower`` to start a Flower web server."
+msgstr ""
+
+#: ../../howto/executor/use-celery.rst:60
+msgid ""
+"Please note that you must have the ``flower`` python library already "
+"installed on your system. The recommend way is to install the airflow "
+"celery bundle."
+msgstr ""
+
+#: ../../howto/executor/use-celery.rst:67
+msgid "Some caveats:"
+msgstr ""
+
+#: ../../howto/executor/use-celery.rst:69
+msgid "Make sure to use a database backed result backend"
+msgstr ""
+
+#: ../../howto/executor/use-celery.rst:70
+msgid ""
+"Make sure to set a visibility timeout in "
+"[celery_broker_transport_options] that exceeds the ETA of your longest "
+"running task"
+msgstr ""
+
+#: ../../howto/executor/use-celery.rst:71
+msgid ""
+"Tasks can consume resources. Make sure your worker has enough resources "
+"to run `worker_concurrency` tasks"
+msgstr ""
+

@@ -1,0 +1,199 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C)
+# This file is distributed under the same license as the Airflow package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Airflow 1.10.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-04-03 17:47+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../_api/airflow/operators/python_operator/index.rst:4
+msgid ":mod:`airflow.operators.python_operator`"
+msgstr ""
+
+#: ../../_api/airflow/operators/python_operator/index.rst:15
+msgid "Module Contents"
+msgstr ""
+
+#: ../../_api/airflow/operators/python_operator/index.rst:24
+msgid "Bases::class:`airflow.models.BaseOperator`"
+msgstr ""
+
+#: ../../_api/airflow/operators/python_operator/index.rst:28
+msgid "Executes a Python callable"
+msgstr ""
+
+#: ../../_api/airflow/operators/python_operator/index.rst:31
+msgid ""
+"For more information on how to use this operator, take a look at the "
+"guide: :ref:`howto/operator:PythonOperator`"
+msgstr ""
+
+#: ../../_api/airflow/operators/python_operator/index.rst
+msgid "Parameters"
+msgstr ""
+
+#: ../../_api/airflow/operators/python_operator/index.rst:34
+msgid "A reference to an object that is callable"
+msgstr ""
+
+#: ../../_api/airflow/operators/python_operator/index.rst:36
+msgid "a dictionary of keyword arguments that will get unpacked in your function"
+msgstr ""
+
+#: ../../_api/airflow/operators/python_operator/index.rst:39
+msgid ""
+"a list of positional arguments that will get unpacked when calling your "
+"callable"
+msgstr ""
+
+#: ../../_api/airflow/operators/python_operator/index.rst:42
+#: ../../_api/airflow/operators/python_operator/index.rst:215
+msgid ""
+"if set to true, Airflow will pass a set of keyword arguments that can be "
+"used in your function. This set of kwargs correspond exactly to what you "
+"can use in your jinja templates. For this to work, you need to define "
+"`**kwargs` in your function header."
+msgstr ""
+
+#: ../../_api/airflow/operators/python_operator/index.rst:48
+msgid ""
+"a dictionary where the values are templates that will get templated by "
+"the Airflow engine sometime between ``__init__`` and ``execute`` takes "
+"place and are made available in your callable's context after the "
+"template has been applied. (templated)"
+msgstr ""
+
+#: ../../_api/airflow/operators/python_operator/index.rst:53
+#: ../../_api/airflow/operators/python_operator/index.rst:230
+msgid ""
+"a list of file extensions to resolve while processing templated fields, "
+"for examples ``['.sql', '.hql']``"
+msgstr ""
+
+#: ../../_api/airflow/operators/python_operator/index.rst:114
+#: ../../_api/airflow/operators/python_operator/index.rst:147
+msgid ""
+"Bases::class:`airflow.operators.python_operator.PythonOperator`, "
+":class:`airflow.models.skipmixin.SkipMixin`"
+msgstr ""
+
+#: ../../_api/airflow/operators/python_operator/index.rst:118
+msgid ""
+"Allows a workflow to \"branch\" or follow a path following the execution "
+"of this task."
+msgstr ""
+
+#: ../../_api/airflow/operators/python_operator/index.rst:121
+msgid ""
+"It derives the PythonOperator and expects a Python function that returns "
+"a single task_id or list of task_ids to follow. The task_id(s) returned "
+"should point to a task directly downstream from {self}. All other "
+"\"branches\" or directly downstream tasks are marked with a state of "
+"``skipped`` so that these paths can't move forward. The ``skipped`` "
+"states are propagated downstream to allow for the DAG state to fill up "
+"and the DAG run's state to be inferred."
+msgstr ""
+
+#: ../../_api/airflow/operators/python_operator/index.rst:151
+msgid ""
+"Allows a workflow to continue only if a condition is met. Otherwise, the "
+"workflow \"short-circuits\" and downstream tasks are skipped."
+msgstr ""
+
+#: ../../_api/airflow/operators/python_operator/index.rst:154
+msgid ""
+"The ShortCircuitOperator is derived from the PythonOperator. It evaluates"
+" a condition and short-circuits the workflow if the condition is False. "
+"Any downstream tasks are marked with a state of \"skipped\". If the "
+"condition is True, downstream tasks proceed as normal."
+msgstr ""
+
+#: ../../_api/airflow/operators/python_operator/index.rst:159
+msgid "The condition is determined by the result of `python_callable`."
+msgstr ""
+
+#: ../../_api/airflow/operators/python_operator/index.rst:179
+msgid "Bases::class:`airflow.operators.python_operator.PythonOperator`"
+msgstr ""
+
+#: ../../_api/airflow/operators/python_operator/index.rst:183
+msgid ""
+"Allows one to run a function in a virtualenv that is created and "
+"destroyed automatically (with certain caveats)."
+msgstr ""
+
+#: ../../_api/airflow/operators/python_operator/index.rst:186
+msgid ""
+"The function must be defined using def, and not be part of a class. All "
+"imports must happen inside the function and no variables outside of the "
+"scope may be referenced. A global scope variable named "
+"virtualenv_string_args will be available (populated by string_args). In "
+"addition, one can pass stuff through op_args and op_kwargs, and one can "
+"use a return value. Note that if your virtualenv runs in a different "
+"Python major version than Airflow, you cannot use return values, op_args,"
+" or op_kwargs. You can use string_args though."
+msgstr ""
+
+#: ../../_api/airflow/operators/python_operator/index.rst:195
+msgid ""
+"A python function with no references to outside variables, defined with "
+"def, which will be run in a virtualenv"
+msgstr ""
+
+#: ../../_api/airflow/operators/python_operator/index.rst:198
+msgid "A list of requirements as specified in a pip install command"
+msgstr ""
+
+#: ../../_api/airflow/operators/python_operator/index.rst:200
+msgid ""
+"The Python version to run the virtualenv with. Note that both 2 and 2.7 "
+"are acceptable forms."
+msgstr ""
+
+#: ../../_api/airflow/operators/python_operator/index.rst:203
+msgid ""
+"Whether to use dill to serialize the args and result (pickle is default)."
+" This allow more complex types but requires you to include dill in your "
+"requirements."
+msgstr ""
+
+#: ../../_api/airflow/operators/python_operator/index.rst:207
+msgid ""
+"Whether to include system_site_packages in your virtualenv. See "
+"virtualenv documentation for more information."
+msgstr ""
+
+#: ../../_api/airflow/operators/python_operator/index.rst:211
+msgid "A list of positional arguments to pass to python_callable."
+msgstr ""
+
+#: ../../_api/airflow/operators/python_operator/index.rst:213
+msgid "A dict of keyword arguments to pass to python_callable."
+msgstr ""
+
+#: ../../_api/airflow/operators/python_operator/index.rst:221
+msgid ""
+"Strings that are present in the global var virtualenv_string_args, "
+"available to python_callable at runtime as a list[str]. Note that args "
+"are split by newline."
+msgstr ""
+
+#: ../../_api/airflow/operators/python_operator/index.rst:225
+msgid ""
+"a dictionary where the values are templates that will get templated by "
+"the Airflow engine sometime between ``__init__`` and ``execute`` takes "
+"place and are made available in your callable's context after the "
+"template has been applied"
+msgstr ""
+

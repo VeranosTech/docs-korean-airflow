@@ -1,0 +1,84 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C)
+# This file is distributed under the same license as the Airflow package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Airflow 1.10.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-04-03 17:47+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../_api/airflow/contrib/sensors/qubole_sensor/index.rst:4
+msgid ":mod:`airflow.contrib.sensors.qubole_sensor`"
+msgstr ""
+
+#: ../../_api/airflow/contrib/sensors/qubole_sensor/index.rst:15
+msgid "Module Contents"
+msgstr ""
+
+#: ../../_api/airflow/contrib/sensors/qubole_sensor/index.rst:24
+msgid "Bases::class:`airflow.sensors.base_sensor_operator.BaseSensorOperator`"
+msgstr ""
+
+#: ../../_api/airflow/contrib/sensors/qubole_sensor/index.rst:28
+msgid "Base class for all Qubole Sensors"
+msgstr ""
+
+#: ../../_api/airflow/contrib/sensors/qubole_sensor/index.rst:70
+#: ../../_api/airflow/contrib/sensors/qubole_sensor/index.rst:100
+msgid "Bases::class:`airflow.contrib.sensors.qubole_sensor.QuboleSensor`"
+msgstr ""
+
+#: ../../_api/airflow/contrib/sensors/qubole_sensor/index.rst:74
+msgid ""
+"Wait for a file or folder to be present in cloud storage and check for "
+"its presence via QDS APIs"
+msgstr ""
+
+#: ../../_api/airflow/contrib/sensors/qubole_sensor/index.rst
+msgid "Parameters"
+msgstr ""
+
+#: ../../_api/airflow/contrib/sensors/qubole_sensor/index.rst:77
+#: ../../_api/airflow/contrib/sensors/qubole_sensor/index.rst:107
+msgid "Connection id which consists of qds auth_token"
+msgstr ""
+
+#: ../../_api/airflow/contrib/sensors/qubole_sensor/index.rst:79
+msgid ""
+"a JSON object containing payload, whose presence needs to be checked "
+"Check this `example <https://github.com/apache/airflow/blob/master"
+"        /airflow/contrib/example_dags/example_qubole_sensor.py>`_ for "
+"sample payload structure."
+msgstr ""
+
+#: ../../_api/airflow/contrib/sensors/qubole_sensor/index.rst:84
+#: ../../_api/airflow/contrib/sensors/qubole_sensor/index.rst:114
+msgid ""
+"Both ``data`` and ``qubole_conn_id`` fields support templating. You can "
+"also use ``.txt`` files for template-driven use cases."
+msgstr ""
+
+#: ../../_api/airflow/contrib/sensors/qubole_sensor/index.rst:104
+msgid ""
+"Wait for a Hive partition to show up in QHS (Qubole Hive Service) and "
+"check for its presence via QDS APIs"
+msgstr ""
+
+#: ../../_api/airflow/contrib/sensors/qubole_sensor/index.rst:109
+msgid ""
+"a JSON object containing payload, whose presence needs to be checked. "
+"Check this `example <https://github.com/apache/airflow/blob/master"
+"        /airflow/contrib/example_dags/example_qubole_sensor.py>`_ for "
+"sample payload structure."
+msgstr ""
+

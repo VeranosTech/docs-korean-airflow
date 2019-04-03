@@ -1,0 +1,412 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C)
+# This file is distributed under the same license as the Airflow package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Airflow 1.10.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-04-03 17:47+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../_api/airflow/contrib/operators/gcp_transfer_operator/index.rst:4
+msgid ":mod:`airflow.contrib.operators.gcp_transfer_operator`"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/gcp_transfer_operator/index.rst:15
+msgid "Module Contents"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/gcp_transfer_operator/index.rst:78
+msgid ""
+"Convert native python ``datetime.date`` object  to a format supported by "
+"the API"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/gcp_transfer_operator/index.rst:87
+msgid ""
+"Convert native python ``datetime.time`` object  to a format supported by "
+"the API"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/gcp_transfer_operator/index.rst:139
+#: ../../_api/airflow/contrib/operators/gcp_transfer_operator/index.rst:210
+#: ../../_api/airflow/contrib/operators/gcp_transfer_operator/index.rst:278
+#: ../../_api/airflow/contrib/operators/gcp_transfer_operator/index.rst:340
+#: ../../_api/airflow/contrib/operators/gcp_transfer_operator/index.rst:396
+#: ../../_api/airflow/contrib/operators/gcp_transfer_operator/index.rst:453
+#: ../../_api/airflow/contrib/operators/gcp_transfer_operator/index.rst:507
+#: ../../_api/airflow/contrib/operators/gcp_transfer_operator/index.rst:561
+#: ../../_api/airflow/contrib/operators/gcp_transfer_operator/index.rst:616
+#: ../../_api/airflow/contrib/operators/gcp_transfer_operator/index.rst:726
+msgid "Bases::class:`airflow.models.BaseOperator`"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/gcp_transfer_operator/index.rst:143
+msgid "Creates a transfer job that runs periodically."
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/gcp_transfer_operator/index.rst:147
+#: ../../_api/airflow/contrib/operators/gcp_transfer_operator/index.rst:625
+#: ../../_api/airflow/contrib/operators/gcp_transfer_operator/index.rst:735
+msgid ""
+"This operator is NOT idempotent. If you run it many times, many transfer "
+"jobs will be created in the Google Cloud Platform."
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/gcp_transfer_operator/index.rst:151
+msgid ""
+"For more information on how to use this operator, take a look at the "
+"guide: :ref:`howto/operator:GcpTransferServiceJobCreateOperator`"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/gcp_transfer_operator/index.rst
+msgid "Parameters"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/gcp_transfer_operator/index.rst:154
+msgid ""
+"(Required) The request body, as described in https://cloud.google.com"
+"/storage-transfer/docs/reference/rest/v1/transferJobs/create#request-body"
+" With three additional improvements:  * dates can be given in the form "
+":class:`datetime.date` * times can be given in the form "
+":class:`datetime.time` * credentials to Amazon Web Service should be "
+"stored in the connection and indicated by the   aws_conn_id parameter"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/gcp_transfer_operator/index.rst:154
+msgid ""
+"(Required) The request body, as described in https://cloud.google.com"
+"/storage-transfer/docs/reference/rest/v1/transferJobs/create#request-body"
+" With three additional improvements:"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/gcp_transfer_operator/index.rst:158
+#: ../../_api/airflow/contrib/operators/gcp_transfer_operator/index.rst:226
+msgid "dates can be given in the form :class:`datetime.date`"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/gcp_transfer_operator/index.rst:159
+#: ../../_api/airflow/contrib/operators/gcp_transfer_operator/index.rst:227
+msgid "times can be given in the form :class:`datetime.time`"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/gcp_transfer_operator/index.rst:160
+#: ../../_api/airflow/contrib/operators/gcp_transfer_operator/index.rst:228
+msgid ""
+"credentials to Amazon Web Service should be stored in the connection and "
+"indicated by the aws_conn_id parameter"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/gcp_transfer_operator/index.rst:164
+#: ../../_api/airflow/contrib/operators/gcp_transfer_operator/index.rst:232
+msgid "The connection ID used to retrieve credentials to Amazon Web Service."
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/gcp_transfer_operator/index.rst:167
+#: ../../_api/airflow/contrib/operators/gcp_transfer_operator/index.rst:235
+#: ../../_api/airflow/contrib/operators/gcp_transfer_operator/index.rst:297
+#: ../../_api/airflow/contrib/operators/gcp_transfer_operator/index.rst:353
+#: ../../_api/airflow/contrib/operators/gcp_transfer_operator/index.rst:410
+#: ../../_api/airflow/contrib/operators/gcp_transfer_operator/index.rst:465
+#: ../../_api/airflow/contrib/operators/gcp_transfer_operator/index.rst:519
+#: ../../_api/airflow/contrib/operators/gcp_transfer_operator/index.rst:575
+msgid "The connection ID used to connect to Google Cloud Platform."
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/gcp_transfer_operator/index.rst:170
+#: ../../_api/airflow/contrib/operators/gcp_transfer_operator/index.rst:238
+#: ../../_api/airflow/contrib/operators/gcp_transfer_operator/index.rst:300
+#: ../../_api/airflow/contrib/operators/gcp_transfer_operator/index.rst:356
+#: ../../_api/airflow/contrib/operators/gcp_transfer_operator/index.rst:413
+#: ../../_api/airflow/contrib/operators/gcp_transfer_operator/index.rst:467
+#: ../../_api/airflow/contrib/operators/gcp_transfer_operator/index.rst:520
+#: ../../_api/airflow/contrib/operators/gcp_transfer_operator/index.rst:573
+msgid "API version used (e.g. v1)."
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/gcp_transfer_operator/index.rst:214
+msgid "Updates a transfer job that runs periodically."
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/gcp_transfer_operator/index.rst:217
+msgid ""
+"For more information on how to use this operator, take a look at the "
+"guide: :ref:`howto/operator:GcpTransferServiceJobUpdateOperator`"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/gcp_transfer_operator/index.rst:220
+msgid "(Required) Name of the job to be updated"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/gcp_transfer_operator/index.rst:222
+msgid ""
+"(Required) The request body, as described in https://cloud.google.com"
+"/storage-transfer/docs/reference/rest/v1/transferJobs/patch#request-body "
+"With three additional improvements:  * dates can be given in the form "
+":class:`datetime.date` * times can be given in the form "
+":class:`datetime.time` * credentials to Amazon Web Service should be "
+"stored in the connection and indicated by the   aws_conn_id parameter"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/gcp_transfer_operator/index.rst:222
+msgid ""
+"(Required) The request body, as described in https://cloud.google.com"
+"/storage-transfer/docs/reference/rest/v1/transferJobs/patch#request-body "
+"With three additional improvements:"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/gcp_transfer_operator/index.rst:282
+msgid ""
+"Delete a transfer job. This is a soft delete. After a transfer job is "
+"deleted, the job and all the transfer executions are subject to garbage "
+"collection. Transfer jobs become eligible for garbage collection 30 days "
+"after soft delete."
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/gcp_transfer_operator/index.rst:288
+msgid ""
+"For more information on how to use this operator, take a look at the "
+"guide: :ref:`howto/operator:GcpTransferServiceJobDeleteOperator`"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/gcp_transfer_operator/index.rst:291
+msgid "(Required) Name of the TRANSFER operation"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/gcp_transfer_operator/index.rst:293
+msgid ""
+"(Optional) the ID of the project that owns the Transfer Job. If set to "
+"None or missing, the default project_id from the GCP connection is used."
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/gcp_transfer_operator/index.rst:344
+msgid ""
+"Gets the latest state of a long-running operation in Google Storage "
+"Transfer Service."
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/gcp_transfer_operator/index.rst:348
+msgid ""
+"For more information on how to use this operator, take a look at the "
+"guide: :ref:`howto/operator:GcpTransferServiceOperationGetOperator`"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/gcp_transfer_operator/index.rst:351
+#: ../../_api/airflow/contrib/operators/gcp_transfer_operator/index.rst:463
+#: ../../_api/airflow/contrib/operators/gcp_transfer_operator/index.rst:517
+#: ../../_api/airflow/contrib/operators/gcp_transfer_operator/index.rst:571
+msgid "(Required) Name of the transfer operation."
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/gcp_transfer_operator/index.rst:400
+msgid ""
+"Lists long-running operations in Google Storage Transfer Service that "
+"match the specified filter."
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/gcp_transfer_operator/index.rst:404
+msgid ""
+"For more information on how to use this operator, take a look at the "
+"guide: :ref:`howto/operator:GcpTransferServiceOperationsListOperator`"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/gcp_transfer_operator/index.rst:407
+msgid ""
+"(Required) A request filter, as described in https://cloud.google.com"
+"/storage-"
+"transfer/docs/reference/rest/v1/transferJobs/list#body.QUERY_PARAMETERS.filter"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/gcp_transfer_operator/index.rst:457
+msgid "Pauses a transfer operation in Google Storage Transfer Service."
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/gcp_transfer_operator/index.rst:460
+msgid ""
+"For more information on how to use this operator, take a look at the "
+"guide: :ref:`howto/operator:GcpTransferServiceOperationPauseOperator`"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/gcp_transfer_operator/index.rst:511
+msgid "Resumes a transfer operation in Google Storage Transfer Service."
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/gcp_transfer_operator/index.rst:514
+msgid ""
+"For more information on how to use this operator, take a look at the "
+"guide: :ref:`howto/operator:GcpTransferServiceOperationResumeOperator`"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/gcp_transfer_operator/index.rst:565
+msgid "Cancels a transfer operation in Google Storage Transfer Service."
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/gcp_transfer_operator/index.rst:568
+msgid ""
+"For more information on how to use this operator, take a look at the "
+"guide: :ref:`howto/operator:GcpTransferServiceOperationCancelOperator`"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/gcp_transfer_operator/index.rst:620
+msgid ""
+"Synchronizes an S3 bucket with a Google Cloud Storage bucket using the "
+"GCP Storage Transfer Service."
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/gcp_transfer_operator/index.rst:628
+#: ../../_api/airflow/contrib/operators/gcp_transfer_operator/index.rst:738
+msgid "**Example**:"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/gcp_transfer_operator/index.rst:639
+msgid "The S3 bucket where to find the objects. (templated)"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/gcp_transfer_operator/index.rst:641
+msgid ""
+"The destination Google Cloud Storage bucket where you want to store the "
+"files. (templated)"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/gcp_transfer_operator/index.rst:644
+msgid "Optional ID of the Google Cloud Platform Console project that owns the job"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/gcp_transfer_operator/index.rst:647
+msgid "The source S3 connection"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/gcp_transfer_operator/index.rst:649
+msgid ""
+"The destination connection ID to use when connecting to Google Cloud "
+"Storage."
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/gcp_transfer_operator/index.rst:652
+#: ../../_api/airflow/contrib/operators/gcp_transfer_operator/index.rst:761
+msgid ""
+"The account to impersonate, if any. For this to work, the service account"
+" making the request must have domain-wide delegation enabled."
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/gcp_transfer_operator/index.rst:656
+#: ../../_api/airflow/contrib/operators/gcp_transfer_operator/index.rst:765
+msgid "Optional transfer service job description"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/gcp_transfer_operator/index.rst:658
+msgid ""
+"Optional transfer service schedule; If not set, run transfer job once as "
+"soon as the operator runs The format is described "
+"https://cloud.google.com/storage-"
+"transfer/docs/reference/rest/v1/transferJobs. With two additional "
+"improvements:  * dates they can be passed as :class:`datetime.date` * "
+"times they can be passed as :class:`datetime.time`"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/gcp_transfer_operator/index.rst:658
+msgid ""
+"Optional transfer service schedule; If not set, run transfer job once as "
+"soon as the operator runs The format is described "
+"https://cloud.google.com/storage-"
+"transfer/docs/reference/rest/v1/transferJobs. With two additional "
+"improvements:"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/gcp_transfer_operator/index.rst:664
+#: ../../_api/airflow/contrib/operators/gcp_transfer_operator/index.rst:773
+msgid "dates they can be passed as :class:`datetime.date`"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/gcp_transfer_operator/index.rst:665
+#: ../../_api/airflow/contrib/operators/gcp_transfer_operator/index.rst:774
+msgid "times they can be passed as :class:`datetime.time`"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/gcp_transfer_operator/index.rst:668
+msgid ""
+"Optional transfer service object conditions; see https://cloud.google.com"
+"/storage-transfer/docs/reference/rest/v1/TransferSpec"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/gcp_transfer_operator/index.rst:671
+msgid ""
+"Optional transfer service transfer options; see https://cloud.google.com"
+"/storage-transfer/docs/reference/rest/v1/TransferSpec"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/gcp_transfer_operator/index.rst:674
+msgid "Wait for transfer to finish"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/gcp_transfer_operator/index.rst:676
+#: ../../_api/airflow/contrib/operators/gcp_transfer_operator/index.rst:785
+msgid "Time to wait for the operation to end in seconds"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/gcp_transfer_operator/index.rst:730
+msgid ""
+"Copies objects from a bucket to another using the GCP Storage Transfer "
+"Service."
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/gcp_transfer_operator/index.rst:749
+msgid "The source Google cloud storage bucket where the object is. (templated)"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/gcp_transfer_operator/index.rst:752
+msgid ""
+"The destination Google cloud storage bucket where the object should be. "
+"(templated)"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/gcp_transfer_operator/index.rst:755
+msgid "The ID of the Google Cloud Platform Console project that owns the job"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/gcp_transfer_operator/index.rst:758
+msgid "Optional connection ID to use when connecting to Google Cloud Storage."
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/gcp_transfer_operator/index.rst:767
+msgid ""
+"Optional transfer service schedule; If not set, run transfer job once as "
+"soon as the operator runs See: https://cloud.google.com/storage-"
+"transfer/docs/reference/rest/v1/transferJobs. With two additional "
+"improvements:  * dates they can be passed as :class:`datetime.date` * "
+"times they can be passed as :class:`datetime.time`"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/gcp_transfer_operator/index.rst:767
+msgid ""
+"Optional transfer service schedule; If not set, run transfer job once as "
+"soon as the operator runs See: https://cloud.google.com/storage-"
+"transfer/docs/reference/rest/v1/transferJobs. With two additional "
+"improvements:"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/gcp_transfer_operator/index.rst:777
+msgid ""
+"Optional transfer service object conditions; see https://cloud.google.com"
+"/storage-transfer/docs/reference/rest/v1/TransferSpec#ObjectConditions"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/gcp_transfer_operator/index.rst:780
+msgid ""
+"Optional transfer service transfer options; see https://cloud.google.com"
+"/storage-transfer/docs/reference/rest/v1/TransferSpec#TransferOptions"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/gcp_transfer_operator/index.rst:783
+msgid "Wait for transfer to finish; defaults to `True`"
+msgstr ""
+

@@ -1,0 +1,141 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C)
+# This file is distributed under the same license as the Airflow package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Airflow 1.10.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-04-03 17:47+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../howto/connection/postgres.rst:19
+msgid "PostgresSQL Connection"
+msgstr ""
+
+#: ../../howto/connection/postgres.rst:20
+msgid "The Postgres connection type provides connection to a Postgres database."
+msgstr ""
+
+#: ../../howto/connection/postgres.rst:23
+msgid "Configuring the Connection"
+msgstr ""
+
+#: ../../howto/connection/postgres.rst:25
+msgid "Host (required)"
+msgstr ""
+
+#: ../../howto/connection/postgres.rst:25
+msgid "The host to connect to."
+msgstr ""
+
+#: ../../howto/connection/postgres.rst:28
+msgid "Schema (optional)"
+msgstr ""
+
+#: ../../howto/connection/postgres.rst:28
+msgid "Specify the schema name to be used in the database."
+msgstr ""
+
+#: ../../howto/connection/postgres.rst:31
+msgid "Login (required)"
+msgstr ""
+
+#: ../../howto/connection/postgres.rst:31
+msgid "Specify the user name to connect."
+msgstr ""
+
+#: ../../howto/connection/postgres.rst:34
+msgid "Password (required)"
+msgstr ""
+
+#: ../../howto/connection/postgres.rst:34
+msgid "Specify the password to connect."
+msgstr ""
+
+#: ../../howto/connection/postgres.rst:78
+msgid "Extra (optional)"
+msgstr ""
+
+#: ../../howto/connection/postgres.rst:37
+msgid ""
+"Specify the extra parameters (as json dictionary) that can be used in "
+"postgres connection. The following parameters out of the standard python "
+"parameters are supported:"
+msgstr ""
+
+#: ../../howto/connection/postgres.rst:41
+msgid ""
+"**sslmode** - This option determines whether or with what priority a "
+"secure SSL TCP/IP connection will be negotiated with the server. There "
+"are six modes: 'disable', 'allow', 'prefer', 'require', 'verify-ca', "
+"'verify-full'."
+msgstr ""
+
+#: ../../howto/connection/postgres.rst:44
+msgid ""
+"**sslcert** - This parameter specifies the file name of the client SSL "
+"certificate, replacing the default."
+msgstr ""
+
+#: ../../howto/connection/postgres.rst:46
+msgid ""
+"**sslkey** - This parameter specifies the file name of the client SSL "
+"key, replacing the default."
+msgstr ""
+
+#: ../../howto/connection/postgres.rst:48
+msgid ""
+"**sslrootcert** - This parameter specifies the name of a file containing "
+"SSL certificate authority (CA) certificate(s)."
+msgstr ""
+
+#: ../../howto/connection/postgres.rst:50
+msgid ""
+"**sslcrl** - This parameter specifies the file name of the SSL "
+"certificate revocation list (CRL)."
+msgstr ""
+
+#: ../../howto/connection/postgres.rst:52
+msgid ""
+"**application_name** - Specifies a value for the application_name "
+"configuration parameter."
+msgstr ""
+
+#: ../../howto/connection/postgres.rst:54
+msgid ""
+"**keepalives_idle** - Controls the number of seconds of inactivity after "
+"which TCP should send a keepalive message to the server."
+msgstr ""
+
+#: ../../howto/connection/postgres.rst:57
+msgid ""
+"More details on all Postgres parameters supported can be found in "
+"`Postgres documentation <https://www.postgresql.org/docs/current/static"
+"/libpq-connect.html#LIBPQ-CONNSTRING>`_."
+msgstr ""
+
+#: ../../howto/connection/postgres.rst:60
+msgid "Example \"extras\" field:"
+msgstr ""
+
+#: ../../howto/connection/postgres.rst:71
+msgid ""
+"When specifying the connection as URI (in AIRFLOW_CONN_* variable) you "
+"should specify it following the standard syntax of DB connections, where "
+"extras are passed as parameters of the URI (note that all components of "
+"the URI should be URL-encoded)."
+msgstr ""
+
+#: ../../howto/connection/postgres.rst:75
+msgid "For example:"
+msgstr ""
+

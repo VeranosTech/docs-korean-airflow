@@ -1,0 +1,405 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C)
+# This file is distributed under the same license as the Airflow package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Airflow 1.10.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-04-03 17:47+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../_api/airflow/hooks/hive_hooks/index.rst:4
+msgid ":mod:`airflow.hooks.hive_hooks`"
+msgstr ""
+
+#: ../../_api/airflow/hooks/hive_hooks/index.rst:15
+msgid "Module Contents"
+msgstr ""
+
+#: ../../_api/airflow/hooks/hive_hooks/index.rst:37
+msgid ""
+"Extract context from env variable, e.g. dag_id, task_id and "
+"execution_date, so that they can be used inside BashOperator and "
+"PythonOperator. :return: The context of interest."
+msgstr ""
+
+#: ../../_api/airflow/hooks/hive_hooks/index.rst:51
+#: ../../_api/airflow/hooks/hive_hooks/index.rst:227
+#: ../../_api/airflow/hooks/hive_hooks/index.rst:450
+msgid "Bases::class:`airflow.hooks.base_hook.BaseHook`"
+msgstr ""
+
+#: ../../_api/airflow/hooks/hive_hooks/index.rst:55
+msgid "Simple wrapper around the hive CLI."
+msgstr ""
+
+#: ../../_api/airflow/hooks/hive_hooks/index.rst:57
+msgid ""
+"It also supports the ``beeline`` a lighter CLI that runs JDBC and is "
+"replacing the heavier traditional CLI. To enable ``beeline``, set the "
+"use_beeline param in the extra field of your connection as in ``{ "
+"\"use_beeline\": true }``"
+msgstr ""
+
+#: ../../_api/airflow/hooks/hive_hooks/index.rst:62
+msgid ""
+"Note that you can also set default hive CLI parameters using the "
+"``hive_cli_params`` to be used in your connection as in "
+"``{\"hive_cli_params\": \"-hiveconf "
+"mapred.job.tracker=some.jobtracker:444\"}`` Parameters passed here can be"
+" overridden by run_cli's hive_conf param"
+msgstr ""
+
+#: ../../_api/airflow/hooks/hive_hooks/index.rst:67
+msgid ""
+"The extra connection parameter ``auth`` gets passed as in the ``jdbc`` "
+"connection string as is."
+msgstr ""
+
+#: ../../_api/airflow/hooks/hive_hooks/index.rst
+msgid "Parameters"
+msgstr ""
+
+#: ../../_api/airflow/hooks/hive_hooks/index.rst:70
+msgid "queue used by the Hadoop Scheduler (Capacity or Fair)"
+msgstr ""
+
+#: ../../_api/airflow/hooks/hive_hooks/index.rst:72
+msgid ""
+"priority within the job queue. Possible settings include: VERY_HIGH, "
+"HIGH, NORMAL, LOW, VERY_LOW"
+msgstr ""
+
+#: ../../_api/airflow/hooks/hive_hooks/index.rst:75
+msgid "This name will appear in the jobtracker. This can make monitoring easier."
+msgstr ""
+
+#: ../../_api/airflow/hooks/hive_hooks/index.rst:88
+msgid "This function creates the command list from available information"
+msgstr ""
+
+#: ../../_api/airflow/hooks/hive_hooks/index.rst:97
+msgid ""
+"This function prepares a list of hiveconf params from a dictionary of key"
+" value pairs."
+msgstr ""
+
+#: ../../_api/airflow/hooks/hive_hooks/index.rst:116
+msgid ""
+"Run an hql statement using the hive cli. If hive_conf is specified it "
+"should be a dict and the entries will be set as key/value pairs in "
+"HiveConf"
+msgstr ""
+
+#: ../../_api/airflow/hooks/hive_hooks/index.rst:121
+msgid ""
+"if specified these key value pairs will be passed to hive as ``-hiveconf "
+"\"key\"=\"value\"``. Note that they will be passed after the "
+"``hive_cli_params`` and thus will override whatever values are specified "
+"in the database."
+msgstr ""
+
+#: ../../_api/airflow/hooks/hive_hooks/index.rst:139
+msgid "Test an hql statement using the hive cli and EXPLAIN"
+msgstr ""
+
+#: ../../_api/airflow/hooks/hive_hooks/index.rst:148
+msgid "Loads a pandas DataFrame into hive."
+msgstr ""
+
+#: ../../_api/airflow/hooks/hive_hooks/index.rst:150
+msgid ""
+"Hive data types will be inferred if not passed but column names will not "
+"be sanitized."
+msgstr ""
+
+#: ../../_api/airflow/hooks/hive_hooks/index.rst:153
+msgid "DataFrame to load into a Hive table"
+msgstr ""
+
+#: ../../_api/airflow/hooks/hive_hooks/index.rst:155
+#: ../../_api/airflow/hooks/hive_hooks/index.rst:187
+msgid "target Hive table, use dot notation to target a specific database"
+msgstr ""
+
+#: ../../_api/airflow/hooks/hive_hooks/index.rst:158
+msgid ""
+"mapping from column name to hive data type. Note that it must be "
+"OrderedDict so as to keep columns' order."
+msgstr ""
+
+#: ../../_api/airflow/hooks/hive_hooks/index.rst:161
+#: ../../_api/airflow/hooks/hive_hooks/index.rst:190
+msgid "field delimiter in the file"
+msgstr ""
+
+#: ../../_api/airflow/hooks/hive_hooks/index.rst:163
+msgid "str encoding to use when writing DataFrame to file"
+msgstr ""
+
+#: ../../_api/airflow/hooks/hive_hooks/index.rst:165
+msgid "passed to DataFrame.to_csv"
+msgstr ""
+
+#: ../../_api/airflow/hooks/hive_hooks/index.rst:167
+msgid "passed to self.load_file"
+msgstr ""
+
+#: ../../_api/airflow/hooks/hive_hooks/index.rst:176
+msgid "Loads a local file into Hive"
+msgstr ""
+
+#: ../../_api/airflow/hooks/hive_hooks/index.rst:178
+msgid ""
+"Note that the table generated in Hive uses ``STORED AS textfile`` which "
+"isn't the most efficient serialization format. If a large amount of data "
+"is loaded and/or if the tables gets queried considerably, you may want to"
+" use this operator only to stage the data into a temporary table before "
+"loading it into its final destination using a ``HiveOperator``."
+msgstr ""
+
+#: ../../_api/airflow/hooks/hive_hooks/index.rst:185
+msgid "local filepath of the file to load"
+msgstr ""
+
+#: ../../_api/airflow/hooks/hive_hooks/index.rst:192
+msgid ""
+"A dictionary of the fields name in the file as keys and their Hive types "
+"as values. Note that it must be OrderedDict so as to keep columns' order."
+msgstr ""
+
+#: ../../_api/airflow/hooks/hive_hooks/index.rst:196
+msgid "whether to create the table if it doesn't exist"
+msgstr ""
+
+#: ../../_api/airflow/hooks/hive_hooks/index.rst:198
+msgid "whether to overwrite the data in table or partition"
+msgstr ""
+
+#: ../../_api/airflow/hooks/hive_hooks/index.rst:200
+msgid "target partition as a dict of partition columns and values"
+msgstr ""
+
+#: ../../_api/airflow/hooks/hive_hooks/index.rst:203
+msgid "whether to drop and recreate the table at every execution"
+msgstr ""
+
+#: ../../_api/airflow/hooks/hive_hooks/index.rst:206
+msgid "TBLPROPERTIES of the hive table being created"
+msgstr ""
+
+#: ../../_api/airflow/hooks/hive_hooks/index.rst:231
+msgid "Wrapper to interact with the Hive Metastore"
+msgstr ""
+
+#: ../../_api/airflow/hooks/hive_hooks/index.rst:266
+msgid "Returns a Hive thrift client."
+msgstr ""
+
+#: ../../_api/airflow/hooks/hive_hooks/index.rst:282
+msgid "Checks whether a partition exists"
+msgstr ""
+
+#: ../../_api/airflow/hooks/hive_hooks/index.rst:284
+#: ../../_api/airflow/hooks/hive_hooks/index.rst:307
+msgid "Name of hive schema (database) @table belongs to"
+msgstr ""
+
+#: ../../_api/airflow/hooks/hive_hooks/index.rst:286
+#: ../../_api/airflow/hooks/hive_hooks/index.rst:309
+msgid "Name of hive table @partition belongs to"
+msgstr ""
+
+#: ../../_api/airflow/hooks/hive_hooks/index.rst
+msgid "partition"
+msgstr ""
+
+#: ../../_api/airflow/hooks/hive_hooks/index.rst:288
+msgid ""
+"Expression that matches the partitions to check for (eg `a = 'b' AND c = "
+"'d'`)"
+msgstr ""
+
+#: ../../_api/airflow/hooks/hive_hooks/index.rst
+msgid "Return type"
+msgstr ""
+
+#: ../../_api/airflow/hooks/hive_hooks/index.rst:305
+msgid "Checks whether a partition with a given name exists"
+msgstr ""
+
+#: ../../_api/airflow/hooks/hive_hooks/index.rst:311
+msgid "Name of the partitions to check for (eg `a=b/c=d`)"
+msgstr ""
+
+#: ../../_api/airflow/hooks/hive_hooks/index.rst:329
+#: ../../_api/airflow/hooks/hive_hooks/index.rst:345
+#: ../../_api/airflow/hooks/hive_hooks/index.rst:354
+msgid "Get a metastore table object"
+msgstr ""
+
+#: ../../_api/airflow/hooks/hive_hooks/index.rst:363
+msgid ""
+"Returns a list of all partitions in a table. Works only for tables with "
+"less than 32767 (java short max val). For subpartitioned table, the "
+"number might easily exceed this."
+msgstr ""
+
+#: ../../_api/airflow/hooks/hive_hooks/index.rst:382
+msgid ""
+"Helper method to get max partition of partitions with partition_key from "
+"part specs. key:value pair in filter_map will be used to filter out "
+"partitions."
+msgstr ""
+
+#: ../../_api/airflow/hooks/hive_hooks/index.rst:386
+msgid "list of partition specs."
+msgstr ""
+
+#: ../../_api/airflow/hooks/hive_hooks/index.rst:388
+msgid "partition key name."
+msgstr ""
+
+#: ../../_api/airflow/hooks/hive_hooks/index.rst:390
+msgid ""
+"partition_key:partition_value map used for partition filtering, e.g. "
+"{'key1': 'value1', 'key2': 'value2'}. Only partitions matching all "
+"partition_key:partition_value pairs will be considered as candidates of "
+"max partition."
+msgstr ""
+
+#: ../../_api/airflow/hooks/hive_hooks/index.rst
+msgid "Returns"
+msgstr ""
+
+#: ../../_api/airflow/hooks/hive_hooks/index.rst:395
+msgid "Max partition or None if part_specs is empty."
+msgstr ""
+
+#: ../../_api/airflow/hooks/hive_hooks/index.rst:404
+msgid ""
+"Returns the maximum value for all partitions with given field in a table."
+" If only one partition key exist in the table, the key will be used as "
+"field. filter_map should be a partition_key:partition_value map and will "
+"be used to filter out partitions."
+msgstr ""
+
+#: ../../_api/airflow/hooks/hive_hooks/index.rst:409
+msgid "schema name."
+msgstr ""
+
+#: ../../_api/airflow/hooks/hive_hooks/index.rst:411
+msgid "table name."
+msgstr ""
+
+#: ../../_api/airflow/hooks/hive_hooks/index.rst:413
+msgid "partition key to get max partition from."
+msgstr ""
+
+#: ../../_api/airflow/hooks/hive_hooks/index.rst:415
+msgid "partition_key:partition_value map used for partition filtering."
+msgstr ""
+
+#: ../../_api/airflow/hooks/hive_hooks/index.rst:431
+msgid "Check if table exists"
+msgstr ""
+
+#: ../../_api/airflow/hooks/hive_hooks/index.rst:454
+msgid "Wrapper around the pyhive library"
+msgstr ""
+
+#: ../../_api/airflow/hooks/hive_hooks/index.rst:456
+msgid ""
+"Note that the default authMechanism is PLAIN, to override it you can "
+"specify it in the ``extra`` of your connection in the UI as in"
+msgstr ""
+
+#: ../../_api/airflow/hooks/hive_hooks/index.rst:468
+msgid "Returns a Hive connection object."
+msgstr ""
+
+#: ../../_api/airflow/hooks/hive_hooks/index.rst:484
+msgid "Get results of the provided hql in target schema."
+msgstr ""
+
+#: ../../_api/airflow/hooks/hive_hooks/index.rst:486
+#: ../../_api/airflow/hooks/hive_hooks/index.rst:506
+#: ../../_api/airflow/hooks/hive_hooks/index.rst:532
+#: ../../_api/airflow/hooks/hive_hooks/index.rst:555
+msgid "hql to be executed."
+msgstr ""
+
+#: ../../_api/airflow/hooks/hive_hooks/index.rst:488
+#: ../../_api/airflow/hooks/hive_hooks/index.rst:510
+#: ../../_api/airflow/hooks/hive_hooks/index.rst:534
+#: ../../_api/airflow/hooks/hive_hooks/index.rst:557
+msgid "target schema, default to 'default'."
+msgstr ""
+
+#: ../../_api/airflow/hooks/hive_hooks/index.rst:490
+msgid "max size of result to fetch."
+msgstr ""
+
+#: ../../_api/airflow/hooks/hive_hooks/index.rst:492
+#: ../../_api/airflow/hooks/hive_hooks/index.rst:520
+#: ../../_api/airflow/hooks/hive_hooks/index.rst:536
+msgid "hive_conf to execute alone with the hql."
+msgstr ""
+
+#: ../../_api/airflow/hooks/hive_hooks/index.rst:494
+msgid "results of hql execution, dict with data (list of results) and header"
+msgstr ""
+
+#: ../../_api/airflow/hooks/hive_hooks/index.rst:504
+msgid "Execute hql in target schema and write results to a csv file."
+msgstr ""
+
+#: ../../_api/airflow/hooks/hive_hooks/index.rst:508
+msgid "filepath of csv to write results into."
+msgstr ""
+
+#: ../../_api/airflow/hooks/hive_hooks/index.rst:512
+msgid "delimiter of the csv file, default to ','."
+msgstr ""
+
+#: ../../_api/airflow/hooks/hive_hooks/index.rst:514
+msgid "lineterminator of the csv file."
+msgstr ""
+
+#: ../../_api/airflow/hooks/hive_hooks/index.rst:516
+msgid "header of the csv file, default to True."
+msgstr ""
+
+#: ../../_api/airflow/hooks/hive_hooks/index.rst:518
+msgid "number of result rows to write into the csv file, default to 1000."
+msgstr ""
+
+#: ../../_api/airflow/hooks/hive_hooks/index.rst:530
+msgid "Get a set of records from a Hive query."
+msgstr ""
+
+#: ../../_api/airflow/hooks/hive_hooks/index.rst:538
+msgid "result of hive execution"
+msgstr ""
+
+#: ../../_api/airflow/hooks/hive_hooks/index.rst:553
+msgid "Get a pandas dataframe from a Hive query"
+msgstr ""
+
+#: ../../_api/airflow/hooks/hive_hooks/index.rst:559
+msgid "result of hql execution"
+msgstr ""
+
+#: ../../_api/airflow/hooks/hive_hooks/index.rst:568
+msgid "pandas.DateFrame"
+msgstr ""
+

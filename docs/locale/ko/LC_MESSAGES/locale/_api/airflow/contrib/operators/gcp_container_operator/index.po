@@ -1,0 +1,225 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C)
+# This file is distributed under the same license as the Airflow package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Airflow 1.10.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-04-03 17:47+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../_api/airflow/contrib/operators/gcp_container_operator/index.rst:4
+msgid ":mod:`airflow.contrib.operators.gcp_container_operator`"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/gcp_container_operator/index.rst:15
+msgid "Module Contents"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/gcp_container_operator/index.rst:24
+#: ../../_api/airflow/contrib/operators/gcp_container_operator/index.rst:94
+msgid "Bases::class:`airflow.models.BaseOperator`"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/gcp_container_operator/index.rst:28
+msgid ""
+"Deletes the cluster, including the Kubernetes endpoint and all worker "
+"nodes."
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/gcp_container_operator/index.rst:30
+msgid ""
+"To delete a certain cluster, you must specify the ``project_id``, the "
+"``name`` of the cluster, the ``location`` that the cluster is in, and the"
+" ``task_id``."
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/gcp_container_operator/index.rst:33
+#: ../../_api/airflow/contrib/operators/gcp_container_operator/index.rst:114
+#: ../../_api/airflow/contrib/operators/gcp_container_operator/index.rst:215
+msgid "**Operator Creation**: ::"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/gcp_container_operator/index.rst:42
+msgid ""
+"For more detail about deleting clusters have a look at the reference: "
+"https://google-cloud-"
+"python.readthedocs.io/en/latest/container/gapic/v1/api.html#google.cloud.container_v1.ClusterManagerClient.delete_cluster"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/gcp_container_operator/index.rst
+msgid "Parameters"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/gcp_container_operator/index.rst:45
+#: ../../_api/airflow/contrib/operators/gcp_container_operator/index.rst:126
+msgid "The Google Developers Console [project ID or project number]"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/gcp_container_operator/index.rst:47
+msgid "The name of the resource to delete, in this case cluster name"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/gcp_container_operator/index.rst:49
+#: ../../_api/airflow/contrib/operators/gcp_container_operator/index.rst:128
+msgid "The name of the Google Compute Engine zone in which the cluster resides."
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/gcp_container_operator/index.rst:52
+#: ../../_api/airflow/contrib/operators/gcp_container_operator/index.rst:134
+msgid "The connection ID to use connecting to Google Cloud Platform."
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/gcp_container_operator/index.rst:54
+#: ../../_api/airflow/contrib/operators/gcp_container_operator/index.rst:136
+msgid "The api version to use"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/gcp_container_operator/index.rst:98
+msgid ""
+"Create a Google Kubernetes Engine Cluster of specified dimensions The "
+"operator will wait until the cluster is created."
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/gcp_container_operator/index.rst:101
+msgid "The **minimum** required to define a cluster to create is:"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/gcp_container_operator/index.rst:105
+msgid "``dict()`` ::"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/gcp_container_operator/index.rst:105
+msgid "cluster_def = {'name': 'my-cluster-name',"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/gcp_container_operator/index.rst:105
+msgid "'initial_node_count': 1}"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/gcp_container_operator/index.rst:107
+msgid "or"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/gcp_container_operator/index.rst:112
+msgid "``Cluster`` proto ::"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/gcp_container_operator/index.rst:110
+msgid "from google.cloud.container_v1.types import Cluster"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/gcp_container_operator/index.rst:112
+msgid "cluster_def = Cluster(name='my-cluster-name', initial_node_count=1)"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/gcp_container_operator/index.rst:123
+msgid ""
+"For more detail on about creating clusters have a look at the reference: "
+":class:`google.cloud.container_v1.types.Cluster`"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/gcp_container_operator/index.rst:131
+msgid ""
+"The Cluster definition to create, can be protobuf or python dict, if dict"
+" it must match protobuf message Cluster"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/gcp_container_operator/index.rst:200
+msgid "Bases::class:`airflow.contrib.operators.kubernetes_pod_operator.KubernetesPodOperator`"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/gcp_container_operator/index.rst:204
+msgid ""
+"Executes a task in a Kubernetes pod in the specified Google Kubernetes "
+"Engine cluster"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/gcp_container_operator/index.rst:207
+msgid ""
+"This Operator assumes that the system has gcloud installed and either has"
+" working default application credentials or has configured a connection "
+"id with a service account."
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/gcp_container_operator/index.rst:211
+msgid ""
+"The **minimum** required to define a cluster to create are the variables "
+"``task_id``, ``project_id``, ``location``, ``cluster_name``, ``name``, "
+"``namespace``, and ``image``"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/gcp_container_operator/index.rst:226
+msgid ""
+"For more detail about application authentication have a look at the "
+"reference: "
+"https://cloud.google.com/docs/authentication/production#providing_credentials_to_your_application"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/gcp_container_operator/index.rst:229
+msgid "The Google Developers Console project id"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/gcp_container_operator/index.rst:231
+msgid ""
+"The name of the Google Kubernetes Engine zone in which the cluster "
+"resides, e.g. 'us-central1-a'"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/gcp_container_operator/index.rst:234
+msgid ""
+"The name of the Google Kubernetes Engine cluster the pod should be "
+"spawned in"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/gcp_container_operator/index.rst:237
+msgid ""
+"The google cloud connection id to use. This allows for users to specify a"
+" service account."
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/gcp_container_operator/index.rst:267
+msgid ""
+"Sets the environment variable `GOOGLE_APPLICATION_CREDENTIALS` with "
+"either:"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/gcp_container_operator/index.rst:269
+msgid "The path to the keyfile from the specified connection id"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/gcp_container_operator/index.rst:272
+msgid ""
+"A generated file's path if the user specified JSON in the connection id. "
+"The"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/gcp_container_operator/index.rst:271
+msgid ""
+"file is assumed to be deleted after the process dies due to how mkstemp()"
+" works."
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/gcp_container_operator/index.rst:274
+msgid ""
+"The environment variable is used inside the gcloud command to determine "
+"correct service account to use."
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/gcp_container_operator/index.rst:284
+msgid ""
+"Fetches a field from extras, and returns it. This is some Airflow magic. "
+"The google_cloud_platform hook type adds custom UI elements to the hook "
+"page, which allow admins to specify service_account, key_path, etc. They "
+"get formatted as shown below."
+msgstr ""
+

@@ -1,0 +1,49 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C)
+# This file is distributed under the same license as the Airflow package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Airflow 1.10.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-04-03 17:47+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../_api/airflow/contrib/sensors/emr_step_sensor/index.rst:4
+msgid ":mod:`airflow.contrib.sensors.emr_step_sensor`"
+msgstr ""
+
+#: ../../_api/airflow/contrib/sensors/emr_step_sensor/index.rst:15
+msgid "Module Contents"
+msgstr ""
+
+#: ../../_api/airflow/contrib/sensors/emr_step_sensor/index.rst:24
+msgid "Bases::class:`airflow.contrib.sensors.emr_base_sensor.EmrBaseSensor`"
+msgstr ""
+
+#: ../../_api/airflow/contrib/sensors/emr_step_sensor/index.rst:28
+msgid ""
+"Asks for the state of the step until it reaches a terminal state. If it "
+"fails the sensor errors, failing the task."
+msgstr ""
+
+#: ../../_api/airflow/contrib/sensors/emr_step_sensor/index.rst
+msgid "Parameters"
+msgstr ""
+
+#: ../../_api/airflow/contrib/sensors/emr_step_sensor/index.rst:31
+msgid "job_flow_id which contains the step check the state of"
+msgstr ""
+
+#: ../../_api/airflow/contrib/sensors/emr_step_sensor/index.rst:33
+msgid "step to check the state of"
+msgstr ""
+

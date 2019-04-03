@@ -1,0 +1,164 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C)
+# This file is distributed under the same license as the Airflow package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Airflow 1.10.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-04-03 17:47+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../_api/airflow/contrib/hooks/wasb_hook/index.rst:4
+msgid ":mod:`airflow.contrib.hooks.wasb_hook`"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/wasb_hook/index.rst:15
+msgid "Module Contents"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/wasb_hook/index.rst:24
+msgid "Bases::class:`airflow.hooks.base_hook.BaseHook`"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/wasb_hook/index.rst:28
+msgid "Interacts with Azure Blob Storage through the wasb:// protocol."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/wasb_hook/index.rst:30
+msgid ""
+"Additional options passed in the 'extra' field of the connection will be "
+"passed to the `BlockBlockService()` constructor. For example, "
+"authenticate using a SAS token by adding {\"sas_token\": \"YOUR_TOKEN\"}."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/wasb_hook/index.rst
+msgid "Parameters"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/wasb_hook/index.rst:34
+msgid "Reference to the wasb connection."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/wasb_hook/index.rst:46
+msgid "Return the BlockBlobService object."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/wasb_hook/index.rst:55
+msgid "Check if a blob exists on Azure Blob Storage."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/wasb_hook/index.rst:57
+#: ../../_api/airflow/contrib/hooks/wasb_hook/index.rst:76
+#: ../../_api/airflow/contrib/hooks/wasb_hook/index.rst:97
+#: ../../_api/airflow/contrib/hooks/wasb_hook/index.rst:116
+#: ../../_api/airflow/contrib/hooks/wasb_hook/index.rst:135
+#: ../../_api/airflow/contrib/hooks/wasb_hook/index.rst:152
+#: ../../_api/airflow/contrib/hooks/wasb_hook/index.rst:169
+msgid "Name of the container."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/wasb_hook/index.rst:59
+#: ../../_api/airflow/contrib/hooks/wasb_hook/index.rst:99
+#: ../../_api/airflow/contrib/hooks/wasb_hook/index.rst:118
+#: ../../_api/airflow/contrib/hooks/wasb_hook/index.rst:137
+#: ../../_api/airflow/contrib/hooks/wasb_hook/index.rst:154
+#: ../../_api/airflow/contrib/hooks/wasb_hook/index.rst:171
+msgid "Name of the blob."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/wasb_hook/index.rst:61
+msgid "Optional keyword arguments that `BlockBlobService.exists()` takes."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/wasb_hook/index.rst
+msgid "Returns"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/wasb_hook/index.rst:64
+msgid "True if the blob exists, False otherwise."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/wasb_hook/index.rst
+msgid "Return type"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/wasb_hook/index.rst:74
+msgid "Check if a prefix exists on Azure Blob storage."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/wasb_hook/index.rst:78
+msgid "Prefix of the blob."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/wasb_hook/index.rst:80
+msgid "Optional keyword arguments that `BlockBlobService.list_blobs()` takes."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/wasb_hook/index.rst:83
+msgid "True if blobs matching the prefix exist, False otherwise."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/wasb_hook/index.rst:93
+msgid "Upload a file to Azure Blob Storage."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/wasb_hook/index.rst:95
+msgid "Path to the file to load."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/wasb_hook/index.rst:101
+#: ../../_api/airflow/contrib/hooks/wasb_hook/index.rst:139
+#: ../../_api/airflow/contrib/hooks/wasb_hook/index.rst:156
+#: ../../_api/airflow/contrib/hooks/wasb_hook/index.rst:178
+msgid ""
+"Optional keyword arguments that "
+"`BlockBlobService.create_blob_from_path()` takes."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/wasb_hook/index.rst:112
+msgid "Upload a string to Azure Blob Storage."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/wasb_hook/index.rst:114
+msgid "String to load."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/wasb_hook/index.rst:120
+msgid ""
+"Optional keyword arguments that "
+"`BlockBlobService.create_blob_from_text()` takes."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/wasb_hook/index.rst:131
+msgid "Download a file from Azure Blob Storage."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/wasb_hook/index.rst:133
+msgid "Path to the file to download."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/wasb_hook/index.rst:150
+msgid "Read a file from Azure Blob Storage and return as a string."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/wasb_hook/index.rst:167
+msgid "Delete a file from Azure Blob Storage."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/wasb_hook/index.rst:173
+msgid "If blob_name is a prefix, delete all matching files"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/wasb_hook/index.rst:175
+msgid "if True, then return success even if the blob does not exist."
+msgstr ""
+

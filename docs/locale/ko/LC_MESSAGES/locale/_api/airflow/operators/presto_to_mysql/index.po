@@ -1,0 +1,68 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C)
+# This file is distributed under the same license as the Airflow package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Airflow 1.10.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-04-03 17:47+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../_api/airflow/operators/presto_to_mysql/index.rst:4
+msgid ":mod:`airflow.operators.presto_to_mysql`"
+msgstr ""
+
+#: ../../_api/airflow/operators/presto_to_mysql/index.rst:15
+msgid "Module Contents"
+msgstr ""
+
+#: ../../_api/airflow/operators/presto_to_mysql/index.rst:24
+msgid "Bases::class:`airflow.models.BaseOperator`"
+msgstr ""
+
+#: ../../_api/airflow/operators/presto_to_mysql/index.rst:28
+msgid ""
+"Moves data from Presto to MySQL, note that for now the data is loaded "
+"into memory before being pushed to MySQL, so this operator should be used"
+" for smallish amount of data."
+msgstr ""
+
+#: ../../_api/airflow/operators/presto_to_mysql/index.rst
+msgid "Parameters"
+msgstr ""
+
+#: ../../_api/airflow/operators/presto_to_mysql/index.rst:32
+msgid "SQL query to execute against Presto. (templated)"
+msgstr ""
+
+#: ../../_api/airflow/operators/presto_to_mysql/index.rst:34
+msgid ""
+"target MySQL table, use dot notation to target a specific database. "
+"(templated)"
+msgstr ""
+
+#: ../../_api/airflow/operators/presto_to_mysql/index.rst:37
+msgid "source mysql connection"
+msgstr ""
+
+#: ../../_api/airflow/operators/presto_to_mysql/index.rst:39
+msgid "source presto connection"
+msgstr ""
+
+#: ../../_api/airflow/operators/presto_to_mysql/index.rst:41
+msgid ""
+"sql statement to run against mysql prior to import, typically use to "
+"truncate of delete in place of the data coming in, allowing the task to "
+"be idempotent (running the task twice won't double load data). "
+"(templated)"
+msgstr ""
+

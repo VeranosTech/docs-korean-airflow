@@ -1,0 +1,100 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C)
+# This file is distributed under the same license as the Airflow package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Airflow 1.10.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-04-03 17:47+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../_api/airflow/operators/hive_to_druid/index.rst:4
+msgid ":mod:`airflow.operators.hive_to_druid`"
+msgstr ""
+
+#: ../../_api/airflow/operators/hive_to_druid/index.rst:15
+msgid "Module Contents"
+msgstr ""
+
+#: ../../_api/airflow/operators/hive_to_druid/index.rst:48
+msgid "Bases::class:`airflow.models.BaseOperator`"
+msgstr ""
+
+#: ../../_api/airflow/operators/hive_to_druid/index.rst:52
+msgid ""
+"Moves data from Hive to Druid, [del]note that for now the data is loaded "
+"into memory before being pushed to Druid, so this operator should be used"
+" for smallish amount of data.[/del]"
+msgstr ""
+
+#: ../../_api/airflow/operators/hive_to_druid/index.rst
+msgid "Parameters"
+msgstr ""
+
+#: ../../_api/airflow/operators/hive_to_druid/index.rst:56
+msgid "SQL query to execute against the Druid database. (templated)"
+msgstr ""
+
+#: ../../_api/airflow/operators/hive_to_druid/index.rst:58
+msgid "the datasource you want to ingest into in druid"
+msgstr ""
+
+#: ../../_api/airflow/operators/hive_to_druid/index.rst:60
+msgid "the timestamp dimension"
+msgstr ""
+
+#: ../../_api/airflow/operators/hive_to_druid/index.rst:62
+msgid "the metrics you want to define for your data"
+msgstr ""
+
+#: ../../_api/airflow/operators/hive_to_druid/index.rst:64
+msgid "the hive connection id"
+msgstr ""
+
+#: ../../_api/airflow/operators/hive_to_druid/index.rst:66
+msgid "the druid ingest connection id"
+msgstr ""
+
+#: ../../_api/airflow/operators/hive_to_druid/index.rst:68
+msgid "the metastore connection id"
+msgstr ""
+
+#: ../../_api/airflow/operators/hive_to_druid/index.rst:70
+msgid "list of coordinates to squeeze int the ingest json"
+msgstr ""
+
+#: ../../_api/airflow/operators/hive_to_druid/index.rst:73
+msgid ""
+"list of time intervals that defines segments, this is passed as is to the"
+" json object. (templated)"
+msgstr ""
+
+#: ../../_api/airflow/operators/hive_to_druid/index.rst:76
+msgid "additional properties for tblproperties in hive for the staging table"
+msgstr ""
+
+#: ../../_api/airflow/operators/hive_to_druid/index.rst:79
+msgid "additional properties for job"
+msgstr ""
+
+#: ../../_api/airflow/operators/hive_to_druid/index.rst:118
+msgid "Builds an ingest query for an HDFS TSV load."
+msgstr ""
+
+#: ../../_api/airflow/operators/hive_to_druid/index.rst:120
+msgid "The path on hdfs where the data is"
+msgstr ""
+
+#: ../../_api/airflow/operators/hive_to_druid/index.rst:122
+msgid "List of all the columns that are available"
+msgstr ""
+

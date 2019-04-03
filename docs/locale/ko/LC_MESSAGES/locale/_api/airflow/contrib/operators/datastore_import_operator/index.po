@@ -1,0 +1,80 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C)
+# This file is distributed under the same license as the Airflow package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Airflow 1.10.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-04-03 17:47+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../_api/airflow/contrib/operators/datastore_import_operator/index.rst:4
+msgid ":mod:`airflow.contrib.operators.datastore_import_operator`"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/datastore_import_operator/index.rst:15
+msgid "Module Contents"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/datastore_import_operator/index.rst:24
+msgid "Bases::class:`airflow.models.BaseOperator`"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/datastore_import_operator/index.rst:28
+msgid "Import entities from Cloud Storage to Google Cloud Datastore"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/datastore_import_operator/index.rst
+msgid "Parameters"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/datastore_import_operator/index.rst:30
+msgid "container in Cloud Storage to store data"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/datastore_import_operator/index.rst:32
+msgid ""
+"path of the backup metadata file in the specified Cloud Storage bucket. "
+"It should have the extension .overall_export_metadata"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/datastore_import_operator/index.rst:35
+msgid ""
+"optional namespace of the backup metadata file in the specified Cloud "
+"Storage bucket."
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/datastore_import_operator/index.rst:38
+msgid ""
+"description of what data from the project is included in the export, "
+"refer to "
+"https://cloud.google.com/datastore/docs/reference/rest/Shared.Types/EntityFilter"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/datastore_import_operator/index.rst:42
+msgid "client-assigned labels for cloud storage"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/datastore_import_operator/index.rst:44
+msgid "the name of the connection id to use"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/datastore_import_operator/index.rst:46
+msgid ""
+"The account to impersonate, if any. For this to work, the service account"
+" making the request must have domain-wide delegation enabled."
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/datastore_import_operator/index.rst:50
+msgid "number of seconds to wait before polling for execution status again"
+msgstr ""
+

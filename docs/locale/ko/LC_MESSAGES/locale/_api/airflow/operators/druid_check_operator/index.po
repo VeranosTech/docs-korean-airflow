@@ -1,0 +1,103 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C)
+# This file is distributed under the same license as the Airflow package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Airflow 1.10.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-04-03 17:47+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../_api/airflow/operators/druid_check_operator/index.rst:4
+msgid ":mod:`airflow.operators.druid_check_operator`"
+msgstr ""
+
+#: ../../_api/airflow/operators/druid_check_operator/index.rst:15
+msgid "Module Contents"
+msgstr ""
+
+#: ../../_api/airflow/operators/druid_check_operator/index.rst:24
+msgid "Bases::class:`airflow.operators.check_operator.CheckOperator`"
+msgstr ""
+
+#: ../../_api/airflow/operators/druid_check_operator/index.rst:28
+msgid ""
+"Performs checks against Druid. The ``DruidCheckOperator`` expects a sql "
+"query that will return a single row. Each value on that first row is "
+"evaluated using python ``bool`` casting. If any of the values return "
+"``False`` the check is failed and errors out."
+msgstr ""
+
+#: ../../_api/airflow/operators/druid_check_operator/index.rst:33
+msgid "Note that Python bool casting evals the following as ``False``:"
+msgstr ""
+
+#: ../../_api/airflow/operators/druid_check_operator/index.rst:35
+msgid "``False``"
+msgstr ""
+
+#: ../../_api/airflow/operators/druid_check_operator/index.rst:36
+msgid "``0``"
+msgstr ""
+
+#: ../../_api/airflow/operators/druid_check_operator/index.rst:37
+msgid "Empty string (``\"\"``)"
+msgstr ""
+
+#: ../../_api/airflow/operators/druid_check_operator/index.rst:38
+msgid "Empty list (``[]``)"
+msgstr ""
+
+#: ../../_api/airflow/operators/druid_check_operator/index.rst:39
+msgid "Empty dictionary or set (``{}``)"
+msgstr ""
+
+#: ../../_api/airflow/operators/druid_check_operator/index.rst:41
+msgid ""
+"Given a query like ``SELECT COUNT(*) FROM foo``, it will fail only if the"
+" count ``== 0``. You can craft much more complex query that could, for "
+"instance, check that the table has the same number of rows as the source "
+"table upstream, or that the count of today's partition is greater than "
+"yesterday's partition, or that a set of metrics are less than 3 standard "
+"deviation for the 7 day average. This operator can be used as a data "
+"quality check in your pipeline, and depending on where you put it in your"
+" DAG, you have the choice to stop the critical path, preventing from "
+"publishing dubious data, or on the side and receive email alerts without "
+"stopping the progress of the DAG."
+msgstr ""
+
+#: ../../_api/airflow/operators/druid_check_operator/index.rst
+msgid "Parameters"
+msgstr ""
+
+#: ../../_api/airflow/operators/druid_check_operator/index.rst:53
+msgid "the sql to be executed"
+msgstr ""
+
+#: ../../_api/airflow/operators/druid_check_operator/index.rst:55
+msgid "reference to the druid broker"
+msgstr ""
+
+#: ../../_api/airflow/operators/druid_check_operator/index.rst:67
+msgid "Return the druid db api hook."
+msgstr ""
+
+#: ../../_api/airflow/operators/druid_check_operator/index.rst:76
+msgid ""
+"Executes the druid sql to druid broker and returns the first resulting "
+"row."
+msgstr ""
+
+#: ../../_api/airflow/operators/druid_check_operator/index.rst:78
+msgid "the sql statement to be executed (str)"
+msgstr ""
+

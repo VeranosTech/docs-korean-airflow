@@ -1,0 +1,36 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C)
+# This file is distributed under the same license as the Airflow package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Airflow 1.10.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-04-03 17:47+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../howto/operator/index.rst:19
+msgid "Using Operators"
+msgstr ""
+
+#: ../../howto/operator/index.rst:21
+msgid ""
+"An operator represents a single, ideally idempotent, task. Operators "
+"determine what actually executes when your DAG runs."
+msgstr ""
+
+#: ../../howto/operator/index.rst:24
+msgid ""
+"See the :ref:`Operators Concepts <concepts-operators>` documentation and "
+"the :doc:`Operators API Reference <../../_api/index>` for more "
+"information."
+msgstr ""
+

@@ -1,0 +1,46 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C)
+# This file is distributed under the same license as the Airflow package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Airflow 1.10.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-04-03 17:47+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../_api/airflow/hooks/pig_hook/index.rst:4
+msgid ":mod:`airflow.hooks.pig_hook`"
+msgstr ""
+
+#: ../../_api/airflow/hooks/pig_hook/index.rst:15
+msgid "Module Contents"
+msgstr ""
+
+#: ../../_api/airflow/hooks/pig_hook/index.rst:24
+msgid "Bases::class:`airflow.hooks.base_hook.BaseHook`"
+msgstr ""
+
+#: ../../_api/airflow/hooks/pig_hook/index.rst:28
+msgid "Simple wrapper around the pig CLI."
+msgstr ""
+
+#: ../../_api/airflow/hooks/pig_hook/index.rst:30
+msgid ""
+"Note that you can also set default pig CLI properties using the "
+"``pig_properties`` to be used in your connection as in "
+"``{\"pig_properties\": \"-Dpig.tmpfilecompression=true\"}``"
+msgstr ""
+
+#: ../../_api/airflow/hooks/pig_hook/index.rst:43
+msgid "Run an pig script using the pig cli"
+msgstr ""
+

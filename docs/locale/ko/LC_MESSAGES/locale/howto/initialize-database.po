@@ -1,0 +1,64 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C)
+# This file is distributed under the same license as the Airflow package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Airflow 1.10.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-04-03 17:47+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../howto/initialize-database.rst:19
+msgid "Initializing a Database Backend"
+msgstr ""
+
+#: ../../howto/initialize-database.rst:21
+msgid ""
+"If you want to take a real test drive of Airflow, you should consider "
+"setting up a real database backend and switching to the LocalExecutor."
+msgstr ""
+
+#: ../../howto/initialize-database.rst:24
+msgid ""
+"As Airflow was built to interact with its metadata using the great "
+"SqlAlchemy library, you should be able to use any database backend "
+"supported as a SqlAlchemy backend. We recommend using **MySQL** or "
+"**Postgres**."
+msgstr ""
+
+#: ../../howto/initialize-database.rst:28
+msgid ""
+"We rely on more strict ANSI SQL settings for MySQL in order to have sane "
+"defaults. Make sure to have specified `explicit_defaults_for_timestamp=1`"
+" in your my.cnf under `[mysqld]`"
+msgstr ""
+
+#: ../../howto/initialize-database.rst:32
+msgid ""
+"If you decide to use **Postgres**, we recommend using the ``psycopg2`` "
+"driver and specifying it in your SqlAlchemy connection string. (I.e., "
+"``postgresql+psycopg2://<user>:<password>@<host>/<db>``.) Also note that "
+"since SqlAlchemy does not expose a way to target a specific schema in the"
+" Postgres connection URI, you may want to set a default schema for your "
+"role with a command similar to ``ALTER ROLE username SET search_path = "
+"airflow, foobar;``"
+msgstr ""
+
+#: ../../howto/initialize-database.rst:40
+msgid ""
+"Once you've setup your database to host Airflow, you'll need to alter the"
+" SqlAlchemy connection string located in your configuration file "
+"``$AIRFLOW_HOME/airflow.cfg``. You should then also change the "
+"\"executor\" setting to use \"LocalExecutor\", an executor that can "
+"parallelize task instances locally."
+msgstr ""
+

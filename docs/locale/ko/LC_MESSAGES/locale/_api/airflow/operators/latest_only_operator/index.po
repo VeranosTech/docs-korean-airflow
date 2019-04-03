@@ -1,0 +1,45 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C)
+# This file is distributed under the same license as the Airflow package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Airflow 1.10.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-04-03 17:47+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../_api/airflow/operators/latest_only_operator/index.rst:4
+msgid ":mod:`airflow.operators.latest_only_operator`"
+msgstr ""
+
+#: ../../_api/airflow/operators/latest_only_operator/index.rst:15
+msgid "Module Contents"
+msgstr ""
+
+#: ../../_api/airflow/operators/latest_only_operator/index.rst:24
+msgid ""
+"Bases::class:`airflow.models.BaseOperator`, "
+":class:`airflow.models.skipmixin.SkipMixin`"
+msgstr ""
+
+#: ../../_api/airflow/operators/latest_only_operator/index.rst:28
+msgid ""
+"Allows a workflow to skip tasks that are not running during the most "
+"recent schedule interval."
+msgstr ""
+
+#: ../../_api/airflow/operators/latest_only_operator/index.rst:31
+msgid ""
+"If the task is run outside of the latest schedule interval, all directly "
+"downstream tasks will be skipped."
+msgstr ""
+

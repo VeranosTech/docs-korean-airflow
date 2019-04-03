@@ -1,0 +1,160 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C)
+# This file is distributed under the same license as the Airflow package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Airflow 1.10.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-04-03 17:47+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../_api/index.rst:19
+msgid "API Reference"
+msgstr ""
+
+#: ../../_api/index.rst:22
+msgid "Operators"
+msgstr ""
+
+#: ../../_api/index.rst:23
+msgid ""
+"Operators allow for generation of certain types of tasks that become "
+"nodes in the DAG when instantiated. All operators derive from "
+":class:`~airflow.models.BaseOperator` and inherit many attributes and "
+"methods that way."
+msgstr ""
+
+#: ../../_api/index.rst:27
+msgid "There are 3 main types of operators:"
+msgstr ""
+
+#: ../../_api/index.rst:29
+msgid ""
+"Operators that performs an **action**, or tell another system to perform "
+"an action"
+msgstr ""
+
+#: ../../_api/index.rst:31
+msgid "**Transfer** operators move data from one system to another"
+msgstr ""
+
+#: ../../_api/index.rst:32
+msgid ""
+"**Sensors** are a certain type of operator that will keep running until a"
+" certain criterion is met. Examples include a specific file landing in "
+"HDFS or S3, a partition appearing in Hive, or a specific time of the day."
+" Sensors are derived from "
+":class:`~airflow.sensors.base_sensor_operator.BaseSensorOperator` and run"
+" a poke method at a specified "
+":attr:`~airflow.sensors.base_sensor_operator.BaseSensorOperator.poke_interval`"
+" until it returns ``True``."
+msgstr ""
+
+#: ../../_api/index.rst:39
+msgid "BaseOperator"
+msgstr ""
+
+#: ../../_api/index.rst:40
+msgid ""
+"All operators are derived from :class:`~airflow.models.BaseOperator` and "
+"acquire much functionality through inheritance. Since this is the core of"
+" the engine, it's worth taking the time to understand the parameters of "
+":class:`~airflow.models.BaseOperator` to understand the primitive "
+"features that can be leveraged in your DAGs."
+msgstr ""
+
+#: ../../_api/index.rst:47
+msgid "BaseSensorOperator"
+msgstr ""
+
+#: ../../_api/index.rst:48
+msgid ""
+"All sensors are derived from "
+":class:`~airflow.sensors.base_sensor_operator.BaseSensorOperator`. All "
+"sensors inherit the "
+":attr:`~airflow.sensors.base_sensor_operator.BaseSensorOperator.timeout` "
+"and "
+":attr:`~airflow.sensors.base_sensor_operator.BaseSensorOperator.poke_interval`"
+" on top of the :class:`~airflow.models.BaseOperator` attributes."
+msgstr ""
+
+#: ../../_api/index.rst:53
+msgid "Operators packages"
+msgstr ""
+
+#: ../../_api/index.rst:54
+msgid "All operators are in the following packages:"
+msgstr ""
+
+#: ../../_api/index.rst:71
+msgid "Hooks"
+msgstr ""
+
+#: ../../_api/index.rst:72
+msgid ""
+"Hooks are interfaces to external platforms and databases, implementing a "
+"common interface when possible and acting as building blocks for "
+"operators. All hooks are derived from "
+":class:`~airflow.hooks.base_hook.BaseHook`."
+msgstr ""
+
+#: ../../_api/index.rst:77
+msgid "Hooks packages"
+msgstr ""
+
+#: ../../_api/index.rst:78
+msgid "All hooks are in the following packages:"
+msgstr ""
+
+#: ../../_api/index.rst:91
+msgid "Executors"
+msgstr ""
+
+#: ../../_api/index.rst:92
+msgid ""
+"Executors are the mechanism by which task instances get run. All "
+"executors are derived from "
+":class:`~airflow.executors.base_executor.BaseExecutor`."
+msgstr ""
+
+#: ../../_api/index.rst:96
+msgid "Executors packages"
+msgstr ""
+
+#: ../../_api/index.rst:97
+msgid "All executors are in the following packages:"
+msgstr ""
+
+#: ../../_api/index.rst:110
+msgid "Models"
+msgstr ""
+
+#: ../../_api/index.rst:111
+msgid ""
+"Models are built on top of the SQLAlchemy ORM Base class, and instances "
+"are persisted in the database."
+msgstr ""
+
+#: ../../_api/index.rst:123
+msgid "Core and community package"
+msgstr ""
+
+#: ../../_api/index.rst:124
+msgid ""
+"Formerly the core code was maintained by the original creators - Airbnb. "
+"The code that was in the contrib package was supported by the community. "
+"The project was passed to the Apache community and currently the entire "
+"code is maintained by the community, so now the division has no "
+"justification, and it is only due to historical reasons. Currently, all "
+"new classes are added only to the contrib package."
+msgstr ""
+

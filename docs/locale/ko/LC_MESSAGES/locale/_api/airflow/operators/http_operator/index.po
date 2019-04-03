@@ -1,0 +1,77 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C)
+# This file is distributed under the same license as the Airflow package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Airflow 1.10.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-04-03 17:47+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../_api/airflow/operators/http_operator/index.rst:4
+msgid ":mod:`airflow.operators.http_operator`"
+msgstr ""
+
+#: ../../_api/airflow/operators/http_operator/index.rst:15
+msgid "Module Contents"
+msgstr ""
+
+#: ../../_api/airflow/operators/http_operator/index.rst:24
+msgid "Bases::class:`airflow.models.BaseOperator`"
+msgstr ""
+
+#: ../../_api/airflow/operators/http_operator/index.rst:28
+msgid "Calls an endpoint on an HTTP system to execute an action"
+msgstr ""
+
+#: ../../_api/airflow/operators/http_operator/index.rst
+msgid "Parameters"
+msgstr ""
+
+#: ../../_api/airflow/operators/http_operator/index.rst:30
+msgid "The connection to run the operator against"
+msgstr ""
+
+#: ../../_api/airflow/operators/http_operator/index.rst:32
+msgid "The relative part of the full url. (templated)"
+msgstr ""
+
+#: ../../_api/airflow/operators/http_operator/index.rst:34
+msgid "The HTTP method to use, default = \"POST\""
+msgstr ""
+
+#: ../../_api/airflow/operators/http_operator/index.rst:36
+msgid ""
+"The data to pass. POST-data in POST/PUT and params in the URL for a GET "
+"request. (templated)"
+msgstr ""
+
+#: ../../_api/airflow/operators/http_operator/index.rst:40
+msgid "The HTTP headers to be added to the GET request"
+msgstr ""
+
+#: ../../_api/airflow/operators/http_operator/index.rst:42
+msgid ""
+"A check against the 'requests' response object. Returns True for 'pass' "
+"and False otherwise."
+msgstr ""
+
+#: ../../_api/airflow/operators/http_operator/index.rst:45
+msgid ""
+"Extra options for the 'requests' library, see the 'requests' "
+"documentation (options to modify timeout, ssl, etc.)"
+msgstr ""
+
+#: ../../_api/airflow/operators/http_operator/index.rst:49
+msgid "Log the response (default: False)"
+msgstr ""
+

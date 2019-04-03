@@ -1,0 +1,167 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C)
+# This file is distributed under the same license as the Airflow package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Airflow 1.10.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-04-03 17:47+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../howto/connection/gcp.rst:21
+msgid "Google Cloud Platform Connection"
+msgstr ""
+
+#: ../../howto/connection/gcp.rst:23
+msgid ""
+"The Google Cloud Platform connection type enables the :ref:`GCP "
+"Integrations <GCP>`."
+msgstr ""
+
+#: ../../howto/connection/gcp.rst:27
+msgid "Authenticating to GCP"
+msgstr ""
+
+#: ../../howto/connection/gcp.rst:29
+msgid "There are two ways to connect to GCP using Airflow."
+msgstr ""
+
+#: ../../howto/connection/gcp.rst:31
+msgid ""
+"Use `Application Default Credentials <https://google-"
+"auth.readthedocs.io/en/latest/reference/google.auth.html#google.auth.default>`_,"
+" such as via the metadata server when running on Google Compute Engine."
+msgstr ""
+
+#: ../../howto/connection/gcp.rst:34
+msgid ""
+"Use a `service account "
+"<https://cloud.google.com/docs/authentication/#service_accounts>`_ key "
+"file (JSON format) on disk."
+msgstr ""
+
+#: ../../howto/connection/gcp.rst:39
+msgid "Default Connection IDs"
+msgstr ""
+
+#: ../../howto/connection/gcp.rst:41
+msgid ""
+"All hooks and operators related to Google Cloud Platform use "
+"``google_cloud_default`` by default."
+msgstr ""
+
+#: ../../howto/connection/gcp.rst:44
+msgid "Configuring the Connection"
+msgstr ""
+
+#: ../../howto/connection/gcp.rst:48
+msgid "Project Id (optional)"
+msgstr ""
+
+#: ../../howto/connection/gcp.rst:47
+msgid ""
+"The Google Cloud project ID to connect to. It is used as default project "
+"id by operators using it and can usually be overridden at the operator "
+"level."
+msgstr ""
+
+#: ../../howto/connection/gcp.rst:55
+msgid "Keyfile Path"
+msgstr ""
+
+#: ../../howto/connection/gcp.rst:51
+msgid ""
+"Path to a `service account "
+"<https://cloud.google.com/docs/authentication/#service_accounts>`_ key "
+"file (JSON format) on disk."
+msgstr ""
+
+#: ../../howto/connection/gcp.rst:55 ../../howto/connection/gcp.rst:62
+msgid "Not required if using application default credentials."
+msgstr ""
+
+#: ../../howto/connection/gcp.rst:62
+msgid "Keyfile JSON"
+msgstr ""
+
+#: ../../howto/connection/gcp.rst:58
+msgid ""
+"Contents of a `service account "
+"<https://cloud.google.com/docs/authentication/#service_accounts>`_ key "
+"file (JSON format) on disk. It is recommended to :doc:`Secure your "
+"connections <../secure-connections>` if using this method to "
+"authenticate."
+msgstr ""
+
+#: ../../howto/connection/gcp.rst:93
+msgid "Scopes (comma separated)"
+msgstr ""
+
+#: ../../howto/connection/gcp.rst:65
+msgid ""
+"A list of comma-separated `Google Cloud scopes "
+"<https://developers.google.com/identity/protocols/googlescopes>`_ to "
+"authenticate with."
+msgstr ""
+
+#: ../../howto/connection/gcp.rst:70
+msgid ""
+"Scopes are ignored when using application default credentials. See issue "
+"`AIRFLOW-2522 <https://issues.apache.org/jira/browse/AIRFLOW-2522>`_."
+msgstr ""
+
+#: ../../howto/connection/gcp.rst:74
+msgid ""
+"When specifying the connection in environment variable you should specify"
+" it using URI syntax, with the following requirements:"
+msgstr ""
+
+#: ../../howto/connection/gcp.rst:77
+msgid ""
+"scheme part should be equals ``google-cloud-platform`` (Note: look for a "
+"hyphen character)"
+msgstr ""
+
+#: ../../howto/connection/gcp.rst:79
+msgid "authority (username, password, host, port), path is ignored"
+msgstr ""
+
+#: ../../howto/connection/gcp.rst:80
+msgid ""
+"query parameters contains information specific to this type of "
+"connection. The following keys are accepted:"
+msgstr ""
+
+#: ../../howto/connection/gcp.rst:83
+msgid "``extra__google_cloud_platform__project`` - Project Id"
+msgstr ""
+
+#: ../../howto/connection/gcp.rst:84
+msgid "``extra__google_cloud_platform__key_path`` - Keyfile Path"
+msgstr ""
+
+#: ../../howto/connection/gcp.rst:85
+msgid "``extra__google_cloud_platform__key_dict`` - Keyfile JSON"
+msgstr ""
+
+#: ../../howto/connection/gcp.rst:86
+msgid "``extra__google_cloud_platform__scope`` - Scopes"
+msgstr ""
+
+#: ../../howto/connection/gcp.rst:88
+msgid "Note that all components of the URI should be URL-encoded."
+msgstr ""
+
+#: ../../howto/connection/gcp.rst:90
+msgid "For example:"
+msgstr ""
+

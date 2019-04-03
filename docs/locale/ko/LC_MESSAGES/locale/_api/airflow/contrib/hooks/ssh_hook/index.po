@@ -1,0 +1,111 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C)
+# This file is distributed under the same license as the Airflow package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Airflow 1.10.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-04-03 17:47+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../_api/airflow/contrib/hooks/ssh_hook/index.rst:4
+msgid ":mod:`airflow.contrib.hooks.ssh_hook`"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/ssh_hook/index.rst:15
+msgid "Module Contents"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/ssh_hook/index.rst:24
+msgid "Bases::class:`airflow.hooks.base_hook.BaseHook`"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/ssh_hook/index.rst:28
+msgid ""
+"Hook for ssh remote execution using Paramiko. ref: "
+"https://github.com/paramiko/paramiko This hook also lets you create ssh "
+"tunnel and serve as basis for SFTP file transfer"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/ssh_hook/index.rst
+msgid "Parameters"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/ssh_hook/index.rst:32
+msgid ""
+"connection id from airflow Connections from where all the required "
+"parameters can be fetched like username, password or key_file. Thought "
+"the priority is given to the param passed during init"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/ssh_hook/index.rst:36
+msgid "remote host to connect"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/ssh_hook/index.rst:38
+msgid "username to connect to the remote_host"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/ssh_hook/index.rst:40
+msgid "password of the username to connect to the remote_host"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/ssh_hook/index.rst:42
+msgid "key file to use to connect to the remote_host."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/ssh_hook/index.rst:44
+msgid "port of remote host to connect (Default is paramiko SSH_PORT)"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/ssh_hook/index.rst:46
+msgid "timeout for the attempt to connect to the remote_host."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/ssh_hook/index.rst:48
+msgid "send a keepalive packet to remote host every keepalive_interval seconds"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/ssh_hook/index.rst:61
+msgid "Opens a ssh connection to the remote host."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/ssh_hook/index.rst
+msgid "Return type"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/ssh_hook/index.rst:86
+msgid ""
+"Creates a tunnel between two hosts. Like ssh -L "
+"<LOCAL_PORT>:host:<REMOTE_PORT>."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/ssh_hook/index.rst:88
+msgid "The remote port to create a tunnel to"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/ssh_hook/index.rst:90
+msgid "The remote host to create a tunnel to (default localhost)"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/ssh_hook/index.rst:92
+msgid "The local port to attach the tunnel to"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/ssh_hook/index.rst
+msgid "Returns"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/ssh_hook/index.rst:95
+msgid "sshtunnel.SSHTunnelForwarder object"
+msgstr ""
+

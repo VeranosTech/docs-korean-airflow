@@ -1,0 +1,89 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C)
+# This file is distributed under the same license as the Airflow package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Airflow 1.10.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-04-03 17:47+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../_api/airflow/contrib/operators/discord_webhook_operator/index.rst:4
+msgid ":mod:`airflow.contrib.operators.discord_webhook_operator`"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/discord_webhook_operator/index.rst:15
+msgid "Module Contents"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/discord_webhook_operator/index.rst:24
+msgid "Bases::class:`airflow.operators.http_operator.SimpleHttpOperator`"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/discord_webhook_operator/index.rst:28
+msgid ""
+"This operator allows you to post messages to Discord using incoming "
+"webhooks. Takes a Discord connection ID with a default relative webhook "
+"endpoint. The default endpoint can be overridden using the "
+"webhook_endpoint parameter "
+"(https://discordapp.com/developers/docs/resources/webhook)."
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/discord_webhook_operator/index.rst:33
+msgid ""
+"Each Discord webhook can be pre-configured to use a specific username and"
+" avatar_url. You can override these defaults in this operator."
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/discord_webhook_operator/index.rst
+msgid "Parameters"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/discord_webhook_operator/index.rst:36
+msgid ""
+"Http connection ID with host as \"https://discord.com/api/\" and default "
+"webhook endpoint in the extra field in the form of {\"webhook_endpoint\":"
+" \"webhooks/{webhook.id}/{webhook.token}\"}"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/discord_webhook_operator/index.rst:40
+msgid ""
+"Discord webhook endpoint in the form of "
+"\"webhooks/{webhook.id}/{webhook.token}\""
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/discord_webhook_operator/index.rst:43
+msgid ""
+"The message you want to send to your Discord channel (max 2000 "
+"characters). (templated)"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/discord_webhook_operator/index.rst:46
+msgid "Override the default username of the webhook. (templated)"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/discord_webhook_operator/index.rst:48
+msgid "Override the default avatar of the webhook"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/discord_webhook_operator/index.rst:50
+msgid "Is a text-to-speech message"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/discord_webhook_operator/index.rst:52
+msgid "Proxy to use to make the Discord webhook call"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/discord_webhook_operator/index.rst:74
+msgid "Call the DiscordWebhookHook to post message"
+msgstr ""
+

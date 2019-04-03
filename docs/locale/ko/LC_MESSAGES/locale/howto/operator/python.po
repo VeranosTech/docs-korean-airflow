@@ -1,0 +1,57 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C)
+# This file is distributed under the same license as the Airflow package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Airflow 1.10.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-04-03 17:47+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../howto/operator/python.rst:21
+msgid "PythonOperator"
+msgstr ""
+
+#: ../../howto/operator/python.rst:23
+msgid ""
+"Use the :class:`~airflow.operators.python_operator.PythonOperator` to "
+"execute Python callables."
+msgstr ""
+
+#: ../../howto/operator/python.rst:32
+msgid "Passing in arguments"
+msgstr ""
+
+#: ../../howto/operator/python.rst:34
+msgid ""
+"Use the ``op_args`` and ``op_kwargs`` arguments to pass additional "
+"arguments to the Python callable."
+msgstr ""
+
+#: ../../howto/operator/python.rst:43
+msgid "Templating"
+msgstr ""
+
+#: ../../howto/operator/python.rst:45
+msgid ""
+"When you set the ``provide_context`` argument to ``True``, Airflow passes"
+" in an additional set of keyword arguments: one for each of the "
+":doc:`Jinja template variables <../../macros>` and a ``templates_dict`` "
+"argument."
+msgstr ""
+
+#: ../../howto/operator/python.rst:49
+msgid ""
+"The ``templates_dict`` argument is templated, so each value in the "
+"dictionary is evaluated as a :ref:`Jinja template <jinja-templating>`."
+msgstr ""
+

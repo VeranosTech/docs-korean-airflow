@@ -1,0 +1,75 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C)
+# This file is distributed under the same license as the Airflow package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Airflow 1.10.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-04-03 17:47+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../_api/airflow/models/xcom/index.rst:4
+msgid ":mod:`airflow.models.xcom`"
+msgstr ""
+
+#: ../../_api/airflow/models/xcom/index.rst:15
+msgid "Module Contents"
+msgstr ""
+
+#: ../../_api/airflow/models/xcom/index.rst:24
+msgid ""
+"Bases::class:`airflow.models.base.Base`, "
+":class:`airflow.utils.log.logging_mixin.LoggingMixin`"
+msgstr ""
+
+#: ../../_api/airflow/models/xcom/index.rst:28
+msgid "Base class for XCom objects."
+msgstr ""
+
+#: ../../_api/airflow/models/xcom/index.rst:117
+msgid ""
+"TODO: \"pickling\" has been deprecated and JSON is preferred. "
+"\"pickling\" will be removed in Airflow 2.0."
+msgstr ""
+
+#: ../../_api/airflow/models/xcom/index.rst:142
+msgid ""
+"Store an XCom value. TODO: \"pickling\" has been deprecated and JSON is "
+"preferred. \"pickling\" will be removed in Airflow 2.0."
+msgstr ""
+
+#: ../../_api/airflow/models/xcom/index.rst
+msgid "Returns"
+msgstr ""
+
+#: ../../_api/airflow/models/xcom/index.rst:146
+msgid "None"
+msgstr ""
+
+#: ../../_api/airflow/models/xcom/index.rst:155
+msgid ""
+"Retrieve an XCom value, optionally meeting certain criteria. TODO: "
+"\"pickling\" has been deprecated and JSON is preferred. \"pickling\" will"
+" be removed in Airflow 2.0."
+msgstr ""
+
+#: ../../_api/airflow/models/xcom/index.rst:159
+msgid "XCom value"
+msgstr ""
+
+#: ../../_api/airflow/models/xcom/index.rst:168
+msgid ""
+"Retrieve an XCom value, optionally meeting certain criteria TODO: "
+"\"pickling\" has been deprecated and JSON is preferred. \"pickling\" will"
+" be removed in Airflow 2.0."
+msgstr ""
+

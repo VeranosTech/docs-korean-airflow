@@ -1,0 +1,71 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C)
+# This file is distributed under the same license as the Airflow package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Airflow 1.10.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-04-03 17:47+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../_api/airflow/operators/email_operator/index.rst:4
+msgid ":mod:`airflow.operators.email_operator`"
+msgstr ""
+
+#: ../../_api/airflow/operators/email_operator/index.rst:15
+msgid "Module Contents"
+msgstr ""
+
+#: ../../_api/airflow/operators/email_operator/index.rst:24
+msgid "Bases::class:`airflow.models.BaseOperator`"
+msgstr ""
+
+#: ../../_api/airflow/operators/email_operator/index.rst:28
+msgid "Sends an email."
+msgstr ""
+
+#: ../../_api/airflow/operators/email_operator/index.rst
+msgid "Parameters"
+msgstr ""
+
+#: ../../_api/airflow/operators/email_operator/index.rst:30
+msgid "list of emails to send the email to. (templated)"
+msgstr ""
+
+#: ../../_api/airflow/operators/email_operator/index.rst:32
+msgid "subject line for the email. (templated)"
+msgstr ""
+
+#: ../../_api/airflow/operators/email_operator/index.rst:34
+msgid "content of the email, html markup is allowed. (templated)"
+msgstr ""
+
+#: ../../_api/airflow/operators/email_operator/index.rst:37
+msgid "file names to attach in email"
+msgstr ""
+
+#: ../../_api/airflow/operators/email_operator/index.rst:39
+msgid "list of recipients to be added in CC field"
+msgstr ""
+
+#: ../../_api/airflow/operators/email_operator/index.rst:41
+msgid "list of recipients to be added in BCC field"
+msgstr ""
+
+#: ../../_api/airflow/operators/email_operator/index.rst:43
+msgid "MIME sub content type"
+msgstr ""
+
+#: ../../_api/airflow/operators/email_operator/index.rst:45
+msgid "character set parameter added to the Content-Type header."
+msgstr ""
+

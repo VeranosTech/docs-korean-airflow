@@ -1,0 +1,202 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C)
+# This file is distributed under the same license as the Airflow package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Airflow 1.10.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-04-03 17:47+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../_api/airflow/contrib/hooks/azure_fileshare_hook/index.rst:4
+msgid ":mod:`airflow.contrib.hooks.azure_fileshare_hook`"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/azure_fileshare_hook/index.rst:15
+msgid "Module Contents"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/azure_fileshare_hook/index.rst:24
+msgid "Bases::class:`airflow.hooks.base_hook.BaseHook`"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/azure_fileshare_hook/index.rst:28
+msgid "Interacts with Azure FileShare Storage."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/azure_fileshare_hook/index.rst:30
+msgid ""
+"Additional options passed in the 'extra' field of the connection will be "
+"passed to the `FileService()` constructor."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/azure_fileshare_hook/index.rst
+msgid "Parameters"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/azure_fileshare_hook/index.rst:33
+msgid "Reference to the wasb connection."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/azure_fileshare_hook/index.rst:45
+msgid "Return the FileService object."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/azure_fileshare_hook/index.rst:54
+msgid "Check if a directory exists on Azure File Share."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/azure_fileshare_hook/index.rst:56
+#: ../../_api/airflow/contrib/hooks/azure_fileshare_hook/index.rst:75
+#: ../../_api/airflow/contrib/hooks/azure_fileshare_hook/index.rst:96
+#: ../../_api/airflow/contrib/hooks/azure_fileshare_hook/index.rst:115
+#: ../../_api/airflow/contrib/hooks/azure_fileshare_hook/index.rst:136
+#: ../../_api/airflow/contrib/hooks/azure_fileshare_hook/index.rst:157
+#: ../../_api/airflow/contrib/hooks/azure_fileshare_hook/index.rst:178
+#: ../../_api/airflow/contrib/hooks/azure_fileshare_hook/index.rst:199
+#: ../../_api/airflow/contrib/hooks/azure_fileshare_hook/index.rst:220
+msgid "Name of the share."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/azure_fileshare_hook/index.rst:58
+#: ../../_api/airflow/contrib/hooks/azure_fileshare_hook/index.rst:77
+#: ../../_api/airflow/contrib/hooks/azure_fileshare_hook/index.rst:98
+#: ../../_api/airflow/contrib/hooks/azure_fileshare_hook/index.rst:117
+#: ../../_api/airflow/contrib/hooks/azure_fileshare_hook/index.rst:138
+#: ../../_api/airflow/contrib/hooks/azure_fileshare_hook/index.rst:159
+#: ../../_api/airflow/contrib/hooks/azure_fileshare_hook/index.rst:180
+#: ../../_api/airflow/contrib/hooks/azure_fileshare_hook/index.rst:201
+#: ../../_api/airflow/contrib/hooks/azure_fileshare_hook/index.rst:222
+msgid "Name of the directory."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/azure_fileshare_hook/index.rst:60
+#: ../../_api/airflow/contrib/hooks/azure_fileshare_hook/index.rst:81
+msgid "Optional keyword arguments that `FileService.exists()` takes."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/azure_fileshare_hook/index.rst
+msgid "Returns"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/azure_fileshare_hook/index.rst:63
+#: ../../_api/airflow/contrib/hooks/azure_fileshare_hook/index.rst:84
+msgid "True if the file exists, False otherwise."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/azure_fileshare_hook/index.rst
+msgid "Return type"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/azure_fileshare_hook/index.rst:73
+msgid "Check if a file exists on Azure File Share."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/azure_fileshare_hook/index.rst:79
+#: ../../_api/airflow/contrib/hooks/azure_fileshare_hook/index.rst:140
+#: ../../_api/airflow/contrib/hooks/azure_fileshare_hook/index.rst:161
+#: ../../_api/airflow/contrib/hooks/azure_fileshare_hook/index.rst:182
+#: ../../_api/airflow/contrib/hooks/azure_fileshare_hook/index.rst:203
+#: ../../_api/airflow/contrib/hooks/azure_fileshare_hook/index.rst:224
+msgid "Name of the file."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/azure_fileshare_hook/index.rst:94
+msgid "Return the list of directories and files stored on a Azure File Share."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/azure_fileshare_hook/index.rst:100
+msgid ""
+"Optional keyword arguments that "
+"`FileService.list_directories_and_files()` takes."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/azure_fileshare_hook/index.rst:103
+#: ../../_api/airflow/contrib/hooks/azure_fileshare_hook/index.rst:122
+msgid "A list of files and directories"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/azure_fileshare_hook/index.rst:113
+msgid "Create a new directory on a Azure File Share."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/azure_fileshare_hook/index.rst:119
+msgid "Optional keyword arguments that `FileService.create_directory()` takes."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/azure_fileshare_hook/index.rst:132
+#: ../../_api/airflow/contrib/hooks/azure_fileshare_hook/index.rst:153
+msgid "Download a file from Azure File Share."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/azure_fileshare_hook/index.rst:134
+msgid "Where to store the file."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/azure_fileshare_hook/index.rst:142
+msgid "Optional keyword arguments that `FileService.get_file_to_path()` takes."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/azure_fileshare_hook/index.rst:155
+msgid "A filehandle to store the file to."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/azure_fileshare_hook/index.rst:163
+msgid "Optional keyword arguments that `FileService.get_file_to_stream()` takes."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/azure_fileshare_hook/index.rst:174
+msgid "Upload a file to Azure File Share."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/azure_fileshare_hook/index.rst:176
+msgid "Path to the file to load."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/azure_fileshare_hook/index.rst:184
+msgid ""
+"Optional keyword arguments that `FileService.create_file_from_path()` "
+"takes."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/azure_fileshare_hook/index.rst:195
+msgid "Upload a string to Azure File Share."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/azure_fileshare_hook/index.rst:197
+msgid "String to load."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/azure_fileshare_hook/index.rst:205
+msgid ""
+"Optional keyword arguments that `FileService.create_file_from_text()` "
+"takes."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/azure_fileshare_hook/index.rst:216
+msgid "Upload a stream to Azure File Share."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/azure_fileshare_hook/index.rst:218
+msgid "Opened file/stream to upload as the file content."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/azure_fileshare_hook/index.rst:226
+msgid "Size of the stream in bytes"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/azure_fileshare_hook/index.rst:228
+msgid ""
+"Optional keyword arguments that `FileService.create_file_from_stream()` "
+"takes."
+msgstr ""
+

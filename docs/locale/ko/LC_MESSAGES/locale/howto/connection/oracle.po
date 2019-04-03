@@ -1,0 +1,153 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C)
+# This file is distributed under the same license as the Airflow package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Airflow 1.10.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-04-03 17:47+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../howto/connection/oracle.rst:19
+msgid "Oracle Connection"
+msgstr ""
+
+#: ../../howto/connection/oracle.rst:20
+msgid "The Oracle connection type provides connection to a Oracle database."
+msgstr ""
+
+#: ../../howto/connection/oracle.rst:23
+msgid "Configuring the Connection"
+msgstr ""
+
+#: ../../howto/connection/oracle.rst:25
+msgid "Dsn (required)"
+msgstr ""
+
+#: ../../howto/connection/oracle.rst:25
+msgid "The Data Source Name. The host address for the Oracle server."
+msgstr ""
+
+#: ../../howto/connection/oracle.rst:28
+msgid "Sid (optional)"
+msgstr ""
+
+#: ../../howto/connection/oracle.rst:28
+msgid ""
+"The Oracle System ID. The uniquely identify a particular database on a "
+"system."
+msgstr ""
+
+#: ../../howto/connection/oracle.rst:31
+msgid "Service_name (optional)"
+msgstr ""
+
+#: ../../howto/connection/oracle.rst:31
+msgid "The db_unique_name of the database."
+msgstr ""
+
+#: ../../howto/connection/oracle.rst:34
+msgid "Port (optional)"
+msgstr ""
+
+#: ../../howto/connection/oracle.rst:34
+msgid "The port for the Oracle server, Default 1521."
+msgstr ""
+
+#: ../../howto/connection/oracle.rst:37
+msgid "Login (required)"
+msgstr ""
+
+#: ../../howto/connection/oracle.rst:37
+msgid "Specify the user name to connect."
+msgstr ""
+
+#: ../../howto/connection/oracle.rst:40
+msgid "Password (required)"
+msgstr ""
+
+#: ../../howto/connection/oracle.rst:40
+msgid "Specify the password to connect."
+msgstr ""
+
+#: ../../howto/connection/oracle.rst:84
+msgid "Extra (optional)"
+msgstr ""
+
+#: ../../howto/connection/oracle.rst:43
+msgid ""
+"Specify the extra parameters (as json dictionary) that can be used in "
+"Oracle connection. The following parameters are supported:"
+msgstr ""
+
+#: ../../howto/connection/oracle.rst:46
+msgid ""
+"**encoding** - The encoding to use for regular database strings. If not "
+"specified, the environment variable `NLS_LANG` is used. If the "
+"environment variable `NLS_LANG` is not set, `ASCII` is used."
+msgstr ""
+
+#: ../../howto/connection/oracle.rst:49
+msgid ""
+"**nencoding** - The encoding to use for national character set database "
+"strings. If not specified, the environment variable `NLS_NCHAR` is used. "
+"If the environment variable `NLS_NCHAR` is not used, the environment "
+"variable `NLS_LANG` is used instead, and if the environment variable "
+"`NLS_LANG` is not set, `ASCII` is used."
+msgstr ""
+
+#: ../../howto/connection/oracle.rst:53
+msgid ""
+"**threaded** - Whether or not Oracle should wrap accesses to connections "
+"with a mutex. Default value is False."
+msgstr ""
+
+#: ../../howto/connection/oracle.rst:55
+msgid "**events** - Whether or not to initialize Oracle in events mode."
+msgstr ""
+
+#: ../../howto/connection/oracle.rst:56
+msgid ""
+"**mode** - one of `sysdba`, `sysasm`, `sysoper`, `sysbkp`, `sysdgd`, "
+"`syskmt` or `sysrac` which are defined at the module level, Default mode "
+"is connecting."
+msgstr ""
+
+#: ../../howto/connection/oracle.rst:58
+msgid ""
+"**purity** - one of `new`, `self`, `default`. Specify the session "
+"acquired from the pool. configuration parameter."
+msgstr ""
+
+#: ../../howto/connection/oracle.rst:61
+msgid ""
+"More details on all Oracle connect parameters supported can be found in "
+"`cx_Oracle documentation <https://cx-"
+"oracle.readthedocs.io/en/latest/module.html#cx_Oracle.connect>`_."
+msgstr ""
+
+#: ../../howto/connection/oracle.rst:64
+msgid "Example \"extras\" field:"
+msgstr ""
+
+#: ../../howto/connection/oracle.rst:77
+msgid ""
+"When specifying the connection as URI (in AIRFLOW_CONN_* variable) you "
+"should specify it following the standard syntax of DB connections, where "
+"extras are passed as parameters of the URI (note that all components of "
+"the URI should be URL-encoded)."
+msgstr ""
+
+#: ../../howto/connection/oracle.rst:81
+msgid "For example:"
+msgstr ""
+

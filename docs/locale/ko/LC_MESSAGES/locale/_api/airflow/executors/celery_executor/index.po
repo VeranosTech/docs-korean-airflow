@@ -1,0 +1,110 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C)
+# This file is distributed under the same license as the Airflow package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Airflow 1.10.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-04-03 17:47+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../_api/airflow/executors/celery_executor/index.rst:4
+msgid ":mod:`airflow.executors.celery_executor`"
+msgstr ""
+
+#: ../../_api/airflow/executors/celery_executor/index.rst:15
+msgid "Module Contents"
+msgstr ""
+
+#: ../../_api/airflow/executors/celery_executor/index.rst:37
+msgid "To start the celery worker, run the command: airflow worker"
+msgstr ""
+
+#: ../../_api/airflow/executors/celery_executor/index.rst:84
+msgid "Bases::class:`object`"
+msgstr ""
+
+#: ../../_api/airflow/executors/celery_executor/index.rst:88
+msgid ""
+"Wrapper class used to propagate exceptions to parent processes from "
+"subprocesses."
+msgstr ""
+
+#: ../../_api/airflow/executors/celery_executor/index.rst
+msgid "Parameters"
+msgstr ""
+
+#: ../../_api/airflow/executors/celery_executor/index.rst:90
+msgid "The exception to wrap"
+msgstr ""
+
+#: ../../_api/airflow/executors/celery_executor/index.rst:92
+msgid "The stacktrace to wrap"
+msgstr ""
+
+#: ../../_api/airflow/executors/celery_executor/index.rst:109
+msgid ""
+"Fetch and return the state of the given celery task. The scope of this "
+"function is global so that it can be called by subprocesses in the pool."
+msgstr ""
+
+#: ../../_api/airflow/executors/celery_executor/index.rst:112
+msgid ""
+"a tuple of the Celery task key and the async Celery object used to fetch "
+"the task's state"
+msgstr ""
+
+#: ../../_api/airflow/executors/celery_executor/index.rst
+msgid "Returns"
+msgstr ""
+
+#: ../../_api/airflow/executors/celery_executor/index.rst:115
+msgid "a tuple of the Celery task key and the Celery state of the task"
+msgstr ""
+
+#: ../../_api/airflow/executors/celery_executor/index.rst
+msgid "Return type"
+msgstr ""
+
+#: ../../_api/airflow/executors/celery_executor/index.rst:139
+msgid "Bases::class:`airflow.executors.base_executor.BaseExecutor`"
+msgstr ""
+
+#: ../../_api/airflow/executors/celery_executor/index.rst:143
+msgid ""
+"CeleryExecutor is recommended for production use of Airflow. It allows "
+"distributing the execution of task instances to multiple worker nodes."
+msgstr ""
+
+#: ../../_api/airflow/executors/celery_executor/index.rst:146
+msgid ""
+"Celery is a simple, flexible and reliable distributed system to process "
+"vast amounts of messages, while providing operations with the tools "
+"required to maintain such a system."
+msgstr ""
+
+#: ../../_api/airflow/executors/celery_executor/index.rst:166
+msgid "How many Celery tasks should each worker process send."
+msgstr ""
+
+#: ../../_api/airflow/executors/celery_executor/index.rst:168
+msgid "Number of tasks that should be sent per process"
+msgstr ""
+
+#: ../../_api/airflow/executors/celery_executor/index.rst:178
+msgid "How many Celery tasks should be sent to each worker process."
+msgstr ""
+
+#: ../../_api/airflow/executors/celery_executor/index.rst:180
+msgid "Number of tasks that should be used per process"
+msgstr ""
+

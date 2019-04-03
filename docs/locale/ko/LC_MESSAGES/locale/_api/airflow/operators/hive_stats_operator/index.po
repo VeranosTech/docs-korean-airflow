@@ -1,0 +1,70 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C)
+# This file is distributed under the same license as the Airflow package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Airflow 1.10.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-04-03 17:47+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../_api/airflow/operators/hive_stats_operator/index.rst:4
+msgid ":mod:`airflow.operators.hive_stats_operator`"
+msgstr ""
+
+#: ../../_api/airflow/operators/hive_stats_operator/index.rst:15
+msgid "Module Contents"
+msgstr ""
+
+#: ../../_api/airflow/operators/hive_stats_operator/index.rst:24
+msgid "Bases::class:`airflow.models.BaseOperator`"
+msgstr ""
+
+#: ../../_api/airflow/operators/hive_stats_operator/index.rst:28
+msgid ""
+"Gathers partition statistics using a dynamically generated Presto query, "
+"inserts the stats into a MySql table with this format. Stats overwrite "
+"themselves if you rerun the same date/partition. ::"
+msgstr ""
+
+#: ../../_api/airflow/operators/hive_stats_operator/index.rst
+msgid "Parameters"
+msgstr ""
+
+#: ../../_api/airflow/operators/hive_stats_operator/index.rst:39
+msgid "the source table, in the format ``database.table_name``. (templated)"
+msgstr ""
+
+#: ../../_api/airflow/operators/hive_stats_operator/index.rst:41
+msgid "the source partition. (templated)"
+msgstr ""
+
+#: ../../_api/airflow/operators/hive_stats_operator/index.rst:43
+msgid ""
+"dict of expression to run against the table where keys are metric names "
+"and values are Presto compatible expressions"
+msgstr ""
+
+#: ../../_api/airflow/operators/hive_stats_operator/index.rst:46
+msgid ""
+"list of columns to blacklist, consider blacklisting blobs, large json "
+"columns, ..."
+msgstr ""
+
+#: ../../_api/airflow/operators/hive_stats_operator/index.rst:49
+msgid ""
+"a function that receives a column name and a type, and returns a dict of "
+"metric names and an Presto expressions. If None is returned, the global "
+"defaults are applied. If an empty dictionary is returned, no stats are "
+"computed for that column."
+msgstr ""
+

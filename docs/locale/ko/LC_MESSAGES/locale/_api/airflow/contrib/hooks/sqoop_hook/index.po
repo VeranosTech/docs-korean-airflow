@@ -1,0 +1,256 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C)
+# This file is distributed under the same license as the Airflow package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Airflow 1.10.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-04-03 17:47+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../_api/airflow/contrib/hooks/sqoop_hook/index.rst:4
+msgid ":mod:`airflow.contrib.hooks.sqoop_hook`"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/sqoop_hook/index.rst:10
+msgid "This module contains a sqoop 1.x hook"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/sqoop_hook/index.rst:21
+msgid "Module Contents"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/sqoop_hook/index.rst:30
+msgid "Bases::class:`airflow.hooks.base_hook.BaseHook`"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/sqoop_hook/index.rst:34
+msgid ""
+"This hook is a wrapper around the sqoop 1 binary. To be able to use the "
+"hook it is required that \"sqoop\" is in the PATH."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/sqoop_hook/index.rst:37
+msgid ""
+"Additional arguments that can be passed via the 'extra' JSON field of the"
+" sqoop connection:"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/sqoop_hook/index.rst:40
+msgid "``job_tracker``: Job tracker local|jobtracker:port."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/sqoop_hook/index.rst:41
+msgid "``namenode``: Namenode."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/sqoop_hook/index.rst:42
+msgid "``lib_jars``: Comma separated jar files to include in the classpath."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/sqoop_hook/index.rst:43
+msgid "``files``: Comma separated files to be copied to the map reduce cluster."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/sqoop_hook/index.rst:44
+msgid "``archives``: Comma separated archives to be unarchived on the compute"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/sqoop_hook/index.rst:45
+msgid "machines."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/sqoop_hook/index.rst:46
+msgid "``password_file``: Path to file containing the password."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/sqoop_hook/index.rst
+msgid "Parameters"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/sqoop_hook/index.rst:48
+msgid "Reference to the sqoop connection."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/sqoop_hook/index.rst:50
+msgid "Set sqoop to verbose."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/sqoop_hook/index.rst:52
+msgid "Number of map tasks to import in parallel."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/sqoop_hook/index.rst:54
+msgid "Properties to set via the -D argument"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/sqoop_hook/index.rst:80
+msgid "Remote Popen"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/sqoop_hook/index.rst:82
+msgid "command to remotely execute"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/sqoop_hook/index.rst:83
+msgid "extra arguments to Popen (see subprocess.Popen)"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/sqoop_hook/index.rst
+msgid "Returns"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/sqoop_hook/index.rst:84
+msgid "handle to subprocess"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/sqoop_hook/index.rst:114
+msgid ""
+"Imports table from remote location to target dir. Arguments are copies of"
+" direct sqoop command line arguments"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/sqoop_hook/index.rst:117
+msgid "Table to read"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/sqoop_hook/index.rst:118
+#: ../../_api/airflow/contrib/hooks/sqoop_hook/index.rst:141
+msgid "HDFS destination dir"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/sqoop_hook/index.rst:119
+#: ../../_api/airflow/contrib/hooks/sqoop_hook/index.rst:142
+msgid "Append data to an existing dataset in HDFS"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/sqoop_hook/index.rst:120
+msgid ""
+"\"avro\", \"sequence\", \"text\" or \"parquet\". Imports data to into the"
+" specified format. Defaults to text."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/sqoop_hook/index.rst:122
+msgid "<col,col,col…> Columns to import from table"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/sqoop_hook/index.rst:123
+#: ../../_api/airflow/contrib/hooks/sqoop_hook/index.rst:145
+msgid "Column of the table used to split work units"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/sqoop_hook/index.rst:124
+msgid "WHERE clause to use during import"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/sqoop_hook/index.rst:125
+msgid "Use direct connector if exists for the database"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/sqoop_hook/index.rst:126
+#: ../../_api/airflow/contrib/hooks/sqoop_hook/index.rst:147
+msgid "Manually specify JDBC driver class to use"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/sqoop_hook/index.rst:127
+#: ../../_api/airflow/contrib/hooks/sqoop_hook/index.rst:148
+msgid ""
+"Extra import options to pass as dict. If a key doesn't have a value, just"
+" pass an empty string to it. Don't include prefix of -- for sqoop "
+"options."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/sqoop_hook/index.rst:138
+msgid "Imports a specific query from the rdbms to hdfs"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/sqoop_hook/index.rst:140
+msgid "Free format query to run"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/sqoop_hook/index.rst:143
+msgid ""
+"\"avro\", \"sequence\", \"text\" or \"parquet\" Imports data to hdfs into"
+" the specified format. Defaults to text."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/sqoop_hook/index.rst:146
+msgid "Use direct import fast path"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/sqoop_hook/index.rst:166
+msgid ""
+"Exports Hive table to remote location. Arguments are copies of direct "
+"sqoop command line Arguments"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/sqoop_hook/index.rst:169
+msgid "Table remote destination"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/sqoop_hook/index.rst:170
+msgid "Hive table to export"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/sqoop_hook/index.rst:171
+msgid "The string to be interpreted as null for string columns"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/sqoop_hook/index.rst:173
+msgid "The string to be interpreted as null for non-string columns"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/sqoop_hook/index.rst:175
+msgid ""
+"The table in which data will be staged before being inserted into the "
+"destination table"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/sqoop_hook/index.rst:177
+msgid "Indicate that any data present in the staging table can be deleted"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/sqoop_hook/index.rst:179
+msgid "Sets a required field enclosing character"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/sqoop_hook/index.rst:180
+msgid "Sets the escape character"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/sqoop_hook/index.rst:181
+msgid "Sets the field separator character"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/sqoop_hook/index.rst:182
+msgid "Sets the end-of-line character"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/sqoop_hook/index.rst:183
+msgid "Sets a field enclosing character"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/sqoop_hook/index.rst:184
+msgid "Use batch mode for underlying statement execution"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/sqoop_hook/index.rst:185
+msgid "Transaction isolation to read uncommitted for the mappers"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/sqoop_hook/index.rst:187
+msgid ""
+"Extra export options to pass as dict. If a key doesn't have a value, just"
+" pass an empty string to it. Don't include prefix of -- for sqoop "
+"options."
+msgstr ""
+

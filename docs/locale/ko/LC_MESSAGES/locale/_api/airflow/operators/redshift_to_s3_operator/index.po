@@ -1,0 +1,102 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C)
+# This file is distributed under the same license as the Airflow package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Airflow 1.10.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-04-03 17:47+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../_api/airflow/operators/redshift_to_s3_operator/index.rst:4
+msgid ":mod:`airflow.operators.redshift_to_s3_operator`"
+msgstr ""
+
+#: ../../_api/airflow/operators/redshift_to_s3_operator/index.rst:15
+msgid "Module Contents"
+msgstr ""
+
+#: ../../_api/airflow/operators/redshift_to_s3_operator/index.rst:24
+msgid "Bases::class:`airflow.models.BaseOperator`"
+msgstr ""
+
+#: ../../_api/airflow/operators/redshift_to_s3_operator/index.rst:28
+msgid "Executes an UNLOAD command to s3 as a CSV with headers"
+msgstr ""
+
+#: ../../_api/airflow/operators/redshift_to_s3_operator/index.rst
+msgid "Parameters"
+msgstr ""
+
+#: ../../_api/airflow/operators/redshift_to_s3_operator/index.rst:30
+msgid "reference to a specific schema in redshift database"
+msgstr ""
+
+#: ../../_api/airflow/operators/redshift_to_s3_operator/index.rst:32
+msgid "reference to a specific table in redshift database"
+msgstr ""
+
+#: ../../_api/airflow/operators/redshift_to_s3_operator/index.rst:34
+msgid "reference to a specific S3 bucket"
+msgstr ""
+
+#: ../../_api/airflow/operators/redshift_to_s3_operator/index.rst:36
+msgid "reference to a specific S3 key"
+msgstr ""
+
+#: ../../_api/airflow/operators/redshift_to_s3_operator/index.rst:38
+msgid "reference to a specific redshift database"
+msgstr ""
+
+#: ../../_api/airflow/operators/redshift_to_s3_operator/index.rst:40
+msgid "reference to a specific S3 connection"
+msgstr ""
+
+#: ../../_api/airflow/operators/redshift_to_s3_operator/index.rst:42
+msgid ""
+"Whether or not to verify SSL certificates for S3 connection. By default "
+"SSL certificates are verified. You can provide the following values:  - "
+"``False``: do not validate SSL certificates. SSL will still be used"
+"          (unless use_ssl is False), but SSL certificates will not be"
+"          verified. - ``path/to/cert/bundle.pem``: A filename of the CA "
+"cert bundle to uses.          You can specify this argument if you want "
+"to use a different          CA cert bundle than the one used by botocore."
+msgstr ""
+
+#: ../../_api/airflow/operators/redshift_to_s3_operator/index.rst:42
+msgid ""
+"Whether or not to verify SSL certificates for S3 connection. By default "
+"SSL certificates are verified. You can provide the following values:"
+msgstr ""
+
+#: ../../_api/airflow/operators/redshift_to_s3_operator/index.rst:47
+msgid "``False``: do not validate SSL certificates. SSL will still be used"
+msgstr ""
+
+#: ../../_api/airflow/operators/redshift_to_s3_operator/index.rst:47
+msgid "(unless use_ssl is False), but SSL certificates will not be verified."
+msgstr ""
+
+#: ../../_api/airflow/operators/redshift_to_s3_operator/index.rst:50
+msgid "``path/to/cert/bundle.pem``: A filename of the CA cert bundle to uses."
+msgstr ""
+
+#: ../../_api/airflow/operators/redshift_to_s3_operator/index.rst:50
+msgid ""
+"You can specify this argument if you want to use a different CA cert "
+"bundle than the one used by botocore."
+msgstr ""
+
+#: ../../_api/airflow/operators/redshift_to_s3_operator/index.rst:53
+msgid "reference to a list of UNLOAD options"
+msgstr ""
+

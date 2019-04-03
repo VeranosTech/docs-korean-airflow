@@ -1,0 +1,207 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C)
+# This file is distributed under the same license as the Airflow package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Airflow 1.10.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-04-03 17:47+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../_api/airflow/contrib/hooks/imap_hook/index.rst:4
+msgid ":mod:`airflow.contrib.hooks.imap_hook`"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/imap_hook/index.rst:15
+msgid "Module Contents"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/imap_hook/index.rst:24
+msgid "Bases::class:`airflow.hooks.base_hook.BaseHook`"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/imap_hook/index.rst:28
+msgid "This hook connects to a mail server by using the imap protocol."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/imap_hook/index.rst
+msgid "Parameters"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/imap_hook/index.rst:30
+msgid ""
+"The connection id that contains the information used to authenticate the "
+"client."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/imap_hook/index.rst:56
+msgid ""
+"Checks the mail folder for mails containing attachments with the given "
+"name."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/imap_hook/index.rst:58
+msgid "The name of the attachment that will be searched for."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/imap_hook/index.rst:60
+#: ../../_api/airflow/contrib/hooks/imap_hook/index.rst:78
+#: ../../_api/airflow/contrib/hooks/imap_hook/index.rst:108
+msgid "The mail folder where to look at."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/imap_hook/index.rst:62
+#: ../../_api/airflow/contrib/hooks/imap_hook/index.rst:80
+#: ../../_api/airflow/contrib/hooks/imap_hook/index.rst:110
+#: ../../_api/airflow/contrib/hooks/imap_hook/index.rst:237
+msgid "Checks the name for a regular expression."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/imap_hook/index.rst
+msgid "Returns"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/imap_hook/index.rst:64
+msgid "True if there is an attachment with the given name and False if not."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/imap_hook/index.rst
+msgid "Return type"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/imap_hook/index.rst:74
+msgid "Retrieves mail's attachments in the mail folder by its name."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/imap_hook/index.rst:76
+#: ../../_api/airflow/contrib/hooks/imap_hook/index.rst:103
+msgid "The name of the attachment that will be downloaded."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/imap_hook/index.rst:82
+msgid "If set to True it will only retrieve the first matched attachment."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/imap_hook/index.rst:85
+#: ../../_api/airflow/contrib/hooks/imap_hook/index.rst:115
+msgid ""
+"Specify what should happen if no attachment has been found. Supported "
+"values are 'raise', 'warn' and 'ignore'. If it is set to 'raise' it will "
+"raise an exception, if set to 'warn' it will only print a warning and if "
+"set to 'ignore' it won't notify you at all."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/imap_hook/index.rst:91
+msgid "a list of tuple each containing the attachment filename and its payload."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/imap_hook/index.rst:101
+msgid ""
+"Downloads mail's attachments in the mail folder by its name to the local "
+"directory."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/imap_hook/index.rst:105
+msgid ""
+"The output directory on the local machine where the files will be "
+"downloaded to."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/imap_hook/index.rst:112
+msgid "If set to True it will only download the first matched attachment."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/imap_hook/index.rst:203
+msgid "Bases::class:`airflow.LoggingMixin`"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/imap_hook/index.rst:207
+msgid "This class simplifies working with mails returned by the imaplib client."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/imap_hook/index.rst:209
+msgid "The mail body of a mail received from imaplib client."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/imap_hook/index.rst:221
+msgid "Checks the mail for a attachments."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/imap_hook/index.rst:223
+msgid "True if it has attachments and False if not."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/imap_hook/index.rst:233
+msgid "Gets all attachments by name for the mail."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/imap_hook/index.rst:235
+msgid "The name of the attachment to look for."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/imap_hook/index.rst:239
+msgid "If set to True it will only find the first match and then quit."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/imap_hook/index.rst:241
+msgid ""
+"a list of tuples each containing name and payload where the attachments "
+"name matches the given name."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/imap_hook/index.rst:256
+msgid ""
+"This class is a wrapper for a Mail object's part and gives it more "
+"features."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/imap_hook/index.rst:258
+msgid "The mail part in a Mail object."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/imap_hook/index.rst:270
+msgid "Checks if the part is a valid mail attachment."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/imap_hook/index.rst:272
+msgid "True if it is an attachment and False if not."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/imap_hook/index.rst:282
+msgid "Checks if the given name matches the part's name."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/imap_hook/index.rst:284
+#: ../../_api/airflow/contrib/hooks/imap_hook/index.rst:298
+msgid "The name to look for."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/imap_hook/index.rst:286
+msgid "True if it matches the name (including regular expression)."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/imap_hook/index.rst:296
+msgid "Checks if the given name is equal to the part's name."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/imap_hook/index.rst:300
+msgid "True if it is equal to the given name."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/imap_hook/index.rst:310
+msgid "Gets the file including name and payload."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/imap_hook/index.rst:312
+msgid "the part's name and payload."
+msgstr ""
+

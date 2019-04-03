@@ -1,0 +1,2104 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C)
+# This file is distributed under the same license as the Airflow package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Airflow 1.10.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-04-03 17:47+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../_api/airflow/models/index.rst:4
+msgid ":mod:`airflow.models`"
+msgstr ""
+
+#: ../../_api/airflow/models/index.rst:12
+msgid "Submodules"
+msgstr ""
+
+#: ../../_api/airflow/models/index.rst:44
+msgid "Package Contents"
+msgstr ""
+
+#: ../../_api/airflow/models/index.rst:78
+msgid ""
+"Creates a new instance of the configured executor if none exists and "
+"returns it"
+msgstr ""
+
+#: ../../_api/airflow/models/index.rst:90
+msgid "Bases::class:`airflow.executors.base_executor.BaseExecutor`"
+msgstr ""
+
+#: ../../_api/airflow/models/index.rst:94
+msgid ""
+"LocalExecutor executes tasks locally in parallel. It uses the "
+"multiprocessing Python library and queues to parallelize the execution of"
+" tasks."
+msgstr ""
+
+#: ../../_api/airflow/models/index.rst:104
+#: ../../_api/airflow/models/index.rst:155
+#: ../../_api/airflow/models/index.rst:328
+#: ../../_api/airflow/models/index.rst:418
+#: ../../_api/airflow/models/index.rst:488
+#: ../../_api/airflow/models/index.rst:1510
+#: ../../_api/airflow/models/index.rst:1735
+#: ../../_api/airflow/models/index.rst:1778
+#: ../../_api/airflow/models/index.rst:2125
+#: ../../_api/airflow/models/index.rst:2232
+#: ../../_api/airflow/models/index.rst:2313
+#: ../../_api/airflow/models/index.rst:2396
+msgid "Bases::class:`object`"
+msgstr ""
+
+#: ../../_api/airflow/models/index.rst:108
+msgid ""
+"Implements LocalExecutor with unlimited parallelism, starting one process"
+" per each command to execute."
+msgstr ""
+
+#: ../../_api/airflow/models/index.rst
+msgid "Parameters"
+msgstr ""
+
+#: ../../_api/airflow/models/index.rst:127
+#: ../../_api/airflow/models/index.rst:178
+msgid "the key to identify the TI"
+msgstr ""
+
+#: ../../_api/airflow/models/index.rst:129
+#: ../../_api/airflow/models/index.rst:180
+msgid "the command to execute"
+msgstr ""
+
+#: ../../_api/airflow/models/index.rst:159
+msgid ""
+"Implements LocalExecutor with limited parallelism using a task queue to "
+"coordinate work distribution."
+msgstr ""
+
+#: ../../_api/airflow/models/index.rst:239
+#: ../../_api/airflow/models/index.rst:280
+#: ../../_api/airflow/models/index.rst:293
+#: ../../_api/airflow/models/index.rst:306
+msgid "Bases::class:`airflow.exceptions.AirflowException`"
+msgstr ""
+
+#: ../../_api/airflow/models/index.rst:252
+#: ../../_api/airflow/models/index.rst:2383
+msgid "Bases::class:`Exception`"
+msgstr ""
+
+#: ../../_api/airflow/models/index.rst:256
+msgid ""
+"Base class for all Airflow's errors. Each custom exception should be "
+"derived from this class"
+msgstr ""
+
+#: ../../_api/airflow/models/index.rst:310
+msgid "Raise when the task should be re-scheduled at a later time."
+msgstr ""
+
+#: ../../_api/airflow/models/index.rst:312
+msgid "The date when the task should be rescheduled"
+msgstr ""
+
+#: ../../_api/airflow/models/index.rst:332
+msgid "Base DAG object that both the SimpleDag and DAG inherit."
+msgstr ""
+
+#: ../../_api/airflow/models/index.rst
+msgid "Returns"
+msgstr ""
+
+#: ../../_api/airflow/models/index.rst:351
+msgid "the DAG ID"
+msgstr ""
+
+#: ../../_api/airflow/models/index.rst
+msgid "Return type"
+msgstr ""
+
+#: ../../_api/airflow/models/index.rst:362
+msgid "A list of task IDs that are in this DAG"
+msgstr ""
+
+#: ../../_api/airflow/models/index.rst:373
+msgid "The absolute path to the file that contains this DAG's definition"
+msgstr ""
+
+#: ../../_api/airflow/models/index.rst:384
+msgid "maximum number of tasks that can run simultaneously from this DAG"
+msgstr ""
+
+#: ../../_api/airflow/models/index.rst:394
+msgid "whether this DAG is paused or not"
+msgstr ""
+
+#: ../../_api/airflow/models/index.rst:404
+msgid "The pickle ID for this DAG, if it has one. Otherwise None."
+msgstr ""
+
+#: ../../_api/airflow/models/index.rst:422
+msgid "Base object that both the SimpleDagBag and DagBag inherit."
+msgstr ""
+
+#: ../../_api/airflow/models/index.rst:431
+msgid "a list of DAG IDs in this bag"
+msgstr ""
+
+#: ../../_api/airflow/models/index.rst:442
+msgid "whether the task exists in this bag"
+msgstr ""
+
+#: ../../_api/airflow/models/index.rst:457
+msgid ""
+"Saves the lineage to XCom and if configured to do so sends it to the "
+"backend."
+msgstr ""
+
+#: ../../_api/airflow/models/index.rst:471
+msgid "Prepares the lineage inlets and outlets. Inlets can be:"
+msgstr ""
+
+#: ../../_api/airflow/models/index.rst:473
+msgid ""
+"\"auto\" -> picks up any outlets from direct upstream tasks that have "
+"outlets defined, as such that if A -> B -> C and B does not have outlets "
+"but A does, these are provided as inlets."
+msgstr ""
+
+#: ../../_api/airflow/models/index.rst:475
+msgid "\"list of task_ids\" -> picks up outlets from the upstream task_ids"
+msgstr ""
+
+#: ../../_api/airflow/models/index.rst:476
+msgid "\"list of datasets\" -> manually defined list of DataSet"
+msgstr ""
+
+#: ../../_api/airflow/models/index.rst:575
+#: ../../_api/airflow/models/index.rst:651
+#: ../../_api/airflow/models/index.rst:708
+#: ../../_api/airflow/models/index.rst:772
+#: ../../_api/airflow/models/index.rst:891
+#: ../../_api/airflow/models/index.rst:1000
+#: ../../_api/airflow/models/index.rst:4080
+#: ../../_api/airflow/models/index.rst:5620
+msgid "Bases::class:`airflow.models.base.Base`"
+msgstr ""
+
+#: ../../_api/airflow/models/index.rst:579
+msgid ""
+"Dags can originate from different places (user repos, master repo, ...) "
+"and also get executed in different places (different executors). This "
+"object represents a version of a DAG and becomes a source of truth for a "
+"BackfillJob execution. A pickle is a native python serialized object, and"
+" in this case gets stored in the database for the duration of the job."
+msgstr ""
+
+#: ../../_api/airflow/models/index.rst:585
+msgid ""
+"The executors pick up the DagPickle id and read the dag definition from "
+"the database."
+msgstr ""
+
+#: ../../_api/airflow/models/index.rst:776
+msgid "Used to actively log events to the database"
+msgstr ""
+
+#: ../../_api/airflow/models/index.rst:895
+msgid "TaskFail tracks the failed run durations of each task instance."
+msgstr ""
+
+#: ../../_api/airflow/models/index.rst:1004
+msgid "TaskReschedule tracks rescheduled task instances."
+msgstr ""
+
+#: ../../_api/airflow/models/index.rst:1125
+msgid ""
+"Returns all task reschedules for the task instance and try number, in "
+"ascending order."
+msgstr ""
+
+#: ../../_api/airflow/models/index.rst:1128
+msgid "the task instance to find task reschedules for"
+msgstr ""
+
+#: ../../_api/airflow/models/index.rst:1142
+#: ../../_api/airflow/models/index.rst:2676
+#: ../../_api/airflow/models/index.rst:5126
+#: ../../_api/airflow/models/index.rst:5277
+msgid ""
+"Bases::class:`airflow.models.base.Base`, "
+":class:`airflow.utils.log.logging_mixin.LoggingMixin`"
+msgstr ""
+
+#: ../../_api/airflow/models/index.rst:1146
+msgid "Base class for XCom objects."
+msgstr ""
+
+#: ../../_api/airflow/models/index.rst:1235
+msgid ""
+"TODO: \"pickling\" has been deprecated and JSON is preferred. "
+"\"pickling\" will be removed in Airflow 2.0."
+msgstr ""
+
+#: ../../_api/airflow/models/index.rst:1260
+msgid ""
+"Store an XCom value. TODO: \"pickling\" has been deprecated and JSON is "
+"preferred. \"pickling\" will be removed in Airflow 2.0."
+msgstr ""
+
+#: ../../_api/airflow/models/index.rst:1264
+#: ../../_api/airflow/models/index.rst:5046
+#: ../../_api/airflow/models/index.rst:5060
+#: ../../_api/airflow/models/index.rst:5075
+msgid "None"
+msgstr ""
+
+#: ../../_api/airflow/models/index.rst:1273
+msgid ""
+"Retrieve an XCom value, optionally meeting certain criteria. TODO: "
+"\"pickling\" has been deprecated and JSON is preferred. \"pickling\" will"
+" be removed in Airflow 2.0."
+msgstr ""
+
+#: ../../_api/airflow/models/index.rst:1277
+msgid "XCom value"
+msgstr ""
+
+#: ../../_api/airflow/models/index.rst:1286
+msgid ""
+"Retrieve an XCom value, optionally meeting certain criteria TODO: "
+"\"pickling\" has been deprecated and JSON is preferred. \"pickling\" will"
+" be removed in Airflow 2.0."
+msgstr ""
+
+#: ../../_api/airflow/models/index.rst:1320
+#: ../../_api/airflow/models/index.rst:1370
+#: ../../_api/airflow/models/index.rst:1425
+msgid "Bases::class:`airflow.ti_deps.deps.base_ti_dep.BaseTIDep`"
+msgstr ""
+
+#: ../../_api/airflow/models/index.rst:1374
+msgid ""
+"Is the past dagrun in a state that allows this task instance to run, e.g."
+" did this task instance's task in the previous dagrun complete if we are "
+"depending on past."
+msgstr ""
+
+#: ../../_api/airflow/models/index.rst:1429
+msgid ""
+"Determines if a task's upstream tasks are in a state that allows a given "
+"task instance to run."
+msgstr ""
+
+#: ../../_api/airflow/models/index.rst:1476
+msgid ""
+"Yields a dependency status that indicate whether the given task "
+"instance's trigger rule was met."
+msgstr ""
+
+#: ../../_api/airflow/models/index.rst:1479
+msgid "the task instance to evaluate the trigger rule of"
+msgstr ""
+
+#: ../../_api/airflow/models/index.rst:1481
+msgid "Number of successful upstream tasks"
+msgstr ""
+
+#: ../../_api/airflow/models/index.rst:1483
+msgid "Number of skipped upstream tasks"
+msgstr ""
+
+#: ../../_api/airflow/models/index.rst:1485
+msgid "Number of failed upstream tasks"
+msgstr ""
+
+#: ../../_api/airflow/models/index.rst:1487
+msgid "Number of upstream_failed upstream tasks"
+msgstr ""
+
+#: ../../_api/airflow/models/index.rst:1489
+msgid "Number of completed upstream tasks"
+msgstr ""
+
+#: ../../_api/airflow/models/index.rst:1491
+msgid ""
+"This is a hack to generate the upstream_failed state creation while "
+"checking to see whether the task instance is runnable. It was the "
+"shortest path to add the feature"
+msgstr ""
+
+#: ../../_api/airflow/models/index.rst:1496
+#: ../../_api/airflow/models/index.rst:3145
+#: ../../_api/airflow/models/index.rst:4324
+#: ../../_api/airflow/models/index.rst:5028
+#: ../../_api/airflow/models/index.rst:5504
+msgid "database session"
+msgstr ""
+
+#: ../../_api/airflow/models/index.rst:1514
+msgid ""
+"A base class for contexts that specifies which dependencies should be "
+"evaluated in the context for a task instance to satisfy the requirements "
+"of the context. Also stores state related to the context that can be used"
+" by dependency classes."
+msgstr ""
+
+#: ../../_api/airflow/models/index.rst:1518
+msgid ""
+"For example there could be a SomeRunContext that subclasses this class "
+"which has dependencies for:"
+msgstr ""
+
+#: ../../_api/airflow/models/index.rst:1521
+msgid ""
+"Making sure there are slots available on the infrastructure to run the "
+"task instance"
+msgstr ""
+
+#: ../../_api/airflow/models/index.rst:1522
+msgid ""
+"A task-instance's task-specific dependencies are met (e.g. the previous "
+"task instance completed successfully)"
+msgstr ""
+
+#: ../../_api/airflow/models/index.rst:1524
+msgid "..."
+msgstr ""
+
+#: ../../_api/airflow/models/index.rst:1526
+msgid ""
+"The context-specific dependencies that need to be evaluated for a task "
+"instance to run in this execution context."
+msgstr ""
+
+#: ../../_api/airflow/models/index.rst:1529
+msgid ""
+"This is a hack to generate the upstream_failed state creation while "
+"checking to see whether the task instance is runnable. It was the "
+"shortest path to add the feature. This is bad since this class should be "
+"pure (no side effects)."
+msgstr ""
+
+#: ../../_api/airflow/models/index.rst:1534
+msgid ""
+"Whether or not the context should ignore all ignoreable dependencies. "
+"Overrides the other ignore_* parameters"
+msgstr ""
+
+#: ../../_api/airflow/models/index.rst:1537
+#: ../../_api/airflow/models/index.rst:3039
+msgid "Ignore depends_on_past parameter of DAGs (e.g. for Backfills)"
+msgstr ""
+
+#: ../../_api/airflow/models/index.rst:1540
+msgid "Ignore the retry period for task instances"
+msgstr ""
+
+#: ../../_api/airflow/models/index.rst:1542
+msgid "Ignore the reschedule period for task instances"
+msgstr ""
+
+#: ../../_api/airflow/models/index.rst:1544
+#: ../../_api/airflow/models/index.rst:3042
+msgid "Ignore task-specific dependencies such as depends_on_past and trigger rule"
+msgstr ""
+
+#: ../../_api/airflow/models/index.rst:1547
+#: ../../_api/airflow/models/index.rst:3045
+msgid "Ignore the task instance's previous failure/success"
+msgstr ""
+
+#: ../../_api/airflow/models/index.rst:1588
+msgid "Traverse a directory and look for Python files."
+msgstr ""
+
+#: ../../_api/airflow/models/index.rst:1590
+msgid "the directory to traverse"
+msgstr ""
+
+#: ../../_api/airflow/models/index.rst:1592
+msgid ""
+"whether to use a heuristic to determine whether a file contains Airflow "
+"DAG definitions"
+msgstr ""
+
+#: ../../_api/airflow/models/index.rst:1594
+msgid "a list of paths to Python files in the specified directory"
+msgstr ""
+
+#: ../../_api/airflow/models/index.rst:1620
+msgid ""
+"Get a set of dates as a list based on a start, end and delta, delta can "
+"be something that can be added to `datetime.datetime` or a cron "
+"expression as a `str`"
+msgstr ""
+
+#: ../../_api/airflow/models/index.rst:1624
+msgid ":Example::"
+msgstr ""
+
+#: ../../_api/airflow/models/index.rst:1636
+msgid "anchor date to start the series from"
+msgstr ""
+
+#: ../../_api/airflow/models/index.rst:1638
+msgid "right boundary for the date range"
+msgstr ""
+
+#: ../../_api/airflow/models/index.rst:1640
+msgid ""
+"alternatively to end_date, you can specify the number of number of "
+"entries you want in the range. This number can be negative, output will "
+"always be sorted regardless"
+msgstr ""
+
+#: ../../_api/airflow/models/index.rst:1656
+msgid ""
+"Function decorator that provides a session if it isn't provided. If you "
+"want to reuse a session or run the function as part of a database "
+"transaction, you pass it to the function, if not this wrapper will create"
+" one and close it for you."
+msgstr ""
+
+#: ../../_api/airflow/models/index.rst:1684
+msgid "Send email using backend specified in EMAIL_BACKEND."
+msgstr ""
+
+#: ../../_api/airflow/models/index.rst:1697
+msgid "Test if an object is a container (iterable) but not a string"
+msgstr ""
+
+#: ../../_api/airflow/models/index.rst:1721
+msgid "Returns a pretty ascii table from tuples"
+msgstr ""
+
+#: ../../_api/airflow/models/index.rst:1723
+msgid "If namedtuple are used, the table will have headers"
+msgstr ""
+
+#: ../../_api/airflow/models/index.rst:1739
+msgid ""
+"The resources required by an operator. Resources that are not specified "
+"will use the default values from the airflow config."
+msgstr ""
+
+#: ../../_api/airflow/models/index.rst:1742
+msgid "The number of cpu cores that are required"
+msgstr ""
+
+#: ../../_api/airflow/models/index.rst:1744
+msgid "The amount of RAM required"
+msgstr ""
+
+#: ../../_api/airflow/models/index.rst:1746
+msgid "The amount of disk space required"
+msgstr ""
+
+#: ../../_api/airflow/models/index.rst:1748
+msgid "The number of gpu units that are required"
+msgstr ""
+
+#: ../../_api/airflow/models/index.rst:1782
+msgid ""
+"Static class with task instance states constants and color method to "
+"avoid hardcoding."
+msgstr ""
+
+#: ../../_api/airflow/models/index.rst:1956
+msgid ""
+"A list of states indicating that a task started and completed a run "
+"attempt. Note that the attempt could have resulted in failure or have "
+"been interrupted; in any case, it is no longer running."
+msgstr ""
+
+#: ../../_api/airflow/models/index.rst:1967
+msgid ""
+"A list of states indicating that a task either has not completed a run or"
+" has not even started."
+msgstr ""
+
+#: ../../_api/airflow/models/index.rst:1981
+#: ../../_api/airflow/models/index.rst:2038
+msgid "Bases::class:`sqlalchemy.types.TypeDecorator`"
+msgstr ""
+
+#: ../../_api/airflow/models/index.rst:1985
+msgid ""
+"Almost equivalent to :class:`~sqlalchemy.types.DateTime` with "
+"``timezone=True`` option, but it differs from that by:"
+msgstr ""
+
+#: ../../_api/airflow/models/index.rst:1988
+msgid ""
+"Never silently take naive :class:`~datetime.datetime`, instead it always "
+"raise :exc:`ValueError` unless time zone aware value."
+msgstr ""
+
+#: ../../_api/airflow/models/index.rst:1990
+msgid ""
+":class:`~datetime.datetime` value's :attr:`~datetime.datetime.tzinfo` is "
+"always converted to UTC."
+msgstr ""
+
+#: ../../_api/airflow/models/index.rst:1992
+msgid ""
+"Unlike SQLAlchemy's built-in :class:`~sqlalchemy.types.DateTime`, it "
+"never return naive :class:`~datetime.datetime`, but time zone aware "
+"value, even with SQLite or MySQL."
+msgstr ""
+
+#: ../../_api/airflow/models/index.rst:1995
+msgid "Always returns DateTime in UTC"
+msgstr ""
+
+#: ../../_api/airflow/models/index.rst:2021
+msgid ""
+"Processes DateTimes from the DB making sure it is always returning UTC. "
+"Not using timezone.convert_to_utc as that converts to configured TIMEZONE"
+" while the DB might be running with some other setting. We assume UTC "
+"datetimes in the database."
+msgstr ""
+
+#: ../../_api/airflow/models/index.rst:2085
+#: ../../_api/airflow/models/index.rst:3409
+msgid "Bases::class:`airflow.utils.log.logging_mixin.LoggingMixin`"
+msgstr ""
+
+#: ../../_api/airflow/models/index.rst:2089
+msgid "To be used in a ``with`` block and timeout its content."
+msgstr ""
+
+#: ../../_api/airflow/models/index.rst:2300
+msgid ""
+"Fetch the hostname using the callable from the config or using "
+"`socket.getfqdn` as a fallback."
+msgstr ""
+
+#: ../../_api/airflow/models/index.rst:2317
+msgid "Convenience super-class to have a logger configured with the class name"
+msgstr ""
+
+#: ../../_api/airflow/models/index.rst:2400
+msgid ""
+"A \"Null\" encryptor class that doesn't encrypt or decrypt but that "
+"presents a similar interface to Fernet."
+msgstr ""
+
+#: ../../_api/airflow/models/index.rst:2403
+msgid ""
+"The purpose of this is to make the rest of the code not have to know the "
+"difference, and to only display the message once, not 20 times when "
+"`airflow initdb` is ran."
+msgstr ""
+
+#: ../../_api/airflow/models/index.rst:2455
+msgid "Deferred load of Fernet key."
+msgstr ""
+
+#: ../../_api/airflow/models/index.rst:2457
+msgid ""
+"This function could fail either because Cryptography is not installed or "
+"because the Fernet key is invalid."
+msgstr ""
+
+#: ../../_api/airflow/models/index.rst:2460
+msgid "Fernet object"
+msgstr ""
+
+#: ../../_api/airflow/models/index.rst
+msgid "raises"
+msgstr ""
+
+#: ../../_api/airflow/models/index.rst:2461
+msgid ""
+"airflow.exceptions.AirflowException if there's a problem trying to load "
+"Fernet"
+msgstr ""
+
+#: ../../_api/airflow/models/index.rst:2486
+msgid ""
+"Clears a set of task instances, but makes sure the running ones get "
+"killed."
+msgstr ""
+
+#: ../../_api/airflow/models/index.rst:2489
+msgid "a list of task instances"
+msgstr ""
+
+#: ../../_api/airflow/models/index.rst:2490
+msgid "current session"
+msgstr ""
+
+#: ../../_api/airflow/models/index.rst:2491
+msgid "flag to check for active dag run"
+msgstr ""
+
+#: ../../_api/airflow/models/index.rst:2492
+msgid "DAG object"
+msgstr ""
+
+#: ../../_api/airflow/models/index.rst:2505
+msgid ""
+"Returns the last dag run for a dag, None if there was none. Last dag run "
+"can be any type of run eg. scheduled or backfilled. Overridden DagRuns "
+"are ignored."
+msgstr ""
+
+#: ../../_api/airflow/models/index.rst:2519
+msgid ""
+"Bases::class:`airflow.dag.base_dag.BaseDagBag`, "
+":class:`airflow.utils.log.logging_mixin.LoggingMixin`"
+msgstr ""
+
+#: ../../_api/airflow/models/index.rst:2523
+msgid ""
+"A dagbag is a collection of dags, parsed out of a folder tree and has "
+"high level configuration settings, like what database to use as a backend"
+" and what executor to use to fire off tasks. This makes it easier to run "
+"distinct environments for say production and development, tests, or for "
+"different teams or security profiles. What would have been system level "
+"settings are now dagbag level so that one system can run multiple, "
+"independent settings sets."
+msgstr ""
+
+#: ../../_api/airflow/models/index.rst:2531
+msgid "the folder to scan to find DAGs"
+msgstr ""
+
+#: ../../_api/airflow/models/index.rst:2533
+msgid "the executor to use when executing task instances in this DagBag"
+msgstr ""
+
+#: ../../_api/airflow/models/index.rst:2535
+msgid "whether to include the examples that ship with airflow or not"
+msgstr ""
+
+#: ../../_api/airflow/models/index.rst:2538
+msgid ""
+"an instance boolean that gets flipped from False to True after a file has"
+" been skipped. This is to prevent overloading the user with logging "
+"messages about skipped files. Therefore only once per DagBag is a file "
+"logged being skipped."
+msgstr ""
+
+#: ../../_api/airflow/models/index.rst:2592
+msgid "the amount of dags contained in this dagbag"
+msgstr ""
+
+#: ../../_api/airflow/models/index.rst:2601
+msgid "Gets the DAG out of the dictionary, and refreshes it if expired"
+msgstr ""
+
+#: ../../_api/airflow/models/index.rst:2610
+msgid ""
+"Given a path to a python module or zip file, this method imports the "
+"module and look for dag objects within it."
+msgstr ""
+
+#: ../../_api/airflow/models/index.rst:2620
+msgid ""
+"Fail given zombie tasks, which are tasks that haven't had a heartbeat for"
+" too long, in the current DagBag."
+msgstr ""
+
+#: ../../_api/airflow/models/index.rst:2623
+msgid "zombie task instances to kill."
+msgstr ""
+
+#: ../../_api/airflow/models/index.rst:2625
+msgid "DB session."
+msgstr ""
+
+#: ../../_api/airflow/models/index.rst:2635
+msgid ""
+"Adds the DAG into the bag, recurses into sub dags. Throws "
+"AirflowDagCycleException if a cycle is detected in this dag or its "
+"subdags"
+msgstr ""
+
+#: ../../_api/airflow/models/index.rst:2645
+msgid ""
+"Given a file path or a folder, this method looks for python modules, "
+"imports them and adds them to the dagbag collection."
+msgstr ""
+
+#: ../../_api/airflow/models/index.rst:2648
+msgid ""
+"Note that if a ``.airflowignore`` file is found while processing the "
+"directory, it will behave much like a ``.gitignore``, ignoring files that"
+" match any of the regex patterns specified in the file."
+msgstr ""
+
+#: ../../_api/airflow/models/index.rst:2653
+msgid ""
+"**Note**: The patterns in .airflowignore are treated as un-anchored "
+"regexes, not shell-like glob patterns."
+msgstr ""
+
+#: ../../_api/airflow/models/index.rst:2663
+msgid "Prints a report around DagBag loading stats"
+msgstr ""
+
+#: ../../_api/airflow/models/index.rst:2680
+msgid ""
+"Task instances store the state of a task instance. This table is the "
+"authority and single source of truth around what tasks have run and the "
+"state they are in."
+msgstr ""
+
+#: ../../_api/airflow/models/index.rst:2684
+msgid ""
+"The SqlAlchemy model doesn't have a SqlAlchemy foreign key to the task or"
+" dag model deliberately to have more control over transactions."
+msgstr ""
+
+#: ../../_api/airflow/models/index.rst:2687
+msgid ""
+"Database transactions on this table should insure double triggers and any"
+" confusion around what task instances are or aren't ready to run even "
+"while multiple schedulers may be firing task instances."
+msgstr ""
+
+#: ../../_api/airflow/models/index.rst:2908
+msgid ""
+"Return the try number that this task number will be when it is actually "
+"run."
+msgstr ""
+
+#: ../../_api/airflow/models/index.rst:2911
+msgid ""
+"If the TI is currently running, this will match the column in the "
+"databse, in all othercases this will be incremenetd"
+msgstr ""
+
+#: ../../_api/airflow/models/index.rst:2962
+msgid "Returns a tuple that identifies the task instance uniquely"
+msgstr ""
+
+#: ../../_api/airflow/models/index.rst:2972
+msgid ""
+"Returns whether a task is in UP_FOR_RETRY state and its retry interval "
+"has elapsed."
+msgstr ""
+
+#: ../../_api/airflow/models/index.rst:2983
+msgid "The task instance for the task that ran before this task instance."
+msgstr ""
+
+#: ../../_api/airflow/models/index.rst:2995
+msgid "Initialize the attributes that aren't stored in the DB."
+msgstr ""
+
+#: ../../_api/airflow/models/index.rst:3004
+#: ../../_api/airflow/models/index.rst:3015
+msgid ""
+"Returns a command that can be executed anywhere where airflow is "
+"installed. This command is part of the message sent to executors by the "
+"orchestrator."
+msgstr ""
+
+#: ../../_api/airflow/models/index.rst:3026
+msgid "Generates the shell command required to execute this task instance."
+msgstr ""
+
+#: ../../_api/airflow/models/index.rst:3028
+#: ../../_api/airflow/models/index.rst:5592
+msgid "DAG ID"
+msgstr ""
+
+#: ../../_api/airflow/models/index.rst:3030
+msgid "Task ID"
+msgstr ""
+
+#: ../../_api/airflow/models/index.rst:3032
+msgid "Execution date for the task"
+msgstr ""
+
+#: ../../_api/airflow/models/index.rst:3034
+msgid "Whether to mark the task as successful"
+msgstr ""
+
+#: ../../_api/airflow/models/index.rst:3036
+msgid ""
+"Ignore all ignorable dependencies. Overrides the other ignore_* "
+"parameters."
+msgstr ""
+
+#: ../../_api/airflow/models/index.rst:3047
+msgid "Whether to run the task locally"
+msgstr ""
+
+#: ../../_api/airflow/models/index.rst:3049
+msgid ""
+"If the DAG was serialized to the DB, the ID associated with the pickled "
+"DAG"
+msgstr ""
+
+#: ../../_api/airflow/models/index.rst:3052
+msgid "path to the file containing the DAG definition"
+msgstr ""
+
+#: ../../_api/airflow/models/index.rst:3053
+msgid "raw mode (needs more details)"
+msgstr ""
+
+#: ../../_api/airflow/models/index.rst:3054
+msgid "job ID (needs more details)"
+msgstr ""
+
+#: ../../_api/airflow/models/index.rst:3055
+msgid "the Airflow pool that the task should run in"
+msgstr ""
+
+#: ../../_api/airflow/models/index.rst:3057
+msgid "the Path to the configuration file"
+msgstr ""
+
+#: ../../_api/airflow/models/index.rst:3059
+msgid "shell command that can be used to run the task instance"
+msgstr ""
+
+#: ../../_api/airflow/models/index.rst:3068
+msgid ""
+"Get the very latest state from the database, if a session is passed, we "
+"use and looking up the state becomes part of the session, otherwise a new"
+" session is used."
+msgstr ""
+
+#: ../../_api/airflow/models/index.rst:3079
+msgid "Forces the task instance's state to FAILED in the database."
+msgstr ""
+
+#: ../../_api/airflow/models/index.rst:3088
+msgid "Refreshes the task instance from the database based on the primary key"
+msgstr ""
+
+#: ../../_api/airflow/models/index.rst:3090
+msgid ""
+"if True, indicates that the database should lock the TaskInstance "
+"(issuing a FOR UPDATE clause) until the session is committed."
+msgstr ""
+
+#: ../../_api/airflow/models/index.rst:3101
+msgid "Clears all XCom data from the database for the task instance"
+msgstr ""
+
+#: ../../_api/airflow/models/index.rst:3117
+msgid ""
+"Checks whether the dependents of this task instance have all succeeded. "
+"This is meant to be used by wait_for_downstream."
+msgstr ""
+
+#: ../../_api/airflow/models/index.rst:3120
+msgid ""
+"This is useful when you do not want to start processing the next schedule"
+" of a task until the dependents are done. For instance, if the task DROPs"
+" and recreates a table."
+msgstr ""
+
+#: ../../_api/airflow/models/index.rst:3138
+msgid ""
+"Returns whether or not all the conditions are met for this task instance "
+"to be run given the context for the dependencies (e.g. a task instance "
+"being force run from the UI will ignore some dependencies)."
+msgstr ""
+
+#: ../../_api/airflow/models/index.rst:3142
+msgid ""
+"The execution context that determines the dependencies that should be "
+"evaluated."
+msgstr ""
+
+#: ../../_api/airflow/models/index.rst:3147
+msgid "whether log details on failed dependencies on info or debug log level"
+msgstr ""
+
+#: ../../_api/airflow/models/index.rst:3172
+msgid ""
+"Get datetime of the next retry if the task instance fails. For "
+"exponential backoff, retry_delay is used as base and will be converted to"
+" seconds."
+msgstr ""
+
+#: ../../_api/airflow/models/index.rst:3182
+msgid ""
+"Checks on whether the task instance is in the right state and timeframe "
+"to be retried."
+msgstr ""
+
+#: ../../_api/airflow/models/index.rst:3192
+msgid ""
+"Returns a boolean as to whether the slot pool has room for this task to "
+"run"
+msgstr ""
+
+#: ../../_api/airflow/models/index.rst:3202
+msgid "Returns the DagRun for this TaskInstance"
+msgstr ""
+
+#: ../../_api/airflow/models/index.rst:3205
+msgid "DagRun"
+msgstr ""
+
+#: ../../_api/airflow/models/index.rst:3214
+msgid ""
+"Checks dependencies and then sets state to RUNNING if they are met. "
+"Returns True if and only if state is set to RUNNING, which implies that "
+"task should be executed, in preparation for _run_raw_task"
+msgstr ""
+
+#: ../../_api/airflow/models/index.rst:3218
+msgid "whether to turn on more verbose logging"
+msgstr ""
+
+#: ../../_api/airflow/models/index.rst:3220
+msgid "Ignore all of the non-critical dependencies, just runs"
+msgstr ""
+
+#: ../../_api/airflow/models/index.rst:3222
+msgid "Ignore depends_on_past DAG attribute"
+msgstr ""
+
+#: ../../_api/airflow/models/index.rst:3224
+msgid "Don't check the dependencies of this TI's task"
+msgstr ""
+
+#: ../../_api/airflow/models/index.rst:3226
+msgid "Disregards previous task instance state"
+msgstr ""
+
+#: ../../_api/airflow/models/index.rst:3228
+#: ../../_api/airflow/models/index.rst:3249
+msgid "Don't run the task, mark its state as success"
+msgstr ""
+
+#: ../../_api/airflow/models/index.rst:3230
+#: ../../_api/airflow/models/index.rst:3251
+msgid "Doesn't record success or failure in the DB"
+msgstr ""
+
+#: ../../_api/airflow/models/index.rst:3232
+#: ../../_api/airflow/models/index.rst:3253
+msgid "specifies the pool to use to run the task instance"
+msgstr ""
+
+#: ../../_api/airflow/models/index.rst:3234
+msgid "whether the state was changed to running or not"
+msgstr ""
+
+#: ../../_api/airflow/models/index.rst:3244
+msgid ""
+"Immediately runs the task (without checking or changing db state before "
+"execution) and then sets the appropriate final state after completion and"
+" runs any post-execute callbacks. Meant to be called only after another "
+"function changes the state to running."
+msgstr ""
+
+#: ../../_api/airflow/models/index.rst:3291
+msgid "Is task instance is eligible for retry"
+msgstr ""
+
+#: ../../_api/airflow/models/index.rst:3335
+msgid "Make an XCom available for tasks to pull."
+msgstr ""
+
+#: ../../_api/airflow/models/index.rst:3337
+msgid "A key for the XCom"
+msgstr ""
+
+#: ../../_api/airflow/models/index.rst:3339
+msgid "A value for the XCom. The value is pickled and stored in the database."
+msgstr ""
+
+#: ../../_api/airflow/models/index.rst:3342
+msgid ""
+"if provided, the XCom will not be visible until this date. This can be "
+"used, for example, to send a message to a task on a future date without "
+"it being immediately visible."
+msgstr ""
+
+#: ../../_api/airflow/models/index.rst:3354
+msgid "Pull XComs that optionally meet certain criteria."
+msgstr ""
+
+#: ../../_api/airflow/models/index.rst:3356
+msgid ""
+"The default value for `key` limits the search to XComs that were returned"
+" by other tasks (as opposed to those that were pushed manually). To "
+"remove this filter, pass key=None (or any desired value)."
+msgstr ""
+
+#: ../../_api/airflow/models/index.rst:3360
+msgid ""
+"If a single task_id string is provided, the result is the value of the "
+"most recent matching XCom from that task_id. If multiple task_ids are "
+"provided, a tuple of matching values is returned. None is returned "
+"whenever no matches are found."
+msgstr ""
+
+#: ../../_api/airflow/models/index.rst:3365
+msgid ""
+"A key for the XCom. If provided, only XComs with matching keys will be "
+"returned. The default key is 'return_value', also available as a constant"
+" XCOM_RETURN_KEY. This key is automatically given to XComs returned by "
+"tasks (as opposed to being pushed manually). To remove the filter, pass "
+"key=None."
+msgstr ""
+
+#: ../../_api/airflow/models/index.rst:3371
+msgid ""
+"Only XComs from tasks with matching ids will be pulled. Can pass None to "
+"remove the filter."
+msgstr ""
+
+#: ../../_api/airflow/models/index.rst:3374
+msgid ""
+"If provided, only pulls XComs from this DAG. If None (default), the DAG "
+"of the calling task is used."
+msgstr ""
+
+#: ../../_api/airflow/models/index.rst:3377
+msgid ""
+"If False, only XComs from the current execution_date are returned. If "
+"True, XComs from previous dates are returned as well."
+msgstr ""
+
+#: ../../_api/airflow/models/index.rst:3396
+msgid "Sets the log context."
+msgstr ""
+
+#: ../../_api/airflow/models/index.rst:3413
+msgid ""
+"Abstract base class for all operators. Since operators create objects "
+"that become nodes in the dag, BaseOperator contains many recursive "
+"methods for dag crawling behavior. To derive this class, you are expected"
+" to override the constructor as well as the 'execute' method."
+msgstr ""
+
+#: ../../_api/airflow/models/index.rst:3418
+msgid ""
+"Operators derived from this class should perform or trigger certain tasks"
+" synchronously (wait for completion). Example of operators could be an "
+"operator that runs a Pig job (PigOperator), a sensor operator that waits "
+"for a partition to land in Hive (HiveSensorOperator), or one that moves "
+"data from Hive to MySQL (Hive2MySqlOperator). Instances of these "
+"operators (tasks) target specific operations, running specific scripts, "
+"functions or data transfers."
+msgstr ""
+
+#: ../../_api/airflow/models/index.rst:3426
+msgid ""
+"This class is abstract and shouldn't be instantiated. Instantiating a "
+"class derived from this one results in the creation of a task object, "
+"which ultimately becomes a node in DAG objects. Task dependencies should "
+"be set by using the set_upstream and/or set_downstream methods."
+msgstr ""
+
+#: ../../_api/airflow/models/index.rst:3431
+msgid "a unique, meaningful id for the task"
+msgstr ""
+
+#: ../../_api/airflow/models/index.rst:3433
+msgid "the owner of the task, using the unix username is recommended"
+msgstr ""
+
+#: ../../_api/airflow/models/index.rst:3435
+msgid "the number of retries that should be performed before failing the task"
+msgstr ""
+
+#: ../../_api/airflow/models/index.rst:3438
+msgid "delay between retries"
+msgstr ""
+
+#: ../../_api/airflow/models/index.rst:3440
+msgid ""
+"allow progressive longer waits between retries by using exponential "
+"backoff algorithm on retry delay (delay will be converted into seconds)"
+msgstr ""
+
+#: ../../_api/airflow/models/index.rst:3444
+msgid "maximum delay interval between retries"
+msgstr ""
+
+#: ../../_api/airflow/models/index.rst:3446
+msgid ""
+"The ``start_date`` for the task, determines the ``execution_date`` for "
+"the first task instance. The best practice is to have the start_date "
+"rounded to your DAG's ``schedule_interval``. Daily jobs have their "
+"start_date some day at 00:00:00, hourly jobs have their start_date at "
+"00:00 of a specific hour. Note that Airflow simply looks at the latest "
+"``execution_date`` and adds the ``schedule_interval`` to determine the "
+"next ``execution_date``. It is also very important to note that different"
+" tasks' dependencies need to line up in time. If task A depends on task B"
+" and their start_date are offset in a way that their execution_date don't"
+" line up, A's dependencies will never be met. If you are looking to delay"
+" a task, for example running a daily task at 2AM, look into the "
+"``TimeSensor`` and ``TimeDeltaSensor``. We advise against using dynamic "
+"``start_date`` and recommend using fixed ones. Read the FAQ entry about "
+"start_date for more information."
+msgstr ""
+
+#: ../../_api/airflow/models/index.rst:3463
+msgid "if specified, the scheduler won't go beyond this date"
+msgstr ""
+
+#: ../../_api/airflow/models/index.rst:3465
+msgid ""
+"when set to true, task instances will run sequentially while relying on "
+"the previous task's schedule to succeed. The task instance for the "
+"start_date is allowed to run."
+msgstr ""
+
+#: ../../_api/airflow/models/index.rst:3469
+msgid ""
+"when set to true, an instance of task X will wait for tasks immediately "
+"downstream of the previous instance of task X to finish successfully "
+"before it runs. This is useful if the different instances of a task X "
+"alter the same asset, and this asset is used by tasks downstream of task "
+"X. Note that depends_on_past is forced to True wherever "
+"wait_for_downstream is used."
+msgstr ""
+
+#: ../../_api/airflow/models/index.rst:3476
+msgid ""
+"which queue to target when running this job. Not all executors implement "
+"queue management, the CeleryExecutor does support targeting specific "
+"queues."
+msgstr ""
+
+#: ../../_api/airflow/models/index.rst:3480
+msgid "a reference to the dag the task is attached to (if any)"
+msgstr ""
+
+#: ../../_api/airflow/models/index.rst:3482
+msgid ""
+"priority weight of this task against other task. This allows the executor"
+" to trigger higher priority tasks before others when things get backed "
+"up. Set priority_weight as a higher number for more important tasks."
+msgstr ""
+
+#: ../../_api/airflow/models/index.rst:3487
+msgid ""
+"weighting method used for the effective total priority weight of the "
+"task. Options are: ``{ downstream | upstream | absolute }`` default is "
+"``downstream`` When set to ``downstream`` the effective weight of the "
+"task is the aggregate sum of all downstream descendants. As a result, "
+"upstream tasks will have higher weight and will be scheduled more "
+"aggressively when using positive weight values. This is useful when you "
+"have multiple dag run instances and desire to have all upstream tasks to "
+"complete for all runs before each dag can continue processing downstream "
+"tasks. When set to ``upstream`` the effective weight is the aggregate sum"
+" of all upstream ancestors. This is the opposite where downtream tasks "
+"have higher weight and will be scheduled more aggressively when using "
+"positive weight values. This is useful when you have multiple dag run "
+"instances and prefer to have each dag complete before starting upstream "
+"tasks of other dags.  When set to ``absolute``, the effective weight is "
+"the exact ``priority_weight`` specified without additional weighting. You"
+" may want to do this when you know exactly what priority weight each task"
+" should have. Additionally, when set to ``absolute``, there is bonus "
+"effect of significantly speeding up the task creation process as for very"
+" large DAGS. Options can be set as string or using the constants defined "
+"in the static class ``airflow.utils.WeightRule``"
+msgstr ""
+
+#: ../../_api/airflow/models/index.rst:3510
+msgid ""
+"the slot pool this task should run in, slot pools are a way to limit "
+"concurrency for certain tasks"
+msgstr ""
+
+#: ../../_api/airflow/models/index.rst:3513
+msgid ""
+"time by which the job is expected to succeed. Note that this represents "
+"the ``timedelta`` after the period is closed. For example if you set an "
+"SLA of 1 hour, the scheduler would send an email soon after 1:00AM on the"
+" ``2016-01-02`` if the ``2016-01-01`` instance has not succeeded yet. The"
+" scheduler pays special attention for jobs with an SLA and sends alert "
+"emails for sla misses. SLA misses are also recorded in the database for "
+"future reference. All tasks that share the same SLA time get bundled in a"
+" single email, sent soon after that time. SLA notification are sent once "
+"and only once for each task instance."
+msgstr ""
+
+#: ../../_api/airflow/models/index.rst:3525
+msgid ""
+"max time allowed for the execution of this task instance, if it goes "
+"beyond it will raise and fail."
+msgstr ""
+
+#: ../../_api/airflow/models/index.rst:3528
+msgid ""
+"a function to be called when a task instance of this task fails. a "
+"context dictionary is passed as a single parameter to this function. "
+"Context contains references to related objects to the task instance and "
+"is documented under the macros section of the API."
+msgstr ""
+
+#: ../../_api/airflow/models/index.rst:3534
+msgid ""
+"much like the ``on_failure_callback`` except that it is executed when "
+"retries occur."
+msgstr ""
+
+#: ../../_api/airflow/models/index.rst:3537
+msgid ""
+"much like the ``on_failure_callback`` except that it is executed when the"
+" task succeeds."
+msgstr ""
+
+#: ../../_api/airflow/models/index.rst:3540
+msgid ""
+"defines the rule by which dependencies are applied for the task to get "
+"triggered. Options are: ``{ all_success | all_failed | all_done | "
+"one_success | one_failed | none_failed | dummy}`` default is "
+"``all_success``. Options can be set as string or using the constants "
+"defined in the static class ``airflow.utils.TriggerRule``"
+msgstr ""
+
+#: ../../_api/airflow/models/index.rst:3548
+msgid ""
+"A map of resource parameter names (the argument names of the Resources "
+"constructor) to their values."
+msgstr ""
+
+#: ../../_api/airflow/models/index.rst:3551
+msgid "unix username to impersonate while running the task"
+msgstr ""
+
+#: ../../_api/airflow/models/index.rst:3553
+msgid ""
+"When set, a task will be able to limit the concurrent runs across "
+"execution_dates"
+msgstr ""
+
+#: ../../_api/airflow/models/index.rst:3556
+msgid ""
+"Additional task-level configuration parameters that are interpreted by a "
+"specific executor. Parameters are namespaced by the name of executor.  "
+"**Example**: to run this task in a specific docker container through the "
+"KubernetesExecutor ::      MyOperator(...,         executor_config={"
+"         \"KubernetesExecutor\":             {\"image\": "
+"\"myCustomDockerImage\"}             }     )"
+msgstr ""
+
+#: ../../_api/airflow/models/index.rst:3556
+msgid ""
+"Additional task-level configuration parameters that are interpreted by a "
+"specific executor. Parameters are namespaced by the name of executor."
+msgstr ""
+
+#: ../../_api/airflow/models/index.rst:3560
+msgid ""
+"**Example**: to run this task in a specific docker container through the "
+"KubernetesExecutor ::"
+msgstr ""
+
+#: ../../_api/airflow/models/index.rst:3571
+msgid "if True, an XCom is pushed containing the Operator's result"
+msgstr ""
+
+#: ../../_api/airflow/models/index.rst:3642
+msgid "Returns the Operator's DAG if set, otherwise raises an error"
+msgstr ""
+
+#: ../../_api/airflow/models/index.rst:3662
+msgid ""
+"Returns the list of dependencies for the operator. These differ from "
+"execution context dependencies in that they are specific to tasks and can"
+" be extended/overridden by subclasses."
+msgstr ""
+
+#: ../../_api/airflow/models/index.rst:3674
+msgid ""
+"The schedule interval of the DAG always wins over individual tasks so "
+"that tasks within a DAG always line up. The task still needs a "
+"schedule_interval as it may not be attached to a DAG."
+msgstr ""
+
+#: ../../_api/airflow/models/index.rst:3696
+msgid "@property: list of tasks directly upstream"
+msgstr ""
+
+#: ../../_api/airflow/models/index.rst:3716
+msgid "@property: list of tasks directly downstream"
+msgstr ""
+
+#: ../../_api/airflow/models/index.rst:3776
+msgid "Implements Self >> Other == self.set_downstream(other)"
+msgstr ""
+
+#: ../../_api/airflow/models/index.rst:3778
+#: ../../_api/airflow/models/index.rst:3789
+msgid "If \"Other\" is a DAG, the DAG is assigned to the Operator."
+msgstr ""
+
+#: ../../_api/airflow/models/index.rst:3787
+msgid "Implements Self << Other == self.set_upstream(other)"
+msgstr ""
+
+#: ../../_api/airflow/models/index.rst:3798
+msgid ""
+"Called for [DAG] >> [Operator] because DAGs don't have __rshift__ "
+"operators."
+msgstr ""
+
+#: ../../_api/airflow/models/index.rst:3808
+msgid ""
+"Called for [DAG] << [Operator] because DAGs don't have __lshift__ "
+"operators."
+msgstr ""
+
+#: ../../_api/airflow/models/index.rst:3818
+msgid "Returns True if the Operator has been assigned to a DAG."
+msgstr ""
+
+#: ../../_api/airflow/models/index.rst:3827
+msgid "This hook is triggered right before self.execute() is called."
+msgstr ""
+
+#: ../../_api/airflow/models/index.rst:3836
+msgid ""
+"This is the main method to derive when creating an operator. Context is "
+"the same dictionary used as when rendering jinja templates."
+msgstr ""
+
+#: ../../_api/airflow/models/index.rst:3839
+msgid "Refer to get_template_context for more context."
+msgstr ""
+
+#: ../../_api/airflow/models/index.rst:3848
+msgid ""
+"This hook is triggered right after self.execute() is called. It is passed"
+" the execution context and any results returned by the operator."
+msgstr ""
+
+#: ../../_api/airflow/models/index.rst:3859
+msgid ""
+"Override this method to cleanup subprocesses when a task instance gets "
+"killed. Any use of the threading, subprocess or multiprocessing module "
+"within an operator needs to be cleaned up or it will leave ghost "
+"processes behind."
+msgstr ""
+
+#: ../../_api/airflow/models/index.rst:3871
+msgid ""
+"Hack sorting double chained task lists by task_id to avoid hitting "
+"max_depth on deepcopy operations."
+msgstr ""
+
+#: ../../_api/airflow/models/index.rst:3895
+msgid ""
+"Renders a template from a field. If the field is a string, it will simply"
+" render the string and return the result. If it is a collection or nested"
+" set of collections, it will traverse the structure and render all "
+"elements in it. If the field has another type, it will return it as it "
+"is."
+msgstr ""
+
+#: ../../_api/airflow/models/index.rst:3907
+msgid ""
+"Renders a template either from a file or directly in a field, and returns"
+" the rendered result."
+msgstr ""
+
+#: ../../_api/airflow/models/index.rst:3924
+msgid ""
+"Hook that is triggered after the templated fields get replaced by their "
+"content. If you need your operator to alter the content of the file "
+"before the template is rendered, it should override this method to do so."
+msgstr ""
+
+#: ../../_api/airflow/models/index.rst:3943
+msgid ""
+"Clears the state of task instances associated with the task, following "
+"the parameters specified."
+msgstr ""
+
+#: ../../_api/airflow/models/index.rst:3953
+msgid "Get a set of task instance related to this task for a specific date range."
+msgstr ""
+
+#: ../../_api/airflow/models/index.rst:3963
+msgid "Get a flat list of relatives' ids, either upstream or downstream."
+msgstr ""
+
+#: ../../_api/airflow/models/index.rst:3972
+msgid "Get a flat list of relatives, either upstream or downstream."
+msgstr ""
+
+#: ../../_api/airflow/models/index.rst:3981
+msgid "Run a set of task instances for a date range."
+msgstr ""
+
+#: ../../_api/airflow/models/index.rst:3997
+msgid "Get the direct relative ids to the current task, upstream or downstream."
+msgstr ""
+
+#: ../../_api/airflow/models/index.rst:4007
+msgid "Get the direct relatives to the current task, upstream or downstream."
+msgstr ""
+
+#: ../../_api/airflow/models/index.rst:4038
+msgid "Set a task or a task list to be directly downstream from the current task."
+msgstr ""
+
+#: ../../_api/airflow/models/index.rst:4048
+msgid "Set a task or a task list to be directly upstream from the current task."
+msgstr ""
+
+#: ../../_api/airflow/models/index.rst:4058
+msgid "See TaskInstance.xcom_push()"
+msgstr ""
+
+#: ../../_api/airflow/models/index.rst:4067
+msgid "See TaskInstance.xcom_pull()"
+msgstr ""
+
+#: ../../_api/airflow/models/index.rst:4089
+msgid "These items are stored in the database for state related information"
+msgstr ""
+
+#: ../../_api/airflow/models/index.rst:4311
+#: ../../_api/airflow/models/index.rst:5015
+msgid ""
+"Creates a dag run from this dag including the tasks associated with this "
+"dag. Returns the dag run."
+msgstr ""
+
+#: ../../_api/airflow/models/index.rst:4314
+#: ../../_api/airflow/models/index.rst:5018
+#: ../../_api/airflow/models/index.rst:5493
+msgid "defines the the run id for this dag run"
+msgstr ""
+
+#: ../../_api/airflow/models/index.rst:4316
+#: ../../_api/airflow/models/index.rst:5020
+msgid "the execution date of this dag run"
+msgstr ""
+
+#: ../../_api/airflow/models/index.rst:4318
+#: ../../_api/airflow/models/index.rst:5022
+#: ../../_api/airflow/models/index.rst:5497
+msgid "the state of the dag run"
+msgstr ""
+
+#: ../../_api/airflow/models/index.rst:4320
+#: ../../_api/airflow/models/index.rst:5024
+msgid "the date this dag run should be evaluated"
+msgstr ""
+
+#: ../../_api/airflow/models/index.rst:4322
+#: ../../_api/airflow/models/index.rst:5026
+#: ../../_api/airflow/models/index.rst:5499
+msgid "whether this dag run is externally triggered"
+msgstr ""
+
+#: ../../_api/airflow/models/index.rst:4338
+msgid ""
+"Bases::class:`airflow.dag.base_dag.BaseDag`, "
+":class:`airflow.utils.log.logging_mixin.LoggingMixin`"
+msgstr ""
+
+#: ../../_api/airflow/models/index.rst:4342
+msgid ""
+"A dag (directed acyclic graph) is a collection of tasks with directional "
+"dependencies. A dag also has a schedule, a start date and an end date "
+"(optional). For each schedule, (say daily or hourly), the DAG needs to "
+"run each individual tasks as their dependencies are met. Certain tasks "
+"have the property of depending on their own past, meaning that they can't"
+" run until their previous schedule (and upstream tasks) are completed."
+msgstr ""
+
+#: ../../_api/airflow/models/index.rst:4349
+msgid ""
+"DAGs essentially act as namespaces for tasks. A task_id can only be added"
+" once to a DAG."
+msgstr ""
+
+#: ../../_api/airflow/models/index.rst:4352
+msgid "The id of the DAG"
+msgstr ""
+
+#: ../../_api/airflow/models/index.rst:4354
+msgid "The description for the DAG to e.g. be shown on the webserver"
+msgstr ""
+
+#: ../../_api/airflow/models/index.rst:4356
+msgid ""
+"Defines how often that DAG runs, this timedelta object gets added to your"
+" latest task instance's execution_date to figure out the next schedule"
+msgstr ""
+
+#: ../../_api/airflow/models/index.rst:4362
+msgid "The timestamp from which the scheduler will attempt to backfill"
+msgstr ""
+
+#: ../../_api/airflow/models/index.rst:4365
+msgid ""
+"A date beyond which your DAG won't run, leave to None for open ended "
+"scheduling"
+msgstr ""
+
+#: ../../_api/airflow/models/index.rst:4368
+msgid ""
+"This list of folders (non relative) defines where jinja will look for "
+"your templates. Order matters. Note that jinja/airflow includes the path "
+"of your DAG file by default"
+msgstr ""
+
+#: ../../_api/airflow/models/index.rst:4373
+msgid "Template undefined type."
+msgstr ""
+
+#: ../../_api/airflow/models/index.rst:4375
+msgid ""
+"a dictionary of macros that will be exposed in your jinja templates. For "
+"example, passing ``dict(foo='bar')`` to this argument allows you to ``{{ "
+"foo }}`` in all jinja templates related to this DAG. Note that you can "
+"pass any type of object here."
+msgstr ""
+
+#: ../../_api/airflow/models/index.rst:4381
+#, python-format
+msgid ""
+"a dictionary of filters that will be exposed in your jinja templates. For"
+" example, passing ``dict(hello=lambda name: 'Hello %s' % name)`` to this "
+"argument allows you to ``{{ 'world' | hello }}`` in all jinja templates "
+"related to this DAG."
+msgstr ""
+
+#: ../../_api/airflow/models/index.rst:4387
+msgid ""
+"A dictionary of default parameters to be used as constructor keyword "
+"parameters when initialising operators. Note that operators have the same"
+" hook, and precede those defined here, meaning that if your dict contains"
+" `'depends_on_past': True` here and `'depends_on_past': False` in the "
+"operator's call `default_args`, the actual value will be `False`."
+msgstr ""
+
+#: ../../_api/airflow/models/index.rst:4394
+msgid ""
+"a dictionary of DAG level parameters that are made accessible in "
+"templates, namespaced under `params`. These params can be overridden at "
+"the task level."
+msgstr ""
+
+#: ../../_api/airflow/models/index.rst:4398
+msgid "the number of task instances allowed to run concurrently"
+msgstr ""
+
+#: ../../_api/airflow/models/index.rst:4401
+msgid ""
+"maximum number of active DAG runs, beyond this number of DAG runs in a "
+"running state, the scheduler won't create new active DAG runs"
+msgstr ""
+
+#: ../../_api/airflow/models/index.rst:4405
+msgid ""
+"specify how long a DagRun should be up before timing out / failing, so "
+"that new DagRuns can be created. The timeout is only enforced for "
+"scheduled DagRuns, and only once the # of active DagRuns == "
+"max_active_runs."
+msgstr ""
+
+#: ../../_api/airflow/models/index.rst:4410
+msgid "specify a function to call when reporting SLA timeouts."
+msgstr ""
+
+#: ../../_api/airflow/models/index.rst:4413
+msgid "Specify DAG default view (tree, graph, duration, gantt, landing_times)"
+msgstr ""
+
+#: ../../_api/airflow/models/index.rst:4416
+msgid "Specify DAG orientation in graph view (LR, TB, RL, BT)"
+msgstr ""
+
+#: ../../_api/airflow/models/index.rst:4418
+msgid "Perform scheduler catchup (or only run latest)? Defaults to True"
+msgstr ""
+
+#: ../../_api/airflow/models/index.rst:4420
+msgid ""
+"A function to be called when a DagRun of this dag fails. A context "
+"dictionary is passed as a single parameter to this function."
+msgstr ""
+
+#: ../../_api/airflow/models/index.rst:4423
+msgid ""
+"Much like the ``on_failure_callback`` except that it is executed when the"
+" dag succeeds."
+msgstr ""
+
+#: ../../_api/airflow/models/index.rst:4426
+msgid ""
+"Specify optional DAG-level permissions, e.g., \"{'role1': "
+"{'can_dag_read'}, 'role2': {'can_dag_read', 'can_dag_edit'}}\""
+msgstr ""
+
+#: ../../_api/airflow/models/index.rst:4517
+msgid "File location of where the dag object is instantiated"
+msgstr ""
+
+#: ../../_api/airflow/models/index.rst:4527
+msgid "Folder location of where the dag object is instantiated"
+msgstr ""
+
+#: ../../_api/airflow/models/index.rst:4547
+msgid ""
+"Returns a boolean indicating whether the concurrency limit for this DAG "
+"has been reached"
+msgstr ""
+
+#: ../../_api/airflow/models/index.rst:4558
+msgid "Returns a boolean indicating whether this DAG is paused"
+msgstr ""
+
+#: ../../_api/airflow/models/index.rst:4568
+msgid "Returns the latest date for which at least one dag run exists"
+msgstr ""
+
+#: ../../_api/airflow/models/index.rst:4578
+msgid "Returns a list of the subdag objects associated to this DAG"
+msgstr ""
+
+#: ../../_api/airflow/models/index.rst:4649
+msgid "This is only there for backward compatible jinja2 templates"
+msgstr ""
+
+#: ../../_api/airflow/models/index.rst:4665
+msgid "Figures out if the DAG schedule has a fixed time (e.g. 3 AM)."
+msgstr ""
+
+#: ../../_api/airflow/models/index.rst:4667
+msgid "True if the schedule has a fixed time, False if not."
+msgstr ""
+
+#: ../../_api/airflow/models/index.rst:4676
+msgid "Calculates the following schedule for this dag in UTC."
+msgstr ""
+
+#: ../../_api/airflow/models/index.rst:4678
+#: ../../_api/airflow/models/index.rst:4679
+#: ../../_api/airflow/models/index.rst:4690
+#: ../../_api/airflow/models/index.rst:4691
+msgid "utc datetime"
+msgstr ""
+
+#: ../../_api/airflow/models/index.rst:4688
+msgid "Calculates the previous schedule for this dag in UTC"
+msgstr ""
+
+#: ../../_api/airflow/models/index.rst:4700
+msgid ""
+"Returns a list of dates between the interval received as parameter using "
+"this dag's schedule interval. Returned dates can be used for execution "
+"dates."
+msgstr ""
+
+#: ../../_api/airflow/models/index.rst:4703
+msgid "the start date of the interval"
+msgstr ""
+
+#: ../../_api/airflow/models/index.rst:4705
+msgid "the end date of the interval, defaults to timezone.utcnow()"
+msgstr ""
+
+#: ../../_api/airflow/models/index.rst:4707
+msgid "a list of dates within the interval following the dag's schedule"
+msgstr ""
+
+#: ../../_api/airflow/models/index.rst:4717
+msgid "Returns dttm + interval unless dttm is first interval then it returns dttm"
+msgstr ""
+
+#: ../../_api/airflow/models/index.rst:4747
+msgid ""
+"Triggers the appropriate callback depending on the value of success, "
+"namely the on_failure_callback or on_success_callback. This method gets "
+"the context of a single TaskInstance part of this DagRun and passes that "
+"to the callable along with a 'reason', primarily to differentiate DagRun "
+"failures."
+msgstr ""
+
+#: ../../_api/airflow/models/index.rst:4755
+msgid "DagRun object"
+msgstr ""
+
+#: ../../_api/airflow/models/index.rst:4756
+msgid "Flag to specify if failure or success callback should be called"
+msgstr ""
+
+#: ../../_api/airflow/models/index.rst:4757
+msgid "Completion reason"
+msgstr ""
+
+#: ../../_api/airflow/models/index.rst:4758
+msgid "Database session"
+msgstr ""
+
+#: ../../_api/airflow/models/index.rst:4767
+msgid "Returns a list of dag run execution dates currently running"
+msgstr ""
+
+#: ../../_api/airflow/models/index.rst:4770
+msgid "List of execution dates"
+msgstr ""
+
+#: ../../_api/airflow/models/index.rst:4779
+msgid "Returns the number of active \"running\" dag runs"
+msgstr ""
+
+#: ../../_api/airflow/models/index.rst:4781
+msgid "True for externally triggered active dag runs"
+msgstr ""
+
+#: ../../_api/airflow/models/index.rst:4784
+msgid "number greater than 0 for active dag runs"
+msgstr ""
+
+#: ../../_api/airflow/models/index.rst:4793
+msgid ""
+"Returns the dag run for a given execution date if it exists, otherwise "
+"none."
+msgstr ""
+
+#: ../../_api/airflow/models/index.rst:4796
+msgid "The execution date of the DagRun to find."
+msgstr ""
+
+#: ../../_api/airflow/models/index.rst:4798
+msgid "The DagRun if found, otherwise None."
+msgstr ""
+
+#: ../../_api/airflow/models/index.rst:4821
+msgid ""
+"Returns a jinja2 Environment while taking into account the DAGs "
+"template_searchpath, user_defined_macros and user_defined_filters"
+msgstr ""
+
+#: ../../_api/airflow/models/index.rst:4831
+msgid ""
+"Simple utility method to set dependency between two tasks that already "
+"have been added to the DAG using add_task()"
+msgstr ""
+
+#: ../../_api/airflow/models/index.rst:4848
+msgid ""
+"Sorts tasks in topographical order, such that a task comes after any of "
+"its upstream dependencies."
+msgstr ""
+
+#: ../../_api/airflow/models/index.rst:4851
+msgid ""
+"Heavily inspired by: http://blog.jupo.org/2012/04/06/topological-sorting-"
+"acyclic-directed-graphs/"
+msgstr ""
+
+#: ../../_api/airflow/models/index.rst:4854
+msgid "list of tasks in topological order"
+msgstr ""
+
+#: ../../_api/airflow/models/index.rst:4870
+msgid ""
+"Clears a set of task instances associated with the current dag for a "
+"specified date range."
+msgstr ""
+
+#: ../../_api/airflow/models/index.rst:4894
+msgid ""
+"Returns a subset of the current dag as a deep copy of the current dag "
+"based on a regex that should match one or many tasks, and includes "
+"upstream and downstream neighbours based on the flag passed."
+msgstr ""
+
+#: ../../_api/airflow/models/index.rst:4933
+msgid "Shows an ascii tree representation of the DAG"
+msgstr ""
+
+#: ../../_api/airflow/models/index.rst:4942
+msgid "Add a task to the DAG"
+msgstr ""
+
+#: ../../_api/airflow/models/index.rst:4944
+msgid "the task you want to add"
+msgstr ""
+
+#: ../../_api/airflow/models/index.rst:4954
+msgid "Add a list of tasks to the DAG"
+msgstr ""
+
+#: ../../_api/airflow/models/index.rst:4956
+msgid "a lit of tasks you want to add"
+msgstr ""
+
+#: ../../_api/airflow/models/index.rst:4966
+msgid "Runs the DAG."
+msgstr ""
+
+#: ../../_api/airflow/models/index.rst:4968
+msgid "the start date of the range to run"
+msgstr ""
+
+#: ../../_api/airflow/models/index.rst:4970
+msgid "the end date of the range to run"
+msgstr ""
+
+#: ../../_api/airflow/models/index.rst:4972
+msgid "True to mark jobs as succeeded without running them"
+msgstr ""
+
+#: ../../_api/airflow/models/index.rst:4974
+msgid "True to run the tasks using the LocalExecutor"
+msgstr ""
+
+#: ../../_api/airflow/models/index.rst:4976
+msgid "The executor instance to run the tasks"
+msgstr ""
+
+#: ../../_api/airflow/models/index.rst:4978
+msgid "True to avoid pickling DAG object and send to workers"
+msgstr ""
+
+#: ../../_api/airflow/models/index.rst:4980
+msgid "True to skip upstream tasks"
+msgstr ""
+
+#: ../../_api/airflow/models/index.rst:4982
+msgid ""
+"True to ignore depends_on_past dependencies for the first set of tasks "
+"only"
+msgstr ""
+
+#: ../../_api/airflow/models/index.rst:4985
+msgid "Resource pool to use"
+msgstr ""
+
+#: ../../_api/airflow/models/index.rst:4987
+msgid ""
+"Time in seconds to wait before next attempt to run dag run when "
+"max_active_runs limit has been reached"
+msgstr ""
+
+#: ../../_api/airflow/models/index.rst:4990
+msgid "Make logging output more verbose"
+msgstr ""
+
+#: ../../_api/airflow/models/index.rst:4992
+msgid "user defined dictionary passed from CLI"
+msgstr ""
+
+#: ../../_api/airflow/models/index.rst
+msgid "type"
+msgstr ""
+
+#: ../../_api/airflow/models/index.rst:4995
+#: ../../_api/airflow/models/index.rst:4997
+msgid "bool"
+msgstr ""
+
+#: ../../_api/airflow/models/index.rst:5006
+msgid "Exposes a CLI specific to this DAG"
+msgstr ""
+
+#: ../../_api/airflow/models/index.rst:5038
+msgid ""
+"Save attributes about this DAG to the DB. Note that this method can be "
+"called for both DAGs and SubDAGs. A SubDag is actually a SubDagOperator."
+msgstr ""
+
+#: ../../_api/airflow/models/index.rst:5042
+msgid "the DAG object to save to the DB"
+msgstr ""
+
+#: ../../_api/airflow/models/index.rst:5044
+msgid "The time that the DAG should be marked as sync'ed"
+msgstr ""
+
+#: ../../_api/airflow/models/index.rst:5055
+msgid ""
+"Given a list of known DAGs, deactivate any other DAGs that are marked as "
+"active in the ORM"
+msgstr ""
+
+#: ../../_api/airflow/models/index.rst:5058
+msgid "list of DAG IDs that are active"
+msgstr ""
+
+#: ../../_api/airflow/models/index.rst:5069
+msgid ""
+"Deactivate any DAGs that were last touched by the scheduler before the "
+"expiration date. These DAGs were likely deleted."
+msgstr ""
+
+#: ../../_api/airflow/models/index.rst:5072
+msgid "set inactive DAGs that were touched before this time"
+msgstr ""
+
+#: ../../_api/airflow/models/index.rst:5084
+msgid "Returns the number of task instances in the given DAG."
+msgstr ""
+
+#: ../../_api/airflow/models/index.rst:5086
+msgid "ORM session"
+msgstr ""
+
+#: ../../_api/airflow/models/index.rst:5087
+msgid "ID of the DAG to get the task concurrency of"
+msgstr ""
+
+#: ../../_api/airflow/models/index.rst:5089
+msgid "A list of valid task IDs for the given DAG"
+msgstr ""
+
+#: ../../_api/airflow/models/index.rst:5091
+msgid "A list of states to filter by if supplied"
+msgstr ""
+
+#: ../../_api/airflow/models/index.rst:5093
+msgid "The number of running tasks"
+msgstr ""
+
+#: ../../_api/airflow/models/index.rst:5103
+msgid ""
+"Check to see if there are any cycles in the DAG. Returns False if no "
+"cycle found, otherwise raises exception."
+msgstr ""
+
+#: ../../_api/airflow/models/index.rst:5113
+msgid "Checks if a cycle exists from the input task using DFS traversal"
+msgstr ""
+
+#: ../../_api/airflow/models/index.rst:5226
+msgid ""
+"Like a Python builtin dict object, setdefault returns the current value "
+"for a key, and if it isn't there, stores the default value and returns "
+"it."
+msgstr ""
+
+#: ../../_api/airflow/models/index.rst:5229
+msgid "Dict key for this Variable"
+msgstr ""
+
+#: ../../_api/airflow/models/index.rst:5231
+msgid "Default value to set and return if the variable isn't already in the DB"
+msgstr ""
+
+#: ../../_api/airflow/models/index.rst:5234
+msgid ""
+"Store this as a JSON encoded value in the DB and un-encode it when "
+"retrieving a value"
+msgstr ""
+
+#: ../../_api/airflow/models/index.rst:5236
+msgid "Mixed"
+msgstr ""
+
+#: ../../_api/airflow/models/index.rst:5281
+msgid ""
+"DagRun describes an instance of a Dag. It can be created by the scheduler"
+" (for regular runs) or by an external trigger"
+msgstr ""
+
+#: ../../_api/airflow/models/index.rst:5479
+msgid ""
+"Reloads the current dagrun from the database :param session: database "
+"session"
+msgstr ""
+
+#: ../../_api/airflow/models/index.rst:5489
+msgid "Returns a set of dag runs for the given search criteria."
+msgstr ""
+
+#: ../../_api/airflow/models/index.rst:5491
+msgid "the dag_id to find dag runs for"
+msgstr ""
+
+#: ../../_api/airflow/models/index.rst:5495
+msgid "the execution date"
+msgstr ""
+
+#: ../../_api/airflow/models/index.rst:5501
+msgid "return no backfills (True), return all (False). Defaults to False"
+msgstr ""
+
+#: ../../_api/airflow/models/index.rst:5514
+msgid "Returns the task instances for this dag run"
+msgstr ""
+
+#: ../../_api/airflow/models/index.rst:5523
+msgid "Returns the task instance specified by task_id for this dag run"
+msgstr ""
+
+#: ../../_api/airflow/models/index.rst:5525
+msgid "the task id"
+msgstr ""
+
+#: ../../_api/airflow/models/index.rst:5534
+msgid "Returns the Dag associated with this DagRun."
+msgstr ""
+
+#: ../../_api/airflow/models/index.rst:5536
+msgid "DAG"
+msgstr ""
+
+#: ../../_api/airflow/models/index.rst:5545
+msgid "The previous DagRun, if there is one"
+msgstr ""
+
+#: ../../_api/airflow/models/index.rst:5554
+msgid "The previous, SCHEDULED DagRun, if there is one"
+msgstr ""
+
+#: ../../_api/airflow/models/index.rst:5563
+msgid ""
+"Determines the overall state of the DagRun based on the state of its "
+"TaskInstances."
+msgstr ""
+
+#: ../../_api/airflow/models/index.rst:5566
+msgid "State"
+msgstr ""
+
+#: ../../_api/airflow/models/index.rst:5582
+msgid ""
+"Verifies the DagRun by checking for removed tasks or tasks that are not "
+"in the database yet. It will set state to removed or add the task if "
+"required."
+msgstr ""
+
+#: ../../_api/airflow/models/index.rst:5594
+msgid "execution date"
+msgstr ""
+
+#: ../../_api/airflow/models/index.rst:5596
+msgid ""
+"DagRun corresponding to the given dag_id and execution date if one "
+"exists. None otherwise."
+msgstr ""
+
+#: ../../_api/airflow/models/index.rst:5607
+msgid "Returns the latest DagRun for each DAG."
+msgstr ""
+
+#: ../../_api/airflow/models/index.rst:5693
+#: ../../_api/airflow/models/index.rst:5702
+msgid "Returns the number of slots used at the moment"
+msgstr ""
+
+#: ../../_api/airflow/models/index.rst:5711
+msgid "Returns the number of slots open at the moment"
+msgstr ""
+

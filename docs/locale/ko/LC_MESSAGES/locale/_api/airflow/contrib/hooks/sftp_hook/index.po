@@ -1,0 +1,109 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C)
+# This file is distributed under the same license as the Airflow package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Airflow 1.10.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-04-03 17:47+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../_api/airflow/contrib/hooks/sftp_hook/index.rst:4
+msgid ":mod:`airflow.contrib.hooks.sftp_hook`"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/sftp_hook/index.rst:15
+msgid "Module Contents"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/sftp_hook/index.rst:24
+msgid "Bases::class:`airflow.contrib.hooks.ssh_hook.SSHHook`"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/sftp_hook/index.rst:28
+msgid ""
+"This hook is inherited from SSH hook. Please refer to SSH hook for the "
+"input arguments."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/sftp_hook/index.rst:31
+msgid "Interact with SFTP. Aims to be interchangeable with FTPHook."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/sftp_hook/index.rst:33
+msgid ":Pitfalls::"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/sftp_hook/index.rst:43
+msgid "Errors that may occur throughout but should be handled downstream."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/sftp_hook/index.rst:54
+msgid "Returns an SFTP connection object"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/sftp_hook/index.rst:63
+msgid ""
+"Closes the connection. An error will occur if the connection wasnt ever "
+"opened."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/sftp_hook/index.rst:73
+msgid ""
+"Returns a dictionary of {filename: {attributes}} for all files on the "
+"remote system (where the MLSD command is supported). :param path: full "
+"path to the remote directory :type path: str"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/sftp_hook/index.rst:85
+msgid ""
+"Returns a list of files on the remote system. :param path: full path to "
+"the remote directory to list :type path: str"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/sftp_hook/index.rst:96
+msgid ""
+"Creates a directory on the remote system. :param path: full path to the "
+"remote directory to create :type path: str :param mode: int "
+"representation of octal mode for directory"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/sftp_hook/index.rst:108
+msgid ""
+"Deletes a directory on the remote system. :param path: full path to the "
+"remote directory to delete :type path: str"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/sftp_hook/index.rst:119
+msgid ""
+"Transfers the remote file to a local location. If local_full_path is a "
+"string path, the file will be put at that location :param "
+"remote_full_path: full path to the remote file :type remote_full_path: "
+"str :param local_full_path: full path to the local file :type "
+"local_full_path: str"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/sftp_hook/index.rst:134
+msgid ""
+"Transfers a local file to the remote location. If "
+"local_full_path_or_buffer is a string path, the file will be read from "
+"that location :param remote_full_path: full path to the remote file :type"
+" remote_full_path: str :param local_full_path: full path to the local "
+"file :type local_full_path: str"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/sftp_hook/index.rst:149
+msgid ""
+"Removes a file on the FTP Server :param path: full path to the remote "
+"file :type path: str"
+msgstr ""
+

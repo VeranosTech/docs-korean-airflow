@@ -1,0 +1,105 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C)
+# This file is distributed under the same license as the Airflow package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Airflow 1.10.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-04-03 17:47+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../_api/airflow/contrib/hooks/azure_cosmos_hook/index.rst:4
+msgid ":mod:`airflow.contrib.hooks.azure_cosmos_hook`"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/azure_cosmos_hook/index.rst:15
+msgid "Module Contents"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/azure_cosmos_hook/index.rst:24
+msgid "Bases::class:`airflow.hooks.base_hook.BaseHook`"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/azure_cosmos_hook/index.rst:28
+msgid "Interacts with Azure CosmosDB."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/azure_cosmos_hook/index.rst:30
+msgid ""
+"login should be the endpoint uri, password should be the master key "
+"optionally, you can use the following extras to default these values "
+"{\"database_name\": \"<DATABASE_NAME>\", \"collection_name\": "
+"\"COLLECTION_NAME\"}."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/azure_cosmos_hook/index.rst
+msgid "Parameters"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/azure_cosmos_hook/index.rst:34
+msgid "Reference to the Azure CosmosDB connection."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/azure_cosmos_hook/index.rst:46
+msgid "Return a cosmos db client."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/azure_cosmos_hook/index.rst:69
+msgid "Checks if a collection exists in CosmosDB."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/azure_cosmos_hook/index.rst:78
+msgid "Creates a new collection in the CosmosDB database."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/azure_cosmos_hook/index.rst:87
+msgid "Checks if a database exists in CosmosDB."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/azure_cosmos_hook/index.rst:96
+msgid "Creates a new database in CosmosDB."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/azure_cosmos_hook/index.rst:105
+msgid "Deletes an existing database in CosmosDB."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/azure_cosmos_hook/index.rst:114
+msgid "Deletes an existing collection in the CosmosDB database."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/azure_cosmos_hook/index.rst:123
+msgid ""
+"Inserts a new document (or updates an existing one) into an existing "
+"collection in the CosmosDB database."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/azure_cosmos_hook/index.rst:133
+msgid ""
+"Insert a list of new documents into an existing collection in the "
+"CosmosDB database."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/azure_cosmos_hook/index.rst:142
+msgid "Delete an existing document out of a collection in the CosmosDB database."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/azure_cosmos_hook/index.rst:151
+msgid "Get a document from an existing collection in the CosmosDB database."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/azure_cosmos_hook/index.rst:160
+msgid ""
+"Get a list of documents from an existing collection in the CosmosDB "
+"database via SQL query."
+msgstr ""
+

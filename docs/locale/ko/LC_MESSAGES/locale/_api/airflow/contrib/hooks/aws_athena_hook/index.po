@@ -1,0 +1,125 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C)
+# This file is distributed under the same license as the Airflow package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Airflow 1.10.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-04-03 17:47+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../_api/airflow/contrib/hooks/aws_athena_hook/index.rst:4
+msgid ":mod:`airflow.contrib.hooks.aws_athena_hook`"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/aws_athena_hook/index.rst:15
+msgid "Module Contents"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/aws_athena_hook/index.rst:24
+msgid "Bases::class:`airflow.contrib.hooks.aws_hook.AwsHook`"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/aws_athena_hook/index.rst:28
+msgid "Interact with AWS Athena to run, poll queries and return query results"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/aws_athena_hook/index.rst
+msgid "Parameters"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/aws_athena_hook/index.rst:30
+msgid "aws connection to use."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/aws_athena_hook/index.rst:32
+msgid "Time to wait between two consecutive call to check query status on athena"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/aws_athena_hook/index.rst:74
+msgid "check if aws conn exists already or create one and return it"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/aws_athena_hook/index.rst
+msgid "Returns"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/aws_athena_hook/index.rst:76
+msgid "boto3 session"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/aws_athena_hook/index.rst:85
+msgid ""
+"Run Presto query on athena with provided config and return submitted "
+"query_execution_id"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/aws_athena_hook/index.rst:87
+msgid "Presto query to run"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/aws_athena_hook/index.rst:89
+msgid "Context in which query need to be run"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/aws_athena_hook/index.rst:91
+msgid "Dict with path to store results in and config related to encryption"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/aws_athena_hook/index.rst:93
+msgid "Unique token created by user to avoid multiple executions of same query"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/aws_athena_hook/index.rst:95
+#: ../../_api/airflow/contrib/hooks/aws_athena_hook/index.rst:108
+#: ../../_api/airflow/contrib/hooks/aws_athena_hook/index.rst:138
+msgid "str"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/aws_athena_hook/index.rst:104
+msgid ""
+"Fetch the status of submitted athena query. Returns None or one of valid "
+"query states."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/aws_athena_hook/index.rst:106
+#: ../../_api/airflow/contrib/hooks/aws_athena_hook/index.rst:120
+#: ../../_api/airflow/contrib/hooks/aws_athena_hook/index.rst:134
+#: ../../_api/airflow/contrib/hooks/aws_athena_hook/index.rst:149
+msgid "Id of submitted athena query"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/aws_athena_hook/index.rst:117
+msgid ""
+"Fetch submitted athena query results. returns none if query is in "
+"intermediate state or failed/cancelled state else dict of query output"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/aws_athena_hook/index.rst:122
+#: ../../_api/airflow/contrib/hooks/aws_athena_hook/index.rst:151
+msgid "dict"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/aws_athena_hook/index.rst:131
+msgid ""
+"Poll the status of submitted athena query until query state reaches final"
+" state. Returns one of the final states"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/aws_athena_hook/index.rst:136
+msgid "Number of times to poll for query state before function exits"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/aws_athena_hook/index.rst:147
+msgid "Cancel the submitted athena query"
+msgstr ""
+

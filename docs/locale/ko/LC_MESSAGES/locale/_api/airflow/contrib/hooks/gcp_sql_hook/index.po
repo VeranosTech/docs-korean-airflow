@@ -1,0 +1,464 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C)
+# This file is distributed under the same license as the Airflow package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Airflow 1.10.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-04-03 17:47+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../_api/airflow/contrib/hooks/gcp_sql_hook/index.rst:4
+msgid ":mod:`airflow.contrib.hooks.gcp_sql_hook`"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/gcp_sql_hook/index.rst:15
+msgid "Module Contents"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/gcp_sql_hook/index.rst:109
+msgid "Bases::class:`airflow.contrib.hooks.gcp_api_base_hook.GoogleCloudBaseHook`"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/gcp_sql_hook/index.rst:113
+msgid "Hook for Google Cloud SQL APIs."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/gcp_sql_hook/index.rst:115
+msgid ""
+"All the methods in the hook where project_id is used must be called with "
+"keyword arguments rather than positional."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/gcp_sql_hook/index.rst:137
+msgid "Retrieves connection to Cloud SQL."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/gcp_sql_hook/index.rst
+msgid "Returns"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/gcp_sql_hook/index.rst:139
+msgid "Google Cloud SQL services object."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/gcp_sql_hook/index.rst
+msgid "Return type"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/gcp_sql_hook/index.rst:149
+msgid "Retrieves a resource containing information about a Cloud SQL instance."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/gcp_sql_hook/index.rst
+msgid "Parameters"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/gcp_sql_hook/index.rst:151
+#: ../../_api/airflow/contrib/hooks/gcp_sql_hook/index.rst:223
+#: ../../_api/airflow/contrib/hooks/gcp_sql_hook/index.rst:243
+#: ../../_api/airflow/contrib/hooks/gcp_sql_hook/index.rst:265
+#: ../../_api/airflow/contrib/hooks/gcp_sql_hook/index.rst:286
+#: ../../_api/airflow/contrib/hooks/gcp_sql_hook/index.rst:326
+msgid "Database instance ID. This does not include the project ID."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/gcp_sql_hook/index.rst:153
+#: ../../_api/airflow/contrib/hooks/gcp_sql_hook/index.rst:171
+#: ../../_api/airflow/contrib/hooks/gcp_sql_hook/index.rst:193
+#: ../../_api/airflow/contrib/hooks/gcp_sql_hook/index.rst:207
+#: ../../_api/airflow/contrib/hooks/gcp_sql_hook/index.rst:227
+#: ../../_api/airflow/contrib/hooks/gcp_sql_hook/index.rst:248
+#: ../../_api/airflow/contrib/hooks/gcp_sql_hook/index.rst:272
+#: ../../_api/airflow/contrib/hooks/gcp_sql_hook/index.rst:290
+#: ../../_api/airflow/contrib/hooks/gcp_sql_hook/index.rst:311
+#: ../../_api/airflow/contrib/hooks/gcp_sql_hook/index.rst:332
+msgid ""
+"Project ID of the project that contains the instance. If set to None or "
+"missing, the default project_id from the GCP connection is used."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/gcp_sql_hook/index.rst:156
+msgid "A Cloud SQL instance resource."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/gcp_sql_hook/index.rst:166
+msgid "Creates a new Cloud SQL instance."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/gcp_sql_hook/index.rst:168
+msgid ""
+"Body required by the Cloud SQL insert API, as described in "
+"https://cloud.google.com/sql/docs/mysql/admin-"
+"api/v1beta4/instances/insert#request-body."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/gcp_sql_hook/index.rst:174
+#: ../../_api/airflow/contrib/hooks/gcp_sql_hook/index.rst:196
+#: ../../_api/airflow/contrib/hooks/gcp_sql_hook/index.rst:212
+#: ../../_api/airflow/contrib/hooks/gcp_sql_hook/index.rst:251
+#: ../../_api/airflow/contrib/hooks/gcp_sql_hook/index.rst:275
+#: ../../_api/airflow/contrib/hooks/gcp_sql_hook/index.rst:293
+#: ../../_api/airflow/contrib/hooks/gcp_sql_hook/index.rst:314
+#: ../../_api/airflow/contrib/hooks/gcp_sql_hook/index.rst:335
+#: ../../_api/airflow/contrib/hooks/gcp_sql_hook/index.rst:351
+msgid "None"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/gcp_sql_hook/index.rst:183
+msgid "Updates settings of a Cloud SQL instance."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/gcp_sql_hook/index.rst:185
+msgid ""
+"Caution: This is not a partial update, so you must include values for all"
+" the settings that you want to retain."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/gcp_sql_hook/index.rst:188
+msgid ""
+"Body required by the Cloud SQL patch API, as described in "
+"https://cloud.google.com/sql/docs/mysql/admin-api/v1beta4/instances/patch"
+"#request-body."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/gcp_sql_hook/index.rst:191
+#: ../../_api/airflow/contrib/hooks/gcp_sql_hook/index.rst:210
+msgid "Cloud SQL instance ID. This does not include the project ID."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/gcp_sql_hook/index.rst:205
+msgid "Deletes a Cloud SQL instance."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/gcp_sql_hook/index.rst:221
+msgid "Retrieves a database resource from a Cloud SQL instance."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/gcp_sql_hook/index.rst:225
+msgid "Name of the database in the instance."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/gcp_sql_hook/index.rst:230
+msgid ""
+"A Cloud SQL database resource, as described in "
+"https://cloud.google.com/sql/docs/mysql/admin-"
+"api/v1beta4/databases#resource."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/gcp_sql_hook/index.rst:241
+msgid "Creates a new database inside a Cloud SQL instance."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/gcp_sql_hook/index.rst:245
+#: ../../_api/airflow/contrib/hooks/gcp_sql_hook/index.rst:269
+msgid ""
+"The request body, as described in https://cloud.google.com/sql/docs/mysql"
+"/admin-api/v1beta4/databases/insert#request-body."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/gcp_sql_hook/index.rst:260
+msgid "Updates a database resource inside a Cloud SQL instance."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/gcp_sql_hook/index.rst:262
+msgid ""
+"This method supports patch semantics. See "
+"https://cloud.google.com/sql/docs/mysql/admin-api/how-"
+"tos/performance#patch."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/gcp_sql_hook/index.rst:267
+msgid "Name of the database to be updated in the instance."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/gcp_sql_hook/index.rst:284
+msgid "Deletes a database from a Cloud SQL instance."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/gcp_sql_hook/index.rst:288
+msgid "Name of the database to be deleted in the instance."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/gcp_sql_hook/index.rst:302
+msgid ""
+"Exports data from a Cloud SQL instance to a Cloud Storage bucket as a SQL"
+" dump or CSV file."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/gcp_sql_hook/index.rst:305
+msgid ""
+"Database instance ID of the Cloud SQL instance. This does not include the"
+" project ID."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/gcp_sql_hook/index.rst:308
+#: ../../_api/airflow/contrib/hooks/gcp_sql_hook/index.rst:329
+msgid ""
+"The request body, as described in https://cloud.google.com/sql/docs/mysql"
+"/admin-api/v1beta4/instances/export#request-body"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/gcp_sql_hook/index.rst:323
+msgid ""
+"Imports data into a Cloud SQL instance from a SQL dump or CSV file in "
+"Cloud Storage."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/gcp_sql_hook/index.rst:344
+msgid ""
+"Waits for the named operation to complete - checks status of the "
+"asynchronous call."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/gcp_sql_hook/index.rst:347
+msgid "Project ID of the project that contains the instance."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/gcp_sql_hook/index.rst:349
+msgid "Name of the operation."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/gcp_sql_hook/index.rst:412
+msgid "Bases::class:`airflow.LoggingMixin`"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/gcp_sql_hook/index.rst:416
+msgid "Downloads and runs cloud-sql-proxy as subprocess of the Python process."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/gcp_sql_hook/index.rst:418
+msgid ""
+"The cloud-sql-proxy needs to be downloaded and started before we can "
+"connect to the Google Cloud SQL instance via database connection. It "
+"establishes secure tunnel connection to the database. It authorizes using"
+" the GCP credentials that are passed by the configuration."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/gcp_sql_hook/index.rst:423
+msgid ""
+"More details about the proxy can be found here: "
+"https://cloud.google.com/sql/docs/mysql/sql-proxy"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/gcp_sql_hook/index.rst:463
+msgid "Starts Cloud SQL Proxy."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/gcp_sql_hook/index.rst:465
+msgid "You have to remember to stop the proxy if you started it!"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/gcp_sql_hook/index.rst:474
+msgid "Stops running proxy."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/gcp_sql_hook/index.rst:476
+msgid "You should stop the proxy after you stop using it."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/gcp_sql_hook/index.rst:485
+msgid "Returns version of the Cloud SQL Proxy."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/gcp_sql_hook/index.rst:494
+msgid "Retrieves UNIX socket path used by Cloud SQL Proxy."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/gcp_sql_hook/index.rst:496
+msgid "The dynamically generated path for the socket created by the proxy."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/gcp_sql_hook/index.rst:534
+msgid "Bases::class:`airflow.hooks.base_hook.BaseHook`"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/gcp_sql_hook/index.rst:538
+msgid ""
+"Serves DB connection configuration for Google Cloud SQL (Connections of "
+"*gcpcloudsql://* type)."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/gcp_sql_hook/index.rst:541
+msgid ""
+"The hook is a \"meta\" one. It does not perform an actual connection. It "
+"is there to retrieve all the parameters configured in gcpcloudsql:// "
+"connection, start/stop Cloud SQL Proxy if needed, dynamically generate "
+"Postgres or MySQL connection in the database and return an actual "
+"Postgres or MySQL hook. The returned Postgres/MySQL hooks are using "
+"direct connection or Cloud SQL Proxy socket/TCP as configured."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/gcp_sql_hook/index.rst:548
+msgid ""
+"Main parameters of the hook are retrieved from the standard URI "
+"components:"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/gcp_sql_hook/index.rst:550
+msgid ""
+"**user** - User name to authenticate to the database (from login of the "
+"URI)."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/gcp_sql_hook/index.rst:551
+msgid ""
+"**password** - Password to authenticate to the database (from password of"
+" the URI)."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/gcp_sql_hook/index.rst:552
+msgid ""
+"**public_ip** - IP to connect to for public connection (from host of the "
+"URI)."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/gcp_sql_hook/index.rst:553
+msgid ""
+"**public_port** - Port to connect to for public connection (from port of "
+"the URI)."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/gcp_sql_hook/index.rst:554
+msgid "**database** - Database to connect to (from schema of the URI)."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/gcp_sql_hook/index.rst:556
+msgid "Remaining parameters are retrieved from the extras (URI query parameters):"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/gcp_sql_hook/index.rst:558
+msgid ""
+"**project_id** - Optional, Google Cloud Platform project where the Cloud "
+"SQL"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/gcp_sql_hook/index.rst:559
+msgid "instance exists. If missing, default project id passed is used."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/gcp_sql_hook/index.rst:560
+msgid "**instance** -  Name of the instance of the Cloud SQL database instance."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/gcp_sql_hook/index.rst:561
+msgid ""
+"**location** - The location of the Cloud SQL instance (for example "
+"europe-west1)."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/gcp_sql_hook/index.rst:562
+msgid "**database_type** - The type of the database instance (MySQL or Postgres)."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/gcp_sql_hook/index.rst:563
+msgid ""
+"**use_proxy** - (default False) Whether SQL proxy should be used to "
+"connect to Cloud SQL DB."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/gcp_sql_hook/index.rst:565
+msgid ""
+"**use_ssl** - (default False) Whether SSL should be used to connect to "
+"Cloud SQL DB. You cannot use proxy and SSL together."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/gcp_sql_hook/index.rst:567
+msgid ""
+"**sql_proxy_use_tcp** - (default False) If set to true, TCP is used to "
+"connect via proxy, otherwise UNIX sockets are used."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/gcp_sql_hook/index.rst:569
+msgid ""
+"**sql_proxy_binary_path** - Optional path to Cloud SQL Proxy binary. If "
+"the binary is not specified or the binary is not present, it is "
+"automatically downloaded."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/gcp_sql_hook/index.rst:571
+msgid ""
+"**sql_proxy_version** -  Specific version of the proxy to download (for "
+"example v1.13). If not specified, the latest version is downloaded."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/gcp_sql_hook/index.rst:573
+msgid "**sslcert** - Path to client certificate to authenticate when SSL is used."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/gcp_sql_hook/index.rst:574
+msgid "**sslkey** - Path to client private key to authenticate when SSL is used."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/gcp_sql_hook/index.rst:575
+msgid ""
+"**sslrootcert** - Path to server's certificate to authenticate when SSL "
+"is used."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/gcp_sql_hook/index.rst:577
+msgid "URL of the connection"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/gcp_sql_hook/index.rst:579
+msgid "Default project id used if project_id not specified in the connection URL"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/gcp_sql_hook/index.rst:672
+msgid ""
+"Create connection in the Connection table, according to whether it uses "
+"proxy, TCP, UNIX sockets, SSL. Connection ID will be randomly generated."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/gcp_sql_hook/index.rst:675
+#: ../../_api/airflow/contrib/hooks/gcp_sql_hook/index.rst:687
+#: ../../_api/airflow/contrib/hooks/gcp_sql_hook/index.rst:699
+msgid "Session of the SQL Alchemy ORM (automatically generated with decorator)."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/gcp_sql_hook/index.rst:685
+msgid "Retrieves the dynamically created connection from the Connection table."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/gcp_sql_hook/index.rst:697
+msgid "Delete the dynamically created connection from the Connection table."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/gcp_sql_hook/index.rst:709
+msgid ""
+"Retrieve Cloud SQL Proxy runner. It is used to manage the proxy lifecycle"
+" per task."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/gcp_sql_hook/index.rst:712
+msgid "The Cloud SQL Proxy runner."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/gcp_sql_hook/index.rst:722
+msgid ""
+"Retrieve database hook. This is the actual Postgres or MySQL database "
+"hook that uses proxy or connects directly to the Google Cloud SQL "
+"database."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/gcp_sql_hook/index.rst:732
+msgid "Clean up database hook after it was used."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/gcp_sql_hook/index.rst:741
+msgid "Reserve free TCP port to be used by Cloud SQL Proxy"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/gcp_sql_hook/index.rst:750
+msgid "Free TCP port. Makes it immediately ready to be used by Cloud SQL Proxy."
+msgstr ""
+

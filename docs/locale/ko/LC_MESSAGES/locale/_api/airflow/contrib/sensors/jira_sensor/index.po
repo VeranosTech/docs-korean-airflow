@@ -1,0 +1,77 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C)
+# This file is distributed under the same license as the Airflow package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Airflow 1.10.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-04-03 17:47+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../_api/airflow/contrib/sensors/jira_sensor/index.rst:4
+msgid ":mod:`airflow.contrib.sensors.jira_sensor`"
+msgstr ""
+
+#: ../../_api/airflow/contrib/sensors/jira_sensor/index.rst:15
+msgid "Module Contents"
+msgstr ""
+
+#: ../../_api/airflow/contrib/sensors/jira_sensor/index.rst:24
+msgid "Bases::class:`airflow.sensors.base_sensor_operator.BaseSensorOperator`"
+msgstr ""
+
+#: ../../_api/airflow/contrib/sensors/jira_sensor/index.rst:28
+msgid "Monitors a jira ticket for any change."
+msgstr ""
+
+#: ../../_api/airflow/contrib/sensors/jira_sensor/index.rst
+msgid "Parameters"
+msgstr ""
+
+#: ../../_api/airflow/contrib/sensors/jira_sensor/index.rst:30
+#: ../../_api/airflow/contrib/sensors/jira_sensor/index.rst:65
+msgid "reference to a pre-defined Jira Connection"
+msgstr ""
+
+#: ../../_api/airflow/contrib/sensors/jira_sensor/index.rst:32
+msgid "method name from jira-python-sdk to be execute"
+msgstr ""
+
+#: ../../_api/airflow/contrib/sensors/jira_sensor/index.rst:34
+msgid "parameters for the method method_name"
+msgstr ""
+
+#: ../../_api/airflow/contrib/sensors/jira_sensor/index.rst:36
+#: ../../_api/airflow/contrib/sensors/jira_sensor/index.rst:73
+msgid "function that return boolean and act as a sensor response"
+msgstr ""
+
+#: ../../_api/airflow/contrib/sensors/jira_sensor/index.rst:59
+msgid "Bases::class:`airflow.contrib.sensors.jira_sensor.JiraSensor`"
+msgstr ""
+
+#: ../../_api/airflow/contrib/sensors/jira_sensor/index.rst:63
+msgid "Monitors a jira ticket for given change in terms of function."
+msgstr ""
+
+#: ../../_api/airflow/contrib/sensors/jira_sensor/index.rst:67
+msgid "id of the ticket to be monitored"
+msgstr ""
+
+#: ../../_api/airflow/contrib/sensors/jira_sensor/index.rst:69
+msgid "field of the ticket to be monitored"
+msgstr ""
+
+#: ../../_api/airflow/contrib/sensors/jira_sensor/index.rst:71
+msgid "expected value of the field"
+msgstr ""
+

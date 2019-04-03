@@ -1,0 +1,97 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C)
+# This file is distributed under the same license as the Airflow package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Airflow 1.10.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-04-03 17:47+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../_api/airflow/contrib/sensors/gcs_sensor/index.rst:4
+msgid ":mod:`airflow.contrib.sensors.gcs_sensor`"
+msgstr ""
+
+#: ../../_api/airflow/contrib/sensors/gcs_sensor/index.rst:15
+msgid "Module Contents"
+msgstr ""
+
+#: ../../_api/airflow/contrib/sensors/gcs_sensor/index.rst:24
+#: ../../_api/airflow/contrib/sensors/gcs_sensor/index.rst:98
+#: ../../_api/airflow/contrib/sensors/gcs_sensor/index.rst:161
+msgid "Bases::class:`airflow.sensors.base_sensor_operator.BaseSensorOperator`"
+msgstr ""
+
+#: ../../_api/airflow/contrib/sensors/gcs_sensor/index.rst:28
+msgid "Checks for the existence of a file in Google Cloud Storage."
+msgstr ""
+
+#: ../../_api/airflow/contrib/sensors/gcs_sensor/index.rst
+msgid "Parameters"
+msgstr ""
+
+#: ../../_api/airflow/contrib/sensors/gcs_sensor/index.rst:30
+#: ../../_api/airflow/contrib/sensors/gcs_sensor/index.rst:104
+#: ../../_api/airflow/contrib/sensors/gcs_sensor/index.rst:167
+msgid "The Google cloud storage bucket where the object is."
+msgstr ""
+
+#: ../../_api/airflow/contrib/sensors/gcs_sensor/index.rst:32
+msgid "The name of the object to check in the Google cloud storage bucket."
+msgstr ""
+
+#: ../../_api/airflow/contrib/sensors/gcs_sensor/index.rst:35
+#: ../../_api/airflow/contrib/sensors/gcs_sensor/index.rst:113
+#: ../../_api/airflow/contrib/sensors/gcs_sensor/index.rst:172
+msgid "The connection ID to use when connecting to Google cloud storage."
+msgstr ""
+
+#: ../../_api/airflow/contrib/sensors/gcs_sensor/index.rst:38
+#: ../../_api/airflow/contrib/sensors/gcs_sensor/index.rst:116
+#: ../../_api/airflow/contrib/sensors/gcs_sensor/index.rst:175
+msgid ""
+"The account to impersonate, if any. For this to work, the service account"
+" making the request must have domain-wide delegation enabled."
+msgstr ""
+
+#: ../../_api/airflow/contrib/sensors/gcs_sensor/index.rst:84
+msgid ""
+"Default callback for the GoogleCloudStorageObjectUpdatedSensor. The "
+"default behaviour is check for the object being updated after "
+"execution_date + schedule_interval."
+msgstr ""
+
+#: ../../_api/airflow/contrib/sensors/gcs_sensor/index.rst:102
+msgid "Checks if an object is updated in Google Cloud Storage."
+msgstr ""
+
+#: ../../_api/airflow/contrib/sensors/gcs_sensor/index.rst:106
+msgid "The name of the object to download in the Google cloud storage bucket."
+msgstr ""
+
+#: ../../_api/airflow/contrib/sensors/gcs_sensor/index.rst:109
+msgid ""
+"Callback for defining the update condition. The default callback returns "
+"execution_date + schedule_interval. The callback takes the context as "
+"parameter."
+msgstr ""
+
+#: ../../_api/airflow/contrib/sensors/gcs_sensor/index.rst:165
+msgid ""
+"Checks for the existence of a files at prefix in Google Cloud Storage "
+"bucket."
+msgstr ""
+
+#: ../../_api/airflow/contrib/sensors/gcs_sensor/index.rst:169
+msgid "The name of the prefix to check in the Google cloud storage bucket."
+msgstr ""
+

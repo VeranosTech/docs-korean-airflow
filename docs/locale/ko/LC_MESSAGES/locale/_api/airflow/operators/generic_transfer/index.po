@@ -1,0 +1,66 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C)
+# This file is distributed under the same license as the Airflow package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Airflow 1.10.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-04-03 17:47+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../_api/airflow/operators/generic_transfer/index.rst:4
+msgid ":mod:`airflow.operators.generic_transfer`"
+msgstr ""
+
+#: ../../_api/airflow/operators/generic_transfer/index.rst:15
+msgid "Module Contents"
+msgstr ""
+
+#: ../../_api/airflow/operators/generic_transfer/index.rst:24
+msgid "Bases::class:`airflow.models.BaseOperator`"
+msgstr ""
+
+#: ../../_api/airflow/operators/generic_transfer/index.rst:28
+msgid ""
+"Moves data from a connection to another, assuming that they both provide "
+"the required methods in their respective hooks. The source hook needs to "
+"expose a `get_records` method, and the destination a `insert_rows` "
+"method."
+msgstr ""
+
+#: ../../_api/airflow/operators/generic_transfer/index.rst:33
+msgid "This is meant to be used on small-ish datasets that fit in memory."
+msgstr ""
+
+#: ../../_api/airflow/operators/generic_transfer/index.rst
+msgid "Parameters"
+msgstr ""
+
+#: ../../_api/airflow/operators/generic_transfer/index.rst:35
+msgid "SQL query to execute against the source database. (templated)"
+msgstr ""
+
+#: ../../_api/airflow/operators/generic_transfer/index.rst:37
+msgid "target table. (templated)"
+msgstr ""
+
+#: ../../_api/airflow/operators/generic_transfer/index.rst:39
+#: ../../_api/airflow/operators/generic_transfer/index.rst:41
+msgid "source connection"
+msgstr ""
+
+#: ../../_api/airflow/operators/generic_transfer/index.rst:43
+msgid ""
+"sql statement or list of statements to be executed prior to loading the "
+"data. (templated)"
+msgstr ""
+

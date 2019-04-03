@@ -1,0 +1,372 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C)
+# This file is distributed under the same license as the Airflow package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Airflow 1.10.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-04-03 17:47+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../_api/airflow/hooks/S3_hook/index.rst:4
+msgid ":mod:`airflow.hooks.S3_hook`"
+msgstr ""
+
+#: ../../_api/airflow/hooks/S3_hook/index.rst:15
+msgid "Module Contents"
+msgstr ""
+
+#: ../../_api/airflow/hooks/S3_hook/index.rst:24
+msgid "Bases::class:`airflow.contrib.hooks.aws_hook.AwsHook`"
+msgstr ""
+
+#: ../../_api/airflow/hooks/S3_hook/index.rst:28
+msgid "Interact with AWS S3, using the boto3 library."
+msgstr ""
+
+#: ../../_api/airflow/hooks/S3_hook/index.rst:51
+msgid "Check if bucket_name exists."
+msgstr ""
+
+#: ../../_api/airflow/hooks/S3_hook/index.rst
+msgid "Parameters"
+msgstr ""
+
+#: ../../_api/airflow/hooks/S3_hook/index.rst:53
+#: ../../_api/airflow/hooks/S3_hook/index.rst:65
+#: ../../_api/airflow/hooks/S3_hook/index.rst:91
+#: ../../_api/airflow/hooks/S3_hook/index.rst:107
+#: ../../_api/airflow/hooks/S3_hook/index.rst:127
+#: ../../_api/airflow/hooks/S3_hook/index.rst:163
+#: ../../_api/airflow/hooks/S3_hook/index.rst:219
+#: ../../_api/airflow/hooks/S3_hook/index.rst:235
+msgid "the name of the bucket"
+msgstr ""
+
+#: ../../_api/airflow/hooks/S3_hook/index.rst:63
+msgid "Returns a boto3.S3.Bucket object"
+msgstr ""
+
+#: ../../_api/airflow/hooks/S3_hook/index.rst:75
+msgid "Creates an Amazon S3 bucket."
+msgstr ""
+
+#: ../../_api/airflow/hooks/S3_hook/index.rst:77
+msgid "The name of the bucket"
+msgstr ""
+
+#: ../../_api/airflow/hooks/S3_hook/index.rst:79
+msgid "The name of the aws region in which to create the bucket."
+msgstr ""
+
+#: ../../_api/airflow/hooks/S3_hook/index.rst:89
+msgid "Checks that a prefix exists in a bucket"
+msgstr ""
+
+#: ../../_api/airflow/hooks/S3_hook/index.rst:93
+#: ../../_api/airflow/hooks/S3_hook/index.rst:109
+#: ../../_api/airflow/hooks/S3_hook/index.rst:129
+msgid "a key prefix"
+msgstr ""
+
+#: ../../_api/airflow/hooks/S3_hook/index.rst:95
+#: ../../_api/airflow/hooks/S3_hook/index.rst:111
+#: ../../_api/airflow/hooks/S3_hook/index.rst:131
+msgid "the delimiter marks key hierarchy."
+msgstr ""
+
+#: ../../_api/airflow/hooks/S3_hook/index.rst:105
+msgid "Lists prefixes in a bucket under prefix"
+msgstr ""
+
+#: ../../_api/airflow/hooks/S3_hook/index.rst:113
+#: ../../_api/airflow/hooks/S3_hook/index.rst:133
+msgid "pagination size"
+msgstr ""
+
+#: ../../_api/airflow/hooks/S3_hook/index.rst:115
+#: ../../_api/airflow/hooks/S3_hook/index.rst:135
+msgid "maximum items to return"
+msgstr ""
+
+#: ../../_api/airflow/hooks/S3_hook/index.rst:125
+msgid "Lists keys in a bucket under prefix and not containing delimiter"
+msgstr ""
+
+#: ../../_api/airflow/hooks/S3_hook/index.rst:145
+msgid "Checks if a key exists in a bucket"
+msgstr ""
+
+#: ../../_api/airflow/hooks/S3_hook/index.rst:147
+#: ../../_api/airflow/hooks/S3_hook/index.rst:175
+#: ../../_api/airflow/hooks/S3_hook/index.rst:189
+#: ../../_api/airflow/hooks/S3_hook/index.rst:251
+#: ../../_api/airflow/hooks/S3_hook/index.rst:277
+#: ../../_api/airflow/hooks/S3_hook/index.rst:302
+#: ../../_api/airflow/hooks/S3_hook/index.rst:324
+msgid "S3 key that will point to the file"
+msgstr ""
+
+#: ../../_api/airflow/hooks/S3_hook/index.rst:149
+#: ../../_api/airflow/hooks/S3_hook/index.rst:177
+#: ../../_api/airflow/hooks/S3_hook/index.rst:191
+msgid "Name of the bucket in which the file is stored"
+msgstr ""
+
+#: ../../_api/airflow/hooks/S3_hook/index.rst:159
+msgid "Returns a boto3.s3.Object"
+msgstr ""
+
+#: ../../_api/airflow/hooks/S3_hook/index.rst:161
+#: ../../_api/airflow/hooks/S3_hook/index.rst:217
+#: ../../_api/airflow/hooks/S3_hook/index.rst:233
+msgid "the path to the key"
+msgstr ""
+
+#: ../../_api/airflow/hooks/S3_hook/index.rst:173
+msgid "Reads a key from S3"
+msgstr ""
+
+#: ../../_api/airflow/hooks/S3_hook/index.rst:187
+msgid "Reads a key with S3 Select."
+msgstr ""
+
+#: ../../_api/airflow/hooks/S3_hook/index.rst:193
+msgid "S3 Select expression"
+msgstr ""
+
+#: ../../_api/airflow/hooks/S3_hook/index.rst:195
+msgid "S3 Select expression type"
+msgstr ""
+
+#: ../../_api/airflow/hooks/S3_hook/index.rst:197
+msgid "S3 Select input data serialization format"
+msgstr ""
+
+#: ../../_api/airflow/hooks/S3_hook/index.rst:199
+msgid "S3 Select output data serialization format"
+msgstr ""
+
+#: ../../_api/airflow/hooks/S3_hook/index.rst
+msgid "Returns"
+msgstr ""
+
+#: ../../_api/airflow/hooks/S3_hook/index.rst:201
+msgid "retrieved subset of original data by S3 Select"
+msgstr ""
+
+#: ../../_api/airflow/hooks/S3_hook/index.rst
+msgid "Return type"
+msgstr ""
+
+#: ../../_api/airflow/hooks/S3_hook/index.rst:205
+msgid ""
+"For more details about S3 Select parameters: "
+"http://boto3.readthedocs.io/en/latest/reference/services/s3.html#S3.Client.select_object_content"
+msgstr ""
+
+#: ../../_api/airflow/hooks/S3_hook/index.rst:215
+msgid "Checks that a key matching a wildcard expression exists in a bucket"
+msgstr ""
+
+#: ../../_api/airflow/hooks/S3_hook/index.rst:221
+#: ../../_api/airflow/hooks/S3_hook/index.rst:237
+msgid "the delimiter marks key hierarchy"
+msgstr ""
+
+#: ../../_api/airflow/hooks/S3_hook/index.rst:231
+msgid "Returns a boto3.s3.Object object matching the wildcard expression"
+msgstr ""
+
+#: ../../_api/airflow/hooks/S3_hook/index.rst:247
+msgid "Loads a local file to S3"
+msgstr ""
+
+#: ../../_api/airflow/hooks/S3_hook/index.rst:249
+msgid "name of the file to load."
+msgstr ""
+
+#: ../../_api/airflow/hooks/S3_hook/index.rst:253
+#: ../../_api/airflow/hooks/S3_hook/index.rst:279
+#: ../../_api/airflow/hooks/S3_hook/index.rst:304
+#: ../../_api/airflow/hooks/S3_hook/index.rst:326
+msgid "Name of the bucket in which to store the file"
+msgstr ""
+
+#: ../../_api/airflow/hooks/S3_hook/index.rst:255
+msgid ""
+"A flag to decide whether or not to overwrite the key if it already "
+"exists. If replace is False and the key exists, an error will be raised."
+msgstr ""
+
+#: ../../_api/airflow/hooks/S3_hook/index.rst:259
+#: ../../_api/airflow/hooks/S3_hook/index.rst:284
+#: ../../_api/airflow/hooks/S3_hook/index.rst:309
+msgid ""
+"If True, the file will be encrypted on the server-side by S3 and will be "
+"stored in an encrypted form while at rest in S3."
+msgstr ""
+
+#: ../../_api/airflow/hooks/S3_hook/index.rst:270
+msgid "Loads a string to S3"
+msgstr ""
+
+#: ../../_api/airflow/hooks/S3_hook/index.rst:272
+#: ../../_api/airflow/hooks/S3_hook/index.rst:297
+msgid ""
+"This is provided as a convenience to drop a string in S3. It uses the "
+"boto infrastructure to ship a file to s3."
+msgstr ""
+
+#: ../../_api/airflow/hooks/S3_hook/index.rst:275
+msgid "str to set as content for the key."
+msgstr ""
+
+#: ../../_api/airflow/hooks/S3_hook/index.rst:281
+#: ../../_api/airflow/hooks/S3_hook/index.rst:306
+msgid "A flag to decide whether or not to overwrite the key if it already exists"
+msgstr ""
+
+#: ../../_api/airflow/hooks/S3_hook/index.rst:295
+msgid "Loads bytes to S3"
+msgstr ""
+
+#: ../../_api/airflow/hooks/S3_hook/index.rst:300
+msgid "bytes to set as content for the key."
+msgstr ""
+
+#: ../../_api/airflow/hooks/S3_hook/index.rst:320
+msgid "Loads a file object to S3"
+msgstr ""
+
+#: ../../_api/airflow/hooks/S3_hook/index.rst:322
+msgid "The file-like object to set as the content for the S3 key."
+msgstr ""
+
+#: ../../_api/airflow/hooks/S3_hook/index.rst:328
+msgid "A flag that indicates whether to overwrite the key if it already exists."
+msgstr ""
+
+#: ../../_api/airflow/hooks/S3_hook/index.rst:331
+msgid ""
+"If True, S3 encrypts the file on the server, and the file is stored in "
+"encrypted form at rest in S3."
+msgstr ""
+
+#: ../../_api/airflow/hooks/S3_hook/index.rst:342
+msgid "Creates a copy of an object that is already stored in S3."
+msgstr ""
+
+#: ../../_api/airflow/hooks/S3_hook/index.rst:344
+msgid ""
+"Note: the S3 connection used here needs to have access to both source and"
+" destination bucket/key."
+msgstr ""
+
+#: ../../_api/airflow/hooks/S3_hook/index.rst:347
+msgid ""
+"The key of the source object.  It can be either full s3:// style url or "
+"relative path from root level.  When it's specified as a full s3:// url, "
+"please omit source_bucket_name."
+msgstr ""
+
+#: ../../_api/airflow/hooks/S3_hook/index.rst:347
+msgid "The key of the source object."
+msgstr ""
+
+#: ../../_api/airflow/hooks/S3_hook/index.rst:349
+msgid "It can be either full s3:// style url or relative path from root level."
+msgstr ""
+
+#: ../../_api/airflow/hooks/S3_hook/index.rst:351
+msgid "When it's specified as a full s3:// url, please omit source_bucket_name."
+msgstr ""
+
+#: ../../_api/airflow/hooks/S3_hook/index.rst:353
+msgid ""
+"The key of the object to copy to.  The convention to specify "
+"`dest_bucket_key` is the same as `source_bucket_key`."
+msgstr ""
+
+#: ../../_api/airflow/hooks/S3_hook/index.rst:353
+msgid "The key of the object to copy to."
+msgstr ""
+
+#: ../../_api/airflow/hooks/S3_hook/index.rst:355
+msgid ""
+"The convention to specify `dest_bucket_key` is the same as "
+"`source_bucket_key`."
+msgstr ""
+
+#: ../../_api/airflow/hooks/S3_hook/index.rst:358
+msgid ""
+"Name of the S3 bucket where the source object is in.  It should be "
+"omitted when `source_bucket_key` is provided as a full s3:// url."
+msgstr ""
+
+#: ../../_api/airflow/hooks/S3_hook/index.rst:358
+msgid "Name of the S3 bucket where the source object is in."
+msgstr ""
+
+#: ../../_api/airflow/hooks/S3_hook/index.rst:360
+msgid ""
+"It should be omitted when `source_bucket_key` is provided as a full s3://"
+" url."
+msgstr ""
+
+#: ../../_api/airflow/hooks/S3_hook/index.rst:362
+msgid ""
+"Name of the S3 bucket to where the object is copied.  It should be "
+"omitted when `dest_bucket_key` is provided as a full s3:// url."
+msgstr ""
+
+#: ../../_api/airflow/hooks/S3_hook/index.rst:362
+msgid "Name of the S3 bucket to where the object is copied."
+msgstr ""
+
+#: ../../_api/airflow/hooks/S3_hook/index.rst:364
+msgid ""
+"It should be omitted when `dest_bucket_key` is provided as a full s3:// "
+"url."
+msgstr ""
+
+#: ../../_api/airflow/hooks/S3_hook/index.rst:366
+msgid "Version ID of the source object (OPTIONAL)"
+msgstr ""
+
+#: ../../_api/airflow/hooks/S3_hook/index.rst:376
+msgid "Name of the bucket in which you are going to delete object(s)"
+msgstr ""
+
+#: ../../_api/airflow/hooks/S3_hook/index.rst:378
+msgid ""
+"The key(s) to delete from S3 bucket.  When ``keys`` is a string, it's "
+"supposed to be the key name of the single object to delete.  When "
+"``keys`` is a list, it's supposed to be the list of the keys to delete."
+msgstr ""
+
+#: ../../_api/airflow/hooks/S3_hook/index.rst:378
+msgid "The key(s) to delete from S3 bucket."
+msgstr ""
+
+#: ../../_api/airflow/hooks/S3_hook/index.rst:380
+msgid ""
+"When ``keys`` is a string, it's supposed to be the key name of the single"
+" object to delete."
+msgstr ""
+
+#: ../../_api/airflow/hooks/S3_hook/index.rst:383
+msgid ""
+"When ``keys`` is a list, it's supposed to be the list of the keys to "
+"delete."
+msgstr ""
+

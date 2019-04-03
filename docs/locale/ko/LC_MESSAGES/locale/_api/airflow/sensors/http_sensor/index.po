@@ -1,0 +1,79 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C)
+# This file is distributed under the same license as the Airflow package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Airflow 1.10.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-04-03 17:47+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../_api/airflow/sensors/http_sensor/index.rst:4
+msgid ":mod:`airflow.sensors.http_sensor`"
+msgstr ""
+
+#: ../../_api/airflow/sensors/http_sensor/index.rst:15
+msgid "Module Contents"
+msgstr ""
+
+#: ../../_api/airflow/sensors/http_sensor/index.rst:24
+msgid "Bases::class:`airflow.sensors.base_sensor_operator.BaseSensorOperator`"
+msgstr ""
+
+#: ../../_api/airflow/sensors/http_sensor/index.rst:28
+msgid ""
+"Executes a HTTP GET statement and returns False on failure caused by 404 "
+"Not Found or `response_check` returning False."
+msgstr ""
+
+#: ../../_api/airflow/sensors/http_sensor/index.rst:31
+msgid ""
+"HTTP Error codes other than 404 (like 403) or Connection Refused Error "
+"would fail the sensor itself directly (no more poking)."
+msgstr ""
+
+#: ../../_api/airflow/sensors/http_sensor/index.rst
+msgid "Parameters"
+msgstr ""
+
+#: ../../_api/airflow/sensors/http_sensor/index.rst:34
+msgid "The connection to run the sensor against"
+msgstr ""
+
+#: ../../_api/airflow/sensors/http_sensor/index.rst:36
+msgid "The HTTP request method to use"
+msgstr ""
+
+#: ../../_api/airflow/sensors/http_sensor/index.rst:38
+msgid "The relative part of the full url"
+msgstr ""
+
+#: ../../_api/airflow/sensors/http_sensor/index.rst:40
+msgid "The parameters to be added to the GET url"
+msgstr ""
+
+#: ../../_api/airflow/sensors/http_sensor/index.rst:42
+msgid "The HTTP headers to be added to the GET request"
+msgstr ""
+
+#: ../../_api/airflow/sensors/http_sensor/index.rst:44
+msgid ""
+"A check against the 'requests' response object. Returns True for 'pass' "
+"and False otherwise."
+msgstr ""
+
+#: ../../_api/airflow/sensors/http_sensor/index.rst:47
+msgid ""
+"Extra options for the 'requests' library, see the 'requests' "
+"documentation (options to modify timeout, ssl, etc.)"
+msgstr ""
+

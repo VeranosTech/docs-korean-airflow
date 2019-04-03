@@ -1,0 +1,109 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C)
+# This file is distributed under the same license as the Airflow package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Airflow 1.10.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-04-03 17:47+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../_api/airflow/contrib/hooks/gcp_kms_hook/index.rst:4
+msgid ":mod:`airflow.contrib.hooks.gcp_kms_hook`"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/gcp_kms_hook/index.rst:15
+msgid "Module Contents"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/gcp_kms_hook/index.rst:25
+msgid "Base 64 encodes a bytes object to a string"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/gcp_kms_hook/index.rst:38
+msgid "Base 64 decodes a string to bytes."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/gcp_kms_hook/index.rst:50
+msgid "Bases::class:`airflow.contrib.hooks.gcp_api_base_hook.GoogleCloudBaseHook`"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/gcp_kms_hook/index.rst:54
+msgid ""
+"Interact with Google Cloud KMS. This hook uses the Google Cloud Platform "
+"connection."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/gcp_kms_hook/index.rst:66
+msgid "Returns a KMS service object."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/gcp_kms_hook/index.rst
+msgid "Return type"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/gcp_kms_hook/index.rst:77
+msgid "Encrypts a plaintext message using Google Cloud KMS."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/gcp_kms_hook/index.rst
+msgid "Parameters"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/gcp_kms_hook/index.rst:79
+msgid ""
+"The Resource Name for the key (or key version) to be used for encyption. "
+"Of the form ``projects/*/locations/*/keyRings/*/cryptoKeys/**``"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/gcp_kms_hook/index.rst:83
+msgid "The message to be encrypted."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/gcp_kms_hook/index.rst:85
+msgid ""
+"Optional additional authenticated data that must also be provided to "
+"decrypt the message."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/gcp_kms_hook/index.rst
+msgid "Returns"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/gcp_kms_hook/index.rst:88
+msgid "The base 64 encoded ciphertext of the original message."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/gcp_kms_hook/index.rst:98
+msgid "Decrypts a ciphertext message using Google Cloud KMS."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/gcp_kms_hook/index.rst:100
+msgid ""
+"The Resource Name for the key to be used for decyption. Of the form "
+"``projects/*/locations/*/keyRings/*/cryptoKeys/**``"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/gcp_kms_hook/index.rst:103
+msgid "The message to be decrypted."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/gcp_kms_hook/index.rst:105
+msgid ""
+"Any additional authenticated data that was provided when encrypting the "
+"message."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/gcp_kms_hook/index.rst:108
+msgid "The original message."
+msgstr ""
+

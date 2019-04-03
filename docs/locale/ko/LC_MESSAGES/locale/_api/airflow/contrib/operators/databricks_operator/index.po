@@ -1,0 +1,453 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C)
+# This file is distributed under the same license as the Airflow package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Airflow 1.10.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-04-03 17:47+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../_api/airflow/contrib/operators/databricks_operator/index.rst:4
+msgid ":mod:`airflow.contrib.operators.databricks_operator`"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/databricks_operator/index.rst:15
+msgid "Module Contents"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/databricks_operator/index.rst:49
+msgid ""
+"Coerces content or all values of content if it is a dict to a string. The"
+" function will throw if content contains non-string or non-numeric types."
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/databricks_operator/index.rst:52
+msgid ""
+"The reason why we have this function is because the ``self.json`` field "
+"must be a dict with only string values. This is because "
+"``render_template`` will fail for numerical values."
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/databricks_operator/index.rst:67
+msgid ""
+"Handles the Airflow + Databricks lifecycle logic for a Databricks "
+"operator :param operator: Databricks operator being handled :param "
+"context: Airflow context"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/databricks_operator/index.rst:81
+#: ../../_api/airflow/contrib/operators/databricks_operator/index.rst:271
+msgid "Bases::class:`airflow.models.BaseOperator`"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/databricks_operator/index.rst:85
+msgid ""
+"Submits a Spark job run to Databricks using the `api/2.0/jobs/runs/submit"
+" <https://docs.databricks.com/api/latest/jobs.html#runs-submit>`_ API "
+"endpoint."
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/databricks_operator/index.rst:90
+#: ../../_api/airflow/contrib/operators/databricks_operator/index.rst:280
+msgid "There are two ways to instantiate this operator."
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/databricks_operator/index.rst:92
+msgid ""
+"In the first way, you can take the JSON payload that you typically use to"
+" call the ``api/2.0/jobs/runs/submit`` endpoint and pass it directly to "
+"our ``DatabricksSubmitRunOperator`` through the ``json`` parameter. For "
+"example ::"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/databricks_operator/index.rst:108
+msgid ""
+"Another way to accomplish the same thing is to use the named parameters "
+"of the ``DatabricksSubmitRunOperator`` directly. Note that there is "
+"exactly one named parameter for each top level parameter in the "
+"``runs/submit`` endpoint. In this method, your code would look like this:"
+" ::"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/databricks_operator/index.rst:125
+#: ../../_api/airflow/contrib/operators/databricks_operator/index.rst:320
+msgid ""
+"In the case where both the json parameter **AND** the named parameters "
+"are provided, they will be merged together. If there are conflicts during"
+" the merge, the named parameters will take precedence and override the "
+"top level ``json`` keys."
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/databricks_operator/index.rst:136
+msgid ""
+"Currently the named parameters that ``DatabricksSubmitRunOperator`` "
+"supports are"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/databricks_operator/index.rst:130
+msgid "``spark_jar_task``"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/databricks_operator/index.rst:131
+msgid "``notebook_task``"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/databricks_operator/index.rst:132
+msgid "``new_cluster``"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/databricks_operator/index.rst:133
+msgid "``existing_cluster_id``"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/databricks_operator/index.rst:134
+msgid "``libraries``"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/databricks_operator/index.rst:135
+msgid "``run_name``"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/databricks_operator/index.rst:136
+msgid "``timeout_seconds``"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/databricks_operator/index.rst
+msgid "Parameters"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/databricks_operator/index.rst:138
+msgid ""
+"A JSON object containing API parameters which will be passed directly to "
+"the ``api/2.0/jobs/runs/submit`` endpoint. The other named parameters "
+"(i.e. ``spark_jar_task``, ``notebook_task``..) to this operator will be "
+"merged with this json dictionary if they are provided. If there are "
+"conflicts during the merge, the named parameters will take precedence and"
+" override the top level json keys. (templated)  .. seealso::     For more"
+" information about templating see :ref:`jinja-templating`.     "
+"https://docs.databricks.com/api/latest/jobs.html#runs-submit"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/databricks_operator/index.rst:138
+msgid ""
+"A JSON object containing API parameters which will be passed directly to "
+"the ``api/2.0/jobs/runs/submit`` endpoint. The other named parameters "
+"(i.e. ``spark_jar_task``, ``notebook_task``..) to this operator will be "
+"merged with this json dictionary if they are provided. If there are "
+"conflicts during the merge, the named parameters will take precedence and"
+" override the top level json keys. (templated)"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/databricks_operator/index.rst:146
+msgid ""
+"For more information about templating see :ref:`jinja-templating`. "
+"https://docs.databricks.com/api/latest/jobs.html#runs-submit"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/databricks_operator/index.rst:149
+msgid ""
+"The main class and parameters for the JAR task. Note that the actual JAR "
+"is specified in the ``libraries``. *EITHER* ``spark_jar_task`` *OR* "
+"``notebook_task`` should be specified. This field will be templated.  .. "
+"seealso::     "
+"https://docs.databricks.com/api/latest/jobs.html#jobssparkjartask"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/databricks_operator/index.rst:149
+msgid ""
+"The main class and parameters for the JAR task. Note that the actual JAR "
+"is specified in the ``libraries``. *EITHER* ``spark_jar_task`` *OR* "
+"``notebook_task`` should be specified. This field will be templated."
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/databricks_operator/index.rst:155
+msgid "https://docs.databricks.com/api/latest/jobs.html#jobssparkjartask"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/databricks_operator/index.rst:157
+msgid ""
+"The notebook path and parameters for the notebook task. *EITHER* "
+"``spark_jar_task`` *OR* ``notebook_task`` should be specified. This field"
+" will be templated.  .. seealso::     "
+"https://docs.databricks.com/api/latest/jobs.html#jobsnotebooktask"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/databricks_operator/index.rst:157
+msgid ""
+"The notebook path and parameters for the notebook task. *EITHER* "
+"``spark_jar_task`` *OR* ``notebook_task`` should be specified. This field"
+" will be templated."
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/databricks_operator/index.rst:162
+msgid "https://docs.databricks.com/api/latest/jobs.html#jobsnotebooktask"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/databricks_operator/index.rst:164
+msgid ""
+"Specs for a new cluster on which this task will be run. *EITHER* "
+"``new_cluster`` *OR* ``existing_cluster_id`` should be specified. This "
+"field will be templated.  .. seealso::     "
+"https://docs.databricks.com/api/latest/jobs.html#jobsclusterspecnewcluster"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/databricks_operator/index.rst:164
+msgid ""
+"Specs for a new cluster on which this task will be run. *EITHER* "
+"``new_cluster`` *OR* ``existing_cluster_id`` should be specified. This "
+"field will be templated."
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/databricks_operator/index.rst:169
+msgid "https://docs.databricks.com/api/latest/jobs.html#jobsclusterspecnewcluster"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/databricks_operator/index.rst:171
+msgid ""
+"ID for existing cluster on which to run this task. *EITHER* "
+"``new_cluster`` *OR* ``existing_cluster_id`` should be specified. This "
+"field will be templated."
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/databricks_operator/index.rst:175
+msgid ""
+"Libraries which this run will use. This field will be templated.  .. "
+"seealso::     "
+"https://docs.databricks.com/api/latest/libraries.html#managedlibrarieslibrary"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/databricks_operator/index.rst:175
+msgid "Libraries which this run will use. This field will be templated."
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/databricks_operator/index.rst:179
+msgid "https://docs.databricks.com/api/latest/libraries.html#managedlibrarieslibrary"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/databricks_operator/index.rst:181
+msgid ""
+"The run name used for this task. By default this will be set to the "
+"Airflow ``task_id``. This ``task_id`` is a required parameter of the "
+"superclass ``BaseOperator``. This field will be templated."
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/databricks_operator/index.rst:186
+#: ../../_api/airflow/contrib/operators/databricks_operator/index.rst:386
+msgid ""
+"The timeout for this run. By default a value of 0 is used which means to "
+"have no timeout. This field will be templated."
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/databricks_operator/index.rst:190
+#: ../../_api/airflow/contrib/operators/databricks_operator/index.rst:390
+msgid ""
+"The name of the Airflow connection to use. By default and in the common "
+"case this will be ``databricks_default``. To use token based "
+"authentication, provide the key ``token`` in the extra field for the "
+"connection."
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/databricks_operator/index.rst:195
+#: ../../_api/airflow/contrib/operators/databricks_operator/index.rst:395
+msgid ""
+"Controls the rate which we poll for the result of this run. By default "
+"the operator will poll every 30 seconds."
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/databricks_operator/index.rst:198
+#: ../../_api/airflow/contrib/operators/databricks_operator/index.rst:398
+msgid ""
+"Amount of times retry if the Databricks backend is unreachable. Its value"
+" must be greater than or equal to 1."
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/databricks_operator/index.rst:201
+msgid ""
+"Number of seconds to wait between retries (it might be a floating point "
+"number)."
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/databricks_operator/index.rst:204
+#: ../../_api/airflow/contrib/operators/databricks_operator/index.rst:401
+msgid "Whether we should push run_id and run_page_url to xcom."
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/databricks_operator/index.rst:275
+msgid ""
+"Runs an existing Spark job run to Databricks using the `api/2.0/jobs/run-"
+"now <https://docs.databricks.com/api/latest/jobs.html#run-now>`_ API "
+"endpoint."
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/databricks_operator/index.rst:282
+msgid ""
+"In the first way, you can take the JSON payload that you typically use to"
+" call the ``api/2.0/jobs/run-now`` endpoint and pass it directly to our "
+"``DatabricksRunNowOperator`` through the ``json`` parameter. For example "
+"::"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/databricks_operator/index.rst:297
+msgid ""
+"Another way to accomplish the same thing is to use the named parameters "
+"of the ``DatabricksRunNowOperator`` directly. Note that there is exactly "
+"one named parameter for each top level parameter in the ``run-now`` "
+"endpoint. In this method, your code would look like this: ::"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/databricks_operator/index.rst:330
+msgid ""
+"Currently the named parameters that ``DatabricksRunNowOperator`` supports"
+" are"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/databricks_operator/index.rst:325
+msgid "``job_id``"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/databricks_operator/index.rst:326
+msgid "``json``"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/databricks_operator/index.rst:327
+msgid "``notebook_params``"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/databricks_operator/index.rst:328
+msgid "``python_params``"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/databricks_operator/index.rst:329
+msgid "``spark_submit_params``"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/databricks_operator/index.rst:332
+msgid ""
+"the job_id of the existing Databricks job. This field will be templated."
+"  .. seealso::     https://docs.databricks.com/api/latest/jobs.html#run-"
+"now"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/databricks_operator/index.rst:332
+msgid "the job_id of the existing Databricks job. This field will be templated."
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/databricks_operator/index.rst:336
+#: ../../_api/airflow/contrib/operators/databricks_operator/index.rst:373
+#: ../../_api/airflow/contrib/operators/databricks_operator/index.rst:384
+msgid "https://docs.databricks.com/api/latest/jobs.html#run-now"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/databricks_operator/index.rst:338
+msgid ""
+"A JSON object containing API parameters which will be passed directly to "
+"the ``api/2.0/jobs/run-now`` endpoint. The other named parameters (i.e. "
+"``notebook_params``, ``spark_submit_params``..) to this operator will be "
+"merged with this json dictionary if they are provided. If there are "
+"conflicts during the merge, the named parameters will take precedence and"
+" override the top level json keys. (templated)  .. seealso::     For more"
+" information about templating see :ref:`jinja-templating`.     "
+"https://docs.databricks.com/api/latest/jobs.html#run-now"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/databricks_operator/index.rst:338
+msgid ""
+"A JSON object containing API parameters which will be passed directly to "
+"the ``api/2.0/jobs/run-now`` endpoint. The other named parameters (i.e. "
+"``notebook_params``, ``spark_submit_params``..) to this operator will be "
+"merged with this json dictionary if they are provided. If there are "
+"conflicts during the merge, the named parameters will take precedence and"
+" override the top level json keys. (templated)"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/databricks_operator/index.rst:346
+msgid ""
+"For more information about templating see :ref:`jinja-templating`. "
+"https://docs.databricks.com/api/latest/jobs.html#run-now"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/databricks_operator/index.rst:349
+msgid ""
+"A dict from keys to values for jobs with notebook task, e.g. "
+"\"notebook_params\": {\"name\": \"john doe\", \"age\":  \"35\"}. The map "
+"is passed to the notebook and will be accessible through the "
+"dbutils.widgets.get function. See Widgets for more information. If not "
+"specified upon run-now, the triggered run will use the job’s base "
+"parameters. notebook_params cannot be specified in conjunction with "
+"jar_params. The json representation of this field (i.e. "
+"{\"notebook_params\":{\"name\":\"john doe\",\"age\":\"35\"}}) cannot "
+"exceed 10,000 bytes. This field will be templated.  .. seealso::     "
+"https://docs.databricks.com/user-guide/notebooks/widgets.html"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/databricks_operator/index.rst:349
+msgid ""
+"A dict from keys to values for jobs with notebook task, e.g. "
+"\"notebook_params\": {\"name\": \"john doe\", \"age\":  \"35\"}. The map "
+"is passed to the notebook and will be accessible through the "
+"dbutils.widgets.get function. See Widgets for more information. If not "
+"specified upon run-now, the triggered run will use the job’s base "
+"parameters. notebook_params cannot be specified in conjunction with "
+"jar_params. The json representation of this field (i.e. "
+"{\"notebook_params\":{\"name\":\"john doe\",\"age\":\"35\"}}) cannot "
+"exceed 10,000 bytes. This field will be templated."
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/databricks_operator/index.rst:361
+msgid "https://docs.databricks.com/user-guide/notebooks/widgets.html"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/databricks_operator/index.rst:363
+msgid ""
+"A list of parameters for jobs with python tasks, e.g. \"python_params\": "
+"[\"john doe\", \"35\"]. The parameters will be passed to python file as "
+"command line parameters. If specified upon run-now, it would overwrite "
+"the parameters specified in job setting. The json representation of this "
+"field (i.e. {\"python_params\":[\"john doe\",\"35\"]}) cannot exceed "
+"10,000 bytes. This field will be templated.  .. seealso::     "
+"https://docs.databricks.com/api/latest/jobs.html#run-now"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/databricks_operator/index.rst:363
+msgid ""
+"A list of parameters for jobs with python tasks, e.g. \"python_params\": "
+"[\"john doe\", \"35\"]. The parameters will be passed to python file as "
+"command line parameters. If specified upon run-now, it would overwrite "
+"the parameters specified in job setting. The json representation of this "
+"field (i.e. {\"python_params\":[\"john doe\",\"35\"]}) cannot exceed "
+"10,000 bytes. This field will be templated."
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/databricks_operator/index.rst:375
+msgid ""
+"A list of parameters for jobs with spark submit task, e.g. "
+"\"spark_submit_params\": [\"--class\", "
+"\"org.apache.spark.examples.SparkPi\"]. The parameters will be passed to "
+"spark-submit script as command line parameters. If specified upon run-"
+"now, it would overwrite the parameters specified in job setting. The json"
+" representation of this field cannot exceed 10,000 bytes. This field will"
+" be templated.  .. seealso::     "
+"https://docs.databricks.com/api/latest/jobs.html#run-now"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/databricks_operator/index.rst:375
+msgid ""
+"A list of parameters for jobs with spark submit task, e.g. "
+"\"spark_submit_params\": [\"--class\", "
+"\"org.apache.spark.examples.SparkPi\"]. The parameters will be passed to "
+"spark-submit script as command line parameters. If specified upon run-"
+"now, it would overwrite the parameters specified in job setting. The json"
+" representation of this field cannot exceed 10,000 bytes. This field will"
+" be templated."
+msgstr ""
+

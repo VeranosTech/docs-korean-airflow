@@ -1,0 +1,149 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C)
+# This file is distributed under the same license as the Airflow package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Airflow 1.10.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-04-03 17:47+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../_api/airflow/contrib/hooks/winrm_hook/index.rst:4
+msgid ":mod:`airflow.contrib.hooks.winrm_hook`"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/winrm_hook/index.rst:15
+msgid "Module Contents"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/winrm_hook/index.rst:24
+msgid "Bases::class:`airflow.hooks.base_hook.BaseHook`"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/winrm_hook/index.rst:28
+msgid "Hook for winrm remote execution using pywinrm."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/winrm_hook/index.rst
+msgid "seealso"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/winrm_hook/index.rst:30
+msgid "https://github.com/diyan/pywinrm/blob/master/winrm/protocol.py"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/winrm_hook/index.rst
+msgid "Parameters"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/winrm_hook/index.rst:32
+msgid ""
+"connection id from airflow Connections from where all the required "
+"parameters can be fetched like username and password. Thought the "
+"priority is given to the param passed during init"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/winrm_hook/index.rst:36
+msgid ""
+"When not set, endpoint will be constructed like this: "
+"'http://{remote_host}:{remote_port}/wsman'"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/winrm_hook/index.rst:39
+msgid "Remote host to connect to. Ignored if `endpoint` is set."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/winrm_hook/index.rst:41
+msgid "Remote port to connect to. Ignored if `endpoint` is set."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/winrm_hook/index.rst:43
+msgid ""
+"transport type, one of 'plaintext' (default), 'kerberos', 'ssl', 'ntlm', "
+"'credssp'"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/winrm_hook/index.rst:45
+msgid "username to connect to the remote_host"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/winrm_hook/index.rst:47
+msgid "password of the username to connect to the remote_host"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/winrm_hook/index.rst:49
+msgid "the service name, default is HTTP"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/winrm_hook/index.rst:51
+msgid "the path to a keytab file if you are using one"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/winrm_hook/index.rst:53
+msgid "Certification Authority trust path"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/winrm_hook/index.rst:55
+msgid "client authentication certificate file path in PEM format"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/winrm_hook/index.rst:57
+msgid "client authentication certificate key file path in PEM format"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/winrm_hook/index.rst:59
+msgid ""
+"whether server certificate should be validated on Python versions that "
+"support it; one of 'validate' (default), 'ignore'"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/winrm_hook/index.rst:62
+msgid "if True, TGT is sent to target server to allow multiple hops"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/winrm_hook/index.rst:65
+msgid ""
+"maximum seconds to wait before an HTTP connect/read times out (default "
+"30). This value should be slightly higher than operation_timeout_sec, as "
+"the server can block *at least* that long."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/winrm_hook/index.rst:69
+msgid ""
+"maximum allowed time in seconds for any single wsman HTTP operation "
+"(default 20). Note that operation timeouts while receiving output (the "
+"only wsman operation that should take any significant time, and where "
+"these timeouts are expected) will be silently retried indefinitely."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/winrm_hook/index.rst:74
+msgid ""
+"the hostname to use for the kerberos exchange (defaults to the hostname "
+"in the endpoint URL)"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/winrm_hook/index.rst:77
+msgid ""
+"Will encrypt the WinRM messages if set and the transport auth supports "
+"message encryption. (Default 'auto')"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/winrm_hook/index.rst:80
+msgid ""
+"Whether to disable TLSv1.2 support and work with older protocols like "
+"TLSv1.0, default is False"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/winrm_hook/index.rst:83
+msgid "Will send the channel bindings over a HTTPS channel (Default: True)"
+msgstr ""
+

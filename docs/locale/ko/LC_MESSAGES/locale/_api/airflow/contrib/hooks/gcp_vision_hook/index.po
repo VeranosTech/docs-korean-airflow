@@ -1,0 +1,152 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C)
+# This file is distributed under the same license as the Airflow package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Airflow 1.10.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-04-03 17:47+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../_api/airflow/contrib/hooks/gcp_vision_hook/index.rst:4
+msgid ":mod:`airflow.contrib.hooks.gcp_vision_hook`"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/gcp_vision_hook/index.rst:15
+msgid "Module Contents"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/gcp_vision_hook/index.rst:24
+msgid "Class used for checking if the entity has the 'name' attribute set."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/gcp_vision_hook/index.rst:26
+msgid "If so, no action is taken."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/gcp_vision_hook/index.rst:28
+msgid ""
+"If not, and the name can be constructed from other parameters provided, "
+"it is created and filled in the entity."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/gcp_vision_hook/index.rst:31
+msgid ""
+"If both the entity's 'name' attribute is set and the name can be "
+"constructed from other parameters provided:"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/gcp_vision_hook/index.rst:34
+msgid "If they are the same - no action is taken"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/gcp_vision_hook/index.rst:36
+msgid "if they are different - an exception is thrown."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/gcp_vision_hook/index.rst:72
+msgid "Bases::class:`airflow.contrib.hooks.gcp_api_base_hook.GoogleCloudBaseHook`"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/gcp_vision_hook/index.rst:76
+msgid "Hook for Google Cloud Vision APIs."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/gcp_vision_hook/index.rst:117
+msgid "Retrieves connection to Cloud Vision."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/gcp_vision_hook/index.rst
+msgid "Returns"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/gcp_vision_hook/index.rst:119
+msgid "Google Cloud Vision client object."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/gcp_vision_hook/index.rst
+msgid "Return type"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/gcp_vision_hook/index.rst:136
+msgid ""
+"For the documentation see: "
+":class:`~airflow.contrib.operators.gcp_vision_operator.CloudVisionProductSetCreateOperator`"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/gcp_vision_hook/index.rst:146
+msgid ""
+"For the documentation see: "
+":class:`~airflow.contrib.operators.gcp_vision_operator.CloudVisionProductSetGetOperator`"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/gcp_vision_hook/index.rst:156
+msgid ""
+"For the documentation see: "
+":class:`~airflow.contrib.operators.gcp_vision_operator.CloudVisionProductSetUpdateOperator`"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/gcp_vision_hook/index.rst:166
+msgid ""
+"For the documentation see: "
+":class:`~airflow.contrib.operators.gcp_vision_operator.CloudVisionProductSetDeleteOperator`"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/gcp_vision_hook/index.rst:176
+msgid ""
+"For the documentation see: "
+":class:`~airflow.contrib.operators.gcp_vision_operator.CloudVisionProductCreateOperator`"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/gcp_vision_hook/index.rst:186
+msgid ""
+"For the documentation see: "
+":class:`~airflow.contrib.operators.gcp_vision_operator.CloudVisionProductGetOperator`"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/gcp_vision_hook/index.rst:196
+msgid ""
+"For the documentation see: "
+":class:`~airflow.contrib.operators.gcp_vision_operator.CloudVisionProductUpdateOperator`"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/gcp_vision_hook/index.rst:206
+msgid ""
+"For the documentation see: "
+":class:`~airflow.contrib.operators.gcp_vision_operator.CloudVisionProductDeleteOperator`"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/gcp_vision_hook/index.rst:216
+#: ../../_api/airflow/contrib/hooks/gcp_vision_hook/index.rst:226
+msgid ""
+"For the documentation see: "
+":py:class:`~airflow.contrib.operators.gcp_vision_operator.CloudVisionReferenceImageCreateOperator`"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/gcp_vision_hook/index.rst:236
+msgid ""
+"For the documentation see: "
+":py:class:`~airflow.contrib.operators.gcp_vision_operator.CloudVisionAddProductToProductSetOperator`"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/gcp_vision_hook/index.rst:246
+msgid ""
+"For the documentation see: "
+":py:class:`~airflow.contrib.operators.gcp_vision_operator.CloudVisionRemoveProductFromProductSetOperator`"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/gcp_vision_hook/index.rst:256
+msgid ""
+"For the documentation see: "
+":py:class:`~airflow.contrib.operators.gcp_vision_image_annotator_operator.CloudVisionAnnotateImage`"
+msgstr ""
+

@@ -1,0 +1,82 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C)
+# This file is distributed under the same license as the Airflow package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Airflow 1.10.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-04-03 17:47+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../_api/airflow/hooks/webhdfs_hook/index.rst:4
+msgid ":mod:`airflow.hooks.webhdfs_hook`"
+msgstr ""
+
+#: ../../_api/airflow/hooks/webhdfs_hook/index.rst:15
+msgid "Module Contents"
+msgstr ""
+
+#: ../../_api/airflow/hooks/webhdfs_hook/index.rst:48
+msgid "Bases::class:`airflow.exceptions.AirflowException`"
+msgstr ""
+
+#: ../../_api/airflow/hooks/webhdfs_hook/index.rst:61
+msgid "Bases::class:`airflow.hooks.base_hook.BaseHook`"
+msgstr ""
+
+#: ../../_api/airflow/hooks/webhdfs_hook/index.rst:65
+msgid "Interact with HDFS. This class is a wrapper around the hdfscli library."
+msgstr ""
+
+#: ../../_api/airflow/hooks/webhdfs_hook/index.rst:76
+msgid "Returns a hdfscli InsecureClient object."
+msgstr ""
+
+#: ../../_api/airflow/hooks/webhdfs_hook/index.rst:85
+msgid "Check for the existence of a path in HDFS by querying FileStatus."
+msgstr ""
+
+#: ../../_api/airflow/hooks/webhdfs_hook/index.rst:94
+msgid "Uploads a file to HDFS"
+msgstr ""
+
+#: ../../_api/airflow/hooks/webhdfs_hook/index.rst
+msgid "Parameters"
+msgstr ""
+
+#: ../../_api/airflow/hooks/webhdfs_hook/index.rst:96
+msgid ""
+"Local path to file or folder. If a folder, all the files inside of it "
+"will be uploaded (note that this implies that folders empty of files will"
+" not be created remotely)."
+msgstr ""
+
+#: ../../_api/airflow/hooks/webhdfs_hook/index.rst:100
+msgid ""
+"PTarget HDFS path. If it already exists and is a directory, files will be"
+" uploaded inside."
+msgstr ""
+
+#: ../../_api/airflow/hooks/webhdfs_hook/index.rst:103
+msgid "Overwrite any existing file or directory."
+msgstr ""
+
+#: ../../_api/airflow/hooks/webhdfs_hook/index.rst:105
+msgid ""
+"Number of threads to use for parallelization. A value of `0` (or "
+"negative) uses as many threads as there are files."
+msgstr ""
+
+#: ../../_api/airflow/hooks/webhdfs_hook/index.rst:108
+msgid "Keyword arguments forwarded to :meth:`upload`."
+msgstr ""
+

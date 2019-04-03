@@ -1,0 +1,61 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C)
+# This file is distributed under the same license as the Airflow package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Airflow 1.10.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-04-03 17:47+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../_api/airflow/contrib/sensors/gcp_transfer_sensor/index.rst:4
+msgid ":mod:`airflow.contrib.sensors.gcp_transfer_sensor`"
+msgstr ""
+
+#: ../../_api/airflow/contrib/sensors/gcp_transfer_sensor/index.rst:15
+msgid "Module Contents"
+msgstr ""
+
+#: ../../_api/airflow/contrib/sensors/gcp_transfer_sensor/index.rst:24
+msgid "Bases::class:`airflow.sensors.base_sensor_operator.BaseSensorOperator`"
+msgstr ""
+
+#: ../../_api/airflow/contrib/sensors/gcp_transfer_sensor/index.rst:28
+msgid ""
+"Waits for at least one operation belonging to the job to have the "
+"expected status."
+msgstr ""
+
+#: ../../_api/airflow/contrib/sensors/gcp_transfer_sensor/index.rst
+msgid "Parameters"
+msgstr ""
+
+#: ../../_api/airflow/contrib/sensors/gcp_transfer_sensor/index.rst:31
+msgid "The name of the transfer job"
+msgstr ""
+
+#: ../../_api/airflow/contrib/sensors/gcp_transfer_sensor/index.rst:33
+msgid ""
+"The expected state of the operation. See: https://cloud.google.com"
+"/storage-transfer/docs/reference/rest/v1/transferOperations#Status"
+msgstr ""
+
+#: ../../_api/airflow/contrib/sensors/gcp_transfer_sensor/index.rst:37
+msgid ""
+"(Optional) the ID of the project that owns the Transfer Job. If set to "
+"None or missing, the default project_id from the GCP connection is used."
+msgstr ""
+
+#: ../../_api/airflow/contrib/sensors/gcp_transfer_sensor/index.rst:41
+msgid "The connection ID used to connect to Google Cloud Platform."
+msgstr ""
+

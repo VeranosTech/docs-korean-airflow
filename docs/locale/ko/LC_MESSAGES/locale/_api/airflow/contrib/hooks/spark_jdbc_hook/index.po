@@ -1,0 +1,185 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C)
+# This file is distributed under the same license as the Airflow package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Airflow 1.10.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-04-03 17:47+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../_api/airflow/contrib/hooks/spark_jdbc_hook/index.rst:4
+msgid ":mod:`airflow.contrib.hooks.spark_jdbc_hook`"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/spark_jdbc_hook/index.rst:15
+msgid "Module Contents"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/spark_jdbc_hook/index.rst:24
+msgid "Bases::class:`airflow.contrib.hooks.spark_submit_hook.SparkSubmitHook`"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/spark_jdbc_hook/index.rst:28
+msgid ""
+"This hook extends the SparkSubmitHook specifically for performing data "
+"transfers to/from JDBC-based databases with Apache Spark."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/spark_jdbc_hook/index.rst
+msgid "Parameters"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/spark_jdbc_hook/index.rst:31
+msgid "Name of the job (default airflow-spark-jdbc)"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/spark_jdbc_hook/index.rst:33
+msgid "Connection id as configured in Airflow administration"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/spark_jdbc_hook/index.rst:35
+msgid "Any additional Spark configuration properties"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/spark_jdbc_hook/index.rst:37
+msgid "Additional python files used (.zip, .egg, or .py)"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/spark_jdbc_hook/index.rst:39
+msgid "Additional files to upload to the container running the job"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/spark_jdbc_hook/index.rst:41
+msgid "Additional jars to upload and add to the driver and executor classpath"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/spark_jdbc_hook/index.rst:44
+msgid ""
+"number of executor to run. This should be set so as to manage the number "
+"of connections made with the JDBC database"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/spark_jdbc_hook/index.rst:47
+msgid "Number of cores per executor"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/spark_jdbc_hook/index.rst:49
+msgid "Memory per executor (e.g. 1000M, 2G)"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/spark_jdbc_hook/index.rst:51
+msgid "Memory allocated to the driver (e.g. 1000M, 2G)"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/spark_jdbc_hook/index.rst:53
+msgid "Whether to pass the verbose flag to spark-submit for debugging"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/spark_jdbc_hook/index.rst:55
+msgid "Full path to the file that contains the keytab"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/spark_jdbc_hook/index.rst:57
+msgid "The name of the kerberos principal used for keytab"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/spark_jdbc_hook/index.rst:59
+msgid ""
+"Which way the data should flow. 2 possible values: spark_to_jdbc: data "
+"written by spark from metastore to jdbc jdbc_to_spark: data written by "
+"spark from jdbc to metastore"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/spark_jdbc_hook/index.rst:63
+msgid "The name of the JDBC table"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/spark_jdbc_hook/index.rst:65
+msgid "Connection id used for connection to JDBC database"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/spark_jdbc_hook/index.rst:67
+msgid ""
+"Name of the JDBC driver to use for the JDBC connection. This driver "
+"(usually a jar) should be passed in the 'jars' parameter"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/spark_jdbc_hook/index.rst:70
+msgid "The name of the metastore table,"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/spark_jdbc_hook/index.rst:72
+msgid ""
+"(spark_to_jdbc only) Whether or not Spark should truncate or drop and "
+"recreate the JDBC table. This only takes effect if 'save_mode' is set to "
+"Overwrite. Also, if the schema is different, Spark cannot truncate, and "
+"will drop and recreate"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/spark_jdbc_hook/index.rst:77
+msgid "The Spark save-mode to use (e.g. overwrite, append, etc.)"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/spark_jdbc_hook/index.rst:79
+msgid "(jdbc_to_spark-only) The Spark save-format to use (e.g. parquet)"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/spark_jdbc_hook/index.rst:81
+msgid ""
+"(spark_to_jdbc only) The size of the batch to insert per round trip to "
+"the JDBC database. Defaults to 1000"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/spark_jdbc_hook/index.rst:84
+msgid ""
+"(jdbc_to_spark only) The size of the batch to fetch per round trip from "
+"the JDBC database. Default depends on the JDBC driver"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/spark_jdbc_hook/index.rst:87
+msgid ""
+"The maximum number of partitions that can be used by Spark "
+"simultaneously, both for spark_to_jdbc and jdbc_to_spark operations. This"
+" will also cap the number of JDBC connections that can be opened"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/spark_jdbc_hook/index.rst:92
+msgid ""
+"(jdbc_to_spark-only) A numeric column to be used to partition the "
+"metastore table by. If specified, you must also specify: num_partitions, "
+"lower_bound, upper_bound"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/spark_jdbc_hook/index.rst:97
+msgid ""
+"(jdbc_to_spark-only) Lower bound of the range of the numeric partition "
+"column to fetch. If specified, you must also specify: num_partitions, "
+"partition_column, upper_bound"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/spark_jdbc_hook/index.rst:101
+msgid ""
+"(jdbc_to_spark-only) Upper bound of the range of the numeric partition "
+"column to fetch. If specified, you must also specify: num_partitions, "
+"partition_column, lower_bound"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/spark_jdbc_hook/index.rst:105
+msgid ""
+"(spark_to_jdbc-only) The database column data types to use instead of the"
+" defaults, when creating the table. Data type information should be "
+"specified in the same format as CREATE TABLE columns syntax (e.g: \"name "
+"CHAR(64), comments VARCHAR(1024)\"). The specified types should be valid "
+"spark sql data types."
+msgstr ""
+

@@ -1,0 +1,100 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C)
+# This file is distributed under the same license as the Airflow package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Airflow 1.10.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-04-03 17:47+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../_api/airflow/hooks/mysql_hook/index.rst:4
+msgid ":mod:`airflow.hooks.mysql_hook`"
+msgstr ""
+
+#: ../../_api/airflow/hooks/mysql_hook/index.rst:15
+msgid "Module Contents"
+msgstr ""
+
+#: ../../_api/airflow/hooks/mysql_hook/index.rst:24
+msgid "Bases::class:`airflow.hooks.dbapi_hook.DbApiHook`"
+msgstr ""
+
+#: ../../_api/airflow/hooks/mysql_hook/index.rst:28
+msgid "Interact with MySQL."
+msgstr ""
+
+#: ../../_api/airflow/hooks/mysql_hook/index.rst:30
+msgid ""
+"You can specify charset in the extra field of your connection as "
+"``{\"charset\": \"utf8\"}``. Also you can choose cursor as ``{\"cursor\":"
+" \"SSCursor\"}``. Refer to the MySQLdb.cursors for more details."
+msgstr ""
+
+#: ../../_api/airflow/hooks/mysql_hook/index.rst:73
+msgid "MySql connection sets autocommit in a different way."
+msgstr ""
+
+#: ../../_api/airflow/hooks/mysql_hook/index.rst:82
+msgid "MySql connection gets autocommit in a different way."
+msgstr ""
+
+#: ../../_api/airflow/hooks/mysql_hook/index.rst
+msgid "Parameters"
+msgstr ""
+
+#: ../../_api/airflow/hooks/mysql_hook/index.rst:84
+msgid "connection to get autocommit setting from."
+msgstr ""
+
+#: ../../_api/airflow/hooks/mysql_hook/index.rst
+msgid "Returns"
+msgstr ""
+
+#: ../../_api/airflow/hooks/mysql_hook/index.rst:86
+msgid "connection autocommit setting"
+msgstr ""
+
+#: ../../_api/airflow/hooks/mysql_hook/index.rst
+msgid "Return type"
+msgstr ""
+
+#: ../../_api/airflow/hooks/mysql_hook/index.rst:96
+msgid "Returns a mysql connection object"
+msgstr ""
+
+#: ../../_api/airflow/hooks/mysql_hook/index.rst:105
+msgid "Loads a tab-delimited file into a database table"
+msgstr ""
+
+#: ../../_api/airflow/hooks/mysql_hook/index.rst:114
+msgid "Dumps a database table into a tab-delimited file"
+msgstr ""
+
+#: ../../_api/airflow/hooks/mysql_hook/index.rst:123
+msgid ""
+"MySQLdb converts an argument to a literal when passing those separately "
+"to execute. Hence, this method does nothing."
+msgstr ""
+
+#: ../../_api/airflow/hooks/mysql_hook/index.rst:126
+msgid "The cell to insert into the table"
+msgstr ""
+
+#: ../../_api/airflow/hooks/mysql_hook/index.rst:128
+msgid "The database connection"
+msgstr ""
+
+#: ../../_api/airflow/hooks/mysql_hook/index.rst:130
+msgid "The same cell"
+msgstr ""
+

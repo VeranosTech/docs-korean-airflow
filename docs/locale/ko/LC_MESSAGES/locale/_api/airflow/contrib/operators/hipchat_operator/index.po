@@ -1,0 +1,103 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C)
+# This file is distributed under the same license as the Airflow package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Airflow 1.10.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-04-03 17:47+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../_api/airflow/contrib/operators/hipchat_operator/index.rst:4
+msgid ":mod:`airflow.contrib.operators.hipchat_operator`"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/hipchat_operator/index.rst:15
+msgid "Module Contents"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/hipchat_operator/index.rst:24
+msgid "Bases::class:`airflow.models.BaseOperator`"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/hipchat_operator/index.rst:28
+msgid ""
+"Base HipChat Operator. All derived HipChat operators reference from "
+"HipChat's official REST API documentation at "
+"https://www.hipchat.com/docs/apiv2. Before using any HipChat API "
+"operators you need to get an authentication token at "
+"https://www.hipchat.com/docs/apiv2/auth. In the future additional HipChat"
+" operators will be derived from this class as well."
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/hipchat_operator/index.rst
+msgid "Parameters"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/hipchat_operator/index.rst:34
+msgid "HipChat REST API authentication token"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/hipchat_operator/index.rst:36
+msgid "HipChat REST API base url."
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/hipchat_operator/index.rst:48
+msgid ""
+"Used by the execute function. Set the request method, url, and body of "
+"HipChat's REST API call. Override in child class. Each HipChatAPI child "
+"operator is responsible for having a prepare_request method call which "
+"sets self.method, self.url, and self.body."
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/hipchat_operator/index.rst:71
+msgid "Bases::class:`airflow.contrib.operators.hipchat_operator.HipChatAPIOperator`"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/hipchat_operator/index.rst:75
+msgid ""
+"Send notification to a specific HipChat room. More info: "
+"https://www.hipchat.com/docs/apiv2/method/send_room_notification"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/hipchat_operator/index.rst:78
+msgid "Room in which to send notification on HipChat. (templated)"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/hipchat_operator/index.rst:80
+msgid "The message body. (templated)"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/hipchat_operator/index.rst:82
+msgid "Label to be shown in addition to sender's name"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/hipchat_operator/index.rst:84
+msgid "How the notification is rendered: html or text"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/hipchat_operator/index.rst:86
+msgid "Background color of the msg: yellow, green, red, purple, gray, or random"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/hipchat_operator/index.rst:88
+msgid "The message id to attach this notification to"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/hipchat_operator/index.rst:90
+msgid "Whether this message should trigger a user notification"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/hipchat_operator/index.rst:92
+msgid "HipChat-defined card object"
+msgstr ""
+

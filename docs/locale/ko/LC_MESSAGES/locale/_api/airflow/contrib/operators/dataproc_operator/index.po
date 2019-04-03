@@ -1,0 +1,566 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C)
+# This file is distributed under the same license as the Airflow package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Airflow 1.10.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-04-03 17:47+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../_api/airflow/contrib/operators/dataproc_operator/index.rst:4
+msgid ":mod:`airflow.contrib.operators.dataproc_operator`"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/dataproc_operator/index.rst:15
+msgid "Module Contents"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/dataproc_operator/index.rst:24
+#: ../../_api/airflow/contrib/operators/dataproc_operator/index.rst:208
+#: ../../_api/airflow/contrib/operators/dataproc_operator/index.rst:302
+#: ../../_api/airflow/contrib/operators/dataproc_operator/index.rst:360
+#: ../../_api/airflow/contrib/operators/dataproc_operator/index.rst:487
+#: ../../_api/airflow/contrib/operators/dataproc_operator/index.rst:582
+#: ../../_api/airflow/contrib/operators/dataproc_operator/index.rst:678
+#: ../../_api/airflow/contrib/operators/dataproc_operator/index.rst:771
+#: ../../_api/airflow/contrib/operators/dataproc_operator/index.rst:864
+#: ../../_api/airflow/contrib/operators/dataproc_operator/index.rst:971
+msgid "Bases::class:`airflow.models.BaseOperator`"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/dataproc_operator/index.rst:28
+msgid ""
+"Create a new cluster on Google Cloud Dataproc. The operator will wait "
+"until the creation is successful or an error occurs in the creation "
+"process."
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/dataproc_operator/index.rst:31
+msgid "The parameters allow to configure the cluster. Please refer to"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/dataproc_operator/index.rst:33
+msgid "https://cloud.google.com/dataproc/docs/reference/rest/v1/projects.regions.clusters"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/dataproc_operator/index.rst:35
+msgid ""
+"for a detailed explanation on the different parameters. Most of the "
+"configuration parameters detailed in the link are available as a "
+"parameter to this operator."
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/dataproc_operator/index.rst
+msgid "Parameters"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/dataproc_operator/index.rst:38
+msgid "The name of the DataProc cluster to create. (templated)"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/dataproc_operator/index.rst:40
+msgid ""
+"The ID of the google cloud project in which to create the cluster. "
+"(templated)"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/dataproc_operator/index.rst:43
+msgid ""
+"The # of workers to spin up. If set to zero will spin up cluster in a "
+"single node mode"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/dataproc_operator/index.rst:46
+msgid ""
+"The storage bucket to use, setting to None lets dataproc generate a "
+"custom one for you"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/dataproc_operator/index.rst:49
+msgid "List of GCS uri's containing dataproc initialization scripts"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/dataproc_operator/index.rst:52
+msgid "Amount of time executable scripts in init_actions_uris has to complete"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/dataproc_operator/index.rst:55
+msgid ""
+"dict of key-value google compute engine metadata entries to add to all "
+"instances"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/dataproc_operator/index.rst:58
+msgid "the version of software inside the Dataproc cluster"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/dataproc_operator/index.rst:60
+msgid ""
+"custom Dataproc image for more info see "
+"https://cloud.google.com/dataproc/docs/guides/dataproc-images"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/dataproc_operator/index.rst:63
+msgid ""
+"dict of properties to set on config files (e.g. spark-defaults.conf), see"
+" "
+"https://cloud.google.com/dataproc/docs/reference/rest/v1/projects.regions.clusters#SoftwareConfig"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/dataproc_operator/index.rst:67
+msgid "Compute engine machine type to use for the master node"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/dataproc_operator/index.rst:69
+msgid ""
+"Type of the boot disk for the master node (default is ``pd-standard``). "
+"Valid values: ``pd-ssd`` (Persistent Disk Solid State Drive) or ``pd-"
+"standard`` (Persistent Disk Hard Disk Drive)."
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/dataproc_operator/index.rst:74
+msgid "Disk size for the master node"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/dataproc_operator/index.rst:76
+msgid "Compute engine machine type to use for the worker nodes"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/dataproc_operator/index.rst:78
+msgid ""
+"Type of the boot disk for the worker node (default is ``pd-standard``). "
+"Valid values: ``pd-ssd`` (Persistent Disk Solid State Drive) or ``pd-"
+"standard`` (Persistent Disk Hard Disk Drive)."
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/dataproc_operator/index.rst:83
+msgid "Disk size for the worker nodes"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/dataproc_operator/index.rst:85
+msgid "The # of preemptible worker nodes to spin up"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/dataproc_operator/index.rst:87
+msgid "dict of labels to add to the cluster"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/dataproc_operator/index.rst:89
+msgid "The zone where the cluster will be located. (templated)"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/dataproc_operator/index.rst:91
+msgid ""
+"The network uri to be used for machine communication, cannot be specified"
+" with subnetwork_uri"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/dataproc_operator/index.rst:94
+msgid ""
+"The subnetwork uri to be used for machine communication, cannot be "
+"specified with network_uri"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/dataproc_operator/index.rst:97
+msgid ""
+"If true, all instances in the cluster will only have internal IP "
+"addresses. This can only be enabled for subnetwork enabled networks"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/dataproc_operator/index.rst:101
+msgid "The GCE tags to add to all instances"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/dataproc_operator/index.rst:103
+#: ../../_api/airflow/contrib/operators/dataproc_operator/index.rst:314
+msgid "leave as 'global', might become relevant in the future. (templated)"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/dataproc_operator/index.rst:105
+#: ../../_api/airflow/contrib/operators/dataproc_operator/index.rst:237
+#: ../../_api/airflow/contrib/operators/dataproc_operator/index.rst:316
+#: ../../_api/airflow/contrib/operators/dataproc_operator/index.rst:416
+#: ../../_api/airflow/contrib/operators/dataproc_operator/index.rst:511
+#: ../../_api/airflow/contrib/operators/dataproc_operator/index.rst:607
+#: ../../_api/airflow/contrib/operators/dataproc_operator/index.rst:710
+#: ../../_api/airflow/contrib/operators/dataproc_operator/index.rst:803
+#: ../../_api/airflow/contrib/operators/dataproc_operator/index.rst:896
+#: ../../_api/airflow/contrib/operators/dataproc_operator/index.rst:1018
+#: ../../_api/airflow/contrib/operators/dataproc_operator/index.rst:1073
+msgid "The connection ID to use connecting to Google Cloud Platform."
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/dataproc_operator/index.rst:107
+#: ../../_api/airflow/contrib/operators/dataproc_operator/index.rst:246
+#: ../../_api/airflow/contrib/operators/dataproc_operator/index.rst:318
+#: ../../_api/airflow/contrib/operators/dataproc_operator/index.rst:418
+#: ../../_api/airflow/contrib/operators/dataproc_operator/index.rst:513
+#: ../../_api/airflow/contrib/operators/dataproc_operator/index.rst:609
+#: ../../_api/airflow/contrib/operators/dataproc_operator/index.rst:712
+#: ../../_api/airflow/contrib/operators/dataproc_operator/index.rst:805
+#: ../../_api/airflow/contrib/operators/dataproc_operator/index.rst:898
+#: ../../_api/airflow/contrib/operators/dataproc_operator/index.rst:1020
+#: ../../_api/airflow/contrib/operators/dataproc_operator/index.rst:1075
+msgid ""
+"The account to impersonate, if any. For this to work, the service account"
+" making the request must have domain-wide delegation enabled."
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/dataproc_operator/index.rst:111
+msgid "The service account of the dataproc instances."
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/dataproc_operator/index.rst:113
+msgid "The URIs of service account scopes to be included."
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/dataproc_operator/index.rst:115
+msgid ""
+"The longest duration that cluster would keep alive while staying idle. "
+"Passing this threshold will cause cluster to be auto-deleted. A duration "
+"in seconds."
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/dataproc_operator/index.rst:119
+msgid "The time when cluster will be auto-deleted."
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/dataproc_operator/index.rst:121
+msgid ""
+"The life duration of cluster, the cluster will be auto-deleted at the end"
+" of this duration. A duration in seconds. (If auto_delete_time is set "
+"this parameter will be ignored)"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/dataproc_operator/index.rst:125
+msgid ""
+"The customer-managed key used for disk encryption "
+"(projects/[PROJECT_STORING_KEYS]/locations/[LOCATION]/keyRings/[KEY_RING_NAME]/cryptoKeys/[KEY_NAME])"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/dataproc_operator/index.rst:212
+msgid ""
+"Scale, up or down, a cluster on Google Cloud Dataproc. The operator will "
+"wait until the cluster is re-scaled."
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/dataproc_operator/index.rst:215
+#: ../../_api/airflow/contrib/operators/dataproc_operator/index.rst:384
+msgid "**Example**: ::"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/dataproc_operator/index.rst:227
+msgid ""
+"For more detail on about scaling clusters have a look at the reference: "
+"https://cloud.google.com/dataproc/docs/concepts/configuring-clusters"
+"/scaling-clusters"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/dataproc_operator/index.rst:230
+msgid "The name of the cluster to scale. (templated)"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/dataproc_operator/index.rst:232
+#: ../../_api/airflow/contrib/operators/dataproc_operator/index.rst:311
+msgid "The ID of the google cloud project in which the cluster runs. (templated)"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/dataproc_operator/index.rst:235
+msgid "The region for the dataproc cluster. (templated)"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/dataproc_operator/index.rst:239
+msgid "The new number of workers"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/dataproc_operator/index.rst:241
+msgid "The new number of preemptible workers"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/dataproc_operator/index.rst:243
+msgid "Timeout for graceful YARN decomissioning. Maximum value is 1d"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/dataproc_operator/index.rst:306
+msgid ""
+"Delete a cluster on Google Cloud Dataproc. The operator will wait until "
+"the cluster is destroyed."
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/dataproc_operator/index.rst:309
+msgid "The name of the cluster to delete. (templated)"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/dataproc_operator/index.rst:364
+msgid ""
+"Start a Pig query Job on a Cloud DataProc cluster. The parameters of the "
+"operation will be passed to the cluster."
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/dataproc_operator/index.rst:367
+msgid ""
+"It's a good practice to define dataproc_* parameters in the default_args "
+"of the dag like the cluster name and UDFs."
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/dataproc_operator/index.rst:380
+msgid ""
+"You can pass a pig script as string or file reference. Use variables to "
+"pass on variables for the pig script to be resolved on the cluster or use"
+" the parameters to be resolved in the script as template parameters."
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/dataproc_operator/index.rst:393
+msgid ""
+"For more detail on about job submission have a look at the reference: "
+"https://cloud.google.com/dataproc/reference/rest/v1/projects.regions.jobs"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/dataproc_operator/index.rst:396
+msgid ""
+"The query or reference to the query file (pg or pig extension). "
+"(templated)"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/dataproc_operator/index.rst:399
+msgid "The uri of a pig script on Cloud Storage."
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/dataproc_operator/index.rst:401
+#: ../../_api/airflow/contrib/operators/dataproc_operator/index.rst:592
+msgid "Map of named parameters for the query. (templated)"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/dataproc_operator/index.rst:403
+#: ../../_api/airflow/contrib/operators/dataproc_operator/index.rst:594
+#: ../../_api/airflow/contrib/operators/dataproc_operator/index.rst:697
+#: ../../_api/airflow/contrib/operators/dataproc_operator/index.rst:790
+#: ../../_api/airflow/contrib/operators/dataproc_operator/index.rst:883
+msgid ""
+"The job name used in the DataProc cluster. This name by default is the "
+"task_id appended with the execution data, but can be templated. The name "
+"will always be appended with a random number to avoid name clashes. "
+"(templated)"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/dataproc_operator/index.rst:408
+#: ../../_api/airflow/contrib/operators/dataproc_operator/index.rst:599
+#: ../../_api/airflow/contrib/operators/dataproc_operator/index.rst:702
+#: ../../_api/airflow/contrib/operators/dataproc_operator/index.rst:795
+msgid "The name of the DataProc cluster. (templated)"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/dataproc_operator/index.rst:410
+#: ../../_api/airflow/contrib/operators/dataproc_operator/index.rst:505
+#: ../../_api/airflow/contrib/operators/dataproc_operator/index.rst:601
+#: ../../_api/airflow/contrib/operators/dataproc_operator/index.rst:704
+#: ../../_api/airflow/contrib/operators/dataproc_operator/index.rst:797
+#: ../../_api/airflow/contrib/operators/dataproc_operator/index.rst:890
+msgid "Map for the Pig properties. Ideal to put in default arguments"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/dataproc_operator/index.rst:413
+#: ../../_api/airflow/contrib/operators/dataproc_operator/index.rst:508
+#: ../../_api/airflow/contrib/operators/dataproc_operator/index.rst:604
+#: ../../_api/airflow/contrib/operators/dataproc_operator/index.rst:707
+#: ../../_api/airflow/contrib/operators/dataproc_operator/index.rst:800
+#: ../../_api/airflow/contrib/operators/dataproc_operator/index.rst:893
+msgid ""
+"URIs to jars provisioned in Cloud Storage (example: for UDFs and libs) "
+"and are ideal to put in default arguments."
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/dataproc_operator/index.rst:422
+#: ../../_api/airflow/contrib/operators/dataproc_operator/index.rst:517
+#: ../../_api/airflow/contrib/operators/dataproc_operator/index.rst:613
+#: ../../_api/airflow/contrib/operators/dataproc_operator/index.rst:716
+#: ../../_api/airflow/contrib/operators/dataproc_operator/index.rst:809
+#: ../../_api/airflow/contrib/operators/dataproc_operator/index.rst:902
+msgid "The specified region where the dataproc cluster is created."
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/dataproc_operator/index.rst:424
+#: ../../_api/airflow/contrib/operators/dataproc_operator/index.rst:519
+#: ../../_api/airflow/contrib/operators/dataproc_operator/index.rst:615
+#: ../../_api/airflow/contrib/operators/dataproc_operator/index.rst:718
+#: ../../_api/airflow/contrib/operators/dataproc_operator/index.rst:811
+#: ../../_api/airflow/contrib/operators/dataproc_operator/index.rst:904
+msgid ""
+"Job states that should be considered error states. Any states in this set"
+" will result in an error being raised and failure of the task. Eg, if the"
+" ``CANCELLED`` state should also be considered a task failure, pass in "
+"``{'ERROR', 'CANCELLED'}``. Possible values are currently only "
+"``'ERROR'`` and ``'CANCELLED'``, but could change in the future. Defaults"
+" to ``{'ERROR'}``."
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/dataproc_operator/index.rst
+msgid "Variables"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/dataproc_operator/index.rst:431
+#: ../../_api/airflow/contrib/operators/dataproc_operator/index.rst:526
+#: ../../_api/airflow/contrib/operators/dataproc_operator/index.rst:622
+#: ../../_api/airflow/contrib/operators/dataproc_operator/index.rst:725
+#: ../../_api/airflow/contrib/operators/dataproc_operator/index.rst:818
+#: ../../_api/airflow/contrib/operators/dataproc_operator/index.rst:911
+msgid ""
+"The actual \"jobId\" as submitted to the Dataproc API. This is useful for"
+" identifying or linking to the job in the Google Cloud Console Dataproc "
+"UI, as the actual \"jobId\" submitted to the Dataproc API is appended "
+"with an 8 character random string."
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/dataproc_operator/index.rst:491
+msgid "Start a Hive query Job on a Cloud DataProc cluster."
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/dataproc_operator/index.rst:493
+msgid "The query or reference to the query file (q extension)."
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/dataproc_operator/index.rst:495
+msgid "The uri of a hive script on Cloud Storage."
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/dataproc_operator/index.rst:497
+msgid "Map of named parameters for the query."
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/dataproc_operator/index.rst:499
+msgid ""
+"The job name used in the DataProc cluster. This name by default is the "
+"task_id appended with the execution data, but can be templated. The name "
+"will always be appended with a random number to avoid name clashes."
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/dataproc_operator/index.rst:503
+#: ../../_api/airflow/contrib/operators/dataproc_operator/index.rst:888
+msgid "The name of the DataProc cluster."
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/dataproc_operator/index.rst:586
+msgid "Start a Spark SQL query Job on a Cloud DataProc cluster."
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/dataproc_operator/index.rst:588
+msgid "The query or reference to the query file (q extension). (templated)"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/dataproc_operator/index.rst:590
+msgid "The uri of a spark sql script on Cloud Storage."
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/dataproc_operator/index.rst:682
+msgid "Start a Spark Job on a Cloud DataProc cluster."
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/dataproc_operator/index.rst:684
+#: ../../_api/airflow/contrib/operators/dataproc_operator/index.rst:777
+msgid ""
+"URI of the job jar provisioned on Cloud Storage. (use this or the "
+"main_class, not both together)."
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/dataproc_operator/index.rst:687
+#: ../../_api/airflow/contrib/operators/dataproc_operator/index.rst:780
+msgid "Name of the job class. (use this or the main_jar, not both together)."
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/dataproc_operator/index.rst:690
+#: ../../_api/airflow/contrib/operators/dataproc_operator/index.rst:783
+#: ../../_api/airflow/contrib/operators/dataproc_operator/index.rst:873
+msgid "Arguments for the job. (templated)"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/dataproc_operator/index.rst:692
+#: ../../_api/airflow/contrib/operators/dataproc_operator/index.rst:785
+#: ../../_api/airflow/contrib/operators/dataproc_operator/index.rst:875
+msgid ""
+"List of archived files that will be unpacked in the work directory. "
+"Should be stored in Cloud Storage."
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/dataproc_operator/index.rst:695
+#: ../../_api/airflow/contrib/operators/dataproc_operator/index.rst:788
+#: ../../_api/airflow/contrib/operators/dataproc_operator/index.rst:878
+msgid "List of files to be copied to the working directory"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/dataproc_operator/index.rst:775
+msgid "Start a Hadoop Job on a Cloud DataProc cluster."
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/dataproc_operator/index.rst:868
+msgid "Start a PySpark Job on a Cloud DataProc cluster."
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/dataproc_operator/index.rst:870
+msgid ""
+"[Required] The Hadoop Compatible Filesystem (HCFS) URI of the main Python"
+" file to use as the driver. Must be a .py file."
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/dataproc_operator/index.rst:880
+msgid ""
+"List of Python files to pass to the PySpark framework. Supported file "
+"types: .py, .egg, and .zip"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/dataproc_operator/index.rst:1000
+#: ../../_api/airflow/contrib/operators/dataproc_operator/index.rst:1055
+msgid "Bases::class:`airflow.contrib.operators.dataproc_operator.DataprocWorkflowTemplateBaseOperator`"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/dataproc_operator/index.rst:1004
+msgid ""
+"Instantiate a WorkflowTemplate on Google Cloud Dataproc. The operator "
+"will wait until the WorkflowTemplate is finished executing."
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/dataproc_operator/index.rst:1008
+msgid ""
+"Please refer to: "
+"https://cloud.google.com/dataproc/docs/reference/rest/v1beta2/projects.regions.workflowTemplates/instantiate"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/dataproc_operator/index.rst:1011
+msgid "The id of the template. (templated)"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/dataproc_operator/index.rst:1013
+#: ../../_api/airflow/contrib/operators/dataproc_operator/index.rst:1068
+msgid "The ID of the google cloud project in which the template runs"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/dataproc_operator/index.rst:1016
+#: ../../_api/airflow/contrib/operators/dataproc_operator/index.rst:1071
+msgid "leave as 'global', might become relevant in the future"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/dataproc_operator/index.rst:1059
+msgid ""
+"Instantiate a WorkflowTemplate Inline on Google Cloud Dataproc. The "
+"operator will wait until the WorkflowTemplate is finished executing."
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/dataproc_operator/index.rst:1063
+msgid ""
+"Please refer to: "
+"https://cloud.google.com/dataproc/docs/reference/rest/v1beta2/projects.regions.workflowTemplates/instantiateInline"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/dataproc_operator/index.rst:1066
+msgid "The template contents. (templated)"
+msgstr ""
+

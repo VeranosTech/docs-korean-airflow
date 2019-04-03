@@ -1,0 +1,242 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C)
+# This file is distributed under the same license as the Airflow package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Airflow 1.10.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-04-03 17:47+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../howto/operator/gcp/transfer.rst:19
+msgid "Google Cloud Transfer Service Operators"
+msgstr ""
+
+#: ../../howto/operator/gcp/transfer.rst:28
+msgid "GcpTransferServiceJobCreateOperator"
+msgstr ""
+
+#: ../../howto/operator/gcp/transfer.rst:30
+msgid "Create a transfer job."
+msgstr ""
+
+#: ../../howto/operator/gcp/transfer.rst:32
+msgid "The function accepts dates in two formats:"
+msgstr ""
+
+#: ../../howto/operator/gcp/transfer.rst:34
+#: ../../howto/operator/gcp/transfer.rst:42
+msgid ""
+"consistent with `Google API <https://cloud.google.com/storage-"
+"transfer/docs/reference/rest/v1/transferJobs#TimeOfDay>`_ ::"
+msgstr ""
+
+#: ../../howto/operator/gcp/transfer.rst:38
+msgid "as an :class:`~datetime.datetime` object"
+msgstr ""
+
+#: ../../howto/operator/gcp/transfer.rst:40
+msgid "The function accepts time in two formats:"
+msgstr ""
+
+#: ../../howto/operator/gcp/transfer.rst:46
+msgid "as an :class:`~datetime.time` object"
+msgstr ""
+
+#: ../../howto/operator/gcp/transfer.rst:48
+msgid ""
+"If you want to create a job transfer that copies data from AWS S3 then "
+"you must have a connection configured. Information about configuration "
+"for AWS is available: :doc:`../../connection/aws` The selected connection"
+" for AWS can be indicated by the parameter ``aws_conn_id``."
+msgstr ""
+
+#: ../../howto/operator/gcp/transfer.rst:52
+#: ../../howto/operator/gcp/transfer.rst:103
+#: ../../howto/operator/gcp/transfer.rst:144
+#: ../../howto/operator/gcp/transfer.rst:190
+#: ../../howto/operator/gcp/transfer.rst:232
+#: ../../howto/operator/gcp/transfer.rst:273
+#: ../../howto/operator/gcp/transfer.rst:314
+#: ../../howto/operator/gcp/transfer.rst:355
+#: ../../howto/operator/gcp/transfer.rst:395
+msgid "Arguments"
+msgstr ""
+
+#: ../../howto/operator/gcp/transfer.rst:54
+#: ../../howto/operator/gcp/transfer.rst:105
+#: ../../howto/operator/gcp/transfer.rst:146
+#: ../../howto/operator/gcp/transfer.rst:192
+#: ../../howto/operator/gcp/transfer.rst:234
+#: ../../howto/operator/gcp/transfer.rst:275
+#: ../../howto/operator/gcp/transfer.rst:316
+#: ../../howto/operator/gcp/transfer.rst:357
+#: ../../howto/operator/gcp/transfer.rst:397
+msgid ""
+"Some arguments in the example DAG are taken from the OS environment "
+"variables:"
+msgstr ""
+
+#: ../../howto/operator/gcp/transfer.rst:62
+#: ../../howto/operator/gcp/transfer.rst:113
+#: ../../howto/operator/gcp/transfer.rst:154
+#: ../../howto/operator/gcp/transfer.rst:200
+#: ../../howto/operator/gcp/transfer.rst:242
+#: ../../howto/operator/gcp/transfer.rst:283
+#: ../../howto/operator/gcp/transfer.rst:324
+#: ../../howto/operator/gcp/transfer.rst:365
+#: ../../howto/operator/gcp/transfer.rst:405
+msgid "Using the operator"
+msgstr ""
+
+#: ../../howto/operator/gcp/transfer.rst:81
+#: ../../howto/operator/gcp/transfer.rst:122
+#: ../../howto/operator/gcp/transfer.rst:168
+#: ../../howto/operator/gcp/transfer.rst:209
+#: ../../howto/operator/gcp/transfer.rst:251
+#: ../../howto/operator/gcp/transfer.rst:292
+#: ../../howto/operator/gcp/transfer.rst:333
+#: ../../howto/operator/gcp/transfer.rst:374
+#: ../../howto/operator/gcp/transfer.rst:414
+msgid "Templating"
+msgstr ""
+
+#: ../../howto/operator/gcp/transfer.rst:90
+#: ../../howto/operator/gcp/transfer.rst:131
+#: ../../howto/operator/gcp/transfer.rst:177
+#: ../../howto/operator/gcp/transfer.rst:218
+#: ../../howto/operator/gcp/transfer.rst:260
+#: ../../howto/operator/gcp/transfer.rst:301
+#: ../../howto/operator/gcp/transfer.rst:342
+#: ../../howto/operator/gcp/transfer.rst:383
+msgid "More information"
+msgstr ""
+
+#: ../../howto/operator/gcp/transfer.rst:92
+msgid ""
+"See `Google Cloud Transfer Service - Method: transferJobs.create "
+"<https://cloud.google.com/storage-"
+"transfer/docs/reference/rest/v1/transferJobs/create>`_."
+msgstr ""
+
+#: ../../howto/operator/gcp/transfer.rst:98
+msgid "GcpTransferServiceJobDeleteOperator"
+msgstr ""
+
+#: ../../howto/operator/gcp/transfer.rst:100
+msgid "Deletes a transfer job."
+msgstr ""
+
+#: ../../howto/operator/gcp/transfer.rst:133
+msgid ""
+"See `Google Cloud Transfer Service - REST Resource: transferJobs - Status"
+" <https://cloud.google.com/storage-"
+"transfer/docs/reference/rest/v1/transferJobs#Status>`_"
+msgstr ""
+
+#: ../../howto/operator/gcp/transfer.rst:139
+msgid "GcpTransferServiceJobUpdateOperator"
+msgstr ""
+
+#: ../../howto/operator/gcp/transfer.rst:141
+msgid "Updates a transfer job."
+msgstr ""
+
+#: ../../howto/operator/gcp/transfer.rst:179
+msgid ""
+"See `Google Cloud Transfer Service - Method: transferJobs.patch "
+"<https://cloud.google.com/storage-"
+"transfer/docs/reference/rest/v1/transferJobs/patch>`_"
+msgstr ""
+
+#: ../../howto/operator/gcp/transfer.rst:185
+msgid "GcpTransferServiceOperationCancelOperator"
+msgstr ""
+
+#: ../../howto/operator/gcp/transfer.rst:187
+#: ../../howto/operator/gcp/transfer.rst:229
+msgid "Gets a transfer operation. The result is returned to XCOM."
+msgstr ""
+
+#: ../../howto/operator/gcp/transfer.rst:220
+msgid ""
+"See `Google Cloud Transfer Service - Method: transferOperations.cancel "
+"<https://cloud.google.com/storage-"
+"transfer/docs/reference/rest/v1/transferOperations/cancel>`_"
+msgstr ""
+
+#: ../../howto/operator/gcp/transfer.rst:227
+msgid "GcpTransferServiceOperationGetOperator"
+msgstr ""
+
+#: ../../howto/operator/gcp/transfer.rst:262
+msgid ""
+"See `Google Cloud Transfer Service - Method: transferOperations.get "
+"<https://cloud.google.com/storage-"
+"transfer/docs/reference/rest/v1/transferOperations/get>`_"
+msgstr ""
+
+#: ../../howto/operator/gcp/transfer.rst:268
+msgid "GcpTransferServiceOperationsListOperator"
+msgstr ""
+
+#: ../../howto/operator/gcp/transfer.rst:270
+msgid "List a transfer operations. The result is returned to XCOM."
+msgstr ""
+
+#: ../../howto/operator/gcp/transfer.rst:303
+msgid ""
+"See `Google Cloud Transfer Service - Method: transferOperations.list "
+"<https://cloud.google.com/storage-"
+"transfer/docs/reference/rest/v1/transferOperations/list>`_"
+msgstr ""
+
+#: ../../howto/operator/gcp/transfer.rst:309
+msgid "GcpTransferServiceOperationPauseOperator"
+msgstr ""
+
+#: ../../howto/operator/gcp/transfer.rst:311
+msgid "Pauses a transfer operations."
+msgstr ""
+
+#: ../../howto/operator/gcp/transfer.rst:344
+msgid ""
+"See `Google Cloud Transfer Service - Method: transferOperations.pause "
+"<https://cloud.google.com/storage-"
+"transfer/docs/reference/rest/v1/transferOperations/pause>`_"
+msgstr ""
+
+#: ../../howto/operator/gcp/transfer.rst:350
+msgid "GcpTransferServiceOperationResumeOperator"
+msgstr ""
+
+#: ../../howto/operator/gcp/transfer.rst:352
+msgid "Resumes a transfer operations."
+msgstr ""
+
+#: ../../howto/operator/gcp/transfer.rst:385
+msgid ""
+"See `Google Cloud Transfer Service - Method: transferOperations.resume "
+"<https://cloud.google.com/storage-"
+"transfer/docs/reference/rest/v1/transferOperations/resume>`_"
+msgstr ""
+
+#: ../../howto/operator/gcp/transfer.rst:390
+msgid "GCPTransferServiceWaitForJobStatusSensor"
+msgstr ""
+
+#: ../../howto/operator/gcp/transfer.rst:392
+msgid ""
+"Waits for at least one operation belonging to the job to have the "
+"expected status."
+msgstr ""
+
