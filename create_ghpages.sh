@@ -7,8 +7,6 @@ git rebase korean
 touch .nojekyll
 
 echo '!_build/' >> .gitignore
-echo '!build/' >> .gitignore
-echo '!env/' >> .gitignore
 
 cd docs
 make -e SPHINXOPTS="-D language='ko'" html
