@@ -1,0 +1,651 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C)
+# This file is distributed under the same license as the Airflow package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Airflow 1.10.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-04-03 15:37+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../cli.rst:19
+msgid "Command Line Interface"
+msgstr ""
+
+#: ../../cli.rst:21
+msgid ""
+"Airflow has a very rich command line interface that allows for many types"
+" of operation on a DAG, starting services, and supporting development and"
+" testing."
+msgstr ""
+
+#: ../../cli.rst:27
+msgid "Content"
+msgstr ""
+
+#: ../../None:1
+msgid ""
+"Possible choices: backfill, list_tasks, clear, pause, unpause, "
+"trigger_dag, delete_dag, pool, variables, kerberos, render, run, initdb, "
+"list_dags, dag_state, task_failed_deps, task_state, serve_logs, test, "
+"webserver, resetdb, upgradedb, scheduler, worker, flower, version, "
+"connections, create_user"
+msgstr ""
+
+#: ../../None:1
+msgid "sub-command help"
+msgstr ""
+
+#: ../../None:1
+msgid ""
+"Run subsections of a DAG for a specified date range. If reset_dag_run "
+"option is used, backfill will first prompt users whether airflow should "
+"clear all the previous dag_run and task_instances within the backfill "
+"date range. If rerun_failed_tasks is used, backfill will auto re-run the "
+"previous failed task instances within the backfill date range."
+msgstr ""
+
+#: ../../None:1
+msgid "The id of the dag"
+msgstr ""
+
+#: ../../None:1
+msgid "The regex to filter specific task_ids to backfill (optional)"
+msgstr ""
+
+#: ../../None:1
+msgid "Override start_date YYYY-MM-DD"
+msgstr ""
+
+#: ../../None:1
+msgid "Override end_date YYYY-MM-DD"
+msgstr ""
+
+#: ../../None:1
+msgid "Mark jobs as succeeded without running them"
+msgstr ""
+
+#: ../../None:1
+msgid "Default: False"
+msgstr ""
+
+#: ../../None:1
+msgid "Run the task using the LocalExecutor"
+msgstr ""
+
+#: ../../None:1
+msgid ""
+"Do not attempt to pickle the DAG object to send over to the workers, just"
+" tell the workers to run their version of the code."
+msgstr ""
+
+#: ../../None:1
+msgid ""
+"Skip upstream tasks, run only the tasks matching the regexp. Only works "
+"in conjunction with task_regex"
+msgstr ""
+
+#: ../../None:1
+msgid ""
+"Ignores depends_on_past dependencies for the first set of tasks only "
+"(subsequent executions in the backfill DO respect depends_on_past)."
+msgstr ""
+
+#: ../../None:1
+msgid ""
+"File location or directory from which to look for the dag. Defaults to "
+"'[AIRFLOW_HOME]/dags' where [AIRFLOW_HOME] is the value you set for "
+"'AIRFLOW_HOME' config you set in 'airflow.cfg'"
+msgstr ""
+
+#: ../../None:1
+msgid "Default: \"[AIRFLOW_HOME]/dags\""
+msgstr ""
+
+#: ../../None:1
+msgid "Resource pool to use"
+msgstr ""
+
+#: ../../None:1
+msgid ""
+"Amount of time in seconds to wait when the limit on maximum active dag "
+"runs (max_active_runs) has been reached before trying to execute a dag "
+"run again."
+msgstr ""
+
+#: ../../None:1
+msgid "Default: 1.0"
+msgstr ""
+
+#: ../../None:1
+msgid "Perform a dry run"
+msgstr ""
+
+#: ../../None:1
+msgid "Make logging output more verbose"
+msgstr ""
+
+#: ../../None:1
+msgid "JSON string that gets pickled into the DagRun's conf attribute"
+msgstr ""
+
+#: ../../None:1
+msgid ""
+"if set, the backfill will delete existing backfill-related DAG runs and "
+"start anew with fresh, running DAG runs"
+msgstr ""
+
+#: ../../None:1
+msgid ""
+"if set, the backfill will auto-rerun all the failed tasks for the "
+"backfill date range instead of throwing exceptions"
+msgstr ""
+
+#: ../../None:1
+msgid "List the tasks within a DAG"
+msgstr ""
+
+#: ../../None:1
+msgid "Tree view"
+msgstr ""
+
+#: ../../None:1
+msgid "Clear a set of task instance, as if they never ran"
+msgstr ""
+
+#: ../../None:1
+msgid "Include upstream tasks"
+msgstr ""
+
+#: ../../None:1
+msgid "Include downstream tasks"
+msgstr ""
+
+#: ../../None:1
+msgid "Do not request confirmation"
+msgstr ""
+
+#: ../../None:1
+msgid "Only failed jobs"
+msgstr ""
+
+#: ../../None:1
+msgid "Only running jobs"
+msgstr ""
+
+#: ../../None:1
+msgid "Exclude subdags"
+msgstr ""
+
+#: ../../None:1
+msgid "Exclude ParentDAGS if the task cleared is a part of a SubDAG"
+msgstr ""
+
+#: ../../None:1
+msgid "Search dag_id as regex instead of exact string"
+msgstr ""
+
+#: ../../None:1
+msgid "Pause a DAG"
+msgstr ""
+
+#: ../../None:1
+msgid "Resume a paused DAG"
+msgstr ""
+
+#: ../../None:1
+msgid "Trigger a DAG run"
+msgstr ""
+
+#: ../../None:1
+msgid "Helps to identify this run"
+msgstr ""
+
+#: ../../None:1
+msgid "The execution date of the DAG"
+msgstr ""
+
+#: ../../None:1
+msgid "Delete all DB records related to the specified DAG"
+msgstr ""
+
+#: ../../None:1
+msgid "Do not prompt to confirm reset. Use with care!"
+msgstr ""
+
+#: ../../None:1
+msgid "CRUD operations on pools"
+msgstr ""
+
+#: ../../None:1
+msgid "Set pool slot count and description, respectively"
+msgstr ""
+
+#: ../../None:1
+msgid "Get pool info"
+msgstr ""
+
+#: ../../None:1
+msgid "Delete a pool"
+msgstr ""
+
+#: ../../None:1
+msgid "CRUD operations on variables"
+msgstr ""
+
+#: ../../None:1
+msgid "Set a variable"
+msgstr ""
+
+#: ../../None:1
+msgid "Get value of a variable"
+msgstr ""
+
+#: ../../None:1
+msgid "Deserialize JSON variable"
+msgstr ""
+
+#: ../../None:1
+msgid "Default value returned if variable does not exist"
+msgstr ""
+
+#: ../../None:1
+msgid "Import variables from JSON file"
+msgstr ""
+
+#: ../../None:1
+msgid "Export variables to JSON file"
+msgstr ""
+
+#: ../../None:1
+msgid "Delete a variable"
+msgstr ""
+
+#: ../../None:1
+msgid "Start a kerberos ticket renewer"
+msgstr ""
+
+#: ../../None:1
+msgid "kerberos principal"
+msgstr ""
+
+#: ../../None:1
+msgid "Default: \"airflow\""
+msgstr ""
+
+#: ../../None:1
+msgid "keytab"
+msgstr ""
+
+#: ../../None:1
+msgid "Default: \"airflow.keytab\""
+msgstr ""
+
+#: ../../None:1
+msgid "PID file location"
+msgstr ""
+
+#: ../../None:1
+msgid "Daemonize instead of running in the foreground"
+msgstr ""
+
+#: ../../None:1
+msgid "Redirect stdout to this file"
+msgstr ""
+
+#: ../../None:1
+msgid "Redirect stderr to this file"
+msgstr ""
+
+#: ../../None:1
+msgid "Location of the log file"
+msgstr ""
+
+#: ../../None:1
+msgid "Render a task instance's template(s)"
+msgstr ""
+
+#: ../../None:1
+msgid "The id of the task"
+msgstr ""
+
+#: ../../None:1
+msgid "Run a single task instance"
+msgstr ""
+
+#: ../../None:1
+msgid ""
+"Ignore previous task instance state, rerun regardless if task already "
+"succeeded/failed"
+msgstr ""
+
+#: ../../None:1
+msgid "Path to config file to use instead of airflow.cfg"
+msgstr ""
+
+#: ../../None:1
+msgid ""
+"Ignores all non-critical dependencies, including ignore_ti_state and "
+"ignore_task_deps"
+msgstr ""
+
+#: ../../None:1
+msgid ""
+"Ignore task-specific dependencies, e.g. upstream, depends_on_past, and "
+"retry delay dependencies"
+msgstr ""
+
+#: ../../None:1
+msgid "Ignore depends_on_past dependencies (but respect upstream dependencies)"
+msgstr ""
+
+#: ../../None:1
+msgid "Pickles (serializes) the DAG and ships it to the worker"
+msgstr ""
+
+#: ../../None:1
+msgid "Serialized pickle object of the entire dag (used internally)"
+msgstr ""
+
+#: ../../None:1
+msgid ""
+"Do not capture standard output and error streams (useful for interactive "
+"debugging)"
+msgstr ""
+
+#: ../../None:1
+msgid "Initialize the metadata database"
+msgstr ""
+
+#: ../../None:1
+msgid "List all the DAGs"
+msgstr ""
+
+#: ../../None:1
+msgid "Show DagBag loading report"
+msgstr ""
+
+#: ../../None:1
+msgid "Get the status of a dag run"
+msgstr ""
+
+#: ../../None:1
+msgid ""
+"Returns the unmet dependencies for a task instance from the perspective "
+"of the scheduler. In other words, why a task instance doesn't get "
+"scheduled and then queued by the scheduler, and then run by an executor)."
+msgstr ""
+
+#: ../../None:1
+msgid "Get the status of a task instance"
+msgstr ""
+
+#: ../../None:1
+msgid "Serve logs generate by worker"
+msgstr ""
+
+#: ../../None:1
+msgid ""
+"Test a task instance. This will run a task without checking for "
+"dependencies or recording its state in the database."
+msgstr ""
+
+#: ../../None:1
+msgid "Sends a JSON params dict to the task"
+msgstr ""
+
+#: ../../None:1
+msgid "Start a Airflow webserver instance"
+msgstr ""
+
+#: ../../None:1
+msgid "The port on which to run the server"
+msgstr ""
+
+#: ../../None:1
+msgid "Default: 8080"
+msgstr ""
+
+#: ../../None:1
+msgid "Number of workers to run the webserver on"
+msgstr ""
+
+#: ../../None:1
+msgid "Default: 4"
+msgstr ""
+
+#: ../../None:1
+msgid "Possible choices: sync, eventlet, gevent, tornado"
+msgstr ""
+
+#: ../../None:1
+msgid "The worker class to use for Gunicorn"
+msgstr ""
+
+#: ../../None:1
+msgid "Default: \"sync\""
+msgstr ""
+
+#: ../../None:1
+msgid "The timeout for waiting on webserver workers"
+msgstr ""
+
+#: ../../None:1
+msgid "Default: 120"
+msgstr ""
+
+#: ../../None:1
+msgid "Set the hostname on which to run the web server"
+msgstr ""
+
+#: ../../None:1
+msgid "Default: \"0.0.0.0\""
+msgstr ""
+
+#: ../../None:1
+msgid "The logfile to store the webserver access log. Use '-' to print to stderr."
+msgstr ""
+
+#: ../../None:1
+msgid "Default: \"-\""
+msgstr ""
+
+#: ../../None:1
+msgid "The logfile to store the webserver error log. Use '-' to print to stderr."
+msgstr ""
+
+#: ../../None:1
+msgid "Path to the SSL certificate for the webserver"
+msgstr ""
+
+#: ../../None:1
+msgid "Path to the key to use with the SSL certificate"
+msgstr ""
+
+#: ../../None:1
+msgid "Use the server that ships with Flask in debug mode"
+msgstr ""
+
+#: ../../None:1
+msgid "Burn down and rebuild the metadata database"
+msgstr ""
+
+#: ../../None:1
+msgid "Upgrade the metadata database to latest version"
+msgstr ""
+
+#: ../../None:1
+msgid "Start a scheduler instance"
+msgstr ""
+
+#: ../../None:1
+msgid "The id of the dag to run"
+msgstr ""
+
+#: ../../None:1
+msgid "Set number of seconds to execute before exiting"
+msgstr ""
+
+#: ../../None:1
+msgid "Set the number of runs to execute before exiting"
+msgstr ""
+
+#: ../../None:1
+msgid "Default: -1"
+msgstr ""
+
+#: ../../None:1
+msgid ""
+"Attempt to pickle the DAG object to send over to the workers, instead of "
+"letting workers run their version of the code."
+msgstr ""
+
+#: ../../None:1
+msgid "Start a Celery worker node"
+msgstr ""
+
+#: ../../None:1
+msgid "Comma delimited list of queues to serve"
+msgstr ""
+
+#: ../../None:1
+msgid "Default: \"default\""
+msgstr ""
+
+#: ../../None:1
+msgid "The number of worker processes"
+msgstr ""
+
+#: ../../None:1
+msgid "Default: 16"
+msgstr ""
+
+#: ../../None:1
+msgid ""
+"Set the hostname of celery worker if you have multiple workers on a "
+"single machine."
+msgstr ""
+
+#: ../../None:1
+msgid "Start a Celery Flower"
+msgstr ""
+
+#: ../../None:1
+msgid "Set the hostname on which to run the server"
+msgstr ""
+
+#: ../../None:1
+msgid "Default: 5555"
+msgstr ""
+
+#: ../../None:1
+msgid "Configuration file for flower"
+msgstr ""
+
+#: ../../None:1
+msgid "URL prefix for Flower"
+msgstr ""
+
+#: ../../None:1
+msgid "Broker api"
+msgstr ""
+
+#: ../../None:1
+msgid "Show the version"
+msgstr ""
+
+#: ../../None:1
+msgid "List/Add/Delete connections"
+msgstr ""
+
+#: ../../None:1
+msgid "List all connections"
+msgstr ""
+
+#: ../../None:1
+msgid "Add a connection"
+msgstr ""
+
+#: ../../None:1
+msgid "Delete a connection"
+msgstr ""
+
+#: ../../None:1
+msgid "Connection id, required to add/delete a connection"
+msgstr ""
+
+#: ../../None:1
+msgid "Connection URI, required to add a connection without conn_type"
+msgstr ""
+
+#: ../../None:1
+msgid "Connection `Extra` field, optional when adding a connection"
+msgstr ""
+
+#: ../../None:1
+msgid "Connection type, required to add a connection without conn_uri"
+msgstr ""
+
+#: ../../None:1
+msgid "Connection host, optional when adding a connection"
+msgstr ""
+
+#: ../../None:1
+msgid "Connection login, optional when adding a connection"
+msgstr ""
+
+#: ../../None:1
+msgid "Connection password, optional when adding a connection"
+msgstr ""
+
+#: ../../None:1
+msgid "Connection schema, optional when adding a connection"
+msgstr ""
+
+#: ../../None:1
+msgid "Connection port, optional when adding a connection"
+msgstr ""
+
+#: ../../None:1
+msgid "Create an admin account"
+msgstr ""
+
+#: ../../None:1
+msgid ""
+"Role of the user. Existing roles include Admin, User, Op, Viewer, and "
+"Public"
+msgstr ""
+
+#: ../../None:1
+msgid "Username of the user"
+msgstr ""
+
+#: ../../None:1
+msgid "Email of the user"
+msgstr ""
+
+#: ../../None:1
+msgid "First name of the user"
+msgstr ""
+
+#: ../../None:1
+msgid "Last name of the user"
+msgstr ""
+
+#: ../../None:1
+msgid "Password of the user"
+msgstr ""
+
+#: ../../None:1
+msgid "Do not prompt for password.  Use random string instead"
+msgstr ""
+

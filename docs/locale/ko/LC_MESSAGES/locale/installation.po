@@ -1,0 +1,481 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C)
+# This file is distributed under the same license as the Airflow package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Airflow 1.10.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-04-03 15:37+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../installation.rst:19
+msgid "Installation"
+msgstr ""
+
+#: ../../installation.rst:22
+msgid "Getting Airflow"
+msgstr ""
+
+#: ../../installation.rst:24
+msgid ""
+"The easiest way to install the latest stable version of Airflow is with "
+"``pip``:"
+msgstr ""
+
+#: ../../installation.rst:30
+msgid ""
+"You can also install Airflow with support for extra features like ``gcp``"
+" or ``postgres``:"
+msgstr ""
+
+#: ../../installation.rst:37
+msgid "Extra Packages"
+msgstr ""
+
+#: ../../installation.rst:39
+msgid ""
+"The ``apache-airflow`` PyPI basic package only installs what's needed to "
+"get started. Subpackages can be installed depending on what will be "
+"useful in your environment. For instance, if you don't need connectivity "
+"with Postgres, you won't have to go through the trouble of installing the"
+" ``postgres-devel`` yum package, or whatever equivalent applies on the "
+"distribution you are using."
+msgstr ""
+
+#: ../../installation.rst:45
+msgid ""
+"Behind the scenes, Airflow does conditional imports of operators that "
+"require these extra dependencies."
+msgstr ""
+
+#: ../../installation.rst:48
+msgid "Here's the list of the subpackages and what they enable:"
+msgstr ""
+
+#: ../../installation.rst:51
+msgid "subpackage"
+msgstr ""
+
+#: ../../installation.rst:51
+msgid "install command"
+msgstr ""
+
+#: ../../installation.rst:51
+msgid "enables"
+msgstr ""
+
+#: ../../installation.rst:53
+msgid "all"
+msgstr ""
+
+#: ../../installation.rst:53
+msgid "``pip install 'apache-airflow[all]'``"
+msgstr ""
+
+#: ../../installation.rst:53
+msgid "All Airflow features known to man"
+msgstr ""
+
+#: ../../installation.rst:55
+msgid "all_dbs"
+msgstr ""
+
+#: ../../installation.rst:55
+msgid "``pip install 'apache-airflow[all_dbs]'``"
+msgstr ""
+
+#: ../../installation.rst:55
+msgid "All databases integrations"
+msgstr ""
+
+#: ../../installation.rst:57
+msgid "async"
+msgstr ""
+
+#: ../../installation.rst:57
+msgid "``pip install 'apache-airflow[async]'``"
+msgstr ""
+
+#: ../../installation.rst:57
+msgid "Async worker classes for Gunicorn"
+msgstr ""
+
+#: ../../installation.rst:59
+msgid "azure"
+msgstr ""
+
+#: ../../installation.rst:59
+msgid "``pip install 'apache-airflow[azure]'``"
+msgstr ""
+
+#: ../../installation.rst:59
+msgid "Microsoft Azure"
+msgstr ""
+
+#: ../../installation.rst:61
+msgid "aws"
+msgstr ""
+
+#: ../../installation.rst:61
+msgid "``pip install 'apache-airflow[aws]'``"
+msgstr ""
+
+#: ../../installation.rst:61
+msgid "Amazon Web Services"
+msgstr ""
+
+#: ../../installation.rst:63
+msgid "celery"
+msgstr ""
+
+#: ../../installation.rst:63
+msgid "``pip install 'apache-airflow[celery]'``"
+msgstr ""
+
+#: ../../installation.rst:63
+msgid "CeleryExecutor"
+msgstr ""
+
+#: ../../installation.rst:65
+msgid "cloudant"
+msgstr ""
+
+#: ../../installation.rst:65
+msgid "``pip install 'apache-airflow[cloudant]'``"
+msgstr ""
+
+#: ../../installation.rst:65
+msgid "Cloudant hook"
+msgstr ""
+
+#: ../../installation.rst:67
+msgid "crypto"
+msgstr ""
+
+#: ../../installation.rst:67
+msgid "``pip install 'apache-airflow[crypto]'``"
+msgstr ""
+
+#: ../../installation.rst:67
+msgid "Encrypt connection passwords in metadata db"
+msgstr ""
+
+#: ../../installation.rst:69
+msgid "devel"
+msgstr ""
+
+#: ../../installation.rst:69
+msgid "``pip install 'apache-airflow[devel]'``"
+msgstr ""
+
+#: ../../installation.rst:69
+msgid "Minimum dev tools requirements"
+msgstr ""
+
+#: ../../installation.rst:71
+msgid "devel_hadoop"
+msgstr ""
+
+#: ../../installation.rst:71
+msgid "``pip install 'apache-airflow[devel_hadoop]'``"
+msgstr ""
+
+#: ../../installation.rst:71
+msgid "Airflow + dependencies on the Hadoop stack"
+msgstr ""
+
+#: ../../installation.rst:73
+msgid "druid"
+msgstr ""
+
+#: ../../installation.rst:73
+msgid "``pip install 'apache-airflow[druid]'``"
+msgstr ""
+
+#: ../../installation.rst:73
+msgid "Druid related operators & hooks"
+msgstr ""
+
+#: ../../installation.rst:75
+msgid "gcp"
+msgstr ""
+
+#: ../../installation.rst:75
+msgid "``pip install 'apache-airflow[gcp]'``"
+msgstr ""
+
+#: ../../installation.rst:75
+msgid "Google Cloud Platform"
+msgstr ""
+
+#: ../../installation.rst:77
+msgid "github_enterprise"
+msgstr ""
+
+#: ../../installation.rst:77
+msgid "``pip install 'apache-airflow[github_enterprise]'``"
+msgstr ""
+
+#: ../../installation.rst:77
+msgid "GitHub Enterprise auth backend"
+msgstr ""
+
+#: ../../installation.rst:79
+msgid "google_auth"
+msgstr ""
+
+#: ../../installation.rst:79
+msgid "``pip install 'apache-airflow[google_auth]'``"
+msgstr ""
+
+#: ../../installation.rst:79
+msgid "Google auth backend"
+msgstr ""
+
+#: ../../installation.rst:81
+msgid "hdfs"
+msgstr ""
+
+#: ../../installation.rst:81
+msgid "``pip install 'apache-airflow[hdfs]'``"
+msgstr ""
+
+#: ../../installation.rst:81
+msgid "HDFS hooks and operators"
+msgstr ""
+
+#: ../../installation.rst:83
+msgid "hive"
+msgstr ""
+
+#: ../../installation.rst:83
+msgid "``pip install 'apache-airflow[hive]'``"
+msgstr ""
+
+#: ../../installation.rst:83
+msgid "All Hive related operators"
+msgstr ""
+
+#: ../../installation.rst:85
+msgid "jdbc"
+msgstr ""
+
+#: ../../installation.rst:85
+msgid "``pip install 'apache-airflow[jdbc]'``"
+msgstr ""
+
+#: ../../installation.rst:85
+msgid "JDBC hooks and operators"
+msgstr ""
+
+#: ../../installation.rst:87
+msgid "kerberos"
+msgstr ""
+
+#: ../../installation.rst:87
+msgid "``pip install 'apache-airflow[kerberos]'``"
+msgstr ""
+
+#: ../../installation.rst:87
+msgid "Kerberos integration for Kerberized Hadoop"
+msgstr ""
+
+#: ../../installation.rst:89
+msgid "kubernetes"
+msgstr ""
+
+#: ../../installation.rst:89
+msgid "``pip install 'apache-airflow[kubernetes]'``"
+msgstr ""
+
+#: ../../installation.rst:89
+msgid "Kubernetes Executor and operator"
+msgstr ""
+
+#: ../../installation.rst:91
+msgid "ldap"
+msgstr ""
+
+#: ../../installation.rst:91
+msgid "``pip install 'apache-airflow[ldap]'``"
+msgstr ""
+
+#: ../../installation.rst:91
+msgid "LDAP authentication for users"
+msgstr ""
+
+#: ../../installation.rst:93
+msgid "mssql"
+msgstr ""
+
+#: ../../installation.rst:93
+msgid "``pip install 'apache-airflow[mssql]'``"
+msgstr ""
+
+#: ../../installation.rst:93
+msgid "Microsoft SQL Server operators and hook, support as an Airflow backend"
+msgstr ""
+
+#: ../../installation.rst:96
+msgid "mysql"
+msgstr ""
+
+#: ../../installation.rst:96
+msgid "``pip install 'apache-airflow[mysql]'``"
+msgstr ""
+
+#: ../../installation.rst:96
+msgid ""
+"MySQL operators and hook, support as an Airflow backend. The version of "
+"MySQL server has to be 5.6.4+. The exact version upper bound depends on "
+"version of ``mysqlclient`` package. For example, ``mysqlclient`` 1.3.12 "
+"can only be used with MySQL server 5.6.4 through 5.7."
+msgstr ""
+
+#: ../../installation.rst:103
+msgid "oracle"
+msgstr ""
+
+#: ../../installation.rst:103
+msgid "``pip install 'apache-airflow[oracle]'``"
+msgstr ""
+
+#: ../../installation.rst:103
+msgid "Oracle hooks and operators"
+msgstr ""
+
+#: ../../installation.rst:105
+msgid "password"
+msgstr ""
+
+#: ../../installation.rst:105
+msgid "``pip install 'apache-airflow[password]'``"
+msgstr ""
+
+#: ../../installation.rst:105
+msgid "Password authentication for users"
+msgstr ""
+
+#: ../../installation.rst:107
+msgid "postgres"
+msgstr ""
+
+#: ../../installation.rst:107
+msgid "``pip install 'apache-airflow[postgres]'``"
+msgstr ""
+
+#: ../../installation.rst:107
+msgid "PostgreSQL operators and hook, support as an Airflow backend"
+msgstr ""
+
+#: ../../installation.rst:110
+msgid "qds"
+msgstr ""
+
+#: ../../installation.rst:110
+msgid "``pip install 'apache-airflow[qds]'``"
+msgstr ""
+
+#: ../../installation.rst:110
+msgid "Enable QDS (Qubole Data Service) support"
+msgstr ""
+
+#: ../../installation.rst:112
+msgid "rabbitmq"
+msgstr ""
+
+#: ../../installation.rst:112
+msgid "``pip install 'apache-airflow[rabbitmq]'``"
+msgstr ""
+
+#: ../../installation.rst:112
+msgid "RabbitMQ support as a Celery backend"
+msgstr ""
+
+#: ../../installation.rst:114
+msgid "redis"
+msgstr ""
+
+#: ../../installation.rst:114
+msgid "``pip install 'apache-airflow[redis]'``"
+msgstr ""
+
+#: ../../installation.rst:114
+msgid "Redis hooks and sensors"
+msgstr ""
+
+#: ../../installation.rst:116
+msgid "samba"
+msgstr ""
+
+#: ../../installation.rst:116
+msgid "``pip install 'apache-airflow[samba]'``"
+msgstr ""
+
+#: ../../installation.rst:116
+msgid ":class:`airflow.operators.hive_to_samba_operator.Hive2SambaOperator`"
+msgstr ""
+
+#: ../../installation.rst:118
+msgid "slack"
+msgstr ""
+
+#: ../../installation.rst:118
+msgid "``pip install 'apache-airflow[slack]'``"
+msgstr ""
+
+#: ../../installation.rst:118
+msgid ":class:`airflow.operators.slack_operator.SlackAPIOperator`"
+msgstr ""
+
+#: ../../installation.rst:120
+msgid "ssh"
+msgstr ""
+
+#: ../../installation.rst:120
+msgid "``pip install 'apache-airflow[ssh]'``"
+msgstr ""
+
+#: ../../installation.rst:120
+msgid "SSH hooks and Operator"
+msgstr ""
+
+#: ../../installation.rst:122
+msgid "vertica"
+msgstr ""
+
+#: ../../installation.rst:122
+msgid "``pip install 'apache-airflow[vertica]'``"
+msgstr ""
+
+#: ../../installation.rst:122
+msgid "Vertica hook support as an Airflow backend"
+msgstr ""
+
+#: ../../installation.rst:126
+msgid "Initiating Airflow Database"
+msgstr ""
+
+#: ../../installation.rst:128
+msgid ""
+"Airflow requires a database to be initiated before you can run tasks. If "
+"you're just experimenting and learning Airflow, you can stick with the "
+"default SQLite option. If you don't want to use SQLite, then take a look "
+"at :doc:`howto/initialize-database` to setup a different database."
+msgstr ""
+
+#: ../../installation.rst:133
+msgid ""
+"After configuration, you'll need to initialize the database before you "
+"can run tasks:"
+msgstr ""
+

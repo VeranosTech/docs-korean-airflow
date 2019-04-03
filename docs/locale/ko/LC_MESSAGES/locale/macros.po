@@ -1,0 +1,500 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C)
+# This file is distributed under the same license as the Airflow package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Airflow 1.10.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-04-03 15:37+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../macros.rst:19
+msgid "Macros reference"
+msgstr ""
+
+#: ../../macros.rst:21
+msgid ""
+"Variables and macros can be used in templates (see the :ref:`jinja-"
+"templating` section)"
+msgstr ""
+
+#: ../../macros.rst:23
+msgid ""
+"The following come for free out of the box with Airflow. Additional "
+"custom macros can be added globally through :ref:`plugins`, or at a DAG "
+"level through the ``DAG.user_defined_macros`` argument."
+msgstr ""
+
+#: ../../macros.rst:27
+msgid "Default Variables"
+msgstr ""
+
+#: ../../macros.rst:28
+msgid ""
+"The Airflow engine passes a few variables by default that are accessible "
+"in all templates"
+msgstr ""
+
+#: ../../macros.rst:32 ../../macros.rst:100
+msgid "Variable"
+msgstr ""
+
+#: ../../macros.rst:32 ../../macros.rst:100
+msgid "Description"
+msgstr ""
+
+#: ../../macros.rst:34
+msgid "``{{ ds }}``"
+msgstr ""
+
+#: ../../macros.rst:34
+msgid "the execution date as ``YYYY-MM-DD``"
+msgstr ""
+
+#: ../../macros.rst:35
+msgid "``{{ ds_nodash }}``"
+msgstr ""
+
+#: ../../macros.rst:35
+msgid "the execution date as ``YYYYMMDD``"
+msgstr ""
+
+#: ../../macros.rst:36
+msgid "``{{ prev_ds }}``"
+msgstr ""
+
+#: ../../macros.rst:36
+msgid ""
+"the previous execution date as ``YYYY-MM-DD`` if ``{{ ds }}`` is "
+"``2018-01-08`` and ``schedule_interval`` is ``@weekly``, ``{{ prev_ds "
+"}}`` will be ``2018-01-01``"
+msgstr ""
+
+#: ../../macros.rst:39
+msgid "``{{ prev_ds_nodash }}``"
+msgstr ""
+
+#: ../../macros.rst:39
+msgid "the previous execution date as ``YYYYMMDD`` if exists, else ``None``"
+msgstr ""
+
+#: ../../macros.rst:40
+msgid "``{{ next_ds }}``"
+msgstr ""
+
+#: ../../macros.rst:40
+msgid ""
+"the next execution date as ``YYYY-MM-DD`` if ``{{ ds }}`` is "
+"``2018-01-01`` and ``schedule_interval`` is ``@weekly``, ``{{ next_ds "
+"}}`` will be ``2018-01-08``"
+msgstr ""
+
+#: ../../macros.rst:43
+msgid "``{{ next_ds_nodash }}``"
+msgstr ""
+
+#: ../../macros.rst:43
+msgid "the next execution date as ``YYYYMMDD`` if exists, else ``None``"
+msgstr ""
+
+#: ../../macros.rst:44
+msgid "``{{ yesterday_ds }}``"
+msgstr ""
+
+#: ../../macros.rst:44
+msgid "the day before the execution date as ``YYYY-MM-DD``"
+msgstr ""
+
+#: ../../macros.rst:45
+msgid "``{{ yesterday_ds_nodash }}``"
+msgstr ""
+
+#: ../../macros.rst:45
+msgid "the day before the execution date as ``YYYYMMDD``"
+msgstr ""
+
+#: ../../macros.rst:46
+msgid "``{{ tomorrow_ds }}``"
+msgstr ""
+
+#: ../../macros.rst:46
+msgid "the day after the execution date as ``YYYY-MM-DD``"
+msgstr ""
+
+#: ../../macros.rst:47
+msgid "``{{ tomorrow_ds_nodash }}``"
+msgstr ""
+
+#: ../../macros.rst:47
+msgid "the day after the execution date as ``YYYYMMDD``"
+msgstr ""
+
+#: ../../macros.rst:48
+msgid "``{{ ts }}``"
+msgstr ""
+
+#: ../../macros.rst:48
+msgid ""
+"same as ``execution_date.isoformat()``. Example: "
+"``2018-01-01T00:00:00+00:00``"
+msgstr ""
+
+#: ../../macros.rst:49
+msgid "``{{ ts_nodash }}``"
+msgstr ""
+
+#: ../../macros.rst:49
+msgid ""
+"same as ``ts`` without ``-``, ``:`` and TimeZone info. Example: "
+"``20180101T000000``"
+msgstr ""
+
+#: ../../macros.rst:50
+msgid "``{{ ts_nodash_with_tz }}``"
+msgstr ""
+
+#: ../../macros.rst:50
+msgid "same as ``ts`` without ``-`` and ``:``. Example: ``20180101T000000+0000``"
+msgstr ""
+
+#: ../../macros.rst:51
+msgid "``{{ execution_date }}``"
+msgstr ""
+
+#: ../../macros.rst:51
+msgid "the execution_date (pendulum.Pendulum)"
+msgstr ""
+
+#: ../../macros.rst:52
+msgid "``{{ prev_execution_date }}``"
+msgstr ""
+
+#: ../../macros.rst:52
+msgid "the previous execution date (if available) (pendulum.Pendulum)"
+msgstr ""
+
+#: ../../macros.rst:53
+msgid "``{{ next_execution_date }}``"
+msgstr ""
+
+#: ../../macros.rst:53
+msgid "the next execution date (pendulum.Pendulum)"
+msgstr ""
+
+#: ../../macros.rst:54
+msgid "``{{ dag }}``"
+msgstr ""
+
+#: ../../macros.rst:54
+msgid "the DAG object"
+msgstr ""
+
+#: ../../macros.rst:55
+msgid "``{{ task }}``"
+msgstr ""
+
+#: ../../macros.rst:55
+msgid "the Task object"
+msgstr ""
+
+#: ../../macros.rst:56
+msgid "``{{ macros }}``"
+msgstr ""
+
+#: ../../macros.rst:56
+msgid "a reference to the macros package, described below"
+msgstr ""
+
+#: ../../macros.rst:57
+msgid "``{{ task_instance }}``"
+msgstr ""
+
+#: ../../macros.rst:57
+msgid "the task_instance object"
+msgstr ""
+
+#: ../../macros.rst:58
+msgid "``{{ end_date }}``"
+msgstr ""
+
+#: ../../macros.rst:58 ../../macros.rst:59
+msgid "same as ``{{ ds }}``"
+msgstr ""
+
+#: ../../macros.rst:59
+msgid "``{{ latest_date }}``"
+msgstr ""
+
+#: ../../macros.rst:60
+msgid "``{{ ti }}``"
+msgstr ""
+
+#: ../../macros.rst:60
+msgid "same as ``{{ task_instance }}``"
+msgstr ""
+
+#: ../../macros.rst:61
+msgid "``{{ params }}``"
+msgstr ""
+
+#: ../../macros.rst:61
+msgid ""
+"a reference to the user-defined params dictionary which can be overridden"
+" by the dictionary passed through ``trigger_dag -c`` if you enabled "
+"``dag_run_conf_overrides_params` in ``airflow.cfg``"
+msgstr ""
+
+#: ../../macros.rst:64
+msgid "``{{ var.value.my_var }}``"
+msgstr ""
+
+#: ../../macros.rst:64
+msgid "global defined variables represented as a dictionary"
+msgstr ""
+
+#: ../../macros.rst:65
+msgid "``{{ var.json.my_var.path }}``"
+msgstr ""
+
+#: ../../macros.rst:65
+msgid ""
+"global defined variables represented as a dictionary with deserialized "
+"JSON object, append the path to the key within the JSON object"
+msgstr ""
+
+#: ../../macros.rst:68
+msgid "``{{ task_instance_key_str }}``"
+msgstr ""
+
+#: ../../macros.rst:68
+msgid ""
+"a unique, human-readable key to the task instance formatted "
+"``{dag_id}_{task_id}_{ds}``"
+msgstr ""
+
+#: ../../macros.rst:70
+msgid "``{{ conf }}``"
+msgstr ""
+
+#: ../../macros.rst:70
+msgid ""
+"the full configuration object located at ``airflow.configuration.conf`` "
+"which represents the content of your ``airflow.cfg``"
+msgstr ""
+
+#: ../../macros.rst:74
+msgid "``{{ run_id }}``"
+msgstr ""
+
+#: ../../macros.rst:74
+msgid "the ``run_id`` of the current DAG run"
+msgstr ""
+
+#: ../../macros.rst:75
+msgid "``{{ dag_run }}``"
+msgstr ""
+
+#: ../../macros.rst:75
+msgid "a reference to the DagRun object"
+msgstr ""
+
+#: ../../macros.rst:76
+msgid "``{{ test_mode }}``"
+msgstr ""
+
+#: ../../macros.rst:76
+msgid "whether the task instance was called using the CLI's test subcommand"
+msgstr ""
+
+#: ../../macros.rst:80
+msgid ""
+"Note that you can access the object's attributes and methods with simple "
+"dot notation. Here are some examples of what is possible: ``{{ task.owner"
+" }}``, ``{{ task.task_id }}``, ``{{ ti.hostname }}``, ... Refer to the "
+"models documentation for more information on the objects' attributes and "
+"methods."
+msgstr ""
+
+#: ../../macros.rst:86
+msgid ""
+"The ``var`` template variable allows you to access variables defined in "
+"Airflow's UI. You can access them as either plain-text or JSON. If you "
+"use JSON, you are also able to walk nested structures, such as "
+"dictionaries like: ``{{ var.json.my_dict_var.key1 }}``"
+msgstr ""
+
+#: ../../macros.rst:92
+msgid "Macros"
+msgstr ""
+
+#: ../../macros.rst:93
+msgid ""
+"Macros are a way to expose objects to your templates and live under the "
+"``macros`` namespace in your templates."
+msgstr ""
+
+#: ../../macros.rst:96
+msgid "A few commonly used libraries and methods are made available."
+msgstr ""
+
+#: ../../macros.rst:102
+msgid "``macros.datetime``"
+msgstr ""
+
+#: ../../macros.rst:102 ../../macros.rst:103
+msgid "The standard lib's :class:`datetime.datetime`"
+msgstr ""
+
+#: ../../macros.rst:103
+msgid "``macros.timedelta``"
+msgstr ""
+
+#: ../../macros.rst:104
+msgid "``macros.dateutil``"
+msgstr ""
+
+#: ../../macros.rst:104
+msgid "A reference to the ``dateutil`` package"
+msgstr ""
+
+#: ../../macros.rst:105
+msgid "``macros.time``"
+msgstr ""
+
+#: ../../macros.rst:105
+msgid "The standard lib's :class:`datetime.time`"
+msgstr ""
+
+#: ../../macros.rst:106
+msgid "``macros.uuid``"
+msgstr ""
+
+#: ../../macros.rst:106
+msgid "The standard lib's :mod:`uuid`"
+msgstr ""
+
+#: ../../macros.rst:107
+msgid "``macros.random``"
+msgstr ""
+
+#: ../../macros.rst:107
+msgid "The standard lib's :mod:`random`"
+msgstr ""
+
+#: ../../macros.rst:111
+msgid "Some airflow specific macros are also defined:"
+msgstr ""
+
+#: airflow.macros.ds_add:1 of
+msgid "Add or subtract days from a YYYY-MM-DD"
+msgstr ""
+
+#: airflow.macros.ds_add airflow.macros.ds_format
+#: airflow.macros.hive.closest_ds_partition airflow.macros.hive.max_partition
+#: of
+msgid "Parameters"
+msgstr ""
+
+#: airflow.macros.ds_add:3 of
+msgid "anchor date in ``YYYY-MM-DD`` format to add to"
+msgstr ""
+
+#: airflow.macros.ds_add:5 of
+msgid "number of days to add to the ds, you can use negative values"
+msgstr ""
+
+#: airflow.macros.ds_format:1 of
+msgid ""
+"Takes an input string and outputs another string as specified in the "
+"output format"
+msgstr ""
+
+#: airflow.macros.ds_format:4 of
+msgid "input string which contains a date"
+msgstr ""
+
+#: airflow.macros.ds_format:6 of
+#, python-format
+msgid "input string format. E.g. %Y-%m-%d"
+msgstr ""
+
+#: airflow.macros.ds_format:8 of
+#, python-format
+msgid "output string format  E.g. %Y-%m-%d"
+msgstr ""
+
+#: airflow.macros.hive.closest_ds_partition:1 of
+msgid ""
+"This function finds the date in a list closest to the target date. An "
+"optional parameter can be given to get the closest before or after."
+msgstr ""
+
+#: airflow.macros.hive.closest_ds_partition:4 of
+msgid "A hive table name"
+msgstr ""
+
+#: airflow.macros.hive.closest_ds_partition:6 of
+#, python-format
+msgid "A datestamp ``%Y-%m-%d`` e.g. ``yyyy-mm-dd``"
+msgstr ""
+
+#: airflow.macros.hive.closest_ds_partition:8 of
+msgid "closest before (True), after (False) or either side of ds"
+msgstr ""
+
+#: airflow.macros.hive.closest_ds_partition of
+msgid "Returns"
+msgstr ""
+
+#: airflow.macros.hive.closest_ds_partition:10 of
+msgid "The closest date"
+msgstr ""
+
+#: airflow.macros.hive.closest_ds_partition of
+msgid "Return type"
+msgstr ""
+
+#: airflow.macros.hive.max_partition:1 of
+msgid "Gets the max partition for a table."
+msgstr ""
+
+#: airflow.macros.hive.max_partition:3 of
+msgid "The hive schema the table lives in"
+msgstr ""
+
+#: airflow.macros.hive.max_partition:5 of
+msgid ""
+"The hive table you are interested in, supports the dot notation as in "
+"\"my_database.my_table\", if a dot is found, the schema param is "
+"disregarded"
+msgstr ""
+
+#: airflow.macros.hive.max_partition:9 of
+msgid ""
+"The hive connection you are interested in. If your default is set you "
+"don't need to use this parameter."
+msgstr ""
+
+#: airflow.macros.hive.max_partition:12 of
+msgid ""
+"partition_key:partition_value map used for partition filtering, e.g. "
+"{'key1': 'value1', 'key2': 'value2'}. Only partitions matching all "
+"partition_key:partition_value pairs will be considered as candidates of "
+"max partition."
+msgstr ""
+
+#: airflow.macros.hive.max_partition:17 of
+msgid ""
+"the field to get the max value from. If there's only one partition field,"
+" this will be inferred"
+msgstr ""
+

@@ -1,0 +1,167 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C)
+# This file is distributed under the same license as the Airflow package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Airflow 1.10.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-04-03 15:37+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../project.rst:19
+msgid "Project"
+msgstr ""
+
+#: ../../project.rst:22
+msgid "History"
+msgstr ""
+
+#: ../../project.rst:24
+msgid ""
+"Airflow was started in October 2014 by Maxime Beauchemin at Airbnb. It "
+"was open source from the very first commit and officially brought under "
+"the Airbnb GitHub and announced in June 2015."
+msgstr ""
+
+#: ../../project.rst:28
+msgid ""
+"The project joined the Apache Software Foundation's Incubator program in "
+"March 2016 and the Foundation `announced Apache Airflow as a Top-Level "
+"Project <https://blogs.apache.org/foundation/entry/the-apache-software-"
+"foundation-announces44>`_ in January 2019."
+msgstr ""
+
+#: ../../project.rst:35
+msgid "Committers"
+msgstr ""
+
+#: ../../project.rst:37
+msgid "@mistercrunch (Maxime \"Max\" Beauchemin)"
+msgstr ""
+
+#: ../../project.rst:38
+msgid "@r39132 (Siddharth \"Sid\" Anand)"
+msgstr ""
+
+#: ../../project.rst:39
+msgid "@criccomini (Chris Riccomini)"
+msgstr ""
+
+#: ../../project.rst:40
+msgid "@bolkedebruin (Bolke de Bruin)"
+msgstr ""
+
+#: ../../project.rst:41
+msgid "@artwr (Arthur Wiedmer)"
+msgstr ""
+
+#: ../../project.rst:42
+msgid "@jlowin (Jeremiah Lowin)"
+msgstr ""
+
+#: ../../project.rst:43
+msgid "@aoen (Dan Davydov)"
+msgstr ""
+
+#: ../../project.rst:44
+msgid "@msumit (Sumit Maheshwari)"
+msgstr ""
+
+#: ../../project.rst:45
+msgid "@alexvanboxel (Alex Van Boxel)"
+msgstr ""
+
+#: ../../project.rst:46
+msgid "@saguziel (Alex Guziel)"
+msgstr ""
+
+#: ../../project.rst:47
+msgid "@joygao (Joy Gao)"
+msgstr ""
+
+#: ../../project.rst:48
+msgid "@fokko (Fokko Driesprong)"
+msgstr ""
+
+#: ../../project.rst:49
+msgid "@ash (Ash Berlin-Taylor)"
+msgstr ""
+
+#: ../../project.rst:50
+msgid "@kaxilnaik (Kaxil Naik)"
+msgstr ""
+
+#: ../../project.rst:51
+msgid "@feng-tao (Tao Feng)"
+msgstr ""
+
+#: ../../project.rst:52
+msgid "@hiteshs (Hitesh Shah)"
+msgstr ""
+
+#: ../../project.rst:53
+msgid "@jghoman (Jakob Homan)"
+msgstr ""
+
+#: ../../project.rst:54
+msgid "@XD-DENG (Xiaodong Deng)"
+msgstr ""
+
+#: ../../project.rst:55
+msgid "@dimberman (Daniel Imberman)"
+msgstr ""
+
+#: ../../project.rst:57
+msgid ""
+"For the full list of contributors, take a look at `Airflow's Github "
+"Contributor page: "
+"<https://github.com/apache/airflow/graphs/contributors>`_"
+msgstr ""
+
+#: ../../project.rst:63
+msgid "Resources & links"
+msgstr ""
+
+#: ../../project.rst:65
+msgid "`Airflow's official documentation <http://airflow.apache.org/>`_"
+msgstr ""
+
+#: ../../project.rst:66
+msgid ""
+"Mailing list (send emails to ``dev-subscribe@airflow.apache.org`` and/or "
+"``commits-subscribe@airflow.apache.org`` to subscribe to each)"
+msgstr ""
+
+#: ../../project.rst:70
+msgid "`Issues on Apache's Jira <https://issues.apache.org/jira/browse/AIRFLOW>`_"
+msgstr ""
+
+#: ../../project.rst:71
+msgid "`Slack (chat) Channel <https://apache-airflow-slack.herokuapp.com/>`_"
+msgstr ""
+
+#: ../../project.rst:72
+msgid ""
+"`More resources and links to Airflow related content on the Wiki "
+"<https://cwiki.apache.org/confluence/display/AIRFLOW/Airflow+Links>`_"
+msgstr ""
+
+#: ../../project.rst:77
+msgid "Roadmap"
+msgstr ""
+
+#: ../../project.rst:79
+msgid ""
+"Please refer to the Roadmap on `the wiki "
+"<https://cwiki.apache.org/confluence/display/AIRFLOW/Airflow+Home>`_"
+msgstr ""
+

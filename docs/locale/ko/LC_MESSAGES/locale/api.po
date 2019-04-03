@@ -1,0 +1,144 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C)
+# This file is distributed under the same license as the Airflow package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Airflow 1.10.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-04-03 15:37+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../api.rst:19
+msgid "Experimental Rest API"
+msgstr ""
+
+#: ../../api.rst:21
+msgid ""
+"Airflow exposes an experimental Rest API. It is available through the "
+"webserver. Endpoints are available at /api/experimental/. Please note "
+"that we expect the endpoint definitions to change."
+msgstr ""
+
+#: ../../api.rst:25
+msgid "Endpoints"
+msgstr ""
+
+#: ../../api.rst:30
+msgid "Creates a dag_run for a given dag id."
+msgstr ""
+
+#: ../../api.rst:33
+msgid "**Trigger DAG with config, example:**"
+msgstr ""
+
+#: ../../api.rst:46
+msgid "Returns a list of Dag Runs for a specific DAG ID."
+msgstr ""
+
+#: ../../api.rst:50
+msgid ""
+"Returns a JSON with a dag_run's public instance variables. The format for"
+" the <string:execution_date> is expected to be \"YYYY-mm-DDTHH:MM:SS\", "
+"for example: \"2016-11-16T11:34:15\"."
+msgstr ""
+
+#: ../../api.rst:55
+msgid "To check REST API server correct work. Return status 'OK'."
+msgstr ""
+
+#: ../../api.rst:60
+msgid "Returns info for a task."
+msgstr ""
+
+#: ../../api.rst:65
+msgid ""
+"Returns a JSON with a task instance's public instance variables. The "
+"format for the <string:execution_date> is expected to be \"YYYY-mm-"
+"DDTHH:MM:SS\", for example: \"2016-11-16T11:34:15\"."
+msgstr ""
+
+#: ../../api.rst:70
+msgid "'<string:paused>' must be a 'true' to pause a DAG and 'false' to unpause."
+msgstr ""
+
+#: ../../api.rst:75
+msgid "Returns the latest DagRun for each DAG formatted for the UI."
+msgstr ""
+
+#: ../../api.rst:80
+msgid "Get all pools."
+msgstr ""
+
+#: ../../api.rst:85
+msgid "Get pool by a given name."
+msgstr ""
+
+#: ../../api.rst:89
+msgid "Create a pool."
+msgstr ""
+
+#: ../../api.rst:93
+msgid "Delete pool."
+msgstr ""
+
+#: ../../api.rst:97
+msgid "CLI"
+msgstr ""
+
+#: ../../api.rst:99
+msgid ""
+"For some functions the cli can use the API. To configure the CLI to use "
+"the API when available configure as follows:"
+msgstr ""
+
+#: ../../api.rst:110
+msgid "Authentication"
+msgstr ""
+
+#: ../../api.rst:112
+msgid ""
+"Authentication for the API is handled separately to the Web "
+"Authentication. The default is to not require any authentication on the "
+"API -- i.e. wide open by default. This is not recommended if your Airflow"
+" webserver is publicly accessible, and you should probably use the deny "
+"all backend:"
+msgstr ""
+
+#: ../../api.rst:121
+msgid ""
+"Two \"real\" methods for authentication are currently supported for the "
+"API."
+msgstr ""
+
+#: ../../api.rst:123
+msgid ""
+"To enabled Password authentication, set the following in the "
+"configuration:"
+msgstr ""
+
+#: ../../api.rst:130
+msgid ""
+"It's usage is similar to the Password Authentication used for the Web "
+"interface."
+msgstr ""
+
+#: ../../api.rst:132
+msgid "To enable Kerberos authentication, set the following in the configuration:"
+msgstr ""
+
+#: ../../api.rst:142
+msgid ""
+"The Kerberos service is configured as "
+"``airflow/fully.qualified.domainname@REALM``. Make sure this principal "
+"exists in the keytab file."
+msgstr ""
+

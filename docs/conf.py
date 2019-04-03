@@ -233,6 +233,10 @@ intersphinx_mapping = {
     'sqlalchemy': ('https://docs.sqlalchemy.org/en/latest/', None),
 }
 
+# sphinx translation configurate
+locale_dirs = ['locale/']
+gettext_compact = False
+
 # -- Options for HTML output ----------------------------------------------
 
 # The theme to use for HTML and HTML Help pages.  See the documentation for

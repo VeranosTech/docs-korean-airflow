@@ -1,0 +1,384 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C)
+# This file is distributed under the same license as the Airflow package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Airflow 1.10.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-04-03 15:37+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../tutorial.rst:20
+msgid "Tutorial"
+msgstr ""
+
+#: ../../tutorial.rst:22
+msgid ""
+"This tutorial walks you through some of the fundamental Airflow concepts,"
+" objects, and their usage while writing your first pipeline."
+msgstr ""
+
+#: ../../tutorial.rst:26
+msgid "Example Pipeline definition"
+msgstr ""
+
+#: ../../tutorial.rst:28
+msgid ""
+"Here is an example of a basic pipeline definition. Do not worry if this "
+"looks complicated, a line by line explanation follows below."
+msgstr ""
+
+#: ../../tutorial.rst:90
+msgid "It's a DAG definition file"
+msgstr ""
+
+#: ../../tutorial.rst:92
+msgid ""
+"One thing to wrap your head around (it may not be very intuitive for "
+"everyone at first) is that this Airflow Python script is really just a "
+"configuration file specifying the DAG's structure as code. The actual "
+"tasks defined here will run in a different context from the context of "
+"this script. Different tasks run on different workers at different points"
+" in time, which means that this script cannot be used to cross "
+"communicate between tasks. Note that for this purpose we have a more "
+"advanced feature called ``XCom``."
+msgstr ""
+
+#: ../../tutorial.rst:101
+msgid ""
+"People sometimes think of the DAG definition file as a place where they "
+"can do some actual data processing - that is not the case at all! The "
+"script's purpose is to define a DAG object. It needs to evaluate quickly "
+"(seconds, not minutes) since the scheduler will execute it periodically "
+"to reflect the changes if any."
+msgstr ""
+
+#: ../../tutorial.rst:109
+msgid "Importing Modules"
+msgstr ""
+
+#: ../../tutorial.rst:111
+msgid ""
+"An Airflow pipeline is just a Python script that happens to define an "
+"Airflow DAG object. Let's start by importing the libraries we will need."
+msgstr ""
+
+#: ../../tutorial.rst:123
+msgid "Default Arguments"
+msgstr ""
+
+#: ../../tutorial.rst:124
+msgid ""
+"We're about to create a DAG and some tasks, and we have the choice to "
+"explicitly pass a set of arguments to each task's constructor (which "
+"would become redundant), or (better!) we can define a dictionary of "
+"default parameters that we can use when creating tasks."
+msgstr ""
+
+#: ../../tutorial.rst:148
+msgid ""
+"For more information about the BaseOperator's parameters and what they "
+"do, refer to the :py:class:`airflow.models.BaseOperator` documentation."
+msgstr ""
+
+#: ../../tutorial.rst:151
+msgid ""
+"Also, note that you could easily define different sets of arguments that "
+"would serve different purposes. An example of that would be to have "
+"different settings between a production and development environment."
+msgstr ""
+
+#: ../../tutorial.rst:157
+msgid "Instantiate a DAG"
+msgstr ""
+
+#: ../../tutorial.rst:159
+msgid ""
+"We'll need a DAG object to nest our tasks into. Here we pass a string "
+"that defines the ``dag_id``, which serves as a unique identifier for your"
+" DAG. We also pass the default argument dictionary that we just defined "
+"and define a ``schedule_interval`` of 1 day for the DAG."
+msgstr ""
+
+#: ../../tutorial.rst:170
+msgid "Tasks"
+msgstr ""
+
+#: ../../tutorial.rst:171
+msgid ""
+"Tasks are generated when instantiating operator objects. An object "
+"instantiated from an operator is called a constructor. The first argument"
+" ``task_id`` acts as a unique identifier for the task."
+msgstr ""
+
+#: ../../tutorial.rst:188
+msgid ""
+"Notice how we pass a mix of operator specific arguments "
+"(``bash_command``) and an argument common to all operators (``retries``) "
+"inherited from BaseOperator to the operator's constructor. This is "
+"simpler than passing every argument for every constructor call. Also, "
+"notice that in the second task we override the ``retries`` parameter with"
+" ``3``."
+msgstr ""
+
+#: ../../tutorial.rst:194
+msgid "The precedence rules for a task are as follows:"
+msgstr ""
+
+#: ../../tutorial.rst:196
+msgid "Explicitly passed arguments"
+msgstr ""
+
+#: ../../tutorial.rst:197
+msgid "Values that exist in the ``default_args`` dictionary"
+msgstr ""
+
+#: ../../tutorial.rst:198
+msgid "The operator's default value, if one exists"
+msgstr ""
+
+#: ../../tutorial.rst:200
+msgid ""
+"A task must include or inherit the arguments ``task_id`` and ``owner``, "
+"otherwise Airflow will raise an exception."
+msgstr ""
+
+#: ../../tutorial.rst:204
+msgid "Templating with Jinja"
+msgstr ""
+
+#: ../../tutorial.rst:205
+msgid ""
+"Airflow leverages the power of `Jinja Templating "
+"<http://jinja.pocoo.org/docs/dev/>`_  and provides the pipeline author "
+"with a set of built-in parameters and macros. Airflow also provides hooks"
+" for the pipeline author to define their own parameters, macros and "
+"templates."
+msgstr ""
+
+#: ../../tutorial.rst:212
+msgid ""
+"This tutorial barely scratches the surface of what you can do with "
+"templating in Airflow, but the goal of this section is to let you know "
+"this feature exists, get you familiar with double curly brackets, and "
+"point to the most common template variable: ``{{ ds }}`` (today's \"date "
+"stamp\")."
+msgstr ""
+
+#: ../../tutorial.rst:234
+#, python-format
+msgid ""
+"Notice that the ``templated_command`` contains code logic in ``{% %}`` "
+"blocks, references parameters like ``{{ ds }}``, calls a function as in "
+"``{{ macros.ds_add(ds, 7)}}``, and references a user-defined parameter in"
+" ``{{ params.my_param }}``."
+msgstr ""
+
+#: ../../tutorial.rst:239
+msgid ""
+"The ``params`` hook in ``BaseOperator`` allows you to pass a dictionary "
+"of parameters and/or objects to your templates. Please take the time to "
+"understand how the parameter ``my_param`` makes it through to the "
+"template."
+msgstr ""
+
+#: ../../tutorial.rst:243
+msgid ""
+"Files can also be passed to the ``bash_command`` argument, like "
+"``bash_command='templated_command.sh'``, where the file location is "
+"relative to the directory containing the pipeline file (``tutorial.py`` "
+"in this case). This may be desirable for many reasons, like separating "
+"your script's logic and pipeline code, allowing for proper code "
+"highlighting in files composed in different languages, and general "
+"flexibility in structuring pipelines. It is also possible to define your "
+"``template_searchpath`` as pointing to any folder locations in the DAG "
+"constructor call."
+msgstr ""
+
+#: ../../tutorial.rst:252
+#, python-format
+msgid ""
+"Using that same DAG constructor call, it is possible to define "
+"``user_defined_macros`` which allow you to specify your own variables. "
+"For example, passing ``dict(foo='bar')`` to this argument allows you to "
+"use ``{{ foo }}`` in your templates. Moreover, specifying "
+"``user_defined_filters`` allow you to register you own filters. For "
+"example, passing ``dict(hello=lambda name: 'Hello %s' % name)`` to this "
+"argument allows you to use ``{{ 'world' | hello }}`` in your templates. "
+"For more information regarding custom filters have a look at the `Jinja "
+"Documentation <http://jinja.pocoo.org/docs/dev/api/#writing-filters>`_"
+msgstr ""
+
+#: ../../tutorial.rst:262
+msgid ""
+"For more information on the variables and macros that can be referenced "
+"in templates, make sure to read through the :doc:`macros`"
+msgstr ""
+
+#: ../../tutorial.rst:266
+msgid "Setting up Dependencies"
+msgstr ""
+
+#: ../../tutorial.rst:267
+msgid ""
+"We have tasks `t1`, `t2` and `t3` that do not depend on each other. "
+"Here's a few ways you can define dependencies between them:"
+msgstr ""
+
+#: ../../tutorial.rst:298
+msgid ""
+"Note that when executing your script, Airflow will raise exceptions when "
+"it finds cycles in your DAG or when a dependency is referenced more than "
+"once."
+msgstr ""
+
+#: ../../tutorial.rst:303
+msgid "Recap"
+msgstr ""
+
+#: ../../tutorial.rst:304
+msgid ""
+"Alright, so we have a pretty basic DAG. At this point your code should "
+"look something like this:"
+msgstr ""
+
+#: ../../tutorial.rst:366 ../../tutorial.rst:403
+msgid "Testing"
+msgstr ""
+
+#: ../../tutorial.rst:369
+msgid "Running the Script"
+msgstr ""
+
+#: ../../tutorial.rst:371
+msgid ""
+"Time to run some tests. First, let's make sure the pipeline is parsed "
+"successfully."
+msgstr ""
+
+#: ../../tutorial.rst:374
+msgid ""
+"Let's assume we're saving the code from the previous step in "
+"``tutorial.py`` in the DAGs folder referenced in your ``airflow.cfg``. "
+"The default location for your DAGs is ``~/airflow/dags``."
+msgstr ""
+
+#: ../../tutorial.rst:382
+msgid ""
+"If the script does not raise an exception it means that you haven't done "
+"anything horribly wrong, and that your Airflow environment is somewhat "
+"sound."
+msgstr ""
+
+#: ../../tutorial.rst:387
+msgid "Command Line Metadata Validation"
+msgstr ""
+
+#: ../../tutorial.rst:388
+msgid "Let's run a few commands to validate this script further."
+msgstr ""
+
+#: ../../tutorial.rst:404
+msgid ""
+"Let's test by running the actual task instances on a specific date. The "
+"date specified in this context is an ``execution_date``, which simulates "
+"the scheduler running your task or dag at a specific date + time:"
+msgstr ""
+
+#: ../../tutorial.rst:418
+msgid ""
+"Now remember what we did with templating earlier? See how this template "
+"gets rendered and executed by running this command:"
+msgstr ""
+
+#: ../../tutorial.rst:426
+msgid ""
+"This should result in displaying a verbose log of events and ultimately "
+"running your bash command and printing the result."
+msgstr ""
+
+#: ../../tutorial.rst:429
+msgid ""
+"Note that the ``airflow test`` command runs task instances locally, "
+"outputs their log to stdout (on screen), doesn't bother with "
+"dependencies, and doesn't communicate state (running, success, failed, "
+"...) to the database. It simply allows testing a single task instance."
+msgstr ""
+
+#: ../../tutorial.rst:435
+msgid "Backfill"
+msgstr ""
+
+#: ../../tutorial.rst:436
+msgid ""
+"Everything looks like it's running fine so let's run a backfill. "
+"``backfill`` will respect your dependencies, emit logs into files and "
+"talk to the database to record status. If you do have a webserver up, "
+"you'll be able to track the progress. ``airflow webserver`` will start a "
+"web server if you are interested in tracking the progress visually as "
+"your backfill progresses."
+msgstr ""
+
+#: ../../tutorial.rst:442
+msgid ""
+"Note that if you use ``depends_on_past=True``, individual task instances "
+"will depend on the success of the preceding task instance, except for the"
+" start_date specified itself, for which this dependency is disregarded."
+msgstr ""
+
+#: ../../tutorial.rst:446
+msgid ""
+"The date range in this context is a ``start_date`` and optionally an "
+"``end_date``, which are used to populate the run schedule with task "
+"instances from this dag."
+msgstr ""
+
+#: ../../tutorial.rst:458
+msgid "What's Next?"
+msgstr ""
+
+#: ../../tutorial.rst:459
+msgid ""
+"That's it, you've written, tested and backfilled your very first Airflow "
+"pipeline. Merging your code into a code repository that has a master "
+"scheduler running against it should get it to get triggered and run every"
+" day."
+msgstr ""
+
+#: ../../tutorial.rst:463
+msgid "Here's a few things you might want to do next:"
+msgstr ""
+
+#: ../../tutorial.rst:465
+msgid "Take an in-depth tour of the UI - click all the things!"
+msgstr ""
+
+#: ../../tutorial.rst:466
+msgid "Keep reading the docs! Especially the sections on:"
+msgstr ""
+
+#: ../../tutorial.rst:468
+msgid "Command line interface"
+msgstr ""
+
+#: ../../tutorial.rst:469
+msgid "Operators"
+msgstr ""
+
+#: ../../tutorial.rst:470
+msgid "Macros"
+msgstr ""
+
+#: ../../tutorial.rst:472
+msgid "Write your first pipeline!"
+msgstr ""
+

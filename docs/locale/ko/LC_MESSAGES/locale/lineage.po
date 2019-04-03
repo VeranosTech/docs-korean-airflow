@@ -1,0 +1,114 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C)
+# This file is distributed under the same license as the Airflow package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Airflow 1.10.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-04-03 15:37+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../lineage.rst:19
+msgid "Lineage"
+msgstr ""
+
+#: ../../lineage.rst:21
+msgid "Lineage support is very experimental and subject to change."
+msgstr ""
+
+#: ../../lineage.rst:23
+msgid ""
+"Airflow can help track origins of data, what happens to it and where it "
+"moves over time. This can aid having audit trails and data governance, "
+"but also debugging of data flows."
+msgstr ""
+
+#: ../../lineage.rst:26
+msgid ""
+"Airflow tracks data by means of inlets and outlets of the tasks. Let's "
+"work from an example and see how it works."
+msgstr ""
+
+#: ../../lineage.rst:67
+msgid "Tasks take the parameters `inlets` and `outlets`."
+msgstr ""
+
+#: ../../lineage.rst:69
+msgid "Inlets can be manually defined by the following options:"
+msgstr ""
+
+#: ../../lineage.rst:71
+msgid "by a list of dataset ``{\"datasets\": [dataset1, dataset2]}``"
+msgstr ""
+
+#: ../../lineage.rst:73
+msgid ""
+"can be configured to look for outlets from upstream tasks "
+"``{\"task_ids\": [\"task_id1\", \"task_id2\"]}``"
+msgstr ""
+
+#: ../../lineage.rst:75
+msgid ""
+"can be configured to pick up outlets from direct upstream tasks "
+"``{\"auto\": True}``"
+msgstr ""
+
+#: ../../lineage.rst:77
+msgid "a combination of them"
+msgstr ""
+
+#: ../../lineage.rst:79
+msgid ""
+"Outlets are defined as list of dataset ``{\"datasets\": [dataset1, "
+"dataset2]}``. Any fields for the dataset are templated with the context "
+"when the task is being executed."
+msgstr ""
+
+#: ../../lineage.rst:82
+msgid ""
+"Operators can add inlets and outlets automatically if the operator "
+"supports it."
+msgstr ""
+
+#: ../../lineage.rst:84
+msgid ""
+"In the example DAG task `run_me_first` is a BashOperator that takes 3 "
+"inlets: `CAT1`, `CAT2`, `CAT3`, that are generated from a list. Note that"
+" `execution_date` is a templated field and will be rendered when the task"
+" is running."
+msgstr ""
+
+#: ../../lineage.rst:87
+msgid ""
+"Behind the scenes Airflow prepares the lineage metadata as part of the "
+"`pre_execute` method of a task. When the task has finished execution "
+"`post_execute` is called and lineage metadata is pushed into XCOM. Thus "
+"if you are creating your own operators that override this method make "
+"sure to decorate your method with `prepare_lineage` and `apply_lineage` "
+"respectively."
+msgstr ""
+
+#: ../../lineage.rst:94
+msgid "Apache Atlas"
+msgstr ""
+
+#: ../../lineage.rst:96
+msgid ""
+"Airflow can send its lineage metadata to Apache Atlas. You need to enable"
+" the `atlas` backend and configure it properly, e.g. in your "
+"``airflow.cfg``:"
+msgstr ""
+
+#: ../../lineage.rst:111
+msgid "Please make sure to have the `atlasclient` package installed."
+msgstr ""
+

@@ -1,0 +1,3826 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C)
+# This file is distributed under the same license as the Airflow package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Airflow 1.10.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-04-03 15:37+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../howto/add-new-role.rst:20
+msgid "Add a new role in RBAC UI"
+msgstr ""
+
+#: ../../howto/add-new-role.rst:22
+msgid ""
+"There are five roles created for Airflow by default: Admin, User, Op, "
+"Viewer, and Public. The master branch adds beta support for DAG level "
+"access for RBAC UI. Each DAG comes with two permissions: read and write."
+msgstr ""
+
+#: ../../howto/add-new-role.rst:25
+msgid ""
+"The Admin could create a specific role which is only allowed to read / "
+"write certain DAGs. To configure a new role, go to ``Security`` tab and "
+"click ``List Roles`` in the new UI."
+msgstr ""
+
+#: ../../howto/add-new-role.rst:31
+msgid ""
+"The image shows the creation of a role which can only write to "
+"``example_python_operator``. You can also create roles via the CLI using "
+"the ``airflow roles`` command, e.g.:"
+msgstr ""
+
+#: ../../howto/add-new-role.rst:35
+msgid "airflow roles --create Role1 Role2"
+msgstr ""
+
+#: ../../howto/add-new-role.rst:37
+msgid ""
+"And we could assign the given role to a new user using the ``airflow "
+"users --add-role`` CLI command.  Default roles(Admin, User, Viewer, Op) "
+"shipped with RBAC could view the details for every dag."
+msgstr ""
+
+#: ../../howto/check-health.rst:19
+msgid "Checking Airflow Health Status"
+msgstr ""
+
+#: ../../howto/check-health.rst:21
+msgid ""
+"To check the health status of your Airflow instance, you can simply "
+"access the endpoint ``/health``. It will return a JSON object in which a "
+"high-level glance is provided."
+msgstr ""
+
+#: ../../howto/check-health.rst:36
+msgid ""
+"The ``status`` of each component can be either \"healthy\" or "
+"\"unhealthy\""
+msgstr ""
+
+#: ../../howto/check-health.rst:38
+msgid ""
+"The status of ``metadatabase`` depends on whether a valid connection can "
+"be initiated with the database"
+msgstr ""
+
+#: ../../howto/check-health.rst:40
+msgid ""
+"The status of ``scheduler`` depends on when the latest scheduler "
+"heartbeat was received"
+msgstr ""
+
+#: ../../howto/check-health.rst:42
+msgid ""
+"If the last heartbeat was received more than 30 seconds (default value) "
+"earlier than the current time, the scheduler is considered unhealthy"
+msgstr ""
+
+#: ../../howto/check-health.rst:44
+msgid ""
+"This threshold value can be specified using the option "
+"``scheduler_health_check_threshold`` within the ``scheduler`` section in "
+"``airflow.cfg``"
+msgstr ""
+
+#: ../../howto/check-health.rst:47
+msgid ""
+"Please keep in mind that the HTTP response code of ``/health`` endpoint "
+"**should not** be used to determine the health status of the application."
+" The return code is only indicative of the state of the rest call (200 "
+"for success)."
+msgstr ""
+
+#: ../../howto/connection/aws.rst:19
+msgid "Amazon Web Services Connection"
+msgstr ""
+
+#: ../../howto/connection/aws.rst:21
+msgid ""
+"The Amazon Web Services connection type enables the :ref:`AWS "
+"Integrations <AWS>`."
+msgstr ""
+
+#: ../../howto/connection/aws.rst:25
+msgid "Authenticating to AWS"
+msgstr ""
+
+#: ../../howto/connection/aws.rst:27
+msgid ""
+"Authentication may be performed using any of the `boto3 options "
+"<https://boto3.amazonaws.com/v1/documentation/api/latest/guide/configuration.html"
+"#configuring-credentials>`_. Alternatively, one can pass credentials in "
+"as a Connection initialisation parameter."
+msgstr ""
+
+#: ../../howto/connection/aws.rst:29
+msgid ""
+"To use IAM instance profile, create an \"empty\" connection (i.e. one "
+"with no Login or Password specified)."
+msgstr ""
+
+#: ../../howto/connection/aws.rst:32 ../../howto/connection/gcp.rst:39
+#: ../../howto/connection/grpc.rst:41
+msgid "Default Connection IDs"
+msgstr ""
+
+#: ../../howto/connection/aws.rst:34
+msgid "The default connection ID is ``aws_default``."
+msgstr ""
+
+#: ../../howto/connection/aws.rst:37 ../../howto/connection/gcp.rst:44
+#: ../../howto/connection/gcp_sql.rst:34 ../../howto/connection/grpc.rst:50
+#: ../../howto/connection/mysql.rst:23 ../../howto/connection/oracle.rst:23
+#: ../../howto/connection/postgres.rst:23 ../../howto/connection/ssh.rst:23
+msgid "Configuring the Connection"
+msgstr ""
+
+#: ../../howto/connection/aws.rst:41
+msgid "Login (optional)"
+msgstr ""
+
+#: ../../howto/connection/aws.rst:41
+msgid "Specify the AWS access key ID."
+msgstr ""
+
+#: ../../howto/connection/aws.rst:44 ../../howto/connection/ssh.rst:31
+msgid "Password (optional)"
+msgstr ""
+
+#: ../../howto/connection/aws.rst:44
+msgid "Specify the AWS secret access key."
+msgstr ""
+
+#: ../../howto/connection/aws.rst:63 ../../howto/connection/gcp_sql.rst:75
+#: ../../howto/connection/mysql.rst:93 ../../howto/connection/oracle.rst:84
+#: ../../howto/connection/postgres.rst:78 ../../howto/connection/ssh.rst:64
+msgid "Extra (optional)"
+msgstr ""
+
+#: ../../howto/connection/aws.rst:47
+msgid ""
+"Specify the extra parameters (as json dictionary) that can be used in AWS"
+" connection. The following parameters are supported:"
+msgstr ""
+
+#: ../../howto/connection/aws.rst:50
+msgid "**aws_account_id**: AWS account ID for the connection"
+msgstr ""
+
+#: ../../howto/connection/aws.rst:51
+msgid "**aws_iam_role**: AWS IAM role for the connection"
+msgstr ""
+
+#: ../../howto/connection/aws.rst:52
+msgid "**external_id**: AWS external ID for the connection"
+msgstr ""
+
+#: ../../howto/connection/aws.rst:53
+msgid "**host**: Endpoint URL for the connection"
+msgstr ""
+
+#: ../../howto/connection/aws.rst:54
+msgid "**region_name**: AWS region for the connection"
+msgstr ""
+
+#: ../../howto/connection/aws.rst:55
+msgid "**role_arn**: AWS role ARN for the connection"
+msgstr ""
+
+#: ../../howto/connection/aws.rst:57 ../../howto/connection/gcp_sql.rst:55
+#: ../../howto/connection/mysql.rst:54 ../../howto/connection/oracle.rst:64
+#: ../../howto/connection/postgres.rst:60 ../../howto/connection/ssh.rst:46
+msgid "Example \"extras\" field:"
+msgstr ""
+
+#: ../../howto/connection/gcp.rst:21
+msgid "Google Cloud Platform Connection"
+msgstr ""
+
+#: ../../howto/connection/gcp.rst:23
+msgid ""
+"The Google Cloud Platform connection type enables the :ref:`GCP "
+"Integrations <GCP>`."
+msgstr ""
+
+#: ../../howto/connection/gcp.rst:27
+msgid "Authenticating to GCP"
+msgstr ""
+
+#: ../../howto/connection/gcp.rst:29
+msgid "There are two ways to connect to GCP using Airflow."
+msgstr ""
+
+#: ../../howto/connection/gcp.rst:31
+msgid ""
+"Use `Application Default Credentials <https://google-"
+"auth.readthedocs.io/en/latest/reference/google.auth.html#google.auth.default>`_,"
+" such as via the metadata server when running on Google Compute Engine."
+msgstr ""
+
+#: ../../howto/connection/gcp.rst:34
+msgid ""
+"Use a `service account "
+"<https://cloud.google.com/docs/authentication/#service_accounts>`_ key "
+"file (JSON format) on disk."
+msgstr ""
+
+#: ../../howto/connection/gcp.rst:41
+msgid ""
+"All hooks and operators related to Google Cloud Platform use "
+"``google_cloud_default`` by default."
+msgstr ""
+
+#: ../../howto/connection/gcp.rst:48
+msgid "Project Id (optional)"
+msgstr ""
+
+#: ../../howto/connection/gcp.rst:47
+msgid ""
+"The Google Cloud project ID to connect to. It is used as default project "
+"id by operators using it and can usually be overridden at the operator "
+"level."
+msgstr ""
+
+#: ../../howto/connection/gcp.rst:55
+msgid "Keyfile Path"
+msgstr ""
+
+#: ../../howto/connection/gcp.rst:51
+msgid ""
+"Path to a `service account "
+"<https://cloud.google.com/docs/authentication/#service_accounts>`_ key "
+"file (JSON format) on disk."
+msgstr ""
+
+#: ../../howto/connection/gcp.rst:55 ../../howto/connection/gcp.rst:62
+msgid "Not required if using application default credentials."
+msgstr ""
+
+#: ../../howto/connection/gcp.rst:62
+msgid "Keyfile JSON"
+msgstr ""
+
+#: ../../howto/connection/gcp.rst:58
+msgid ""
+"Contents of a `service account "
+"<https://cloud.google.com/docs/authentication/#service_accounts>`_ key "
+"file (JSON format) on disk. It is recommended to :doc:`Secure your "
+"connections <../secure-connections>` if using this method to "
+"authenticate."
+msgstr ""
+
+#: ../../howto/connection/gcp.rst:93
+msgid "Scopes (comma separated)"
+msgstr ""
+
+#: ../../howto/connection/gcp.rst:65
+msgid ""
+"A list of comma-separated `Google Cloud scopes "
+"<https://developers.google.com/identity/protocols/googlescopes>`_ to "
+"authenticate with."
+msgstr ""
+
+#: ../../howto/connection/gcp.rst:70
+msgid ""
+"Scopes are ignored when using application default credentials. See issue "
+"`AIRFLOW-2522 <https://issues.apache.org/jira/browse/AIRFLOW-2522>`_."
+msgstr ""
+
+#: ../../howto/connection/gcp.rst:74
+msgid ""
+"When specifying the connection in environment variable you should specify"
+" it using URI syntax, with the following requirements:"
+msgstr ""
+
+#: ../../howto/connection/gcp.rst:77
+msgid ""
+"scheme part should be equals ``google-cloud-platform`` (Note: look for a "
+"hyphen character)"
+msgstr ""
+
+#: ../../howto/connection/gcp.rst:79
+msgid "authority (username, password, host, port), path is ignored"
+msgstr ""
+
+#: ../../howto/connection/gcp.rst:80
+msgid ""
+"query parameters contains information specific to this type of "
+"connection. The following keys are accepted:"
+msgstr ""
+
+#: ../../howto/connection/gcp.rst:83
+msgid "``extra__google_cloud_platform__project`` - Project Id"
+msgstr ""
+
+#: ../../howto/connection/gcp.rst:84
+msgid "``extra__google_cloud_platform__key_path`` - Keyfile Path"
+msgstr ""
+
+#: ../../howto/connection/gcp.rst:85
+msgid "``extra__google_cloud_platform__key_dict`` - Keyfile JSON"
+msgstr ""
+
+#: ../../howto/connection/gcp.rst:86
+msgid "``extra__google_cloud_platform__scope`` - Scopes"
+msgstr ""
+
+#: ../../howto/connection/gcp.rst:88
+msgid "Note that all components of the URI should be URL-encoded."
+msgstr ""
+
+#: ../../howto/connection/gcp.rst:90 ../../howto/connection/gcp_sql.rst:72
+#: ../../howto/connection/mysql.rst:86 ../../howto/connection/oracle.rst:81
+#: ../../howto/connection/postgres.rst:75 ../../howto/connection/ssh.rst:61
+msgid "For example:"
+msgstr ""
+
+#: ../../howto/connection/gcp_sql.rst:19
+msgid "Google Cloud SQL Connection"
+msgstr ""
+
+#: ../../howto/connection/gcp_sql.rst:21
+msgid ""
+"The gcpcloudsql:// connection is used by "
+":class:`airflow.contrib.operators.gcp_sql_operator.CloudSqlQueryOperator`"
+" to perform query on a Google Cloud SQL database. Google Cloud SQL "
+"database can be either Postgres or MySQL, so this is a \"meta\" "
+"connection type. It introduces common schema for both MySQL and Postgres,"
+" including what kind of connectivity should be used. Google Cloud SQL "
+"supports connecting via public IP or via Cloud SQL Proxy. In the latter "
+"case the "
+":class:`~airflow.contrib.hooks.gcp_sql_hook.CloudSqlDatabaseHook` uses "
+":class:`~airflow.contrib.hooks.gcp_sql_hook.CloudSqlProxyRunner` to "
+"automatically prepare and use temporary Postgres or MySQL connection that"
+" will use the proxy to connect (either via TCP or UNIX socket."
+msgstr ""
+
+#: ../../howto/connection/gcp_sql.rst:37 ../../howto/connection/mysql.rst:25
+#: ../../howto/connection/postgres.rst:25 ../../howto/connection/ssh.rst:25
+msgid "Host (required)"
+msgstr ""
+
+#: ../../howto/connection/gcp_sql.rst:37 ../../howto/connection/mysql.rst:25
+#: ../../howto/connection/postgres.rst:25
+msgid "The host to connect to."
+msgstr ""
+
+#: ../../howto/connection/gcp_sql.rst:40 ../../howto/connection/mysql.rst:28
+#: ../../howto/connection/postgres.rst:28
+msgid "Schema (optional)"
+msgstr ""
+
+#: ../../howto/connection/gcp_sql.rst:40 ../../howto/connection/mysql.rst:28
+#: ../../howto/connection/postgres.rst:28
+msgid "Specify the schema name to be used in the database."
+msgstr ""
+
+#: ../../howto/connection/gcp_sql.rst:43 ../../howto/connection/mysql.rst:31
+#: ../../howto/connection/oracle.rst:37 ../../howto/connection/postgres.rst:31
+msgid "Login (required)"
+msgstr ""
+
+#: ../../howto/connection/gcp_sql.rst:43 ../../howto/connection/mysql.rst:31
+#: ../../howto/connection/oracle.rst:37 ../../howto/connection/postgres.rst:31
+msgid "Specify the user name to connect."
+msgstr ""
+
+#: ../../howto/connection/gcp_sql.rst:46 ../../howto/connection/mysql.rst:34
+#: ../../howto/connection/oracle.rst:40 ../../howto/connection/postgres.rst:34
+msgid "Password (required)"
+msgstr ""
+
+#: ../../howto/connection/gcp_sql.rst:46 ../../howto/connection/mysql.rst:34
+#: ../../howto/connection/oracle.rst:40 ../../howto/connection/postgres.rst:34
+msgid "Specify the password to connect."
+msgstr ""
+
+#: ../../howto/connection/gcp_sql.rst:49
+msgid ""
+"Specify the extra parameters (as JSON dictionary) that can be used in "
+"Google Cloud SQL connection."
+msgstr ""
+
+#: ../../howto/connection/gcp_sql.rst:52
+msgid ""
+"Details of all the parameters supported in extra field can be found in "
+":class:`~airflow.contrib.hooks.gcp_sql_hook.CloudSqlDatabaseHook`"
+msgstr ""
+
+#: ../../howto/connection/gcp_sql.rst:68
+msgid ""
+"When specifying the connection as URI (in AIRFLOW_CONN_* variable), you "
+"should specify it following the standard syntax of DB connection, where "
+"extras are passed as parameters of the URI. Note that all components of "
+"the URI should be URL-encoded."
+msgstr ""
+
+#: ../../howto/connection/grpc.rst:19
+msgid "gRPC"
+msgstr ""
+
+#: ../../howto/connection/grpc.rst:21
+msgid "The gRPC connection type enables integrated connection to a gRPC service"
+msgstr ""
+
+#: ../../howto/connection/grpc.rst:24
+msgid "Authenticating to gRPC"
+msgstr ""
+
+#: ../../howto/connection/grpc.rst:26
+msgid "There are several ways to connect to gRPC service using Airflow."
+msgstr ""
+
+#: ../../howto/connection/grpc.rst:28
+msgid "Using `NO_AUTH` mode, simply setup an insecure channel of connection."
+msgstr ""
+
+#: ../../howto/connection/grpc.rst:29
+msgid ""
+"Using `SSL` or `TLS` mode, supply a credential pem file for the "
+"connection id, this will setup SSL or TLS secured connection with gRPC "
+"service."
+msgstr ""
+
+#: ../../howto/connection/grpc.rst:31
+msgid ""
+"Using `JWT_GOOGLE` mode. It is using google auth default credentials by "
+"default, further use case of getting credentials from service account can"
+" be add later on."
+msgstr ""
+
+#: ../../howto/connection/grpc.rst:33
+msgid ""
+"Using `OATH_GOOGLE` mode. Scopes are required in the extra field, can be "
+"setup in the UI. It is using google auth default credentials by default, "
+"further use case of getting credentials from service account can be add "
+"later on."
+msgstr ""
+
+#: ../../howto/connection/grpc.rst:36
+msgid ""
+"Using `CUSTOM` mode. For this type of connection, you can pass in a "
+"connection function takes in the connection object and return a gRPC "
+"channel and supply whatever authentication type you want."
+msgstr ""
+
+#: ../../howto/connection/grpc.rst:43
+msgid "The following connection IDs are used by default."
+msgstr ""
+
+#: ../../howto/connection/grpc.rst:47
+msgid "``grpc_default``"
+msgstr ""
+
+#: ../../howto/connection/grpc.rst:46
+msgid "Used by the :class:`~airflow.contrib.hooks.grpc_hook.GrpcHook` hook."
+msgstr ""
+
+#: ../../howto/connection/grpc.rst:53
+msgid "Host"
+msgstr ""
+
+#: ../../howto/connection/grpc.rst:53
+msgid "The host url of the gRPC server"
+msgstr ""
+
+#: ../../howto/connection/grpc.rst:56
+msgid "Port (Optional)"
+msgstr ""
+
+#: ../../howto/connection/grpc.rst:56
+msgid "The port to connect to on gRPC server"
+msgstr ""
+
+#: ../../howto/connection/grpc.rst:62
+msgid "Auth Type"
+msgstr ""
+
+#: ../../howto/connection/grpc.rst:59
+msgid ""
+"Authentication type of the gRPC connection. `NO_AUTH` by default, "
+"possible values are `NO_AUTH`, `SSL`, `TLS`, `JWT_GOOGLE`, `OATH_GOOGLE`,"
+" `CUSTOM`"
+msgstr ""
+
+#: ../../howto/connection/grpc.rst:67
+msgid "Credential Pem File (Optional)"
+msgstr ""
+
+#: ../../howto/connection/grpc.rst:65
+msgid ""
+"Pem file that contains credentials for `SSL` and `TLS` type auth Not "
+"required for other types."
+msgstr ""
+
+#: ../../howto/connection/grpc.rst:72
+msgid "Scopes (comma separated) (Optional)"
+msgstr ""
+
+#: ../../howto/connection/grpc.rst:70
+msgid ""
+"A list of comma-separated `Google Cloud scopes "
+"<https://developers.google.com/identity/protocols/googlescopes>`_ to "
+"authenticate with. Only for `OATH_GOOGLE` type connection"
+msgstr ""
+
+#: ../../howto/connection/index.rst:19
+msgid "Managing Connections"
+msgstr ""
+
+#: ../../howto/connection/index.rst:21
+msgid ""
+"Airflow needs to know how to connect to your environment. Information "
+"such as hostname, port, login and passwords to other systems and services"
+" is handled in the ``Admin->Connections`` section of the UI. The pipeline"
+" code you will author will reference the 'conn_id' of the Connection "
+"objects."
+msgstr ""
+
+#: ../../howto/connection/index.rst:28
+msgid ""
+"Connections can be created and managed using either the UI or environment"
+" variables."
+msgstr ""
+
+#: ../../howto/connection/index.rst:31
+msgid ""
+"See the :ref:`Connections Concepts <concepts-connections>` documentation "
+"for more information."
+msgstr ""
+
+#: ../../howto/connection/index.rst:35
+msgid "Creating a Connection with the UI"
+msgstr ""
+
+#: ../../howto/connection/index.rst:37
+msgid ""
+"Open the ``Admin->Connections`` section of the UI. Click the ``Create`` "
+"link to create a new connection."
+msgstr ""
+
+#: ../../howto/connection/index.rst:42
+msgid ""
+"Fill in the ``Conn Id`` field with the desired connection ID. It is "
+"recommended that you use lower-case characters and separate words with "
+"underscores."
+msgstr ""
+
+#: ../../howto/connection/index.rst:45
+msgid "Choose the connection type with the ``Conn Type`` field."
+msgstr ""
+
+#: ../../howto/connection/index.rst:46
+msgid ""
+"Fill in the remaining fields. See :ref:`manage-connections-connection-"
+"types` for a description of the fields belonging to the different "
+"connection types."
+msgstr ""
+
+#: ../../howto/connection/index.rst:49
+msgid "Click the ``Save`` button to create the connection."
+msgstr ""
+
+#: ../../howto/connection/index.rst:52
+msgid "Editing a Connection with the UI"
+msgstr ""
+
+#: ../../howto/connection/index.rst:54
+msgid ""
+"Open the ``Admin->Connections`` section of the UI. Click the pencil icon "
+"next to the connection you wish to edit in the connection list."
+msgstr ""
+
+#: ../../howto/connection/index.rst:59
+msgid ""
+"Modify the connection properties and click the ``Save`` button to save "
+"your changes."
+msgstr ""
+
+#: ../../howto/connection/index.rst:63
+msgid "Creating a Connection with Environment Variables"
+msgstr ""
+
+#: ../../howto/connection/index.rst:65
+msgid ""
+"Connections in Airflow pipelines can be created using environment "
+"variables. The environment variable needs to have a prefix of "
+"``AIRFLOW_CONN_`` for Airflow with the value in a URI format to use the "
+"connection properly."
+msgstr ""
+
+#: ../../howto/connection/index.rst:69
+msgid ""
+"When referencing the connection in the Airflow pipeline, the ``conn_id`` "
+"should be the name of the variable without the prefix. For example, if "
+"the ``conn_id`` is named ``postgres_master`` the environment variable "
+"should be named ``AIRFLOW_CONN_POSTGRES_MASTER`` (note that the "
+"environment variable must be all uppercase)."
+msgstr ""
+
+#: ../../howto/connection/index.rst:75
+msgid ""
+"Airflow assumes the value returned from the environment variable to be in"
+" a URI format (e.g.``postgres://user:password@localhost:5432/master`` or "
+"``s3://accesskey:secretkey@S3``). The underscore character is not allowed"
+" in the scheme part of URI, so it must be changed to a hyphen character "
+"(e.g. `google-compute-platform` if `conn_type` is "
+"`google_compute_platform`). Query parameters are parsed to one-"
+"dimensional dict and then used to fill extra."
+msgstr ""
+
+#: ../../howto/connection/index.rst:86
+msgid "Connection Types"
+msgstr ""
+
+#: ../../howto/connection/mysql.rst:19
+msgid "MySQL Connection"
+msgstr ""
+
+#: ../../howto/connection/mysql.rst:20
+msgid "The MySQL connection type provides connection to a MySQL database."
+msgstr ""
+
+#: ../../howto/connection/mysql.rst:37
+msgid ""
+"Specify the extra parameters (as json dictionary) that can be used in "
+"MySQL connection. The following parameters are supported:"
+msgstr ""
+
+#: ../../howto/connection/mysql.rst:40
+msgid "**charset**: specify charset of the connection"
+msgstr ""
+
+#: ../../howto/connection/mysql.rst:41
+msgid ""
+"**cursor**: one of \"sscursor\", \"dictcursor, \"ssdictcursor\" . "
+"Specifies cursor class to be used"
+msgstr ""
+
+#: ../../howto/connection/mysql.rst:43
+msgid ""
+"**local_infile**: controls MySQL's LOCAL capability (permitting local "
+"data loading by clients). See `MySQLdb docs "
+"<https://mysqlclient.readthedocs.io/user_guide.html>`_ for details."
+msgstr ""
+
+#: ../../howto/connection/mysql.rst:46
+msgid "**unix_socket**: UNIX socket used instead of the default socket."
+msgstr ""
+
+#: ../../howto/connection/mysql.rst:47
+msgid ""
+"**ssl**: Dictionary of SSL parameters that control connecting using SSL. "
+"Those parameters are server specific and should contain \"ca\", \"cert\","
+" \"key\", \"capath\", \"cipher\" parameters. See `MySQLdb docs "
+"<https://mysqlclient.readthedocs.io/user_guide.html>`_ for details. Note "
+"that to be useful in URL notation, this parameter might also be a string "
+"where the SSL dictionary is a string-encoded JSON dictionary."
+msgstr ""
+
+#: ../../howto/connection/mysql.rst:70
+msgid "or"
+msgstr ""
+
+#: ../../howto/connection/mysql.rst:82
+msgid ""
+"When specifying the connection as URI (in AIRFLOW_CONN_* variable) you "
+"should specify it following the standard syntax of DB connections - where"
+" extras are passed as parameters of the URI. Note that all components of "
+"the URI should be URL-encoded."
+msgstr ""
+
+#: ../../howto/connection/mysql.rst:93
+msgid ""
+"If encounter UnicodeDecodeError while working with MySQL connection, "
+"check the charset defined is matched to the database charset."
+msgstr ""
+
+#: ../../howto/connection/oracle.rst:19
+msgid "Oracle Connection"
+msgstr ""
+
+#: ../../howto/connection/oracle.rst:20
+msgid "The Oracle connection type provides connection to a Oracle database."
+msgstr ""
+
+#: ../../howto/connection/oracle.rst:25
+msgid "Dsn (required)"
+msgstr ""
+
+#: ../../howto/connection/oracle.rst:25
+msgid "The Data Source Name. The host address for the Oracle server."
+msgstr ""
+
+#: ../../howto/connection/oracle.rst:28
+msgid "Sid (optional)"
+msgstr ""
+
+#: ../../howto/connection/oracle.rst:28
+msgid ""
+"The Oracle System ID. The uniquely identify a particular database on a "
+"system."
+msgstr ""
+
+#: ../../howto/connection/oracle.rst:31
+msgid "Service_name (optional)"
+msgstr ""
+
+#: ../../howto/connection/oracle.rst:31
+msgid "The db_unique_name of the database."
+msgstr ""
+
+#: ../../howto/connection/oracle.rst:34 ../../howto/connection/ssh.rst:34
+msgid "Port (optional)"
+msgstr ""
+
+#: ../../howto/connection/oracle.rst:34
+msgid "The port for the Oracle server, Default 1521."
+msgstr ""
+
+#: ../../howto/connection/oracle.rst:43
+msgid ""
+"Specify the extra parameters (as json dictionary) that can be used in "
+"Oracle connection. The following parameters are supported:"
+msgstr ""
+
+#: ../../howto/connection/oracle.rst:46
+msgid ""
+"**encoding** - The encoding to use for regular database strings. If not "
+"specified, the environment variable `NLS_LANG` is used. If the "
+"environment variable `NLS_LANG` is not set, `ASCII` is used."
+msgstr ""
+
+#: ../../howto/connection/oracle.rst:49
+msgid ""
+"**nencoding** - The encoding to use for national character set database "
+"strings. If not specified, the environment variable `NLS_NCHAR` is used. "
+"If the environment variable `NLS_NCHAR` is not used, the environment "
+"variable `NLS_LANG` is used instead, and if the environment variable "
+"`NLS_LANG` is not set, `ASCII` is used."
+msgstr ""
+
+#: ../../howto/connection/oracle.rst:53
+msgid ""
+"**threaded** - Whether or not Oracle should wrap accesses to connections "
+"with a mutex. Default value is False."
+msgstr ""
+
+#: ../../howto/connection/oracle.rst:55
+msgid "**events** - Whether or not to initialize Oracle in events mode."
+msgstr ""
+
+#: ../../howto/connection/oracle.rst:56
+msgid ""
+"**mode** - one of `sysdba`, `sysasm`, `sysoper`, `sysbkp`, `sysdgd`, "
+"`syskmt` or `sysrac` which are defined at the module level, Default mode "
+"is connecting."
+msgstr ""
+
+#: ../../howto/connection/oracle.rst:58
+msgid ""
+"**purity** - one of `new`, `self`, `default`. Specify the session "
+"acquired from the pool. configuration parameter."
+msgstr ""
+
+#: ../../howto/connection/oracle.rst:61
+msgid ""
+"More details on all Oracle connect parameters supported can be found in "
+"`cx_Oracle documentation <https://cx-"
+"oracle.readthedocs.io/en/latest/module.html#cx_Oracle.connect>`_."
+msgstr ""
+
+#: ../../howto/connection/oracle.rst:77 ../../howto/connection/postgres.rst:71
+msgid ""
+"When specifying the connection as URI (in AIRFLOW_CONN_* variable) you "
+"should specify it following the standard syntax of DB connections, where "
+"extras are passed as parameters of the URI (note that all components of "
+"the URI should be URL-encoded)."
+msgstr ""
+
+#: ../../howto/connection/postgres.rst:19
+msgid "PostgresSQL Connection"
+msgstr ""
+
+#: ../../howto/connection/postgres.rst:20
+msgid "The Postgres connection type provides connection to a Postgres database."
+msgstr ""
+
+#: ../../howto/connection/postgres.rst:37
+msgid ""
+"Specify the extra parameters (as json dictionary) that can be used in "
+"postgres connection. The following parameters out of the standard python "
+"parameters are supported:"
+msgstr ""
+
+#: ../../howto/connection/postgres.rst:41
+msgid ""
+"**sslmode** - This option determines whether or with what priority a "
+"secure SSL TCP/IP connection will be negotiated with the server. There "
+"are six modes: 'disable', 'allow', 'prefer', 'require', 'verify-ca', "
+"'verify-full'."
+msgstr ""
+
+#: ../../howto/connection/postgres.rst:44
+msgid ""
+"**sslcert** - This parameter specifies the file name of the client SSL "
+"certificate, replacing the default."
+msgstr ""
+
+#: ../../howto/connection/postgres.rst:46
+msgid ""
+"**sslkey** - This parameter specifies the file name of the client SSL "
+"key, replacing the default."
+msgstr ""
+
+#: ../../howto/connection/postgres.rst:48
+msgid ""
+"**sslrootcert** - This parameter specifies the name of a file containing "
+"SSL certificate authority (CA) certificate(s)."
+msgstr ""
+
+#: ../../howto/connection/postgres.rst:50
+msgid ""
+"**sslcrl** - This parameter specifies the file name of the SSL "
+"certificate revocation list (CRL)."
+msgstr ""
+
+#: ../../howto/connection/postgres.rst:52
+msgid ""
+"**application_name** - Specifies a value for the application_name "
+"configuration parameter."
+msgstr ""
+
+#: ../../howto/connection/postgres.rst:54
+msgid ""
+"**keepalives_idle** - Controls the number of seconds of inactivity after "
+"which TCP should send a keepalive message to the server."
+msgstr ""
+
+#: ../../howto/connection/postgres.rst:57
+msgid ""
+"More details on all Postgres parameters supported can be found in "
+"`Postgres documentation <https://www.postgresql.org/docs/current/static"
+"/libpq-connect.html#LIBPQ-CONNSTRING>`_."
+msgstr ""
+
+#: ../../howto/connection/ssh.rst:19
+msgid "SSH Connection"
+msgstr ""
+
+#: ../../howto/connection/ssh.rst:20
+msgid ""
+"The SSH connection type provides connection to use "
+":class:`~airflow.contrib.hooks.ssh_hook.SSHHook` to run commands on a "
+"remote server using "
+":class:`~airflow.contrib.operators.ssh_operator.SSHOperator` or transfer "
+"file from/to the remote server using "
+":class:`~airflow.contrib.operators.ssh_operator.SFTPOperator`."
+msgstr ""
+
+#: ../../howto/connection/ssh.rst:25
+msgid "The Remote host to connect."
+msgstr ""
+
+#: ../../howto/connection/ssh.rst:28
+msgid "Username (optional)"
+msgstr ""
+
+#: ../../howto/connection/ssh.rst:28
+msgid "The Username to connect to the remote_host."
+msgstr ""
+
+#: ../../howto/connection/ssh.rst:31
+msgid "Specify the password of the username to connect to the remote_host."
+msgstr ""
+
+#: ../../howto/connection/ssh.rst:34
+msgid "Port of remote host to connect. Default is 22."
+msgstr ""
+
+#: ../../howto/connection/ssh.rst:37
+msgid ""
+"Specify the extra parameters (as json dictionary) that can be used in ssh"
+" connection. The following parameters out of the standard python "
+"parameters are supported:"
+msgstr ""
+
+#: ../../howto/connection/ssh.rst:41
+msgid ""
+"**timeout** - An optional timeout (in seconds) for the TCP connect. "
+"Default is ``10``."
+msgstr ""
+
+#: ../../howto/connection/ssh.rst:42
+msgid ""
+"**compress** - ``true`` to ask the remote client/server to compress "
+"traffic; `false` to refuse compression. Default is ``true``."
+msgstr ""
+
+#: ../../howto/connection/ssh.rst:43
+msgid ""
+"**no_host_key_check** - Set to ``false`` to restrict connecting to hosts "
+"with no entries in ``~/.ssh/known_hosts`` (Hosts file). This provides "
+"maximum protection against trojan horse attacks, but can be troublesome "
+"when the ``/etc/ssh/ssh_known_hosts`` file is poorly maintained or "
+"connections to new hosts are frequently made. This option forces the user"
+" to manually add all new hosts. Default is ``true``, ssh will "
+"automatically add new host keys to the user known hosts files."
+msgstr ""
+
+#: ../../howto/connection/ssh.rst:44
+msgid ""
+"**allow_host_key_change** - Set to ``true`` if you want to allow "
+"connecting to hosts that has host key changed or when you get 'REMOTE "
+"HOST IDENTIFICATION HAS CHANGED' error.  This wont protect against Man-"
+"In-The-Middle attacks. Other possible solution is to remove the host "
+"entry from ``~/.ssh/known_hosts`` file. Default is ``false``."
+msgstr ""
+
+#: ../../howto/connection/ssh.rst:57
+msgid ""
+"When specifying the connection as URI (in AIRFLOW_CONN_* variable) you "
+"should specify it following the standard syntax of connections, where "
+"extras are passed as parameters of the URI (note that all components of "
+"the URI should be URL-encoded)."
+msgstr ""
+
+#: ../../howto/executor/use-celery.rst:19
+msgid "Scaling Out with Celery"
+msgstr ""
+
+#: ../../howto/executor/use-celery.rst:21
+msgid ""
+"``CeleryExecutor`` is one of the ways you can scale out the number of "
+"workers. For this to work, you need to setup a Celery backend "
+"(**RabbitMQ**, **Redis**, ...) and change your ``airflow.cfg`` to point "
+"the executor parameter to ``CeleryExecutor`` and provide the related "
+"Celery settings."
+msgstr ""
+
+#: ../../howto/executor/use-celery.rst:26
+msgid ""
+"For more information about setting up a Celery broker, refer to the "
+"exhaustive `Celery documentation on the topic "
+"<http://docs.celeryproject.org/en/latest/getting-"
+"started/brokers/index.html>`_."
+msgstr ""
+
+#: ../../howto/executor/use-celery.rst:29
+msgid "Here are a few imperative requirements for your workers:"
+msgstr ""
+
+#: ../../howto/executor/use-celery.rst:31
+msgid "``airflow`` needs to be installed, and the CLI needs to be in the path"
+msgstr ""
+
+#: ../../howto/executor/use-celery.rst:32
+msgid "Airflow configuration settings should be homogeneous across the cluster"
+msgstr ""
+
+#: ../../howto/executor/use-celery.rst:33
+msgid ""
+"Operators that are executed on the worker need to have their dependencies"
+" met in that context. For example, if you use the ``HiveOperator``, the "
+"hive CLI needs to be installed on that box, or if you use the "
+"``MySqlOperator``, the required Python library needs to be available in "
+"the ``PYTHONPATH`` somehow"
+msgstr ""
+
+#: ../../howto/executor/use-celery.rst:38
+msgid ""
+"The worker needs to have access to its ``DAGS_FOLDER``, and you need to "
+"synchronize the filesystems by your own means. A common setup would be to"
+" store your DAGS_FOLDER in a Git repository and sync it across machines "
+"using Chef, Puppet, Ansible, or whatever you use to configure machines in"
+" your environment. If all your boxes have a common mount point, having "
+"your pipelines files shared there should work as well"
+msgstr ""
+
+#: ../../howto/executor/use-celery.rst:46
+msgid ""
+"To kick off a worker, you need to setup Airflow and kick off the worker "
+"subcommand"
+msgstr ""
+
+#: ../../howto/executor/use-celery.rst:53
+msgid ""
+"Your worker should start picking up tasks as soon as they get fired in "
+"its direction."
+msgstr ""
+
+#: ../../howto/executor/use-celery.rst:56
+msgid ""
+"Note that you can also run \"Celery Flower\", a web UI built on top of "
+"Celery, to monitor your workers. You can use the shortcut command "
+"``airflow flower`` to start a Flower web server."
+msgstr ""
+
+#: ../../howto/executor/use-celery.rst:60
+msgid ""
+"Please note that you must have the ``flower`` python library already "
+"installed on your system. The recommend way is to install the airflow "
+"celery bundle."
+msgstr ""
+
+#: ../../howto/executor/use-celery.rst:67
+msgid "Some caveats:"
+msgstr ""
+
+#: ../../howto/executor/use-celery.rst:69
+msgid "Make sure to use a database backed result backend"
+msgstr ""
+
+#: ../../howto/executor/use-celery.rst:70
+msgid ""
+"Make sure to set a visibility timeout in "
+"[celery_broker_transport_options] that exceeds the ETA of your longest "
+"running task"
+msgstr ""
+
+#: ../../howto/executor/use-celery.rst:71
+msgid ""
+"Tasks can consume resources. Make sure your worker has enough resources "
+"to run `worker_concurrency` tasks"
+msgstr ""
+
+#: ../../howto/executor/use-dask.rst:19
+msgid "Scaling Out with Dask"
+msgstr ""
+
+#: ../../howto/executor/use-dask.rst:21
+msgid ""
+":class:`airflow.executors.dask_executor.DaskExecutor` allows you to run "
+"Airflow tasks in a Dask Distributed cluster."
+msgstr ""
+
+#: ../../howto/executor/use-dask.rst:23
+msgid ""
+"Dask clusters can be run on a single machine or on remote networks. For "
+"complete details, consult the `Distributed documentation "
+"<https://distributed.readthedocs.io/>`_."
+msgstr ""
+
+#: ../../howto/executor/use-dask.rst:26
+msgid "To create a cluster, first start a Scheduler:"
+msgstr ""
+
+#: ../../howto/executor/use-dask.rst:36
+msgid ""
+"Next start at least one Worker on any machine that can connect to the "
+"host:"
+msgstr ""
+
+#: ../../howto/executor/use-dask.rst:42
+msgid ""
+"Edit your ``airflow.cfg`` to set your executor to "
+":class:`airflow.executors.dask_executor.DaskExecutor` and provide the "
+"Dask Scheduler address in the ``[dask]`` section."
+msgstr ""
+
+#: ../../howto/executor/use-dask.rst:45
+msgid "Please note:"
+msgstr ""
+
+#: ../../howto/executor/use-dask.rst:47
+msgid ""
+"Each Dask worker must be able to import Airflow and any dependencies you "
+"require."
+msgstr ""
+
+#: ../../howto/executor/use-dask.rst:49
+msgid ""
+"Dask does not support queues. If an Airflow task was created with a "
+"queue, a warning will be raised but the task will be submitted to the "
+"cluster."
+msgstr ""
+
+#: ../../howto/executor/use-mesos.rst:19
+msgid "Scaling Out with Mesos (community contributed)"
+msgstr ""
+
+#: ../../howto/executor/use-mesos.rst:21
+msgid "There are two ways you can run airflow as a mesos framework:"
+msgstr ""
+
+#: ../../howto/executor/use-mesos.rst:23
+msgid ""
+"Running airflow tasks directly on mesos slaves, requiring each mesos "
+"slave to have airflow installed and configured."
+msgstr ""
+
+#: ../../howto/executor/use-mesos.rst:24
+msgid ""
+"Running airflow tasks inside a docker container that has airflow "
+"installed, which is run on a mesos slave."
+msgstr ""
+
+#: ../../howto/executor/use-mesos.rst:27
+msgid "Tasks executed directly on mesos slaves"
+msgstr ""
+
+#: ../../howto/executor/use-mesos.rst:29
+msgid ""
+":class:`airflow.contrib.executors.mesos_executor.MesosExecutor` allows "
+"you to schedule airflow tasks on a Mesos cluster. For this to work, you "
+"need a running mesos cluster and you must perform the following steps -"
+msgstr ""
+
+#: ../../howto/executor/use-mesos.rst:33
+msgid ""
+"Install airflow on a mesos slave where web server and scheduler will run,"
+" let's refer to this as the \"Airflow server\"."
+msgstr ""
+
+#: ../../howto/executor/use-mesos.rst:35
+msgid ""
+"On the Airflow server, install mesos python eggs from `mesos downloads "
+"<http://open.mesosphere.com/downloads/mesos/>`_."
+msgstr ""
+
+#: ../../howto/executor/use-mesos.rst:36
+msgid ""
+"On the Airflow server, use a database (such as mysql) which can be "
+"accessed from all mesos slaves and add configuration in ``airflow.cfg``."
+msgstr ""
+
+#: ../../howto/executor/use-mesos.rst:38
+msgid ""
+"Change your ``airflow.cfg`` to point executor parameter to "
+"`MesosExecutor` and provide related Mesos settings."
+msgstr ""
+
+#: ../../howto/executor/use-mesos.rst:40
+msgid ""
+"On all mesos slaves, install airflow. Copy the ``airflow.cfg`` from "
+"Airflow server (so that it uses same sql alchemy connection)."
+msgstr ""
+
+#: ../../howto/executor/use-mesos.rst:42
+msgid "On all mesos slaves, run the following for serving logs:"
+msgstr ""
+
+#: ../../howto/executor/use-mesos.rst:48
+msgid "On Airflow server, to start processing/scheduling DAGs on mesos, run:"
+msgstr ""
+
+#: ../../howto/executor/use-mesos.rst:54
+msgid "Note: We need -p parameter to pickle the DAGs."
+msgstr ""
+
+#: ../../howto/executor/use-mesos.rst:56
+msgid ""
+"You can now see the airflow framework and corresponding tasks in mesos "
+"UI. The logs for airflow tasks can be seen in airflow UI as usual."
+msgstr ""
+
+#: ../../howto/executor/use-mesos.rst:59
+msgid ""
+"For more information about mesos, refer to `mesos documentation "
+"<http://mesos.apache.org/documentation/latest/>`_. For any queries/bugs "
+"on :class:`airflow.contrib.executors.mesos_executor.MesosExecutor`, "
+"please contact `@kapil-malik <https://github.com/kapil-malik>`_."
+msgstr ""
+
+#: ../../howto/executor/use-mesos.rst:63
+msgid "Tasks executed in containers on mesos slaves"
+msgstr ""
+
+#: ../../howto/executor/use-mesos.rst:65
+msgid ""
+"`This gist "
+"<https://gist.github.com/sebradloff/f158874e615bda0005c6f4577b20036e>`_ "
+"contains all files and configuration changes necessary to achieve the "
+"following:"
+msgstr ""
+
+#: ../../howto/executor/use-mesos.rst:67
+msgid "Create a dockerized version of airflow with mesos python eggs installed."
+msgstr ""
+
+#: ../../howto/executor/use-mesos.rst:69
+msgid ""
+"We recommend taking advantage of docker's multi stage builds in order to "
+"achieve this. We have one Dockerfile that defines building a specific "
+"version of mesos from source (Dockerfile-mesos), in order to create the "
+"python eggs. In the airflow Dockerfile (Dockerfile-airflow) we copy the "
+"python eggs from the mesos image."
+msgstr ""
+
+#: ../../howto/executor/use-mesos.rst:71
+msgid "Create a mesos configuration block within the ``airflow.cfg``."
+msgstr ""
+
+#: ../../howto/executor/use-mesos.rst:73
+msgid ""
+"The configuration block remains the same as the default airflow "
+"configuration (default_airflow.cfg), but has the addition of an option "
+"``docker_image_slave``. This should be set to the name of the image you "
+"would like mesos to use when running airflow tasks. Make sure you have "
+"the proper configuration of the DNS record for your mesos master and any "
+"sort of authorization if any exists."
+msgstr ""
+
+#: ../../howto/executor/use-mesos.rst:75
+msgid ""
+"Change your ``airflow.cfg`` to point the executor parameter to "
+"`MesosExecutor` (`executor = SequentialExecutor`)."
+msgstr ""
+
+#: ../../howto/executor/use-mesos.rst:78
+msgid ""
+"Make sure your mesos slave has access to the docker repository you are "
+"using for your ``docker_image_slave``."
+msgstr ""
+
+#: ../../howto/executor/use-mesos.rst:80
+msgid ""
+"`Instructions are available in the mesos docs. "
+"<https://mesos.readthedocs.io/en/latest/docker-containerizer/#private-"
+"docker-repository>`_"
+msgstr ""
+
+#: ../../howto/executor/use-mesos.rst:82
+msgid ""
+"The rest is up to you and how you want to work with a dockerized airflow "
+"configuration."
+msgstr ""
+
+#: ../../howto/index.rst:19
+msgid "How-to Guides"
+msgstr ""
+
+#: ../../howto/index.rst:21
+msgid ""
+"Setting up the sandbox in the :doc:`../start` section was easy; building "
+"a production-grade environment requires a bit more work!"
+msgstr ""
+
+#: ../../howto/index.rst:24
+msgid ""
+"These how-to guides will step you through common tasks in using and "
+"configuring an Airflow environment."
+msgstr ""
+
+#: ../../howto/initialize-database.rst:19
+msgid "Initializing a Database Backend"
+msgstr ""
+
+#: ../../howto/initialize-database.rst:21
+msgid ""
+"If you want to take a real test drive of Airflow, you should consider "
+"setting up a real database backend and switching to the LocalExecutor."
+msgstr ""
+
+#: ../../howto/initialize-database.rst:24
+msgid ""
+"As Airflow was built to interact with its metadata using the great "
+"SqlAlchemy library, you should be able to use any database backend "
+"supported as a SqlAlchemy backend. We recommend using **MySQL** or "
+"**Postgres**."
+msgstr ""
+
+#: ../../howto/initialize-database.rst:28
+msgid ""
+"We rely on more strict ANSI SQL settings for MySQL in order to have sane "
+"defaults. Make sure to have specified `explicit_defaults_for_timestamp=1`"
+" in your my.cnf under `[mysqld]`"
+msgstr ""
+
+#: ../../howto/initialize-database.rst:32
+msgid ""
+"If you decide to use **Postgres**, we recommend using the ``psycopg2`` "
+"driver and specifying it in your SqlAlchemy connection string. (I.e., "
+"``postgresql+psycopg2://<user>:<password>@<host>/<db>``.) Also note that "
+"since SqlAlchemy does not expose a way to target a specific schema in the"
+" Postgres connection URI, you may want to set a default schema for your "
+"role with a command similar to ``ALTER ROLE username SET search_path = "
+"airflow, foobar;``"
+msgstr ""
+
+#: ../../howto/initialize-database.rst:40
+msgid ""
+"Once you've setup your database to host Airflow, you'll need to alter the"
+" SqlAlchemy connection string located in your configuration file "
+"``$AIRFLOW_HOME/airflow.cfg``. You should then also change the "
+"\"executor\" setting to use \"LocalExecutor\", an executor that can "
+"parallelize task instances locally."
+msgstr ""
+
+#: ../../howto/operator/bash.rst:21
+msgid "BashOperator"
+msgstr ""
+
+#: ../../howto/operator/bash.rst:23
+msgid ""
+"Use the :class:`~airflow.operators.bash_operator.BashOperator` to execute"
+" commands in a `Bash <https://www.gnu.org/software/bash/>`__ shell."
+msgstr ""
+
+#: ../../howto/operator/bash.rst:32 ../../howto/operator/gcp/compute.rst:67
+#: ../../howto/operator/gcp/compute.rst:122
+#: ../../howto/operator/gcp/compute.rst:183
+#: ../../howto/operator/gcp/compute.rst:244
+#: ../../howto/operator/gcp/compute.rst:305
+#: ../../howto/operator/gcp/function.rst:56
+#: ../../howto/operator/gcp/function.rst:155
+#: ../../howto/operator/gcp/gcs.rst:71 ../../howto/operator/gcp/gcs.rst:115
+#: ../../howto/operator/gcp/spanner.rst:59
+#: ../../howto/operator/gcp/spanner.rst:109
+#: ../../howto/operator/gcp/spanner.rst:169
+#: ../../howto/operator/gcp/spanner.rst:216
+#: ../../howto/operator/gcp/spanner.rst:264 ../../howto/operator/gcp/sql.rst:65
+#: ../../howto/operator/gcp/sql.rst:112 ../../howto/operator/gcp/sql.rst:168
+#: ../../howto/operator/gcp/sql.rst:226 ../../howto/operator/gcp/sql.rst:290
+#: ../../howto/operator/gcp/sql.rst:387 ../../howto/operator/gcp/sql.rst:482
+#: ../../howto/operator/gcp/sql.rst:540 ../../howto/operator/gcp/sql.rst:632
+#: ../../howto/operator/gcp/transfer.rst:81
+#: ../../howto/operator/gcp/transfer.rst:122
+#: ../../howto/operator/gcp/transfer.rst:168
+#: ../../howto/operator/gcp/transfer.rst:209
+#: ../../howto/operator/gcp/transfer.rst:251
+#: ../../howto/operator/gcp/transfer.rst:292
+#: ../../howto/operator/gcp/transfer.rst:333
+#: ../../howto/operator/gcp/transfer.rst:374
+#: ../../howto/operator/gcp/transfer.rst:414
+#: ../../howto/operator/gcp/translate.rst:57
+#: ../../howto/operator/gcp/vision.rst:96
+#: ../../howto/operator/gcp/vision.rst:170
+#: ../../howto/operator/gcp/vision.rst:253
+#: ../../howto/operator/gcp/vision.rst:320
+#: ../../howto/operator/gcp/vision.rst:383
+#: ../../howto/operator/gcp/vision.rst:460
+#: ../../howto/operator/gcp/vision.rst:521
+#: ../../howto/operator/gcp/vision.rst:580
+#: ../../howto/operator/gcp/vision.rst:665
+#: ../../howto/operator/gcp/vision.rst:759
+#: ../../howto/operator/gcp/vision.rst:836
+#: ../../howto/operator/gcp/vision.rst:921 ../../howto/operator/python.rst:43
+msgid "Templating"
+msgstr ""
+
+#: ../../howto/operator/bash.rst:34
+msgid ""
+"You can use :ref:`Jinja templates <jinja-templating>` to parameterize the"
+" ``bash_command`` argument."
+msgstr ""
+
+#: ../../howto/operator/bash.rst:43 ../../howto/operator/gcp/compute.rst:314
+#: ../../howto/operator/gcp/function.rst:165
+#: ../../howto/operator/gcp/sql.rst:305 ../../howto/operator/gcp/sql.rst:402
+msgid "Troubleshooting"
+msgstr ""
+
+#: ../../howto/operator/bash.rst:46
+msgid "Jinja template not found"
+msgstr ""
+
+#: ../../howto/operator/bash.rst:48
+msgid ""
+"Add a space after the script name when directly calling a Bash script "
+"with the ``bash_command`` argument. This is because Airflow tries to "
+"apply a Jinja template to it, which will fail."
+msgstr ""
+
+#: ../../howto/operator/gcp/bigtable.rst:19
+msgid "Google Cloud Bigtable Operators"
+msgstr ""
+
+#: ../../howto/operator/gcp/bigtable.rst:25
+msgid ""
+"All examples below rely on the following variables, which can be passed "
+"via environment variables."
+msgstr ""
+
+#: ../../howto/operator/gcp/bigtable.rst:35
+msgid "BigtableInstanceCreateOperator"
+msgstr ""
+
+#: ../../howto/operator/gcp/bigtable.rst:37
+msgid ""
+"Use the "
+":class:`~airflow.contrib.operators.gcp_bigtable_operator.BigtableInstanceCreateOperator`"
+" to create a Google Cloud Bigtable instance."
+msgstr ""
+
+#: ../../howto/operator/gcp/bigtable.rst:40
+msgid ""
+"If the Cloud Bigtable instance with the given ID exists, the operator "
+"does not compare its configuration and immediately succeeds. No changes "
+"are made to the existing instance."
+msgstr ""
+
+#: ../../howto/operator/gcp/bigtable.rst:44
+#: ../../howto/operator/gcp/bigtable.rst:64
+#: ../../howto/operator/gcp/bigtable.rst:84
+#: ../../howto/operator/gcp/bigtable.rst:108
+#: ../../howto/operator/gcp/bigtable.rst:136
+#: ../../howto/operator/gcp/bigtable.rst:164
+#: ../../howto/operator/gcp/compute.rst:46
+#: ../../howto/operator/gcp/compute.rst:102
+#: ../../howto/operator/gcp/compute.rst:163
+#: ../../howto/operator/gcp/compute.rst:224
+#: ../../howto/operator/gcp/compute.rst:284
+#: ../../howto/operator/gcp/function.rst:47
+#: ../../howto/operator/gcp/function.rst:127
+#: ../../howto/operator/gcp/gcs.rst:62 ../../howto/operator/gcp/gcs.rst:106
+#: ../../howto/operator/gcp/spanner.rst:47
+#: ../../howto/operator/gcp/spanner.rst:97
+#: ../../howto/operator/gcp/spanner.rst:151
+#: ../../howto/operator/gcp/spanner.rst:204
+#: ../../howto/operator/gcp/spanner.rst:252 ../../howto/operator/gcp/sql.rst:46
+#: ../../howto/operator/gcp/sql.rst:100 ../../howto/operator/gcp/sql.rst:149
+#: ../../howto/operator/gcp/sql.rst:205 ../../howto/operator/gcp/sql.rst:278
+#: ../../howto/operator/gcp/sql.rst:375 ../../howto/operator/gcp/sql.rst:470
+#: ../../howto/operator/gcp/sql.rst:528 ../../howto/operator/gcp/sql.rst:620
+#: ../../howto/operator/gcp/transfer.rst:62
+#: ../../howto/operator/gcp/transfer.rst:113
+#: ../../howto/operator/gcp/transfer.rst:154
+#: ../../howto/operator/gcp/transfer.rst:200
+#: ../../howto/operator/gcp/transfer.rst:242
+#: ../../howto/operator/gcp/transfer.rst:283
+#: ../../howto/operator/gcp/transfer.rst:324
+#: ../../howto/operator/gcp/transfer.rst:365
+#: ../../howto/operator/gcp/transfer.rst:405
+#: ../../howto/operator/gcp/translate.rst:36
+#: ../../howto/operator/gcp/vision.rst:56
+#: ../../howto/operator/gcp/vision.rst:138
+#: ../../howto/operator/gcp/vision.rst:216
+#: ../../howto/operator/gcp/vision.rst:301
+#: ../../howto/operator/gcp/vision.rst:364
+#: ../../howto/operator/gcp/vision.rst:423
+#: ../../howto/operator/gcp/vision.rst:502
+#: ../../howto/operator/gcp/vision.rst:561
+#: ../../howto/operator/gcp/vision.rst:632
+#: ../../howto/operator/gcp/vision.rst:728
+#: ../../howto/operator/gcp/vision.rst:799
+#: ../../howto/operator/gcp/vision.rst:881
+msgid "Using the operator"
+msgstr ""
+
+#: ../../howto/operator/gcp/bigtable.rst:46
+#: ../../howto/operator/gcp/bigtable.rst:66
+#: ../../howto/operator/gcp/bigtable.rst:86
+#: ../../howto/operator/gcp/bigtable.rst:110
+#: ../../howto/operator/gcp/bigtable.rst:138
+#: ../../howto/operator/gcp/bigtable.rst:152
+#: ../../howto/operator/gcp/spanner.rst:49
+#: ../../howto/operator/gcp/spanner.rst:99
+#: ../../howto/operator/gcp/spanner.rst:153
+#: ../../howto/operator/gcp/spanner.rst:206
+#: ../../howto/operator/gcp/spanner.rst:254 ../../howto/operator/gcp/sql.rst:48
+#: ../../howto/operator/gcp/sql.rst:102 ../../howto/operator/gcp/sql.rst:151
+#: ../../howto/operator/gcp/sql.rst:207 ../../howto/operator/gcp/sql.rst:280
+#: ../../howto/operator/gcp/sql.rst:377 ../../howto/operator/gcp/sql.rst:472
+#: ../../howto/operator/gcp/sql.rst:530
+msgid ""
+"You can create the operator with or without project id. If project id is "
+"missing it will be retrieved from the GCP connection used. Both variants "
+"are shown:"
+msgstr ""
+
+#: ../../howto/operator/gcp/bigtable.rst:58
+msgid "BigtableInstanceDeleteOperator"
+msgstr ""
+
+#: ../../howto/operator/gcp/bigtable.rst:60
+msgid ""
+"Use the "
+":class:`~airflow.contrib.operators.gcp_bigtable_operator.BigtableInstanceDeleteOperator`"
+" to delete a Google Cloud Bigtable instance."
+msgstr ""
+
+#: ../../howto/operator/gcp/bigtable.rst:78
+msgid "BigtableClusterUpdateOperator"
+msgstr ""
+
+#: ../../howto/operator/gcp/bigtable.rst:80
+msgid ""
+"Use the "
+":class:`~airflow.contrib.operators.gcp_bigtable_operator.BigtableClusterUpdateOperator`"
+" to modify number of nodes in a Cloud Bigtable cluster."
+msgstr ""
+
+#: ../../howto/operator/gcp/bigtable.rst:98
+msgid "BigtableTableCreateOperator"
+msgstr ""
+
+#: ../../howto/operator/gcp/bigtable.rst:100
+msgid "Creates a table in a Cloud Bigtable instance."
+msgstr ""
+
+#: ../../howto/operator/gcp/bigtable.rst:102
+msgid ""
+"If the table with given ID exists in the Cloud Bigtable instance, the "
+"operator compares the Column Families. If the Column Families are "
+"identical operator succeeds. Otherwise, the operator fails with the "
+"appropriate error message."
+msgstr ""
+
+#: ../../howto/operator/gcp/bigtable.rst:120
+msgid "Advanced"
+msgstr ""
+
+#: ../../howto/operator/gcp/bigtable.rst:122
+msgid ""
+"When creating a table, you can specify the optional "
+"``initial_split_keys`` and ``column_families``. Please refer to the "
+"Python Client for Google Cloud Bigtable documentation `for Table "
+"<https://googleapis.github.io/google-cloud-"
+"python/latest/bigtable/table.html>`_ and `for Column Families "
+"<https://googleapis.github.io/google-cloud-python/latest/bigtable/column-"
+"family.html>`_."
+msgstr ""
+
+#: ../../howto/operator/gcp/bigtable.rst:130
+msgid "BigtableTableDeleteOperator"
+msgstr ""
+
+#: ../../howto/operator/gcp/bigtable.rst:132
+msgid ""
+"Use the "
+":class:`~airflow.contrib.operators.gcp_bigtable_operator.BigtableTableDeleteOperator`"
+" to delete a table in Google Cloud Bigtable."
+msgstr ""
+
+#: ../../howto/operator/gcp/bigtable.rst:150
+msgid "BigtableTableWaitForReplicationSensor"
+msgstr ""
+
+#: ../../howto/operator/gcp/bigtable.rst:155
+msgid ""
+"Use the "
+":class:`~airflow.contrib.operators.gcp_bigtable_operator.BigtableTableWaitForReplicationSensor`"
+" to wait for the table to replicate fully."
+msgstr ""
+
+#: ../../howto/operator/gcp/bigtable.rst:158
+msgid ""
+"The same arguments apply to this sensor as the "
+"BigtableTableCreateOperator_."
+msgstr ""
+
+#: ../../howto/operator/gcp/bigtable.rst:160
+msgid ""
+"**Note:** If the table or the Cloud Bigtable instance does not exist, "
+"this sensor waits for the table until timeout hits and does not raise any"
+" exception."
+msgstr ""
+
+#: ../../howto/operator/gcp/compute.rst:19
+msgid "Google Compute Engine Operators"
+msgstr ""
+
+#: ../../howto/operator/gcp/compute.rst:28
+msgid "GceInstanceStartOperator"
+msgstr ""
+
+#: ../../howto/operator/gcp/compute.rst:30
+msgid ""
+"Use the "
+":class:`~airflow.contrib.operators.gcp_compute_operator.GceInstanceStartOperator`"
+" to start an existing Google Compute Engine instance."
+msgstr ""
+
+#: ../../howto/operator/gcp/compute.rst:36
+#: ../../howto/operator/gcp/compute.rst:92
+#: ../../howto/operator/gcp/compute.rst:147
+#: ../../howto/operator/gcp/compute.rst:209
+#: ../../howto/operator/gcp/compute.rst:269
+#: ../../howto/operator/gcp/function.rst:36
+#: ../../howto/operator/gcp/function.rst:83 ../../howto/operator/gcp/gcs.rst:52
+#: ../../howto/operator/gcp/gcs.rst:96 ../../howto/operator/gcp/spanner.rst:37
+#: ../../howto/operator/gcp/spanner.rst:87
+#: ../../howto/operator/gcp/spanner.rst:141
+#: ../../howto/operator/gcp/spanner.rst:194
+#: ../../howto/operator/gcp/spanner.rst:242 ../../howto/operator/gcp/sql.rst:36
+#: ../../howto/operator/gcp/sql.rst:90 ../../howto/operator/gcp/sql.rst:139
+#: ../../howto/operator/gcp/sql.rst:195 ../../howto/operator/gcp/sql.rst:256
+#: ../../howto/operator/gcp/sql.rst:353 ../../howto/operator/gcp/sql.rst:436
+#: ../../howto/operator/gcp/sql.rst:511 ../../howto/operator/gcp/sql.rst:593
+#: ../../howto/operator/gcp/transfer.rst:52
+#: ../../howto/operator/gcp/transfer.rst:103
+#: ../../howto/operator/gcp/transfer.rst:144
+#: ../../howto/operator/gcp/transfer.rst:190
+#: ../../howto/operator/gcp/transfer.rst:232
+#: ../../howto/operator/gcp/transfer.rst:273
+#: ../../howto/operator/gcp/transfer.rst:314
+#: ../../howto/operator/gcp/transfer.rst:355
+#: ../../howto/operator/gcp/transfer.rst:395
+#: ../../howto/operator/gcp/vision.rst:36
+#: ../../howto/operator/gcp/vision.rst:122
+#: ../../howto/operator/gcp/vision.rst:201
+#: ../../howto/operator/gcp/vision.rst:286
+#: ../../howto/operator/gcp/vision.rst:349
+#: ../../howto/operator/gcp/vision.rst:408
+#: ../../howto/operator/gcp/vision.rst:487
+#: ../../howto/operator/gcp/vision.rst:546
+#: ../../howto/operator/gcp/vision.rst:617
+#: ../../howto/operator/gcp/vision.rst:713
+#: ../../howto/operator/gcp/vision.rst:784
+#: ../../howto/operator/gcp/vision.rst:861
+msgid "Arguments"
+msgstr ""
+
+#: ../../howto/operator/gcp/compute.rst:38
+#: ../../howto/operator/gcp/compute.rst:94
+#: ../../howto/operator/gcp/compute.rst:149
+#: ../../howto/operator/gcp/compute.rst:211
+#: ../../howto/operator/gcp/compute.rst:271
+msgid ""
+"The following examples of OS environment variables used to pass arguments"
+" to the operator:"
+msgstr ""
+
+#: ../../howto/operator/gcp/compute.rst:48
+#: ../../howto/operator/gcp/compute.rst:104
+#: ../../howto/operator/gcp/compute.rst:165
+#: ../../howto/operator/gcp/compute.rst:226
+#: ../../howto/operator/gcp/compute.rst:286
+#: ../../howto/operator/gcp/function.rst:137
+msgid "The code to create the operator:"
+msgstr ""
+
+#: ../../howto/operator/gcp/compute.rst:56
+msgid ""
+"You can also create the operator without project id - project id will be "
+"retrieved from the GCP connection id used:"
+msgstr ""
+
+#: ../../howto/operator/gcp/compute.rst:76
+#: ../../howto/operator/gcp/compute.rst:131
+#: ../../howto/operator/gcp/compute.rst:192
+#: ../../howto/operator/gcp/compute.rst:253
+#: ../../howto/operator/gcp/compute.rst:322
+#: ../../howto/operator/gcp/function.rst:65
+#: ../../howto/operator/gcp/function.rst:199
+#: ../../howto/operator/gcp/gcs.rst:80 ../../howto/operator/gcp/gcs.rst:124
+#: ../../howto/operator/gcp/spanner.rst:68
+#: ../../howto/operator/gcp/spanner.rst:118
+#: ../../howto/operator/gcp/spanner.rst:178
+#: ../../howto/operator/gcp/spanner.rst:225
+#: ../../howto/operator/gcp/spanner.rst:273 ../../howto/operator/gcp/sql.rst:74
+#: ../../howto/operator/gcp/sql.rst:121 ../../howto/operator/gcp/sql.rst:177
+#: ../../howto/operator/gcp/sql.rst:235 ../../howto/operator/gcp/sql.rst:299
+#: ../../howto/operator/gcp/sql.rst:396 ../../howto/operator/gcp/sql.rst:491
+#: ../../howto/operator/gcp/sql.rst:549 ../../howto/operator/gcp/sql.rst:641
+#: ../../howto/operator/gcp/transfer.rst:90
+#: ../../howto/operator/gcp/transfer.rst:131
+#: ../../howto/operator/gcp/transfer.rst:177
+#: ../../howto/operator/gcp/transfer.rst:218
+#: ../../howto/operator/gcp/transfer.rst:260
+#: ../../howto/operator/gcp/transfer.rst:301
+#: ../../howto/operator/gcp/transfer.rst:342
+#: ../../howto/operator/gcp/transfer.rst:383
+#: ../../howto/operator/gcp/translate.rst:66
+#: ../../howto/operator/gcp/vision.rst:105
+#: ../../howto/operator/gcp/vision.rst:179
+#: ../../howto/operator/gcp/vision.rst:262
+#: ../../howto/operator/gcp/vision.rst:329
+#: ../../howto/operator/gcp/vision.rst:392
+#: ../../howto/operator/gcp/vision.rst:469
+#: ../../howto/operator/gcp/vision.rst:530
+#: ../../howto/operator/gcp/vision.rst:589
+#: ../../howto/operator/gcp/vision.rst:674
+#: ../../howto/operator/gcp/vision.rst:768
+#: ../../howto/operator/gcp/vision.rst:845
+#: ../../howto/operator/gcp/vision.rst:930
+msgid "More information"
+msgstr ""
+
+#: ../../howto/operator/gcp/compute.rst:78
+msgid ""
+"See Google Compute Engine API documentation to `start an instance "
+"<https://cloud.google.com/compute/docs/reference/rest/v1/instances/start>`_."
+msgstr ""
+
+#: ../../howto/operator/gcp/compute.rst:84
+msgid "GceInstanceStopOperator"
+msgstr ""
+
+#: ../../howto/operator/gcp/compute.rst:86
+msgid "Use the operator to stop Google Compute Engine instance."
+msgstr ""
+
+#: ../../howto/operator/gcp/compute.rst:88
+msgid ""
+"For parameter definition, take a look at "
+":class:`~airflow.contrib.operators.gcp_compute_operator.GceInstanceStopOperator`"
+msgstr ""
+
+#: ../../howto/operator/gcp/compute.rst:112
+#: ../../howto/operator/gcp/compute.rst:173
+#: ../../howto/operator/gcp/compute.rst:234
+#: ../../howto/operator/gcp/compute.rst:294
+#: ../../howto/operator/gcp/function.rst:145
+msgid ""
+"You can also create the operator without project id - project id will be "
+"retrieved from the GCP connection used:"
+msgstr ""
+
+#: ../../howto/operator/gcp/compute.rst:133
+msgid ""
+"See Google Compute Engine API documentation to `stop an instance "
+"<https://cloud.google.com/compute/docs/reference/rest/v1/instances/stop>`_."
+msgstr ""
+
+#: ../../howto/operator/gcp/compute.rst:139
+msgid "GceSetMachineTypeOperator"
+msgstr ""
+
+#: ../../howto/operator/gcp/compute.rst:141
+msgid ""
+"Use the operator to change machine type of a Google Compute Engine "
+"instance."
+msgstr ""
+
+#: ../../howto/operator/gcp/compute.rst:143
+msgid ""
+"For parameter definition, take a look at "
+":class:`~airflow.contrib.operators.gcp_compute_operator.GceSetMachineTypeOperator`."
+msgstr ""
+
+#: ../../howto/operator/gcp/compute.rst:194
+msgid ""
+"See Google Compute Engine API documentation to `set the machine type "
+"<https://cloud.google.com/compute/docs/reference/rest/v1/instances/setMachineType>`_."
+msgstr ""
+
+#: ../../howto/operator/gcp/compute.rst:200
+msgid "GceInstanceTemplateCopyOperator"
+msgstr ""
+
+#: ../../howto/operator/gcp/compute.rst:202
+msgid ""
+"Use the operator to copy an existing Google Compute Engine instance "
+"template applying a patch to it."
+msgstr ""
+
+#: ../../howto/operator/gcp/compute.rst:205
+msgid ""
+"For parameter definition, take a look at "
+":class:`~airflow.contrib.operators.gcp_compute_operator.GceInstanceTemplateCopyOperator`."
+msgstr ""
+
+#: ../../howto/operator/gcp/compute.rst:255
+msgid ""
+"See Google Compute Engine API documentation to `create a new instance "
+"with an existing template "
+"<https://cloud.google.com/compute/docs/reference/rest/v1/instanceTemplates>`_."
+msgstr ""
+
+#: ../../howto/operator/gcp/compute.rst:261
+msgid "GceInstanceGroupManagerUpdateTemplateOperator"
+msgstr ""
+
+#: ../../howto/operator/gcp/compute.rst:263
+msgid ""
+"Use the operator to update a template in Google Compute Engine Instance "
+"Group Manager."
+msgstr ""
+
+#: ../../howto/operator/gcp/compute.rst:265
+msgid ""
+"For parameter definition, take a look at "
+":class:`~airflow.contrib.operators.gcp_compute_operator.GceInstanceGroupManagerUpdateTemplateOperator`."
+msgstr ""
+
+#: ../../howto/operator/gcp/compute.rst:316
+msgid ""
+"You might find that your GceInstanceGroupManagerUpdateTemplateOperator "
+"fails with missing permissions. To execute the operation, the service "
+"account requires the permissions that theService Account User role "
+"provides (assigned via Google Cloud IAM)."
+msgstr ""
+
+#: ../../howto/operator/gcp/compute.rst:324
+msgid ""
+"See Google Compute Engine API documentation to `manage a group instance "
+"<https://cloud.google.com/compute/docs/reference/rest/v1/instanceGroupManagers>`_."
+msgstr ""
+
+#: ../../howto/operator/gcp/function.rst:19
+msgid "Google Cloud Functions Operators"
+msgstr ""
+
+#: ../../howto/operator/gcp/function.rst:28
+msgid "GcfFunctionDeleteOperator"
+msgstr ""
+
+#: ../../howto/operator/gcp/function.rst:30
+msgid "Use the operator to delete a function from Google Cloud Functions."
+msgstr ""
+
+#: ../../howto/operator/gcp/function.rst:32
+msgid ""
+"For parameter definition, take a look at "
+":class:`~airflow.contrib.operators.gcp_function_operator.GcfFunctionDeleteOperator`."
+msgstr ""
+
+#: ../../howto/operator/gcp/function.rst:38
+msgid ""
+"The following examples of OS environment variables show how you can build"
+" function name to use in the operator:"
+msgstr ""
+
+#: ../../howto/operator/gcp/function.rst:67
+msgid ""
+"See Google Cloud Functions API documentation to `delete a function "
+"<https://cloud.google.com/functions/docs/reference/rest/v1/projects.locations.functions/delete>`_."
+msgstr ""
+
+#: ../../howto/operator/gcp/function.rst:73
+msgid "GcfFunctionDeployOperator"
+msgstr ""
+
+#: ../../howto/operator/gcp/function.rst:75
+msgid ""
+"Use the operator to deploy a function to Google Cloud Functions. If a "
+"function with this name already exists, it will be updated."
+msgstr ""
+
+#: ../../howto/operator/gcp/function.rst:78
+msgid ""
+"For parameter definition, take a look at "
+":class:`~airflow.contrib.operators.gcp_function_operator.GcfFunctionDeployOperator`."
+msgstr ""
+
+#: ../../howto/operator/gcp/function.rst:85
+msgid ""
+"In the example DAG the following environment variables are used to "
+"parameterize the operator's definition:"
+msgstr ""
+
+#: ../../howto/operator/gcp/function.rst:98
+msgid "Some of those variables are used to create the request's body:"
+msgstr ""
+
+#: ../../howto/operator/gcp/function.rst:105
+msgid ""
+"When a DAG is created, the default_args dictionary can be used to pass "
+"arguments common with other tasks:"
+msgstr ""
+
+#: ../../howto/operator/gcp/function.rst:113
+msgid ""
+"Note that the neither the body nor the default args are complete in the "
+"above examples. Depending on the variables set, there might be different "
+"variants on how to pass source code related fields. Currently, you can "
+"pass either ``sourceArchiveUrl``, ``sourceRepository`` or "
+"``sourceUploadUrl`` as described in the `Cloud Functions API "
+"specification "
+"<https://cloud.google.com/functions/docs/reference/rest/v1/projects.locations.functions#CloudFunction>`_."
+msgstr ""
+
+#: ../../howto/operator/gcp/function.rst:120
+msgid ""
+"Additionally, ``default_args`` or direct operator args might contain "
+"``zip_path`` parameter to run the extra step of uploading the source code"
+" before deploying it. In this case, you also need to provide an empty "
+"``sourceUploadUrl`` parameter in the body."
+msgstr ""
+
+#: ../../howto/operator/gcp/function.rst:129
+msgid ""
+"Depending on the combination of parameters, the Function's source code "
+"can be obtained from different sources:"
+msgstr ""
+
+#: ../../howto/operator/gcp/function.rst:167
+msgid "If during the deploy you see an error similar to:"
+msgstr ""
+
+#: ../../howto/operator/gcp/function.rst:169
+msgid ""
+"`\"HttpError 403: Missing necessary permission iam.serviceAccounts.actAs "
+"for on resource project-name@appspot.gserviceaccount.com. Please grant "
+"the roles/iam.serviceAccountUser role.\"`"
+msgstr ""
+
+#: ../../howto/operator/gcp/function.rst:173
+msgid ""
+"it means that your service account does not have the correct Cloud IAM "
+"permissions."
+msgstr ""
+
+#: ../../howto/operator/gcp/function.rst:175
+msgid "Assign your Service Account the Cloud Functions Developer role."
+msgstr ""
+
+#: ../../howto/operator/gcp/function.rst:176
+msgid ""
+"Grant the user the Cloud IAM Service Account User role on the Cloud "
+"Functions runtime service account."
+msgstr ""
+
+#: ../../howto/operator/gcp/function.rst:179
+msgid ""
+"The typical way of assigning Cloud IAM permissions with `gcloud` is shown"
+" below. Just replace PROJECT_ID with ID of your Google Cloud Platform "
+"project and SERVICE_ACCOUNT_EMAIL with the email ID of your service "
+"account."
+msgstr ""
+
+#: ../../howto/operator/gcp/function.rst:190
+msgid "You can also do that via the GCP Web console."
+msgstr ""
+
+#: ../../howto/operator/gcp/function.rst:192
+msgid ""
+"See `Adding the IAM service agent user role to the runtime service "
+"<https://cloud.google.com/functions/docs/reference/iam/roles#adding_the_iam_service_agent_user_role_to_the_runtime_service_account>`_"
+"  for details."
+msgstr ""
+
+#: ../../howto/operator/gcp/function.rst:194
+msgid ""
+"If the source code for your function is in Google Source Repository, make"
+" sure that your service account has the Source Repository Viewer role so "
+"that the source code can be downloaded if necessary."
+msgstr ""
+
+#: ../../howto/operator/gcp/function.rst:201
+msgid ""
+"See Google Cloud API documentation `to create a function "
+"<https://cloud.google.com/functions/docs/reference/rest/v1/projects.locations.functions/create>`_."
+msgstr ""
+
+#: ../../howto/operator/gcp/gcs.rst:19
+msgid "Google Cloud Storage Operators"
+msgstr ""
+
+#: ../../howto/operator/gcp/gcs.rst:28
+msgid "GoogleCloudStorageToBigQueryOperator"
+msgstr ""
+
+#: ../../howto/operator/gcp/gcs.rst:30
+msgid ""
+"Use the "
+":class:`~airflow.contrib.operators.gcs_to_bq.GoogleCloudStorageToBigQueryOperator`"
+" to execute a BigQuery load job."
+msgstr ""
+
+#: ../../howto/operator/gcp/gcs.rst:44
+msgid "GoogleCloudStorageBucketCreateAclEntryOperator"
+msgstr ""
+
+#: ../../howto/operator/gcp/gcs.rst:46
+msgid "Creates a new ACL entry on the specified bucket."
+msgstr ""
+
+#: ../../howto/operator/gcp/gcs.rst:48
+msgid ""
+"For parameter definition, take a look at "
+":class:`~airflow.contrib.operators.gcs_acl_operator.GoogleCloudStorageBucketCreateAclEntryOperator`"
+msgstr ""
+
+#: ../../howto/operator/gcp/gcs.rst:54 ../../howto/operator/gcp/gcs.rst:98
+#: ../../howto/operator/gcp/sql.rst:604
+#: ../../howto/operator/gcp/transfer.rst:54
+#: ../../howto/operator/gcp/transfer.rst:105
+#: ../../howto/operator/gcp/transfer.rst:146
+#: ../../howto/operator/gcp/transfer.rst:192
+#: ../../howto/operator/gcp/transfer.rst:234
+#: ../../howto/operator/gcp/transfer.rst:275
+#: ../../howto/operator/gcp/transfer.rst:316
+#: ../../howto/operator/gcp/transfer.rst:357
+#: ../../howto/operator/gcp/transfer.rst:397
+#: ../../howto/operator/gcp/vision.rst:38
+#: ../../howto/operator/gcp/vision.rst:124
+#: ../../howto/operator/gcp/vision.rst:203
+#: ../../howto/operator/gcp/vision.rst:288
+#: ../../howto/operator/gcp/vision.rst:351
+#: ../../howto/operator/gcp/vision.rst:410
+#: ../../howto/operator/gcp/vision.rst:489
+#: ../../howto/operator/gcp/vision.rst:548
+#: ../../howto/operator/gcp/vision.rst:619
+#: ../../howto/operator/gcp/vision.rst:715
+#: ../../howto/operator/gcp/vision.rst:786
+#: ../../howto/operator/gcp/vision.rst:863
+msgid ""
+"Some arguments in the example DAG are taken from the OS environment "
+"variables:"
+msgstr ""
+
+#: ../../howto/operator/gcp/gcs.rst:82
+msgid ""
+"See Google Cloud Storage Documentation to `create a new ACL entry for a "
+"bucket "
+"<https://cloud.google.com/storage/docs/json_api/v1/bucketAccessControls/insert>`_."
+msgstr ""
+
+#: ../../howto/operator/gcp/gcs.rst:88
+msgid "GoogleCloudStorageObjectCreateAclEntryOperator"
+msgstr ""
+
+#: ../../howto/operator/gcp/gcs.rst:90
+msgid "Creates a new ACL entry on the specified object."
+msgstr ""
+
+#: ../../howto/operator/gcp/gcs.rst:92
+msgid ""
+"For parameter definition, take a look at "
+":class:`~airflow.contrib.operators.gcs_acl_operator.GoogleCloudStorageObjectCreateAclEntryOperator`"
+msgstr ""
+
+#: ../../howto/operator/gcp/gcs.rst:126
+msgid ""
+"See Google Cloud Storage insert documentation to `create a ACL entry for "
+"ObjectAccess "
+"<https://cloud.google.com/storage/docs/json_api/v1/objectAccessControls/insert>`_."
+msgstr ""
+
+#: ../../howto/operator/gcp/index.rst:19
+msgid "Google Cloud Operators"
+msgstr ""
+
+#: ../../howto/operator/gcp/spanner.rst:19
+msgid "Google Cloud Spanner Operators"
+msgstr ""
+
+#: ../../howto/operator/gcp/spanner.rst:28
+msgid "CloudSpannerInstanceDatabaseDeleteOperator"
+msgstr ""
+
+#: ../../howto/operator/gcp/spanner.rst:30
+msgid ""
+"Deletes a database from the specified Cloud Spanner instance. If the "
+"database does not exist, no action is taken, and the operator succeeds."
+msgstr ""
+
+#: ../../howto/operator/gcp/spanner.rst:33
+msgid ""
+"For parameter definition, take a look at "
+":class:`~airflow.contrib.operators.gcp_spanner_operator.CloudSpannerInstanceDatabaseDeleteOperator`."
+msgstr ""
+
+#: ../../howto/operator/gcp/spanner.rst:39
+#: ../../howto/operator/gcp/spanner.rst:89
+#: ../../howto/operator/gcp/spanner.rst:143
+#: ../../howto/operator/gcp/spanner.rst:196
+msgid "Some arguments in the example DAG are taken from environment variables."
+msgstr ""
+
+#: ../../howto/operator/gcp/spanner.rst:70
+msgid ""
+"See `Google Cloud Spanner API documentation to drop an instance of a "
+"database "
+"<https://cloud.google.com/spanner/docs/reference/rest/v1/projects.instances.databases/dropDatabase>`_."
+msgstr ""
+
+#: ../../howto/operator/gcp/spanner.rst:76
+msgid "CloudSpannerInstanceDatabaseDeployOperator"
+msgstr ""
+
+#: ../../howto/operator/gcp/spanner.rst:78
+msgid ""
+"Creates a new Cloud Spanner database in the specified instance, or if the"
+" desired database exists, assumes success with no changes applied to "
+"database configuration. No structure of the database is verified - it's "
+"enough if the database exists with the same name."
+msgstr ""
+
+#: ../../howto/operator/gcp/spanner.rst:83
+msgid ""
+"For parameter definition, take a look at "
+":class:`~airflow.contrib.operators.gcp_spanner_operator.CloudSpannerInstanceDatabaseDeployOperator`."
+msgstr ""
+
+#: ../../howto/operator/gcp/spanner.rst:120
+msgid ""
+"See Google Cloud Spanner API documentation `to create a new database "
+"<https://cloud.google.com/spanner/docs/reference/rest/v1/projects.instances.databases/create>`_."
+msgstr ""
+
+#: ../../howto/operator/gcp/spanner.rst:126
+msgid "CloudSpannerInstanceDatabaseUpdateOperator"
+msgstr ""
+
+#: ../../howto/operator/gcp/spanner.rst:128
+msgid ""
+"Runs a DDL query in a Cloud Spanner database and allows you to modify the"
+" structure of an existing database."
+msgstr ""
+
+#: ../../howto/operator/gcp/spanner.rst:131
+msgid ""
+"You can optionally specify an operation_id parameter which simplifies "
+"determining whether the statements were executed in case the "
+"update_database call is replayed (idempotency check). The operation_id "
+"should be unique within the database, and must be a valid identifier: "
+"`[a-z][a-z0-9_]*`. More information can be found in `the documentation of"
+" updateDdl API "
+"<https://cloud.google.com/spanner/docs/reference/rest/v1/projects.instances.databases/updateDdl>`_"
+msgstr ""
+
+#: ../../howto/operator/gcp/spanner.rst:137
+msgid ""
+"For parameter definition take a look at "
+":class:`~airflow.contrib.operators.gcp_spanner_operator.CloudSpannerInstanceDatabaseUpdateOperator`."
+msgstr ""
+
+#: ../../howto/operator/gcp/spanner.rst:180
+msgid ""
+"See Google Cloud Spanner API documentation for `database update_ddl "
+"<https://cloud.google.com/spanner/docs/reference/rest/v1/projects.instances.databases/updateDdl>`_."
+msgstr ""
+
+#: ../../howto/operator/gcp/spanner.rst:186
+msgid "CloudSpannerInstanceDatabaseQueryOperator"
+msgstr ""
+
+#: ../../howto/operator/gcp/spanner.rst:188
+msgid "Executes an arbitrary DML query (INSERT, UPDATE, DELETE)."
+msgstr ""
+
+#: ../../howto/operator/gcp/spanner.rst:190
+msgid ""
+"For parameter definition take a look at "
+":class:`~airflow.contrib.operators.gcp_spanner_operator.CloudSpannerInstanceDatabaseQueryOperator`."
+msgstr ""
+
+#: ../../howto/operator/gcp/spanner.rst:227
+msgid ""
+"See Google Cloud Spanner API documentation for more information about "
+"`DML syntax <https://cloud.google.com/spanner/docs/dml-syntax>`_."
+msgstr ""
+
+#: ../../howto/operator/gcp/spanner.rst:233
+msgid "CloudSpannerInstanceDeleteOperator"
+msgstr ""
+
+#: ../../howto/operator/gcp/spanner.rst:235
+msgid ""
+"Deletes a Cloud Spanner instance. If an instance does not exist, no "
+"action is taken, and the operator succeeds."
+msgstr ""
+
+#: ../../howto/operator/gcp/spanner.rst:238
+msgid ""
+"For parameter definition take a look at "
+":class:`~airflow.contrib.operators.gcp_spanner_operator.CloudSpannerInstanceDeleteOperator`."
+msgstr ""
+
+#: ../../howto/operator/gcp/spanner.rst:244 ../../howto/operator/gcp/sql.rst:38
+#: ../../howto/operator/gcp/sql.rst:92 ../../howto/operator/gcp/sql.rst:141
+msgid "Some arguments in the example DAG are taken from environment variables:"
+msgstr ""
+
+#: ../../howto/operator/gcp/spanner.rst:275
+msgid ""
+"See Google Cloud Spanner API documentation to `delete an instance "
+"<https://cloud.google.com/spanner/docs/reference/rest/v1/projects.instances/delete>`_."
+msgstr ""
+
+#: ../../howto/operator/gcp/sql.rst:19
+msgid "Google Cloud Sql Operators"
+msgstr ""
+
+#: ../../howto/operator/gcp/sql.rst:28
+msgid "CloudSqlInstanceDatabaseCreateOperator"
+msgstr ""
+
+#: ../../howto/operator/gcp/sql.rst:30
+msgid "Creates a new database inside a Cloud SQL instance."
+msgstr ""
+
+#: ../../howto/operator/gcp/sql.rst:32
+msgid ""
+"For parameter definition, take a look at "
+":class:`~airflow.contrib.operators.gcp_sql_operator.CloudSqlInstanceDatabaseCreateOperator`."
+msgstr ""
+
+#: ../../howto/operator/gcp/sql.rst:57 ../../howto/operator/gcp/sql.rst:160
+msgid "Example request body:"
+msgstr ""
+
+#: ../../howto/operator/gcp/sql.rst:76
+msgid ""
+"See Google Cloud SQL API documentation for `to create a new database "
+"inside the instance <https://cloud.google.com/sql/docs/mysql/admin-"
+"api/v1beta4/databases/insert>`_."
+msgstr ""
+
+#: ../../howto/operator/gcp/sql.rst:82
+msgid "CloudSqlInstanceDatabaseDeleteOperator"
+msgstr ""
+
+#: ../../howto/operator/gcp/sql.rst:84
+msgid "Deletes a database from a Cloud SQL instance."
+msgstr ""
+
+#: ../../howto/operator/gcp/sql.rst:86
+msgid ""
+"For parameter definition, take a look at "
+":class:`~airflow.contrib.operators.gcp_sql_operator.CloudSqlInstanceDatabaseDeleteOperator`."
+msgstr ""
+
+#: ../../howto/operator/gcp/sql.rst:123
+msgid ""
+"See Google Cloud SQL API documentation to `delete a database "
+"<https://cloud.google.com/sql/docs/mysql/admin-"
+"api/v1beta4/databases/delete>`_."
+msgstr ""
+
+#: ../../howto/operator/gcp/sql.rst:129
+msgid "CloudSqlInstanceDatabasePatchOperator"
+msgstr ""
+
+#: ../../howto/operator/gcp/sql.rst:131
+msgid ""
+"Updates a resource containing information about a database inside a Cloud"
+" SQL instance using patch semantics. See: "
+"https://cloud.google.com/sql/docs/mysql/admin-api/how-"
+"tos/performance#patch"
+msgstr ""
+
+#: ../../howto/operator/gcp/sql.rst:135
+msgid ""
+"For parameter definition, take a look at "
+":class:`~airflow.contrib.operators.gcp_sql_operator.CloudSqlInstanceDatabasePatchOperator`."
+msgstr ""
+
+#: ../../howto/operator/gcp/sql.rst:179
+msgid ""
+"See Google Cloud SQL API documentation to `update a database "
+"<https://cloud.google.com/sql/docs/mysql/admin-"
+"api/v1beta4/databases/patch>`_."
+msgstr ""
+
+#: ../../howto/operator/gcp/sql.rst:185
+msgid "CloudSqlInstanceDeleteOperator"
+msgstr ""
+
+#: ../../howto/operator/gcp/sql.rst:187
+msgid "Deletes a Cloud SQL instance in Google Cloud Platform."
+msgstr ""
+
+#: ../../howto/operator/gcp/sql.rst:189
+msgid "It is also used for deleting read and failover replicas."
+msgstr ""
+
+#: ../../howto/operator/gcp/sql.rst:191
+msgid ""
+"For parameter definition, take a look at "
+":class:`~airflow.contrib.operators.gcp_sql_operator.CloudSqlInstanceDeleteOperator`."
+msgstr ""
+
+#: ../../howto/operator/gcp/sql.rst:197 ../../howto/operator/gcp/sql.rst:438
+#: ../../howto/operator/gcp/sql.rst:513
+msgid "Some arguments in the example DAG are taken from OS environment variables:"
+msgstr ""
+
+#: ../../howto/operator/gcp/sql.rst:216
+msgid ""
+"Note: If the instance has read or failover replicas you need to delete "
+"them before you delete the primary instance. Replicas are deleted the "
+"same way as primary instances:"
+msgstr ""
+
+#: ../../howto/operator/gcp/sql.rst:237
+msgid ""
+"See Google Cloud SQL API documentation to `delete a SQL instance "
+"<https://cloud.google.com/sql/docs/mysql/admin-"
+"api/v1beta4/instances/delete>`_."
+msgstr ""
+
+#: ../../howto/operator/gcp/sql.rst:243
+msgid "CloudSqlInstanceExportOperator"
+msgstr ""
+
+#: ../../howto/operator/gcp/sql.rst:245
+msgid ""
+"Exports data from a Cloud SQL instance to a Cloud Storage bucket as a SQL"
+" dump or CSV file."
+msgstr ""
+
+#: ../../howto/operator/gcp/sql.rst:249
+msgid ""
+"This operator is idempotent. If executed multiple times with the same "
+"export file URI, the export file in GCS will simply be overridden."
+msgstr ""
+
+#: ../../howto/operator/gcp/sql.rst:252
+msgid ""
+"For parameter definition take a look at "
+":class:`~airflow.contrib.operators.gcp_sql_operator.CloudSqlInstanceExportOperator`."
+msgstr ""
+
+#: ../../howto/operator/gcp/sql.rst:258 ../../howto/operator/gcp/sql.rst:355
+msgid "Some arguments in the example DAG are taken from Airflow variables:"
+msgstr ""
+
+#: ../../howto/operator/gcp/sql.rst:270
+msgid "Example body defining the export operation:"
+msgstr ""
+
+#: ../../howto/operator/gcp/sql.rst:301
+msgid ""
+"See Google Cloud SQL API documentation to `export data "
+"<https://cloud.google.com/sql/docs/mysql/admin-"
+"api/v1beta4/instances/export>`_."
+msgstr ""
+
+#: ../../howto/operator/gcp/sql.rst:307
+msgid ""
+"If you receive an \"Unauthorized\" error in GCP, make sure that the "
+"service account of the Cloud SQL instance is authorized to write to the "
+"selected GCS bucket."
+msgstr ""
+
+#: ../../howto/operator/gcp/sql.rst:310 ../../howto/operator/gcp/sql.rst:407
+msgid ""
+"It is not the service account configured in Airflow that communicates "
+"with GCS, but rather the service account of the particular Cloud SQL "
+"instance."
+msgstr ""
+
+#: ../../howto/operator/gcp/sql.rst:313
+msgid ""
+"To grant the service account with the appropriate WRITE permissions for "
+"the GCS bucket you can use the "
+":class:`~airflow.contrib.operators.gcs_acl_operator.GoogleCloudStorageBucketCreateAclEntryOperator`,"
+" as shown in the example:"
+msgstr ""
+
+#: ../../howto/operator/gcp/sql.rst:327
+msgid "CloudSqlInstanceImportOperator"
+msgstr ""
+
+#: ../../howto/operator/gcp/sql.rst:329
+msgid ""
+"Imports data into a Cloud SQL instance from a SQL dump or CSV file in "
+"Cloud Storage."
+msgstr ""
+
+#: ../../howto/operator/gcp/sql.rst:332
+msgid "CSV import:"
+msgstr ""
+
+#: ../../howto/operator/gcp/sql.rst:334
+msgid ""
+"This operator is NOT idempotent for a CSV import. If the same file is "
+"imported multiple times, the imported data will be duplicated in the "
+"database. Moreover, if there are any unique constraints the duplicate "
+"import may result in an error."
+msgstr ""
+
+#: ../../howto/operator/gcp/sql.rst:340
+msgid "SQL import:"
+msgstr ""
+
+#: ../../howto/operator/gcp/sql.rst:342
+msgid ""
+"This operator is idempotent for a SQL import if it was also exported by "
+"Cloud SQL. The exported SQL contains 'DROP TABLE IF EXISTS' statements "
+"for all tables to be imported."
+msgstr ""
+
+#: ../../howto/operator/gcp/sql.rst:346
+msgid ""
+"If the import file was generated in a different way, idempotence is not "
+"guaranteed. It has to be ensured on the SQL file level."
+msgstr ""
+
+#: ../../howto/operator/gcp/sql.rst:349
+msgid ""
+"For parameter definition take a look at "
+":class:`~airflow.contrib.operators.gcp_sql_operator.CloudSqlInstanceImportOperator`."
+msgstr ""
+
+#: ../../howto/operator/gcp/sql.rst:367
+msgid "Example body defining the import operation:"
+msgstr ""
+
+#: ../../howto/operator/gcp/sql.rst:398
+msgid ""
+"See Google Cloud SQL API documentation to `import data "
+"<https://cloud.google.com/sql/docs/mysql/admin-"
+"api/v1beta4/instances/import>`_."
+msgstr ""
+
+#: ../../howto/operator/gcp/sql.rst:404
+msgid ""
+"If you receive an \"Unauthorized\" error in GCP, make sure that the "
+"service account of the Cloud SQL instance is authorized to read from the "
+"selected GCS object."
+msgstr ""
+
+#: ../../howto/operator/gcp/sql.rst:410
+msgid ""
+"To grant the service account with the appropriate READ permissions for "
+"the GCS object you can use the "
+":class:`~airflow.contrib.operators.gcs_acl_operator.GoogleCloudStorageObjectCreateAclEntryOperator`,"
+" as shown in the example:"
+msgstr ""
+
+#: ../../howto/operator/gcp/sql.rst:423
+msgid "CloudSqlInstanceCreateOperator"
+msgstr ""
+
+#: ../../howto/operator/gcp/sql.rst:425
+msgid "Creates a new Cloud SQL instance in Google Cloud Platform."
+msgstr ""
+
+#: ../../howto/operator/gcp/sql.rst:427
+msgid "It is also used for creating read replicas."
+msgstr ""
+
+#: ../../howto/operator/gcp/sql.rst:429
+msgid ""
+"For parameter definition, take a look at "
+":class:`~airflow.contrib.operators.gcp_sql_operator.CloudSqlInstanceCreateOperator`."
+msgstr ""
+
+#: ../../howto/operator/gcp/sql.rst:432
+msgid ""
+"If an instance with the same name exists, no action will be taken and the"
+" operator will succeed."
+msgstr ""
+
+#: ../../howto/operator/gcp/sql.rst:445
+msgid "Some other arguments are created based on the arguments above:"
+msgstr ""
+
+#: ../../howto/operator/gcp/sql.rst:452
+msgid "Example body defining the instance with failover replica:"
+msgstr ""
+
+#: ../../howto/operator/gcp/sql.rst:459
+msgid "Example body defining read replica for the instance above:"
+msgstr ""
+
+#: ../../howto/operator/gcp/sql.rst:466
+msgid ""
+"Note: Failover replicas are created together with the instance in a "
+"single task. Read replicas need to be created in separate tasks."
+msgstr ""
+
+#: ../../howto/operator/gcp/sql.rst:493
+msgid ""
+"See Google Cloud SQL API documentation to `create an instance "
+"<https://cloud.google.com/sql/docs/mysql/admin-"
+"api/v1beta4/instances/insert>`_."
+msgstr ""
+
+#: ../../howto/operator/gcp/sql.rst:499
+msgid "CloudSqlInstancePatchOperator"
+msgstr ""
+
+#: ../../howto/operator/gcp/sql.rst:501
+msgid ""
+"Updates settings of a Cloud SQL instance in Google Cloud Platform "
+"(partial update)."
+msgstr ""
+
+#: ../../howto/operator/gcp/sql.rst:503
+msgid ""
+"For parameter definition, take a look at "
+":class:`~airflow.contrib.operators.gcp_sql_operator.CloudSqlInstancePatchOperator`."
+msgstr ""
+
+#: ../../howto/operator/gcp/sql.rst:506
+msgid ""
+"This is a partial update, so only values for the settings specified in "
+"the body will be set / updated. The rest of the existing instance's "
+"configuration will remain unchanged."
+msgstr ""
+
+#: ../../howto/operator/gcp/sql.rst:520
+msgid "Example body defining the instance:"
+msgstr ""
+
+#: ../../howto/operator/gcp/sql.rst:551
+msgid ""
+"See Google Cloud SQL API documentation to `patch an instance "
+"<https://cloud.google.com/sql/docs/mysql/admin-"
+"api/v1beta4/instances/patch>`_."
+msgstr ""
+
+#: ../../howto/operator/gcp/sql.rst:557
+msgid "CloudSqlQueryOperator"
+msgstr ""
+
+#: ../../howto/operator/gcp/sql.rst:559
+msgid ""
+"Performs DDL or DML SQL queries in Google Cloud SQL instance. The DQL "
+"(retrieving data from Google Cloud SQL) is not supported. You might run "
+"the SELECT queries, but the results of those queries are discarded."
+msgstr ""
+
+#: ../../howto/operator/gcp/sql.rst:563
+msgid ""
+"You can specify various connectivity methods to connect to running "
+"instance, starting from public IP plain connection through public IP with"
+" SSL or both TCP and socket connection via Cloud SQL Proxy. The proxy is "
+"downloaded and started/stopped dynamically as needed by the operator."
+msgstr ""
+
+#: ../../howto/operator/gcp/sql.rst:568
+msgid ""
+"There is a *gcpcloudsql://* connection type that you should use to define"
+" what kind of connectivity you want the operator to use. The connection "
+"is a \"meta\" type of connection. It is not used to make an actual "
+"connectivity on its own, but it determines whether Cloud SQL Proxy should"
+" be started by `CloudSqlDatabaseHook` and what kind of database "
+"connection (Postgres or MySQL) should be created dynamically to connect "
+"to Cloud SQL via public IP address or via the proxy. The "
+"'CloudSqlDatabaseHook` uses "
+":class:`~airflow.contrib.hooks.gcp_sql_hook.CloudSqlProxyRunner` to "
+"manage Cloud SQL Proxy lifecycle (each task has its own Cloud SQL Proxy)"
+msgstr ""
+
+#: ../../howto/operator/gcp/sql.rst:578
+msgid ""
+"When you build connection, you should use connection parameters as "
+"described in "
+":class:`~airflow.contrib.hooks.gcp_sql_hook.CloudSqlDatabaseHook`. You "
+"can see examples of connections below for all the possible types of "
+"connectivity. Such connection can be reused between different tasks "
+"(instances of `CloudSqlQueryOperator`). Each task will get their own "
+"proxy started if needed with their own TCP or UNIX socket."
+msgstr ""
+
+#: ../../howto/operator/gcp/sql.rst:584
+msgid ""
+"For parameter definition, take a look at "
+":class:`~airflow.contrib.operators.gcp_sql_operator.CloudSqlQueryOperator`."
+msgstr ""
+
+#: ../../howto/operator/gcp/sql.rst:587
+msgid ""
+"Since query operator can run arbitrary query, it cannot be guaranteed to "
+"be idempotent. SQL query designer should design the queries to be "
+"idempotent. For example, both Postgres and MySQL support CREATE TABLE IF "
+"NOT EXISTS statements that can be used to create tables in an idempotent "
+"way."
+msgstr ""
+
+#: ../../howto/operator/gcp/sql.rst:595
+msgid ""
+"If you define connection via `AIRFLOW_CONN_*` URL defined in an "
+"environment variable, make sure the URL components in the URL are URL-"
+"encoded. See examples below for details."
+msgstr ""
+
+#: ../../howto/operator/gcp/sql.rst:599
+msgid ""
+"Note that in case of SSL connections you need to have a mechanism to make"
+" the certificate/key files available in predefined locations for all the "
+"workers on which the operator can run. This can be provided for example "
+"by mounting NFS-like volumes in the same path for all the workers."
+msgstr ""
+
+#: ../../howto/operator/gcp/sql.rst:611
+msgid ""
+"Example connection definitions for all connectivity cases. Note that all "
+"the components of the connection URI should be URL-encoded:"
+msgstr ""
+
+#: ../../howto/operator/gcp/sql.rst:622
+msgid ""
+"Example operators below are using all connectivity options. Note "
+"connection id from the operator matches the `AIRFLOW_CONN_*` postfix "
+"uppercase. This is standard AIRFLOW notation for defining connection via "
+"environment variables):"
+msgstr ""
+
+#: ../../howto/operator/gcp/sql.rst:643
+msgid ""
+"See Google Cloud SQL documentation for `MySQL "
+"<https://cloud.google.com/sql/docs/mysql/sql-proxy>`_ and `PostgreSQL "
+"<https://cloud.google.com/sql/docs/postgres/sql-proxy>`_ related proxies."
+msgstr ""
+
+#: ../../howto/operator/gcp/transfer.rst:19
+msgid "Google Cloud Transfer Service Operators"
+msgstr ""
+
+#: ../../howto/operator/gcp/transfer.rst:28
+msgid "GcpTransferServiceJobCreateOperator"
+msgstr ""
+
+#: ../../howto/operator/gcp/transfer.rst:30
+msgid "Create a transfer job."
+msgstr ""
+
+#: ../../howto/operator/gcp/transfer.rst:32
+msgid "The function accepts dates in two formats:"
+msgstr ""
+
+#: ../../howto/operator/gcp/transfer.rst:34
+#: ../../howto/operator/gcp/transfer.rst:42
+msgid ""
+"consistent with `Google API <https://cloud.google.com/storage-"
+"transfer/docs/reference/rest/v1/transferJobs#TimeOfDay>`_ ::"
+msgstr ""
+
+#: ../../howto/operator/gcp/transfer.rst:38
+msgid "as an :class:`~datetime.datetime` object"
+msgstr ""
+
+#: ../../howto/operator/gcp/transfer.rst:40
+msgid "The function accepts time in two formats:"
+msgstr ""
+
+#: ../../howto/operator/gcp/transfer.rst:46
+msgid "as an :class:`~datetime.time` object"
+msgstr ""
+
+#: ../../howto/operator/gcp/transfer.rst:48
+msgid ""
+"If you want to create a job transfer that copies data from AWS S3 then "
+"you must have a connection configured. Information about configuration "
+"for AWS is available: :doc:`../../connection/aws` The selected connection"
+" for AWS can be indicated by the parameter ``aws_conn_id``."
+msgstr ""
+
+#: ../../howto/operator/gcp/transfer.rst:92
+msgid ""
+"See `Google Cloud Transfer Service - Method: transferJobs.create "
+"<https://cloud.google.com/storage-"
+"transfer/docs/reference/rest/v1/transferJobs/create>`_."
+msgstr ""
+
+#: ../../howto/operator/gcp/transfer.rst:98
+msgid "GcpTransferServiceJobDeleteOperator"
+msgstr ""
+
+#: ../../howto/operator/gcp/transfer.rst:100
+msgid "Deletes a transfer job."
+msgstr ""
+
+#: ../../howto/operator/gcp/transfer.rst:133
+msgid ""
+"See `Google Cloud Transfer Service - REST Resource: transferJobs - Status"
+" <https://cloud.google.com/storage-"
+"transfer/docs/reference/rest/v1/transferJobs#Status>`_"
+msgstr ""
+
+#: ../../howto/operator/gcp/transfer.rst:139
+msgid "GcpTransferServiceJobUpdateOperator"
+msgstr ""
+
+#: ../../howto/operator/gcp/transfer.rst:141
+msgid "Updates a transfer job."
+msgstr ""
+
+#: ../../howto/operator/gcp/transfer.rst:179
+msgid ""
+"See `Google Cloud Transfer Service - Method: transferJobs.patch "
+"<https://cloud.google.com/storage-"
+"transfer/docs/reference/rest/v1/transferJobs/patch>`_"
+msgstr ""
+
+#: ../../howto/operator/gcp/transfer.rst:185
+msgid "GcpTransferServiceOperationCancelOperator"
+msgstr ""
+
+#: ../../howto/operator/gcp/transfer.rst:187
+#: ../../howto/operator/gcp/transfer.rst:229
+msgid "Gets a transfer operation. The result is returned to XCOM."
+msgstr ""
+
+#: ../../howto/operator/gcp/transfer.rst:220
+msgid ""
+"See `Google Cloud Transfer Service - Method: transferOperations.cancel "
+"<https://cloud.google.com/storage-"
+"transfer/docs/reference/rest/v1/transferOperations/cancel>`_"
+msgstr ""
+
+#: ../../howto/operator/gcp/transfer.rst:227
+msgid "GcpTransferServiceOperationGetOperator"
+msgstr ""
+
+#: ../../howto/operator/gcp/transfer.rst:262
+msgid ""
+"See `Google Cloud Transfer Service - Method: transferOperations.get "
+"<https://cloud.google.com/storage-"
+"transfer/docs/reference/rest/v1/transferOperations/get>`_"
+msgstr ""
+
+#: ../../howto/operator/gcp/transfer.rst:268
+msgid "GcpTransferServiceOperationsListOperator"
+msgstr ""
+
+#: ../../howto/operator/gcp/transfer.rst:270
+msgid "List a transfer operations. The result is returned to XCOM."
+msgstr ""
+
+#: ../../howto/operator/gcp/transfer.rst:303
+msgid ""
+"See `Google Cloud Transfer Service - Method: transferOperations.list "
+"<https://cloud.google.com/storage-"
+"transfer/docs/reference/rest/v1/transferOperations/list>`_"
+msgstr ""
+
+#: ../../howto/operator/gcp/transfer.rst:309
+msgid "GcpTransferServiceOperationPauseOperator"
+msgstr ""
+
+#: ../../howto/operator/gcp/transfer.rst:311
+msgid "Pauses a transfer operations."
+msgstr ""
+
+#: ../../howto/operator/gcp/transfer.rst:344
+msgid ""
+"See `Google Cloud Transfer Service - Method: transferOperations.pause "
+"<https://cloud.google.com/storage-"
+"transfer/docs/reference/rest/v1/transferOperations/pause>`_"
+msgstr ""
+
+#: ../../howto/operator/gcp/transfer.rst:350
+msgid "GcpTransferServiceOperationResumeOperator"
+msgstr ""
+
+#: ../../howto/operator/gcp/transfer.rst:352
+msgid "Resumes a transfer operations."
+msgstr ""
+
+#: ../../howto/operator/gcp/transfer.rst:385
+msgid ""
+"See `Google Cloud Transfer Service - Method: transferOperations.resume "
+"<https://cloud.google.com/storage-"
+"transfer/docs/reference/rest/v1/transferOperations/resume>`_"
+msgstr ""
+
+#: ../../howto/operator/gcp/transfer.rst:390
+msgid "GCPTransferServiceWaitForJobStatusSensor"
+msgstr ""
+
+#: ../../howto/operator/gcp/transfer.rst:392
+msgid ""
+"Waits for at least one operation belonging to the job to have the "
+"expected status."
+msgstr ""
+
+#: ../../howto/operator/gcp/translate.rst:19
+msgid "Google Cloud Translate Operators"
+msgstr ""
+
+#: ../../howto/operator/gcp/translate.rst:28
+msgid "CloudTranslateTextOperator"
+msgstr ""
+
+#: ../../howto/operator/gcp/translate.rst:30
+msgid "Translate a string or list of strings."
+msgstr ""
+
+#: ../../howto/operator/gcp/translate.rst:32
+msgid ""
+"For parameter definition, take a look at "
+":class:`~airflow.contrib.operators.gcp_translate_operator.CloudTranslateTextOperator`"
+msgstr ""
+
+#: ../../howto/operator/gcp/translate.rst:38
+msgid "Basic usage of the operator:"
+msgstr ""
+
+#: ../../howto/operator/gcp/translate.rst:46
+msgid ""
+"The result of translation is available as dictionary or array of "
+"dictionaries accessible via the usual XCom mechanisms of Airflow:"
+msgstr ""
+
+#: ../../howto/operator/gcp/translate.rst:68
+msgid ""
+"See `Google Cloud Translate documentation "
+"<https://cloud.google.com/translate/docs/translating-text>`_."
+msgstr ""
+
+#: ../../howto/operator/gcp/vision.rst:19
+msgid "Google Cloud Vision Operators"
+msgstr ""
+
+#: ../../howto/operator/gcp/vision.rst:28
+msgid "CloudVisionAddProductToProductSetOperator"
+msgstr ""
+
+#: ../../howto/operator/gcp/vision.rst:30
+#: ../../howto/operator/gcp/vision.rst:778
+#: ../../howto/operator/gcp/vision.rst:855
+msgid "Creates a new :code:`ReferenceImage` resource."
+msgstr ""
+
+#: ../../howto/operator/gcp/vision.rst:32
+msgid ""
+"For parameter definition, take a look at "
+":class:`~airflow.contrib.operators.gcp_vision_operator.CloudVisionAddProductToProductSetOperator`"
+msgstr ""
+
+#: ../../howto/operator/gcp/vision.rst:58
+#: ../../howto/operator/gcp/vision.rst:883
+msgid ""
+"We are using the :class:`~google.cloud.vision_v1.types.Product`, "
+":class:`~google.cloud.vision_v1.types.ProductSet` and ``Retry`` objects "
+"from Google libraries:"
+msgstr ""
+
+#: ../../howto/operator/gcp/vision.rst:78
+#: ../../howto/operator/gcp/vision.rst:903
+msgid ""
+"If ``product_set_id`` and ``product_id`` was generated by the API it can "
+"be extracted from XCOM:"
+msgstr ""
+
+#: ../../howto/operator/gcp/vision.rst:86
+#: ../../howto/operator/gcp/vision.rst:311
+#: ../../howto/operator/gcp/vision.rst:374
+#: ../../howto/operator/gcp/vision.rst:512
+#: ../../howto/operator/gcp/vision.rst:571
+#: ../../howto/operator/gcp/vision.rst:656
+#: ../../howto/operator/gcp/vision.rst:750
+#: ../../howto/operator/gcp/vision.rst:911
+msgid "Otherwise it can be specified explicitly:"
+msgstr ""
+
+#: ../../howto/operator/gcp/vision.rst:107
+msgid ""
+"See `Google Cloud Vision Add Product To Product Set documentation "
+"<https://googleapis.github.io/google-cloud-"
+"python/latest/vision/gapic/v1/api.html#google.cloud.vision_v1.ProductSearchClient.add_product_to_product_set>`_."
+msgstr ""
+
+#: ../../howto/operator/gcp/vision.rst:114
+msgid "CloudVisionAnnotateImageOperator"
+msgstr ""
+
+#: ../../howto/operator/gcp/vision.rst:116
+msgid "Run image detection and annotation for an image."
+msgstr ""
+
+#: ../../howto/operator/gcp/vision.rst:118
+msgid ""
+"For parameter definition, take a look at "
+":class:`~airflow.contrib.operators.gcp_vision_operator.CloudVisionAnnotateImageOperator`"
+msgstr ""
+
+#: ../../howto/operator/gcp/vision.rst:140
+msgid ""
+"We are using the :class:`~google.cloud.enums` and ``Retry`` objects from "
+"Google libraries:"
+msgstr ""
+
+#: ../../howto/operator/gcp/vision.rst:160
+msgid "The result can be extracted from XCOM:"
+msgstr ""
+
+#: ../../howto/operator/gcp/vision.rst:181
+msgid ""
+"See `Google Cloud Vision Annotate Image documentation "
+"<https://googleapis.github.io/google-cloud-"
+"python/latest/vision/gapic/v1/api.html#google.cloud.vision_v1.ImageAnnotatorClient.annotate_image>`_."
+msgstr ""
+
+#: ../../howto/operator/gcp/vision.rst:187
+msgid "CloudVisionProductCreateOperator"
+msgstr ""
+
+#: ../../howto/operator/gcp/vision.rst:189
+msgid "Creates and returns a new product resource."
+msgstr ""
+
+#: ../../howto/operator/gcp/vision.rst:191
+msgid "Possible errors regarding the :code:`Product` object provided:"
+msgstr ""
+
+#: ../../howto/operator/gcp/vision.rst:193
+msgid ""
+"Returns INVALID_ARGUMENT if `display_name` is missing or longer than 4096"
+" characters."
+msgstr ""
+
+#: ../../howto/operator/gcp/vision.rst:194
+msgid "Returns INVALID_ARGUMENT if `description` is longer than 4096 characters."
+msgstr ""
+
+#: ../../howto/operator/gcp/vision.rst:195
+msgid "Returns INVALID_ARGUMENT if `product_category` is missing or invalid."
+msgstr ""
+
+#: ../../howto/operator/gcp/vision.rst:197
+msgid ""
+"For parameter definition, take a look at "
+":class:`~airflow.contrib.operators.gcp_vision_operator.CloudVisionProductCreateOperator`"
+msgstr ""
+
+#: ../../howto/operator/gcp/vision.rst:218
+msgid "We are using the ``Product`` and ``Retry`` objects from Google libraries:"
+msgstr ""
+
+#: ../../howto/operator/gcp/vision.rst:235
+msgid ""
+"The ``product_id`` argument can be omitted (it will be generated by the "
+"API):"
+msgstr ""
+
+#: ../../howto/operator/gcp/vision.rst:243
+#: ../../howto/operator/gcp/vision.rst:450
+#: ../../howto/operator/gcp/vision.rst:826
+msgid "Or it can be specified explicitly:"
+msgstr ""
+
+#: ../../howto/operator/gcp/vision.rst:264
+msgid ""
+"See `Google Cloud Vision Product create documentation "
+"<https://googleapis.github.io/google-cloud-"
+"python/latest/vision/gapic/v1/api.html#google.cloud.vision_v1.ProductSearchClient.create_product>`_."
+msgstr ""
+
+#: ../../howto/operator/gcp/vision.rst:270
+msgid "CloudVisionProductDeleteOperator"
+msgstr ""
+
+#: ../../howto/operator/gcp/vision.rst:272
+msgid "Permanently deletes a product and its reference images."
+msgstr ""
+
+#: ../../howto/operator/gcp/vision.rst:274
+msgid ""
+"Metadata of the product and all its images will be deleted right away, "
+"but search queries against :code:`ProductSets` containing the product may"
+" still work until all related caches are refreshed."
+msgstr ""
+
+#: ../../howto/operator/gcp/vision.rst:278
+#: ../../howto/operator/gcp/vision.rst:341
+#: ../../howto/operator/gcp/vision.rst:700
+msgid "Possible errors:"
+msgstr ""
+
+#: ../../howto/operator/gcp/vision.rst:280
+msgid "Returns NOT_FOUND if the product does not exist."
+msgstr ""
+
+#: ../../howto/operator/gcp/vision.rst:282
+msgid ""
+"For parameter definition, take a look at "
+":class:`~airflow.contrib.operators.gcp_vision_operator.CloudVisionProductDeleteOperator`"
+msgstr ""
+
+#: ../../howto/operator/gcp/vision.rst:303
+#: ../../howto/operator/gcp/vision.rst:366
+#: ../../howto/operator/gcp/vision.rst:742
+msgid "If ``product_id`` was generated by the API it can be extracted from XCOM:"
+msgstr ""
+
+#: ../../howto/operator/gcp/vision.rst:331
+msgid ""
+"See `Google Cloud Vision Product delete documentation "
+"<https://googleapis.github.io/google-cloud-"
+"python/latest/vision/gapic/v1/api.html#google.cloud.vision_v1.ProductSearchClient.delete_product>`_."
+msgstr ""
+
+#: ../../howto/operator/gcp/vision.rst:337
+msgid "CloudVisionProductGetOperator"
+msgstr ""
+
+#: ../../howto/operator/gcp/vision.rst:339
+msgid "Gets information associated with a :code:`Product`."
+msgstr ""
+
+#: ../../howto/operator/gcp/vision.rst:343
+#: ../../howto/operator/gcp/vision.rst:702
+msgid "Returns NOT_FOUND if the `Product` does not exist."
+msgstr ""
+
+#: ../../howto/operator/gcp/vision.rst:345
+msgid ""
+"For parameter definition, take a look at "
+":class:`~airflow.contrib.operators.gcp_vision_operator.CloudVisionProductGetOperator`"
+msgstr ""
+
+#: ../../howto/operator/gcp/vision.rst:394
+msgid ""
+"See `Google Cloud Vision Product get documentation "
+"<https://googleapis.github.io/google-cloud-"
+"python/latest/vision/gapic/v1/api.html#google.cloud.vision_v1.ProductSearchClient.get_product>`_."
+msgstr ""
+
+#: ../../howto/operator/gcp/vision.rst:400
+msgid "CloudVisionProductSetCreateOperator"
+msgstr ""
+
+#: ../../howto/operator/gcp/vision.rst:402
+msgid "Creates a new :code:`ProductSet` resource."
+msgstr ""
+
+#: ../../howto/operator/gcp/vision.rst:404
+msgid ""
+"For parameter definition, take a look at "
+":class:`~airflow.contrib.operators.gcp_vision_operator.CloudVisionProductSetCreateOperator`"
+msgstr ""
+
+#: ../../howto/operator/gcp/vision.rst:425
+msgid ""
+"We are using the ``ProductSet`` and ``Retry`` objects from Google "
+"libraries:"
+msgstr ""
+
+#: ../../howto/operator/gcp/vision.rst:442
+#: ../../howto/operator/gcp/vision.rst:818
+msgid ""
+"The ``product_set_id`` argument can be omitted (it will be generated by "
+"the API):"
+msgstr ""
+
+#: ../../howto/operator/gcp/vision.rst:471
+msgid ""
+"See `Google Cloud Vision ProductSet create documentation "
+"<https://googleapis.github.io/google-cloud-"
+"python/latest/vision/gapic/v1/api.html#google.cloud.vision_v1.ProductSearchClient.create_product_set>`_."
+msgstr ""
+
+#: ../../howto/operator/gcp/vision.rst:477
+msgid "CloudVisionProductSetDeleteOperator"
+msgstr ""
+
+#: ../../howto/operator/gcp/vision.rst:479
+msgid ""
+"Permanently deletes a :code:`ProductSet`. :code:`Products` and "
+":code:`ReferenceImages` in the :code:`ProductSet` are not deleted. The "
+"actual image files are not deleted from Google Cloud Storage."
+msgstr ""
+
+#: ../../howto/operator/gcp/vision.rst:483
+msgid ""
+"For parameter definition, take a look at "
+":class:`~airflow.contrib.operators.gcp_vision_operator.CloudVisionProductSetDeleteOperator`"
+msgstr ""
+
+#: ../../howto/operator/gcp/vision.rst:504
+#: ../../howto/operator/gcp/vision.rst:563
+#: ../../howto/operator/gcp/vision.rst:648
+msgid ""
+"If ``product_set_id`` was generated by the API it can be extracted from "
+"XCOM:"
+msgstr ""
+
+#: ../../howto/operator/gcp/vision.rst:532
+msgid ""
+"See `Google Cloud Vision ProductSet delete documentation "
+"<https://googleapis.github.io/google-cloud-"
+"python/latest/vision/gapic/v1/api.html#google.cloud.vision_v1.ProductSearchClient.delete_product_set>`_."
+msgstr ""
+
+#: ../../howto/operator/gcp/vision.rst:538
+msgid "CloudVisionProductSetGetOperator"
+msgstr ""
+
+#: ../../howto/operator/gcp/vision.rst:540
+msgid "Gets information associated with a :code:`ProductSet`."
+msgstr ""
+
+#: ../../howto/operator/gcp/vision.rst:542
+msgid ""
+"For parameter definition, take a look at "
+":class:`~airflow.contrib.operators.gcp_vision_operator.CloudVisionProductSetGetOperator`"
+msgstr ""
+
+#: ../../howto/operator/gcp/vision.rst:591
+msgid ""
+"See `Google Cloud Vision ProductSet get documentation "
+"<https://googleapis.github.io/google-cloud-"
+"python/latest/vision/gapic/v1/api.html#google.cloud.vision_v1.ProductSearchClient.get_product_set>`_."
+msgstr ""
+
+#: ../../howto/operator/gcp/vision.rst:597
+msgid "CloudVisionProductSetUpdateOperator"
+msgstr ""
+
+#: ../../howto/operator/gcp/vision.rst:599
+msgid ""
+"Makes changes to a :code:`ProductSet` resource. Only :code:`display_name`"
+" can be updated currently."
+msgstr ""
+
+#: ../../howto/operator/gcp/vision.rst:602
+msgid ""
+"To locate the `ProductSet` resource, its `name` in the form "
+"``projects/PROJECT_ID/locations/LOC_ID/productSets/PRODUCT_SET_ID`` is "
+"necessary."
+msgstr ""
+
+#: ../../howto/operator/gcp/vision.rst:605
+msgid ""
+"You can provide the `name` directly as an attribute of the `product_set` "
+"object. However, you can leave it blank and provide `location` and "
+"`product_set_id` instead (and optionally `project_id` - if not present, "
+"the connection default will be used) and the `name` will be created by "
+"the operator itself."
+msgstr ""
+
+#: ../../howto/operator/gcp/vision.rst:610
+#: ../../howto/operator/gcp/vision.rst:697
+msgid ""
+"This mechanism exists for your convenience, to allow leaving the "
+"`project_id` empty and having Airflow use the connection default "
+"`project_id`."
+msgstr ""
+
+#: ../../howto/operator/gcp/vision.rst:613
+msgid ""
+"For parameter definition, take a look at "
+":class:`~airflow.contrib.operators.gcp_vision_operator.CloudVisionProductSetUpdateOperator`"
+msgstr ""
+
+#: ../../howto/operator/gcp/vision.rst:634
+msgid ""
+"We are using the ``ProductSet`` object from the Google Cloud Vision "
+"library:"
+msgstr ""
+
+#: ../../howto/operator/gcp/vision.rst:646
+msgid "Initialization of the task:"
+msgstr ""
+
+#: ../../howto/operator/gcp/vision.rst:676
+msgid ""
+"See `Google Cloud Vision ProductSet update documentation "
+"<https://googleapis.github.io/google-cloud-"
+"python/latest/vision/gapic/v1/api.html#google.cloud.vision_v1.ProductSearchClient.update_product_set>`_."
+msgstr ""
+
+#: ../../howto/operator/gcp/vision.rst:682
+msgid "CloudVisionProductUpdateOperator"
+msgstr ""
+
+#: ../../howto/operator/gcp/vision.rst:684
+msgid ""
+"Makes changes to a :code:`Product` resource. Only the "
+":code:`display_name`, :code:`description`, and :code:`labels` fields can "
+"be updated right now. If labels are updated, the change will not be "
+"reflected in queries until the next index time."
+msgstr ""
+
+#: ../../howto/operator/gcp/vision.rst:689
+msgid ""
+"To locate the `Product` resource, its `name` in the form "
+"``projects/PROJECT_ID/locations/LOC_ID/products/PRODUCT_ID`` is "
+"necessary."
+msgstr ""
+
+#: ../../howto/operator/gcp/vision.rst:692
+msgid ""
+"You can provide the `name` directly as an attribute of the `product` "
+"object. However, you can leave it blank and provide `location` and "
+"`product_id` instead (and optionally `project_id` - if not present, the "
+"connection default will be used) and the `name` will be created by the "
+"operator itself."
+msgstr ""
+
+#: ../../howto/operator/gcp/vision.rst:703
+msgid ""
+"Returns INVALID_ARGUMENT if `display_name` is present in `update_mask` "
+"but is missing from the request or longer than 4096 characters."
+msgstr ""
+
+#: ../../howto/operator/gcp/vision.rst:705
+msgid ""
+"Returns INVALID_ARGUMENT if `description` is present in `update_mask` but"
+" is longer than 4096 characters."
+msgstr ""
+
+#: ../../howto/operator/gcp/vision.rst:707
+msgid ""
+"Returns INVALID_ARGUMENT if `product_category` is present in "
+"`update_mask`."
+msgstr ""
+
+#: ../../howto/operator/gcp/vision.rst:709
+msgid ""
+"For parameter definition, take a look at "
+":class:`~airflow.contrib.operators.gcp_vision_operator.CloudVisionProductUpdateOperator`"
+msgstr ""
+
+#: ../../howto/operator/gcp/vision.rst:730
+msgid "We are using the ``Product`` object from the Google Cloud Vision library:"
+msgstr ""
+
+#: ../../howto/operator/gcp/vision.rst:770
+msgid ""
+"See `Google Cloud Vision Product update documentation "
+"<https://googleapis.github.io/google-cloud-"
+"python/latest/vision/gapic/v1/api.html#google.cloud.vision_v1.ProductSearchClient.update_product>`_."
+msgstr ""
+
+#: ../../howto/operator/gcp/vision.rst:776
+msgid "CloudVisionReferenceImageCreateOperator"
+msgstr ""
+
+#: ../../howto/operator/gcp/vision.rst:780
+msgid ""
+"For parameter definition, take a look at "
+":class:`~airflow.contrib.operators.gcp_vision_operator.CloudVisionReferenceImageCreateOperator`"
+msgstr ""
+
+#: ../../howto/operator/gcp/vision.rst:801
+msgid ""
+"We are using the :class:`~google.cloud.vision_v1.types.ReferenceImage` "
+"and ``Retry`` objects from Google libraries:"
+msgstr ""
+
+#: ../../howto/operator/gcp/vision.rst:847
+msgid ""
+"See `Google Cloud Vision ReferenceImage create documentation "
+"<https://googleapis.github.io/google-cloud-"
+"python/latest/vision/gapic/v1/api.html#google.cloud.vision_v1.ProductSearchClient.create_reference_image>`_."
+msgstr ""
+
+#: ../../howto/operator/gcp/vision.rst:853
+msgid "CloudVisionRemoveProductFromProductSetOperator"
+msgstr ""
+
+#: ../../howto/operator/gcp/vision.rst:857
+msgid ""
+"For parameter definition, take a look at "
+":class:`~airflow.contrib.operators.gcp_vision_operator.CloudVisionRemoveProductFromProductSetOperator`"
+msgstr ""
+
+#: ../../howto/operator/gcp/vision.rst:932
+msgid ""
+"See `Google Cloud Vision Remove Product From Product Set documentation "
+"<https://googleapis.github.io/google-cloud-"
+"python/latest/vision/gapic/v1/api.html#google.cloud.vision_v1.ProductSearchClient.remove_product_from_product_set>`_."
+msgstr ""
+
+#: ../../howto/operator/index.rst:19
+msgid "Using Operators"
+msgstr ""
+
+#: ../../howto/operator/index.rst:21
+msgid ""
+"An operator represents a single, ideally idempotent, task. Operators "
+"determine what actually executes when your DAG runs."
+msgstr ""
+
+#: ../../howto/operator/index.rst:24
+msgid ""
+"See the :ref:`Operators Concepts <concepts-operators>` documentation and "
+"the :doc:`Operators API Reference <../../_api/index>` for more "
+"information."
+msgstr ""
+
+#: ../../howto/operator/python.rst:21
+msgid "PythonOperator"
+msgstr ""
+
+#: ../../howto/operator/python.rst:23
+msgid ""
+"Use the :class:`~airflow.operators.python_operator.PythonOperator` to "
+"execute Python callables."
+msgstr ""
+
+#: ../../howto/operator/python.rst:32
+msgid "Passing in arguments"
+msgstr ""
+
+#: ../../howto/operator/python.rst:34
+msgid ""
+"Use the ``op_args`` and ``op_kwargs`` arguments to pass additional "
+"arguments to the Python callable."
+msgstr ""
+
+#: ../../howto/operator/python.rst:45
+msgid ""
+"When you set the ``provide_context`` argument to ``True``, Airflow passes"
+" in an additional set of keyword arguments: one for each of the "
+":doc:`Jinja template variables <../../macros>` and a ``templates_dict`` "
+"argument."
+msgstr ""
+
+#: ../../howto/operator/python.rst:49
+msgid ""
+"The ``templates_dict`` argument is templated, so each value in the "
+"dictionary is evaluated as a :ref:`Jinja template <jinja-templating>`."
+msgstr ""
+
+#: ../../howto/run-behind-proxy.rst:19
+msgid "Running Airflow behind a reverse proxy"
+msgstr ""
+
+#: ../../howto/run-behind-proxy.rst:21
+msgid ""
+"Airflow can be set up behind a reverse proxy, with the ability to set its"
+" endpoint with great flexibility."
+msgstr ""
+
+#: ../../howto/run-behind-proxy.rst:24
+msgid "For example, you can configure your reverse proxy to get:"
+msgstr ""
+
+#: ../../howto/run-behind-proxy.rst:30
+msgid "To do so, you need to set the following setting in your `airflow.cfg`::"
+msgstr ""
+
+#: ../../howto/run-behind-proxy.rst:34
+msgid ""
+"Additionally if you use Celery Executor, you can get Flower in "
+"`/myorg/flower` with::"
+msgstr ""
+
+#: ../../howto/run-behind-proxy.rst:38
+msgid "Your reverse proxy (ex: nginx) should be configured as follow:"
+msgstr ""
+
+#: ../../howto/run-behind-proxy.rst:40
+msgid ""
+"pass the url and http header as it for the Airflow webserver, without any"
+" rewrite, for example::"
+msgstr ""
+
+#: ../../howto/run-behind-proxy.rst:56
+msgid "rewrite the url for the flower endpoint::"
+msgstr ""
+
+#: ../../howto/run-behind-proxy.rst:73
+msgid ""
+"To ensure that Airflow generates URLs with the correct scheme when "
+"running behind a TLS-terminating proxy, you should configure the proxy to"
+" set the `X-Forwarded-Proto` header, and enable the `ProxyFix` middleware"
+" in your `airflow.cfg`::"
+msgstr ""
+
+#: ../../howto/run-behind-proxy.rst:81
+msgid ""
+"You should only enable the `ProxyFix` middleware when running Airflow "
+"behind a trusted proxy (AWS ELB, nginx, etc.)."
+msgstr ""
+
+#: ../../howto/run-with-systemd.rst:19
+msgid "Running Airflow with systemd"
+msgstr ""
+
+#: ../../howto/run-with-systemd.rst:21
+msgid ""
+"Airflow can integrate with systemd based systems. This makes watching "
+"your daemons easy as `systemd` can take care of restarting a daemon on "
+"failures."
+msgstr ""
+
+#: ../../howto/run-with-systemd.rst:24
+msgid ""
+"In the ``scripts/systemd`` directory, you can find unit files that have "
+"been tested on Redhat based systems. These files can be used as-is by "
+"copying them over to ``/usr/lib/systemd/system``."
+msgstr ""
+
+#: ../../howto/run-with-systemd.rst:28
+msgid ""
+"The following **assumptions** have been made while creating these unit "
+"files:"
+msgstr ""
+
+#: ../../howto/run-with-systemd.rst:30
+msgid "Airflow runs as the following `user:group` ``airflow:airflow``."
+msgstr ""
+
+#: ../../howto/run-with-systemd.rst:31
+msgid "Airflow runs on a Redhat based system."
+msgstr ""
+
+#: ../../howto/run-with-systemd.rst:33
+msgid "If this is not the case, appropriate changes will need to be made."
+msgstr ""
+
+#: ../../howto/run-with-systemd.rst:35
+msgid ""
+"Please **note** that environment configuration is picked up from "
+"``/etc/sysconfig/airflow``."
+msgstr ""
+
+#: ../../howto/run-with-systemd.rst:37
+msgid ""
+"An example file is supplied within ``scripts/systemd``. You can also "
+"define configuration at ``AIRFLOW_HOME`` or ``AIRFLOW_CONFIG``."
+msgstr ""
+
+#: ../../howto/run-with-upstart.rst:19
+msgid "Running Airflow with upstart"
+msgstr ""
+
+#: ../../howto/run-with-upstart.rst:21
+msgid ""
+"Airflow can integrate with upstart based systems. Upstart automatically "
+"starts all airflow services for which you have a corresponding ``*.conf``"
+" file in ``/etc/init`` upon system boot. On failure, upstart "
+"automatically restarts the process (until it reaches re-spawn limit set "
+"in a ``*.conf`` file)."
+msgstr ""
+
+#: ../../howto/run-with-upstart.rst:25
+msgid ""
+"You can find sample upstart job files in the ``scripts/upstart`` "
+"directory."
+msgstr ""
+
+#: ../../howto/run-with-upstart.rst:27
+msgid "The following assumptions have been used while creating these unit files:"
+msgstr ""
+
+#: ../../howto/run-with-upstart.rst:29
+msgid "Airflow will run as the following `user:group` ``airflow:airflow``."
+msgstr ""
+
+#: ../../howto/run-with-upstart.rst:30
+msgid ""
+"Change ``setuid`` and ``setgid`` appropriately in ``*.conf`` if airflow "
+"runs as a different user or group"
+msgstr ""
+
+#: ../../howto/run-with-upstart.rst:33
+msgid "These files have been tested on **Ubuntu 14.04 LTS**"
+msgstr ""
+
+#: ../../howto/run-with-upstart.rst:32
+msgid ""
+"You may have to adjust ``start on`` and ``stop on`` stanzas to make it "
+"work on other upstart systems. Some of the possible options are listed in"
+" ``scripts/upstart/README``"
+msgstr ""
+
+#: ../../howto/run-with-upstart.rst:35
+msgid "Modify ``*.conf`` files as needed and copy to ``/etc/init`` directory."
+msgstr ""
+
+#: ../../howto/run-with-upstart.rst:37
+msgid ""
+"You can use ``initctl`` to manually start, stop, view status of the "
+"airflow process that has been integrated with upstart"
+msgstr ""
+
+#: ../../howto/secure-connections.rst:19
+msgid "Securing Connections"
+msgstr ""
+
+#: ../../howto/secure-connections.rst:21
+msgid ""
+"By default, Airflow will save the passwords for the connection in plain "
+"text within the metadata database. The ``crypto`` package is highly "
+"recommended during installation. The ``crypto`` package does require that"
+" your operating system has ``libffi-dev`` installed."
+msgstr ""
+
+#: ../../howto/secure-connections.rst:26
+msgid ""
+"If ``crypto`` package was not installed initially, it means that your "
+"Fernet key in ``airflow.cfg`` is empty."
+msgstr ""
+
+#: ../../howto/secure-connections.rst:28
+msgid ""
+"You can still enable encryption for passwords within connections by "
+"following below steps:"
+msgstr ""
+
+#: ../../howto/secure-connections.rst:30
+msgid "Install crypto package ``pip install 'apache-airflow[crypto]'``"
+msgstr ""
+
+#: ../../howto/secure-connections.rst:31
+msgid ""
+"Generate fernet_key, using this code snippet below. ``fernet_key`` must "
+"be a base64-encoded 32-byte key:"
+msgstr ""
+
+#: ../../howto/secure-connections.rst:39
+msgid ""
+"Replace ``airflow.cfg`` fernet_key value with the one from `Step 2`. "
+"*Alternatively,* you can store your fernet_key in OS environment variable"
+" - You do not need to change ``airflow.cfg`` in this case as Airflow will"
+" use environment variable over the value in ``airflow.cfg``:"
+msgstr ""
+
+#: ../../howto/secure-connections.rst:46
+msgid "Restart the webserver"
+msgstr ""
+
+#: ../../howto/secure-connections.rst:47
+msgid ""
+"For existing connections (the ones that you had defined before installing"
+" ``airflow[crypto]`` and creating a Fernet key), you need to open each "
+"connection in the connection admin UI, re-type the password, and save the"
+" change"
+msgstr ""
+
+#: ../../howto/secure-connections.rst:50
+msgid "Rotating encryption keys"
+msgstr ""
+
+#: ../../howto/secure-connections.rst:52
+msgid ""
+"Once connection credentials and variables have been encrypted using a "
+"fernet key, changing the key will cause decryption of existing "
+"credentials to fail. To rotate the fernet key without invalidating "
+"existing encrypted values, prepend the new key to the ``fernet_key`` "
+"setting, run ``airflow rotate_fernet_key``, and then drop the original "
+"key from ``fernet_keys``:"
+msgstr ""
+
+#: ../../howto/secure-connections.rst:59
+msgid "Set ``fernet_key`` to ``new_fernet_key,old_fernet_key``"
+msgstr ""
+
+#: ../../howto/secure-connections.rst:60
+msgid ""
+"Run ``airflow rotate_fernet_key`` to re-encrypt existing credentials with"
+" the new fernet key"
+msgstr ""
+
+#: ../../howto/secure-connections.rst:61
+msgid "Set ``fernet_key`` to ``new_fernet_key``"
+msgstr ""
+
+#: ../../howto/set-config.rst:19
+msgid "Setting Configuration Options"
+msgstr ""
+
+#: ../../howto/set-config.rst:21
+msgid ""
+"The first time you run Airflow, it will create a file called "
+"``airflow.cfg`` in your ``$AIRFLOW_HOME`` directory (``~/airflow`` by "
+"default). This file contains Airflow's configuration and you can edit it "
+"to change any of the settings. You can also set options with environment "
+"variables by using this format: ``$AIRFLOW__{SECTION}__{KEY}`` (note the "
+"double underscores)."
+msgstr ""
+
+#: ../../howto/set-config.rst:26
+msgid ""
+"For example, the metadata database connection string can either be set in"
+" ``airflow.cfg`` like this:"
+msgstr ""
+
+#: ../../howto/set-config.rst:34
+msgid "or by creating a corresponding environment variable:"
+msgstr ""
+
+#: ../../howto/set-config.rst:40
+msgid ""
+"You can also derive the connection string at run time by appending "
+"``_cmd`` to the key like this:"
+msgstr ""
+
+#: ../../howto/set-config.rst:48
+msgid "The following config options support this ``_cmd`` version:"
+msgstr ""
+
+#: ../../howto/set-config.rst:50
+msgid "``sql_alchemy_conn`` in ``[core]`` section"
+msgstr ""
+
+#: ../../howto/set-config.rst:51
+msgid "``fernet_key`` in ``[core]`` section"
+msgstr ""
+
+#: ../../howto/set-config.rst:52
+msgid "``broker_url`` in ``[celery]`` section"
+msgstr ""
+
+#: ../../howto/set-config.rst:53
+msgid "``result_backend`` in ``[celery]`` section"
+msgstr ""
+
+#: ../../howto/set-config.rst:54
+msgid "``password`` in ``[atlas]`` section"
+msgstr ""
+
+#: ../../howto/set-config.rst:55
+msgid "``smtp_password`` in ``[smtp]`` section"
+msgstr ""
+
+#: ../../howto/set-config.rst:56
+msgid "``bind_password`` in ``[ldap]`` section"
+msgstr ""
+
+#: ../../howto/set-config.rst:57
+msgid "``git_password`` in ``[kubernetes]`` section"
+msgstr ""
+
+#: ../../howto/set-config.rst:59
+msgid ""
+"The idea behind this is to not store passwords on boxes in plain text "
+"files."
+msgstr ""
+
+#: ../../howto/set-config.rst:61
+msgid ""
+"The universal order of precedence for all configuration options is as "
+"follows:"
+msgstr ""
+
+#: ../../howto/set-config.rst:63
+msgid "set as an environment variable"
+msgstr ""
+
+#: ../../howto/set-config.rst:64
+msgid "set in ``airflow.cfg``"
+msgstr ""
+
+#: ../../howto/set-config.rst:65
+msgid "command in ``airflow.cfg``"
+msgstr ""
+
+#: ../../howto/set-config.rst:66
+msgid "Airflow's built in defaults"
+msgstr ""
+
+#: ../../howto/use-test-config.rst:19
+msgid "Using the Test Mode Configuration"
+msgstr ""
+
+#: ../../howto/use-test-config.rst:21
+msgid ""
+"Airflow has a fixed set of \"test mode\" configuration options. You can "
+"load these at any time by calling "
+"``airflow.configuration.load_test_config()``. Please **note** that this "
+"operation is **not reversible**."
+msgstr ""
+
+#: ../../howto/use-test-config.rst:24
+msgid ""
+"Some options for example, DAG_FOLDER, are loaded before you have a chance"
+" to call load_test_config(). In order to eagerly load the test "
+"configuration, set test_mode in airflow.cfg:"
+msgstr ""
+
+#: ../../howto/use-test-config.rst:32
+msgid ""
+"Due to Airflow's automatic environment variable expansion (see :doc:`set-"
+"config`), you can also set the environment variable "
+"``AIRFLOW__CORE__UNIT_TEST_MODE`` to temporarily overwrite airflow.cfg."
+msgstr ""
+
+#: ../../howto/write-logs.rst:19
+msgid "Writing Logs"
+msgstr ""
+
+#: ../../howto/write-logs.rst:22
+msgid "Writing Logs Locally"
+msgstr ""
+
+#: ../../howto/write-logs.rst:24
+msgid ""
+"Users can specify the directory to place log files in ``airflow.cfg`` "
+"using ``base_log_folder``. By default, logs are placed in the "
+"``AIRFLOW_HOME`` directory."
+msgstr ""
+
+#: ../../howto/write-logs.rst:28
+msgid ""
+"The following convention is followed while naming logs: "
+"``{dag_id}/{task_id}/{execution_date}/{try_number}.log``"
+msgstr ""
+
+#: ../../howto/write-logs.rst:30
+msgid ""
+"In addition, users can supply a remote location to store current logs and"
+" backups."
+msgstr ""
+
+#: ../../howto/write-logs.rst:32
+msgid ""
+"In the Airflow Web UI, local logs take precedence over remote logs. If "
+"local logs can not be found or accessed, the remote logs will be "
+"displayed. Note that logs are only sent to remote storage once a task is "
+"complete (including failure); In other words, remote logs for running "
+"tasks are unavailable."
+msgstr ""
+
+#: ../../howto/write-logs.rst:38
+msgid "Before you begin"
+msgstr ""
+
+#: ../../howto/write-logs.rst:40
+msgid ""
+"Remote logging uses an existing Airflow connection to read or write logs."
+" If you don't have a connection properly setup, this process will fail."
+msgstr ""
+
+#: ../../howto/write-logs.rst:46
+msgid "Writing Logs to Amazon S3"
+msgstr ""
+
+#: ../../howto/write-logs.rst:50
+msgid "Enabling remote logging"
+msgstr ""
+
+#: ../../howto/write-logs.rst:52
+msgid "To enable this feature, ``airflow.cfg`` must be configured as follows:"
+msgstr ""
+
+#: ../../howto/write-logs.rst:66
+msgid "In the above example, Airflow will try to use ``S3Hook('MyS3Conn')``."
+msgstr ""
+
+#: ../../howto/write-logs.rst:71
+msgid "Writing Logs to Azure Blob Storage"
+msgstr ""
+
+#: ../../howto/write-logs.rst:73
+msgid ""
+"Airflow can be configured to read and write task logs in Azure Blob "
+"Storage."
+msgstr ""
+
+#: ../../howto/write-logs.rst:75
+msgid "Follow the steps below to enable Azure Blob Storage logging:"
+msgstr ""
+
+#: ../../howto/write-logs.rst:77
+msgid ""
+"Airflow's logging system requires a custom `.py` file to be located in "
+"the ``PYTHONPATH``, so that it's importable from Airflow. Start by "
+"creating a directory to store the config file, ``$AIRFLOW_HOME/config`` "
+"is recommended."
+msgstr ""
+
+#: ../../howto/write-logs.rst:78
+msgid ""
+"Create empty files called ``$AIRFLOW_HOME/config/log_config.py`` and "
+"``$AIRFLOW_HOME/config/__init__.py``."
+msgstr ""
+
+#: ../../howto/write-logs.rst:79
+msgid ""
+"Copy the contents of "
+"``airflow/config_templates/airflow_local_settings.py`` into the "
+"``log_config.py`` file created in `Step 2`."
+msgstr ""
+
+#: ../../howto/write-logs.rst:80
+msgid "Customize the following portions of the template:"
+msgstr ""
+
+#: ../../howto/write-logs.rst:91
+msgid ""
+"Make sure a Azure Blob Storage (Wasb) connection hook has been defined in"
+" Airflow. The hook should have read and write access to the Azure Blob "
+"Storage bucket defined above in ``REMOTE_BASE_LOG_FOLDER``."
+msgstr ""
+
+#: ../../howto/write-logs.rst:93
+msgid "Update ``$AIRFLOW_HOME/airflow.cfg`` to contain:"
+msgstr ""
+
+#: ../../howto/write-logs.rst:101 ../../howto/write-logs.rst:127
+msgid ""
+"Restart the Airflow webserver and scheduler, and trigger (or wait for) a "
+"new task execution."
+msgstr ""
+
+#: ../../howto/write-logs.rst:102 ../../howto/write-logs.rst:128
+msgid ""
+"Verify that logs are showing up for newly executed tasks in the bucket "
+"you've defined."
+msgstr ""
+
+#: ../../howto/write-logs.rst:107
+msgid "Writing Logs to Google Cloud Storage"
+msgstr ""
+
+#: ../../howto/write-logs.rst:109
+msgid "Follow the steps below to enable Google Cloud Storage logging."
+msgstr ""
+
+#: ../../howto/write-logs.rst:111
+msgid ""
+"To enable this feature, ``airflow.cfg`` must be configured as in this "
+"example:"
+msgstr ""
+
+#: ../../howto/write-logs.rst:125
+msgid ""
+"Install the ``gcp`` package first, like so: ``pip install 'apache-"
+"airflow[gcp]'``."
+msgstr ""
+
+#: ../../howto/write-logs.rst:126
+msgid ""
+"Make sure a Google Cloud Platform connection hook has been defined in "
+"Airflow. The hook should have read and write access to the Google Cloud "
+"Storage bucket defined above in ``remote_base_log_folder``."
+msgstr ""
+
+#: ../../howto/write-logs.rst:129
+msgid ""
+"Verify that the Google Cloud Storage viewer is working in the UI. Pull up"
+" a newly executed task, and verify that you see something like:"
+msgstr ""
+
+#: ../../howto/write-logs.rst:139
+msgid "**Note** that the path to the remote log file is listed on the first line."
+msgstr ""
+
