@@ -19,13 +19,14 @@ msgstr ""
 
 #: ../../index.rst:23
 msgid "Apache Airflow Documentation"
-msgstr ""
+msgstr "아파치 에어플로우 문서"
 
 #: ../../index.rst:25
 msgid ""
 "Airflow is a platform to programmatically author, schedule and monitor "
 "workflows."
 msgstr ""
+"에어플로우는 워크플로우를 프로그램방식으로 만들고, 스케줄링하고 모니터하는 플랫폼이다."
 
 #: ../../index.rst:28
 msgid ""
