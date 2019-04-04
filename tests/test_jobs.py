@@ -36,7 +36,7 @@ from tempfile import mkdtemp
 import psutil
 import six
 import sqlalchemy
-from mock import Mock, patch, MagicMock, PropertyMock
+from tests.compat import Mock, patch, MagicMock, PropertyMock
 from parameterized import parameterized
 
 from airflow.utils.db import create_session
@@ -63,18 +63,11 @@ from tests.test_utils.db import clear_db_runs, clear_db_pools, clear_db_dags, \
     clear_db_sla_miss, clear_db_errors
 from tests.core import TEST_DAG_FOLDER
 from tests.executors.test_executor import TestExecutor
+from tests.compat import mock
 
 configuration.load_test_config()
 
 logger = logging.getLogger(__name__)
-
-try:
-    from unittest import mock
-except ImportError:
-    try:
-        import mock
-    except ImportError:
-        mock = None
 
 DEV_NULL = '/dev/null'
 DEFAULT_DATE = timezone.datetime(2016, 1, 1)
@@ -155,6 +148,51 @@ class BackfillJobTest(unittest.TestCase):
 
         self.parser = cli.CLIFactory.get_parser()
         self.dagbag = DagBag(include_examples=True)
+
+    def test_unfinished_dag_runs_set_to_failed(self):
+        dag = self._get_dummy_dag('dummy_dag')
+
+        dag_run = dag.create_dagrun(
+            run_id='test',
+            state=State.RUNNING,
+        )
+
+        job = BackfillJob(
+            dag=dag,
+            start_date=DEFAULT_DATE,
+            end_date=DEFAULT_DATE + datetime.timedelta(days=8),
+            ignore_first_depends_on_past=True
+        )
+
+        job._set_unfinished_dag_runs_to_failed([dag_run])
+
+        dag_run.refresh_from_db()
+
+        self.assertEquals(State.FAILED, dag_run.state)
+
+    def test_dag_run_with_finished_tasks_set_to_success(self):
+        dag = self._get_dummy_dag('dummy_dag')
+
+        dag_run = dag.create_dagrun(
+            run_id='test',
+            state=State.RUNNING,
+        )
+
+        for ti in dag_run.get_task_instances():
+            ti.set_state(State.SUCCESS)
+
+        job = BackfillJob(
+            dag=dag,
+            start_date=DEFAULT_DATE,
+            end_date=DEFAULT_DATE + datetime.timedelta(days=8),
+            ignore_first_depends_on_past=True
+        )
+
+        job._set_unfinished_dag_runs_to_failed([dag_run])
+
+        dag_run.refresh_from_db()
+
+        self.assertEquals(State.SUCCESS, dag_run.state)
 
     @unittest.skipIf('sqlite' in configuration.conf.get('core', 'sql_alchemy_conn'),
                      "concurrent access not supported in sqlite")
@@ -2078,7 +2116,7 @@ class SchedulerJobTest(unittest.TestCase):
         with patch.object(BaseExecutor, 'queue_command') as mock_queue_command:
             scheduler._enqueue_task_instances_with_queued_state(dagbag, [ti1])
 
-        mock_queue_command.assert_called()
+        assert mock_queue_command.called
 
     def test_execute_task_instances_nothing(self):
         dag_id = 'SchedulerJobTest.test_execute_task_instances_nothing'
@@ -3183,6 +3221,76 @@ class SchedulerJobTest(unittest.TestCase):
 
     def test_scheduler_sla_miss_callback(self):
         """
+        Test that the scheduler calls the sla miss callback
+        """
+        session = settings.Session()
+
+        sla_callback = MagicMock()
+
+        # Create dag with a start of 1 day ago, but an sla of 0
+        # so we'll already have an sla_miss on the books.
+        test_start_date = days_ago(1)
+        dag = DAG(dag_id='test_sla_miss',
+                  sla_miss_callback=sla_callback,
+                  default_args={'start_date': test_start_date,
+                                'sla': datetime.timedelta()})
+
+        task = DummyOperator(task_id='dummy',
+                             dag=dag,
+                             owner='airflow')
+
+        session.merge(models.TaskInstance(task=task,
+                                          execution_date=test_start_date,
+                                          state='success'))
+
+        session.merge(SlaMiss(task_id='dummy',
+                              dag_id='test_sla_miss',
+                              execution_date=test_start_date))
+
+        scheduler = SchedulerJob(dag_id='test_sla_miss',
+                                 num_runs=1)
+        scheduler.manage_slas(dag=dag, session=session)
+
+        assert sla_callback.called
+
+    def test_scheduler_sla_miss_callback_invalid_sla(self):
+        """
+        Test that the scheduler does not call the sla miss callback when
+        given an invalid sla
+        """
+        session = settings.Session()
+
+        sla_callback = MagicMock()
+
+        # Create dag with a start of 1 day ago, but an sla of 0
+        # so we'll already have an sla_miss on the books.
+        # Pass anything besides a timedelta object to the sla argument.
+        test_start_date = days_ago(1)
+        dag = DAG(dag_id='test_sla_miss',
+                  sla_miss_callback=sla_callback,
+                  default_args={'start_date': test_start_date,
+                                'sla': None})
+
+        task = DummyOperator(task_id='dummy',
+                             dag=dag,
+                             owner='airflow')
+
+        session.merge(models.TaskInstance(task=task,
+                                          execution_date=test_start_date,
+                                          state='success'))
+
+        session.merge(SlaMiss(task_id='dummy',
+                              dag_id='test_sla_miss',
+                              execution_date=test_start_date))
+
+        scheduler = SchedulerJob(dag_id='test_sla_miss',
+                                 num_runs=1)
+        scheduler.manage_slas(dag=dag, session=session)
+
+        sla_callback.assert_not_called()
+
+    def test_scheduler_sla_miss_callback_sent_notification(self):
+        """
         Test that the scheduler does not call the sla_miss_callback when a notification has already been sent
         """
         session = settings.Session()
@@ -3255,7 +3363,7 @@ class SchedulerJobTest(unittest.TestCase):
         with mock.patch('airflow.jobs.SchedulerJob.log',
                         new_callable=PropertyMock) as mock_log:
             scheduler.manage_slas(dag=dag, session=session)
-            sla_callback.assert_called()
+            assert sla_callback.called
             mock_log().exception.assert_called_with(
                 'Could not call sla_miss_callback for DAG %s',
                 'test_sla_miss')
