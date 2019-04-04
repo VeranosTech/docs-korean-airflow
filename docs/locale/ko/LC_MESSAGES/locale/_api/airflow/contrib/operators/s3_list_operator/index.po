@@ -1,0 +1,108 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C)
+# This file is distributed under the same license as the Airflow package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Airflow 1.10.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-04-03 17:47+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../_api/airflow/contrib/operators/s3_list_operator/index.rst:4
+msgid ":mod:`airflow.contrib.operators.s3_list_operator`"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/s3_list_operator/index.rst:15
+msgid "Module Contents"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/s3_list_operator/index.rst:24
+msgid "Bases::class:`airflow.models.BaseOperator`"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/s3_list_operator/index.rst:28
+msgid "List all objects from the bucket with the given string prefix in name."
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/s3_list_operator/index.rst:30
+msgid ""
+"This operator returns a python list with the name of objects which can be"
+" used by `xcom` in the downstream task."
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/s3_list_operator/index.rst
+msgid "Parameters"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/s3_list_operator/index.rst:33
+msgid "The S3 bucket where to find the objects. (templated)"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/s3_list_operator/index.rst:35
+msgid ""
+"Prefix string to filters the objects whose name begin with such prefix. "
+"(templated)"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/s3_list_operator/index.rst:38
+msgid "the delimiter marks key hierarchy. (templated)"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/s3_list_operator/index.rst:40
+msgid "The connection ID to use when connecting to S3 storage."
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/s3_list_operator/index.rst:42
+msgid ""
+"Whether or not to verify SSL certificates for S3 connection. By default "
+"SSL certificates are verified. You can provide the following values:  - "
+"``False``: do not validate SSL certificates. SSL will still be used"
+"          (unless use_ssl is False), but SSL certificates will not be"
+"          verified. - ``path/to/cert/bundle.pem``: A filename of the CA "
+"cert bundle to uses.          You can specify this argument if you want "
+"to use a different          CA cert bundle than the one used by botocore."
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/s3_list_operator/index.rst:42
+msgid ""
+"Whether or not to verify SSL certificates for S3 connection. By default "
+"SSL certificates are verified. You can provide the following values:"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/s3_list_operator/index.rst:47
+msgid "``False``: do not validate SSL certificates. SSL will still be used"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/s3_list_operator/index.rst:47
+msgid "(unless use_ssl is False), but SSL certificates will not be verified."
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/s3_list_operator/index.rst:50
+msgid "``path/to/cert/bundle.pem``: A filename of the CA cert bundle to uses."
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/s3_list_operator/index.rst:50
+msgid ""
+"You can specify this argument if you want to use a different CA cert "
+"bundle than the one used by botocore."
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/s3_list_operator/index.rst:70
+msgid "**Example**:"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/s3_list_operator/index.rst:56
+msgid ""
+"The following operator would list all the files (excluding subfolders) "
+"from the S3 ``customers/2018/04/`` key in the ``data`` bucket. ::"
+msgstr ""
+

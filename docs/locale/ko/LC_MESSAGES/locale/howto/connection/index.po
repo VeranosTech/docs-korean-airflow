@@ -1,0 +1,128 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C)
+# This file is distributed under the same license as the Airflow package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Airflow 1.10.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-04-03 17:47+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../howto/connection/index.rst:19
+msgid "Managing Connections"
+msgstr ""
+
+#: ../../howto/connection/index.rst:21
+msgid ""
+"Airflow needs to know how to connect to your environment. Information "
+"such as hostname, port, login and passwords to other systems and services"
+" is handled in the ``Admin->Connections`` section of the UI. The pipeline"
+" code you will author will reference the 'conn_id' of the Connection "
+"objects."
+msgstr ""
+
+#: ../../howto/connection/index.rst:28
+msgid ""
+"Connections can be created and managed using either the UI or environment"
+" variables."
+msgstr ""
+
+#: ../../howto/connection/index.rst:31
+msgid ""
+"See the :ref:`Connections Concepts <concepts-connections>` documentation "
+"for more information."
+msgstr ""
+
+#: ../../howto/connection/index.rst:35
+msgid "Creating a Connection with the UI"
+msgstr ""
+
+#: ../../howto/connection/index.rst:37
+msgid ""
+"Open the ``Admin->Connections`` section of the UI. Click the ``Create`` "
+"link to create a new connection."
+msgstr ""
+
+#: ../../howto/connection/index.rst:42
+msgid ""
+"Fill in the ``Conn Id`` field with the desired connection ID. It is "
+"recommended that you use lower-case characters and separate words with "
+"underscores."
+msgstr ""
+
+#: ../../howto/connection/index.rst:45
+msgid "Choose the connection type with the ``Conn Type`` field."
+msgstr ""
+
+#: ../../howto/connection/index.rst:46
+msgid ""
+"Fill in the remaining fields. See :ref:`manage-connections-connection-"
+"types` for a description of the fields belonging to the different "
+"connection types."
+msgstr ""
+
+#: ../../howto/connection/index.rst:49
+msgid "Click the ``Save`` button to create the connection."
+msgstr ""
+
+#: ../../howto/connection/index.rst:52
+msgid "Editing a Connection with the UI"
+msgstr ""
+
+#: ../../howto/connection/index.rst:54
+msgid ""
+"Open the ``Admin->Connections`` section of the UI. Click the pencil icon "
+"next to the connection you wish to edit in the connection list."
+msgstr ""
+
+#: ../../howto/connection/index.rst:59
+msgid ""
+"Modify the connection properties and click the ``Save`` button to save "
+"your changes."
+msgstr ""
+
+#: ../../howto/connection/index.rst:63
+msgid "Creating a Connection with Environment Variables"
+msgstr ""
+
+#: ../../howto/connection/index.rst:65
+msgid ""
+"Connections in Airflow pipelines can be created using environment "
+"variables. The environment variable needs to have a prefix of "
+"``AIRFLOW_CONN_`` for Airflow with the value in a URI format to use the "
+"connection properly."
+msgstr ""
+
+#: ../../howto/connection/index.rst:69
+msgid ""
+"When referencing the connection in the Airflow pipeline, the ``conn_id`` "
+"should be the name of the variable without the prefix. For example, if "
+"the ``conn_id`` is named ``postgres_master`` the environment variable "
+"should be named ``AIRFLOW_CONN_POSTGRES_MASTER`` (note that the "
+"environment variable must be all uppercase)."
+msgstr ""
+
+#: ../../howto/connection/index.rst:75
+msgid ""
+"Airflow assumes the value returned from the environment variable to be in"
+" a URI format (e.g.``postgres://user:password@localhost:5432/master`` or "
+"``s3://accesskey:secretkey@S3``). The underscore character is not allowed"
+" in the scheme part of URI, so it must be changed to a hyphen character "
+"(e.g. `google-compute-platform` if `conn_type` is "
+"`google_compute_platform`). Query parameters are parsed to one-"
+"dimensional dict and then used to fill extra."
+msgstr ""
+
+#: ../../howto/connection/index.rst:86
+msgid "Connection Types"
+msgstr ""
+

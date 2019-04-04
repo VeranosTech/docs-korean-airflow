@@ -1,0 +1,43 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C)
+# This file is distributed under the same license as the Airflow package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Airflow 1.10.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-04-03 17:47+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../_api/airflow/contrib/hooks/grpc_hook/index.rst:4
+msgid ":mod:`airflow.contrib.hooks.grpc_hook`"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/grpc_hook/index.rst:15
+msgid "Module Contents"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/grpc_hook/index.rst:24
+msgid "Bases::class:`airflow.hooks.base_hook.BaseHook`"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/grpc_hook/index.rst:28
+msgid "General interaction with gRPC servers."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/grpc_hook/index.rst:53
+msgid ""
+"Fetches a field from extras, and returns it. This is some Airflow magic. "
+"The grpc hook type adds custom UI elements to the hook page, which allow "
+"admins to specify scopes, credential pem files, etc. They get formatted "
+"as shown below."
+msgstr ""
+

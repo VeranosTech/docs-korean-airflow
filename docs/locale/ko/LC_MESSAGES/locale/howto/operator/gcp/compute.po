@@ -1,0 +1,204 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C)
+# This file is distributed under the same license as the Airflow package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Airflow 1.10.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-04-03 17:47+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../howto/operator/gcp/compute.rst:19
+msgid "Google Compute Engine Operators"
+msgstr ""
+
+#: ../../howto/operator/gcp/compute.rst:28
+msgid "GceInstanceStartOperator"
+msgstr ""
+
+#: ../../howto/operator/gcp/compute.rst:30
+msgid ""
+"Use the "
+":class:`~airflow.contrib.operators.gcp_compute_operator.GceInstanceStartOperator`"
+" to start an existing Google Compute Engine instance."
+msgstr ""
+
+#: ../../howto/operator/gcp/compute.rst:36
+#: ../../howto/operator/gcp/compute.rst:92
+#: ../../howto/operator/gcp/compute.rst:147
+#: ../../howto/operator/gcp/compute.rst:209
+#: ../../howto/operator/gcp/compute.rst:269
+msgid "Arguments"
+msgstr ""
+
+#: ../../howto/operator/gcp/compute.rst:38
+#: ../../howto/operator/gcp/compute.rst:94
+#: ../../howto/operator/gcp/compute.rst:149
+#: ../../howto/operator/gcp/compute.rst:211
+#: ../../howto/operator/gcp/compute.rst:271
+msgid ""
+"The following examples of OS environment variables used to pass arguments"
+" to the operator:"
+msgstr ""
+
+#: ../../howto/operator/gcp/compute.rst:46
+#: ../../howto/operator/gcp/compute.rst:102
+#: ../../howto/operator/gcp/compute.rst:163
+#: ../../howto/operator/gcp/compute.rst:224
+#: ../../howto/operator/gcp/compute.rst:284
+msgid "Using the operator"
+msgstr ""
+
+#: ../../howto/operator/gcp/compute.rst:48
+#: ../../howto/operator/gcp/compute.rst:104
+#: ../../howto/operator/gcp/compute.rst:165
+#: ../../howto/operator/gcp/compute.rst:226
+#: ../../howto/operator/gcp/compute.rst:286
+msgid "The code to create the operator:"
+msgstr ""
+
+#: ../../howto/operator/gcp/compute.rst:56
+msgid ""
+"You can also create the operator without project id - project id will be "
+"retrieved from the GCP connection id used:"
+msgstr ""
+
+#: ../../howto/operator/gcp/compute.rst:67
+#: ../../howto/operator/gcp/compute.rst:122
+#: ../../howto/operator/gcp/compute.rst:183
+#: ../../howto/operator/gcp/compute.rst:244
+#: ../../howto/operator/gcp/compute.rst:305
+msgid "Templating"
+msgstr ""
+
+#: ../../howto/operator/gcp/compute.rst:76
+#: ../../howto/operator/gcp/compute.rst:131
+#: ../../howto/operator/gcp/compute.rst:192
+#: ../../howto/operator/gcp/compute.rst:253
+#: ../../howto/operator/gcp/compute.rst:322
+msgid "More information"
+msgstr ""
+
+#: ../../howto/operator/gcp/compute.rst:78
+msgid ""
+"See Google Compute Engine API documentation to `start an instance "
+"<https://cloud.google.com/compute/docs/reference/rest/v1/instances/start>`_."
+msgstr ""
+
+#: ../../howto/operator/gcp/compute.rst:84
+msgid "GceInstanceStopOperator"
+msgstr ""
+
+#: ../../howto/operator/gcp/compute.rst:86
+msgid "Use the operator to stop Google Compute Engine instance."
+msgstr ""
+
+#: ../../howto/operator/gcp/compute.rst:88
+msgid ""
+"For parameter definition, take a look at "
+":class:`~airflow.contrib.operators.gcp_compute_operator.GceInstanceStopOperator`"
+msgstr ""
+
+#: ../../howto/operator/gcp/compute.rst:112
+#: ../../howto/operator/gcp/compute.rst:173
+#: ../../howto/operator/gcp/compute.rst:234
+#: ../../howto/operator/gcp/compute.rst:294
+msgid ""
+"You can also create the operator without project id - project id will be "
+"retrieved from the GCP connection used:"
+msgstr ""
+
+#: ../../howto/operator/gcp/compute.rst:133
+msgid ""
+"See Google Compute Engine API documentation to `stop an instance "
+"<https://cloud.google.com/compute/docs/reference/rest/v1/instances/stop>`_."
+msgstr ""
+
+#: ../../howto/operator/gcp/compute.rst:139
+msgid "GceSetMachineTypeOperator"
+msgstr ""
+
+#: ../../howto/operator/gcp/compute.rst:141
+msgid ""
+"Use the operator to change machine type of a Google Compute Engine "
+"instance."
+msgstr ""
+
+#: ../../howto/operator/gcp/compute.rst:143
+msgid ""
+"For parameter definition, take a look at "
+":class:`~airflow.contrib.operators.gcp_compute_operator.GceSetMachineTypeOperator`."
+msgstr ""
+
+#: ../../howto/operator/gcp/compute.rst:194
+msgid ""
+"See Google Compute Engine API documentation to `set the machine type "
+"<https://cloud.google.com/compute/docs/reference/rest/v1/instances/setMachineType>`_."
+msgstr ""
+
+#: ../../howto/operator/gcp/compute.rst:200
+msgid "GceInstanceTemplateCopyOperator"
+msgstr ""
+
+#: ../../howto/operator/gcp/compute.rst:202
+msgid ""
+"Use the operator to copy an existing Google Compute Engine instance "
+"template applying a patch to it."
+msgstr ""
+
+#: ../../howto/operator/gcp/compute.rst:205
+msgid ""
+"For parameter definition, take a look at "
+":class:`~airflow.contrib.operators.gcp_compute_operator.GceInstanceTemplateCopyOperator`."
+msgstr ""
+
+#: ../../howto/operator/gcp/compute.rst:255
+msgid ""
+"See Google Compute Engine API documentation to `create a new instance "
+"with an existing template "
+"<https://cloud.google.com/compute/docs/reference/rest/v1/instanceTemplates>`_."
+msgstr ""
+
+#: ../../howto/operator/gcp/compute.rst:261
+msgid "GceInstanceGroupManagerUpdateTemplateOperator"
+msgstr ""
+
+#: ../../howto/operator/gcp/compute.rst:263
+msgid ""
+"Use the operator to update a template in Google Compute Engine Instance "
+"Group Manager."
+msgstr ""
+
+#: ../../howto/operator/gcp/compute.rst:265
+msgid ""
+"For parameter definition, take a look at "
+":class:`~airflow.contrib.operators.gcp_compute_operator.GceInstanceGroupManagerUpdateTemplateOperator`."
+msgstr ""
+
+#: ../../howto/operator/gcp/compute.rst:314
+msgid "Troubleshooting"
+msgstr ""
+
+#: ../../howto/operator/gcp/compute.rst:316
+msgid ""
+"You might find that your GceInstanceGroupManagerUpdateTemplateOperator "
+"fails with missing permissions. To execute the operation, the service "
+"account requires the permissions that theService Account User role "
+"provides (assigned via Google Cloud IAM)."
+msgstr ""
+
+#: ../../howto/operator/gcp/compute.rst:324
+msgid ""
+"See Google Compute Engine API documentation to `manage a group instance "
+"<https://cloud.google.com/compute/docs/reference/rest/v1/instanceGroupManagers>`_."
+msgstr ""
+

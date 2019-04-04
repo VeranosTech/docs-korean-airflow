@@ -1,0 +1,160 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C)
+# This file is distributed under the same license as the Airflow package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Airflow 1.10.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-04-03 17:47+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../_api/airflow/contrib/hooks/datadog_hook/index.rst:4
+msgid ":mod:`airflow.contrib.hooks.datadog_hook`"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/datadog_hook/index.rst:15
+msgid "Module Contents"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/datadog_hook/index.rst:24
+msgid ""
+"Bases::class:`airflow.hooks.base_hook.BaseHook`, "
+":class:`airflow.utils.log.logging_mixin.LoggingMixin`"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/datadog_hook/index.rst:28
+msgid ""
+"Uses datadog API to send metrics of practically anything measurable, so "
+"it's possible to track # of db records inserted/deleted, records read "
+"from file and many other useful metrics."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/datadog_hook/index.rst:32
+msgid ""
+"Depends on the datadog API, which has to be deployed on the same server "
+"where Airflow runs."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/datadog_hook/index.rst
+msgid "Parameters"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/datadog_hook/index.rst:35
+msgid "The connection to datadog, containing metadata for api keys."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/datadog_hook/index.rst:36
+#: ../../_api/airflow/contrib/hooks/datadog_hook/index.rst:108
+msgid "str"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/datadog_hook/index.rst:54
+msgid "Sends a single datapoint metric to DataDog"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/datadog_hook/index.rst:56
+msgid "The name of the metric"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/datadog_hook/index.rst:58
+msgid "A single integer or float related to the metric"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/datadog_hook/index.rst:60
+msgid "A list of tags associated with the metric"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/datadog_hook/index.rst:62
+msgid "Type of your metric: gauge, rate, or count"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/datadog_hook/index.rst:64
+msgid ""
+"If the type of the metric is rate or count, define the corresponding "
+"interval"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/datadog_hook/index.rst:74
+msgid ""
+"Queries datadog for a specific metric, potentially with some function "
+"applied to it and returns the results."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/datadog_hook/index.rst:77
+msgid "The datadog query to execute (see datadog docs)"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/datadog_hook/index.rst:79
+msgid "How many seconds ago to start querying for."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/datadog_hook/index.rst:81
+msgid "Up to how many seconds ago to query for."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/datadog_hook/index.rst:91
+msgid ""
+"Posts an event to datadog (processing finished, potentially alerts, other"
+" issues) Think about this as a means to maintain persistence of alerts, "
+"rather than alerting itself."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/datadog_hook/index.rst:95
+msgid "The title of the event"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/datadog_hook/index.rst:97
+msgid "The body of the event (more information)"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/datadog_hook/index.rst:99
+msgid "Key that can be used to aggregate this event in a stream"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/datadog_hook/index.rst:101
+msgid ""
+"The alert type for the event, one of [\"error\", \"warning\", \"info\", "
+"\"success\"]"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/datadog_hook/index.rst:104
+msgid "POSIX timestamp of the event; defaults to now"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/datadog_hook/index.rst:109
+msgid ""
+"Priority to post the event as. (\"normal\" or \"low\", defaults to "
+"\"normal\")"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/datadog_hook/index.rst:111
+msgid "Post event as a child of the given event"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/datadog_hook/index.rst:113
+msgid "List of tags to apply to the event"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/datadog_hook/index.rst:115
+msgid "device_name to post the event with"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/datadog_hook/index.rst
+msgid "handle"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/datadog_hook/index.rst:106
+msgid ""
+"User to post the event as; defaults to owner of the application key used "
+"to submit."
+msgstr ""
+

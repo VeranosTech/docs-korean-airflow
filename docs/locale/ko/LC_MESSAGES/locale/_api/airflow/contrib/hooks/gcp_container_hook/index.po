@@ -1,0 +1,200 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C)
+# This file is distributed under the same license as the Airflow package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Airflow 1.10.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-04-03 17:47+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../_api/airflow/contrib/hooks/gcp_container_hook/index.rst:4
+msgid ":mod:`airflow.contrib.hooks.gcp_container_hook`"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/gcp_container_hook/index.rst:15
+msgid "Module Contents"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/gcp_container_hook/index.rst:36
+msgid "Bases::class:`airflow.contrib.hooks.gcp_api_base_hook.GoogleCloudBaseHook`"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/gcp_container_hook/index.rst:54
+msgid "Converts a python dictionary to the proto supplied"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/gcp_container_hook/index.rst
+msgid "Parameters"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/gcp_container_hook/index.rst:56
+msgid "The dictionary to convert"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/gcp_container_hook/index.rst:58
+msgid "The proto object to merge with dictionary"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/gcp_container_hook/index.rst
+msgid "Returns"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/gcp_container_hook/index.rst:60
+msgid "A parsed python dictionary in provided proto format"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/gcp_container_hook/index.rst
+msgid "raises"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/gcp_container_hook/index.rst:62
+msgid "ParseError: On JSON parsing problems."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/gcp_container_hook/index.rst:71
+msgid ""
+"Given an operation, continuously fetches the status from Google Cloud "
+"until either completion or an error occurring"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/gcp_container_hook/index.rst:74
+msgid "The Operation to wait for"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/gcp_container_hook/index.rst:76
+#: ../../_api/airflow/contrib/hooks/gcp_container_hook/index.rst:91
+#: ../../_api/airflow/contrib/hooks/gcp_container_hook/index.rst:132
+#: ../../_api/airflow/contrib/hooks/gcp_container_hook/index.rst:157
+#: ../../_api/airflow/contrib/hooks/gcp_container_hook/index.rst:183
+msgid "Google Cloud Platform project ID"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/gcp_container_hook/index.rst:78
+msgid "A new, updated operation fetched from Google Cloud"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/gcp_container_hook/index.rst:87
+msgid "Fetches the operation from Google Cloud"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/gcp_container_hook/index.rst:89
+msgid "Name of operation to fetch"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/gcp_container_hook/index.rst:93
+msgid "The new, updated operation from Google Cloud"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/gcp_container_hook/index.rst:102
+msgid "Append labels to provided Cluster Protobuf"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/gcp_container_hook/index.rst:105
+msgid "Labels must fit the regex ``[a-z]([-a-z0-9]*[a-z0-9])?`` (current"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/gcp_container_hook/index.rst:105
+msgid "airflow version string follows semantic versioning spec: x.y.z)."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/gcp_container_hook/index.rst:107
+msgid "The proto to append resource_label airflow version to"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/gcp_container_hook/index.rst:110
+msgid "The key label"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/gcp_container_hook/index.rst:114
+msgid "The cluster proto updated with new label"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/gcp_container_hook/index.rst:123
+msgid ""
+"Deletes the cluster, including the Kubernetes endpoint and all worker "
+"nodes. Firewalls and routes that were configured during cluster creation "
+"are also deleted. Other Google Compute Engine resources that might be in "
+"use by the cluster (e.g. load balancer resources) will not be deleted if "
+"they weren’t present at the initial create time."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/gcp_container_hook/index.rst:130
+msgid "The name of the cluster to delete"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/gcp_container_hook/index.rst:134
+msgid ""
+"Retry object used to determine when/if to retry requests. If None is "
+"specified, requests will not be retried."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/gcp_container_hook/index.rst:137
+#: ../../_api/airflow/contrib/hooks/gcp_container_hook/index.rst:163
+#: ../../_api/airflow/contrib/hooks/gcp_container_hook/index.rst:188
+msgid ""
+"The amount of time, in seconds, to wait for the request to complete. Note"
+" that if retry is specified, the timeout applies to each individual "
+"attempt."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/gcp_container_hook/index.rst:141
+msgid "The full url to the delete operation if successful, else None"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/gcp_container_hook/index.rst:150
+msgid ""
+"Creates a cluster, consisting of the specified number and type of Google "
+"Compute Engine instances."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/gcp_container_hook/index.rst:153
+msgid ""
+"A Cluster protobuf or dict. If dict is provided, it must be of the same "
+"form as the protobuf message "
+":class:`google.cloud.container_v1.types.Cluster`"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/gcp_container_hook/index.rst:159
+msgid ""
+"A retry object (``google.api_core.retry.Retry``) used to retry requests. "
+"If None is specified, requests will not be retried."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/gcp_container_hook/index.rst:167
+msgid "The full url to the new, or existing, cluster"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/gcp_container_hook/index.rst:169
+msgid ""
+"ParseError: On JSON parsing problems when trying to convert dict "
+"AirflowException: cluster is not dict type nor Cluster proto type"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/gcp_container_hook/index.rst:179
+msgid "Gets details of specified cluster"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/gcp_container_hook/index.rst:181
+msgid "The name of the cluster to retrieve"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/gcp_container_hook/index.rst:185
+msgid ""
+"A retry object used to retry requests. If None is specified, requests "
+"will not be retried."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/gcp_container_hook/index.rst:192
+msgid "google.cloud.container_v1.types.Cluster"
+msgstr ""
+

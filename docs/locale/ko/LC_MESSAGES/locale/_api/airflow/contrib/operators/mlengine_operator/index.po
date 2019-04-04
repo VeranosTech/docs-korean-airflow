@@ -1,0 +1,395 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C)
+# This file is distributed under the same license as the Airflow package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Airflow 1.10.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-04-03 17:47+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../_api/airflow/contrib/operators/mlengine_operator/index.rst:4
+msgid ":mod:`airflow.contrib.operators.mlengine_operator`"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/mlengine_operator/index.rst:15
+msgid "Module Contents"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/mlengine_operator/index.rst:37
+msgid "Replaces invalid MLEngine job_id characters with '_'."
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/mlengine_operator/index.rst:39
+msgid ""
+"This also adds a leading 'z' in case job_id starts with an invalid "
+"character."
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/mlengine_operator/index.rst:43
+msgid "Args:"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/mlengine_operator/index.rst:43
+msgid "job_id: A job_id str that may have invalid characters."
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/mlengine_operator/index.rst:45
+msgid "Returns:"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/mlengine_operator/index.rst:46
+msgid "A valid job_id representation."
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/mlengine_operator/index.rst:58
+#: ../../_api/airflow/contrib/operators/mlengine_operator/index.rst:181
+#: ../../_api/airflow/contrib/operators/mlengine_operator/index.rst:239
+#: ../../_api/airflow/contrib/operators/mlengine_operator/index.rst:326
+msgid "Bases::class:`airflow.models.BaseOperator`"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/mlengine_operator/index.rst:62
+msgid "Start a Google Cloud ML Engine prediction job."
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/mlengine_operator/index.rst:64
+msgid ""
+"NOTE: For model origin, users should consider exactly one from the three "
+"options below:"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/mlengine_operator/index.rst:67
+msgid ""
+"Populate ``uri`` field only, which should be a GCS location that points "
+"to a tensorflow savedModel directory."
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/mlengine_operator/index.rst:69
+msgid ""
+"Populate ``model_name`` field only, which refers to an existing model, "
+"and the default version of the model will be used."
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/mlengine_operator/index.rst:71
+msgid ""
+"Populate both ``model_name`` and ``version_name`` fields, which refers to"
+" a specific version of a specific model."
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/mlengine_operator/index.rst:74
+msgid ""
+"In options 2 and 3, both model and version name should contain the "
+"minimal identifier. For instance, call::"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/mlengine_operator/index.rst:83
+msgid ""
+"if the desired model version is "
+"``projects/my_project/models/my_model/versions/my_version``."
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/mlengine_operator/index.rst:86
+msgid ""
+"See https://cloud.google.com/ml-engine/reference/rest/v1/projects.jobs "
+"for further documentation on the parameters."
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/mlengine_operator/index.rst
+msgid "Parameters"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/mlengine_operator/index.rst:89
+msgid ""
+"The Google Cloud project name where the prediction job is submitted. "
+"(templated)"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/mlengine_operator/index.rst:93
+msgid "A unique id for the prediction job on Google Cloud ML Engine. (templated)"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/mlengine_operator/index.rst:97
+msgid ""
+"The format of the input data. It will default to "
+"'DATA_FORMAT_UNSPECIFIED' if is not provided or is not one of [\"TEXT\", "
+"\"TF_RECORD\", \"TF_RECORD_GZIP\"]."
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/mlengine_operator/index.rst:102
+msgid ""
+"A list of GCS paths of input data for batch prediction. Accepting "
+"wildcard operator ``*``, but only at the end. (templated)"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/mlengine_operator/index.rst:106
+msgid "The GCS path where the prediction results are written to. (templated)"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/mlengine_operator/index.rst:110
+msgid "The Google Compute Engine region to run the prediction job in. (templated)"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/mlengine_operator/index.rst:114
+msgid ""
+"The Google Cloud ML Engine model to use for prediction. If version_name "
+"is not provided, the default version of this model will be used. Should "
+"not be None if version_name is provided. Should be None if uri is "
+"provided. (templated)"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/mlengine_operator/index.rst:121
+msgid ""
+"The Google Cloud ML Engine model version to use for prediction. Should be"
+" None if uri is provided. (templated)"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/mlengine_operator/index.rst:126
+msgid ""
+"The GCS path of the saved model to use for prediction. Should be None if "
+"model_name is provided. It should be a GCS path pointing to a tensorflow "
+"SavedModel. (templated)"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/mlengine_operator/index.rst:131
+msgid ""
+"The maximum number of workers to be used for parallel processing. "
+"Defaults to 10 if not specified."
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/mlengine_operator/index.rst:135
+msgid "The Google Cloud ML Engine runtime version to use for batch prediction."
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/mlengine_operator/index.rst:139
+msgid "The connection ID used for connection to Google Cloud Platform."
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/mlengine_operator/index.rst:143
+#: ../../_api/airflow/contrib/operators/mlengine_operator/index.rst:204
+#: ../../_api/airflow/contrib/operators/mlengine_operator/index.rst:291
+#: ../../_api/airflow/contrib/operators/mlengine_operator/index.rst:378
+msgid ""
+"The account to impersonate, if any. For this to work, the service account"
+" making the request must have domain-wide delegation enabled."
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/mlengine_operator/index.rst
+msgid "raises"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/mlengine_operator/index.rst:148
+msgid "``ValueError``: if a unique model/version origin cannot be determined."
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/mlengine_operator/index.rst:185
+msgid "Operator for managing a Google Cloud ML Engine model."
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/mlengine_operator/index.rst:187
+msgid "The Google Cloud project name to which MLEngine model belongs. (templated)"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/mlengine_operator/index.rst:190
+msgid ""
+"A dictionary containing the information about the model. If the "
+"`operation` is `create`, then the `model` parameter should contain all "
+"the information about this model such as `name`.  If the `operation` is "
+"`get`, the `model` parameter should contain the `name` of the model."
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/mlengine_operator/index.rst:190
+msgid ""
+"A dictionary containing the information about the model. If the "
+"`operation` is `create`, then the `model` parameter should contain all "
+"the information about this model such as `name`."
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/mlengine_operator/index.rst:194
+msgid ""
+"If the `operation` is `get`, the `model` parameter should contain the "
+"`name` of the model."
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/mlengine_operator/index.rst:197
+msgid ""
+"The operation to perform. Available operations are:  * ``create``: "
+"Creates a new model as provided by the `model` parameter. * ``get``: Gets"
+" a particular model where the name is specified in `model`."
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/mlengine_operator/index.rst:197
+#: ../../_api/airflow/contrib/operators/mlengine_operator/index.rst:267
+msgid "The operation to perform. Available operations are:"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/mlengine_operator/index.rst:199
+msgid "``create``: Creates a new model as provided by the `model` parameter."
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/mlengine_operator/index.rst:200
+msgid "``get``: Gets a particular model where the name is specified in `model`."
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/mlengine_operator/index.rst:202
+#: ../../_api/airflow/contrib/operators/mlengine_operator/index.rst:288
+#: ../../_api/airflow/contrib/operators/mlengine_operator/index.rst:375
+msgid "The connection ID to use when fetching connection info."
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/mlengine_operator/index.rst:243
+msgid "Operator for managing a Google Cloud ML Engine version."
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/mlengine_operator/index.rst:245
+msgid "The Google Cloud project name to which MLEngine model belongs."
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/mlengine_operator/index.rst:249
+msgid ""
+"The name of the Google Cloud ML Engine model that the version belongs to."
+" (templated)"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/mlengine_operator/index.rst:253
+msgid ""
+"A name to use for the version being operated upon. If not None and the "
+"`version` argument is None or does not have a value for the `name` key, "
+"then this will be populated in the payload for the `name` key. "
+"(templated)"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/mlengine_operator/index.rst:259
+msgid ""
+"A dictionary containing the information about the version. If the "
+"`operation` is `create`, `version` should contain all the information "
+"about this version such as name, and deploymentUrl. If the `operation` is"
+" `get` or `delete`, the `version` parameter should contain the `name` of "
+"the version. If it is None, the only `operation` possible would be "
+"`list`. (templated)"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/mlengine_operator/index.rst:267
+msgid ""
+"The operation to perform. Available operations are:  *   ``create``: "
+"Creates a new version in the model specified by `model_name`,     in "
+"which case the `version` parameter should contain all the     information"
+" to create that version     (e.g. `name`, `deploymentUrl`).  *   ``get``:"
+" Gets full information of a particular version in the model     specified"
+" by `model_name`.     The name of the version should be specified in the "
+"`version`     parameter.  *   ``list``: Lists all available versions of "
+"the model specified     by `model_name`.  *   ``delete``: Deletes the "
+"version specified in `version` parameter from the     model specified by "
+"`model_name`).     The name of the version should be specified in the "
+"`version`     parameter."
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/mlengine_operator/index.rst:269
+msgid ""
+"``create``: Creates a new version in the model specified by `model_name`,"
+" in which case the `version` parameter should contain all the information"
+" to create that version (e.g. `name`, `deploymentUrl`)."
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/mlengine_operator/index.rst:274
+msgid ""
+"``get``: Gets full information of a particular version in the model "
+"specified by `model_name`. The name of the version should be specified in"
+" the `version` parameter."
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/mlengine_operator/index.rst:279
+msgid ""
+"``list``: Lists all available versions of the model specified by "
+"`model_name`."
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/mlengine_operator/index.rst:282
+msgid ""
+"``delete``: Deletes the version specified in `version` parameter from the"
+" model specified by `model_name`). The name of the version should be "
+"specified in the `version` parameter."
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/mlengine_operator/index.rst:330
+msgid "Operator for launching a MLEngine training job."
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/mlengine_operator/index.rst:332
+msgid ""
+"The Google Cloud project name within which MLEngine training job should "
+"run (templated)."
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/mlengine_operator/index.rst:336
+msgid ""
+"A unique templated id for the submitted Google MLEngine training job. "
+"(templated)"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/mlengine_operator/index.rst:340
+msgid ""
+"A list of package locations for MLEngine training job, which should "
+"include the main training program + any additional dependencies. "
+"(templated)"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/mlengine_operator/index.rst:345
+msgid ""
+"The Python module name to run within MLEngine training job after "
+"installing 'package_uris' packages. (templated)"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/mlengine_operator/index.rst:349
+msgid ""
+"A list of templated command line arguments to pass to the MLEngine "
+"training program. (templated)"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/mlengine_operator/index.rst:353
+msgid ""
+"The Google Compute Engine region to run the MLEngine training job in "
+"(templated)."
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/mlengine_operator/index.rst:357
+msgid "Resource tier for MLEngine training job. (templated)"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/mlengine_operator/index.rst:360
+msgid ""
+"Cloud ML Engine machine name. Must be set when scale_tier is CUSTOM. "
+"(templated)"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/mlengine_operator/index.rst:364
+msgid "The Google Cloud ML runtime version to use for training. (templated)"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/mlengine_operator/index.rst:368
+msgid "The version of Python used in training. (templated)"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/mlengine_operator/index.rst:371
+msgid ""
+"A Google Cloud Storage path in which to store training outputs and other "
+"data needed for training. (templated)"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/mlengine_operator/index.rst:383
+msgid ""
+"Can be one of 'DRY_RUN'/'CLOUD'. In 'DRY_RUN' mode, no real training job "
+"will be launched, but the MLEngine training job request will be printed "
+"out. In 'CLOUD' mode, a real MLEngine training job creation request will "
+"be issued."
+msgstr ""
+

@@ -1,0 +1,83 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C)
+# This file is distributed under the same license as the Airflow package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Airflow 1.10.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-04-03 17:47+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../_api/airflow/operators/bash_operator/index.rst:4
+msgid ":mod:`airflow.operators.bash_operator`"
+msgstr ""
+
+#: ../../_api/airflow/operators/bash_operator/index.rst:15
+msgid "Module Contents"
+msgstr ""
+
+#: ../../_api/airflow/operators/bash_operator/index.rst:24
+msgid "Bases::class:`airflow.models.BaseOperator`"
+msgstr ""
+
+#: ../../_api/airflow/operators/bash_operator/index.rst:28
+msgid "Execute a Bash script, command or set of commands."
+msgstr ""
+
+#: ../../_api/airflow/operators/bash_operator/index.rst:31
+msgid ""
+"For more information on how to use this operator, take a look at the "
+"guide: :ref:`howto/operator:BashOperator`"
+msgstr ""
+
+#: ../../_api/airflow/operators/bash_operator/index.rst:34
+msgid ""
+"If BaseOperator.do_xcom_push is True, the last line written to stdout "
+"will also be pushed to an XCom when the bash command completes"
+msgstr ""
+
+#: ../../_api/airflow/operators/bash_operator/index.rst
+msgid "Parameters"
+msgstr ""
+
+#: ../../_api/airflow/operators/bash_operator/index.rst:37
+msgid ""
+"The command, set of commands or reference to a bash script (must be "
+"'.sh') to be executed. (templated)"
+msgstr ""
+
+#: ../../_api/airflow/operators/bash_operator/index.rst:40
+msgid ""
+"If env is not None, it must be a mapping that defines the environment "
+"variables for the new process; these are used instead of inheriting the "
+"current process environment, which is the default behavior. (templated)"
+msgstr ""
+
+#: ../../_api/airflow/operators/bash_operator/index.rst:45
+msgid "Output encoding of bash command"
+msgstr ""
+
+#: ../../_api/airflow/operators/bash_operator/index.rst:48
+msgid ""
+"On execution of this operator the task will be up for retry when "
+"exception is raised. However, if a sub-command exits with non-zero value "
+"Airflow will not recognize it as failure unless the whole shell exits "
+"with a failure. The easiest way of achieving this is to prefix the "
+"command with ``set -e;`` Example:"
+msgstr ""
+
+#: ../../_api/airflow/operators/bash_operator/index.rst:98
+msgid ""
+"Execute the bash command in a temporary directory which will be cleaned "
+"afterwards"
+msgstr ""
+

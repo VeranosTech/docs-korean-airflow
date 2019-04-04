@@ -1,0 +1,260 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C)
+# This file is distributed under the same license as the Airflow package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Airflow 1.10.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-04-03 17:47+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../_api/airflow/contrib/operators/dataflow_operator/index.rst:4
+msgid ":mod:`airflow.contrib.operators.dataflow_operator`"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/dataflow_operator/index.rst:15
+msgid "Module Contents"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/dataflow_operator/index.rst:24
+#: ../../_api/airflow/contrib/operators/dataflow_operator/index.rst:175
+#: ../../_api/airflow/contrib/operators/dataflow_operator/index.rst:290
+msgid "Bases::class:`airflow.models.BaseOperator`"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/dataflow_operator/index.rst:28
+msgid ""
+"Start a Java Cloud DataFlow batch job. The parameters of the operation "
+"will be passed to the job."
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/dataflow_operator/index.rst:31
+msgid "**Example**: ::"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/dataflow_operator/index.rst:66
+#: ../../_api/airflow/contrib/operators/dataflow_operator/index.rst:301
+msgid ""
+"For more detail on job submission have a look at the reference: "
+"https://cloud.google.com/dataflow/pipelines/specifying-exec-params"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/dataflow_operator/index.rst
+msgid "Parameters"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/dataflow_operator/index.rst:69
+msgid "The reference to a self executing DataFlow jar (templated)."
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/dataflow_operator/index.rst:71
+msgid ""
+"The 'jobName' to use when executing the DataFlow job (templated). This "
+"ends up being set in the pipeline options, so any entry with key "
+"``'jobName'`` in ``options`` will be overwritten."
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/dataflow_operator/index.rst:75
+#: ../../_api/airflow/contrib/operators/dataflow_operator/index.rst:313
+msgid "Map of default job options."
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/dataflow_operator/index.rst:77
+#: ../../_api/airflow/contrib/operators/dataflow_operator/index.rst:315
+msgid "Map of job specific options."
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/dataflow_operator/index.rst:79
+#: ../../_api/airflow/contrib/operators/dataflow_operator/index.rst:190
+#: ../../_api/airflow/contrib/operators/dataflow_operator/index.rst:317
+msgid "The connection ID to use connecting to Google Cloud Platform."
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/dataflow_operator/index.rst:82
+#: ../../_api/airflow/contrib/operators/dataflow_operator/index.rst:193
+msgid ""
+"The account to impersonate, if any. For this to work, the service account"
+" making the request must have domain-wide delegation enabled."
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/dataflow_operator/index.rst:86
+#: ../../_api/airflow/contrib/operators/dataflow_operator/index.rst:197
+#: ../../_api/airflow/contrib/operators/dataflow_operator/index.rst:324
+msgid ""
+"The time in seconds to sleep between polling Google Cloud Platform for "
+"the dataflow job status while the job is in the JOB_STATE_RUNNING state."
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/dataflow_operator/index.rst:90
+msgid ""
+"The name of the dataflow job class to be executed, it is often not the "
+"main class configured in the dataflow jar file."
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/dataflow_operator/index.rst:94
+msgid ""
+"``jar``, ``options``, and ``job_name`` are templated so you can use "
+"variables in them."
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/dataflow_operator/index.rst:96
+msgid ""
+"Note that both ``dataflow_default_options`` and ``options`` will be "
+"merged to specify pipeline execution parameter, and "
+"``dataflow_default_options`` is expected to save high-level options, for "
+"instances, project and zone information, which apply to all dataflow "
+"operators in the DAG."
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/dataflow_operator/index.rst:102
+#: ../../_api/airflow/contrib/operators/dataflow_operator/index.rst:202
+msgid ""
+"It's a good practice to define dataflow_* parameters in the default_args "
+"of the dag like the project, zone and staging location."
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/dataflow_operator/index.rst:115
+msgid ""
+"You need to pass the path to your dataflow as a file reference with the "
+"``jar`` parameter, the jar needs to be a self executing jar (see "
+"documentation here: "
+"https://beam.apache.org/documentation/runners/dataflow/#self-executing-"
+"jar). Use ``options`` to pass on options to your job."
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/dataflow_operator/index.rst:179
+msgid ""
+"Start a Templated Cloud DataFlow batch job. The parameters of the "
+"operation will be passed to the job."
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/dataflow_operator/index.rst:182
+msgid "The reference to the DataFlow template."
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/dataflow_operator/index.rst:184
+msgid "The 'jobName' to use when executing the DataFlow template (templated)."
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/dataflow_operator/index.rst:186
+msgid "Map of default job environment options."
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/dataflow_operator/index.rst:188
+msgid "Map of job specific parameters for the template."
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/dataflow_operator/index.rst:206
+msgid ""
+"https://cloud.google.com/dataflow/docs/reference/rest/v1b3/LaunchTemplateParameters"
+" "
+"https://cloud.google.com/dataflow/docs/reference/rest/v1b3/RuntimeEnvironment"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/dataflow_operator/index.rst:221
+msgid ""
+"You need to pass the path to your dataflow template as a file reference "
+"with the ``template`` parameter. Use ``parameters`` to pass on parameters"
+" to your job. Use ``environment`` to pass on runtime environment "
+"variables to your job."
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/dataflow_operator/index.rst:237
+msgid ""
+"``template``, ``dataflow_default_options``, ``parameters``, and "
+"``job_name`` are templated so you can use variables in them."
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/dataflow_operator/index.rst:240
+msgid ""
+"Note that ``dataflow_default_options`` is expected to save high-level "
+"options for project information, which apply to all dataflow operators in"
+" the DAG."
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/dataflow_operator/index.rst:244
+msgid ""
+"https://cloud.google.com/dataflow/docs/reference/rest/v1b3 "
+"/LaunchTemplateParameters "
+"https://cloud.google.com/dataflow/docs/reference/rest/v1b3/RuntimeEnvironment"
+" For more detail on job template execution have a look at the reference: "
+"https://cloud.google.com/dataflow/docs/templates/executing-templates"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/dataflow_operator/index.rst:294
+msgid ""
+"Launching Cloud Dataflow jobs written in python. Note that both "
+"dataflow_default_options and options will be merged to specify pipeline "
+"execution parameter, and dataflow_default_options is expected to save "
+"high-level options, for instances, project and zone information, which "
+"apply to all dataflow operators in the DAG."
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/dataflow_operator/index.rst:304
+msgid ""
+"Reference to the python dataflow pipeline file.py, e.g., "
+"/some/local/file/path/to/your/python/pipeline/file."
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/dataflow_operator/index.rst:307
+msgid ""
+"The 'job_name' to use when executing the DataFlow job (templated). This "
+"ends up being set in the pipeline options, so any entry with key "
+"``'jobName'`` or ``'job_name'`` in ``options`` will be overwritten."
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/dataflow_operator/index.rst:311
+msgid "Additional python options, e.g., [\"-m\", \"-v\"]."
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/dataflow_operator/index.rst:320
+msgid ""
+"The account to impersonate, if any. For this to work, the service account"
+" making the request must have domain-wide  delegation enabled."
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/dataflow_operator/index.rst:348
+msgid "Execute the python dataflow job."
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/dataflow_operator/index.rst:361
+msgid "Bases::class:`object`"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/dataflow_operator/index.rst:365
+msgid "GoogleCloudStorageHook helper class to download GCS object."
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/dataflow_operator/index.rst:386
+msgid ""
+"Checks whether the file specified by file_name is stored in Google Cloud "
+"Storage (GCS), if so, downloads the file and saves it locally. The full "
+"path of the saved file will be returned. Otherwise the local file_name "
+"will be returned immediately."
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/dataflow_operator/index.rst:391
+msgid "The full path of input file."
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/dataflow_operator/index.rst
+msgid "Returns"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/dataflow_operator/index.rst:393
+msgid "The full path of local file."
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/dataflow_operator/index.rst
+msgid "Return type"
+msgstr ""
+

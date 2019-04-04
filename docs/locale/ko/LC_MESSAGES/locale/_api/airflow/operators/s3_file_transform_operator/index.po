@@ -1,0 +1,127 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C)
+# This file is distributed under the same license as the Airflow package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Airflow 1.10.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-04-03 17:47+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../_api/airflow/operators/s3_file_transform_operator/index.rst:4
+msgid ":mod:`airflow.operators.s3_file_transform_operator`"
+msgstr ""
+
+#: ../../_api/airflow/operators/s3_file_transform_operator/index.rst:15
+msgid "Module Contents"
+msgstr ""
+
+#: ../../_api/airflow/operators/s3_file_transform_operator/index.rst:24
+msgid "Bases::class:`airflow.models.BaseOperator`"
+msgstr ""
+
+#: ../../_api/airflow/operators/s3_file_transform_operator/index.rst:28
+msgid ""
+"Copies data from a source S3 location to a temporary location on the "
+"local filesystem. Runs a transformation on this file as specified by the "
+"transformation script and uploads the output to a destination S3 "
+"location."
+msgstr ""
+
+#: ../../_api/airflow/operators/s3_file_transform_operator/index.rst:33
+msgid ""
+"The locations of the source and the destination files in the local "
+"filesystem is provided as an first and second arguments to the "
+"transformation script. The transformation script is expected to read the "
+"data from source, transform it and write the output to the local "
+"destination file. The operator then takes over control and uploads the "
+"local destination file to S3."
+msgstr ""
+
+#: ../../_api/airflow/operators/s3_file_transform_operator/index.rst:40
+msgid ""
+"S3 Select is also available to filter the source contents. Users can omit"
+" the transformation script if S3 Select expression is specified."
+msgstr ""
+
+#: ../../_api/airflow/operators/s3_file_transform_operator/index.rst
+msgid "Parameters"
+msgstr ""
+
+#: ../../_api/airflow/operators/s3_file_transform_operator/index.rst:43
+msgid "The key to be retrieved from S3. (templated)"
+msgstr ""
+
+#: ../../_api/airflow/operators/s3_file_transform_operator/index.rst:45
+msgid "source s3 connection"
+msgstr ""
+
+#: ../../_api/airflow/operators/s3_file_transform_operator/index.rst:47
+msgid ""
+"Whether or not to verify SSL certificates for S3 connection. By default "
+"SSL certificates are verified. You can provide the following values:  - "
+"``False``: do not validate SSL certificates. SSL will still be used      "
+"(unless use_ssl is False), but SSL certificates will not be      "
+"verified. - ``path/to/cert/bundle.pem``: A filename of the CA cert bundle"
+" to uses.      You can specify this argument if you want to use a "
+"different      CA cert bundle than the one used by botocore.  This is "
+"also applicable to ``dest_verify``."
+msgstr ""
+
+#: ../../_api/airflow/operators/s3_file_transform_operator/index.rst:47
+msgid ""
+"Whether or not to verify SSL certificates for S3 connection. By default "
+"SSL certificates are verified. You can provide the following values:"
+msgstr ""
+
+#: ../../_api/airflow/operators/s3_file_transform_operator/index.rst:52
+msgid "``False``: do not validate SSL certificates. SSL will still be used"
+msgstr ""
+
+#: ../../_api/airflow/operators/s3_file_transform_operator/index.rst:52
+msgid "(unless use_ssl is False), but SSL certificates will not be verified."
+msgstr ""
+
+#: ../../_api/airflow/operators/s3_file_transform_operator/index.rst:56
+msgid "``path/to/cert/bundle.pem``: A filename of the CA cert bundle to uses."
+msgstr ""
+
+#: ../../_api/airflow/operators/s3_file_transform_operator/index.rst:55
+msgid ""
+"You can specify this argument if you want to use a different CA cert "
+"bundle than the one used by botocore."
+msgstr ""
+
+#: ../../_api/airflow/operators/s3_file_transform_operator/index.rst:58
+msgid "This is also applicable to ``dest_verify``."
+msgstr ""
+
+#: ../../_api/airflow/operators/s3_file_transform_operator/index.rst:60
+msgid "The key to be written from S3. (templated)"
+msgstr ""
+
+#: ../../_api/airflow/operators/s3_file_transform_operator/index.rst:62
+msgid "destination s3 connection"
+msgstr ""
+
+#: ../../_api/airflow/operators/s3_file_transform_operator/index.rst:64
+msgid "Replace dest S3 key if it already exists"
+msgstr ""
+
+#: ../../_api/airflow/operators/s3_file_transform_operator/index.rst:66
+msgid "location of the executable transformation script"
+msgstr ""
+
+#: ../../_api/airflow/operators/s3_file_transform_operator/index.rst:68
+msgid "S3 Select expression"
+msgstr ""
+

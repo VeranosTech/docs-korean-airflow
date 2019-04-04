@@ -1,0 +1,107 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C)
+# This file is distributed under the same license as the Airflow package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Airflow 1.10.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-04-03 17:47+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../howto/connection/gcp_sql.rst:19
+msgid "Google Cloud SQL Connection"
+msgstr ""
+
+#: ../../howto/connection/gcp_sql.rst:21
+msgid ""
+"The gcpcloudsql:// connection is used by "
+":class:`airflow.contrib.operators.gcp_sql_operator.CloudSqlQueryOperator`"
+" to perform query on a Google Cloud SQL database. Google Cloud SQL "
+"database can be either Postgres or MySQL, so this is a \"meta\" "
+"connection type. It introduces common schema for both MySQL and Postgres,"
+" including what kind of connectivity should be used. Google Cloud SQL "
+"supports connecting via public IP or via Cloud SQL Proxy. In the latter "
+"case the "
+":class:`~airflow.contrib.hooks.gcp_sql_hook.CloudSqlDatabaseHook` uses "
+":class:`~airflow.contrib.hooks.gcp_sql_hook.CloudSqlProxyRunner` to "
+"automatically prepare and use temporary Postgres or MySQL connection that"
+" will use the proxy to connect (either via TCP or UNIX socket."
+msgstr ""
+
+#: ../../howto/connection/gcp_sql.rst:34
+msgid "Configuring the Connection"
+msgstr ""
+
+#: ../../howto/connection/gcp_sql.rst:37
+msgid "Host (required)"
+msgstr ""
+
+#: ../../howto/connection/gcp_sql.rst:37
+msgid "The host to connect to."
+msgstr ""
+
+#: ../../howto/connection/gcp_sql.rst:40
+msgid "Schema (optional)"
+msgstr ""
+
+#: ../../howto/connection/gcp_sql.rst:40
+msgid "Specify the schema name to be used in the database."
+msgstr ""
+
+#: ../../howto/connection/gcp_sql.rst:43
+msgid "Login (required)"
+msgstr ""
+
+#: ../../howto/connection/gcp_sql.rst:43
+msgid "Specify the user name to connect."
+msgstr ""
+
+#: ../../howto/connection/gcp_sql.rst:46
+msgid "Password (required)"
+msgstr ""
+
+#: ../../howto/connection/gcp_sql.rst:46
+msgid "Specify the password to connect."
+msgstr ""
+
+#: ../../howto/connection/gcp_sql.rst:75
+msgid "Extra (optional)"
+msgstr ""
+
+#: ../../howto/connection/gcp_sql.rst:49
+msgid ""
+"Specify the extra parameters (as JSON dictionary) that can be used in "
+"Google Cloud SQL connection."
+msgstr ""
+
+#: ../../howto/connection/gcp_sql.rst:52
+msgid ""
+"Details of all the parameters supported in extra field can be found in "
+":class:`~airflow.contrib.hooks.gcp_sql_hook.CloudSqlDatabaseHook`"
+msgstr ""
+
+#: ../../howto/connection/gcp_sql.rst:55
+msgid "Example \"extras\" field:"
+msgstr ""
+
+#: ../../howto/connection/gcp_sql.rst:68
+msgid ""
+"When specifying the connection as URI (in AIRFLOW_CONN_* variable), you "
+"should specify it following the standard syntax of DB connection, where "
+"extras are passed as parameters of the URI. Note that all components of "
+"the URI should be URL-encoded."
+msgstr ""
+
+#: ../../howto/connection/gcp_sql.rst:72
+msgid "For example:"
+msgstr ""
+

@@ -1,0 +1,95 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C)
+# This file is distributed under the same license as the Airflow package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Airflow 1.10.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-04-04 13:21+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../_api/airflow/contrib/hooks/gcp_speech_to_text_hook/index.rst:4
+msgid ":mod:`airflow.contrib.hooks.gcp_speech_to_text_hook`"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/gcp_speech_to_text_hook/index.rst:15
+msgid "Module Contents"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/gcp_speech_to_text_hook/index.rst:24
+msgid "Bases::class:`airflow.contrib.hooks.gcp_api_base_hook.GoogleCloudBaseHook`"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/gcp_speech_to_text_hook/index.rst:28
+msgid "Hook for Google Cloud Speech API."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/gcp_speech_to_text_hook/index.rst
+msgid "Parameters"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/gcp_speech_to_text_hook/index.rst:30
+msgid "The connection ID to use when fetching connection info."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/gcp_speech_to_text_hook/index.rst:32
+msgid ""
+"The account to impersonate, if any. For this to work, the service account"
+" making the request must have domain-wide delegation enabled."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/gcp_speech_to_text_hook/index.rst:56
+msgid "Retrieves connection to Cloud Speech."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/gcp_speech_to_text_hook/index.rst
+msgid "Returns"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/gcp_speech_to_text_hook/index.rst:58
+msgid "Google Cloud Speech client object."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/gcp_speech_to_text_hook/index.rst
+msgid "Return type"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/gcp_speech_to_text_hook/index.rst:68
+msgid "Recognizes audio input"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/gcp_speech_to_text_hook/index.rst:70
+msgid ""
+"information to the recognizer that specifies how to process the request. "
+"https://googleapis.github.io/google-cloud-"
+"python/latest/speech/gapic/v1/types.html#google.cloud.speech_v1.types.RecognitionConfig"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/gcp_speech_to_text_hook/index.rst:73
+msgid ""
+"audio data to be recognized https://googleapis.github.io/google-cloud-"
+"python/latest/speech/gapic/v1/types.html#google.cloud.speech_v1.types.RecognitionAudio"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/gcp_speech_to_text_hook/index.rst:76
+msgid ""
+"(Optional) A retry object used to retry requests. If None is specified, "
+"requests will not be retried."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/gcp_speech_to_text_hook/index.rst:79
+msgid ""
+"(Optional) The amount of time, in seconds, to wait for the request to "
+"complete. Note that if retry is specified, the timeout applies to each "
+"individual attempt."
+msgstr ""
+

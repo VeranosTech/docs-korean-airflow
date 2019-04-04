@@ -1,0 +1,125 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C)
+# This file is distributed under the same license as the Airflow package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Airflow 1.10.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-04-03 17:47+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../_api/airflow/contrib/operators/sftp_operator/index.rst:4
+msgid ":mod:`airflow.contrib.operators.sftp_operator`"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/sftp_operator/index.rst:15
+msgid "Module Contents"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/sftp_operator/index.rst:24
+msgid "Bases::class:`object`"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/sftp_operator/index.rst:57
+msgid "Bases::class:`airflow.models.BaseOperator`"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/sftp_operator/index.rst:61
+msgid ""
+"SFTPOperator for transferring files from remote host to local or vice a "
+"versa. This operator uses ssh_hook to open sftp transport channel that "
+"serve as basis for file transfer."
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/sftp_operator/index.rst
+msgid "Parameters"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/sftp_operator/index.rst:65
+msgid ""
+"predefined ssh_hook to use for remote execution. Either `ssh_hook` or "
+"`ssh_conn_id` needs to be provided."
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/sftp_operator/index.rst:68
+msgid ""
+"connection id from airflow Connections. `ssh_conn_id` will be ignored if "
+"`ssh_hook` is provided."
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/sftp_operator/index.rst:71
+msgid ""
+"remote host to connect (templated) Nullable. If provided, it will replace"
+" the `remote_host` which was defined in `ssh_hook` or predefined in the "
+"connection of `ssh_conn_id`."
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/sftp_operator/index.rst:75
+msgid "local file path to get or put. (templated)"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/sftp_operator/index.rst:77
+msgid "remote file path to get or put. (templated)"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/sftp_operator/index.rst:79
+msgid "specify operation 'get' or 'put', defaults to put"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/sftp_operator/index.rst:81
+msgid "specify if the SFTP operation should be confirmed, defaults to True"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/sftp_operator/index.rst:83
+msgid ""
+"create missing intermediate directories when copying from remote to local"
+" and vice-versa. Default is False.  Example: The following task would "
+"copy ``file.txt`` to the remote host at ``/tmp/tmp1/tmp2/`` while "
+"creating ``tmp``,``tmp1`` and ``tmp2`` if they don't exist. If the "
+"parameter is not passed it would error as the directory does not exist. "
+"::      put_file = SFTPOperator(         task_id=\"test_sftp\",         "
+"ssh_conn_id=\"ssh_default\",         local_filepath=\"/tmp/file.txt\","
+"         remote_filepath=\"/tmp/tmp1/tmp2/file.txt\",         "
+"operation=\"put\",         create_intermediate_dirs=True,         dag=dag"
+"     )"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/sftp_operator/index.rst:83
+msgid ""
+"create missing intermediate directories when copying from remote to local"
+" and vice-versa. Default is False."
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/sftp_operator/index.rst:86
+msgid ""
+"Example: The following task would copy ``file.txt`` to the remote host at"
+" ``/tmp/tmp1/tmp2/`` while creating ``tmp``,``tmp1`` and ``tmp2`` if they"
+" don't exist. If the parameter is not passed it would error as the "
+"directory does not exist. ::"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/sftp_operator/index.rst:134
+msgid "Create all the intermediate directories in a remote host"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/sftp_operator/index.rst:136
+msgid "A Paramiko SFTP client."
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/sftp_operator/index.rst:137
+msgid "Absolute Path of the directory containing the file"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/sftp_operator/index.rst
+msgid "Returns"
+msgstr ""
+

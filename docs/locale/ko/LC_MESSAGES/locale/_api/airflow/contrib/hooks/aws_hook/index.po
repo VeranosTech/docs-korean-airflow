@@ -1,0 +1,91 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C)
+# This file is distributed under the same license as the Airflow package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Airflow 1.10.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-04-03 17:47+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../_api/airflow/contrib/hooks/aws_hook/index.rst:4
+msgid ":mod:`airflow.contrib.hooks.aws_hook`"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/aws_hook/index.rst:15
+msgid "Module Contents"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/aws_hook/index.rst:25
+msgid ""
+"Parses a config file for s3 credentials. Can currently parse boto, "
+"s3cmd.conf and AWS SDK config formats"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/aws_hook/index.rst
+msgid "Parameters"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/aws_hook/index.rst:28
+msgid "path to the config file"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/aws_hook/index.rst:30
+msgid "config type. One of \"boto\", \"s3cmd\" or \"aws\". Defaults to \"boto\""
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/aws_hook/index.rst:33
+msgid "profile name in AWS type config file"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/aws_hook/index.rst:46
+msgid "Bases::class:`airflow.hooks.base_hook.BaseHook`"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/aws_hook/index.rst:50
+msgid ""
+"Interact with AWS. This class is a thin wrapper around the boto3 python "
+"library."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/aws_hook/index.rst:83
+msgid "Get the underlying boto3.session."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/aws_hook/index.rst:92
+msgid "Get the underlying `botocore.Credentials` object."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/aws_hook/index.rst:94
+msgid ""
+"This contains the following authentication attributes: access_key, "
+"secret_key and token."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/aws_hook/index.rst:103
+msgid ""
+"If the IAM role is a role name, get the Amazon Resource Name (ARN) for "
+"the role. If IAM role is already an IAM role ARN, no change is made."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/aws_hook/index.rst:106
+msgid "IAM role name or ARN"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/aws_hook/index.rst
+msgid "Returns"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/aws_hook/index.rst:107
+msgid "IAM role ARN"
+msgstr ""
+

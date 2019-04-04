@@ -1,0 +1,225 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C)
+# This file is distributed under the same license as the Airflow package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Airflow 1.10.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-04-03 15:37+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../metrics.rst:19
+msgid "Metrics"
+msgstr ""
+
+#: ../../metrics.rst:21
+msgid ""
+"Airflow can be set up to send metrics to `StatsD "
+"<https://github.com/etsy/statsd>`__:"
+msgstr ""
+
+#: ../../metrics.rst:24
+msgid "Configuration"
+msgstr ""
+
+#: ../../metrics.rst:25
+msgid "Add the following lines to your configuration file e.g. ``airflow.cfg``"
+msgstr ""
+
+#: ../../metrics.rst:36
+msgid "Counters"
+msgstr ""
+
+#: ../../metrics.rst:39 ../../metrics.rst:55 ../../metrics.rst:72
+msgid "Name"
+msgstr ""
+
+#: ../../metrics.rst:39 ../../metrics.rst:55 ../../metrics.rst:72
+msgid "Description"
+msgstr ""
+
+#: ../../metrics.rst:41
+msgid "<job_name>_start"
+msgstr ""
+
+#: ../../metrics.rst:41
+msgid "Number of started <job_name> job, ex. SchedulerJob, LocalTaskJob"
+msgstr ""
+
+#: ../../metrics.rst:42
+msgid "<job_name>_end"
+msgstr ""
+
+#: ../../metrics.rst:42
+msgid "Number of ended <job_name> job, ex. SchedulerJob, LocalTaskJob"
+msgstr ""
+
+#: ../../metrics.rst:43
+msgid "operator_failures_<operator_name>"
+msgstr ""
+
+#: ../../metrics.rst:43
+msgid "Operator <operator_name> failures"
+msgstr ""
+
+#: ../../metrics.rst:44
+msgid "operator_successes_<operator_name>"
+msgstr ""
+
+#: ../../metrics.rst:44
+msgid "Operator <operator_name> successes"
+msgstr ""
+
+#: ../../metrics.rst:45
+msgid "ti_failures"
+msgstr ""
+
+#: ../../metrics.rst:45
+msgid "Overall task instances failures"
+msgstr ""
+
+#: ../../metrics.rst:46
+msgid "ti_successes"
+msgstr ""
+
+#: ../../metrics.rst:46
+msgid "Overall task instances successes"
+msgstr ""
+
+#: ../../metrics.rst:47
+msgid "zombies_killed"
+msgstr ""
+
+#: ../../metrics.rst:47
+msgid "Zombie tasks killed"
+msgstr ""
+
+#: ../../metrics.rst:48
+msgid "scheduler_heartbeat"
+msgstr ""
+
+#: ../../metrics.rst:48
+msgid "Scheduler heartbeats"
+msgstr ""
+
+#: ../../metrics.rst:52
+msgid "Gauges"
+msgstr ""
+
+#: ../../metrics.rst:57
+msgid "collect_dags"
+msgstr ""
+
+#: ../../metrics.rst:57
+msgid "Seconds taken to scan and import DAGs"
+msgstr ""
+
+#: ../../metrics.rst:58
+msgid "dagbag_import_errors"
+msgstr ""
+
+#: ../../metrics.rst:58
+msgid "DAG import errors"
+msgstr ""
+
+#: ../../metrics.rst:59
+msgid "dagbag_size"
+msgstr ""
+
+#: ../../metrics.rst:59
+msgid "DAG bag size"
+msgstr ""
+
+#: ../../metrics.rst:60
+msgid "dag_processing.last_runtime.<dag_file>"
+msgstr ""
+
+#: ../../metrics.rst:60
+msgid "Seconds spent processing <dag_file> (in most recent iteration)"
+msgstr ""
+
+#: ../../metrics.rst:61
+msgid "dag_processing.last_run.seconds_ago.<dag_file>"
+msgstr ""
+
+#: ../../metrics.rst:61
+msgid "Seconds since <dag_file> was last processed"
+msgstr ""
+
+#: ../../metrics.rst:62
+msgid "executor.open_slots"
+msgstr ""
+
+#: ../../metrics.rst:62
+msgid "Number of of open slots on executor"
+msgstr ""
+
+#: ../../metrics.rst:63
+msgid "executor.queued_tasks"
+msgstr ""
+
+#: ../../metrics.rst:63
+msgid "Number of queued tasks on executor"
+msgstr ""
+
+#: ../../metrics.rst:64
+msgid "executor.running_tasks"
+msgstr ""
+
+#: ../../metrics.rst:64
+msgid "Number of running tasks on executor"
+msgstr ""
+
+#: ../../metrics.rst:65
+msgid "pool.starving_tasks.<pool_name>"
+msgstr ""
+
+#: ../../metrics.rst:65
+msgid "Number of starving tasks in the pool"
+msgstr ""
+
+#: ../../metrics.rst:69
+msgid "Timers"
+msgstr ""
+
+#: ../../metrics.rst:74
+msgid "dagrun.dependency-check.<dag_id>"
+msgstr ""
+
+#: ../../metrics.rst:74
+msgid "Seconds taken to check DAG dependencies"
+msgstr ""
+
+#: ../../metrics.rst:75
+msgid "dag.<dag_id>.<task_id>.duration"
+msgstr ""
+
+#: ../../metrics.rst:75
+msgid "Seconds taken to finish a task"
+msgstr ""
+
+#: ../../metrics.rst:76
+msgid "dagrun.duration.success.<dag_id>"
+msgstr ""
+
+#: ../../metrics.rst:76
+msgid "Seconds taken for a DagRun to reach success state"
+msgstr ""
+
+#: ../../metrics.rst:77
+msgid "dagrun.duration.failed.<dag_id>"
+msgstr ""
+
+#: ../../metrics.rst:77
+msgid "Seconds taken for a DagRun to reach failed state"
+msgstr ""
+

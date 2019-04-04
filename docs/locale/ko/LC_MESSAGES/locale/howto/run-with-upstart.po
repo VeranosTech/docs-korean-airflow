@@ -1,0 +1,73 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C)
+# This file is distributed under the same license as the Airflow package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Airflow 1.10.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-04-03 17:47+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../howto/run-with-upstart.rst:19
+msgid "Running Airflow with upstart"
+msgstr ""
+
+#: ../../howto/run-with-upstart.rst:21
+msgid ""
+"Airflow can integrate with upstart based systems. Upstart automatically "
+"starts all airflow services for which you have a corresponding ``*.conf``"
+" file in ``/etc/init`` upon system boot. On failure, upstart "
+"automatically restarts the process (until it reaches re-spawn limit set "
+"in a ``*.conf`` file)."
+msgstr ""
+
+#: ../../howto/run-with-upstart.rst:25
+msgid ""
+"You can find sample upstart job files in the ``scripts/upstart`` "
+"directory."
+msgstr ""
+
+#: ../../howto/run-with-upstart.rst:27
+msgid "The following assumptions have been used while creating these unit files:"
+msgstr ""
+
+#: ../../howto/run-with-upstart.rst:29
+msgid "Airflow will run as the following `user:group` ``airflow:airflow``."
+msgstr ""
+
+#: ../../howto/run-with-upstart.rst:30
+msgid ""
+"Change ``setuid`` and ``setgid`` appropriately in ``*.conf`` if airflow "
+"runs as a different user or group"
+msgstr ""
+
+#: ../../howto/run-with-upstart.rst:33
+msgid "These files have been tested on **Ubuntu 14.04 LTS**"
+msgstr ""
+
+#: ../../howto/run-with-upstart.rst:32
+msgid ""
+"You may have to adjust ``start on`` and ``stop on`` stanzas to make it "
+"work on other upstart systems. Some of the possible options are listed in"
+" ``scripts/upstart/README``"
+msgstr ""
+
+#: ../../howto/run-with-upstart.rst:35
+msgid "Modify ``*.conf`` files as needed and copy to ``/etc/init`` directory."
+msgstr ""
+
+#: ../../howto/run-with-upstart.rst:37
+msgid ""
+"You can use ``initctl`` to manually start, stop, view status of the "
+"airflow process that has been integrated with upstart"
+msgstr ""
+

@@ -1,0 +1,347 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C)
+# This file is distributed under the same license as the Airflow package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Airflow 1.10.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-04-03 17:47+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../_api/airflow/contrib/operators/gcp_sql_operator/index.rst:4
+msgid ":mod:`airflow.contrib.operators.gcp_sql_operator`"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/gcp_sql_operator/index.rst:15
+msgid "Module Contents"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/gcp_sql_operator/index.rst:108
+#: ../../_api/airflow/contrib/operators/gcp_sql_operator/index.rst:719
+msgid "Bases::class:`airflow.models.BaseOperator`"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/gcp_sql_operator/index.rst:112
+msgid "Abstract base operator for Google Cloud SQL operators to inherit from."
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/gcp_sql_operator/index.rst
+msgid "Parameters"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/gcp_sql_operator/index.rst:114
+#: ../../_api/airflow/contrib/operators/gcp_sql_operator/index.rst:188
+#: ../../_api/airflow/contrib/operators/gcp_sql_operator/index.rst:264
+#: ../../_api/airflow/contrib/operators/gcp_sql_operator/index.rst:321
+#: ../../_api/airflow/contrib/operators/gcp_sql_operator/index.rst:575
+#: ../../_api/airflow/contrib/operators/gcp_sql_operator/index.rst:660
+msgid "Cloud SQL instance ID. This does not include the project ID."
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/gcp_sql_operator/index.rst:116
+msgid ""
+"Optional, Google Cloud Platform Project ID.  f set to None or missing, "
+"the default project_id from the GCP connection is used."
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/gcp_sql_operator/index.rst:119
+#: ../../_api/airflow/contrib/operators/gcp_sql_operator/index.rst:193
+#: ../../_api/airflow/contrib/operators/gcp_sql_operator/index.rst:269
+#: ../../_api/airflow/contrib/operators/gcp_sql_operator/index.rst:326
+#: ../../_api/airflow/contrib/operators/gcp_sql_operator/index.rst:379
+#: ../../_api/airflow/contrib/operators/gcp_sql_operator/index.rst:451
+#: ../../_api/airflow/contrib/operators/gcp_sql_operator/index.rst:519
+#: ../../_api/airflow/contrib/operators/gcp_sql_operator/index.rst:583
+#: ../../_api/airflow/contrib/operators/gcp_sql_operator/index.rst:668
+msgid "The connection ID used to connect to Google Cloud Platform."
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/gcp_sql_operator/index.rst:121
+#: ../../_api/airflow/contrib/operators/gcp_sql_operator/index.rst:195
+#: ../../_api/airflow/contrib/operators/gcp_sql_operator/index.rst:271
+#: ../../_api/airflow/contrib/operators/gcp_sql_operator/index.rst:328
+#: ../../_api/airflow/contrib/operators/gcp_sql_operator/index.rst:381
+#: ../../_api/airflow/contrib/operators/gcp_sql_operator/index.rst:453
+#: ../../_api/airflow/contrib/operators/gcp_sql_operator/index.rst:521
+#: ../../_api/airflow/contrib/operators/gcp_sql_operator/index.rst:585
+#: ../../_api/airflow/contrib/operators/gcp_sql_operator/index.rst:670
+msgid "API version used (e.g. v1beta4)."
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/gcp_sql_operator/index.rst:172
+#: ../../_api/airflow/contrib/operators/gcp_sql_operator/index.rst:244
+#: ../../_api/airflow/contrib/operators/gcp_sql_operator/index.rst:311
+#: ../../_api/airflow/contrib/operators/gcp_sql_operator/index.rst:361
+#: ../../_api/airflow/contrib/operators/gcp_sql_operator/index.rst:430
+#: ../../_api/airflow/contrib/operators/gcp_sql_operator/index.rst:502
+#: ../../_api/airflow/contrib/operators/gcp_sql_operator/index.rst:561
+#: ../../_api/airflow/contrib/operators/gcp_sql_operator/index.rst:634
+msgid "Bases::class:`airflow.contrib.operators.gcp_sql_operator.CloudSqlBaseOperator`"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/gcp_sql_operator/index.rst:176
+msgid ""
+"Creates a new Cloud SQL instance. If an instance with the same name "
+"exists, no action will be taken and the operator will succeed."
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/gcp_sql_operator/index.rst:181
+msgid ""
+"For more information on how to use this operator, take a look at the "
+"guide: :ref:`howto/operator:CloudSqlInstanceCreateOperator`"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/gcp_sql_operator/index.rst:184
+msgid ""
+"Body required by the Cloud SQL insert API, as described in "
+"https://cloud.google.com/sql/docs/mysql/admin-"
+"api/v1beta4/instances/insert #request-body"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/gcp_sql_operator/index.rst:190
+#: ../../_api/airflow/contrib/operators/gcp_sql_operator/index.rst:323
+#: ../../_api/airflow/contrib/operators/gcp_sql_operator/index.rst:376
+#: ../../_api/airflow/contrib/operators/gcp_sql_operator/index.rst:516
+#: ../../_api/airflow/contrib/operators/gcp_sql_operator/index.rst:580
+#: ../../_api/airflow/contrib/operators/gcp_sql_operator/index.rst:665
+msgid ""
+"Optional, Google Cloud Platform Project ID. If set to None or missing, "
+"the default project_id from the GCP connection is used."
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/gcp_sql_operator/index.rst:197
+msgid "True if body should be validated, False otherwise."
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/gcp_sql_operator/index.rst:248
+msgid "Updates settings of a Cloud SQL instance."
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/gcp_sql_operator/index.rst:250
+msgid ""
+"Caution: This is a partial update, so only included values for the "
+"settings will be updated."
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/gcp_sql_operator/index.rst:253
+msgid ""
+"In the request body, supply the relevant portions of an instance "
+"resource, according to the rules of patch semantics. "
+"https://cloud.google.com/sql/docs/mysql/admin-api/how-"
+"tos/performance#patch"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/gcp_sql_operator/index.rst:258
+msgid ""
+"For more information on how to use this operator, take a look at the "
+"guide: :ref:`howto/operator:CloudSqlInstancePatchOperator`"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/gcp_sql_operator/index.rst:261
+msgid ""
+"Body required by the Cloud SQL patch API, as described in "
+"https://cloud.google.com/sql/docs/mysql/admin-api/v1beta4/instances/patch"
+"#request-body"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/gcp_sql_operator/index.rst:266
+msgid ""
+"Optional, Google Cloud Platform Project ID.  If set to None or missing, "
+"the default project_id from the GCP connection is used."
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/gcp_sql_operator/index.rst:315
+msgid "Deletes a Cloud SQL instance."
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/gcp_sql_operator/index.rst:318
+msgid ""
+"For more information on how to use this operator, take a look at the "
+"guide: :ref:`howto/operator:CloudSqlInstanceDeleteOperator`"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/gcp_sql_operator/index.rst:365
+msgid "Creates a new database inside a Cloud SQL instance."
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/gcp_sql_operator/index.rst:368
+msgid ""
+"For more information on how to use this operator, take a look at the "
+"guide: :ref:`howto/operator:CloudSqlInstanceDatabaseCreateOperator`"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/gcp_sql_operator/index.rst:371
+#: ../../_api/airflow/contrib/operators/gcp_sql_operator/index.rst:442
+#: ../../_api/airflow/contrib/operators/gcp_sql_operator/index.rst:512
+msgid "Database instance ID. This does not include the project ID."
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/gcp_sql_operator/index.rst:373
+msgid ""
+"The request body, as described in https://cloud.google.com/sql/docs/mysql"
+"/admin-api/v1beta4/databases/insert#request-body"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/gcp_sql_operator/index.rst:383
+#: ../../_api/airflow/contrib/operators/gcp_sql_operator/index.rst:455
+#: ../../_api/airflow/contrib/operators/gcp_sql_operator/index.rst:587
+#: ../../_api/airflow/contrib/operators/gcp_sql_operator/index.rst:672
+msgid "Whether the body should be validated. Defaults to True."
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/gcp_sql_operator/index.rst:434
+msgid ""
+"Updates a resource containing information about a database inside a Cloud"
+" SQL instance using patch semantics. See: "
+"https://cloud.google.com/sql/docs/mysql/admin-api/how-"
+"tos/performance#patch"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/gcp_sql_operator/index.rst:439
+msgid ""
+"For more information on how to use this operator, take a look at the "
+"guide: :ref:`howto/operator:CloudSqlInstanceDatabasePatchOperator`"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/gcp_sql_operator/index.rst:444
+msgid "Name of the database to be updated in the instance."
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/gcp_sql_operator/index.rst:446
+msgid ""
+"The request body, as described in https://cloud.google.com/sql/docs/mysql"
+"/admin-api/v1beta4/databases/patch#request-body"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/gcp_sql_operator/index.rst:449
+msgid "Optional, Google Cloud Platform Project ID."
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/gcp_sql_operator/index.rst:506
+msgid "Deletes a database from a Cloud SQL instance."
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/gcp_sql_operator/index.rst:509
+msgid ""
+"For more information on how to use this operator, take a look at the "
+"guide: :ref:`howto/operator:CloudSqlInstanceDatabaseDeleteOperator`"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/gcp_sql_operator/index.rst:514
+msgid "Name of the database to be deleted in the instance."
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/gcp_sql_operator/index.rst:565
+msgid ""
+"Exports data from a Cloud SQL instance to a Cloud Storage bucket as a SQL"
+" dump or CSV file."
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/gcp_sql_operator/index.rst:568
+msgid ""
+"Note: This operator is idempotent. If executed multiple times with the "
+"same export file URI, the export file in GCS will simply be overridden."
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/gcp_sql_operator/index.rst:572
+#: ../../_api/airflow/contrib/operators/gcp_sql_operator/index.rst:657
+msgid ""
+"For more information on how to use this operator, take a look at the "
+"guide: :ref:`howto/operator:CloudSqlInstanceImportOperator`"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/gcp_sql_operator/index.rst:577
+#: ../../_api/airflow/contrib/operators/gcp_sql_operator/index.rst:662
+msgid ""
+"The request body, as described in https://cloud.google.com/sql/docs/mysql"
+"/admin-api/v1beta4/instances/export#request-body"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/gcp_sql_operator/index.rst:638
+msgid ""
+"Imports data into a Cloud SQL instance from a SQL dump or CSV file in "
+"Cloud Storage."
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/gcp_sql_operator/index.rst:640
+msgid "CSV IMPORT:"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/gcp_sql_operator/index.rst:642
+msgid ""
+"This operator is NOT idempotent for a CSV import. If the same file is "
+"imported multiple times, the imported data will be duplicated in the "
+"database. Moreover, if there are any unique constraints the duplicate "
+"import may result in an error."
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/gcp_sql_operator/index.rst:647
+msgid "SQL IMPORT:"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/gcp_sql_operator/index.rst:649
+msgid ""
+"This operator is idempotent for a SQL import if it was also exported by "
+"Cloud SQL. The exported SQL contains 'DROP TABLE IF EXISTS' statements "
+"for all tables to be imported."
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/gcp_sql_operator/index.rst:653
+msgid ""
+"If the import file was generated in a different way, idempotence is not "
+"guaranteed. It has to be ensured on the SQL file level."
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/gcp_sql_operator/index.rst:723
+msgid ""
+"Performs DML or DDL query on an existing Cloud Sql instance. It "
+"optionally uses cloud-sql-proxy to establish secure connection with the "
+"database."
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/gcp_sql_operator/index.rst:727
+msgid ""
+"For more information on how to use this operator, take a look at the "
+"guide: :ref:`howto/operator:CloudSqlQueryOperator`"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/gcp_sql_operator/index.rst:730
+msgid ""
+"SQL query or list of queries to run (should be DML or DDL query - this "
+"operator does not return any data from the database, so it is useless to "
+"pass it DQL queries. Note that it is responsibility of the author of the "
+"queries to make sure that the queries are idempotent. For example you can"
+" use CREATE TABLE IF NOT EXISTS to create a table."
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/gcp_sql_operator/index.rst:736
+msgid "(optional) the parameters to render the SQL query with."
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/gcp_sql_operator/index.rst:738
+msgid "if True, each command is automatically committed. (default value: False)"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/gcp_sql_operator/index.rst:741
+msgid ""
+"The connection ID used to connect to Google Cloud Platform for cloud-sql-"
+"proxy authentication."
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/gcp_sql_operator/index.rst:744
+msgid ""
+"The connection ID used to connect to Google Cloud SQL its schema should "
+"be gcpcloudsql://. See "
+":class:`~airflow.contrib.hooks.gcp_sql_hook.CloudSqlDatabaseHook` for "
+"details on how to define gcpcloudsql:// connection."
+msgstr ""
+

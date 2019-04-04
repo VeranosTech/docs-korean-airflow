@@ -1,0 +1,205 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C)
+# This file is distributed under the same license as the Airflow package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Airflow 1.10.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-04-03 17:47+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../_api/airflow/contrib/operators/gcs_to_bq/index.rst:4
+msgid ":mod:`airflow.contrib.operators.gcs_to_bq`"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/gcs_to_bq/index.rst:15
+msgid "Module Contents"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/gcs_to_bq/index.rst:24
+msgid "Bases::class:`airflow.models.BaseOperator`"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/gcs_to_bq/index.rst:28
+msgid "Loads files from Google cloud storage into BigQuery."
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/gcs_to_bq/index.rst:30
+msgid ""
+"The schema to be used for the BigQuery table may be specified in one of "
+"two ways. You may either directly pass the schema fields in, or you may "
+"point the operator to a Google cloud storage object name. The object in "
+"Google cloud storage must be a JSON file with the schema fields in it."
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/gcs_to_bq/index.rst:36
+msgid ""
+"For more information on how to use this operator, take a look at the "
+"guide: :ref:`howto/operator:GoogleCloudStorageToBigQueryOperator`"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/gcs_to_bq/index.rst
+msgid "Parameters"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/gcs_to_bq/index.rst:39
+msgid "The bucket to load from. (templated)"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/gcs_to_bq/index.rst:41
+msgid ""
+"List of Google cloud storage URIs to load from. (templated) If "
+"source_format is 'DATASTORE_BACKUP', the list must only contain a single "
+"URI."
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/gcs_to_bq/index.rst:44
+msgid ""
+"The dotted ``(<project>.|<project>:)<dataset>.<table>`` BigQuery table to"
+" load data into. If ``<project>`` is not included, project will be the "
+"project defined in the connection json. (templated)"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/gcs_to_bq/index.rst:49
+msgid ""
+"If set, the schema field list as defined here: "
+"https://cloud.google.com/bigquery/docs/reference/v2/jobs#configuration.load"
+" Should not be set when source_format is 'DATASTORE_BACKUP'."
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/gcs_to_bq/index.rst:53
+msgid ""
+"If set, a GCS object path pointing to a .json file that contains the "
+"schema for the table. (templated)"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/gcs_to_bq/index.rst:56
+msgid "File format to export."
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/gcs_to_bq/index.rst:58
+msgid ""
+"[Optional] The compression type of the data source. Possible values "
+"include GZIP and NONE. The default value is NONE. This setting is ignored"
+" for Google Cloud Bigtable, Google Cloud Datastore backups and Avro "
+"formats."
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/gcs_to_bq/index.rst:64
+msgid "The create disposition if the table doesn't exist."
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/gcs_to_bq/index.rst:66
+msgid "Number of rows to skip when loading from a CSV."
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/gcs_to_bq/index.rst:68
+msgid "The write disposition if the table already exists."
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/gcs_to_bq/index.rst:70
+msgid "The delimiter to use when loading from a CSV."
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/gcs_to_bq/index.rst:72
+msgid ""
+"The maximum number of bad records that BigQuery can ignore when running "
+"the job."
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/gcs_to_bq/index.rst:75
+msgid "The value that is used to quote data sections in a CSV file."
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/gcs_to_bq/index.rst:77
+msgid ""
+"[Optional] Indicates if BigQuery should allow extra values that are not "
+"represented in the table schema. If true, the extra values are ignored. "
+"If false, records with extra columns are treated as bad records, and if "
+"there are too many bad records, an invalid error is returned in the job "
+"result."
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/gcs_to_bq/index.rst:83
+msgid "Whether to allow quoted newlines (true) or not (false)."
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/gcs_to_bq/index.rst:85
+msgid ""
+"Accept rows that are missing trailing optional columns. The missing "
+"values are treated as nulls. If false, records with missing trailing "
+"columns are treated as bad records, and if there are too many bad "
+"records, an invalid error is returned in the job result. Only applicable "
+"to CSV, ignored for other formats."
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/gcs_to_bq/index.rst:91
+msgid ""
+"If set, the name of a column in the BigQuery table that's to be loaded. "
+"This will be used to select the MAX value from BigQuery after the load "
+"occurs. The results will be returned by the execute() command, which in "
+"turn gets stored in XCom for future operators to use. This can be helpful"
+" with incremental loads--during future executions, you can pick up from "
+"the max ID."
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/gcs_to_bq/index.rst:98
+msgid "Reference to a specific BigQuery hook."
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/gcs_to_bq/index.rst:100
+msgid "Reference to a specific Google cloud storage hook."
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/gcs_to_bq/index.rst:103
+msgid ""
+"The account to impersonate, if any. For this to work, the service account"
+" making the request must have domain-wide delegation enabled."
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/gcs_to_bq/index.rst:107
+msgid ""
+"Allows the schema of the destination table to be updated as a side effect"
+" of the load job."
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/gcs_to_bq/index.rst:110
+msgid "configure optional fields specific to the source format"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/gcs_to_bq/index.rst:112
+msgid ""
+"Flag to specify if the destination table should be a BigQuery external "
+"table. Default Value is False."
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/gcs_to_bq/index.rst:115
+msgid ""
+"configure optional time partitioning fields i.e. partition by field, type"
+" and  expiration as per API specifications. Note that 'field' is not "
+"available in concurrency with dataset.table$partition."
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/gcs_to_bq/index.rst:120
+msgid ""
+"Request that the result of this load be stored sorted by one or more "
+"columns. This is only available in conjunction with time_partitioning. "
+"The order of columns given determines the sort order. Not applicable for "
+"external tables."
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/gcs_to_bq/index.rst:125
+msgid ""
+"[Optional] Indicates if we should automatically infer the options and "
+"schema for CSV and JSON sources. (Default: ``False``)"
+msgstr ""
+

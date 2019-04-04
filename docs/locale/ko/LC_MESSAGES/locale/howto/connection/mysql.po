@@ -1,0 +1,130 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C)
+# This file is distributed under the same license as the Airflow package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Airflow 1.10.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-04-03 17:47+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../howto/connection/mysql.rst:19
+msgid "MySQL Connection"
+msgstr ""
+
+#: ../../howto/connection/mysql.rst:20
+msgid "The MySQL connection type provides connection to a MySQL database."
+msgstr ""
+
+#: ../../howto/connection/mysql.rst:23
+msgid "Configuring the Connection"
+msgstr ""
+
+#: ../../howto/connection/mysql.rst:25
+msgid "Host (required)"
+msgstr ""
+
+#: ../../howto/connection/mysql.rst:25
+msgid "The host to connect to."
+msgstr ""
+
+#: ../../howto/connection/mysql.rst:28
+msgid "Schema (optional)"
+msgstr ""
+
+#: ../../howto/connection/mysql.rst:28
+msgid "Specify the schema name to be used in the database."
+msgstr ""
+
+#: ../../howto/connection/mysql.rst:31
+msgid "Login (required)"
+msgstr ""
+
+#: ../../howto/connection/mysql.rst:31
+msgid "Specify the user name to connect."
+msgstr ""
+
+#: ../../howto/connection/mysql.rst:34
+msgid "Password (required)"
+msgstr ""
+
+#: ../../howto/connection/mysql.rst:34
+msgid "Specify the password to connect."
+msgstr ""
+
+#: ../../howto/connection/mysql.rst:93
+msgid "Extra (optional)"
+msgstr ""
+
+#: ../../howto/connection/mysql.rst:37
+msgid ""
+"Specify the extra parameters (as json dictionary) that can be used in "
+"MySQL connection. The following parameters are supported:"
+msgstr ""
+
+#: ../../howto/connection/mysql.rst:40
+msgid "**charset**: specify charset of the connection"
+msgstr ""
+
+#: ../../howto/connection/mysql.rst:41
+msgid ""
+"**cursor**: one of \"sscursor\", \"dictcursor, \"ssdictcursor\" . "
+"Specifies cursor class to be used"
+msgstr ""
+
+#: ../../howto/connection/mysql.rst:43
+msgid ""
+"**local_infile**: controls MySQL's LOCAL capability (permitting local "
+"data loading by clients). See `MySQLdb docs "
+"<https://mysqlclient.readthedocs.io/user_guide.html>`_ for details."
+msgstr ""
+
+#: ../../howto/connection/mysql.rst:46
+msgid "**unix_socket**: UNIX socket used instead of the default socket."
+msgstr ""
+
+#: ../../howto/connection/mysql.rst:47
+msgid ""
+"**ssl**: Dictionary of SSL parameters that control connecting using SSL. "
+"Those parameters are server specific and should contain \"ca\", \"cert\","
+" \"key\", \"capath\", \"cipher\" parameters. See `MySQLdb docs "
+"<https://mysqlclient.readthedocs.io/user_guide.html>`_ for details. Note "
+"that to be useful in URL notation, this parameter might also be a string "
+"where the SSL dictionary is a string-encoded JSON dictionary."
+msgstr ""
+
+#: ../../howto/connection/mysql.rst:54
+msgid "Example \"extras\" field:"
+msgstr ""
+
+#: ../../howto/connection/mysql.rst:70
+msgid "or"
+msgstr ""
+
+#: ../../howto/connection/mysql.rst:82
+msgid ""
+"When specifying the connection as URI (in AIRFLOW_CONN_* variable) you "
+"should specify it following the standard syntax of DB connections - where"
+" extras are passed as parameters of the URI. Note that all components of "
+"the URI should be URL-encoded."
+msgstr ""
+
+#: ../../howto/connection/mysql.rst:86
+msgid "For example:"
+msgstr ""
+
+#: ../../howto/connection/mysql.rst:93
+msgid ""
+"If encounter UnicodeDecodeError while working with MySQL connection, "
+"check the charset defined is matched to the database charset."
+msgstr ""
+

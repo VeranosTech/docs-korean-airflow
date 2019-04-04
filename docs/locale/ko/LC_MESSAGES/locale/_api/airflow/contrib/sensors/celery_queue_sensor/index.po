@@ -1,0 +1,73 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C)
+# This file is distributed under the same license as the Airflow package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Airflow 1.10.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-04-03 17:47+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../_api/airflow/contrib/sensors/celery_queue_sensor/index.rst:4
+msgid ":mod:`airflow.contrib.sensors.celery_queue_sensor`"
+msgstr ""
+
+#: ../../_api/airflow/contrib/sensors/celery_queue_sensor/index.rst:15
+msgid "Module Contents"
+msgstr ""
+
+#: ../../_api/airflow/contrib/sensors/celery_queue_sensor/index.rst:24
+msgid "Bases::class:`airflow.sensors.base_sensor_operator.BaseSensorOperator`"
+msgstr ""
+
+#: ../../_api/airflow/contrib/sensors/celery_queue_sensor/index.rst:28
+msgid ""
+"Waits for a Celery queue to be empty. By default, in order to be "
+"considered empty, the queue must not have any tasks in the ``reserved``, "
+"``scheduled`` or ``active`` states."
+msgstr ""
+
+#: ../../_api/airflow/contrib/sensors/celery_queue_sensor/index.rst
+msgid "Parameters"
+msgstr ""
+
+#: ../../_api/airflow/contrib/sensors/celery_queue_sensor/index.rst:32
+msgid "The name of the Celery queue to wait for."
+msgstr ""
+
+#: ../../_api/airflow/contrib/sensors/celery_queue_sensor/index.rst:34
+msgid "Task id for checking"
+msgstr ""
+
+#: ../../_api/airflow/contrib/sensors/celery_queue_sensor/index.rst:46
+msgid ""
+"Gets the returned Celery result from the Airflow task ID provided to the "
+"sensor, and returns True if the celery result has been finished "
+"execution."
+msgstr ""
+
+#: ../../_api/airflow/contrib/sensors/celery_queue_sensor/index.rst:50
+msgid "Airflow's execution context"
+msgstr ""
+
+#: ../../_api/airflow/contrib/sensors/celery_queue_sensor/index.rst
+msgid "Returns"
+msgstr ""
+
+#: ../../_api/airflow/contrib/sensors/celery_queue_sensor/index.rst:52
+msgid "True if task has been executed, otherwise False"
+msgstr ""
+
+#: ../../_api/airflow/contrib/sensors/celery_queue_sensor/index.rst
+msgid "Return type"
+msgstr ""
+

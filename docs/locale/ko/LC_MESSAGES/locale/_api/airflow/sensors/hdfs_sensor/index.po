@@ -1,0 +1,85 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C)
+# This file is distributed under the same license as the Airflow package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Airflow 1.10.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-04-03 17:47+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../_api/airflow/sensors/hdfs_sensor/index.rst:4
+msgid ":mod:`airflow.sensors.hdfs_sensor`"
+msgstr ""
+
+#: ../../_api/airflow/sensors/hdfs_sensor/index.rst:15
+msgid "Module Contents"
+msgstr ""
+
+#: ../../_api/airflow/sensors/hdfs_sensor/index.rst:24
+msgid "Bases::class:`airflow.sensors.base_sensor_operator.BaseSensorOperator`"
+msgstr ""
+
+#: ../../_api/airflow/sensors/hdfs_sensor/index.rst:28
+msgid "Waits for a file or folder to land in HDFS"
+msgstr ""
+
+#: ../../_api/airflow/sensors/hdfs_sensor/index.rst:59
+msgid ""
+"Will test the filepath result and test if its size is at least "
+"self.filesize"
+msgstr ""
+
+#: ../../_api/airflow/sensors/hdfs_sensor/index.rst
+msgid "Parameters"
+msgstr ""
+
+#: ../../_api/airflow/sensors/hdfs_sensor/index.rst:61
+msgid "a list of dicts returned by Snakebite ls"
+msgstr ""
+
+#: ../../_api/airflow/sensors/hdfs_sensor/index.rst:62
+msgid "the file size in MB a file should be at least to trigger True"
+msgstr ""
+
+#: ../../_api/airflow/sensors/hdfs_sensor/index.rst
+msgid "Returns"
+msgstr ""
+
+#: ../../_api/airflow/sensors/hdfs_sensor/index.rst:63
+msgid "(bool) depending on the matching criteria"
+msgstr ""
+
+#: ../../_api/airflow/sensors/hdfs_sensor/index.rst:72
+msgid "Will filter if instructed to do so the result to remove matching criteria"
+msgstr ""
+
+#: ../../_api/airflow/sensors/hdfs_sensor/index.rst:74
+msgid "list of dicts returned by Snakebite ls"
+msgstr ""
+
+#: ../../_api/airflow/sensors/hdfs_sensor/index.rst:76
+msgid "list of ignored extensions"
+msgstr ""
+
+#: ../../_api/airflow/sensors/hdfs_sensor/index.rst:78
+msgid "shall we ignore ?"
+msgstr ""
+
+#: ../../_api/airflow/sensors/hdfs_sensor/index.rst:80
+msgid "list of dicts which were not removed"
+msgstr ""
+
+#: ../../_api/airflow/sensors/hdfs_sensor/index.rst
+msgid "Return type"
+msgstr ""
+

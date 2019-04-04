@@ -1,0 +1,92 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C)
+# This file is distributed under the same license as the Airflow package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Airflow 1.10.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-04-03 17:47+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../_api/airflow/contrib/operators/cassandra_to_gcs/index.rst:4
+msgid ":mod:`airflow.contrib.operators.cassandra_to_gcs`"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/cassandra_to_gcs/index.rst:15
+msgid "Module Contents"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/cassandra_to_gcs/index.rst:24
+msgid "Bases::class:`airflow.models.BaseOperator`"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/cassandra_to_gcs/index.rst:28
+msgid "Copy data from Cassandra to Google cloud storage in JSON format"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/cassandra_to_gcs/index.rst:30
+msgid "Note: Arrays of arrays are not supported."
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/cassandra_to_gcs/index.rst:88
+msgid "Queries cassandra and returns a cursor to the results."
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/cassandra_to_gcs/index.rst:97
+msgid "Takes a cursor, and writes results to a local file."
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/cassandra_to_gcs/index.rst
+msgid "Returns"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/cassandra_to_gcs/index.rst:99
+msgid ""
+"A dictionary where keys are filenames to be used as object names in GCS, "
+"and values are file handles to local files that contain the data for the "
+"GCS objects."
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/cassandra_to_gcs/index.rst:110
+msgid ""
+"Takes a cursor, and writes the BigQuery schema for the results to a local"
+" file system."
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/cassandra_to_gcs/index.rst:113
+msgid ""
+"A dictionary where key is a filename to be used as an object name in GCS,"
+" and values are file handles to local files that contains the BigQuery "
+"schema fields in .json format."
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/cassandra_to_gcs/index.rst:152
+msgid ""
+"Converts a user type to RECORD that contains n fields, where n is the "
+"number of attributes. Each element in the user type class will be "
+"converted to its corresponding data type in BQ."
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/cassandra_to_gcs/index.rst:163
+msgid ""
+"Converts a tuple to RECORD that contains n fields, each will be converted"
+" to its corresponding data type in bq and will be named 'field_<index>', "
+"where index is determined by the order of the tuple elements defined in "
+"cassandra."
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/cassandra_to_gcs/index.rst:174
+msgid ""
+"Converts a map to a repeated RECORD that contains two fields: 'key' and "
+"'value', each will be converted to its corresponding data type in BQ."
+msgstr ""
+

@@ -1,0 +1,65 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C)
+# This file is distributed under the same license as the Airflow package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Airflow 1.10.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-04-03 17:47+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../howto/operator/gcp/translate.rst:19
+msgid "Google Cloud Translate Operators"
+msgstr ""
+
+#: ../../howto/operator/gcp/translate.rst:28
+msgid "CloudTranslateTextOperator"
+msgstr ""
+
+#: ../../howto/operator/gcp/translate.rst:30
+msgid "Translate a string or list of strings."
+msgstr ""
+
+#: ../../howto/operator/gcp/translate.rst:32
+msgid ""
+"For parameter definition, take a look at "
+":class:`~airflow.contrib.operators.gcp_translate_operator.CloudTranslateTextOperator`"
+msgstr ""
+
+#: ../../howto/operator/gcp/translate.rst:36
+msgid "Using the operator"
+msgstr ""
+
+#: ../../howto/operator/gcp/translate.rst:38
+msgid "Basic usage of the operator:"
+msgstr ""
+
+#: ../../howto/operator/gcp/translate.rst:46
+msgid ""
+"The result of translation is available as dictionary or array of "
+"dictionaries accessible via the usual XCom mechanisms of Airflow:"
+msgstr ""
+
+#: ../../howto/operator/gcp/translate.rst:57
+msgid "Templating"
+msgstr ""
+
+#: ../../howto/operator/gcp/translate.rst:66
+msgid "More information"
+msgstr ""
+
+#: ../../howto/operator/gcp/translate.rst:68
+msgid ""
+"See `Google Cloud Translate documentation "
+"<https://cloud.google.com/translate/docs/translating-text>`_."
+msgstr ""
+

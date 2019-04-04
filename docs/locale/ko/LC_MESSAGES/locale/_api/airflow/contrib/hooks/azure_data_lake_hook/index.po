@@ -1,0 +1,146 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C)
+# This file is distributed under the same license as the Airflow package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Airflow 1.10.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-04-03 17:47+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../_api/airflow/contrib/hooks/azure_data_lake_hook/index.rst:4
+msgid ":mod:`airflow.contrib.hooks.azure_data_lake_hook`"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/azure_data_lake_hook/index.rst:15
+msgid "Module Contents"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/azure_data_lake_hook/index.rst:24
+msgid "Bases::class:`airflow.hooks.base_hook.BaseHook`"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/azure_data_lake_hook/index.rst:28
+msgid "Interacts with Azure Data Lake."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/azure_data_lake_hook/index.rst:30
+msgid ""
+"Client ID and client secret should be in user and password parameters. "
+"Tenant and account name should be extra field as {\"tenant\": "
+"\"<TENANT>\", \"account_name\": \"ACCOUNT_NAME\"}."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/azure_data_lake_hook/index.rst
+msgid "Parameters"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/azure_data_lake_hook/index.rst:34
+msgid "Reference to the Azure Data Lake connection."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/azure_data_lake_hook/index.rst:46
+msgid "Return a AzureDLFileSystem object."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/azure_data_lake_hook/index.rst:55
+msgid "Check if a file exists on Azure Data Lake."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/azure_data_lake_hook/index.rst:57
+msgid "Path and name of the file."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/azure_data_lake_hook/index.rst
+msgid "Returns"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/azure_data_lake_hook/index.rst:59
+msgid "True if the file exists, False otherwise."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/azure_data_lake_hook/index.rst
+msgid "Return type"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/azure_data_lake_hook/index.rst:69
+msgid "Upload a file to Azure Data Lake."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/azure_data_lake_hook/index.rst:71
+msgid ""
+"local path. Can be single file, directory (in which case, upload "
+"recursively) or glob pattern. Recursive glob patterns using `**` are not "
+"supported."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/azure_data_lake_hook/index.rst:75
+msgid ""
+"Remote path to upload to; if multiple files, this is the directory root "
+"to write within."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/azure_data_lake_hook/index.rst:78
+#: ../../_api/airflow/contrib/hooks/azure_data_lake_hook/index.rst:111
+msgid "Number of threads to use. If None, uses the number of cores."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/azure_data_lake_hook/index.rst:80
+#: ../../_api/airflow/contrib/hooks/azure_data_lake_hook/index.rst:113
+msgid ""
+"Whether to forcibly overwrite existing files/directories. If False and "
+"remote path is a directory, will quit regardless if any files would be "
+"overwritten or not. If True, only matching filenames are actually "
+"overwritten."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/azure_data_lake_hook/index.rst:85
+#: ../../_api/airflow/contrib/hooks/azure_data_lake_hook/index.rst:118
+msgid ""
+"int [2**22] Number of bytes for internal buffer. This block cannot be "
+"bigger than a chunk and cannot be smaller than a block."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/azure_data_lake_hook/index.rst:89
+#: ../../_api/airflow/contrib/hooks/azure_data_lake_hook/index.rst:122
+msgid ""
+"int [2**22] Number of bytes for a block. Within each chunk, we write a "
+"smaller block for each API call. This block cannot be bigger than a "
+"chunk."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/azure_data_lake_hook/index.rst:101
+msgid "Download a file from Azure Blob Storage."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/azure_data_lake_hook/index.rst:103
+msgid ""
+"local path. If downloading a single file, will write to this specific "
+"file, unless it is an existing directory, in which case a file is created"
+" within it. If downloading multiple files, this is the root directory to "
+"write within. Will create directories as required."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/azure_data_lake_hook/index.rst:108
+msgid ""
+"remote path/globstring to use to find remote files. Recursive glob "
+"patterns using `**` are not supported."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/azure_data_lake_hook/index.rst:134
+msgid "List files in Azure Data Lake Storage"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/azure_data_lake_hook/index.rst:136
+msgid "full path/globstring to use to list files in ADLS"
+msgstr ""
+

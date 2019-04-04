@@ -1,0 +1,171 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C)
+# This file is distributed under the same license as the Airflow package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Airflow 1.10.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-04-03 17:47+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../_api/airflow/contrib/hooks/gcp_function_hook/index.rst:4
+msgid ":mod:`airflow.contrib.hooks.gcp_function_hook`"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/gcp_function_hook/index.rst:15
+msgid "Module Contents"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/gcp_function_hook/index.rst:48
+msgid "Bases::class:`airflow.contrib.hooks.gcp_api_base_hook.GoogleCloudBaseHook`"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/gcp_function_hook/index.rst:52
+msgid "Hook for the Google Cloud Functions APIs."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/gcp_function_hook/index.rst:54
+msgid ""
+"All the methods in the hook where project_id is used must be called with "
+"keyword arguments rather than positional."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/gcp_function_hook/index.rst:76
+msgid ""
+"Retrieve full location of the function in the form of "
+"projects/<GCP_PROJECT_ID>/locations/<GCP_LOCATION>"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/gcp_function_hook/index.rst
+msgid "Parameters"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/gcp_function_hook/index.rst:79
+msgid "The Google Cloud Project project_id where the function belongs."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/gcp_function_hook/index.rst:81
+#: ../../_api/airflow/contrib/hooks/gcp_function_hook/index.rst:155
+msgid "The location where the function is created."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/gcp_function_hook/index.rst
+msgid "Returns"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/gcp_function_hook/index.rst:92
+msgid "Retrieves the connection to Cloud Functions."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/gcp_function_hook/index.rst:94
+msgid "Google Cloud Function services object."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/gcp_function_hook/index.rst
+msgid "Return type"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/gcp_function_hook/index.rst:104
+msgid "Returns the Cloud Function with the given name."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/gcp_function_hook/index.rst:106
+msgid "Name of the function."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/gcp_function_hook/index.rst:108
+msgid "A Cloud Functions object representing the function."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/gcp_function_hook/index.rst:118
+msgid ""
+"Creates a new function in Cloud Function in the location specified in the"
+" body."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/gcp_function_hook/index.rst:120
+msgid "The location of the function."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/gcp_function_hook/index.rst:122
+msgid "The body required by the Cloud Functions insert API."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/gcp_function_hook/index.rst:124
+#: ../../_api/airflow/contrib/hooks/gcp_function_hook/index.rst:159
+msgid ""
+"Optional, Google Cloud Project project_id where the function belongs. If "
+"set to None or missing, the default project_id from the GCP connection is"
+" used."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/gcp_function_hook/index.rst:127
+#: ../../_api/airflow/contrib/hooks/gcp_function_hook/index.rst:144
+#: ../../_api/airflow/contrib/hooks/gcp_function_hook/index.rst:175
+msgid "None"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/gcp_function_hook/index.rst:136
+msgid "Updates Cloud Functions according to the specified update mask."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/gcp_function_hook/index.rst:138
+#: ../../_api/airflow/contrib/hooks/gcp_function_hook/index.rst:173
+msgid "The name of the function."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/gcp_function_hook/index.rst:140
+msgid "The body required by the cloud function patch API."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/gcp_function_hook/index.rst:142
+msgid "The update mask - array of fields that should be patched."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/gcp_function_hook/index.rst:153
+msgid "Uploads zip file with sources."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/gcp_function_hook/index.rst:157
+msgid "The path of the valid .zip file to upload."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/gcp_function_hook/index.rst:162
+msgid "The upload URL that was returned by generateUploadUrl method."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/gcp_function_hook/index.rst:171
+msgid "Deletes the specified Cloud Function."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/gcp_function_hook/index.rst:184
+msgid ""
+"Waits for the named operation to complete - checks status of the "
+"asynchronous call."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/gcp_function_hook/index.rst:187
+msgid "The name of the operation."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/gcp_function_hook/index.rst:189
+msgid "The response returned by the operation."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/gcp_function_hook/index.rst
+msgid "exception"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/gcp_function_hook/index.rst:191
+msgid "AirflowException in case error is returned."
+msgstr ""
+

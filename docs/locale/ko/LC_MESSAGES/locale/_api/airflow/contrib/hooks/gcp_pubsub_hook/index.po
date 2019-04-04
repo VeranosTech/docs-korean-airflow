@@ -1,0 +1,216 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C)
+# This file is distributed under the same license as the Airflow package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Airflow 1.10.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-04-03 17:47+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../_api/airflow/contrib/hooks/gcp_pubsub_hook/index.rst:4
+msgid ":mod:`airflow.contrib.hooks.gcp_pubsub_hook`"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/gcp_pubsub_hook/index.rst:15
+msgid "Module Contents"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/gcp_pubsub_hook/index.rst:46
+msgid "Bases::class:`Exception`"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/gcp_pubsub_hook/index.rst:59
+msgid "Bases::class:`airflow.contrib.hooks.gcp_api_base_hook.GoogleCloudBaseHook`"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/gcp_pubsub_hook/index.rst:63
+msgid "Hook for accessing Google Pub/Sub."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/gcp_pubsub_hook/index.rst:65
+msgid ""
+"The GCP project against which actions are applied is determined by the "
+"project embedded in the Connection referenced by gcp_conn_id."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/gcp_pubsub_hook/index.rst:77
+msgid "Returns a Pub/Sub service object."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/gcp_pubsub_hook/index.rst
+msgid "Return type"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/gcp_pubsub_hook/index.rst:88
+msgid "Publishes messages to a Pub/Sub topic."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/gcp_pubsub_hook/index.rst
+msgid "Parameters"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/gcp_pubsub_hook/index.rst:90
+msgid "the GCP project ID in which to publish"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/gcp_pubsub_hook/index.rst:92
+msgid ""
+"the Pub/Sub topic to which to publish; do not include the "
+"``projects/{project}/topics/`` prefix."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/gcp_pubsub_hook/index.rst:95
+msgid ""
+"messages to publish; if the data field in a message is set, it should "
+"already be base64 encoded."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/gcp_pubsub_hook/index.rst:107
+msgid "Creates a Pub/Sub topic, if it does not already exist."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/gcp_pubsub_hook/index.rst:109
+msgid "the GCP project ID in which to create the topic"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/gcp_pubsub_hook/index.rst:112
+msgid ""
+"the Pub/Sub topic name to create; do not include the "
+"``projects/{project}/topics/`` prefix."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/gcp_pubsub_hook/index.rst:115
+#: ../../_api/airflow/contrib/hooks/gcp_pubsub_hook/index.rst:162
+msgid "if set, raise an exception if the topic already exists"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/gcp_pubsub_hook/index.rst:126
+msgid "Deletes a Pub/Sub topic if it exists."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/gcp_pubsub_hook/index.rst:128
+msgid "the GCP project ID in which to delete the topic"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/gcp_pubsub_hook/index.rst:130
+msgid ""
+"the Pub/Sub topic name to delete; do not include the "
+"``projects/{project}/topics/`` prefix."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/gcp_pubsub_hook/index.rst:133
+#: ../../_api/airflow/contrib/hooks/gcp_pubsub_hook/index.rst:183
+msgid "if set, raise an exception if the topic does not exist"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/gcp_pubsub_hook/index.rst:144
+msgid "Creates a Pub/Sub subscription, if it does not already exist."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/gcp_pubsub_hook/index.rst:146
+msgid "the GCP project ID of the topic that the subscription will be bound to."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/gcp_pubsub_hook/index.rst:149
+msgid ""
+"the Pub/Sub topic name that the subscription will be bound to create; do "
+"not include the ``projects/{project}/subscriptions/`` prefix."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/gcp_pubsub_hook/index.rst:153
+msgid ""
+"the Pub/Sub subscription name. If empty, a random name will be generated "
+"using the uuid module"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/gcp_pubsub_hook/index.rst:156
+msgid ""
+"the GCP project ID where the subscription will be created. If "
+"unspecified, ``topic_project`` will be used."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/gcp_pubsub_hook/index.rst:159
+msgid ""
+"Number of seconds that a subscriber has to acknowledge each message "
+"pulled from the subscription"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/gcp_pubsub_hook/index.rst
+msgid "Returns"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/gcp_pubsub_hook/index.rst:165
+msgid ""
+"subscription name which will be the system-generated value if the "
+"``subscription`` parameter is not supplied"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/gcp_pubsub_hook/index.rst:176
+msgid "Deletes a Pub/Sub subscription, if it exists."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/gcp_pubsub_hook/index.rst:178
+#: ../../_api/airflow/contrib/hooks/gcp_pubsub_hook/index.rst:196
+msgid "the GCP project ID where the subscription exists"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/gcp_pubsub_hook/index.rst:180
+msgid ""
+"the Pub/Sub subscription name to delete; do not include the "
+"``projects/{project}/subscriptions/`` prefix."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/gcp_pubsub_hook/index.rst:194
+#: ../../_api/airflow/contrib/hooks/gcp_pubsub_hook/index.rst:220
+msgid "Pulls up to ``max_messages`` messages from Pub/Sub subscription."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/gcp_pubsub_hook/index.rst:198
+msgid ""
+"the Pub/Sub subscription name to pull from; do not include the "
+"'projects/{project}/topics/' prefix."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/gcp_pubsub_hook/index.rst:201
+msgid "The maximum number of messages to return from the Pub/Sub API."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/gcp_pubsub_hook/index.rst:204
+msgid ""
+"If set, the Pub/Sub API will immediately return if no messages are "
+"available. Otherwise, the request will block for an undisclosed, but "
+"bounded period of time"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/gcp_pubsub_hook/index.rst:208
+msgid ""
+"A list of Pub/Sub ReceivedMessage objects each containing an ``ackId`` "
+"property and a ``message`` property, which includes the base64-encoded "
+"message content. See "
+"https://cloud.google.com/pubsub/docs/reference/rest/v1/projects.subscriptions/pull#ReceivedMessage"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/gcp_pubsub_hook/index.rst:222
+msgid "the GCP project name or ID in which to create the topic"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/gcp_pubsub_hook/index.rst:225
+msgid ""
+"the Pub/Sub subscription name to delete; do not include the "
+"'projects/{project}/topics/' prefix."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/gcp_pubsub_hook/index.rst:228
+msgid "List of ReceivedMessage ackIds from a previous pull response"
+msgstr ""
+

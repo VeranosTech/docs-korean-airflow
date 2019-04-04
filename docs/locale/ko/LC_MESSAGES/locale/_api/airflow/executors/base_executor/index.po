@@ -1,0 +1,92 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C)
+# This file is distributed under the same license as the Airflow package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Airflow 1.10.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-04-03 17:47+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../_api/airflow/executors/base_executor/index.rst:4
+msgid ":mod:`airflow.executors.base_executor`"
+msgstr ""
+
+#: ../../_api/airflow/executors/base_executor/index.rst:15
+msgid "Module Contents"
+msgstr ""
+
+#: ../../_api/airflow/executors/base_executor/index.rst:36
+msgid "Bases::class:`airflow.utils.log.logging_mixin.LoggingMixin`"
+msgstr ""
+
+#: ../../_api/airflow/executors/base_executor/index.rst:47
+msgid ""
+"Executors may need to get things started. For example LocalExecutor "
+"starts N workers."
+msgstr ""
+
+#: ../../_api/airflow/executors/base_executor/index.rst:71
+msgid "Checks if a task is either queued or running in this executor"
+msgstr ""
+
+#: ../../_api/airflow/executors/base_executor/index.rst
+msgid "Parameters"
+msgstr ""
+
+#: ../../_api/airflow/executors/base_executor/index.rst:73
+msgid "TaskInstance"
+msgstr ""
+
+#: ../../_api/airflow/executors/base_executor/index.rst
+msgid "Returns"
+msgstr ""
+
+#: ../../_api/airflow/executors/base_executor/index.rst:74
+msgid "True if the task is known to this executor"
+msgstr ""
+
+#: ../../_api/airflow/executors/base_executor/index.rst:83
+msgid ""
+"Sync will get called periodically by the heartbeat method. Executors "
+"should override this to perform gather statuses."
+msgstr ""
+
+#: ../../_api/airflow/executors/base_executor/index.rst:121
+msgid ""
+"Returns and flush the event buffer. In case dag_ids is specified it will "
+"only return and flush events for the given dag_ids. Otherwise it returns "
+"and flushes all"
+msgstr ""
+
+#: ../../_api/airflow/executors/base_executor/index.rst:125
+msgid "to dag_ids to return events for, if None returns all"
+msgstr ""
+
+#: ../../_api/airflow/executors/base_executor/index.rst:126
+msgid "a dict of events"
+msgstr ""
+
+#: ../../_api/airflow/executors/base_executor/index.rst:135
+msgid "This method will execute the command asynchronously."
+msgstr ""
+
+#: ../../_api/airflow/executors/base_executor/index.rst:144
+msgid ""
+"This method is called when the caller is done submitting job and wants to"
+" wait synchronously for the job submitted previously to be all done."
+msgstr ""
+
+#: ../../_api/airflow/executors/base_executor/index.rst:155
+msgid "This method is called when the daemon receives a SIGTERM"
+msgstr ""
+

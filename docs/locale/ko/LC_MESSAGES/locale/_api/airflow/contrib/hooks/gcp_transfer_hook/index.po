@@ -1,0 +1,249 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C)
+# This file is distributed under the same license as the Airflow package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Airflow 1.10.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-04-03 17:47+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../_api/airflow/contrib/hooks/gcp_transfer_hook/index.rst:4
+msgid ":mod:`airflow.contrib.hooks.gcp_transfer_hook`"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/gcp_transfer_hook/index.rst:15
+msgid "Module Contents"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/gcp_transfer_hook/index.rst:614
+msgid "Bases::class:`airflow.contrib.hooks.gcp_api_base_hook.GoogleCloudBaseHook`"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/gcp_transfer_hook/index.rst:618
+msgid "Hook for Google Storage Transfer Service."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/gcp_transfer_hook/index.rst:639
+msgid "Retrieves connection to Google Storage Transfer service."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/gcp_transfer_hook/index.rst
+msgid "Returns"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/gcp_transfer_hook/index.rst:641
+msgid "Google Storage Transfer service object"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/gcp_transfer_hook/index.rst
+msgid "Return type"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/gcp_transfer_hook/index.rst:651
+msgid "Creates a transfer job that runs periodically."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/gcp_transfer_hook/index.rst
+msgid "Parameters"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/gcp_transfer_hook/index.rst:653
+msgid ""
+"(Required) A request body, as described in https://cloud.google.com"
+"/storage-transfer/docs/reference/rest/v1/transferJobs/patch#request-body"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/gcp_transfer_hook/index.rst:656
+msgid ""
+"transfer job. See: https://cloud.google.com/storage-"
+"transfer/docs/reference/rest/v1/transferJobs#TransferJob"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/gcp_transfer_hook/index.rst:668
+msgid ""
+"Gets the latest state of a long-running operation in Google Storage "
+"Transfer Service."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/gcp_transfer_hook/index.rst:671
+msgid "(Required) Name of the job to be fetched"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/gcp_transfer_hook/index.rst:673
+#: ../../_api/airflow/contrib/hooks/gcp_transfer_hook/index.rst:727
+msgid ""
+"(Optional) the ID of the project that owns the Transfer Job. If set to "
+"None or missing, the default project_id from the GCP connection is used."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/gcp_transfer_hook/index.rst:677
+msgid "Transfer Job"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/gcp_transfer_hook/index.rst:687
+msgid ""
+"Lists long-running operations in Google Storage Transfer Service that "
+"match the specified filter."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/gcp_transfer_hook/index.rst:690
+msgid ""
+"(Required) A request filter, as described in https://cloud.google.com"
+"/storage-"
+"transfer/docs/reference/rest/v1/transferJobs/list#body.QUERY_PARAMETERS.filter"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/gcp_transfer_hook/index.rst:693
+msgid "List of Transfer Jobs"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/gcp_transfer_hook/index.rst:703
+msgid "Updates a transfer job that runs periodically."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/gcp_transfer_hook/index.rst:705
+msgid "(Required) Name of the job to be updated"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/gcp_transfer_hook/index.rst:707
+msgid ""
+"A request body, as described in https://cloud.google.com/storage-"
+"transfer/docs/reference/rest/v1/transferJobs/patch#request-body"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/gcp_transfer_hook/index.rst:710
+msgid "If successful, TransferJob."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/gcp_transfer_hook/index.rst:720
+msgid ""
+"Deletes a transfer job. This is a soft delete. After a transfer job is "
+"deleted, the job and all the transfer executions are subject to garbage "
+"collection. Transfer jobs become eligible for garbage collection 30 days "
+"after soft delete."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/gcp_transfer_hook/index.rst:725
+msgid "(Required) Name of the job to be deleted"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/gcp_transfer_hook/index.rst:740
+msgid "Cancels an transfer operation in Google Storage Transfer Service."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/gcp_transfer_hook/index.rst:742
+msgid "Name of the transfer operation."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/gcp_transfer_hook/index.rst:753
+#: ../../_api/airflow/contrib/hooks/gcp_transfer_hook/index.rst:769
+msgid "Gets an transfer operation in Google Storage Transfer Service."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/gcp_transfer_hook/index.rst:755
+#: ../../_api/airflow/contrib/hooks/gcp_transfer_hook/index.rst:792
+#: ../../_api/airflow/contrib/hooks/gcp_transfer_hook/index.rst:805
+msgid "(Required) Name of the transfer operation."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/gcp_transfer_hook/index.rst:757
+msgid ""
+"transfer operation See: https://cloud.google.com/storage-"
+"transfer/docs/reference/rest/v1/Operation"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/gcp_transfer_hook/index.rst:771
+msgid ""
+"(Required) A request filter, as described in https://cloud.google.com"
+"/storage-"
+"transfer/docs/reference/rest/v1/transferJobs/list#body.QUERY_PARAMETERS.filter"
+" With one additional improvement:  * project_id is optional if you have a"
+" project id defined   in the connection   See: "
+":ref:`howto/connection:gcp`"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/gcp_transfer_hook/index.rst:771
+msgid ""
+"(Required) A request filter, as described in https://cloud.google.com"
+"/storage-"
+"transfer/docs/reference/rest/v1/transferJobs/list#body.QUERY_PARAMETERS.filter"
+" With one additional improvement:"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/gcp_transfer_hook/index.rst:775
+msgid ""
+"project_id is optional if you have a project id defined in the connection"
+" See: :ref:`howto/connection:gcp`"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/gcp_transfer_hook/index.rst:780
+msgid "transfer operation"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/gcp_transfer_hook/index.rst:790
+msgid "Pauses an transfer operation in Google Storage Transfer Service."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/gcp_transfer_hook/index.rst:803
+msgid "Resumes an transfer operation in Google Storage Transfer Service."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/gcp_transfer_hook/index.rst:816
+msgid "Waits until the job reaches the expected state."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/gcp_transfer_hook/index.rst:818
+msgid ""
+"Transfer job See: https://cloud.google.com/storage-"
+"transfer/docs/reference/rest/v1/transferJobs#TransferJob"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/gcp_transfer_hook/index.rst:822
+msgid ""
+"State that is expected See: https://cloud.google.com/storage-"
+"transfer/docs/reference/rest/v1/transferOperations#Status"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/gcp_transfer_hook/index.rst:844
+msgid ""
+"Checks whether the operation list has an operation with the expected "
+"status, then returns true If it encounters operations in FAILED or "
+"ABORTED state throw :class:`airflow.exceptions.AirflowException`."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/gcp_transfer_hook/index.rst:849
+msgid "(Required) List of transfer operations to check."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/gcp_transfer_hook/index.rst:851
+msgid ""
+"(Required) status that is expected See: https://cloud.google.com/storage-"
+"transfer/docs/reference/rest/v1/transferOperations#Status"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/gcp_transfer_hook/index.rst:855
+msgid ""
+"If there is an operation with the expected state in the operation list, "
+"returns true,"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/gcp_transfer_hook/index.rst
+msgid "raises"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/gcp_transfer_hook/index.rst:857
+msgid ""
+"airflow.exceptions.AirflowException If it encounters operations with a "
+"state in the list,"
+msgstr ""
+

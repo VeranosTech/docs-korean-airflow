@@ -1,0 +1,84 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C)
+# This file is distributed under the same license as the Airflow package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Airflow 1.10.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-04-03 17:47+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../_api/airflow/sensors/base_sensor_operator/index.rst:4
+msgid ":mod:`airflow.sensors.base_sensor_operator`"
+msgstr ""
+
+#: ../../_api/airflow/sensors/base_sensor_operator/index.rst:15
+msgid "Module Contents"
+msgstr ""
+
+#: ../../_api/airflow/sensors/base_sensor_operator/index.rst:24
+msgid ""
+"Bases::class:`airflow.models.BaseOperator`, "
+":class:`airflow.models.skipmixin.SkipMixin`"
+msgstr ""
+
+#: ../../_api/airflow/sensors/base_sensor_operator/index.rst:28
+msgid "Sensor operators are derived from this class and inherit these attributes."
+msgstr ""
+
+#: ../../_api/airflow/sensors/base_sensor_operator/index.rst:30
+msgid ""
+"Sensor operators keep executing at a time interval and succeed when a "
+"criteria is met and fail if and when they time out."
+msgstr ""
+
+#: ../../_api/airflow/sensors/base_sensor_operator/index.rst
+msgid "Parameters"
+msgstr ""
+
+#: ../../_api/airflow/sensors/base_sensor_operator/index.rst:33
+msgid "Set to true to mark the task as SKIPPED on failure"
+msgstr ""
+
+#: ../../_api/airflow/sensors/base_sensor_operator/index.rst:35
+msgid "Time in seconds that the job should wait in between each tries"
+msgstr ""
+
+#: ../../_api/airflow/sensors/base_sensor_operator/index.rst:38
+msgid "Time, in seconds before the task times out and fails."
+msgstr ""
+
+#: ../../_api/airflow/sensors/base_sensor_operator/index.rst:40
+msgid ""
+"How the sensor operates. Options are: ``{ poke | reschedule }``, default "
+"is ``poke``. When set to ``poke`` the sensor is taking up a worker slot "
+"for its whole execution time and sleeps between pokes. Use this mode if "
+"the expected runtime of the sensor is short or if a short poke interval "
+"is required. When set to ``reschedule`` the sensor task frees the worker "
+"slot when the criteria is not yet met and it's rescheduled at a later "
+"time. Use this mode if the expected time until the criteria is met is. "
+"The poke interval should be more than one minute to prevent too much load"
+" on the scheduler."
+msgstr ""
+
+#: ../../_api/airflow/sensors/base_sensor_operator/index.rst:90
+msgid ""
+"Adds one additional dependency for all sensor operators that checks if a "
+"sensor task instance can be rescheduled."
+msgstr ""
+
+#: ../../_api/airflow/sensors/base_sensor_operator/index.rst:110
+msgid ""
+"Function that the sensors defined while deriving this class should "
+"override."
+msgstr ""
+

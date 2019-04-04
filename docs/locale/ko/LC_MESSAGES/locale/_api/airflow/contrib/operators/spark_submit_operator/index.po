@@ -1,0 +1,159 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C)
+# This file is distributed under the same license as the Airflow package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Airflow 1.10.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-04-03 17:47+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../_api/airflow/contrib/operators/spark_submit_operator/index.rst:4
+msgid ":mod:`airflow.contrib.operators.spark_submit_operator`"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/spark_submit_operator/index.rst:15
+msgid "Module Contents"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/spark_submit_operator/index.rst:24
+msgid "Bases::class:`airflow.models.BaseOperator`"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/spark_submit_operator/index.rst:28
+msgid ""
+"This hook is a wrapper around the spark-submit binary to kick off a "
+"spark-submit job. It requires that the \"spark-submit\" binary is in the "
+"PATH or the spark-home is set in the extra on the connection."
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/spark_submit_operator/index.rst
+msgid "Parameters"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/spark_submit_operator/index.rst:32
+msgid ""
+"The application that submitted as a job, either jar or py file. "
+"(templated)"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/spark_submit_operator/index.rst:34
+msgid "Arbitrary Spark configuration properties (templated)"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/spark_submit_operator/index.rst:36
+msgid ""
+"The connection id as configured in Airflow administration. When an "
+"invalid connection_id is supplied, it will default to yarn."
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/spark_submit_operator/index.rst:39
+msgid ""
+"Upload additional files to the executor running the job, separated by a "
+"comma. Files will be placed in the working directory of each executor. "
+"For example, serialized objects. (templated)"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/spark_submit_operator/index.rst:43
+msgid ""
+"Additional python files used by the job, can be .zip, .egg or .py. "
+"(templated)"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/spark_submit_operator/index.rst:45
+msgid ""
+"Submit additional jars to upload and place them in executor classpath. "
+"(templated)"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/spark_submit_operator/index.rst:47
+msgid "Additional, driver-specific, classpath settings. (templated)"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/spark_submit_operator/index.rst:49
+msgid "the main class of the Java application"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/spark_submit_operator/index.rst:51
+msgid ""
+"Comma-separated list of maven coordinates of jars to include on the "
+"driver and executor classpaths. (templated)"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/spark_submit_operator/index.rst:54
+msgid ""
+"Comma-separated list of maven coordinates of jars to exclude while "
+"resolving the dependencies provided in 'packages' (templated)"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/spark_submit_operator/index.rst:57
+msgid ""
+"Comma-separated list of additional remote repositories to search for the "
+"maven coordinates given with 'packages'"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/spark_submit_operator/index.rst:60
+msgid ""
+"(Standalone & Mesos only) Total cores for all executors (Default: all the"
+" available cores on the worker)"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/spark_submit_operator/index.rst:63
+msgid "(Standalone & YARN only) Number of cores per executor (Default: 2)"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/spark_submit_operator/index.rst:65
+msgid "Memory per executor (e.g. 1000M, 2G) (Default: 1G)"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/spark_submit_operator/index.rst:67
+msgid "Memory allocated to the driver (e.g. 1000M, 2G) (Default: 1G)"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/spark_submit_operator/index.rst:69
+msgid "Full path to the file that contains the keytab (templated)"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/spark_submit_operator/index.rst:71
+msgid "The name of the kerberos principal used for keytab (templated)"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/spark_submit_operator/index.rst:73
+msgid "Name of the job (default airflow-spark). (templated)"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/spark_submit_operator/index.rst:75
+msgid "Number of executors to launch"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/spark_submit_operator/index.rst:77
+msgid "Arguments for the application being submitted (templated)"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/spark_submit_operator/index.rst:79
+msgid ""
+"Environment variables for spark-submit. It supports yarn and k8s mode "
+"too. (templated)"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/spark_submit_operator/index.rst:81
+msgid "Whether to pass the verbose flag to spark-submit process for debugging"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/spark_submit_operator/index.rst:83
+msgid "The command to use for spark submit. Some distros may use spark2-submit."
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/spark_submit_operator/index.rst:116
+msgid "Call the SparkSubmitHook to run the provided spark job"
+msgstr ""
+

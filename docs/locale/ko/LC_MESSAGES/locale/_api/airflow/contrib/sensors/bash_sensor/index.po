@@ -1,0 +1,64 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C)
+# This file is distributed under the same license as the Airflow package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Airflow 1.10.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-04-03 17:47+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../_api/airflow/contrib/sensors/bash_sensor/index.rst:4
+msgid ":mod:`airflow.contrib.sensors.bash_sensor`"
+msgstr ""
+
+#: ../../_api/airflow/contrib/sensors/bash_sensor/index.rst:15
+msgid "Module Contents"
+msgstr ""
+
+#: ../../_api/airflow/contrib/sensors/bash_sensor/index.rst:24
+msgid "Bases::class:`airflow.sensors.base_sensor_operator.BaseSensorOperator`"
+msgstr ""
+
+#: ../../_api/airflow/contrib/sensors/bash_sensor/index.rst:28
+msgid ""
+"Executes a bash command/script and returns True if and only if the return"
+" code is 0."
+msgstr ""
+
+#: ../../_api/airflow/contrib/sensors/bash_sensor/index.rst
+msgid "Parameters"
+msgstr ""
+
+#: ../../_api/airflow/contrib/sensors/bash_sensor/index.rst:31
+msgid ""
+"The command, set of commands or reference to a bash script (must be "
+"'.sh') to be executed."
+msgstr ""
+
+#: ../../_api/airflow/contrib/sensors/bash_sensor/index.rst:35
+msgid ""
+"If env is not None, it must be a mapping that defines the environment "
+"variables for the new process; these are used instead of inheriting the "
+"current process environment, which is the default behavior. (templated)"
+msgstr ""
+
+#: ../../_api/airflow/contrib/sensors/bash_sensor/index.rst:40
+msgid "output encoding of bash command."
+msgstr ""
+
+#: ../../_api/airflow/contrib/sensors/bash_sensor/index.rst:62
+msgid ""
+"Execute the bash command in a temporary directory which will be cleaned "
+"afterwards"
+msgstr ""
+

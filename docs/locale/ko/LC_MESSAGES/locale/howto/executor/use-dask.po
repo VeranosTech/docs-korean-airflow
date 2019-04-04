@@ -1,0 +1,70 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C)
+# This file is distributed under the same license as the Airflow package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Airflow 1.10.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-04-03 17:47+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../howto/executor/use-dask.rst:19
+msgid "Scaling Out with Dask"
+msgstr ""
+
+#: ../../howto/executor/use-dask.rst:21
+msgid ""
+":class:`airflow.executors.dask_executor.DaskExecutor` allows you to run "
+"Airflow tasks in a Dask Distributed cluster."
+msgstr ""
+
+#: ../../howto/executor/use-dask.rst:23
+msgid ""
+"Dask clusters can be run on a single machine or on remote networks. For "
+"complete details, consult the `Distributed documentation "
+"<https://distributed.readthedocs.io/>`_."
+msgstr ""
+
+#: ../../howto/executor/use-dask.rst:26
+msgid "To create a cluster, first start a Scheduler:"
+msgstr ""
+
+#: ../../howto/executor/use-dask.rst:36
+msgid ""
+"Next start at least one Worker on any machine that can connect to the "
+"host:"
+msgstr ""
+
+#: ../../howto/executor/use-dask.rst:42
+msgid ""
+"Edit your ``airflow.cfg`` to set your executor to "
+":class:`airflow.executors.dask_executor.DaskExecutor` and provide the "
+"Dask Scheduler address in the ``[dask]`` section."
+msgstr ""
+
+#: ../../howto/executor/use-dask.rst:45
+msgid "Please note:"
+msgstr ""
+
+#: ../../howto/executor/use-dask.rst:47
+msgid ""
+"Each Dask worker must be able to import Airflow and any dependencies you "
+"require."
+msgstr ""
+
+#: ../../howto/executor/use-dask.rst:49
+msgid ""
+"Dask does not support queues. If an Airflow task was created with a "
+"queue, a warning will be raised but the task will be submitted to the "
+"cluster."
+msgstr ""
+

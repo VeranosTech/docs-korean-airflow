@@ -1,0 +1,40 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C)
+# This file is distributed under the same license as the Airflow package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Airflow 1.10.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-04-03 17:47+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../_api/airflow/hooks/base_hook/index.rst:4
+msgid ":mod:`airflow.hooks.base_hook`"
+msgstr ""
+
+#: ../../_api/airflow/hooks/base_hook/index.rst:15
+msgid "Module Contents"
+msgstr ""
+
+#: ../../_api/airflow/hooks/base_hook/index.rst:36
+msgid "Bases::class:`airflow.utils.log.logging_mixin.LoggingMixin`"
+msgstr ""
+
+#: ../../_api/airflow/hooks/base_hook/index.rst:40
+msgid ""
+"Abstract base class for hooks, hooks are meant as an interface to "
+"interact with external systems. MySqlHook, HiveHook, PigHook return "
+"object that can handle the connection and interaction to specific "
+"instances of these systems, and expose consistent methods to interact "
+"with them."
+msgstr ""
+

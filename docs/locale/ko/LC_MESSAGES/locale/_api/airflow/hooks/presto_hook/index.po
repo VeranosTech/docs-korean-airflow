@@ -1,0 +1,83 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C)
+# This file is distributed under the same license as the Airflow package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Airflow 1.10.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-04-03 17:47+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../_api/airflow/hooks/presto_hook/index.rst:4
+msgid ":mod:`airflow.hooks.presto_hook`"
+msgstr ""
+
+#: ../../_api/airflow/hooks/presto_hook/index.rst:15
+msgid "Module Contents"
+msgstr ""
+
+#: ../../_api/airflow/hooks/presto_hook/index.rst:24
+msgid "Bases::class:`Exception`"
+msgstr ""
+
+#: ../../_api/airflow/hooks/presto_hook/index.rst:37
+msgid "Bases::class:`airflow.hooks.dbapi_hook.DbApiHook`"
+msgstr ""
+
+#: ../../_api/airflow/hooks/presto_hook/index.rst:41
+msgid "Interact with Presto through PyHive!"
+msgstr ""
+
+#: ../../_api/airflow/hooks/presto_hook/index.rst:75
+msgid "Returns a connection object"
+msgstr ""
+
+#: ../../_api/airflow/hooks/presto_hook/index.rst:91
+msgid "Parses some DatabaseError to provide a better error message"
+msgstr ""
+
+#: ../../_api/airflow/hooks/presto_hook/index.rst:100
+msgid "Get a set of records from Presto"
+msgstr ""
+
+#: ../../_api/airflow/hooks/presto_hook/index.rst:109
+msgid "Returns only the first row, regardless of how many rows the query returns."
+msgstr ""
+
+#: ../../_api/airflow/hooks/presto_hook/index.rst:119
+msgid "Get a pandas dataframe from a sql query."
+msgstr ""
+
+#: ../../_api/airflow/hooks/presto_hook/index.rst:128
+msgid "Execute the statement against Presto. Can be used to create views."
+msgstr ""
+
+#: ../../_api/airflow/hooks/presto_hook/index.rst:137
+msgid "A generic way to insert a set of tuples into a table."
+msgstr ""
+
+#: ../../_api/airflow/hooks/presto_hook/index.rst
+msgid "Parameters"
+msgstr ""
+
+#: ../../_api/airflow/hooks/presto_hook/index.rst:139
+msgid "Name of the target table"
+msgstr ""
+
+#: ../../_api/airflow/hooks/presto_hook/index.rst:141
+msgid "The rows to insert into the table"
+msgstr ""
+
+#: ../../_api/airflow/hooks/presto_hook/index.rst:143
+msgid "The names of the columns to fill in the table"
+msgstr ""
+

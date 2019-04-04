@@ -1,0 +1,124 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C)
+# This file is distributed under the same license as the Airflow package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Airflow 1.10.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-04-03 17:47+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../_api/airflow/contrib/operators/gcs_to_gcs/index.rst:4
+msgid ":mod:`airflow.contrib.operators.gcs_to_gcs`"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/gcs_to_gcs/index.rst:15
+msgid "Module Contents"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/gcs_to_gcs/index.rst:24
+msgid "Bases::class:`airflow.models.BaseOperator`"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/gcs_to_gcs/index.rst:28
+msgid "Copies objects from a bucket to another, with renaming if requested."
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/gcs_to_gcs/index.rst
+msgid "Parameters"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/gcs_to_gcs/index.rst:30
+msgid "The source Google cloud storage bucket where the object is. (templated)"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/gcs_to_gcs/index.rst:33
+msgid ""
+"The source name of the object to copy in the Google cloud storage bucket."
+" (templated) You can use only one wildcard for objects (filenames) within"
+" your bucket. The wildcard can appear inside the object name or at the "
+"end of the object name. Appending a wildcard to the bucket name is "
+"unsupported."
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/gcs_to_gcs/index.rst:40
+msgid ""
+"The destination Google cloud storage bucket where the object should be. "
+"(templated)"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/gcs_to_gcs/index.rst:43
+msgid ""
+"The destination name of the object in the destination Google cloud "
+"storage bucket. (templated) If a wildcard is supplied in the "
+"source_object argument, this is the prefix that will be prepended to the "
+"final destination objects' paths. Note that the source path's part before"
+" the wildcard will be removed; if it needs to be retained it should be "
+"appended to destination_object. For example, with prefix ``foo/*`` and "
+"destination_object ``blah/``, the file ``foo/baz`` will be copied to "
+"``blah/baz``; to retain the prefix write the destination_object as e.g. "
+"``blah/foo``, in which case the copied file will be named "
+"``blah/foo/baz``."
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/gcs_to_gcs/index.rst:54
+msgid ""
+"When move object is True, the object is moved instead of copied to the "
+"new location. This is the equivalent of a mv command as opposed to a cp "
+"command."
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/gcs_to_gcs/index.rst:58
+msgid "The connection ID to use when connecting to Google cloud storage."
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/gcs_to_gcs/index.rst:61
+msgid ""
+"The account to impersonate, if any. For this to work, the service account"
+" making the request must have domain-wide delegation enabled."
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/gcs_to_gcs/index.rst:65
+msgid ""
+"When specified, if the object(s) were modified after last_modified_time, "
+"they will be copied/moved. If tzinfo has not been set, UTC will be "
+"assumed."
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/gcs_to_gcs/index.rst
+msgid "Example"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/gcs_to_gcs/index.rst:72
+msgid ""
+"The following Operator would copy a single file named "
+"``sales/sales-2017/january.avro`` in the ``data`` bucket to the file "
+"named ``copied_sales/2017/january-backup.avro`` in the ``data_backup`` "
+"bucket ::"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/gcs_to_gcs/index.rst:85
+msgid ""
+"The following Operator would copy all the Avro files from "
+"``sales/sales-2017`` folder (i.e. with names starting with that prefix) "
+"in ``data`` bucket to the ``copied_sales/2017`` folder in the "
+"``data_backup`` bucket. ::"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/gcs_to_gcs/index.rst:98
+msgid ""
+"The following Operator would move all the Avro files from "
+"``sales/sales-2017`` folder (i.e. with names starting with that prefix) "
+"in ``data`` bucket to the same folder in the ``data_backup`` bucket, "
+"deleting the original files in the process. ::"
+msgstr ""
+

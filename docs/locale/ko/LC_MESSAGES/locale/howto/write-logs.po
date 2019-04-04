@@ -1,0 +1,180 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C)
+# This file is distributed under the same license as the Airflow package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Airflow 1.10.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-04-03 17:47+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../howto/write-logs.rst:19
+msgid "Writing Logs"
+msgstr ""
+
+#: ../../howto/write-logs.rst:22
+msgid "Writing Logs Locally"
+msgstr ""
+
+#: ../../howto/write-logs.rst:24
+msgid ""
+"Users can specify the directory to place log files in ``airflow.cfg`` "
+"using ``base_log_folder``. By default, logs are placed in the "
+"``AIRFLOW_HOME`` directory."
+msgstr ""
+
+#: ../../howto/write-logs.rst:28
+msgid ""
+"The following convention is followed while naming logs: "
+"``{dag_id}/{task_id}/{execution_date}/{try_number}.log``"
+msgstr ""
+
+#: ../../howto/write-logs.rst:30
+msgid ""
+"In addition, users can supply a remote location to store current logs and"
+" backups."
+msgstr ""
+
+#: ../../howto/write-logs.rst:32
+msgid ""
+"In the Airflow Web UI, local logs take precedence over remote logs. If "
+"local logs can not be found or accessed, the remote logs will be "
+"displayed. Note that logs are only sent to remote storage once a task is "
+"complete (including failure); In other words, remote logs for running "
+"tasks are unavailable."
+msgstr ""
+
+#: ../../howto/write-logs.rst:38
+msgid "Before you begin"
+msgstr ""
+
+#: ../../howto/write-logs.rst:40
+msgid ""
+"Remote logging uses an existing Airflow connection to read or write logs."
+" If you don't have a connection properly setup, this process will fail."
+msgstr ""
+
+#: ../../howto/write-logs.rst:46
+msgid "Writing Logs to Amazon S3"
+msgstr ""
+
+#: ../../howto/write-logs.rst:50
+msgid "Enabling remote logging"
+msgstr ""
+
+#: ../../howto/write-logs.rst:52
+msgid "To enable this feature, ``airflow.cfg`` must be configured as follows:"
+msgstr ""
+
+#: ../../howto/write-logs.rst:66
+msgid "In the above example, Airflow will try to use ``S3Hook('MyS3Conn')``."
+msgstr ""
+
+#: ../../howto/write-logs.rst:71
+msgid "Writing Logs to Azure Blob Storage"
+msgstr ""
+
+#: ../../howto/write-logs.rst:73
+msgid ""
+"Airflow can be configured to read and write task logs in Azure Blob "
+"Storage."
+msgstr ""
+
+#: ../../howto/write-logs.rst:75
+msgid "Follow the steps below to enable Azure Blob Storage logging:"
+msgstr ""
+
+#: ../../howto/write-logs.rst:77
+msgid ""
+"Airflow's logging system requires a custom `.py` file to be located in "
+"the ``PYTHONPATH``, so that it's importable from Airflow. Start by "
+"creating a directory to store the config file, ``$AIRFLOW_HOME/config`` "
+"is recommended."
+msgstr ""
+
+#: ../../howto/write-logs.rst:78
+msgid ""
+"Create empty files called ``$AIRFLOW_HOME/config/log_config.py`` and "
+"``$AIRFLOW_HOME/config/__init__.py``."
+msgstr ""
+
+#: ../../howto/write-logs.rst:79
+msgid ""
+"Copy the contents of "
+"``airflow/config_templates/airflow_local_settings.py`` into the "
+"``log_config.py`` file created in `Step 2`."
+msgstr ""
+
+#: ../../howto/write-logs.rst:80
+msgid "Customize the following portions of the template:"
+msgstr ""
+
+#: ../../howto/write-logs.rst:91
+msgid ""
+"Make sure a Azure Blob Storage (Wasb) connection hook has been defined in"
+" Airflow. The hook should have read and write access to the Azure Blob "
+"Storage bucket defined above in ``REMOTE_BASE_LOG_FOLDER``."
+msgstr ""
+
+#: ../../howto/write-logs.rst:93
+msgid "Update ``$AIRFLOW_HOME/airflow.cfg`` to contain:"
+msgstr ""
+
+#: ../../howto/write-logs.rst:101 ../../howto/write-logs.rst:127
+msgid ""
+"Restart the Airflow webserver and scheduler, and trigger (or wait for) a "
+"new task execution."
+msgstr ""
+
+#: ../../howto/write-logs.rst:102 ../../howto/write-logs.rst:128
+msgid ""
+"Verify that logs are showing up for newly executed tasks in the bucket "
+"you've defined."
+msgstr ""
+
+#: ../../howto/write-logs.rst:107
+msgid "Writing Logs to Google Cloud Storage"
+msgstr ""
+
+#: ../../howto/write-logs.rst:109
+msgid "Follow the steps below to enable Google Cloud Storage logging."
+msgstr ""
+
+#: ../../howto/write-logs.rst:111
+msgid ""
+"To enable this feature, ``airflow.cfg`` must be configured as in this "
+"example:"
+msgstr ""
+
+#: ../../howto/write-logs.rst:125
+msgid ""
+"Install the ``gcp`` package first, like so: ``pip install 'apache-"
+"airflow[gcp]'``."
+msgstr ""
+
+#: ../../howto/write-logs.rst:126
+msgid ""
+"Make sure a Google Cloud Platform connection hook has been defined in "
+"Airflow. The hook should have read and write access to the Google Cloud "
+"Storage bucket defined above in ``remote_base_log_folder``."
+msgstr ""
+
+#: ../../howto/write-logs.rst:129
+msgid ""
+"Verify that the Google Cloud Storage viewer is working in the UI. Pull up"
+" a newly executed task, and verify that you see something like:"
+msgstr ""
+
+#: ../../howto/write-logs.rst:139
+msgid "**Note** that the path to the remote log file is listed on the first line."
+msgstr ""
+

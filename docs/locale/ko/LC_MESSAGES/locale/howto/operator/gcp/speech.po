@@ -1,0 +1,105 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C)
+# This file is distributed under the same license as the Airflow package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Airflow 1.10.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-04-04 13:21+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../howto/operator/gcp/speech.rst:19
+msgid "Google Cloud Text to Speech Operators"
+msgstr ""
+
+#: ../../howto/operator/gcp/speech.rst:24
+msgid "GcpTextToSpeechSynthesizeOperator"
+msgstr ""
+
+#: ../../howto/operator/gcp/speech.rst:26
+msgid "Synthesizes text to audio file and stores it to Google Cloud Storage"
+msgstr ""
+
+#: ../../howto/operator/gcp/speech.rst:28
+msgid ""
+"For parameter definition, take a look at "
+":class:`airflow.contrib.operators.gcp_text_to_speech_operator.GcpTextToSpeechSynthesizeOperator`"
+msgstr ""
+
+#: ../../howto/operator/gcp/speech.rst:32
+#: ../../howto/operator/gcp/speech.rst:90
+msgid "Arguments"
+msgstr ""
+
+#: ../../howto/operator/gcp/speech.rst:34
+msgid ""
+"Some arguments in the example DAG are taken from the OS environment "
+"variables:"
+msgstr ""
+
+#: ../../howto/operator/gcp/speech.rst:41
+msgid ""
+"input, voice and audio_config arguments need to be dicts or objects of "
+"corresponding classes from google.cloud.texttospeech_v1.types module"
+msgstr ""
+
+#: ../../howto/operator/gcp/speech.rst:44
+msgid ""
+"for more information, see: https://googleapis.github.io/google-cloud-"
+"python/latest/texttospeech/gapic/v1/api.html#google.cloud.texttospeech_v1.TextToSpeechClient.synthesize_speech"
+msgstr ""
+
+#: ../../howto/operator/gcp/speech.rst:51
+#: ../../howto/operator/gcp/speech.rst:102
+msgid "filename is a simple string argument:"
+msgstr ""
+
+#: ../../howto/operator/gcp/speech.rst:59
+#: ../../howto/operator/gcp/speech.rst:110
+msgid "Using the operator"
+msgstr ""
+
+#: ../../howto/operator/gcp/speech.rst:68
+#: ../../howto/operator/gcp/speech.rst:119
+msgid "Templating"
+msgstr ""
+
+#: ../../howto/operator/gcp/speech.rst:77
+msgid "Google Cloud Speech to Text Operators"
+msgstr ""
+
+#: ../../howto/operator/gcp/speech.rst:82
+msgid "GcpSpeechToTextRecognizeSpeechOperator"
+msgstr ""
+
+#: ../../howto/operator/gcp/speech.rst:84
+msgid "Recognizes speech in audio input and returns text."
+msgstr ""
+
+#: ../../howto/operator/gcp/speech.rst:86
+msgid ""
+"For parameter definition, take a look at "
+":class:`airflow.contrib.operators.gcp_speech_to_text_operator.GcpSpeechToTextRecognizeSpeechOperator`"
+msgstr ""
+
+#: ../../howto/operator/gcp/speech.rst:92
+msgid ""
+"config and audio arguments need to be dicts or objects of corresponding "
+"classes from google.cloud.speech_v1.types module"
+msgstr ""
+
+#: ../../howto/operator/gcp/speech.rst:95
+msgid ""
+"for more information, see: https://googleapis.github.io/google-cloud-"
+"python/latest/speech/gapic/v1/api.html#google.cloud.speech_v1.SpeechClient.recognize"
+msgstr ""
+

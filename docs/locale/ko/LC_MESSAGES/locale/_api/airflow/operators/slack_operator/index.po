@@ -1,0 +1,110 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C)
+# This file is distributed under the same license as the Airflow package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Airflow 1.10.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-04-03 17:47+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../_api/airflow/operators/slack_operator/index.rst:4
+msgid ":mod:`airflow.operators.slack_operator`"
+msgstr ""
+
+#: ../../_api/airflow/operators/slack_operator/index.rst:15
+msgid "Module Contents"
+msgstr ""
+
+#: ../../_api/airflow/operators/slack_operator/index.rst:24
+msgid "Bases::class:`airflow.models.BaseOperator`"
+msgstr ""
+
+#: ../../_api/airflow/operators/slack_operator/index.rst:28
+msgid ""
+"Base Slack Operator The SlackAPIPostOperator is derived from this "
+"operator. In the future additional Slack API Operators will be derived "
+"from this class as well"
+msgstr ""
+
+#: ../../_api/airflow/operators/slack_operator/index.rst
+msgid "Parameters"
+msgstr ""
+
+#: ../../_api/airflow/operators/slack_operator/index.rst:32
+msgid "Slack connection ID which its password is Slack API token"
+msgstr ""
+
+#: ../../_api/airflow/operators/slack_operator/index.rst:34
+msgid "Slack API token (https://api.slack.com/web)"
+msgstr ""
+
+#: ../../_api/airflow/operators/slack_operator/index.rst:36
+msgid "The Slack API Method to Call (https://api.slack.com/methods)"
+msgstr ""
+
+#: ../../_api/airflow/operators/slack_operator/index.rst:38
+msgid "API Method call parameters (https://api.slack.com/methods)"
+msgstr ""
+
+#: ../../_api/airflow/operators/slack_operator/index.rst:50
+msgid ""
+"Used by the execute function. Allows templating on the source fields of "
+"the api_call_params dict before construction"
+msgstr ""
+
+#: ../../_api/airflow/operators/slack_operator/index.rst:53
+msgid ""
+"Override in child classes. Each SlackAPIOperator child class is "
+"responsible for having a construct_api_call_params function which sets "
+"self.api_call_params with a dict of API call parameters "
+"(https://api.slack.com/methods)"
+msgstr ""
+
+#: ../../_api/airflow/operators/slack_operator/index.rst:66
+msgid ""
+"SlackAPIOperator calls will not fail even if the call is not "
+"unsuccessful. It should not prevent a DAG from completing in success"
+msgstr ""
+
+#: ../../_api/airflow/operators/slack_operator/index.rst:80
+msgid "Bases::class:`airflow.operators.slack_operator.SlackAPIOperator`"
+msgstr ""
+
+#: ../../_api/airflow/operators/slack_operator/index.rst:84
+msgid "Posts messages to a slack channel"
+msgstr ""
+
+#: ../../_api/airflow/operators/slack_operator/index.rst:86
+msgid ""
+"channel in which to post message on slack name (#general) or ID "
+"(C12318391). (templated)"
+msgstr ""
+
+#: ../../_api/airflow/operators/slack_operator/index.rst:89
+msgid "Username that airflow will be posting to Slack as. (templated)"
+msgstr ""
+
+#: ../../_api/airflow/operators/slack_operator/index.rst:91
+msgid "message to send to slack. (templated)"
+msgstr ""
+
+#: ../../_api/airflow/operators/slack_operator/index.rst:93
+msgid "url to icon used for this message"
+msgstr ""
+
+#: ../../_api/airflow/operators/slack_operator/index.rst:95
+msgid ""
+"extra formatting details. (templated) - see "
+"https://api.slack.com/docs/attachments."
+msgstr ""
+

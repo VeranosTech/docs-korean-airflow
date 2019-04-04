@@ -1,0 +1,160 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C)
+# This file is distributed under the same license as the Airflow package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Airflow 1.10.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-04-03 17:47+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../_api/airflow/contrib/operators/s3_copy_object_operator/index.rst:4
+msgid ":mod:`airflow.contrib.operators.s3_copy_object_operator`"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/s3_copy_object_operator/index.rst:15
+msgid "Module Contents"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/s3_copy_object_operator/index.rst:24
+msgid "Bases::class:`airflow.models.BaseOperator`"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/s3_copy_object_operator/index.rst:28
+msgid "Creates a copy of an object that is already stored in S3."
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/s3_copy_object_operator/index.rst:30
+msgid ""
+"Note: the S3 connection used here needs to have access to both source and"
+" destination bucket/key."
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/s3_copy_object_operator/index.rst
+msgid "Parameters"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/s3_copy_object_operator/index.rst:33
+msgid ""
+"The key of the source object. (templated)  It can be either full s3:// "
+"style url or relative path from root level.  When it's specified as a "
+"full s3:// url, please omit source_bucket_name."
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/s3_copy_object_operator/index.rst:33
+msgid "The key of the source object. (templated)"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/s3_copy_object_operator/index.rst:35
+msgid "It can be either full s3:// style url or relative path from root level."
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/s3_copy_object_operator/index.rst:37
+msgid "When it's specified as a full s3:// url, please omit source_bucket_name."
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/s3_copy_object_operator/index.rst:39
+msgid ""
+"The key of the object to copy to. (templated)  The convention to specify "
+"`dest_bucket_key` is the same as `source_bucket_key`."
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/s3_copy_object_operator/index.rst:39
+msgid "The key of the object to copy to. (templated)"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/s3_copy_object_operator/index.rst:41
+msgid ""
+"The convention to specify `dest_bucket_key` is the same as "
+"`source_bucket_key`."
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/s3_copy_object_operator/index.rst:43
+msgid ""
+"Name of the S3 bucket where the source object is in. (templated)  It "
+"should be omitted when `source_bucket_key` is provided as a full s3:// "
+"url."
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/s3_copy_object_operator/index.rst:43
+msgid "Name of the S3 bucket where the source object is in. (templated)"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/s3_copy_object_operator/index.rst:45
+msgid ""
+"It should be omitted when `source_bucket_key` is provided as a full s3://"
+" url."
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/s3_copy_object_operator/index.rst:47
+msgid ""
+"Name of the S3 bucket to where the object is copied. (templated)  It "
+"should be omitted when `dest_bucket_key` is provided as a full s3:// url."
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/s3_copy_object_operator/index.rst:47
+msgid "Name of the S3 bucket to where the object is copied. (templated)"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/s3_copy_object_operator/index.rst:49
+msgid ""
+"It should be omitted when `dest_bucket_key` is provided as a full s3:// "
+"url."
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/s3_copy_object_operator/index.rst:51
+msgid "Version ID of the source object (OPTIONAL)"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/s3_copy_object_operator/index.rst:53
+msgid "Connection id of the S3 connection to use"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/s3_copy_object_operator/index.rst:55
+msgid ""
+"Whether or not to verify SSL certificates for S3 connection. By default "
+"SSL certificates are verified.  You can provide the following values:  - "
+"False: do not validate SSL certificates. SSL will still be used,"
+"          but SSL certificates will not be          verified. - "
+"path/to/cert/bundle.pem: A filename of the CA cert bundle to uses."
+"          You can specify this argument if you want to use a different"
+"          CA cert bundle than the one used by botocore."
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/s3_copy_object_operator/index.rst:55
+msgid ""
+"Whether or not to verify SSL certificates for S3 connection. By default "
+"SSL certificates are verified."
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/s3_copy_object_operator/index.rst:58
+msgid "You can provide the following values:"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/s3_copy_object_operator/index.rst:61
+msgid "False: do not validate SSL certificates. SSL will still be used,"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/s3_copy_object_operator/index.rst:61
+msgid "but SSL certificates will not be verified."
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/s3_copy_object_operator/index.rst:64
+msgid "path/to/cert/bundle.pem: A filename of the CA cert bundle to uses."
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/s3_copy_object_operator/index.rst:64
+msgid ""
+"You can specify this argument if you want to use a different CA cert "
+"bundle than the one used by botocore."
+msgstr ""
+

@@ -1,0 +1,76 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C)
+# This file is distributed under the same license as the Airflow package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Airflow 1.10.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-04-03 17:47+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../_api/airflow/contrib/operators/mongo_to_s3/index.rst:4
+msgid ":mod:`airflow.contrib.operators.mongo_to_s3`"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/mongo_to_s3/index.rst:15
+msgid "Module Contents"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/mongo_to_s3/index.rst:24
+msgid "Bases::class:`airflow.models.BaseOperator`"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/mongo_to_s3/index.rst:28
+msgid ""
+"Mongo -> S3 A more specific baseOperator meant to move data from mongo "
+"via pymongo to s3 via boto"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/mongo_to_s3/index.rst:39
+msgid "things to note"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/mongo_to_s3/index.rst:33
+msgid ""
+".execute() is written to depend on .transform() .transform() is meant to "
+"be extended by child classes to perform transformations unique to those "
+"operators needs"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/mongo_to_s3/index.rst:56
+msgid "Executed by task_instance at runtime"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/mongo_to_s3/index.rst:65
+msgid ""
+"Takes an iterable (pymongo Cursor or Array) containing dictionaries and "
+"returns a stringified version using python join"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/mongo_to_s3/index.rst:76
+msgid "Processes pyMongo cursor and returns an iterable with each element being"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/mongo_to_s3/index.rst:76
+msgid "a JSON serializable dictionary"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/mongo_to_s3/index.rst:78
+msgid ""
+"Base transform() assumes no processing is needed ie. docs is a pyMongo "
+"cursor of documents and cursor just needs to be passed through"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/mongo_to_s3/index.rst:82
+msgid "Override this method for custom transformations"
+msgstr ""
+

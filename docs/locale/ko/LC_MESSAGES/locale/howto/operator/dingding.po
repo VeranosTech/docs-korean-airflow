@@ -1,0 +1,115 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C)
+# This file is distributed under the same license as the Airflow package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Airflow 1.10.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-04-04 13:21+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../howto/operator/dingding.rst:19
+msgid "Dingding Operators"
+msgstr ""
+
+#: ../../howto/operator/dingding.rst:23
+msgid "Prerequisite Tasks"
+msgstr ""
+
+#: ../../howto/operator/dingding.rst:25
+msgid "To use this operators, you must do a few things:"
+msgstr ""
+
+#: ../../howto/operator/dingding.rst:27
+msgid ""
+"Add custom robot to Dingding group which you want to send Dingding "
+"message."
+msgstr ""
+
+#: ../../howto/operator/dingding.rst:28
+msgid "Get the webhook token from Dingding custom robot."
+msgstr ""
+
+#: ../../howto/operator/dingding.rst:29
+msgid ""
+"Put the Dingding custom robot token in the password field of the "
+"``dingding_default`` Connection. Notice that you just need token rather "
+"than the whole webhook string."
+msgstr ""
+
+#: ../../howto/operator/dingding.rst:33
+msgid "Basic Usage"
+msgstr ""
+
+#: ../../howto/operator/dingding.rst:35
+msgid ""
+"Use the "
+":class:`~airflow/contrib/operators/dingding_operator.DingdingOperator` to"
+" send Dingding message:"
+msgstr ""
+
+#: ../../howto/operator/dingding.rst:45
+msgid "Remind users in message"
+msgstr ""
+
+#: ../../howto/operator/dingding.rst:47
+msgid ""
+"Use parameters ``at_mobiles`` and ``at_all`` to remind specific users "
+"when you send message, ``at_mobiles`` will be ignored When ``at_all`` is "
+"set to ``True``:"
+msgstr ""
+
+#: ../../howto/operator/dingding.rst:57
+msgid "Send rich text message"
+msgstr ""
+
+#: ../../howto/operator/dingding.rst:59
+msgid ""
+"The Dingding operator can send rich text messages including link, "
+"markdown, actionCard and feedCard. A rich text message can not remind "
+"specific users except by using markdown type message:"
+msgstr ""
+
+#: ../../howto/operator/dingding.rst:69
+msgid "Sending messages from a Task callback"
+msgstr ""
+
+#: ../../howto/operator/dingding.rst:71
+msgid ""
+"Dingding operator could handle task callback by writing a function "
+"wrapper dingding operators and then pass the function to "
+"``sla_miss_callback``, ``on_success_callback``, ``on_failure_callback``, "
+"or ``on_retry_callback``. Here we use ``on_failure_callback`` as an "
+"example:"
+msgstr ""
+
+#: ../../howto/operator/dingding.rst:82
+msgid "Changing connection host if you need"
+msgstr ""
+
+#: ../../howto/operator/dingding.rst:83
+msgid ""
+"The Dingding operator post http requests using default host "
+"``https://oapi.dingtalk.com``, if you need to change the host used you "
+"can set the host field of the connection."
+msgstr ""
+
+#: ../../howto/operator/dingding.rst:88
+msgid "More information"
+msgstr ""
+
+#: ../../howto/operator/dingding.rst:90
+msgid ""
+"See Dingding documentation on how to `custom robot <https://open-"
+"doc.dingtalk.com/microapp/serverapi2/qf2nxq>`_."
+msgstr ""
+

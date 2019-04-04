@@ -1,0 +1,207 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C)
+# This file is distributed under the same license as the Airflow package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Airflow 1.10.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-04-03 17:47+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../_api/airflow/contrib/hooks/mongo_hook/index.rst:4
+msgid ":mod:`airflow.contrib.hooks.mongo_hook`"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/mongo_hook/index.rst:15
+msgid "Module Contents"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/mongo_hook/index.rst:24
+msgid "Bases::class:`airflow.hooks.base_hook.BaseHook`"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/mongo_hook/index.rst:28
+msgid ""
+"PyMongo Wrapper to Interact With Mongo Database Mongo Connection "
+"Documentation https://docs.mongodb.com/manual/reference/connection-"
+"string/index.html You can specify connection string options in extra "
+"field of your connection https://docs.mongodb.com/manual/reference"
+"/connection-string/index.html#connection-string-options ex. "
+"``{replicaSet: test, ssl: True, connectTimeoutMS: 30000}``"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/mongo_hook/index.rst:68
+msgid "Fetches PyMongo Client"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/mongo_hook/index.rst:84
+msgid "Fetches a mongo collection object for querying."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/mongo_hook/index.rst:86
+msgid "Uses connection schema as DB unless specified."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/mongo_hook/index.rst:95
+msgid ""
+"Runs an aggregation pipeline and returns the results "
+"https://api.mongodb.com/python/current/api/pymongo/collection.html#pymongo.collection.Collection.aggregate"
+" https://api.mongodb.com/python/current/examples/aggregation.html"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/mongo_hook/index.rst:106
+msgid ""
+"Runs a mongo find query and returns the results "
+"https://api.mongodb.com/python/current/api/pymongo/collection.html#pymongo.collection.Collection.find"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/mongo_hook/index.rst:116
+msgid ""
+"Inserts a single document into a mongo collection "
+"https://api.mongodb.com/python/current/api/pymongo/collection.html#pymongo.collection.Collection.insert_one"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/mongo_hook/index.rst:126
+msgid ""
+"Inserts many docs into a mongo collection. "
+"https://api.mongodb.com/python/current/api/pymongo/collection.html#pymongo.collection.Collection.insert_many"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/mongo_hook/index.rst:136
+msgid ""
+"Updates a single document in a mongo collection. "
+"https://api.mongodb.com/python/current/api/pymongo/collection.html#pymongo.collection.Collection.update_one"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/mongo_hook/index.rst
+msgid "Parameters"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/mongo_hook/index.rst:139
+#: ../../_api/airflow/contrib/hooks/mongo_hook/index.rst:159
+#: ../../_api/airflow/contrib/hooks/mongo_hook/index.rst:183
+#: ../../_api/airflow/contrib/hooks/mongo_hook/index.rst:211
+msgid "The name of the collection to update."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/mongo_hook/index.rst:141
+#: ../../_api/airflow/contrib/hooks/mongo_hook/index.rst:161
+msgid "A query that matches the documents to update."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/mongo_hook/index.rst:143
+#: ../../_api/airflow/contrib/hooks/mongo_hook/index.rst:163
+msgid "The modifications to apply."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/mongo_hook/index.rst:145
+#: ../../_api/airflow/contrib/hooks/mongo_hook/index.rst:165
+#: ../../_api/airflow/contrib/hooks/mongo_hook/index.rst:190
+#: ../../_api/airflow/contrib/hooks/mongo_hook/index.rst:218
+#: ../../_api/airflow/contrib/hooks/mongo_hook/index.rst:243
+#: ../../_api/airflow/contrib/hooks/mongo_hook/index.rst:261
+msgid ""
+"The name of the database to use. Can be omitted; then the database from "
+"the connection string is used."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/mongo_hook/index.rst:156
+msgid ""
+"Updates one or more documents in a mongo collection. "
+"https://api.mongodb.com/python/current/api/pymongo/collection.html#pymongo.collection.Collection.update_many"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/mongo_hook/index.rst:176
+msgid ""
+"Replaces a single document in a mongo collection. "
+"https://api.mongodb.com/python/current/api/pymongo/collection.html#pymongo.collection.Collection.replace_one"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/mongo_hook/index.rst:180
+msgid ""
+"If no ``filter_doc`` is given, it is assumed that the replacement "
+"document contain the ``_id`` field which is then used as filters."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/mongo_hook/index.rst:185
+msgid "The new document."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/mongo_hook/index.rst:187
+msgid ""
+"A query that matches the documents to replace. Can be omitted; then the "
+"_id field from doc will be used."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/mongo_hook/index.rst:201
+msgid "Replaces many documents in a mongo collection."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/mongo_hook/index.rst:203
+msgid ""
+"Uses bulk_write with multiple ReplaceOne operations "
+"https://api.mongodb.com/python/current/api/pymongo/collection.html#pymongo.collection.Collection.bulk_write"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/mongo_hook/index.rst:207
+msgid ""
+"If no ``filter_docs``are given, it is assumed that all replacement "
+"documents contain the ``_id`` field which are then used as filters."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/mongo_hook/index.rst:213
+msgid "The new documents."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/mongo_hook/index.rst:215
+msgid ""
+"A list of queries that match the documents to replace. Can be omitted; "
+"then the _id fields from docs will be used."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/mongo_hook/index.rst:221
+msgid ""
+"If ``True``, perform an insert if no documents match the filters for the "
+"replace operation."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/mongo_hook/index.rst:224
+msgid ""
+"An instance of :class:`~pymongo.collation.Collation`. This option is only"
+" supported on MongoDB 3.4 and above."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/mongo_hook/index.rst:236
+msgid ""
+"Deletes a single document in a mongo collection. "
+"https://api.mongodb.com/python/current/api/pymongo/collection.html#pymongo.collection.Collection.delete_one"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/mongo_hook/index.rst:239
+#: ../../_api/airflow/contrib/hooks/mongo_hook/index.rst:257
+msgid "The name of the collection to delete from."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/mongo_hook/index.rst:241
+msgid "A query that matches the document to delete."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/mongo_hook/index.rst:254
+msgid ""
+"Deletes one or more documents in a mongo collection. "
+"https://api.mongodb.com/python/current/api/pymongo/collection.html#pymongo.collection.Collection.delete_many"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/mongo_hook/index.rst:259
+msgid "A query that matches the documents to delete."
+msgstr ""
+

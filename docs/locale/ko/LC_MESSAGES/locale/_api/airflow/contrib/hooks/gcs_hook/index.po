@@ -1,0 +1,434 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C)
+# This file is distributed under the same license as the Airflow package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Airflow 1.10.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-04-03 17:47+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../_api/airflow/contrib/hooks/gcs_hook/index.rst:4
+msgid ":mod:`airflow.contrib.hooks.gcs_hook`"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/gcs_hook/index.rst:15
+msgid "Module Contents"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/gcs_hook/index.rst:24
+msgid "Bases::class:`airflow.contrib.hooks.gcp_api_base_hook.GoogleCloudBaseHook`"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/gcs_hook/index.rst:28
+msgid ""
+"Interact with Google Cloud Storage. This hook uses the Google Cloud "
+"Platform connection."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/gcs_hook/index.rst:40
+msgid "Returns a Google Cloud Storage service object."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/gcs_hook/index.rst:49
+msgid "Copies an object from a bucket to another, with renaming if requested."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/gcs_hook/index.rst:51
+msgid ""
+"destination_bucket or destination_object can be omitted, in which case "
+"source bucket/object is used, but not both."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/gcs_hook/index.rst
+msgid "Parameters"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/gcs_hook/index.rst:54
+#: ../../_api/airflow/contrib/hooks/gcs_hook/index.rst:78
+msgid "The bucket of the object to copy from."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/gcs_hook/index.rst:56
+#: ../../_api/airflow/contrib/hooks/gcs_hook/index.rst:80
+msgid "The object to copy."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/gcs_hook/index.rst:58
+msgid ""
+"The destination of the object to copied to. Can be omitted; then the same"
+" bucket is used."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/gcs_hook/index.rst:61
+#: ../../_api/airflow/contrib/hooks/gcs_hook/index.rst:84
+msgid ""
+"The (renamed) path of the object if given. Can be omitted; then the same "
+"name is used."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/gcs_hook/index.rst:72
+msgid ""
+"Has the same functionality as copy, except that will work on files over 5"
+" TB, as well as when copying between locations and/or storage classes."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/gcs_hook/index.rst:76
+msgid "destination_object can be omitted, in which case source_object is used."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/gcs_hook/index.rst:82
+msgid "The destination of the object to copied to."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/gcs_hook/index.rst:95
+msgid "Get a file from Google Cloud Storage."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/gcs_hook/index.rst:97
+msgid "The bucket to fetch from."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/gcs_hook/index.rst:99
+msgid "The object to fetch."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/gcs_hook/index.rst:101
+msgid "If set, a local file path where the file should be written to."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/gcs_hook/index.rst:111
+msgid "Uploads a local file to Google Cloud Storage."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/gcs_hook/index.rst:113
+msgid "The bucket to upload to."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/gcs_hook/index.rst:115
+msgid "The object name to set when uploading the local file."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/gcs_hook/index.rst:117
+msgid "The local file path to the file to be uploaded."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/gcs_hook/index.rst:119
+msgid "The MIME type to set when uploading the file."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/gcs_hook/index.rst:121
+msgid "Option to compress file for upload"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/gcs_hook/index.rst:123
+msgid ""
+"If True, the upload will be split into multiple HTTP requests. The "
+"default size is 256MiB per request. Pass a number instead of True to "
+"specify the request size, which must be a multiple of 262144 (256KiB)."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/gcs_hook/index.rst:127
+msgid ""
+"The number of times to attempt to re-upload the file (or individual "
+"chunks, in the case of multipart uploads). Retries are attempted with "
+"exponential backoff."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/gcs_hook/index.rst:139
+msgid "Checks for the existence of a file in Google Cloud Storage."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/gcs_hook/index.rst:141
+#: ../../_api/airflow/contrib/hooks/gcs_hook/index.rst:156
+#: ../../_api/airflow/contrib/hooks/gcs_hook/index.rst:213
+#: ../../_api/airflow/contrib/hooks/gcs_hook/index.rst:227
+#: ../../_api/airflow/contrib/hooks/gcs_hook/index.rst:242
+msgid "The Google cloud storage bucket where the object is."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/gcs_hook/index.rst:143
+#: ../../_api/airflow/contrib/hooks/gcs_hook/index.rst:158
+#: ../../_api/airflow/contrib/hooks/gcs_hook/index.rst:215
+#: ../../_api/airflow/contrib/hooks/gcs_hook/index.rst:229
+#: ../../_api/airflow/contrib/hooks/gcs_hook/index.rst:244
+msgid "The name of the object to check in the Google cloud storage bucket."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/gcs_hook/index.rst:154
+msgid "Checks if an object is updated in Google Cloud Storage."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/gcs_hook/index.rst:161
+msgid "The timestamp to check against."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/gcs_hook/index.rst:171
+msgid ""
+"Delete an object if versioning is not enabled for the bucket, or if "
+"generation parameter is used."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/gcs_hook/index.rst:174
+msgid "name of the bucket, where the object resides"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/gcs_hook/index.rst:176
+msgid "name of the object to delete"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/gcs_hook/index.rst:178
+msgid "if present, permanently delete the object of this generation"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/gcs_hook/index.rst
+msgid "Returns"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/gcs_hook/index.rst:180
+msgid "True if succeeded"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/gcs_hook/index.rst:189
+msgid "List all objects from the bucket with the give string prefix in name"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/gcs_hook/index.rst:191
+msgid "bucket name"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/gcs_hook/index.rst:193
+msgid "if true, list all versions of the objects"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/gcs_hook/index.rst:195
+msgid "max count of items to return in a single page of responses"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/gcs_hook/index.rst:197
+msgid "prefix string which filters objects whose name begin with this prefix"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/gcs_hook/index.rst:200
+msgid "filters objects based on the delimiter (for e.g '.csv')"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/gcs_hook/index.rst:202
+msgid "a stream of object names matching the filtering criteria"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/gcs_hook/index.rst:211
+msgid "Gets the size of a file in Google Cloud Storage."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/gcs_hook/index.rst:225
+msgid "Gets the CRC32c checksum of an object in Google Cloud Storage."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/gcs_hook/index.rst:240
+msgid "Gets the MD5 hash of an object in Google Cloud Storage."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/gcs_hook/index.rst:255
+msgid ""
+"Creates a new bucket. Google Cloud Storage uses a flat namespace, so you "
+"can't create a bucket with a name that is already in use."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/gcs_hook/index.rst:259
+msgid ""
+"For more information, see Bucket Naming Guidelines: "
+"https://cloud.google.com/storage/docs/bucketnaming.html#requirements"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/gcs_hook/index.rst:262
+msgid "The name of the bucket."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/gcs_hook/index.rst:264
+msgid ""
+"An optional dict with parameters for creating the bucket. For information"
+" on available parameters, see Cloud Storage API doc: "
+"https://cloud.google.com/storage/docs/json_api/v1/buckets/insert"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/gcs_hook/index.rst:268
+msgid ""
+"This defines how objects in the bucket are stored and determines the SLA "
+"and the cost of storage. Values include  - ``MULTI_REGIONAL`` - "
+"``REGIONAL`` - ``STANDARD`` - ``NEARLINE`` - ``COLDLINE``.  If this value"
+" is not specified when the bucket is created, it will default to "
+"STANDARD."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/gcs_hook/index.rst:268
+msgid ""
+"This defines how objects in the bucket are stored and determines the SLA "
+"and the cost of storage. Values include"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/gcs_hook/index.rst:271
+msgid "``MULTI_REGIONAL``"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/gcs_hook/index.rst:272
+msgid "``REGIONAL``"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/gcs_hook/index.rst:273
+msgid "``STANDARD``"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/gcs_hook/index.rst:274
+msgid "``NEARLINE``"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/gcs_hook/index.rst:275
+msgid "``COLDLINE``."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/gcs_hook/index.rst:277
+msgid ""
+"If this value is not specified when the bucket is created, it will "
+"default to STANDARD."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/gcs_hook/index.rst:280
+msgid ""
+"The location of the bucket. Object data for objects in the bucket resides"
+" in physical storage within this region. Defaults to US.  .. seealso::"
+"     https://developers.google.com/storage/docs/bucket-locations"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/gcs_hook/index.rst:280
+msgid ""
+"The location of the bucket. Object data for objects in the bucket resides"
+" in physical storage within this region. Defaults to US."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/gcs_hook/index.rst:285
+msgid "https://developers.google.com/storage/docs/bucket-locations"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/gcs_hook/index.rst:288
+msgid "The ID of the GCP Project."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/gcs_hook/index.rst:290
+msgid "User-provided labels, in key/value pairs."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/gcs_hook/index.rst:292
+msgid "If successful, it returns the ``id`` of the bucket."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/gcs_hook/index.rst:301
+msgid ""
+"Creates a new ACL entry on the specified bucket. See: "
+"https://cloud.google.com/storage/docs/json_api/v1/bucketAccessControls/insert"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/gcs_hook/index.rst:304
+#: ../../_api/airflow/contrib/hooks/gcs_hook/index.rst:328
+msgid "Name of a bucket."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/gcs_hook/index.rst:306
+msgid ""
+"The entity holding the permission, in one of the following forms: user-"
+"userId, user-email, group-groupId, group-email, domain-domain, project-"
+"team-projectId, allUsers, allAuthenticatedUsers. See: "
+"https://cloud.google.com/storage/docs/access-control/lists#scopes"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/gcs_hook/index.rst:311
+msgid ""
+"The access permission for the entity. Acceptable values are: \"OWNER\", "
+"\"READER\", \"WRITER\"."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/gcs_hook/index.rst:314
+#: ../../_api/airflow/contrib/hooks/gcs_hook/index.rst:345
+msgid ""
+"(Optional) The project to be billed for this request. Required for "
+"Requester Pays buckets."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/gcs_hook/index.rst:325
+msgid ""
+"Creates a new ACL entry on the specified object. See: "
+"https://cloud.google.com/storage/docs/json_api/v1/objectAccessControls/insert"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/gcs_hook/index.rst:330
+msgid ""
+"Name of the object. For information about how to URL encode object names "
+"to be path safe, see: "
+"https://cloud.google.com/storage/docs/json_api/#encoding"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/gcs_hook/index.rst:334
+msgid ""
+"The entity holding the permission, in one of the following forms: user-"
+"userId, user-email, group-groupId, group-email, domain-domain, project-"
+"team-projectId, allUsers, allAuthenticatedUsers See: "
+"https://cloud.google.com/storage/docs/access-control/lists#scopes"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/gcs_hook/index.rst:339
+msgid ""
+"The access permission for the entity. Acceptable values are: \"OWNER\", "
+"\"READER\"."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/gcs_hook/index.rst:342
+msgid ""
+"(Optional) If present, selects a specific revision of this object (as "
+"opposed to the latest version, the default)."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/gcs_hook/index.rst:356
+msgid ""
+"Composes a list of existing object into a new object in the same storage "
+"bucket"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/gcs_hook/index.rst:358
+msgid ""
+"Currently it only supports up to 32 objects that can be concatenated in a"
+" single operation"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/gcs_hook/index.rst:361
+msgid "https://cloud.google.com/storage/docs/json_api/v1/objects/compose"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/gcs_hook/index.rst:363
+msgid ""
+"The name of the bucket containing the source objects. This is also the "
+"same bucket to store the composed destination object."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/gcs_hook/index.rst:366
+msgid "The list of source objects that will be composed into a single object."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/gcs_hook/index.rst:369
+msgid "The path of the object if given."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/gcs_hook/index.rst:384
+msgid ""
+"Given a Google Cloud Storage URL (gs://<bucket>/<blob>), returns a tuple "
+"containing the corresponding bucket and blob."
+msgstr ""
+

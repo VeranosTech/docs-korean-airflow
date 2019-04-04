@@ -1,0 +1,81 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C)
+# This file is distributed under the same license as the Airflow package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Airflow 1.10.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-04-03 17:47+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../_api/airflow/contrib/operators/bigquery_to_bigquery/index.rst:4
+msgid ":mod:`airflow.contrib.operators.bigquery_to_bigquery`"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/bigquery_to_bigquery/index.rst:15
+msgid "Module Contents"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/bigquery_to_bigquery/index.rst:24
+msgid "Bases::class:`airflow.models.BaseOperator`"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/bigquery_to_bigquery/index.rst:28
+msgid "Copies data from one BigQuery table to another."
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/bigquery_to_bigquery/index.rst:31
+msgid ""
+"For more details about these parameters: "
+"https://cloud.google.com/bigquery/docs/reference/v2/jobs#configuration.copy"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/bigquery_to_bigquery/index.rst
+msgid "Parameters"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/bigquery_to_bigquery/index.rst:34
+msgid ""
+"One or more dotted ``(project:|project.)<dataset>.<table>`` BigQuery "
+"tables to use as the source data. If ``<project>`` is not included, "
+"project will be the project defined in the connection json. Use a list if"
+" there are multiple source tables. (templated)"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/bigquery_to_bigquery/index.rst:40
+msgid ""
+"The destination BigQuery table. Format is: "
+"``(project:|project.)<dataset>.<table>`` (templated)"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/bigquery_to_bigquery/index.rst:43
+msgid "The write disposition if the table already exists."
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/bigquery_to_bigquery/index.rst:45
+msgid "The create disposition if the table doesn't exist."
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/bigquery_to_bigquery/index.rst:47
+msgid "reference to a specific BigQuery hook."
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/bigquery_to_bigquery/index.rst:49
+msgid ""
+"The account to impersonate, if any. For this to work, the service account"
+" making the request must have domain-wide delegation enabled."
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/bigquery_to_bigquery/index.rst:53
+msgid "a dictionary containing labels for the job/query, passed to BigQuery"
+msgstr ""
+

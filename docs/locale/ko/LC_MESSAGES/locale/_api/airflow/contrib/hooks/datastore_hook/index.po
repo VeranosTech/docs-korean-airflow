@@ -1,0 +1,259 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C)
+# This file is distributed under the same license as the Airflow package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Airflow 1.10.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-04-04 13:21+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../_api/airflow/contrib/hooks/datastore_hook/index.rst:4
+msgid ":mod:`airflow.contrib.hooks.datastore_hook`"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/datastore_hook/index.rst:15
+msgid "Module Contents"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/datastore_hook/index.rst:24
+msgid "Bases::class:`airflow.contrib.hooks.gcp_api_base_hook.GoogleCloudBaseHook`"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/datastore_hook/index.rst:28
+msgid ""
+"Interact with Google Cloud Datastore. This hook uses the Google Cloud "
+"Platform connection."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/datastore_hook/index.rst:30
+msgid ""
+"This object is not threads safe. If you want to make multiple requests "
+"simultaneously, you will need to create a hook per thread."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/datastore_hook/index.rst
+msgid "Parameters"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/datastore_hook/index.rst:33
+msgid "The version of the API it is going to connect to."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/datastore_hook/index.rst:45
+msgid "Establishes a connection to the Google API."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/datastore_hook/index.rst
+msgid "Returns"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/datastore_hook/index.rst:47
+msgid "a Google Cloud Datastore service object."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/datastore_hook/index.rst
+msgid "Return type"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/datastore_hook/index.rst:57
+msgid "Allocate IDs for incomplete keys."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/datastore_hook/index.rst:60
+msgid "https://cloud.google.com/datastore/docs/reference/rest/v1/projects/allocateIds"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/datastore_hook/index.rst:62
+msgid "a list of partial keys."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/datastore_hook/index.rst:64
+msgid "a list of full keys."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/datastore_hook/index.rst:74
+msgid "Begins a new transaction."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/datastore_hook/index.rst:77
+msgid "https://cloud.google.com/datastore/docs/reference/rest/v1/projects/beginTransaction"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/datastore_hook/index.rst:79
+msgid "a transaction handle."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/datastore_hook/index.rst:89
+msgid ""
+"Commit a transaction, optionally creating, deleting or modifying some "
+"entities."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/datastore_hook/index.rst:92
+msgid "https://cloud.google.com/datastore/docs/reference/rest/v1/projects/commit"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/datastore_hook/index.rst:94
+msgid "the body of the commit request."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/datastore_hook/index.rst:96
+msgid "the response body of the commit request."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/datastore_hook/index.rst:106
+msgid "Lookup some entities by key."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/datastore_hook/index.rst:109
+msgid "https://cloud.google.com/datastore/docs/reference/rest/v1/projects/lookup"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/datastore_hook/index.rst:111
+msgid "the keys to lookup."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/datastore_hook/index.rst:113
+msgid ""
+"the read consistency to use. default, strong or eventual. Cannot be used "
+"with a transaction."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/datastore_hook/index.rst:116
+msgid "the transaction to use, if any."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/datastore_hook/index.rst:118
+msgid "the response body of the lookup request."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/datastore_hook/index.rst:128
+msgid "Roll back a transaction."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/datastore_hook/index.rst:131
+msgid "https://cloud.google.com/datastore/docs/reference/rest/v1/projects/rollback"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/datastore_hook/index.rst:133
+msgid "the transaction to roll back."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/datastore_hook/index.rst:143
+msgid "Run a query for entities."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/datastore_hook/index.rst:146
+msgid "https://cloud.google.com/datastore/docs/reference/rest/v1/projects/runQuery"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/datastore_hook/index.rst:148
+msgid "the body of the query request."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/datastore_hook/index.rst:150
+msgid "the batch of query results."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/datastore_hook/index.rst:160
+msgid "Gets the latest state of a long-running operation."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/datastore_hook/index.rst:163
+msgid "https://cloud.google.com/datastore/docs/reference/data/rest/v1/projects.operations/get"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/datastore_hook/index.rst:165
+#: ../../_api/airflow/contrib/hooks/datastore_hook/index.rst:182
+msgid "the name of the operation resource."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/datastore_hook/index.rst:167
+#: ../../_api/airflow/contrib/hooks/datastore_hook/index.rst:200
+#: ../../_api/airflow/contrib/hooks/datastore_hook/index.rst:226
+#: ../../_api/airflow/contrib/hooks/datastore_hook/index.rst:254
+msgid "a resource operation instance."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/datastore_hook/index.rst:177
+msgid "Deletes the long-running operation."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/datastore_hook/index.rst:180
+msgid "https://cloud.google.com/datastore/docs/reference/data/rest/v1/projects.operations/delete"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/datastore_hook/index.rst:184
+msgid "none if successful."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/datastore_hook/index.rst:194
+msgid "Poll backup operation state until it's completed."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/datastore_hook/index.rst:196
+msgid "the name of the operation resource"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/datastore_hook/index.rst:198
+msgid "The number of seconds to wait before calling another request."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/datastore_hook/index.rst:210
+msgid "Export entities from Cloud Datastore to Cloud Storage for backup."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/datastore_hook/index.rst:213
+#: ../../_api/airflow/contrib/hooks/datastore_hook/index.rst:239
+msgid "Keep in mind that this requests the Admin API not the Data API."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/datastore_hook/index.rst:216
+msgid "https://cloud.google.com/datastore/docs/reference/admin/rest/v1/projects/export"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/datastore_hook/index.rst:218
+#: ../../_api/airflow/contrib/hooks/datastore_hook/index.rst:244
+msgid "The name of the Cloud Storage bucket."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/datastore_hook/index.rst:220
+#: ../../_api/airflow/contrib/hooks/datastore_hook/index.rst:248
+msgid "The Cloud Storage namespace path."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/datastore_hook/index.rst:222
+msgid "Description of what data from the project is included in the export."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/datastore_hook/index.rst:224
+#: ../../_api/airflow/contrib/hooks/datastore_hook/index.rst:252
+msgid "Client-assigned labels."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/datastore_hook/index.rst:236
+msgid "Import a backup from Cloud Storage to Cloud Datastore."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/datastore_hook/index.rst:242
+msgid "https://cloud.google.com/datastore/docs/reference/admin/rest/v1/projects/import"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/datastore_hook/index.rst:246
+msgid "the metadata file written by the projects.export operation."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/datastore_hook/index.rst:250
+msgid "specify which kinds/namespaces are to be imported."
+msgstr ""
+

@@ -1,0 +1,430 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C)
+# This file is distributed under the same license as the Airflow package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Airflow 1.10.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-04-03 17:47+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../_api/airflow/contrib/operators/bigquery_operator/index.rst:4
+msgid ":mod:`airflow.contrib.operators.bigquery_operator`"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/bigquery_operator/index.rst:15
+msgid "Module Contents"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/bigquery_operator/index.rst:24
+#: ../../_api/airflow/contrib/operators/bigquery_operator/index.rst:164
+#: ../../_api/airflow/contrib/operators/bigquery_operator/index.rst:294
+#: ../../_api/airflow/contrib/operators/bigquery_operator/index.rst:408
+#: ../../_api/airflow/contrib/operators/bigquery_operator/index.rst:468
+msgid "Bases::class:`airflow.models.BaseOperator`"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/bigquery_operator/index.rst:28
+msgid "Executes BigQuery SQL queries in a specific BigQuery database"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/bigquery_operator/index.rst
+msgid "Parameters"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/bigquery_operator/index.rst:30
+msgid "the sql code to be executed (templated)"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/bigquery_operator/index.rst:34
+msgid ""
+"A dotted ``(<project>.|<project>:)<dataset>.<table>`` that, if set, will "
+"store the results of the query. (templated)"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/bigquery_operator/index.rst:38
+msgid ""
+"Specifies the action that occurs if the destination table already exists."
+" (default: 'WRITE_EMPTY')"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/bigquery_operator/index.rst:41
+msgid ""
+"Specifies whether the job is allowed to create new tables. (default: "
+"'CREATE_IF_NEEDED')"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/bigquery_operator/index.rst:44
+msgid "Whether to allow large results."
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/bigquery_operator/index.rst:46
+msgid ""
+"If true and query uses legacy SQL dialect, flattens all nested and "
+"repeated fields in the query results. ``allow_large_results`` must be "
+"``true`` if this is set to ``false``. For standard SQL queries, this flag"
+" is ignored and results are never flattened."
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/bigquery_operator/index.rst:51
+msgid "reference to a specific BigQuery hook."
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/bigquery_operator/index.rst:53
+#: ../../_api/airflow/contrib/operators/bigquery_operator/index.rst:207
+#: ../../_api/airflow/contrib/operators/bigquery_operator/index.rst:359
+msgid ""
+"The account to impersonate, if any. For this to work, the service account"
+" making the request must have domain-wide delegation enabled."
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/bigquery_operator/index.rst:57
+msgid ""
+"The User Defined Function configuration for the query. See "
+"https://cloud.google.com/bigquery/user-defined-functions for details."
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/bigquery_operator/index.rst:60
+msgid "Whether to use legacy SQL (true) or standard SQL (false)."
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/bigquery_operator/index.rst:62
+msgid ""
+"Positive integer that serves as a multiplier of the basic price. Defaults"
+" to None, in which case it uses the value set in the project."
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/bigquery_operator/index.rst:66
+msgid ""
+"Limits the bytes billed for this job. Queries that will have bytes billed"
+" beyond this limit will fail (without incurring a charge). If "
+"unspecified, this will be set to your project default."
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/bigquery_operator/index.rst:71
+msgid ""
+"a dictionary that contain params 'configuration' applied for Google "
+"BigQuery Jobs API: "
+"https://cloud.google.com/bigquery/docs/reference/rest/v2/jobs for "
+"example, {'query': {'useQueryCache': False}}. You could use it if you "
+"need to provide some params that are not supported by BigQueryOperator "
+"like args."
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/bigquery_operator/index.rst:78
+msgid ""
+"Allows the schema of the destination table to be updated as a side effect"
+" of the load job."
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/bigquery_operator/index.rst:81
+msgid ""
+"a list of dictionary containing query parameter types and values, passed "
+"to BigQuery. The structure of dictionary should look like "
+"'queryParameters' in Google BigQuery Jobs API: "
+"https://cloud.google.com/bigquery/docs/reference/rest/v2/jobs. For "
+"example, [{ 'name': 'corpus', 'parameterType': { 'type': 'STRING' }, "
+"'parameterValue': { 'value': 'romeoandjuliet' } }]."
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/bigquery_operator/index.rst:88
+msgid "a dictionary containing labels for the job/query, passed to BigQuery"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/bigquery_operator/index.rst:91
+msgid ""
+"Specifies a priority for the query. Possible values include INTERACTIVE "
+"and BATCH. The default value is INTERACTIVE."
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/bigquery_operator/index.rst:95
+msgid ""
+"configure optional time partitioning fields i.e. partition by field, type"
+" and expiration as per API specifications."
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/bigquery_operator/index.rst:98
+msgid ""
+"Request that the result of this query be stored sorted by one or more "
+"columns. This is only available in conjunction with time_partitioning. "
+"The order of columns given determines the sort order."
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/bigquery_operator/index.rst:102
+msgid ""
+"The geographic location of the job. Required except for US and EU. See "
+"details at "
+"https://cloud.google.com/bigquery/docs/locations#specifying_your_location"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/bigquery_operator/index.rst:168
+msgid ""
+"Creates a new, empty table in the specified BigQuery dataset, optionally "
+"with schema."
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/bigquery_operator/index.rst:171
+msgid ""
+"The schema to be used for the BigQuery table may be specified in one of "
+"two ways. You may either directly pass the schema fields in, or you may "
+"point the operator to a Google cloud storage object name. The object in "
+"Google cloud storage must be a JSON file with the schema fields in it. "
+"You can also create a table without schema."
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/bigquery_operator/index.rst:177
+msgid "The project to create the table into. (templated)"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/bigquery_operator/index.rst:179
+msgid "The dataset to create the table into. (templated)"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/bigquery_operator/index.rst:181
+msgid "The Name of the table to be created. (templated)"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/bigquery_operator/index.rst:183
+msgid ""
+"If set, the schema field list as defined here: "
+"https://cloud.google.com/bigquery/docs/reference/rest/v2/jobs#configuration.load.schema"
+"  **Example**: ::      schema_fields=[{\"name\": \"emp_name\", \"type\": "
+"\"STRING\", \"mode\": \"REQUIRED\"},                    {\"name\": "
+"\"salary\", \"type\": \"INTEGER\", \"mode\": \"NULLABLE\"}]"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/bigquery_operator/index.rst:183
+#: ../../_api/airflow/contrib/operators/bigquery_operator/index.rst:316
+msgid ""
+"If set, the schema field list as defined here: "
+"https://cloud.google.com/bigquery/docs/reference/rest/v2/jobs#configuration.load.schema"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/bigquery_operator/index.rst:186
+#: ../../_api/airflow/contrib/operators/bigquery_operator/index.rst:319
+#: ../../_api/airflow/contrib/operators/bigquery_operator/index.rst:420
+msgid "**Example**: ::"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/bigquery_operator/index.rst:192
+msgid ""
+"Full path to the JSON file containing schema (templated). For example: "
+"``gs://test-bucket/dir1/dir2/employee_schema.json``"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/bigquery_operator/index.rst:196
+msgid ""
+"configure optional time partitioning fields i.e. partition by field, type"
+" and  expiration as per API specifications.  .. seealso::     "
+"https://cloud.google.com/bigquery/docs/reference/rest/v2/tables#timePartitioning"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/bigquery_operator/index.rst:196
+msgid ""
+"configure optional time partitioning fields i.e. partition by field, type"
+" and  expiration as per API specifications."
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/bigquery_operator/index.rst:200
+msgid "https://cloud.google.com/bigquery/docs/reference/rest/v2/tables#timePartitioning"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/bigquery_operator/index.rst:202
+#: ../../_api/airflow/contrib/operators/bigquery_operator/index.rst:354
+msgid "Reference to a specific BigQuery hook."
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/bigquery_operator/index.rst:204
+#: ../../_api/airflow/contrib/operators/bigquery_operator/index.rst:356
+msgid "Reference to a specific Google cloud storage hook."
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/bigquery_operator/index.rst:211
+msgid ""
+"a dictionary containing labels for the table, passed to BigQuery  "
+"**Example (with schema JSON in GCS)**: ::      CreateTable = "
+"BigQueryCreateEmptyTableOperator(         "
+"task_id='BigQueryCreateEmptyTableOperator_task',         "
+"dataset_id='ODS',         table_id='Employees',         project_id"
+"='internal-gcp-project',         gcs_schema_object='gs://schema-"
+"bucket/employee_schema.json',         bigquery_conn_id='airflow-service-"
+"account',         google_cloud_storage_conn_id='airflow-service-account'"
+"     )  **Corresponding Schema file** (``employee_schema.json``): ::"
+"      [       {         \"mode\": \"NULLABLE\",         \"name\": "
+"\"emp_name\",         \"type\": \"STRING\"       },       {         "
+"\"mode\": \"REQUIRED\",         \"name\": \"salary\",         \"type\": "
+"\"INTEGER\"       }     ]  **Example (with schema in the DAG)**: ::      "
+"CreateTable = BigQueryCreateEmptyTableOperator(         "
+"task_id='BigQueryCreateEmptyTableOperator_task',         "
+"dataset_id='ODS',         table_id='Employees',         project_id"
+"='internal-gcp-project',         schema_fields=[{\"name\": \"emp_name\", "
+"\"type\": \"STRING\", \"mode\": \"REQUIRED\"},                        "
+"{\"name\": \"salary\", \"type\": \"INTEGER\", \"mode\": \"NULLABLE\"}],"
+"         bigquery_conn_id='airflow-service-account',         "
+"google_cloud_storage_conn_id='airflow-service-account'     )"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/bigquery_operator/index.rst:211
+#: ../../_api/airflow/contrib/operators/bigquery_operator/index.rst:365
+msgid "a dictionary containing labels for the table, passed to BigQuery"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/bigquery_operator/index.rst:213
+msgid "**Example (with schema JSON in GCS)**: ::"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/bigquery_operator/index.rst:225
+msgid "**Corresponding Schema file** (``employee_schema.json``): ::"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/bigquery_operator/index.rst:240
+msgid "**Example (with schema in the DAG)**: ::"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/bigquery_operator/index.rst:298
+msgid ""
+"Creates a new external table in the dataset with the data in Google Cloud"
+" Storage."
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/bigquery_operator/index.rst:301
+msgid ""
+"The schema to be used for the BigQuery table may be specified in one of "
+"two ways. You may either directly pass the schema fields in, or you may "
+"point the operator to a Google cloud storage object name. The object in "
+"Google cloud storage must be a JSON file with the schema fields in it."
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/bigquery_operator/index.rst:306
+msgid "The bucket to point the external table to. (templated)"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/bigquery_operator/index.rst:308
+msgid ""
+"List of Google cloud storage URIs to point table to. (templated) If "
+"source_format is 'DATASTORE_BACKUP', the list must only contain a single "
+"URI."
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/bigquery_operator/index.rst:312
+msgid ""
+"The dotted ``(<project>.)<dataset>.<table>`` BigQuery table to load data "
+"into (templated). If ``<project>`` is not included, project will be the "
+"project defined in the connection json."
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/bigquery_operator/index.rst:316
+msgid ""
+"If set, the schema field list as defined here: "
+"https://cloud.google.com/bigquery/docs/reference/rest/v2/jobs#configuration.load.schema"
+"  **Example**: ::      schema_fields=[{\"name\": \"emp_name\", \"type\": "
+"\"STRING\", \"mode\": \"REQUIRED\"},                    {\"name\": "
+"\"salary\", \"type\": \"INTEGER\", \"mode\": \"NULLABLE\"}]  Should not "
+"be set when source_format is 'DATASTORE_BACKUP'."
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/bigquery_operator/index.rst:324
+msgid "Should not be set when source_format is 'DATASTORE_BACKUP'."
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/bigquery_operator/index.rst:326
+msgid ""
+"If set, a GCS object path pointing to a .json file that contains the "
+"schema for the table. (templated)"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/bigquery_operator/index.rst:329
+msgid "File format of the data."
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/bigquery_operator/index.rst:331
+msgid ""
+"[Optional] The compression type of the data source. Possible values "
+"include GZIP and NONE. The default value is NONE. This setting is ignored"
+" for Google Cloud Bigtable, Google Cloud Datastore backups and Avro "
+"formats."
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/bigquery_operator/index.rst:337
+msgid "Number of rows to skip when loading from a CSV."
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/bigquery_operator/index.rst:339
+msgid "The delimiter to use for the CSV."
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/bigquery_operator/index.rst:341
+msgid ""
+"The maximum number of bad records that BigQuery can ignore when running "
+"the job."
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/bigquery_operator/index.rst:344
+msgid "The value that is used to quote data sections in a CSV file."
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/bigquery_operator/index.rst:346
+msgid "Whether to allow quoted newlines (true) or not (false)."
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/bigquery_operator/index.rst:348
+msgid ""
+"Accept rows that are missing trailing optional columns. The missing "
+"values are treated as nulls. If false, records with missing trailing "
+"columns are treated as bad records, and if there are too many bad "
+"records, an invalid error is returned in the job result. Only applicable "
+"to CSV, ignored for other formats."
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/bigquery_operator/index.rst:363
+msgid "configure optional fields specific to the source format"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/bigquery_operator/index.rst:412
+msgid ""
+"This operator deletes an existing dataset from your Project in Big query."
+" https://cloud.google.com/bigquery/docs/reference/rest/v2/datasets/delete"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/bigquery_operator/index.rst:415
+msgid "The project id of the dataset."
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/bigquery_operator/index.rst:417
+msgid "The dataset to be deleted."
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/bigquery_operator/index.rst:472
+msgid ""
+"This operator is used to create new dataset for your Project in Big "
+"query. "
+"https://cloud.google.com/bigquery/docs/reference/rest/v2/datasets#resource"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/bigquery_operator/index.rst:475
+msgid ""
+"The name of the project where we want to create the dataset. Don't need "
+"to provide, if projectId in dataset_reference."
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/bigquery_operator/index.rst:478
+msgid ""
+"The id of dataset. Don't need to provide, if datasetId in "
+"dataset_reference."
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/bigquery_operator/index.rst:481
+msgid ""
+"Dataset reference that could be provided with request body. More info: "
+"https://cloud.google.com/bigquery/docs/reference/rest/v2/datasets#resource"
+msgstr ""
+

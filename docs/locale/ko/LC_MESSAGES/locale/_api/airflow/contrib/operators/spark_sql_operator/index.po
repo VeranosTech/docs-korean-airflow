@@ -1,0 +1,93 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C)
+# This file is distributed under the same license as the Airflow package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Airflow 1.10.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-04-03 17:47+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../_api/airflow/contrib/operators/spark_sql_operator/index.rst:4
+msgid ":mod:`airflow.contrib.operators.spark_sql_operator`"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/spark_sql_operator/index.rst:15
+msgid "Module Contents"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/spark_sql_operator/index.rst:24
+msgid "Bases::class:`airflow.models.BaseOperator`"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/spark_sql_operator/index.rst:28
+msgid "Execute Spark SQL query"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/spark_sql_operator/index.rst
+msgid "Parameters"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/spark_sql_operator/index.rst:30
+msgid "The SQL query to execute. (templated)"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/spark_sql_operator/index.rst:32
+msgid "arbitrary Spark configuration property"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/spark_sql_operator/index.rst:34
+msgid "connection_id string"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/spark_sql_operator/index.rst:36
+msgid ""
+"(Standalone & Mesos only) Total cores for all executors (Default: all the"
+" available cores on the worker)"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/spark_sql_operator/index.rst:39
+msgid "(Standalone & YARN only) Number of cores per executor (Default: 2)"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/spark_sql_operator/index.rst:42
+msgid "Memory per executor (e.g. 1000M, 2G) (Default: 1G)"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/spark_sql_operator/index.rst:44
+msgid "Full path to the file that contains the keytab"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/spark_sql_operator/index.rst:46
+msgid "spark://host:port, mesos://host:port, yarn, or local"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/spark_sql_operator/index.rst:48
+msgid "Name of the job"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/spark_sql_operator/index.rst:50
+msgid "Number of executors to launch"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/spark_sql_operator/index.rst:52
+msgid "Whether to pass the verbose flag to spark-sql"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/spark_sql_operator/index.rst:54
+msgid "The YARN queue to submit to (Default: \"default\")"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/spark_sql_operator/index.rst:86
+msgid "Call the SparkSqlHook to run the provided sql query"
+msgstr ""
+

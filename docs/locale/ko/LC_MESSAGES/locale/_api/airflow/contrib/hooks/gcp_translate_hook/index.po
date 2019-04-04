@@ -1,0 +1,140 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C)
+# This file is distributed under the same license as the Airflow package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Airflow 1.10.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-04-03 17:47+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../_api/airflow/contrib/hooks/gcp_translate_hook/index.rst:4
+msgid ":mod:`airflow.contrib.hooks.gcp_translate_hook`"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/gcp_translate_hook/index.rst:15
+msgid "Module Contents"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/gcp_translate_hook/index.rst:24
+msgid "Bases::class:`airflow.contrib.hooks.gcp_api_base_hook.GoogleCloudBaseHook`"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/gcp_translate_hook/index.rst:28
+msgid "Hook for Google Cloud translate APIs."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/gcp_translate_hook/index.rst:49
+msgid "Retrieves connection to Cloud Translate"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/gcp_translate_hook/index.rst
+msgid "Returns"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/gcp_translate_hook/index.rst:51
+msgid "Google Cloud Translate client object."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/gcp_translate_hook/index.rst
+msgid "Return type"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/gcp_translate_hook/index.rst:61
+msgid "Translate a string or list of strings."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/gcp_translate_hook/index.rst:63
+msgid "See https://cloud.google.com/translate/docs/translating-text"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/gcp_translate_hook/index.rst
+msgid "Parameters"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/gcp_translate_hook/index.rst:66
+msgid "String or list of strings to translate."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/gcp_translate_hook/index.rst:69
+msgid ""
+"The language to translate results into. This is required by the API and "
+"defaults to the target language of the current instance."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/gcp_translate_hook/index.rst:74
+msgid ""
+"(Optional) One of ``text`` or ``html``, to specify if the input text is "
+"plain text or HTML."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/gcp_translate_hook/index.rst:78
+msgid "(Optional) The language of the text to be translated."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/gcp_translate_hook/index.rst:82
+msgid ""
+"(Optional) The model used to translate the text, such as ``'base'`` or "
+"``'nmt'``."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/gcp_translate_hook/index.rst:86
+msgid ""
+"A list of dictionaries for each queried value. Each dictionary typically "
+"contains three keys (though not all will be present in all cases)  * "
+"``detectedSourceLanguage``: The detected language (as an   ISO 639-1 "
+"language code) of the text. * ``translatedText``: The translation of the "
+"text into the   target language. * ``input``: The corresponding input "
+"value. * ``model``: The model used to translate the text.  If only a "
+"single value is passed, then only a single dictionary will be returned."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/gcp_translate_hook/index.rst:86
+msgid ""
+"A list of dictionaries for each queried value. Each dictionary typically "
+"contains three keys (though not all will be present in all cases)"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/gcp_translate_hook/index.rst:90
+msgid ""
+"``detectedSourceLanguage``: The detected language (as an ISO 639-1 "
+"language code) of the text."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/gcp_translate_hook/index.rst:92
+msgid "``translatedText``: The translation of the text into the target language."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/gcp_translate_hook/index.rst:94
+msgid "``input``: The corresponding input value."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/gcp_translate_hook/index.rst:95
+msgid "``model``: The model used to translate the text."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/gcp_translate_hook/index.rst:97
+msgid ""
+"If only a single value is passed, then only a single dictionary will be "
+"returned."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/gcp_translate_hook/index.rst
+msgid "raises"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/gcp_translate_hook/index.rst:99
+msgid ""
+":class:`~exceptions.ValueError` if the number of values and translations "
+"differ."
+msgstr ""
+

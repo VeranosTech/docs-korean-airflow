@@ -1,0 +1,172 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C)
+# This file is distributed under the same license as the Airflow package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Airflow 1.10.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-04-03 17:47+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../_api/airflow/contrib/operators/mysql_to_gcs/index.rst:4
+msgid ":mod:`airflow.contrib.operators.mysql_to_gcs`"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/mysql_to_gcs/index.rst:15
+msgid "Module Contents"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/mysql_to_gcs/index.rst:36
+msgid "Bases::class:`airflow.models.BaseOperator`"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/mysql_to_gcs/index.rst:40
+msgid "Copy data from MySQL to Google cloud storage in JSON or CSV format."
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/mysql_to_gcs/index.rst:42
+msgid ""
+"The JSON data files generated are newline-delimited to enable them to be "
+"loaded into BigQuery. Reference: https://cloud.google.com/bigquery/docs/ "
+"loading-data-cloud-storage-json#limitations"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/mysql_to_gcs/index.rst
+msgid "Parameters"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/mysql_to_gcs/index.rst:47
+msgid "The SQL to execute on the MySQL table."
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/mysql_to_gcs/index.rst:49
+msgid "The bucket to upload to."
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/mysql_to_gcs/index.rst:51
+msgid ""
+"The filename to use as the object name when uploading to Google cloud "
+"storage. A {} should be specified in the filename to allow the operator "
+"to inject file numbers in cases where the file is split due to size."
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/mysql_to_gcs/index.rst:56
+msgid ""
+"If set, the filename to use as the object name when uploading a .json "
+"file containing the BigQuery schema fields for the table that was dumped "
+"from MySQL."
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/mysql_to_gcs/index.rst:60
+msgid ""
+"This operator supports the ability to split large table dumps into "
+"multiple files (see notes in the filenamed param docs above). Google "
+"cloud storage allows for files to be a maximum of 4GB. This param allows "
+"developers to specify the file size of the splits."
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/mysql_to_gcs/index.rst:66
+msgid "Reference to a specific MySQL hook."
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/mysql_to_gcs/index.rst:68
+msgid "Reference to a specific Google cloud storage hook."
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/mysql_to_gcs/index.rst:71
+msgid ""
+"The schema to use, if any. Should be a list of dict or a str. Pass a "
+"string if using Jinja template, otherwise, pass a list of dict. Examples "
+"could be seen: https://cloud.google.com/bigquery/docs "
+"/schemas#specifying_a_json_schema_file"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/mysql_to_gcs/index.rst:76
+msgid ""
+"The account to impersonate, if any. For this to work, the service account"
+" making the request must have domain-wide delegation enabled."
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/mysql_to_gcs/index.rst:80
+msgid "Desired format of files to be exported."
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/mysql_to_gcs/index.rst:82
+msgid "The delimiter to be used for CSV files."
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/mysql_to_gcs/index.rst:131
+msgid "Queries mysql and returns a cursor to the results."
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/mysql_to_gcs/index.rst:140
+msgid "Takes a cursor, and writes results to a local file."
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/mysql_to_gcs/index.rst
+msgid "Returns"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/mysql_to_gcs/index.rst:142
+msgid ""
+"A dictionary where keys are filenames to be used as object names in GCS, "
+"and values are file handles to local files that contain the data for the "
+"GCS objects."
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/mysql_to_gcs/index.rst:153
+msgid ""
+"Configure a csv writer with the file_handle and write schema as headers "
+"for the new file."
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/mysql_to_gcs/index.rst:163
+msgid ""
+"Takes a cursor, and writes the BigQuery schema in .json format for the "
+"results to a local file system."
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/mysql_to_gcs/index.rst:166
+msgid ""
+"A dictionary where key is a filename to be used as an object name in GCS,"
+" and values are file handles to local files that contains the BigQuery "
+"schema fields in .json format."
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/mysql_to_gcs/index.rst:177
+msgid ""
+"Upload all of the file splits (and optionally the schema .json file) to "
+"Google cloud storage."
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/mysql_to_gcs/index.rst:187
+msgid ""
+"Takes a value from MySQLdb, and converts it to a value that's safe for "
+"JSON/Google cloud storage/BigQuery. Dates are converted to UTC seconds. "
+"Decimals are converted to floats. Binary type fields are encoded with "
+"base64, as imported BYTES data must be base64-encoded according to "
+"Bigquery SQL date type documentation: https://cloud.google.com/bigquery"
+"/data-types"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/mysql_to_gcs/index.rst:200
+msgid ""
+"Return a dict of column name and column type based on self.schema if not "
+"None."
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/mysql_to_gcs/index.rst:209
+msgid ""
+"Helper function that maps from MySQL fields to BigQuery fields. Used when"
+" a schema_filename is set."
+msgstr ""
+

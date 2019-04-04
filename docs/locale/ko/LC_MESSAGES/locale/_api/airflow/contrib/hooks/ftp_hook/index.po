@@ -1,0 +1,193 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C)
+# This file is distributed under the same license as the Airflow package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Airflow 1.10.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-04-03 17:47+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../_api/airflow/contrib/hooks/ftp_hook/index.rst:4
+msgid ":mod:`airflow.contrib.hooks.ftp_hook`"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/ftp_hook/index.rst:15
+msgid "Module Contents"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/ftp_hook/index.rst:25
+msgid "BACKPORT FROM PYTHON3 FTPLIB."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/ftp_hook/index.rst:27
+msgid ""
+"List a directory in a standardized format by using MLSD command "
+"(RFC-3659). If path is omitted the current directory is assumed. "
+"\"facts\" is a list of strings representing the type of information "
+"desired (e.g. [\"type\", \"size\", \"perm\"])."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/ftp_hook/index.rst:32
+msgid ""
+"Return a generator object yielding a tuple of two elements for every file"
+" found in path. First element is the file name, the second one is a "
+"dictionary including a variable number of \"facts\" depending on the "
+"server and whether \"facts\" argument has been provided."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/ftp_hook/index.rst:48
+msgid "Bases::class:`airflow.hooks.base_hook.BaseHook`"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/ftp_hook/index.rst:52
+msgid "Interact with FTP."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/ftp_hook/index.rst:54
+msgid ""
+"Errors that may occur throughout but should be handled downstream. You "
+"can specify mode for data transfers in the extra field of your connection"
+" as ``{\"passive\": \"true\"}``."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/ftp_hook/index.rst:81
+msgid "Returns a FTP connection object"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/ftp_hook/index.rst:90
+msgid ""
+"Closes the connection. An error will occur if the connection wasn't ever "
+"opened."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/ftp_hook/index.rst:100
+msgid ""
+"Returns a dictionary of {filename: {attributes}} for all files on the "
+"remote system (where the MLSD command is supported)."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/ftp_hook/index.rst
+msgid "Parameters"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/ftp_hook/index.rst:103
+msgid "full path to the remote directory"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/ftp_hook/index.rst:113
+msgid "Returns a list of files on the remote system."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/ftp_hook/index.rst:115
+msgid "full path to the remote directory to list"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/ftp_hook/index.rst:125
+msgid "Creates a directory on the remote system."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/ftp_hook/index.rst:127
+msgid "full path to the remote directory to create"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/ftp_hook/index.rst:137
+msgid "Deletes a directory on the remote system."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/ftp_hook/index.rst:139
+msgid "full path to the remote directory to delete"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/ftp_hook/index.rst:149
+msgid "Transfers the remote file to a local location."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/ftp_hook/index.rst:151
+msgid ""
+"If local_full_path_or_buffer is a string path, the file will be put at "
+"that location; if it is a file-like buffer, the file will be written to "
+"the buffer but not closed."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/ftp_hook/index.rst:155
+#: ../../_api/airflow/contrib/hooks/ftp_hook/index.rst:205
+#: ../../_api/airflow/contrib/hooks/ftp_hook/index.rst:220
+msgid "full path to the remote file"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/ftp_hook/index.rst:157
+#: ../../_api/airflow/contrib/hooks/ftp_hook/index.rst:207
+msgid "full path to the local file or a file-like buffer"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/ftp_hook/index.rst:160
+msgid ""
+"callback which is called each time a block of data is read. if you do not"
+" use a callback, these blocks will be written to the file or buffer "
+"passed in. if you do pass in a callback, note that writing to a file or "
+"buffer will need to be handled inside the callback. [default: "
+"output_handle.write()]"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/ftp_hook/index.rst:168
+msgid ":Example::"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/ftp_hook/index.rst:199
+msgid "Transfers a local file to the remote location."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/ftp_hook/index.rst:201
+msgid ""
+"If local_full_path_or_buffer is a string path, the file will be read from"
+" that location; if it is a file-like buffer, the file will be read from "
+"the buffer but not closed."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/ftp_hook/index.rst:218
+msgid "Removes a file on the FTP Server."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/ftp_hook/index.rst:230
+msgid "Rename a file."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/ftp_hook/index.rst:232
+msgid "rename file from name"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/ftp_hook/index.rst:233
+msgid "rename file to name"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/ftp_hook/index.rst:242
+msgid "Returns a datetime object representing the last time the file was modified"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/ftp_hook/index.rst:244
+#: ../../_api/airflow/contrib/hooks/ftp_hook/index.rst:256
+msgid "remote file path"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/ftp_hook/index.rst:254
+msgid "Returns the size of a file (in bytes)"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/ftp_hook/index.rst:270
+msgid "Bases::class:`airflow.contrib.hooks.ftp_hook.FTPHook`"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/ftp_hook/index.rst:279
+msgid "Returns a FTPS connection object."
+msgstr ""
+

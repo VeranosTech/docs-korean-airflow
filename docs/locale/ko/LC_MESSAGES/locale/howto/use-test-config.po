@@ -1,0 +1,45 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C)
+# This file is distributed under the same license as the Airflow package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Airflow 1.10.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-04-03 17:47+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../howto/use-test-config.rst:19
+msgid "Using the Test Mode Configuration"
+msgstr ""
+
+#: ../../howto/use-test-config.rst:21
+msgid ""
+"Airflow has a fixed set of \"test mode\" configuration options. You can "
+"load these at any time by calling "
+"``airflow.configuration.load_test_config()``. Please **note** that this "
+"operation is **not reversible**."
+msgstr ""
+
+#: ../../howto/use-test-config.rst:24
+msgid ""
+"Some options for example, DAG_FOLDER, are loaded before you have a chance"
+" to call load_test_config(). In order to eagerly load the test "
+"configuration, set test_mode in airflow.cfg:"
+msgstr ""
+
+#: ../../howto/use-test-config.rst:32
+msgid ""
+"Due to Airflow's automatic environment variable expansion (see :doc:`set-"
+"config`), you can also set the environment variable "
+"``AIRFLOW__CORE__UNIT_TEST_MODE`` to temporarily overwrite airflow.cfg."
+msgstr ""
+

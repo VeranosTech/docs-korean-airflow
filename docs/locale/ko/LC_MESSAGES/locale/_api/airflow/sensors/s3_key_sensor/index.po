@@ -1,0 +1,98 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C)
+# This file is distributed under the same license as the Airflow package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Airflow 1.10.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-04-03 17:47+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../_api/airflow/sensors/s3_key_sensor/index.rst:4
+msgid ":mod:`airflow.sensors.s3_key_sensor`"
+msgstr ""
+
+#: ../../_api/airflow/sensors/s3_key_sensor/index.rst:15
+msgid "Module Contents"
+msgstr ""
+
+#: ../../_api/airflow/sensors/s3_key_sensor/index.rst:24
+msgid "Bases::class:`airflow.sensors.base_sensor_operator.BaseSensorOperator`"
+msgstr ""
+
+#: ../../_api/airflow/sensors/s3_key_sensor/index.rst:28
+msgid ""
+"Waits for a key (a file-like instance on S3) to be present in a S3 "
+"bucket. S3 being a key/value it does not support folders. The path is "
+"just a key a resource."
+msgstr ""
+
+#: ../../_api/airflow/sensors/s3_key_sensor/index.rst
+msgid "Parameters"
+msgstr ""
+
+#: ../../_api/airflow/sensors/s3_key_sensor/index.rst:32
+msgid ""
+"The key being waited on. Supports full s3:// style url or relative path "
+"from root level. When it's specified as a full s3:// url, please leave "
+"bucket_name as `None`."
+msgstr ""
+
+#: ../../_api/airflow/sensors/s3_key_sensor/index.rst:36
+msgid ""
+"Name of the S3 bucket. Only needed when ``bucket_key`` is not provided as"
+" a full s3:// url."
+msgstr ""
+
+#: ../../_api/airflow/sensors/s3_key_sensor/index.rst:39
+msgid "whether the bucket_key should be interpreted as a Unix wildcard pattern"
+msgstr ""
+
+#: ../../_api/airflow/sensors/s3_key_sensor/index.rst:42
+msgid "a reference to the s3 connection"
+msgstr ""
+
+#: ../../_api/airflow/sensors/s3_key_sensor/index.rst:44
+msgid ""
+"Whether or not to verify SSL certificates for S3 connection. By default "
+"SSL certificates are verified. You can provide the following values:  - "
+"``False``: do not validate SSL certificates. SSL will still be used"
+"          (unless use_ssl is False), but SSL certificates will not be"
+"          verified. - ``path/to/cert/bundle.pem``: A filename of the CA "
+"cert bundle to uses.          You can specify this argument if you want "
+"to use a different          CA cert bundle than the one used by botocore."
+msgstr ""
+
+#: ../../_api/airflow/sensors/s3_key_sensor/index.rst:44
+msgid ""
+"Whether or not to verify SSL certificates for S3 connection. By default "
+"SSL certificates are verified. You can provide the following values:"
+msgstr ""
+
+#: ../../_api/airflow/sensors/s3_key_sensor/index.rst:49
+msgid "``False``: do not validate SSL certificates. SSL will still be used"
+msgstr ""
+
+#: ../../_api/airflow/sensors/s3_key_sensor/index.rst:49
+msgid "(unless use_ssl is False), but SSL certificates will not be verified."
+msgstr ""
+
+#: ../../_api/airflow/sensors/s3_key_sensor/index.rst:52
+msgid "``path/to/cert/bundle.pem``: A filename of the CA cert bundle to uses."
+msgstr ""
+
+#: ../../_api/airflow/sensors/s3_key_sensor/index.rst:52
+msgid ""
+"You can specify this argument if you want to use a different CA cert "
+"bundle than the one used by botocore."
+msgstr ""
+

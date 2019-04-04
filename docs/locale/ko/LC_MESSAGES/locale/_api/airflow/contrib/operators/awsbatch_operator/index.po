@@ -1,0 +1,91 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C)
+# This file is distributed under the same license as the Airflow package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Airflow 1.10.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-04-03 17:47+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../_api/airflow/contrib/operators/awsbatch_operator/index.rst:4
+msgid ":mod:`airflow.contrib.operators.awsbatch_operator`"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/awsbatch_operator/index.rst:15
+msgid "Module Contents"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/awsbatch_operator/index.rst:24
+msgid "Bases::class:`airflow.models.BaseOperator`"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/awsbatch_operator/index.rst:28
+msgid "Execute a job on AWS Batch Service"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/awsbatch_operator/index.rst
+msgid "Parameters"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/awsbatch_operator/index.rst:33
+msgid "the name for the job that will run on AWS Batch (templated)"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/awsbatch_operator/index.rst:35
+msgid "the job definition name on AWS Batch"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/awsbatch_operator/index.rst:37
+msgid "the queue name on AWS Batch"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/awsbatch_operator/index.rst:39
+msgid ""
+"the same parameter that boto3 will receive on containerOverrides "
+"(templated): "
+"http://boto3.readthedocs.io/en/latest/reference/services/batch.html#submit_job"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/awsbatch_operator/index.rst:43
+msgid "exponential backoff retries while waiter is not merged, 4200 = 48 hours"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/awsbatch_operator/index.rst:46
+msgid ""
+"connection id of AWS credentials / region name. If None, credential boto3"
+" strategy will be used "
+"(http://boto3.readthedocs.io/en/latest/guide/configuration.html)."
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/awsbatch_operator/index.rst:50
+msgid ""
+"region name to use in AWS Hook. Override the region_name in connection "
+"(if provided)"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/awsbatch_operator/index.rst:110
+msgid "Try to use a waiter from the below pull request"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/awsbatch_operator/index.rst:112
+msgid "https://github.com/boto/botocore/pull/1307"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/awsbatch_operator/index.rst:114
+msgid "If the waiter is not available apply a exponential backoff"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/awsbatch_operator/index.rst:116
+msgid "docs.aws.amazon.com/general/latest/gr/api-retries.html"
+msgstr ""
+

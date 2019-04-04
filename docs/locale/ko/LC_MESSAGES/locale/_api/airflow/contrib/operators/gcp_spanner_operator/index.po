@@ -1,0 +1,191 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C)
+# This file is distributed under the same license as the Airflow package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Airflow 1.10.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-04-03 17:47+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../_api/airflow/contrib/operators/gcp_spanner_operator/index.rst:4
+msgid ":mod:`airflow.contrib.operators.gcp_spanner_operator`"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/gcp_spanner_operator/index.rst:15
+msgid "Module Contents"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/gcp_spanner_operator/index.rst:24
+#: ../../_api/airflow/contrib/operators/gcp_spanner_operator/index.rst:87
+#: ../../_api/airflow/contrib/operators/gcp_spanner_operator/index.rst:143
+#: ../../_api/airflow/contrib/operators/gcp_spanner_operator/index.rst:220
+#: ../../_api/airflow/contrib/operators/gcp_spanner_operator/index.rst:290
+#: ../../_api/airflow/contrib/operators/gcp_spanner_operator/index.rst:362
+msgid "Bases::class:`airflow.models.BaseOperator`"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/gcp_spanner_operator/index.rst:28
+msgid ""
+"Creates a new Cloud Spanner instance, or if an instance with the same "
+"instance_id exists in the specified project, updates the Cloud Spanner "
+"instance."
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/gcp_spanner_operator/index.rst
+msgid "Parameters"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/gcp_spanner_operator/index.rst:31
+#: ../../_api/airflow/contrib/operators/gcp_spanner_operator/index.rst:372
+msgid "Cloud Spanner instance ID."
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/gcp_spanner_operator/index.rst:33
+msgid ""
+"The name of the Cloud Spanner instance configuration defining how the "
+"instance will be created. Required for instances that do not yet exist."
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/gcp_spanner_operator/index.rst:37
+msgid "(Optional) The number of nodes allocated to the Cloud Spanner instance."
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/gcp_spanner_operator/index.rst:40
+msgid ""
+"(Optional) The display name for the Cloud Spanner  instance in the GCP "
+"Console. (Must be between 4 and 30 characters.) If this value is not set "
+"in the constructor, the name is the same as the instance ID."
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/gcp_spanner_operator/index.rst:44
+msgid ""
+"Optional, the ID of the project which owns the Cloud Spanner Database.  "
+"If set to None or missing, the default project_id from the GCP connection"
+" is used."
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/gcp_spanner_operator/index.rst:47
+#: ../../_api/airflow/contrib/operators/gcp_spanner_operator/index.rst:103
+#: ../../_api/airflow/contrib/operators/gcp_spanner_operator/index.rst:163
+#: ../../_api/airflow/contrib/operators/gcp_spanner_operator/index.rst:240
+#: ../../_api/airflow/contrib/operators/gcp_spanner_operator/index.rst:312
+#: ../../_api/airflow/contrib/operators/gcp_spanner_operator/index.rst:379
+msgid "The connection ID used to connect to Google Cloud Platform."
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/gcp_spanner_operator/index.rst:91
+msgid ""
+"Deletes a Cloud Spanner instance. If an instance does not exist, no "
+"action is taken and the operator succeeds."
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/gcp_spanner_operator/index.rst:95
+msgid ""
+"For more information on how to use this operator, take a look at the "
+"guide: :ref:`howto/operator:CloudSpannerInstanceDeleteOperator`"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/gcp_spanner_operator/index.rst:98
+#: ../../_api/airflow/contrib/operators/gcp_spanner_operator/index.rst:153
+#: ../../_api/airflow/contrib/operators/gcp_spanner_operator/index.rst:231
+#: ../../_api/airflow/contrib/operators/gcp_spanner_operator/index.rst:300
+msgid "The Cloud Spanner instance ID."
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/gcp_spanner_operator/index.rst:100
+#: ../../_api/airflow/contrib/operators/gcp_spanner_operator/index.rst:160
+#: ../../_api/airflow/contrib/operators/gcp_spanner_operator/index.rst:237
+#: ../../_api/airflow/contrib/operators/gcp_spanner_operator/index.rst:376
+msgid ""
+"Optional, the ID of the project that owns the Cloud Spanner Database.  If"
+" set to None or missing, the default project_id from the GCP connection "
+"is used."
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/gcp_spanner_operator/index.rst:147
+msgid "Executes an arbitrary DML query (INSERT, UPDATE, DELETE)."
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/gcp_spanner_operator/index.rst:150
+msgid ""
+"For more information on how to use this operator, take a look at the "
+"guide: :ref:`howto/operator:CloudSpannerInstanceDatabaseQueryOperator`"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/gcp_spanner_operator/index.rst:155
+#: ../../_api/airflow/contrib/operators/gcp_spanner_operator/index.rst:233
+#: ../../_api/airflow/contrib/operators/gcp_spanner_operator/index.rst:302
+msgid "The Cloud Spanner database ID."
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/gcp_spanner_operator/index.rst:157
+msgid "The query or list of queries to be executed. Can be a path to a SQL file."
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/gcp_spanner_operator/index.rst:224
+msgid ""
+"Creates a new Cloud Spanner database, or if database exists, the operator"
+" does nothing."
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/gcp_spanner_operator/index.rst:228
+msgid ""
+"For more information on how to use this operator, take a look at the "
+"guide: :ref:`howto/operator:CloudSpannerInstanceDatabaseDeployOperator`"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/gcp_spanner_operator/index.rst:235
+msgid "The string list containing DDL for the new database."
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/gcp_spanner_operator/index.rst:294
+msgid "Updates a Cloud Spanner database with the specified DDL statement."
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/gcp_spanner_operator/index.rst:297
+msgid ""
+"For more information on how to use this operator, take a look at the "
+"guide: :ref:`howto/operator:CloudSpannerInstanceDatabaseUpdateOperator`"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/gcp_spanner_operator/index.rst:304
+msgid "The string list containing DDL to apply to the database."
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/gcp_spanner_operator/index.rst:306
+msgid ""
+"Optional, the ID of the project that owns the the Cloud Spanner Database."
+"  If set to None or missing, the default project_id from the GCP "
+"connection is used."
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/gcp_spanner_operator/index.rst:309
+msgid ""
+"(Optional) Unique per database operation id that can be specified to "
+"implement idempotency check."
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/gcp_spanner_operator/index.rst:366
+msgid "Deletes a Cloud Spanner database."
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/gcp_spanner_operator/index.rst:369
+msgid ""
+"For more information on how to use this operator, take a look at the "
+"guide: :ref:`howto/operator:CloudSpannerInstanceDatabaseDeleteOperator`"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/gcp_spanner_operator/index.rst:374
+msgid "Cloud Spanner database ID."
+msgstr ""
+

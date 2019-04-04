@@ -1,0 +1,162 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C)
+# This file is distributed under the same license as the Airflow package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Airflow 1.10.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-04-03 17:47+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../_api/airflow/contrib/executors/kubernetes_executor/index.rst:4
+msgid ":mod:`airflow.contrib.executors.kubernetes_executor`"
+msgstr ""
+
+#: ../../_api/airflow/contrib/executors/kubernetes_executor/index.rst:15
+msgid "Module Contents"
+msgstr ""
+
+#: ../../_api/airflow/contrib/executors/kubernetes_executor/index.rst:94
+msgid ""
+"Bases::class:`multiprocessing.Process`, "
+":class:`airflow.utils.log.logging_mixin.LoggingMixin`, :class:`object`"
+msgstr ""
+
+#: ../../_api/airflow/contrib/executors/kubernetes_executor/index.rst:137
+msgid "Bases::class:`airflow.utils.log.logging_mixin.LoggingMixin`"
+msgstr ""
+
+#: ../../_api/airflow/contrib/executors/kubernetes_executor/index.rst:162
+msgid ""
+"The run_next command will check the task_queue for any un-run jobs. It "
+"will then create a unique job-id, launch that job in the cluster, and "
+"store relevant info in the current_jobs map so we can track the job's "
+"status"
+msgstr ""
+
+#: ../../_api/airflow/contrib/executors/kubernetes_executor/index.rst:181
+msgid ""
+"The sync function checks the status of all currently running kubernetes "
+"jobs. If a job is completed, it's status is placed in the result queue to"
+" be sent back to the scheduler."
+msgstr ""
+
+#: ../../_api/airflow/contrib/executors/kubernetes_executor/index.rst
+msgid "Returns"
+msgstr ""
+
+#: ../../_api/airflow/contrib/executors/kubernetes_executor/index.rst:201
+msgid ""
+"Kubernetes only supports lowercase alphanumeric characters and \"-\" and "
+"\".\" in the pod name However, there are special rules about how \"-\" "
+"and \".\" can be used so let's only keep alphanumeric chars  see here for"
+" detail: https://kubernetes.io/docs/concepts/overview/working-with-"
+"objects/names/"
+msgstr ""
+
+#: ../../_api/airflow/contrib/executors/kubernetes_executor/index.rst
+msgid "Parameters"
+msgstr ""
+
+#: ../../_api/airflow/contrib/executors/kubernetes_executor/index.rst:208
+msgid "The requested Pod name"
+msgstr ""
+
+#: ../../_api/airflow/contrib/executors/kubernetes_executor/index.rst:209
+msgid "``str`` Pod name stripped of any unsafe characters"
+msgstr ""
+
+#: ../../_api/airflow/contrib/executors/kubernetes_executor/index.rst:218
+msgid ""
+"Kubernetes pod names must be <= 253 chars and must pass the following "
+"regex for validation "
+"\"^[a-z0-9]([-a-z0-9]*[a-z0-9])?(\\.[a-z0-9]([-a-z0-9]*[a-z0-9])?)*$\""
+msgstr ""
+
+#: ../../_api/airflow/contrib/executors/kubernetes_executor/index.rst:222
+msgid "a dag_id with only alphanumeric characters"
+msgstr ""
+
+#: ../../_api/airflow/contrib/executors/kubernetes_executor/index.rst:223
+msgid "a task_id with only alphanumeric characters"
+msgstr ""
+
+#: ../../_api/airflow/contrib/executors/kubernetes_executor/index.rst:224
+msgid "a uuid"
+msgstr ""
+
+#: ../../_api/airflow/contrib/executors/kubernetes_executor/index.rst:225
+msgid "``str`` valid Pod name of appropriate length"
+msgstr ""
+
+#: ../../_api/airflow/contrib/executors/kubernetes_executor/index.rst:234
+msgid ""
+"Valid label values must be 63 characters or less and must be empty or "
+"begin and end with an alphanumeric character ([a-z0-9A-Z]) with dashes "
+"(-), underscores (_), dots (.), and alphanumerics between."
+msgstr ""
+
+#: ../../_api/airflow/contrib/executors/kubernetes_executor/index.rst:238
+msgid ""
+"If the label value is then greater than 63 chars once made safe, or "
+"differs in any way from the original value sent to this function, then we"
+" need to truncate to 53chars, and append it with a unique hash."
+msgstr ""
+
+#: ../../_api/airflow/contrib/executors/kubernetes_executor/index.rst:256
+msgid ""
+"Kubernetes doesn't permit \":\" in labels. ISO datetime format uses \":\""
+" but not \"_\", let's replace \":\" with \"_\""
+msgstr ""
+
+#: ../../_api/airflow/contrib/executors/kubernetes_executor/index.rst:260
+msgid "str"
+msgstr ""
+
+#: ../../_api/airflow/contrib/executors/kubernetes_executor/index.rst:261
+msgid "datetime.datetime object"
+msgstr ""
+
+#: ../../_api/airflow/contrib/executors/kubernetes_executor/index.rst:270
+msgid ""
+"Kubernetes doesn't like \":\" in labels, since ISO datetime format uses "
+"\":\" but not \"_\" let's replace \":\" with \"_\" :param datetime_obj: "
+"datetime.datetime object :return: ISO-like string representing the "
+"datetime"
+msgstr ""
+
+#: ../../_api/airflow/contrib/executors/kubernetes_executor/index.rst:294
+msgid ""
+"Bases::class:`airflow.executors.base_executor.BaseExecutor`, "
+":class:`airflow.utils.log.logging_mixin.LoggingMixin`"
+msgstr ""
+
+#: ../../_api/airflow/contrib/executors/kubernetes_executor/index.rst:305
+msgid ""
+"If the airflow scheduler restarts with pending \"Queued\" tasks, the "
+"tasks may or may not have been launched Thus, on starting up the "
+"scheduler let's check every \"Queued\" task to see if it has been "
+"launched (ie: if there is a corresponding pod on kubernetes)"
+msgstr ""
+
+#: ../../_api/airflow/contrib/executors/kubernetes_executor/index.rst:311
+msgid ""
+"If it has been launched then do nothing, otherwise reset the state to "
+"\"None\" so the task will be rescheduled"
+msgstr ""
+
+#: ../../_api/airflow/contrib/executors/kubernetes_executor/index.rst:315
+msgid ""
+"This will not be necessary in a future version of airflow in which there "
+"is proper support for State.LAUNCHED"
+msgstr ""
+

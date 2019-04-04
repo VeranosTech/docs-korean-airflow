@@ -1,0 +1,52 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C)
+# This file is distributed under the same license as the Airflow package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Airflow 1.10.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-04-03 17:47+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../_api/airflow/sensors/named_hive_partition_sensor/index.rst:4
+msgid ":mod:`airflow.sensors.named_hive_partition_sensor`"
+msgstr ""
+
+#: ../../_api/airflow/sensors/named_hive_partition_sensor/index.rst:15
+msgid "Module Contents"
+msgstr ""
+
+#: ../../_api/airflow/sensors/named_hive_partition_sensor/index.rst:24
+msgid "Bases::class:`airflow.sensors.base_sensor_operator.BaseSensorOperator`"
+msgstr ""
+
+#: ../../_api/airflow/sensors/named_hive_partition_sensor/index.rst:28
+msgid "Waits for a set of partitions to show up in Hive."
+msgstr ""
+
+#: ../../_api/airflow/sensors/named_hive_partition_sensor/index.rst
+msgid "Parameters"
+msgstr ""
+
+#: ../../_api/airflow/sensors/named_hive_partition_sensor/index.rst:30
+msgid ""
+"List of fully qualified names of the partitions to wait for. A fully "
+"qualified name is of the form ``schema.table/pk1=pv1/pk2=pv2``, for "
+"example, default.users/ds=2016-01-01. This is passed as is to the "
+"metastore Thrift client ``get_partitions_by_name`` method. Note that you "
+"cannot use logical or comparison operators as in HivePartitionSensor."
+msgstr ""
+
+#: ../../_api/airflow/sensors/named_hive_partition_sensor/index.rst:38
+msgid "reference to the metastore thrift service connection id"
+msgstr ""
+

@@ -1,0 +1,57 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C)
+# This file is distributed under the same license as the Airflow package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Airflow 1.10.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-04-03 17:47+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../_api/airflow/contrib/executors/mesos_executor/index.rst:4
+msgid ":mod:`airflow.contrib.executors.mesos_executor`"
+msgstr ""
+
+#: ../../_api/airflow/contrib/executors/mesos_executor/index.rst:15
+msgid "Module Contents"
+msgstr ""
+
+#: ../../_api/airflow/contrib/executors/mesos_executor/index.rst:59
+msgid "Bases::class:`mesos.interface.Scheduler`"
+msgstr ""
+
+#: ../../_api/airflow/contrib/executors/mesos_executor/index.rst:63
+msgid ""
+"Airflow Mesos scheduler implements mesos scheduler interface to schedule "
+"airflow tasks on mesos. Basically, it schedules a command like 'airflow "
+"run <dag_id> <task_instance_id> <start_date> --local -p=<pickle>' to run "
+"on a mesos slave."
+msgstr ""
+
+#: ../../_api/airflow/contrib/executors/mesos_executor/index.rst:152
+msgid "Bases::class:`airflow.executors.base_executor.BaseExecutor`"
+msgstr ""
+
+#: ../../_api/airflow/contrib/executors/mesos_executor/index.rst:156
+msgid ""
+"MesosExecutor allows distributing the execution of task instances to "
+"multiple mesos workers."
+msgstr ""
+
+#: ../../_api/airflow/contrib/executors/mesos_executor/index.rst:159
+msgid ""
+"Apache Mesos is a distributed systems kernel which abstracts CPU, memory,"
+" storage, and other compute resources away from machines (physical or "
+"virtual), enabling fault-tolerant and elastic distributed systems to "
+"easily be built and run effectively. See http://mesos.apache.org/"
+msgstr ""
+

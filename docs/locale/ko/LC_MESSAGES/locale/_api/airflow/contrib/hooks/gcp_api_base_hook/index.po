@@ -1,0 +1,152 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C)
+# This file is distributed under the same license as the Airflow package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Airflow 1.10.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-04-03 17:47+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../_api/airflow/contrib/hooks/gcp_api_base_hook/index.rst:4
+msgid ":mod:`airflow.contrib.hooks.gcp_api_base_hook`"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/gcp_api_base_hook/index.rst:15
+msgid "Module Contents"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/gcp_api_base_hook/index.rst:48
+msgid "Bases::class:`airflow.hooks.base_hook.BaseHook`"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/gcp_api_base_hook/index.rst:52
+msgid ""
+"A base hook for Google cloud-related hooks. Google cloud has a shared "
+"REST API client that is built in the same way no matter which service you"
+" use. This class helps construct and authorize the credentials needed to "
+"then call googleapiclient.discovery.build() to actually discover and "
+"build a client for a Google cloud service."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/gcp_api_base_hook/index.rst:58
+msgid "The class also contains some miscellaneous helper functions."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/gcp_api_base_hook/index.rst:60
+msgid ""
+"All hook derived from this base hook use the 'Google Cloud Platform' "
+"connection type. Three ways of authentication are supported:"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/gcp_api_base_hook/index.rst:63
+msgid ""
+"Default credentials: Only the 'Project Id' is required. You'll need to "
+"have set up default credentials, such as by the "
+"``GOOGLE_APPLICATION_DEFAULT`` environment variable or from the metadata "
+"server on Google Compute Engine."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/gcp_api_base_hook/index.rst:68
+msgid "JSON key file: Specify 'Project Id', 'Keyfile Path' and 'Scope'."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/gcp_api_base_hook/index.rst:70
+msgid "Legacy P12 key files are not supported."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/gcp_api_base_hook/index.rst:72
+msgid "JSON data provided in the UI: Specify 'Keyfile JSON'."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/gcp_api_base_hook/index.rst:80
+msgid "Bases::class:`object`"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/gcp_api_base_hook/index.rst:84
+msgid "A private inner class for keeping all decorator methods."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/gcp_api_base_hook/index.rst:93
+msgid ""
+"Function decorator that provides a GOOGLE_APPLICATION_CREDENTIALS "
+"environment variable, pointing to file path of a JSON file of service "
+"account key."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/gcp_api_base_hook/index.rst:119
+msgid "Returns the Credentials object for Google API"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/gcp_api_base_hook/index.rst:128
+msgid "Returns a valid access token from Google API Credentials"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/gcp_api_base_hook/index.rst:137
+msgid ""
+"Returns an authorized HTTP object to be used to build a Google cloud "
+"service hook connection."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/gcp_api_base_hook/index.rst:147
+msgid ""
+"Fetches a field from extras, and returns it. This is some Airflow magic. "
+"The google_cloud_platform hook type adds custom UI elements to the hook "
+"page, which allow admins to specify service_account, key_path, etc. They "
+"get formatted as shown below."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/gcp_api_base_hook/index.rst:159
+msgid ""
+"Function decorator that intercepts HTTP Errors and raises "
+"AirflowException with more informative message."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/gcp_api_base_hook/index.rst:169
+msgid ""
+"Decorator that provides fallback for Google Cloud Platform project id. If"
+" the project is None it will be replaced with the project_id from the "
+"service account the Hook is authenticated with. Project id can be "
+"specified either via project_id kwarg or via first parameter in "
+"positional args."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/gcp_api_base_hook/index.rst
+msgid "Parameters"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/gcp_api_base_hook/index.rst:174
+msgid "function to wrap"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/gcp_api_base_hook/index.rst
+msgid "Returns"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/gcp_api_base_hook/index.rst:175
+msgid "result of the function call"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/gcp_api_base_hook/index.rst:184
+msgid ""
+"In case project_id is None, overrides it with default project_id from the"
+" service account that is authorized."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/gcp_api_base_hook/index.rst:187
+msgid "project id to"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/gcp_api_base_hook/index.rst:189
+msgid "the project_id specified or default project id if project_id is None"
+msgstr ""
+

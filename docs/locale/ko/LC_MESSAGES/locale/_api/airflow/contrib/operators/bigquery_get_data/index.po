@@ -1,0 +1,91 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C)
+# This file is distributed under the same license as the Airflow package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Airflow 1.10.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-04-03 17:47+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../_api/airflow/contrib/operators/bigquery_get_data/index.rst:4
+msgid ":mod:`airflow.contrib.operators.bigquery_get_data`"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/bigquery_get_data/index.rst:15
+msgid "Module Contents"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/bigquery_get_data/index.rst:24
+msgid "Bases::class:`airflow.models.BaseOperator`"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/bigquery_get_data/index.rst:28
+msgid ""
+"Fetches the data from a BigQuery table (alternatively fetch data for "
+"selected columns) and returns data in a python list. The number of "
+"elements in the returned list will be equal to the number of rows "
+"fetched. Each element in the list will again be a list where element "
+"would represent the columns values for that row."
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/bigquery_get_data/index.rst:33
+msgid "**Example Result**: ``[['Tony', '10'], ['Mike', '20'], ['Steve', '15']]``"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/bigquery_get_data/index.rst:36
+msgid ""
+"If you pass fields to ``selected_fields`` which are in different order "
+"than the order of columns already in BQ table, the data will still be in "
+"the order of BQ table. For example if the BQ table has 3 columns as "
+"``[A,B,C]`` and you pass 'B,A' in the ``selected_fields`` the data would "
+"still be of the form ``'A,B'``."
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/bigquery_get_data/index.rst:43
+msgid "**Example**: ::"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/bigquery_get_data/index.rst
+msgid "Parameters"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/bigquery_get_data/index.rst:54
+msgid "The dataset ID of the requested table. (templated)"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/bigquery_get_data/index.rst:56
+msgid "The table ID of the requested table. (templated)"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/bigquery_get_data/index.rst:58
+msgid ""
+"The maximum number of records (rows) to be fetched from the table. "
+"(templated)"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/bigquery_get_data/index.rst:61
+msgid ""
+"List of fields to return (comma-separated). If unspecified, all fields "
+"are returned."
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/bigquery_get_data/index.rst:64
+msgid "reference to a specific BigQuery hook."
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/bigquery_get_data/index.rst:66
+msgid ""
+"The account to impersonate, if any. For this to work, the service account"
+" making the request must have domain-wide delegation enabled."
+msgstr ""
+

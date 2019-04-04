@@ -1,0 +1,72 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C)
+# This file is distributed under the same license as the Airflow package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Airflow 1.10.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-04-03 17:47+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../_api/airflow/hooks/zendesk_hook/index.rst:4
+msgid ":mod:`airflow.hooks.zendesk_hook`"
+msgstr ""
+
+#: ../../_api/airflow/hooks/zendesk_hook/index.rst:15
+msgid "Module Contents"
+msgstr ""
+
+#: ../../_api/airflow/hooks/zendesk_hook/index.rst:24
+msgid "Bases::class:`airflow.hooks.base_hook.BaseHook`"
+msgstr ""
+
+#: ../../_api/airflow/hooks/zendesk_hook/index.rst:28
+msgid "A hook to talk to Zendesk"
+msgstr ""
+
+#: ../../_api/airflow/hooks/zendesk_hook/index.rst:46
+msgid ""
+"Sleep for the time specified in the exception. If not specified, wait for"
+" 60 seconds."
+msgstr ""
+
+#: ../../_api/airflow/hooks/zendesk_hook/index.rst:56
+msgid "Call Zendesk API and return results"
+msgstr ""
+
+#: ../../_api/airflow/hooks/zendesk_hook/index.rst
+msgid "Parameters"
+msgstr ""
+
+#: ../../_api/airflow/hooks/zendesk_hook/index.rst:58
+msgid "The Zendesk API to call"
+msgstr ""
+
+#: ../../_api/airflow/hooks/zendesk_hook/index.rst:59
+msgid "Query parameters"
+msgstr ""
+
+#: ../../_api/airflow/hooks/zendesk_hook/index.rst:60
+msgid ""
+"Accumulate results over all pages before returning. Due to strict rate "
+"limiting, this can often timeout. Waits for recommended period between "
+"tries after a timeout."
+msgstr ""
+
+#: ../../_api/airflow/hooks/zendesk_hook/index.rst:63
+msgid ""
+"Retrieve related records as part of a single request. In order to enable "
+"side-loading, add an 'include' query parameter containing a comma-"
+"separated list of resources to load. For more information on side-loading"
+" see https://developer.zendesk.com/rest_api/docs/core/side_loading"
+msgstr ""
+

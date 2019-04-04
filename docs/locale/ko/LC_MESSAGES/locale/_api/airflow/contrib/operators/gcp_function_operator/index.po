@@ -1,0 +1,138 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C)
+# This file is distributed under the same license as the Airflow package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Airflow 1.10.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-04-03 17:47+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../_api/airflow/contrib/operators/gcp_function_operator/index.rst:4
+msgid ":mod:`airflow.contrib.operators.gcp_function_operator`"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/gcp_function_operator/index.rst:15
+msgid "Module Contents"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/gcp_function_operator/index.rst:58
+#: ../../_api/airflow/contrib/operators/gcp_function_operator/index.rst:326
+msgid "Bases::class:`airflow.models.BaseOperator`"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/gcp_function_operator/index.rst:62
+msgid ""
+"Creates a function in Google Cloud Functions. If a function with this "
+"name already exists, it will be updated."
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/gcp_function_operator/index.rst:66
+msgid ""
+"For more information on how to use this operator, take a look at the "
+"guide: :ref:`howto/operator:GcfFunctionDeployOperator`"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/gcp_function_operator/index.rst
+msgid "Parameters"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/gcp_function_operator/index.rst:69
+msgid "Google Cloud Platform region where the function should be created."
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/gcp_function_operator/index.rst:71
+msgid ""
+"Body of the Cloud Functions definition. The body must be a Cloud "
+"Functions dictionary as described in: "
+"https://cloud.google.com/functions/docs/reference/rest/v1/projects.locations.functions"
+" . Different API versions require different variants of the Cloud "
+"Functions dictionary."
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/gcp_function_operator/index.rst:77
+msgid ""
+"(Optional) Google Cloud Platform project ID where the function should be "
+"created."
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/gcp_function_operator/index.rst:80
+msgid ""
+"(Optional) The connection ID used to connect to Google Cloud Platform - "
+"default 'google_cloud_default'."
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/gcp_function_operator/index.rst:83
+msgid "(Optional) API version used (for example v1 - default -  or v1beta1)."
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/gcp_function_operator/index.rst:86
+msgid ""
+"Path to zip file containing source code of the function. If the path is "
+"set, the sourceUploadUrl should not be specified in the body or it should"
+" be empty. Then the zip file will be uploaded using the upload URL "
+"generated via generateUploadUrl from the Cloud Functions API."
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/gcp_function_operator/index.rst:91
+msgid "If set to False, body validation is not performed."
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/gcp_function_operator/index.rst:221
+msgid "Pre-processes zip path parameter."
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/gcp_function_operator/index.rst:223
+msgid ""
+"Responsible for checking if the zip path parameter is correctly specified"
+" in relation with source_code body fields. Non empty zip path parameter "
+"is special because it is mutually exclusive with sourceArchiveUrl and "
+"sourceRepository body fields. It is also mutually exclusive with non-"
+"empty sourceUploadUrl. The pre-process modifies sourceUploadUrl body "
+"field in special way when zip_path is not empty. An extra step is run "
+"when execute method is called and sourceUploadUrl field value is set in "
+"the body with the value returned by generateUploadUrl Cloud Function API "
+"method."
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/gcp_function_operator/index.rst:232
+msgid "Body passed to the create/update method calls."
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/gcp_function_operator/index.rst:234
+msgid "path to the zip file containing source code."
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/gcp_function_operator/index.rst:330
+msgid "Deletes the specified function from Google Cloud Functions."
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/gcp_function_operator/index.rst:333
+msgid ""
+"For more information on how to use this operator, take a look at the "
+"guide: :ref:`howto/operator:GcfFunctionDeleteOperator`"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/gcp_function_operator/index.rst:336
+msgid ""
+"A fully-qualified function name, matching the pattern: "
+"`^projects/[^/]+/locations/[^/]+/functions/[^/]+$`"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/gcp_function_operator/index.rst:339
+msgid "The connection ID to use to connect to Google Cloud Platform."
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/gcp_function_operator/index.rst:341
+msgid "API version used (for example v1 or v1beta1)."
+msgstr ""
+

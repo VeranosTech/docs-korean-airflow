@@ -1,0 +1,39 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C)
+# This file is distributed under the same license as the Airflow package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Airflow 1.10.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-04-03 17:47+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../_api/airflow/contrib/sensors/sagemaker_base_sensor/index.rst:4
+msgid ":mod:`airflow.contrib.sensors.sagemaker_base_sensor`"
+msgstr ""
+
+#: ../../_api/airflow/contrib/sensors/sagemaker_base_sensor/index.rst:15
+msgid "Module Contents"
+msgstr ""
+
+#: ../../_api/airflow/contrib/sensors/sagemaker_base_sensor/index.rst:24
+msgid "Bases::class:`airflow.sensors.base_sensor_operator.BaseSensorOperator`"
+msgstr ""
+
+#: ../../_api/airflow/contrib/sensors/sagemaker_base_sensor/index.rst:28
+msgid ""
+"Contains general sensor behavior for SageMaker. Subclasses should "
+"implement get_sagemaker_response() and state_from_response() methods. "
+"Subclasses should also implement NON_TERMINAL_STATES and FAILED_STATE "
+"methods."
+msgstr ""
+

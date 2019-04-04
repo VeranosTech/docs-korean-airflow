@@ -1,0 +1,199 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C)
+# This file is distributed under the same license as the Airflow package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Airflow 1.10.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-04-03 17:47+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../howto/operator/gcp/spanner.rst:19
+msgid "Google Cloud Spanner Operators"
+msgstr ""
+
+#: ../../howto/operator/gcp/spanner.rst:28
+msgid "CloudSpannerInstanceDatabaseDeleteOperator"
+msgstr ""
+
+#: ../../howto/operator/gcp/spanner.rst:30
+msgid ""
+"Deletes a database from the specified Cloud Spanner instance. If the "
+"database does not exist, no action is taken, and the operator succeeds."
+msgstr ""
+
+#: ../../howto/operator/gcp/spanner.rst:33
+msgid ""
+"For parameter definition, take a look at "
+":class:`~airflow.contrib.operators.gcp_spanner_operator.CloudSpannerInstanceDatabaseDeleteOperator`."
+msgstr ""
+
+#: ../../howto/operator/gcp/spanner.rst:37
+#: ../../howto/operator/gcp/spanner.rst:87
+#: ../../howto/operator/gcp/spanner.rst:141
+#: ../../howto/operator/gcp/spanner.rst:194
+#: ../../howto/operator/gcp/spanner.rst:242
+msgid "Arguments"
+msgstr ""
+
+#: ../../howto/operator/gcp/spanner.rst:39
+#: ../../howto/operator/gcp/spanner.rst:89
+#: ../../howto/operator/gcp/spanner.rst:143
+#: ../../howto/operator/gcp/spanner.rst:196
+msgid "Some arguments in the example DAG are taken from environment variables."
+msgstr ""
+
+#: ../../howto/operator/gcp/spanner.rst:47
+#: ../../howto/operator/gcp/spanner.rst:97
+#: ../../howto/operator/gcp/spanner.rst:151
+#: ../../howto/operator/gcp/spanner.rst:204
+#: ../../howto/operator/gcp/spanner.rst:252
+msgid "Using the operator"
+msgstr ""
+
+#: ../../howto/operator/gcp/spanner.rst:49
+#: ../../howto/operator/gcp/spanner.rst:99
+#: ../../howto/operator/gcp/spanner.rst:153
+#: ../../howto/operator/gcp/spanner.rst:206
+#: ../../howto/operator/gcp/spanner.rst:254
+msgid ""
+"You can create the operator with or without project id. If project id is "
+"missing it will be retrieved from the GCP connection used. Both variants "
+"are shown:"
+msgstr ""
+
+#: ../../howto/operator/gcp/spanner.rst:59
+#: ../../howto/operator/gcp/spanner.rst:109
+#: ../../howto/operator/gcp/spanner.rst:169
+#: ../../howto/operator/gcp/spanner.rst:216
+#: ../../howto/operator/gcp/spanner.rst:264
+msgid "Templating"
+msgstr ""
+
+#: ../../howto/operator/gcp/spanner.rst:68
+#: ../../howto/operator/gcp/spanner.rst:118
+#: ../../howto/operator/gcp/spanner.rst:178
+#: ../../howto/operator/gcp/spanner.rst:225
+#: ../../howto/operator/gcp/spanner.rst:273
+msgid "More information"
+msgstr ""
+
+#: ../../howto/operator/gcp/spanner.rst:70
+msgid ""
+"See `Google Cloud Spanner API documentation to drop an instance of a "
+"database "
+"<https://cloud.google.com/spanner/docs/reference/rest/v1/projects.instances.databases/dropDatabase>`_."
+msgstr ""
+
+#: ../../howto/operator/gcp/spanner.rst:76
+msgid "CloudSpannerInstanceDatabaseDeployOperator"
+msgstr ""
+
+#: ../../howto/operator/gcp/spanner.rst:78
+msgid ""
+"Creates a new Cloud Spanner database in the specified instance, or if the"
+" desired database exists, assumes success with no changes applied to "
+"database configuration. No structure of the database is verified - it's "
+"enough if the database exists with the same name."
+msgstr ""
+
+#: ../../howto/operator/gcp/spanner.rst:83
+msgid ""
+"For parameter definition, take a look at "
+":class:`~airflow.contrib.operators.gcp_spanner_operator.CloudSpannerInstanceDatabaseDeployOperator`."
+msgstr ""
+
+#: ../../howto/operator/gcp/spanner.rst:120
+msgid ""
+"See Google Cloud Spanner API documentation `to create a new database "
+"<https://cloud.google.com/spanner/docs/reference/rest/v1/projects.instances.databases/create>`_."
+msgstr ""
+
+#: ../../howto/operator/gcp/spanner.rst:126
+msgid "CloudSpannerInstanceDatabaseUpdateOperator"
+msgstr ""
+
+#: ../../howto/operator/gcp/spanner.rst:128
+msgid ""
+"Runs a DDL query in a Cloud Spanner database and allows you to modify the"
+" structure of an existing database."
+msgstr ""
+
+#: ../../howto/operator/gcp/spanner.rst:131
+msgid ""
+"You can optionally specify an operation_id parameter which simplifies "
+"determining whether the statements were executed in case the "
+"update_database call is replayed (idempotency check). The operation_id "
+"should be unique within the database, and must be a valid identifier: "
+"`[a-z][a-z0-9_]*`. More information can be found in `the documentation of"
+" updateDdl API "
+"<https://cloud.google.com/spanner/docs/reference/rest/v1/projects.instances.databases/updateDdl>`_"
+msgstr ""
+
+#: ../../howto/operator/gcp/spanner.rst:137
+msgid ""
+"For parameter definition take a look at "
+":class:`~airflow.contrib.operators.gcp_spanner_operator.CloudSpannerInstanceDatabaseUpdateOperator`."
+msgstr ""
+
+#: ../../howto/operator/gcp/spanner.rst:180
+msgid ""
+"See Google Cloud Spanner API documentation for `database update_ddl "
+"<https://cloud.google.com/spanner/docs/reference/rest/v1/projects.instances.databases/updateDdl>`_."
+msgstr ""
+
+#: ../../howto/operator/gcp/spanner.rst:186
+msgid "CloudSpannerInstanceDatabaseQueryOperator"
+msgstr ""
+
+#: ../../howto/operator/gcp/spanner.rst:188
+msgid "Executes an arbitrary DML query (INSERT, UPDATE, DELETE)."
+msgstr ""
+
+#: ../../howto/operator/gcp/spanner.rst:190
+msgid ""
+"For parameter definition take a look at "
+":class:`~airflow.contrib.operators.gcp_spanner_operator.CloudSpannerInstanceDatabaseQueryOperator`."
+msgstr ""
+
+#: ../../howto/operator/gcp/spanner.rst:227
+msgid ""
+"See Google Cloud Spanner API documentation for more information about "
+"`DML syntax <https://cloud.google.com/spanner/docs/dml-syntax>`_."
+msgstr ""
+
+#: ../../howto/operator/gcp/spanner.rst:233
+msgid "CloudSpannerInstanceDeleteOperator"
+msgstr ""
+
+#: ../../howto/operator/gcp/spanner.rst:235
+msgid ""
+"Deletes a Cloud Spanner instance. If an instance does not exist, no "
+"action is taken, and the operator succeeds."
+msgstr ""
+
+#: ../../howto/operator/gcp/spanner.rst:238
+msgid ""
+"For parameter definition take a look at "
+":class:`~airflow.contrib.operators.gcp_spanner_operator.CloudSpannerInstanceDeleteOperator`."
+msgstr ""
+
+#: ../../howto/operator/gcp/spanner.rst:244
+msgid "Some arguments in the example DAG are taken from environment variables:"
+msgstr ""
+
+#: ../../howto/operator/gcp/spanner.rst:275
+msgid ""
+"See Google Cloud Spanner API documentation to `delete an instance "
+"<https://cloud.google.com/spanner/docs/reference/rest/v1/projects.instances/delete>`_."
+msgstr ""
+

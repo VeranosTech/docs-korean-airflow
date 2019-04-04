@@ -1,0 +1,83 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C)
+# This file is distributed under the same license as the Airflow package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Airflow 1.10.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-04-03 15:37+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../kubernetes.rst:19
+msgid "Kubernetes"
+msgstr ""
+
+#: ../../kubernetes.rst:22
+msgid "Kubernetes Executor"
+msgstr ""
+
+#: ../../kubernetes.rst:24
+msgid ""
+"The kubernetes executor is introduced in Apache Airflow 1.10.0. The "
+"Kubernetes executor will create a new pod for every task instance."
+msgstr ""
+
+#: ../../kubernetes.rst:26
+msgid ""
+"Example helm charts are available at "
+"``scripts/ci/kubernetes/kube/{airflow,volumes,postgres}.yaml`` in the "
+"source distribution. The volumes are optional and depend on your "
+"configuration. There are two volumes available:"
+msgstr ""
+
+#: ../../kubernetes.rst:29
+msgid "**Dags**:"
+msgstr ""
+
+#: ../../kubernetes.rst:31
+msgid ""
+"By storing dags onto persistent disk, it will be made available to all "
+"workers"
+msgstr ""
+
+#: ../../kubernetes.rst:33
+msgid ""
+"Another option is to use ``git-sync``. Before starting the container, a "
+"git pull of the dags repository will be performed and used throughout the"
+" lifecycle of the pod"
+msgstr ""
+
+#: ../../kubernetes.rst:35
+msgid "**Logs**:"
+msgstr ""
+
+#: ../../kubernetes.rst:37
+msgid ""
+"By storing logs onto a persistent disk, the files are accessible by "
+"workers and the webserver. If you don't configure this, the logs will be "
+"lost after the worker pods shuts down"
+msgstr ""
+
+#: ../../kubernetes.rst:39
+msgid "Another option is to use S3/GCS/etc to store logs"
+msgstr ""
+
+#: ../../kubernetes.rst:43
+msgid "Kubernetes Operator"
+msgstr ""
+
+#: ../../kubernetes.rst:147
+msgid ""
+"See "
+":class:`airflow.contrib.operators.kubernetes_pod_operator.KubernetesPodOperator`"
+msgstr ""
+

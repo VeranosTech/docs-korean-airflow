@@ -1,0 +1,122 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C)
+# This file is distributed under the same license as the Airflow package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Airflow 1.10.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-04-03 17:47+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../_api/airflow/contrib/operators/sagemaker_endpoint_operator/index.rst:4
+msgid ":mod:`airflow.contrib.operators.sagemaker_endpoint_operator`"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/sagemaker_endpoint_operator/index.rst:15
+msgid "Module Contents"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/sagemaker_endpoint_operator/index.rst:24
+msgid "Bases::class:`airflow.contrib.operators.sagemaker_base_operator.SageMakerBaseOperator`"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/sagemaker_endpoint_operator/index.rst:28
+msgid "Create a SageMaker endpoint."
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/sagemaker_endpoint_operator/index.rst:30
+msgid "This operator returns The ARN of the endpoint created in Amazon SageMaker"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/sagemaker_endpoint_operator/index.rst
+msgid "Parameters"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/sagemaker_endpoint_operator/index.rst:32
+msgid ""
+"The configuration necessary to create an endpoint.  If you need to create"
+" a SageMaker endpoint based on an existed SageMaker model and an existed "
+"SageMaker endpoint config::      config = endpoint_configuration;  If you"
+" need to create all of SageMaker model, SageMaker endpoint-config and "
+"SageMaker endpoint::      config = {         'Model': "
+"model_configuration,         'EndpointConfig': "
+"endpoint_config_configuration,         'Endpoint': endpoint_configuration"
+"     }  For details of the configuration parameter of model_configuration"
+" see :py:meth:`SageMaker.Client.create_model`  For details of the "
+"configuration parameter of endpoint_config_configuration see "
+":py:meth:`SageMaker.Client.create_endpoint_config`  For details of the "
+"configuration parameter of endpoint_configuration see "
+":py:meth:`SageMaker.Client.create_endpoint`"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/sagemaker_endpoint_operator/index.rst:33
+msgid "The configuration necessary to create an endpoint."
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/sagemaker_endpoint_operator/index.rst:35
+msgid ""
+"If you need to create a SageMaker endpoint based on an existed SageMaker "
+"model and an existed SageMaker endpoint config::"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/sagemaker_endpoint_operator/index.rst:40
+msgid ""
+"If you need to create all of SageMaker model, SageMaker endpoint-config "
+"and SageMaker endpoint::"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/sagemaker_endpoint_operator/index.rst:48
+msgid ""
+"For details of the configuration parameter of model_configuration see "
+":py:meth:`SageMaker.Client.create_model`"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/sagemaker_endpoint_operator/index.rst:51
+msgid ""
+"For details of the configuration parameter of "
+"endpoint_config_configuration see "
+":py:meth:`SageMaker.Client.create_endpoint_config`"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/sagemaker_endpoint_operator/index.rst:54
+msgid ""
+"For details of the configuration parameter of endpoint_configuration see "
+":py:meth:`SageMaker.Client.create_endpoint`"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/sagemaker_endpoint_operator/index.rst:58
+msgid "The AWS connection ID to use."
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/sagemaker_endpoint_operator/index.rst:60
+msgid "Whether the operator should wait until the endpoint creation finishes."
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/sagemaker_endpoint_operator/index.rst:62
+msgid ""
+"If wait is set to True, this is the time interval, in seconds, that this "
+"operation waits before polling the status of the endpoint creation."
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/sagemaker_endpoint_operator/index.rst:65
+msgid ""
+"If wait is set to True, this operation fails if the endpoint creation "
+"doesn't finish within max_ingestion_time seconds. If you set this "
+"parameter to None it never times out."
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/sagemaker_endpoint_operator/index.rst:68
+msgid ""
+"Whether to create an endpoint or update an endpoint. Must be either "
+"'create or 'update'."
+msgstr ""
+

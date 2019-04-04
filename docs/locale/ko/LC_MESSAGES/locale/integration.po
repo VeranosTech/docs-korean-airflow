@@ -1,0 +1,1637 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C)
+# This file is distributed under the same license as the Airflow package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Airflow 1.10.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-04-04 13:21+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../integration.rst:19
+msgid "Integration"
+msgstr ""
+
+#: ../../integration.rst:21
+msgid ":ref:`Azure`"
+msgstr ""
+
+#: ../../integration.rst:22
+msgid ":ref:`AWS`"
+msgstr ""
+
+#: ../../integration.rst:23
+msgid ":ref:`Databricks`"
+msgstr ""
+
+#: ../../integration.rst:24
+msgid ":ref:`GCP`"
+msgstr ""
+
+#: ../../integration.rst:25
+msgid ":ref:`Qubole`"
+msgstr ""
+
+#: ../../integration.rst:30
+msgid "Azure: Microsoft Azure"
+msgstr ""
+
+#: ../../integration.rst:32
+msgid ""
+"Airflow has limited support for Microsoft Azure: interfaces exist only "
+"for Azure Blob Storage and Azure Data Lake. Hook, Sensor and Operator for"
+" Blob Storage and Azure Data Lake Hook are in contrib section."
+msgstr ""
+
+#: ../../integration.rst:37
+msgid "Azure Blob Storage"
+msgstr ""
+
+#: ../../integration.rst:39
+msgid ""
+"All classes communicate via the Window Azure Storage Blob protocol. Make "
+"sure that a Airflow connection of type `wasb` exists. Authorization can "
+"be done by supplying a login (=Storage account name) and password (=KEY),"
+" or login and SAS token in the extra field (see connection `wasb_default`"
+" for an example)."
+msgstr ""
+
+#: ../../integration.rst:45
+msgid ":class:`airflow.contrib.hooks.wasb_hook.WasbHook`"
+msgstr ""
+
+#: ../../integration.rst:45
+msgid "Interface with Azure Blob Storage."
+msgstr ""
+
+#: ../../integration.rst:48
+msgid ":class:`airflow.contrib.sensors.wasb_sensor.WasbBlobSensor`"
+msgstr ""
+
+#: ../../integration.rst:48
+msgid "Checks if a blob is present on Azure Blob storage."
+msgstr ""
+
+#: ../../integration.rst:51
+msgid ":class:`airflow.contrib.operators.wasb_delete_blob_operator.WasbDeleteBlobOperator`"
+msgstr ""
+
+#: ../../integration.rst:51
+msgid "Deletes blob(s) on Azure Blob Storage."
+msgstr ""
+
+#: ../../integration.rst:54
+msgid ":class:`airflow.contrib.sensors.wasb_sensor.WasbPrefixSensor`"
+msgstr ""
+
+#: ../../integration.rst:54
+msgid "Checks if blobs matching a prefix are present on Azure Blob storage."
+msgstr ""
+
+#: ../../integration.rst:58
+msgid ":class:`airflow.contrib.operators.file_to_wasb.FileToWasbOperator`"
+msgstr ""
+
+#: ../../integration.rst:57
+msgid "Uploads a local file to a container as a blob."
+msgstr ""
+
+#: ../../integration.rst:61
+msgid "Azure File Share"
+msgstr ""
+
+#: ../../integration.rst:63
+msgid ""
+"Cloud variant of a SMB file share. Make sure that a Airflow connection of"
+" type `wasb` exists. Authorization can be done by supplying a login "
+"(=Storage account name) and password (=Storage account key), or login and"
+" SAS token in the extra field (see connection `wasb_default` for an "
+"example)."
+msgstr ""
+
+#: ../../integration.rst:69
+msgid ":class:`airflow.contrib.hooks.azure_fileshare_hook.AzureFileShareHook`:"
+msgstr ""
+
+#: ../../integration.rst:69
+msgid "Interface with Azure File Share."
+msgstr ""
+
+#: ../../integration.rst:72 ../../integration.rst:291
+msgid "Logging"
+msgstr ""
+
+#: ../../integration.rst:74
+msgid ""
+"Airflow can be configured to read and write task logs in Azure Blob "
+"Storage. See :ref:`write-logs-azure`."
+msgstr ""
+
+#: ../../integration.rst:78
+msgid "Azure CosmosDB"
+msgstr ""
+
+#: ../../integration.rst:80
+msgid ""
+"AzureCosmosDBHook communicates via the Azure Cosmos library. Make sure "
+"that a Airflow connection of type `azure_cosmos` exists. Authorization "
+"can be done by supplying a login (=Endpoint uri), password (=secret key) "
+"and extra fields database_name and collection_name to specify the default"
+" database and collection to use (see connection `azure_cosmos_default` "
+"for an example)."
+msgstr ""
+
+#: ../../integration.rst:86
+msgid ":class:`airflow.contrib.hooks.azure_cosmos_hook.AzureCosmosDBHook`"
+msgstr ""
+
+#: ../../integration.rst:86
+msgid "Interface with Azure CosmosDB."
+msgstr ""
+
+#: ../../integration.rst:89
+msgid ":class:`airflow.contrib.operators.azure_cosmos_operator.AzureCosmosInsertDocumentOperator`"
+msgstr ""
+
+#: ../../integration.rst:89
+msgid "Simple operator to insert document into CosmosDB."
+msgstr ""
+
+#: ../../integration.rst:93
+msgid ":class:`airflow.contrib.sensors.azure_cosmos_sensor.AzureCosmosDocumentSensor`"
+msgstr ""
+
+#: ../../integration.rst:92
+msgid "Simple sensor to detect document existence in CosmosDB."
+msgstr ""
+
+#: ../../integration.rst:96
+msgid "Azure Data Lake"
+msgstr ""
+
+#: ../../integration.rst:98
+msgid ""
+"AzureDataLakeHook communicates via a REST API compatible with WebHDFS. "
+"Make sure that a Airflow connection of type `azure_data_lake` exists. "
+"Authorization can be done by supplying a login (=Client ID), password "
+"(=Client Secret) and extra fields tenant (Tenant) and account_name "
+"(Account Name) (see connection `azure_data_lake_default` for an example)."
+msgstr ""
+
+#: ../../integration.rst:104
+msgid ":class:`airflow.contrib.hooks.azure_data_lake_hook.AzureDataLakeHook`"
+msgstr ""
+
+#: ../../integration.rst:104
+msgid "Interface with Azure Data Lake."
+msgstr ""
+
+#: ../../integration.rst:107
+msgid ":class:`airflow.contrib.operators.adls_list_operator.AzureDataLakeStorageListOperator`"
+msgstr ""
+
+#: ../../integration.rst:107
+msgid "Lists the files located in a specified Azure Data Lake path."
+msgstr ""
+
+#: ../../integration.rst:111
+msgid ":class:`airflow.contrib.operators.adls_to_gcs.AdlsToGoogleCloudStorageOperator`"
+msgstr ""
+
+#: ../../integration.rst:110
+msgid ""
+"Copies files from an Azure Data Lake path to a Google Cloud Storage "
+"bucket."
+msgstr ""
+
+#: ../../integration.rst:114
+msgid "Azure Container Instances"
+msgstr ""
+
+#: ../../integration.rst:116
+msgid ""
+"Azure Container Instances provides a method to run a docker container "
+"without having to worry about managing infrastructure. The "
+"AzureContainerInstanceHook requires a service principal. The credentials "
+"for this principal can either be defined in the extra field ``key_path``,"
+" as an environment variable named ``AZURE_AUTH_LOCATION``, or by "
+"providing a login/password and tenantId in extras."
+msgstr ""
+
+#: ../../integration.rst:122
+msgid ""
+"The AzureContainerRegistryHook requires a host/login/password to be "
+"defined in the connection."
+msgstr ""
+
+#: ../../integration.rst:125
+msgid ":class:`airflow.contrib.hooks.azure_container_volume_hook.AzureContainerVolumeHook`"
+msgstr ""
+
+#: ../../integration.rst:125
+msgid "Interface with Azure Container Volumes"
+msgstr ""
+
+#: ../../integration.rst:128
+msgid ":class:`airflow.contrib.operators.azure_container_instances_operator.AzureContainerInstancesOperator`"
+msgstr ""
+
+#: ../../integration.rst:128
+msgid "Start/Monitor a new ACI."
+msgstr ""
+
+#: ../../integration.rst:131
+msgid ":class:`airflow.contrib.hooks.azure_container_instance_hook.AzureContainerInstanceHook`"
+msgstr ""
+
+#: ../../integration.rst:131
+msgid "Wrapper around a single ACI."
+msgstr ""
+
+#: ../../integration.rst:136
+msgid ":class:`airflow.contrib.hooks.azure_container_registry_hook.AzureContainerRegistryHook`"
+msgstr ""
+
+#: ../../integration.rst:134
+msgid "Interface with ACR"
+msgstr ""
+
+#: ../../integration.rst:141
+msgid "AWS: Amazon Web Services"
+msgstr ""
+
+#: ../../integration.rst:143
+msgid ""
+"Airflow has extensive support for Amazon Web Services. But note that the "
+"Hooks, Sensors and Operators are in the contrib section."
+msgstr ""
+
+#: ../../integration.rst:147
+msgid "AWS EMR"
+msgstr ""
+
+#: ../../integration.rst:150
+msgid ":class:`airflow.contrib.hooks.emr_hook.EmrHook`"
+msgstr ""
+
+#: ../../integration.rst:150
+msgid "Interface with AWS EMR."
+msgstr ""
+
+#: ../../integration.rst:153
+msgid ":class:`airflow.contrib.operators.emr_add_steps_operator.EmrAddStepsOperator`"
+msgstr ""
+
+#: ../../integration.rst:153
+msgid "Adds steps to an existing EMR JobFlow."
+msgstr ""
+
+#: ../../integration.rst:156
+msgid ":class:`airflow.contrib.operators.emr_create_job_flow_operator.EmrCreateJobFlowOperator`"
+msgstr ""
+
+#: ../../integration.rst:156
+msgid "Creates an EMR JobFlow, reading the config from the EMR connection."
+msgstr ""
+
+#: ../../integration.rst:160
+msgid ":class:`airflow.contrib.operators.emr_terminate_job_flow_operator.EmrTerminateJobFlowOperator`"
+msgstr ""
+
+#: ../../integration.rst:159
+msgid "Terminates an EMR JobFlow."
+msgstr ""
+
+#: ../../integration.rst:163
+msgid "AWS S3"
+msgstr ""
+
+#: ../../integration.rst:166
+msgid ":class:`airflow.hooks.S3_hook.S3Hook`"
+msgstr ""
+
+#: ../../integration.rst:166
+msgid "Interface with AWS S3."
+msgstr ""
+
+#: ../../integration.rst:169
+msgid ":class:`airflow.operators.s3_file_transform_operator.S3FileTransformOperator`"
+msgstr ""
+
+#: ../../integration.rst:169
+msgid ""
+"Copies data from a source S3 location to a temporary location on the "
+"local filesystem."
+msgstr ""
+
+#: ../../integration.rst:172
+msgid ":class:`airflow.contrib.operators.s3_list_operator.S3ListOperator`"
+msgstr ""
+
+#: ../../integration.rst:172
+msgid "Lists the files matching a key prefix from a S3 location."
+msgstr ""
+
+#: ../../integration.rst:175
+msgid ":class:`airflow.contrib.operators.s3_to_gcs_operator.S3ToGoogleCloudStorageOperator`"
+msgstr ""
+
+#: ../../integration.rst:175
+msgid "Syncs an S3 location with a Google Cloud Storage bucket."
+msgstr ""
+
+#: ../../integration.rst:178
+msgid ":class:`airflow.contrib.operators.s3_to_gcs_transfer_operator.S3ToGoogleCloudStorageTransferOperator`"
+msgstr ""
+
+#: ../../integration.rst:178
+msgid ""
+"Syncs an S3 bucket with a Google Cloud Storage bucket using the GCP "
+"Storage Transfer Service."
+msgstr ""
+
+#: ../../integration.rst:182
+msgid ":class:`airflow.operators.s3_to_hive_operator.S3ToHiveTransfer`"
+msgstr ""
+
+#: ../../integration.rst:181
+msgid ""
+"Moves data from S3 to Hive. The operator downloads a file from S3, stores"
+" the file locally before loading it into a Hive table."
+msgstr ""
+
+#: ../../integration.rst:185
+msgid "AWS Batch Service"
+msgstr ""
+
+#: ../../integration.rst:189
+msgid ":class:`airflow.contrib.operators.awsbatch_operator.AWSBatchOperator`"
+msgstr ""
+
+#: ../../integration.rst:188
+msgid "Execute a task on AWS Batch Service."
+msgstr ""
+
+#: ../../integration.rst:192
+msgid "AWS RedShift"
+msgstr ""
+
+#: ../../integration.rst:195
+msgid ":class:`airflow.contrib.sensors.aws_redshift_cluster_sensor.AwsRedshiftClusterSensor`"
+msgstr ""
+
+#: ../../integration.rst:195
+msgid "Waits for a Redshift cluster to reach a specific status."
+msgstr ""
+
+#: ../../integration.rst:198
+msgid ":class:`airflow.contrib.hooks.redshift_hook.RedshiftHook`"
+msgstr ""
+
+#: ../../integration.rst:198
+msgid "Interact with AWS Redshift, using the boto3 library."
+msgstr ""
+
+#: ../../integration.rst:201
+msgid ":class:`airflow.operators.redshift_to_s3_operator.RedshiftToS3Transfer`"
+msgstr ""
+
+#: ../../integration.rst:201
+msgid "Executes an unload command to S3 as CSV with or without headers."
+msgstr ""
+
+#: ../../integration.rst:206
+msgid ":class:`airflow.operators.s3_to_redshift_operator.S3ToRedshiftTransfer`"
+msgstr ""
+
+#: ../../integration.rst:204
+msgid "Executes an copy command from S3 as CSV with or without headers."
+msgstr ""
+
+#: ../../integration.rst:209
+msgid "AWS DynamoDB"
+msgstr ""
+
+#: ../../integration.rst:212
+msgid ":class:`airflow.contrib.operators.hive_to_dynamodb.HiveToDynamoDBTransferOperator`"
+msgstr ""
+
+#: ../../integration.rst:212
+msgid "Moves data from Hive to DynamoDB."
+msgstr ""
+
+#: ../../integration.rst:216
+msgid ":class:`airflow.contrib.hooks.aws_dynamodb_hook.AwsDynamoDBHook`"
+msgstr ""
+
+#: ../../integration.rst:215
+msgid "Interface with AWS DynamoDB."
+msgstr ""
+
+#: ../../integration.rst:219
+msgid "AWS Lambda"
+msgstr ""
+
+#: ../../integration.rst:223
+msgid ":class:`airflow.contrib.hooks.aws_lambda_hook.AwsLambdaHook`"
+msgstr ""
+
+#: ../../integration.rst:222
+msgid "Interface with AWS Lambda."
+msgstr ""
+
+#: ../../integration.rst:226
+msgid "AWS Kinesis"
+msgstr ""
+
+#: ../../integration.rst:230
+msgid ":class:`airflow.contrib.hooks.aws_firehose_hook.AwsFirehoseHook`"
+msgstr ""
+
+#: ../../integration.rst:229
+msgid "Interface with AWS Kinesis Firehose."
+msgstr ""
+
+#: ../../integration.rst:233
+msgid "Amazon SageMaker"
+msgstr ""
+
+#: ../../integration.rst:235
+msgid ""
+"For more instructions on using Amazon SageMaker in Airflow, please see "
+"`the SageMaker Python SDK README`_."
+msgstr ""
+
+#: ../../integration.rst:240
+msgid ":class:`airflow.contrib.hooks.sagemaker_hook.SageMakerHook`"
+msgstr ""
+
+#: ../../integration.rst:240
+msgid "Interface with Amazon SageMaker."
+msgstr ""
+
+#: ../../integration.rst:243
+msgid ":class:`airflow.contrib.operators.sagemaker_training_operator.SageMakerTrainingOperator`"
+msgstr ""
+
+#: ../../integration.rst:243
+msgid "Create a SageMaker training job."
+msgstr ""
+
+#: ../../integration.rst:246
+msgid ":class:`airflow.contrib.operators.sagemaker_tuning_operator.SageMakerTuningOperator`"
+msgstr ""
+
+#: ../../integration.rst:246
+msgid "Create a SageMaker tuning job."
+msgstr ""
+
+#: ../../integration.rst:249
+msgid ":class:`airflow.contrib.operators.sagemaker_model_operator.SageMakerModelOperator`"
+msgstr ""
+
+#: ../../integration.rst:249
+msgid "Create a SageMaker model."
+msgstr ""
+
+#: ../../integration.rst:252
+msgid ":class:`airflow.contrib.operators.sagemaker_transform_operator.SageMakerTransformOperator`"
+msgstr ""
+
+#: ../../integration.rst:252
+msgid "Create a SageMaker transform job."
+msgstr ""
+
+#: ../../integration.rst:255
+msgid ":class:`airflow.contrib.operators.sagemaker_endpoint_config_operator.SageMakerEndpointConfigOperator`"
+msgstr ""
+
+#: ../../integration.rst:255
+msgid "Create a SageMaker endpoint config."
+msgstr ""
+
+#: ../../integration.rst:259
+msgid ":class:`airflow.contrib.operators.sagemaker_endpoint_operator.SageMakerEndpointOperator`"
+msgstr ""
+
+#: ../../integration.rst:258
+msgid "Create a SageMaker endpoint."
+msgstr ""
+
+#: ../../integration.rst:264
+msgid "Databricks"
+msgstr ""
+
+#: ../../integration.rst:266
+msgid ""
+"`Databricks <https://databricks.com/>`__ has contributed an Airflow "
+"operator which enables submitting runs to the Databricks platform. "
+"Internally the operator talks to the ``api/2.0/jobs/runs/submit`` "
+"`endpoint <https://docs.databricks.com/api/latest/jobs.html#runs-"
+"submit>`_."
+msgstr ""
+
+#: ../../integration.rst:276
+msgid ":class:`airflow.contrib.operators.databricks_operator.DatabricksSubmitRunOperator`"
+msgstr ""
+
+#: ../../integration.rst:272
+msgid ""
+"Submits a Spark job run to Databricks using the `api/2.0/jobs/runs/submit"
+" <https://docs.databricks.com/api/latest/jobs.html#runs-submit>`_ API "
+"endpoint."
+msgstr ""
+
+#: ../../integration.rst:281
+msgid "GCP: Google Cloud Platform"
+msgstr ""
+
+#: ../../integration.rst:283
+msgid ""
+"Airflow has extensive support for the Google Cloud Platform. But note "
+"that most Hooks and Operators are in the contrib section. Meaning that "
+"they have a *beta* status, meaning that they can have breaking changes "
+"between minor releases."
+msgstr ""
+
+#: ../../integration.rst:287
+msgid ""
+"See the :doc:`GCP connection type <howto/connection/gcp>` documentation "
+"to configure connections to GCP."
+msgstr ""
+
+#: ../../integration.rst:293
+msgid ""
+"Airflow can be configured to read and write task logs in Google Cloud "
+"Storage. See :ref:`write-logs-gcp`."
+msgstr ""
+
+#: ../../integration.rst:298
+msgid "GoogleCloudBaseHook"
+msgstr ""
+
+#: ../../integration.rst:300
+msgid ""
+"All hooks is based on "
+":class:`airflow.contrib.hooks.gcp_api_base_hook.GoogleCloudBaseHook`."
+msgstr ""
+
+#: ../../integration.rst:304
+msgid "BigQuery"
+msgstr ""
+
+#: ../../integration.rst:307
+msgid ":class:`airflow.contrib.operators.bigquery_check_operator.BigQueryCheckOperator`"
+msgstr ""
+
+#: ../../integration.rst:307
+msgid ""
+"Performs checks against a SQL query that will return a single row with "
+"different values."
+msgstr ""
+
+#: ../../integration.rst:310
+msgid ":class:`airflow.contrib.operators.bigquery_check_operator.BigQueryIntervalCheckOperator`"
+msgstr ""
+
+#: ../../integration.rst:310
+msgid ""
+"Checks that the values of metrics given as SQL expressions are within a "
+"certain tolerance of the ones from days_back before."
+msgstr ""
+
+#: ../../integration.rst:313
+msgid ":class:`airflow.contrib.operators.bigquery_check_operator.BigQueryValueCheckOperator`"
+msgstr ""
+
+#: ../../integration.rst:313
+msgid "Performs a simple value check using SQL code."
+msgstr ""
+
+#: ../../integration.rst:316
+msgid ":class:`airflow.contrib.operators.bigquery_get_data.BigQueryGetDataOperator`"
+msgstr ""
+
+#: ../../integration.rst:316
+msgid "Fetches the data from a BigQuery table and returns data in a python list"
+msgstr ""
+
+#: ../../integration.rst:319
+msgid ":class:`airflow.contrib.operators.bigquery_operator.BigQueryCreateEmptyDatasetOperator`"
+msgstr ""
+
+#: ../../integration.rst:319
+msgid "Creates an empty BigQuery dataset."
+msgstr ""
+
+#: ../../integration.rst:322
+msgid ":class:`airflow.contrib.operators.bigquery_operator.BigQueryCreateEmptyTableOperator`"
+msgstr ""
+
+#: ../../integration.rst:322
+msgid ""
+"Creates a new, empty table in the specified BigQuery dataset optionally "
+"with schema."
+msgstr ""
+
+#: ../../integration.rst:325
+msgid ":class:`airflow.contrib.operators.bigquery_operator.BigQueryCreateExternalTableOperator`"
+msgstr ""
+
+#: ../../integration.rst:325
+msgid ""
+"Creates a new, external table in the dataset with the data in Google "
+"Cloud Storage."
+msgstr ""
+
+#: ../../integration.rst:328
+msgid ":class:`airflow.contrib.operators.bigquery_operator.BigQueryDeleteDatasetOperator`"
+msgstr ""
+
+#: ../../integration.rst:328
+msgid "Deletes an existing BigQuery dataset."
+msgstr ""
+
+#: ../../integration.rst:331
+msgid ":class:`airflow.contrib.operators.bigquery_operator.BigQueryOperator`"
+msgstr ""
+
+#: ../../integration.rst:331
+msgid "Executes BigQuery SQL queries in a specific BigQuery database."
+msgstr ""
+
+#: ../../integration.rst:334
+msgid ":class:`airflow.contrib.operators.bigquery_table_delete_operator.BigQueryTableDeleteOperator`"
+msgstr ""
+
+#: ../../integration.rst:334
+msgid "Deletes an existing BigQuery table."
+msgstr ""
+
+#: ../../integration.rst:337
+msgid ":class:`airflow.contrib.operators.bigquery_to_bigquery.BigQueryToBigQueryOperator`"
+msgstr ""
+
+#: ../../integration.rst:337
+msgid "Copy a BigQuery table to another BigQuery table."
+msgstr ""
+
+#: ../../integration.rst:341
+msgid ":class:`airflow.contrib.operators.bigquery_to_gcs.BigQueryToCloudStorageOperator`"
+msgstr ""
+
+#: ../../integration.rst:340
+msgid "Transfers a BigQuery table to a Google Cloud Storage bucket"
+msgstr ""
+
+#: ../../integration.rst:343
+msgid ""
+"They also use :class:`airflow.contrib.hooks.bigquery_hook.BigQueryHook` "
+"to communicate with Google Cloud Platform."
+msgstr ""
+
+#: ../../integration.rst:347
+msgid "Cloud Spanner"
+msgstr ""
+
+#: ../../integration.rst:350
+msgid ":class:`airflow.contrib.operators.gcp_spanner_operator.CloudSpannerInstanceDatabaseDeleteOperator`"
+msgstr ""
+
+#: ../../integration.rst:350
+msgid ""
+"deletes an existing database from a Google Cloud Spanner instance or "
+"returns success if the database is missing."
+msgstr ""
+
+#: ../../integration.rst:353
+msgid ":class:`airflow.contrib.operators.gcp_spanner_operator.CloudSpannerInstanceDatabaseDeployOperator`"
+msgstr ""
+
+#: ../../integration.rst:353
+msgid ""
+"creates a new database in a Google Cloud instance or returns success if "
+"the database already exists."
+msgstr ""
+
+#: ../../integration.rst:356
+msgid ":class:`airflow.contrib.operators.gcp_spanner_operator.CloudSpannerInstanceDatabaseQueryOperator`"
+msgstr ""
+
+#: ../../integration.rst:356
+msgid "executes an arbitrary DML query (INSERT, UPDATE, DELETE)."
+msgstr ""
+
+#: ../../integration.rst:359
+msgid ":class:`airflow.contrib.operators.gcp_spanner_operator.CloudSpannerInstanceDatabaseUpdateOperator`"
+msgstr ""
+
+#: ../../integration.rst:359
+msgid "updates the structure of a Google Cloud Spanner database."
+msgstr ""
+
+#: ../../integration.rst:362
+msgid ":class:`airflow.contrib.operators.gcp_spanner_operator.CloudSpannerInstanceDeleteOperator`"
+msgstr ""
+
+#: ../../integration.rst:362
+msgid "deletes a Google Cloud Spanner instance."
+msgstr ""
+
+#: ../../integration.rst:366
+msgid ":class:`airflow.contrib.operators.gcp_spanner_operator.CloudSpannerInstanceDeployOperator`"
+msgstr ""
+
+#: ../../integration.rst:365
+msgid ""
+"creates a new Google Cloud Spanner instance, or if an instance with the "
+"same name exists, updates the instance."
+msgstr ""
+
+#: ../../integration.rst:368
+msgid ""
+"They also use "
+":class:`airflow.contrib.hooks.gcp_spanner_hook.CloudSpannerHook` to "
+"communicate with Google Cloud Platform."
+msgstr ""
+
+#: ../../integration.rst:372
+msgid "Cloud SQL"
+msgstr ""
+
+#: ../../integration.rst:375
+msgid ":class:`airflow.contrib.operators.gcp_sql_operator.CloudSqlInstanceCreateOperator`"
+msgstr ""
+
+#: ../../integration.rst:375
+msgid "create a new Cloud SQL instance."
+msgstr ""
+
+#: ../../integration.rst:378
+msgid ":class:`airflow.contrib.operators.gcp_sql_operator.CloudSqlInstanceDatabaseCreateOperator`"
+msgstr ""
+
+#: ../../integration.rst:378
+msgid "creates a new database inside a Cloud SQL instance."
+msgstr ""
+
+#: ../../integration.rst:381
+msgid ":class:`airflow.contrib.operators.gcp_sql_operator.CloudSqlInstanceDatabaseDeleteOperator`"
+msgstr ""
+
+#: ../../integration.rst:381
+msgid "deletes a database from a Cloud SQL instance."
+msgstr ""
+
+#: ../../integration.rst:384
+msgid ":class:`airflow.contrib.operators.gcp_sql_operator.CloudSqlInstanceDatabasePatchOperator`"
+msgstr ""
+
+#: ../../integration.rst:384
+msgid "updates a database inside a Cloud SQL instance."
+msgstr ""
+
+#: ../../integration.rst:387
+msgid ":class:`airflow.contrib.operators.gcp_sql_operator.CloudSqlInstanceDeleteOperator`"
+msgstr ""
+
+#: ../../integration.rst:387
+msgid "delete a Cloud SQL instance."
+msgstr ""
+
+#: ../../integration.rst:390
+msgid ":class:`airflow.contrib.operators.gcp_sql_operator.CloudSqlInstanceExportOperator`"
+msgstr ""
+
+#: ../../integration.rst:390
+msgid "exports data from a Cloud SQL instance."
+msgstr ""
+
+#: ../../integration.rst:393
+msgid ":class:`airflow.contrib.operators.gcp_sql_operator.CloudSqlInstanceImportOperator`"
+msgstr ""
+
+#: ../../integration.rst:393
+msgid "imports data into a Cloud SQL instance."
+msgstr ""
+
+#: ../../integration.rst:396
+msgid ":class:`airflow.contrib.operators.gcp_sql_operator.CloudSqlInstancePatchOperator`"
+msgstr ""
+
+#: ../../integration.rst:396
+msgid "patch a Cloud SQL instance."
+msgstr ""
+
+#: ../../integration.rst:400
+msgid ":class:`airflow.contrib.operators.gcp_sql_operator.CloudSqlQueryOperator`"
+msgstr ""
+
+#: ../../integration.rst:399
+msgid "run query in a Cloud SQL instance."
+msgstr ""
+
+#: ../../integration.rst:402
+msgid ""
+"They also use "
+":class:`airflow.contrib.hooks.gcp_sql_hook.CloudSqlDatabaseHook` and "
+":class:`airflow.contrib.hooks.gcp_sql_hook.CloudSqlHook` to communicate "
+"with Google Cloud Platform."
+msgstr ""
+
+#: ../../integration.rst:406
+msgid "Cloud Bigtable"
+msgstr ""
+
+#: ../../integration.rst:409
+msgid ":class:`airflow.contrib.operators.gcp_bigtable_operator.BigtableClusterUpdateOperator`"
+msgstr ""
+
+#: ../../integration.rst:409
+msgid "updates the number of nodes in a Google Cloud Bigtable cluster."
+msgstr ""
+
+#: ../../integration.rst:412
+msgid ":class:`airflow.contrib.operators.gcp_bigtable_operator.BigtableInstanceCreateOperator`"
+msgstr ""
+
+#: ../../integration.rst:412
+msgid "creates a Cloud Bigtable instance."
+msgstr ""
+
+#: ../../integration.rst:415
+msgid ":class:`airflow.contrib.operators.gcp_bigtable_operator.BigtableInstanceDeleteOperator`"
+msgstr ""
+
+#: ../../integration.rst:415
+msgid "deletes a Google Cloud Bigtable instance."
+msgstr ""
+
+#: ../../integration.rst:418
+msgid ":class:`airflow.contrib.operators.gcp_bigtable_operator.BigtableTableCreateOperator`"
+msgstr ""
+
+#: ../../integration.rst:418
+msgid "creates a table in a Google Cloud Bigtable instance."
+msgstr ""
+
+#: ../../integration.rst:421
+msgid ":class:`airflow.contrib.operators.gcp_bigtable_operator.BigtableTableDeleteOperator`"
+msgstr ""
+
+#: ../../integration.rst:421
+msgid "deletes a table in a Google Cloud Bigtable instance."
+msgstr ""
+
+#: ../../integration.rst:425
+msgid ":class:`airflow.contrib.operators.gcp_bigtable_operator.BigtableTableWaitForReplicationSensor`"
+msgstr ""
+
+#: ../../integration.rst:424
+msgid "(sensor) waits for a table to be fully replicated."
+msgstr ""
+
+#: ../../integration.rst:427
+msgid ""
+"They also use "
+":class:`airflow.contrib.hooks.gcp_bigtable_hook.BigtableHook` to "
+"communicate with Google Cloud Platform."
+msgstr ""
+
+#: ../../integration.rst:431
+msgid "Compute Engine"
+msgstr ""
+
+#: ../../integration.rst:434
+msgid ":class:`airflow.contrib.operators.gcp_compute_operator.GceInstanceStartOperator`"
+msgstr ""
+
+#: ../../integration.rst:434
+msgid "start an existing Google Compute Engine instance."
+msgstr ""
+
+#: ../../integration.rst:437
+msgid ":class:`airflow.contrib.operators.gcp_compute_operator.GceInstanceStopOperator`"
+msgstr ""
+
+#: ../../integration.rst:437
+msgid "stop an existing Google Compute Engine instance."
+msgstr ""
+
+#: ../../integration.rst:440
+msgid ":class:`airflow.contrib.operators.gcp_compute_operator.GceSetMachineTypeOperator`"
+msgstr ""
+
+#: ../../integration.rst:440
+msgid "change the machine type for a stopped instance."
+msgstr ""
+
+#: ../../integration.rst:443
+msgid ":class:`airflow.contrib.operators.gcp_compute_operator.GceInstanceTemplateCopyOperator`"
+msgstr ""
+
+#: ../../integration.rst:443
+msgid "copy the Instance Template, applying specified changes."
+msgstr ""
+
+#: ../../integration.rst:447
+msgid ":class:`airflow.contrib.operators.gcp_compute_operator.GceInstanceGroupManagerUpdateTemplateOperator`"
+msgstr ""
+
+#: ../../integration.rst:446
+msgid ""
+"patch the Instance Group Manager, replacing source Instance Template URL "
+"with the destination one."
+msgstr ""
+
+#: ../../integration.rst:449
+msgid ""
+"The operators have the common base operator "
+":class:`airflow.contrib.operators.gcp_compute_operator.GceBaseOperator`"
+msgstr ""
+
+#: ../../integration.rst:451
+msgid ""
+"They also use :class:`airflow.contrib.hooks.gcp_compute_hook.GceHook` to "
+"communicate with Google Cloud Platform."
+msgstr ""
+
+#: ../../integration.rst:455
+msgid "Cloud Functions"
+msgstr ""
+
+#: ../../integration.rst:458
+msgid ":class:`airflow.contrib.operators.gcp_function_operator.GcfFunctionDeployOperator`"
+msgstr ""
+
+#: ../../integration.rst:458
+msgid "deploy Google Cloud Function to Google Cloud Platform"
+msgstr ""
+
+#: ../../integration.rst:462
+msgid ":class:`airflow.contrib.operators.gcp_function_operator.GcfFunctionDeleteOperator`"
+msgstr ""
+
+#: ../../integration.rst:461
+msgid "delete Google Cloud Function in Google Cloud Platform"
+msgstr ""
+
+#: ../../integration.rst:464
+msgid ""
+"They also use :class:`airflow.contrib.hooks.gcp_function_hook.GcfHook` to"
+" communicate with Google Cloud Platform."
+msgstr ""
+
+#: ../../integration.rst:468
+msgid "Cloud DataFlow"
+msgstr ""
+
+#: ../../integration.rst:471
+msgid ":class:`airflow.contrib.operators.dataflow_operator.DataFlowJavaOperator`"
+msgstr ""
+
+#: ../../integration.rst:471
+msgid "launching Cloud Dataflow jobs written in Java."
+msgstr ""
+
+#: ../../integration.rst:474
+msgid ":class:`airflow.contrib.operators.dataflow_operator.DataflowTemplateOperator`"
+msgstr ""
+
+#: ../../integration.rst:474
+msgid "launching a templated Cloud DataFlow batch job."
+msgstr ""
+
+#: ../../integration.rst:478
+msgid ":class:`airflow.contrib.operators.dataflow_operator.DataFlowPythonOperator`"
+msgstr ""
+
+#: ../../integration.rst:477
+msgid "launching Cloud Dataflow jobs written in python."
+msgstr ""
+
+#: ../../integration.rst:480
+msgid ""
+"They also use "
+":class:`airflow.contrib.hooks.gcp_dataflow_hook.DataFlowHook` to "
+"communicate with Google Cloud Platform."
+msgstr ""
+
+#: ../../integration.rst:484
+msgid "Cloud DataProc"
+msgstr ""
+
+#: ../../integration.rst:487
+msgid ":class:`airflow.contrib.operators.dataproc_operator.DataprocClusterCreateOperator`"
+msgstr ""
+
+#: ../../integration.rst:487
+msgid "Create a new cluster on Google Cloud Dataproc."
+msgstr ""
+
+#: ../../integration.rst:490
+msgid ":class:`airflow.contrib.operators.dataproc_operator.DataprocClusterDeleteOperator`"
+msgstr ""
+
+#: ../../integration.rst:490
+msgid "Delete a cluster on Google Cloud Dataproc."
+msgstr ""
+
+#: ../../integration.rst:493
+msgid ":class:`airflow.contrib.operators.dataproc_operator.DataprocClusterScaleOperator`"
+msgstr ""
+
+#: ../../integration.rst:493
+msgid "Scale up or down a cluster on Google Cloud Dataproc."
+msgstr ""
+
+#: ../../integration.rst:496
+msgid ":class:`airflow.contrib.operators.dataproc_operator.DataProcHadoopOperator`"
+msgstr ""
+
+#: ../../integration.rst:496
+msgid "Start a Hadoop Job on a Cloud DataProc cluster."
+msgstr ""
+
+#: ../../integration.rst:499
+msgid ":class:`airflow.contrib.operators.dataproc_operator.DataProcHiveOperator`"
+msgstr ""
+
+#: ../../integration.rst:499
+msgid "Start a Hive query Job on a Cloud DataProc cluster."
+msgstr ""
+
+#: ../../integration.rst:502
+msgid ":class:`airflow.contrib.operators.dataproc_operator.DataProcPigOperator`"
+msgstr ""
+
+#: ../../integration.rst:502
+msgid "Start a Pig query Job on a Cloud DataProc cluster."
+msgstr ""
+
+#: ../../integration.rst:505
+msgid ":class:`airflow.contrib.operators.dataproc_operator.DataProcPySparkOperator`"
+msgstr ""
+
+#: ../../integration.rst:505
+msgid "Start a PySpark Job on a Cloud DataProc cluster."
+msgstr ""
+
+#: ../../integration.rst:508
+msgid ":class:`airflow.contrib.operators.dataproc_operator.DataProcSparkOperator`"
+msgstr ""
+
+#: ../../integration.rst:508
+msgid "Start a Spark Job on a Cloud DataProc cluster."
+msgstr ""
+
+#: ../../integration.rst:511
+msgid ":class:`airflow.contrib.operators.dataproc_operator.DataProcSparkSqlOperator`"
+msgstr ""
+
+#: ../../integration.rst:511
+msgid "Start a Spark SQL query Job on a Cloud DataProc cluster."
+msgstr ""
+
+#: ../../integration.rst:514
+msgid ":class:`airflow.contrib.operators.dataproc_operator.DataprocWorkflowTemplateInstantiateInlineOperator`"
+msgstr ""
+
+#: ../../integration.rst:514
+msgid "Instantiate a WorkflowTemplate Inline on Google Cloud Dataproc."
+msgstr ""
+
+#: ../../integration.rst:518
+msgid ":class:`airflow.contrib.operators.dataproc_operator.DataprocWorkflowTemplateInstantiateOperator`"
+msgstr ""
+
+#: ../../integration.rst:517
+msgid "Instantiate a WorkflowTemplate on Google Cloud Dataproc."
+msgstr ""
+
+#: ../../integration.rst:521
+msgid "Cloud Datastore"
+msgstr ""
+
+#: ../../integration.rst:524
+msgid ":class:`airflow.contrib.operators.datastore_export_operator.DatastoreExportOperator`"
+msgstr ""
+
+#: ../../integration.rst:524
+msgid "Export entities from Google Cloud Datastore to Cloud Storage."
+msgstr ""
+
+#: ../../integration.rst:528
+msgid ":class:`airflow.contrib.operators.datastore_import_operator.DatastoreImportOperator`"
+msgstr ""
+
+#: ../../integration.rst:527
+msgid "Import entities from Cloud Storage to Google Cloud Datastore."
+msgstr ""
+
+#: ../../integration.rst:530
+msgid ""
+"They also use :class:`airflow.contrib.hooks.datastore_hook.DatastoreHook`"
+" to communicate with Google Cloud Platform."
+msgstr ""
+
+#: ../../integration.rst:534
+msgid "Cloud ML Engine"
+msgstr ""
+
+#: ../../integration.rst:537
+msgid ":class:`airflow.contrib.operators.mlengine_operator.MLEngineBatchPredictionOperator`"
+msgstr ""
+
+#: ../../integration.rst:537
+msgid "Start a Cloud ML Engine batch prediction job."
+msgstr ""
+
+#: ../../integration.rst:540
+msgid ":class:`airflow.contrib.operators.mlengine_operator.MLEngineModelOperator`"
+msgstr ""
+
+#: ../../integration.rst:540
+msgid "Manages a Cloud ML Engine model."
+msgstr ""
+
+#: ../../integration.rst:543
+msgid ":class:`airflow.contrib.operators.mlengine_operator.MLEngineTrainingOperator`"
+msgstr ""
+
+#: ../../integration.rst:543
+msgid "Start a Cloud ML Engine training job."
+msgstr ""
+
+#: ../../integration.rst:547
+msgid ":class:`airflow.contrib.operators.mlengine_operator.MLEngineVersionOperator`"
+msgstr ""
+
+#: ../../integration.rst:546
+msgid "Manages a Cloud ML Engine model version."
+msgstr ""
+
+#: ../../integration.rst:549
+msgid ""
+"They also use "
+":class:`airflow.contrib.hooks.gcp_mlengine_hook.MLEngineHook` to "
+"communicate with Google Cloud Platform."
+msgstr ""
+
+#: ../../integration.rst:553
+msgid "Cloud Storage"
+msgstr ""
+
+#: ../../integration.rst:556
+msgid ":class:`airflow.contrib.operators.file_to_gcs.FileToGoogleCloudStorageOperator`"
+msgstr ""
+
+#: ../../integration.rst:556
+msgid "Uploads a file to Google Cloud Storage."
+msgstr ""
+
+#: ../../integration.rst:559
+msgid ":class:`airflow.contrib.operators.gcs_acl_operator.GoogleCloudStorageBucketCreateAclEntryOperator`"
+msgstr ""
+
+#: ../../integration.rst:559
+msgid "Creates a new ACL entry on the specified bucket."
+msgstr ""
+
+#: ../../integration.rst:562
+msgid ":class:`airflow.contrib.operators.gcs_acl_operator.GoogleCloudStorageObjectCreateAclEntryOperator`"
+msgstr ""
+
+#: ../../integration.rst:562
+msgid "Creates a new ACL entry on the specified object."
+msgstr ""
+
+#: ../../integration.rst:565
+msgid ":class:`airflow.contrib.operators.gcs_download_operator.GoogleCloudStorageDownloadOperator`"
+msgstr ""
+
+#: ../../integration.rst:565
+msgid "Downloads a file from Google Cloud Storage."
+msgstr ""
+
+#: ../../integration.rst:568
+msgid ":class:`airflow.contrib.operators.gcs_list_operator.GoogleCloudStorageListOperator`"
+msgstr ""
+
+#: ../../integration.rst:568
+msgid ""
+"List all objects from the bucket with the give string prefix and "
+"delimiter in name."
+msgstr ""
+
+#: ../../integration.rst:571
+msgid ":class:`airflow.contrib.operators.gcs_operator.GoogleCloudStorageCreateBucketOperator`"
+msgstr ""
+
+#: ../../integration.rst:571
+msgid "Creates a new cloud storage bucket."
+msgstr ""
+
+#: ../../integration.rst:574
+msgid ":class:`airflow.contrib.operators.gcs_to_bq.GoogleCloudStorageToBigQueryOperator`"
+msgstr ""
+
+#: ../../integration.rst:574
+msgid "Loads files from Google cloud storage into BigQuery."
+msgstr ""
+
+#: ../../integration.rst:577
+msgid ":class:`airflow.contrib.operators.gcs_to_gcs.GoogleCloudStorageToGoogleCloudStorageOperator`"
+msgstr ""
+
+#: ../../integration.rst:577
+msgid "Copies objects from a bucket to another, with renaming if requested."
+msgstr ""
+
+#: ../../integration.rst:581
+msgid ":class:`airflow.contrib.operators.mysql_to_gcs.MySqlToGoogleCloudStorageOperator`"
+msgstr ""
+
+#: ../../integration.rst:580
+msgid "Copy data from any MySQL Database to Google cloud storage in JSON format."
+msgstr ""
+
+#: ../../integration.rst:583
+msgid ""
+"They also use "
+":class:`airflow.contrib.hooks.gcs_hook.GoogleCloudStorageHook` to "
+"communicate with Google Cloud Platform."
+msgstr ""
+
+#: ../../integration.rst:587
+msgid "Transfer Service"
+msgstr ""
+
+#: ../../integration.rst:589
+msgid ":class:`airflow.contrib.operators.gcp_transfer_operator.GcpTransferServiceJobDeleteOperator`"
+msgstr ""
+
+#: ../../integration.rst:590
+msgid "Deletes a transfer job."
+msgstr ""
+
+#: ../../integration.rst:591
+msgid ":class:`airflow.contrib.operators.gcp_transfer_operator.GcpTransferServiceJobCreateOperator`"
+msgstr ""
+
+#: ../../integration.rst:592
+msgid "Creates a transfer job."
+msgstr ""
+
+#: ../../integration.rst:593
+msgid ":class:`airflow.contrib.operators.gcp_transfer_operator.GcpTransferServiceJobUpdateOperator`"
+msgstr ""
+
+#: ../../integration.rst:594
+msgid "Updates a transfer job."
+msgstr ""
+
+#: ../../integration.rst:595
+msgid ":class:`airflow.contrib.operators.gcp_transfer_operator.GcpTransferServiceOperationCancelOperator`"
+msgstr ""
+
+#: ../../integration.rst:596
+msgid "Cancels a transfer operation."
+msgstr ""
+
+#: ../../integration.rst:597
+msgid ":class:`airflow.contrib.operators.gcp_transfer_operator.GcpTransferServiceOperationGetOperator`"
+msgstr ""
+
+#: ../../integration.rst:598
+msgid "Gets a transfer operation."
+msgstr ""
+
+#: ../../integration.rst:599
+msgid ":class:`airflow.contrib.operators.gcp_transfer_operator.GcpTransferServiceOperationPauseOperator`"
+msgstr ""
+
+#: ../../integration.rst:600
+msgid "Pauses a transfer operation"
+msgstr ""
+
+#: ../../integration.rst:601
+msgid ":class:`airflow.contrib.operators.gcp_transfer_operator.GcpTransferServiceOperationResumeOperator`"
+msgstr ""
+
+#: ../../integration.rst:602
+msgid "Resumes a transfer operation."
+msgstr ""
+
+#: ../../integration.rst:603
+msgid ":class:`airflow.contrib.operators.gcp_transfer_operator.GcpTransferServiceOperationsListOperator`"
+msgstr ""
+
+#: ../../integration.rst:604
+msgid "Gets a list of transfer operations."
+msgstr ""
+
+#: ../../integration.rst:605
+msgid ":class:`airflow.contrib.operators.gcp_transfer_operator.GoogleCloudStorageToGoogleCloudStorageTransferOperator`"
+msgstr ""
+
+#: ../../integration.rst:606
+msgid "Copies objects from a Google Cloud Storage bucket to another bucket."
+msgstr ""
+
+#: ../../integration.rst:609
+msgid ":class:`airflow.contrib.operators.gcp_transfer_operator.S3ToGoogleCloudStorageTransferOperator`"
+msgstr ""
+
+#: ../../integration.rst:608
+msgid "Synchronizes an S3 bucket with a Google Cloud Storage bucket."
+msgstr ""
+
+#: ../../integration.rst:614
+msgid ":class:`airflow.contrib.sensors.gcp_transfer_operator.GCPTransferServiceWaitForJobStatusSensor`"
+msgstr ""
+
+#: ../../integration.rst:612
+msgid ""
+"Waits for at least one operation belonging to the job to have the "
+"expected status."
+msgstr ""
+
+#: ../../integration.rst:616
+msgid ""
+"They also use "
+":class:`airflow.contrib.hooks.gcp_transfer_hook.GCPTransferServiceHook` "
+"to communicate with Google Cloud Platform."
+msgstr ""
+
+#: ../../integration.rst:620
+msgid "Cloud Vision"
+msgstr ""
+
+#: ../../integration.rst:623
+msgid "Cloud Vision Product Search Operators"
+msgstr ""
+
+#: ../../integration.rst:625
+msgid ":class:`airflow.contrib.operators.gcp_vision_operator.CloudVisionAddProductToProductSetOperator`"
+msgstr ""
+
+#: ../../integration.rst:626
+msgid "Adds a Product to the specified ProductSet."
+msgstr ""
+
+#: ../../integration.rst:627
+msgid ":class:`airflow.contrib.operators.gcp_vision_operator.CloudVisionAnnotateImageOperator`"
+msgstr ""
+
+#: ../../integration.rst:628
+msgid "Run image detection and annotation for an image."
+msgstr ""
+
+#: ../../integration.rst:629
+msgid ":class:`airflow.contrib.operators.gcp_vision_operator.CloudVisionProductCreateOperator`"
+msgstr ""
+
+#: ../../integration.rst:630
+msgid "Creates a new Product resource."
+msgstr ""
+
+#: ../../integration.rst:631
+msgid ":class:`airflow.contrib.operators.gcp_vision_operator.CloudVisionProductDeleteOperator`"
+msgstr ""
+
+#: ../../integration.rst:632
+msgid "Permanently deletes a product and its reference images."
+msgstr ""
+
+#: ../../integration.rst:633
+msgid ":class:`airflow.contrib.operators.gcp_vision_operator.CloudVisionProductGetOperator`"
+msgstr ""
+
+#: ../../integration.rst:634
+msgid "Gets information associated with a Product."
+msgstr ""
+
+#: ../../integration.rst:635
+msgid ":class:`airflow.contrib.operators.gcp_vision_operator.CloudVisionProductSetCreateOperator`"
+msgstr ""
+
+#: ../../integration.rst:636
+msgid "Creates a new ProductSet resource."
+msgstr ""
+
+#: ../../integration.rst:637
+msgid ":class:`airflow.contrib.operators.gcp_vision_operator.CloudVisionProductSetDeleteOperator`"
+msgstr ""
+
+#: ../../integration.rst:638
+msgid "Permanently deletes a ProductSet."
+msgstr ""
+
+#: ../../integration.rst:639
+msgid ":class:`airflow.contrib.operators.gcp_vision_operator.CloudVisionProductSetGetOperator`"
+msgstr ""
+
+#: ../../integration.rst:640
+msgid "Gets information associated with a ProductSet."
+msgstr ""
+
+#: ../../integration.rst:641
+msgid ":class:`airflow.contrib.operators.gcp_vision_operator.CloudVisionProductSetUpdateOperator`"
+msgstr ""
+
+#: ../../integration.rst:642
+msgid "Makes changes to a ProductSet resource."
+msgstr ""
+
+#: ../../integration.rst:643
+msgid ":class:`airflow.contrib.operators.gcp_vision_operator.CloudVisionProductUpdateOperator`"
+msgstr ""
+
+#: ../../integration.rst:644
+msgid "Makes changes to a Product resource."
+msgstr ""
+
+#: ../../integration.rst:645
+msgid ":class:`airflow.contrib.operators.gcp_vision_operator.CloudVisionReferenceImageCreateOperator`"
+msgstr ""
+
+#: ../../integration.rst:646
+msgid "Creates a new ReferenceImage resource."
+msgstr ""
+
+#: ../../integration.rst:648
+msgid ":class:`airflow.contrib.operators.gcp_vision_operator.CloudVisionRemoveProductFromProductSetOperator`"
+msgstr ""
+
+#: ../../integration.rst:648
+msgid "Removes a Product from the specified ProductSet."
+msgstr ""
+
+#: ../../integration.rst:650
+msgid ""
+"They also use "
+":class:`airflow.contrib.hooks.gcp_vision_hook.CloudVisionHook` to "
+"communicate with Google Cloud Platform."
+msgstr ""
+
+#: ../../integration.rst:653
+msgid "Cloud Text to Speech"
+msgstr ""
+
+#: ../../integration.rst:656
+msgid ":class:`airflow.contrib.operators.gcp_text_to_speech_operator.GcpTextToSpeechSynthesizeOperator`"
+msgstr ""
+
+#: ../../integration.rst:656
+msgid "Synthesizes input text into audio file and stores this file to GCS."
+msgstr ""
+
+#: ../../integration.rst:658
+msgid ""
+"They also use "
+":class:`airflow.contrib.hooks.gcp_text_to_speech_hook.GCPTextToSpeechHook`"
+" to communicate with Google Cloud Platform."
+msgstr ""
+
+#: ../../integration.rst:661
+msgid "Cloud Speech to Text"
+msgstr ""
+
+#: ../../integration.rst:664
+msgid ":class:`airflow.contrib.operators.gcp_speech_to_text_operator.GcpSpeechToTextRecognizeSpeechOperator`"
+msgstr ""
+
+#: ../../integration.rst:664
+msgid "Recognizes speech in audio input and returns text."
+msgstr ""
+
+#: ../../integration.rst:666
+msgid ""
+"They also use "
+":class:`airflow.contrib.hooks.gcp_speech_to_text_hook.GCPSpeechToTextHook`"
+" to communicate with Google Cloud Platform."
+msgstr ""
+
+#: ../../integration.rst:670
+msgid "Cloud Translate"
+msgstr ""
+
+#: ../../integration.rst:673
+msgid "Cloud Translate Text Operators"
+msgstr ""
+
+#: ../../integration.rst:677
+msgid ":class:`airflow.contrib.operators.gcp_translate_operator.CloudTranslateTextOperator`"
+msgstr ""
+
+#: ../../integration.rst:676
+msgid "Translate a string or list of strings."
+msgstr ""
+
+#: ../../integration.rst:680
+msgid "Google Kubernetes Engine"
+msgstr ""
+
+#: ../../integration.rst:683
+msgid ":class:`airflow.contrib.operators.gcp_container_operator.GKEClusterCreateOperator`"
+msgstr ""
+
+#: ../../integration.rst:683
+msgid "Creates a Kubernetes Cluster in Google Cloud Platform"
+msgstr ""
+
+#: ../../integration.rst:686
+msgid ":class:`airflow.contrib.operators.gcp_container_operator.GKEClusterDeleteOperator`"
+msgstr ""
+
+#: ../../integration.rst:686
+msgid "Deletes a Kubernetes Cluster in Google Cloud Platform"
+msgstr ""
+
+#: ../../integration.rst:689
+msgid ":class:`airflow.contrib.operators.gcp_container_operator.GKEPodOperator`"
+msgstr ""
+
+#: ../../integration.rst:689
+msgid ""
+"Executes a task in a Kubernetes pod in the specified Google Kubernetes "
+"Engine cluster"
+msgstr ""
+
+#: ../../integration.rst:691
+msgid ""
+"They also use "
+":class:`airflow.contrib.hooks.gcp_container_hook.GKEClusterHook` to "
+"communicate with Google Cloud Platform."
+msgstr ""
+
+#: ../../integration.rst:697
+msgid "Qubole"
+msgstr ""
+
+#: ../../integration.rst:699
+msgid ""
+"Apache Airflow has a native operator and hooks to talk to `Qubole "
+"<https://qubole.com/>`__, which lets you submit your big data jobs "
+"directly to Qubole from Apache Airflow."
+msgstr ""
+
+#: ../../integration.rst:704
+msgid ":class:`airflow.contrib.operators.qubole_operator.QuboleOperator`"
+msgstr ""
+
+#: ../../integration.rst:704
+msgid "Execute tasks (commands) on QDS (https://qubole.com)."
+msgstr ""
+
+#: ../../integration.rst:708
+msgid ":class:`airflow.contrib.sensors.qubole_sensor.QubolePartitionSensor`"
+msgstr ""
+
+#: ../../integration.rst:707
+msgid ""
+"Wait for a Hive partition to show up in QHS (Qubole Hive Service) and "
+"check for its presence via QDS APIs"
+msgstr ""
+
+#: ../../integration.rst:712
+msgid ":class:`airflow.contrib.sensors.qubole_sensor.QuboleFileSensor`"
+msgstr ""
+
+#: ../../integration.rst:711
+msgid ""
+"Wait for a file or folder to be present in cloud storage and check for "
+"its presence via QDS APIs"
+msgstr ""
+
+#: ../../integration.rst:716
+msgid ":class:`airflow.contrib.operators.qubole_check_operator.QuboleCheckOperator`"
+msgstr ""
+
+#: ../../integration.rst:715
+msgid ""
+"Performs checks against Qubole Commands. ``QuboleCheckOperator`` expects "
+"a command that will be executed on QDS."
+msgstr ""
+
+#: ../../integration.rst:720
+msgid ":class:`airflow.contrib.operators.qubole_check_operator.QuboleValueCheckOperator`"
+msgstr ""
+
+#: ../../integration.rst:719
+msgid ""
+"Performs a simple value check using Qubole command. By default, each "
+"value on the first row of this Qubole command is compared with a pre-"
+"defined value"
+msgstr ""
+

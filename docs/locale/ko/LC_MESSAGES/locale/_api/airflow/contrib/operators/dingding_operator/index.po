@@ -1,0 +1,70 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C)
+# This file is distributed under the same license as the Airflow package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Airflow 1.10.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-04-04 13:21+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../_api/airflow/contrib/operators/dingding_operator/index.rst:4
+msgid ":mod:`airflow.contrib.operators.dingding_operator`"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/dingding_operator/index.rst:15
+msgid "Module Contents"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/dingding_operator/index.rst:24
+msgid "Bases::class:`airflow.operators.bash_operator.BaseOperator`"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/dingding_operator/index.rst:28
+msgid ""
+"This operator allows you send Dingding message using Dingding custom bot."
+" Get Dingding token from conn_id.password. And prefer set domain to "
+"conn_id.host, if not will use default ``https://oapi.dingtalk.com``."
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/dingding_operator/index.rst:32
+msgid ""
+"For more detail message in `Dingding custom bot <https://open-"
+"doc.dingtalk.com/microapp/serverapi2/qf2nxq>`_"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/dingding_operator/index.rst
+msgid "Parameters"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/dingding_operator/index.rst:35
+msgid "The name of the Dingding connection to use"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/dingding_operator/index.rst:37
+msgid ""
+"Message type you want to send to Dingding, support five type so far "
+"including text, link, markdown, actionCard, feedCard"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/dingding_operator/index.rst:40
+msgid "The message send to Dingding chat group"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/dingding_operator/index.rst:42
+msgid "Remind specific users with this message"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/dingding_operator/index.rst:44
+msgid "Remind all people in group or not. If True, will overwrite ``at_mobiles``"
+msgstr ""
+

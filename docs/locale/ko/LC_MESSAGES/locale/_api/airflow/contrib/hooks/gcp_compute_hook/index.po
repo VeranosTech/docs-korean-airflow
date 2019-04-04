@@ -1,0 +1,211 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C)
+# This file is distributed under the same license as the Airflow package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Airflow 1.10.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-04-03 17:47+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../_api/airflow/contrib/hooks/gcp_compute_hook/index.rst:4
+msgid ":mod:`airflow.contrib.hooks.gcp_compute_hook`"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/gcp_compute_hook/index.rst:15
+msgid "Module Contents"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/gcp_compute_hook/index.rst:87
+msgid "Bases::class:`airflow.contrib.hooks.gcp_api_base_hook.GoogleCloudBaseHook`"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/gcp_compute_hook/index.rst:91
+msgid "Hook for Google Compute Engine APIs."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/gcp_compute_hook/index.rst:93
+msgid ""
+"All the methods in the hook where project_id is used must be called with "
+"keyword arguments rather than positional."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/gcp_compute_hook/index.rst:115
+msgid "Retrieves connection to Google Compute Engine."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/gcp_compute_hook/index.rst
+msgid "Returns"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/gcp_compute_hook/index.rst:117
+msgid "Google Compute Engine services object"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/gcp_compute_hook/index.rst
+msgid "Return type"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/gcp_compute_hook/index.rst:127
+msgid ""
+"Starts an existing instance defined by project_id, zone and resource_id. "
+"Must be called with keyword arguments rather than positional."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/gcp_compute_hook/index.rst
+msgid "Parameters"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/gcp_compute_hook/index.rst:130
+#: ../../_api/airflow/contrib/hooks/gcp_compute_hook/index.rst:150
+msgid "Google Cloud Platform zone where the instance exists"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/gcp_compute_hook/index.rst:132
+#: ../../_api/airflow/contrib/hooks/gcp_compute_hook/index.rst:152
+#: ../../_api/airflow/contrib/hooks/gcp_compute_hook/index.rst:172
+msgid "Name of the Compute Engine instance resource"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/gcp_compute_hook/index.rst:134
+#: ../../_api/airflow/contrib/hooks/gcp_compute_hook/index.rst:154
+#: ../../_api/airflow/contrib/hooks/gcp_compute_hook/index.rst:178
+#: ../../_api/airflow/contrib/hooks/gcp_compute_hook/index.rst:203
+#: ../../_api/airflow/contrib/hooks/gcp_compute_hook/index.rst:229
+#: ../../_api/airflow/contrib/hooks/gcp_compute_hook/index.rst:249
+#: ../../_api/airflow/contrib/hooks/gcp_compute_hook/index.rst:280
+msgid ""
+"Optional, Google Cloud Platform project ID where the Compute Engine "
+"Instance exists. If set to None or missing, the default project_id from "
+"the GCP connection is used."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/gcp_compute_hook/index.rst:138
+#: ../../_api/airflow/contrib/hooks/gcp_compute_hook/index.rst:158
+#: ../../_api/airflow/contrib/hooks/gcp_compute_hook/index.rst:182
+#: ../../_api/airflow/contrib/hooks/gcp_compute_hook/index.rst:233
+#: ../../_api/airflow/contrib/hooks/gcp_compute_hook/index.rst:284
+#: ../../_api/airflow/contrib/hooks/gcp_compute_hook/index.rst:299
+msgid "None"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/gcp_compute_hook/index.rst:147
+msgid ""
+"Stops an instance defined by project_id, zone and resource_id Must be "
+"called with keyword arguments rather than positional."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/gcp_compute_hook/index.rst:167
+msgid ""
+"Sets machine type of an instance defined by project_id, zone and "
+"resource_id. Must be called with keyword arguments rather than "
+"positional."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/gcp_compute_hook/index.rst:170
+msgid "Google Cloud Platform zone where the instance exists."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/gcp_compute_hook/index.rst:174
+msgid ""
+"Body required by the Compute Engine setMachineType API, as described in "
+"https://cloud.google.com/compute/docs/reference/rest/v1/instances/setMachineType"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/gcp_compute_hook/index.rst:198
+msgid ""
+"Retrieves instance template by project_id and resource_id. Must be called"
+" with keyword arguments rather than positional."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/gcp_compute_hook/index.rst:201
+msgid "Name of the instance template"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/gcp_compute_hook/index.rst:207
+#: ../../_api/airflow/contrib/hooks/gcp_compute_hook/index.rst:221
+msgid ""
+"Instance template representation as object according to "
+"https://cloud.google.com/compute/docs/reference/rest/v1/instanceTemplates"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/gcp_compute_hook/index.rst:218
+msgid ""
+"Inserts instance template using body specified Must be called with "
+"keyword arguments rather than positional."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/gcp_compute_hook/index.rst:224
+msgid ""
+"Optional, unique request_id that you might add to achieve full "
+"idempotence (for example when client call times out repeating the request"
+" with the same request id will not create a new instance template again) "
+"It should be in UUID format as defined in RFC 4122"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/gcp_compute_hook/index.rst:242
+msgid ""
+"Retrieves Instance Group Manager by project_id, zone and resource_id. "
+"Must be called with keyword arguments rather than positional."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/gcp_compute_hook/index.rst:245
+#: ../../_api/airflow/contrib/hooks/gcp_compute_hook/index.rst:267
+msgid "Google Cloud Platform zone where the Instance Group Manager exists"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/gcp_compute_hook/index.rst:247
+#: ../../_api/airflow/contrib/hooks/gcp_compute_hook/index.rst:269
+msgid "Name of the Instance Group Manager"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/gcp_compute_hook/index.rst:253
+msgid ""
+"Instance group manager representation as object according to "
+"https://cloud.google.com/compute/docs/reference/rest/beta/instanceGroupManagers"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/gcp_compute_hook/index.rst:264
+msgid ""
+"Patches Instance Group Manager with the specified body. Must be called "
+"with keyword arguments rather than positional."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/gcp_compute_hook/index.rst:271
+msgid ""
+"Instance Group Manager representation as json-merge-patch object "
+"according to "
+"https://cloud.google.com/compute/docs/reference/rest/beta/instanceTemplates/patch"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/gcp_compute_hook/index.rst:275
+msgid ""
+"Optional, unique request_id that you might add to achieve full "
+"idempotence (for example when client call times out repeating the request"
+" with the same request id will not create a new instance template again)."
+" It should be in UUID format as defined in RFC 4122"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/gcp_compute_hook/index.rst:293
+msgid ""
+"Waits for the named operation to complete - checks status of the async "
+"call."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/gcp_compute_hook/index.rst:295
+msgid "name of the operation"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/gcp_compute_hook/index.rst:297
+msgid "optional region of the request (might be None for global operations)"
+msgstr ""
+

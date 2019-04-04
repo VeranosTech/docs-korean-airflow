@@ -1,0 +1,66 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C)
+# This file is distributed under the same license as the Airflow package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Airflow 1.10.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-04-03 17:47+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../_api/airflow/contrib/hooks/pinot_hook/index.rst:4
+msgid ":mod:`airflow.contrib.hooks.pinot_hook`"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/pinot_hook/index.rst:15
+msgid "Module Contents"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/pinot_hook/index.rst:24
+msgid "Bases::class:`airflow.hooks.dbapi_hook.DbApiHook`"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/pinot_hook/index.rst:28
+msgid "Connect to pinot db(https://github.com/linkedin/pinot) to issue pql"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/pinot_hook/index.rst:69
+msgid "Establish a connection to pinot broker through pinot dbqpi."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/pinot_hook/index.rst:78
+msgid "Get the connection uri for pinot broker."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/pinot_hook/index.rst:80
+msgid "e.g: http://localhost:9000/pql"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/pinot_hook/index.rst:89
+msgid "Executes the sql and returns a set of records."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/pinot_hook/index.rst
+msgid "Parameters"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/pinot_hook/index.rst:91
+#: ../../_api/airflow/contrib/hooks/pinot_hook/index.rst:104
+msgid ""
+"the sql statement to be executed (str) or a list of sql statements to "
+"execute"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/pinot_hook/index.rst:102
+msgid "Executes the sql and returns the first resulting row."
+msgstr ""
+

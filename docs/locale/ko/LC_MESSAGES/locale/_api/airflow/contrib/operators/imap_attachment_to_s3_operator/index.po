@@ -1,0 +1,77 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C)
+# This file is distributed under the same license as the Airflow package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Airflow 1.10.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-04-03 17:47+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../_api/airflow/contrib/operators/imap_attachment_to_s3_operator/index.rst:4
+msgid ":mod:`airflow.contrib.operators.imap_attachment_to_s3_operator`"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/imap_attachment_to_s3_operator/index.rst:15
+msgid "Module Contents"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/imap_attachment_to_s3_operator/index.rst:24
+msgid "Bases::class:`airflow.models.BaseOperator`"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/imap_attachment_to_s3_operator/index.rst:28
+msgid "Transfers a mail attachment from a mail server into s3 bucket."
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/imap_attachment_to_s3_operator/index.rst
+msgid "Parameters"
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/imap_attachment_to_s3_operator/index.rst:30
+msgid "The file name of the mail attachment that you want to transfer."
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/imap_attachment_to_s3_operator/index.rst:32
+msgid "The destination file name in the s3 bucket for the attachment."
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/imap_attachment_to_s3_operator/index.rst:34
+msgid "The folder on the mail server to look for the attachment."
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/imap_attachment_to_s3_operator/index.rst:36
+msgid "If set checks the `imap_attachment_name` for a regular expression."
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/imap_attachment_to_s3_operator/index.rst:38
+msgid "If set overwrites the s3 key if already exists."
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/imap_attachment_to_s3_operator/index.rst:40
+msgid "The reference to the connection details of the mail server."
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/imap_attachment_to_s3_operator/index.rst:42
+msgid "The reference to the s3 connection details."
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/imap_attachment_to_s3_operator/index.rst:64
+msgid ""
+"This function executes the transfer from the email server (via imap) into"
+" s3."
+msgstr ""
+
+#: ../../_api/airflow/contrib/operators/imap_attachment_to_s3_operator/index.rst:66
+msgid "The context while executing."
+msgstr ""
+

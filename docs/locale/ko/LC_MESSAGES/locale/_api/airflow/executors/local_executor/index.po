@@ -1,0 +1,170 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C)
+# This file is distributed under the same license as the Airflow package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Airflow 1.10.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-04-03 17:47+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../_api/airflow/executors/local_executor/index.rst:4
+msgid ":mod:`airflow.executors.local_executor`"
+msgstr ""
+
+msgid ""
+"LocalExecutor runs tasks by spawning processes in a controlled fashion in"
+" different modes. Given that BaseExecutor has the option to receive a "
+"parallelism parameter to limit the number of process spawned, when this "
+"parameter is 0 the number of processes that LocalExecutor can spawn is "
+"unlimited.The following strategies are implemented: 1. Unlimited "
+"Parallelism (self.parallelism == 0): In this strategy, LocalExecutor will"
+" spawn a process every time execute_async is called, that is, every task "
+"submitted to the LocalExecutor will be executed in its own process. Once "
+"the task is executed and the result stored in the result_queue, the "
+"process terminates. There is no need for a task_queue in this approach, "
+"since as soon as a task is received a new process will be allocated to "
+"the task. Processes used in this strategy are of class LocalWorker.2. "
+"Limited Parallelism (self.parallelism > 0): In this strategy, the "
+"LocalExecutor spawns the number of processes equal to the value of "
+"self.parallelism at start time, using a task_queue to coordinate the "
+"ingestion of tasks and the work distribution among the workers, which "
+"will take a task as soon as they are ready. During the lifecycle of the "
+"LocalExecutor, the worker processes are running waiting for tasks, once "
+"the LocalExecutor receives the call to shutdown the executor a poison "
+"token is sent to the workers to terminate them. Processes used in this "
+"strategy are of class QueuedLocalWorker.Arguably, SequentialExecutor "
+"could be thought as a LocalExecutor with limited parallelism of just 1 "
+"worker, i.e. self.parallelism = 1. This option could lead to the "
+"unification of the executor implementations, running locally, into just "
+"one LocalExecutor with multiple modes."
+msgstr ""
+
+#: ../../_api/airflow/executors/local_executor/index.rst:10
+msgid ""
+"LocalExecutor runs tasks by spawning processes in a controlled fashion in"
+" different modes. Given that BaseExecutor has the option to receive a "
+"`parallelism` parameter to limit the number of process spawned, when this"
+" parameter is `0` the number of processes that LocalExecutor can spawn is"
+" unlimited."
+msgstr ""
+
+#: ../../_api/airflow/executors/local_executor/index.rst:15
+msgid ""
+"The following strategies are implemented: 1. Unlimited Parallelism "
+"(self.parallelism == 0): In this strategy, LocalExecutor will spawn a "
+"process every time `execute_async` is called, that is, every task "
+"submitted to the LocalExecutor will be executed in its own process. Once "
+"the task is executed and the result stored in the `result_queue`, the "
+"process terminates. There is no need for a `task_queue` in this approach,"
+" since as soon as a task is received a new process will be allocated to "
+"the task. Processes used in this strategy are of class LocalWorker."
+msgstr ""
+
+#: ../../_api/airflow/executors/local_executor/index.rst:23
+msgid ""
+"2. Limited Parallelism (self.parallelism > 0): In this strategy, the "
+"LocalExecutor spawns the number of processes equal to the value of "
+"`self.parallelism` at `start` time, using a `task_queue` to coordinate "
+"the ingestion of tasks and the work distribution among the workers, which"
+" will take a task as soon as they are ready. During the lifecycle of the "
+"LocalExecutor, the worker processes are running waiting for tasks, once "
+"the LocalExecutor receives the call to shutdown the executor a poison "
+"token is sent to the workers to terminate them. Processes used in this "
+"strategy are of class QueuedLocalWorker."
+msgstr ""
+
+#: ../../_api/airflow/executors/local_executor/index.rst:31
+msgid ""
+"Arguably, `SequentialExecutor` could be thought as a LocalExecutor with "
+"limited parallelism of just 1 worker, i.e. `self.parallelism = 1`. This "
+"option could lead to the unification of the executor implementations, "
+"running locally, into just one `LocalExecutor` with multiple modes."
+msgstr ""
+
+#: ../../_api/airflow/executors/local_executor/index.rst:45
+msgid "Module Contents"
+msgstr ""
+
+#: ../../_api/airflow/executors/local_executor/index.rst:54
+msgid ""
+"Bases::class:`multiprocessing.Process`, "
+":class:`airflow.utils.log.logging_mixin.LoggingMixin`"
+msgstr ""
+
+#: ../../_api/airflow/executors/local_executor/index.rst:58
+msgid ""
+"LocalWorker Process implementation to run airflow commands. Executes the "
+"given command and puts the result into a result queue when done, "
+"terminating execution."
+msgstr ""
+
+#: ../../_api/airflow/executors/local_executor/index.rst:70
+msgid ""
+"Executes command received and stores result state in queue. :param key: "
+"the key to identify the TI :type key: tuple(dag_id, task_id, "
+"execution_date) :param command: the command to execute :type command: str"
+msgstr ""
+
+#: ../../_api/airflow/executors/local_executor/index.rst:94
+msgid "Bases::class:`airflow.executors.local_executor.LocalWorker`"
+msgstr ""
+
+#: ../../_api/airflow/executors/local_executor/index.rst:98
+msgid ""
+"LocalWorker implementation that is waiting for tasks from a queue and "
+"will continue executing commands as they become available in the queue. "
+"It will terminate execution once the poison token is found."
+msgstr ""
+
+#: ../../_api/airflow/executors/local_executor/index.rst:122
+msgid "Bases::class:`airflow.executors.base_executor.BaseExecutor`"
+msgstr ""
+
+#: ../../_api/airflow/executors/local_executor/index.rst:126
+msgid ""
+"LocalExecutor executes tasks locally in parallel. It uses the "
+"multiprocessing Python library and queues to parallelize the execution of"
+" tasks."
+msgstr ""
+
+#: ../../_api/airflow/executors/local_executor/index.rst:136
+#: ../../_api/airflow/executors/local_executor/index.rst:187
+msgid "Bases::class:`object`"
+msgstr ""
+
+#: ../../_api/airflow/executors/local_executor/index.rst:140
+msgid ""
+"Implements LocalExecutor with unlimited parallelism, starting one process"
+" per each command to execute."
+msgstr ""
+
+#: ../../_api/airflow/executors/local_executor/index.rst
+msgid "Parameters"
+msgstr ""
+
+#: ../../_api/airflow/executors/local_executor/index.rst:159
+#: ../../_api/airflow/executors/local_executor/index.rst:210
+msgid "the key to identify the TI"
+msgstr ""
+
+#: ../../_api/airflow/executors/local_executor/index.rst:161
+#: ../../_api/airflow/executors/local_executor/index.rst:212
+msgid "the command to execute"
+msgstr ""
+
+#: ../../_api/airflow/executors/local_executor/index.rst:191
+msgid ""
+"Implements LocalExecutor with limited parallelism using a task queue to "
+"coordinate work distribution."
+msgstr ""
+

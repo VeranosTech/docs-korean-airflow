@@ -1,0 +1,63 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C)
+# This file is distributed under the same license as the Airflow package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Airflow 1.10.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-04-03 17:47+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../_api/airflow/contrib/sensors/redis_pub_sub_sensor/index.rst:4
+msgid ":mod:`airflow.contrib.sensors.redis_pub_sub_sensor`"
+msgstr ""
+
+#: ../../_api/airflow/contrib/sensors/redis_pub_sub_sensor/index.rst:15
+msgid "Module Contents"
+msgstr ""
+
+#: ../../_api/airflow/contrib/sensors/redis_pub_sub_sensor/index.rst:24
+msgid "Bases::class:`airflow.sensors.base_sensor_operator.BaseSensorOperator`"
+msgstr ""
+
+#: ../../_api/airflow/contrib/sensors/redis_pub_sub_sensor/index.rst:28
+msgid "Redis sensor for reading a message from pub sub channels"
+msgstr ""
+
+#: ../../_api/airflow/contrib/sensors/redis_pub_sub_sensor/index.rst:59
+msgid ""
+"Check for message on subscribed channels and write to xcom the message "
+"with key ``message``"
+msgstr ""
+
+#: ../../_api/airflow/contrib/sensors/redis_pub_sub_sensor/index.rst:61
+msgid ""
+"An example of message ``{'type': 'message', 'pattern': None, 'channel': "
+"b'test', 'data': b'hello'}``"
+msgstr ""
+
+#: ../../_api/airflow/contrib/sensors/redis_pub_sub_sensor/index.rst
+msgid "Parameters"
+msgstr ""
+
+#: ../../_api/airflow/contrib/sensors/redis_pub_sub_sensor/index.rst:63
+msgid "the context object"
+msgstr ""
+
+#: ../../_api/airflow/contrib/sensors/redis_pub_sub_sensor/index.rst
+msgid "Returns"
+msgstr ""
+
+#: ../../_api/airflow/contrib/sensors/redis_pub_sub_sensor/index.rst:65
+msgid "``True`` if message (with type 'message') is available or ``False`` if not"
+msgstr ""
+

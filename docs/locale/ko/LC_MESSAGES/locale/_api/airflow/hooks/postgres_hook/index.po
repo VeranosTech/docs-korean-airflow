@@ -1,0 +1,103 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C)
+# This file is distributed under the same license as the Airflow package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Airflow 1.10.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-04-03 17:47+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../_api/airflow/hooks/postgres_hook/index.rst:4
+msgid ":mod:`airflow.hooks.postgres_hook`"
+msgstr ""
+
+#: ../../_api/airflow/hooks/postgres_hook/index.rst:15
+msgid "Module Contents"
+msgstr ""
+
+#: ../../_api/airflow/hooks/postgres_hook/index.rst:24
+msgid "Bases::class:`airflow.hooks.dbapi_hook.DbApiHook`"
+msgstr ""
+
+#: ../../_api/airflow/hooks/postgres_hook/index.rst:28
+msgid ""
+"Interact with Postgres. You can specify ssl parameters in the extra field"
+" of your connection as ``{\"sslmode\": \"require\", \"sslcert\": "
+"\"/path/to/cert.pem\", etc}``."
+msgstr ""
+
+#: ../../_api/airflow/hooks/postgres_hook/index.rst:32
+msgid ""
+"Note: For Redshift, use keepalives_idle in the extra connection "
+"parameters and set it to less than 300 seconds."
+msgstr ""
+
+#: ../../_api/airflow/hooks/postgres_hook/index.rst:81
+msgid ""
+"Executes SQL using psycopg2 copy_expert method. Necessary to execute COPY"
+" command without access to a superuser."
+msgstr ""
+
+#: ../../_api/airflow/hooks/postgres_hook/index.rst:84
+msgid ""
+"Note: if this method is called with a \"COPY FROM\" statement and the "
+"specified input file does not exist, it creates an empty file and no data"
+" is loaded, but the operation succeeds. So if users want to be aware when"
+" the input file does not exist, they have to check its existence by "
+"themselves."
+msgstr ""
+
+#: ../../_api/airflow/hooks/postgres_hook/index.rst:97
+msgid "Loads a tab-delimited file into a database table"
+msgstr ""
+
+#: ../../_api/airflow/hooks/postgres_hook/index.rst:106
+msgid "Dumps a database table into a tab-delimited file"
+msgstr ""
+
+#: ../../_api/airflow/hooks/postgres_hook/index.rst:115
+msgid ""
+"Postgresql will adapt all arguments to the execute() method internally, "
+"hence we return cell without any conversion."
+msgstr ""
+
+#: ../../_api/airflow/hooks/postgres_hook/index.rst:118
+msgid ""
+"See http://initd.org/psycopg/docs/advanced.html#adapting-new-types for "
+"more information."
+msgstr ""
+
+#: ../../_api/airflow/hooks/postgres_hook/index.rst
+msgid "Parameters"
+msgstr ""
+
+#: ../../_api/airflow/hooks/postgres_hook/index.rst:121
+msgid "The cell to insert into the table"
+msgstr ""
+
+#: ../../_api/airflow/hooks/postgres_hook/index.rst:123
+msgid "The database connection"
+msgstr ""
+
+#: ../../_api/airflow/hooks/postgres_hook/index.rst
+msgid "Returns"
+msgstr ""
+
+#: ../../_api/airflow/hooks/postgres_hook/index.rst:125
+msgid "The cell"
+msgstr ""
+
+#: ../../_api/airflow/hooks/postgres_hook/index.rst
+msgid "Return type"
+msgstr ""
+

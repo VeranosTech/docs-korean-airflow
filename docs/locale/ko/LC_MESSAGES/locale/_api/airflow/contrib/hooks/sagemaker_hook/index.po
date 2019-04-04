@@ -1,0 +1,471 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C)
+# This file is distributed under the same license as the Airflow package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Airflow 1.10.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-04-03 17:47+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../_api/airflow/contrib/hooks/sagemaker_hook/index.rst:4
+msgid ":mod:`airflow.contrib.hooks.sagemaker_hook`"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/sagemaker_hook/index.rst:15
+msgid "Module Contents"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/sagemaker_hook/index.rst:24
+msgid "Bases::class:`object`"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/sagemaker_hook/index.rst:100
+msgid "Return the index, i, in arr that minimizes f(arr[i])"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/sagemaker_hook/index.rst:113
+msgid "Returns true if training job's secondary status message has changed."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/sagemaker_hook/index.rst
+msgid "Parameters"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/sagemaker_hook/index.rst:115
+msgid "Current job description, returned from DescribeTrainingJob call."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/sagemaker_hook/index.rst:117
+msgid "Previous job description, returned from DescribeTrainingJob call."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/sagemaker_hook/index.rst
+msgid "Returns"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/sagemaker_hook/index.rst:120
+msgid "Whether the secondary status message of a training job changed or not."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/sagemaker_hook/index.rst:133
+msgid ""
+"Returns a string contains start time and the secondary training job "
+"status message."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/sagemaker_hook/index.rst:135
+msgid "Returned response from DescribeTrainingJob call"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/sagemaker_hook/index.rst:137
+msgid "Previous job description from DescribeTrainingJob call"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/sagemaker_hook/index.rst:140
+msgid "Job status string to be printed."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/sagemaker_hook/index.rst:152
+msgid "Bases::class:`airflow.contrib.hooks.aws_hook.AwsHook`"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/sagemaker_hook/index.rst:156
+msgid "Interact with Amazon SageMaker."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/sagemaker_hook/index.rst:197
+msgid "Tar the local file or directory and upload to s3"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/sagemaker_hook/index.rst:199
+msgid "local file or directory"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/sagemaker_hook/index.rst:201
+msgid "s3 key"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/sagemaker_hook/index.rst:203
+msgid "s3 bucket"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/sagemaker_hook/index.rst:205
+#: ../../_api/airflow/contrib/hooks/sagemaker_hook/index.rst:244
+#: ../../_api/airflow/contrib/hooks/sagemaker_hook/index.rst:257
+#: ../../_api/airflow/contrib/hooks/sagemaker_hook/index.rst:600
+msgid "None"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/sagemaker_hook/index.rst:214
+msgid "Extract the S3 operations from the configuration and execute them."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/sagemaker_hook/index.rst:216
+msgid "config of SageMaker operation"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/sagemaker_hook/index.rst
+msgid "Return type"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/sagemaker_hook/index.rst:227
+msgid "Check if an S3 URL exists"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/sagemaker_hook/index.rst:229
+msgid "S3 url"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/sagemaker_hook/index.rst:240
+msgid "Check if a training configuration is valid"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/sagemaker_hook/index.rst:242
+msgid "training_config"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/sagemaker_hook/index.rst:253
+msgid "Check if a tuning configuration is valid"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/sagemaker_hook/index.rst:255
+msgid "tuning_config"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/sagemaker_hook/index.rst:266
+msgid "Establish an AWS connection for SageMaker"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/sagemaker_hook/index.rst:268
+msgid ":py:class:`SageMaker.Client`"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/sagemaker_hook/index.rst:277
+msgid "Establish an AWS connection for retrieving logs during training"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/sagemaker_hook/index.rst:288
+msgid ""
+"A generator for log items in a single stream. This will yield all the "
+"items that are available at the current moment."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/sagemaker_hook/index.rst:291
+#: ../../_api/airflow/contrib/hooks/sagemaker_hook/index.rst:316
+msgid "The name of the log group."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/sagemaker_hook/index.rst:293
+msgid "The name of the specific stream."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/sagemaker_hook/index.rst:295
+msgid "The time stamp value to start reading the logs from (default: 0)."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/sagemaker_hook/index.rst:297
+msgid ""
+"The number of log entries to skip at the start (default: 0). This is for "
+"when there are multiple entries at the same timestamp."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/sagemaker_hook/index.rst:301
+msgid ""
+"| A CloudWatch log event with the following key-value pairs: |   "
+"'timestamp' (int): The time in milliseconds of the event. |   'message' "
+"(str): The log event data. |   'ingestionTime' (int): The time in "
+"milliseconds the event was ingested."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/sagemaker_hook/index.rst
+msgid "A CloudWatch log event with the following key-value pairs:"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/sagemaker_hook/index.rst
+msgid "'timestamp' (int): The time in milliseconds of the event."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/sagemaker_hook/index.rst
+msgid "'message' (str): The log event data."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/sagemaker_hook/index.rst
+msgid "'ingestionTime' (int): The time in milliseconds the event was ingested."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/sagemaker_hook/index.rst:313
+msgid ""
+"Iterate over the available events coming from a set of log streams in a "
+"single log group interleaving the events from each stream so they're "
+"yielded in timestamp order."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/sagemaker_hook/index.rst:318
+msgid ""
+"A list of the log stream names. The position of the stream in this list "
+"is the stream number."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/sagemaker_hook/index.rst:321
+msgid ""
+"A list of pairs of (timestamp, skip) which represents the last record "
+"read from each stream."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/sagemaker_hook/index.rst:324
+msgid "A tuple of (stream number, cloudwatch log event)."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/sagemaker_hook/index.rst:333
+msgid "Create a training job"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/sagemaker_hook/index.rst:335
+msgid "the config for training"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/sagemaker_hook/index.rst:337
+#: ../../_api/airflow/contrib/hooks/sagemaker_hook/index.rst:359
+#: ../../_api/airflow/contrib/hooks/sagemaker_hook/index.rst:381
+#: ../../_api/airflow/contrib/hooks/sagemaker_hook/index.rst:429
+#: ../../_api/airflow/contrib/hooks/sagemaker_hook/index.rst:451
+msgid "if the program should keep running until job finishes"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/sagemaker_hook/index.rst:339
+#: ../../_api/airflow/contrib/hooks/sagemaker_hook/index.rst:361
+#: ../../_api/airflow/contrib/hooks/sagemaker_hook/index.rst:383
+#: ../../_api/airflow/contrib/hooks/sagemaker_hook/index.rst:431
+#: ../../_api/airflow/contrib/hooks/sagemaker_hook/index.rst:453
+#: ../../_api/airflow/contrib/hooks/sagemaker_hook/index.rst:564
+msgid ""
+"the time interval in seconds which the operator will check the status of "
+"any SageMaker job"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/sagemaker_hook/index.rst:342
+#: ../../_api/airflow/contrib/hooks/sagemaker_hook/index.rst:364
+#: ../../_api/airflow/contrib/hooks/sagemaker_hook/index.rst:386
+#: ../../_api/airflow/contrib/hooks/sagemaker_hook/index.rst:434
+#: ../../_api/airflow/contrib/hooks/sagemaker_hook/index.rst:456
+#: ../../_api/airflow/contrib/hooks/sagemaker_hook/index.rst:567
+#: ../../_api/airflow/contrib/hooks/sagemaker_hook/index.rst:596
+msgid ""
+"the maximum ingestion time in seconds. Any SageMaker jobs that run longer"
+" than this will fail. Setting this to None implies no timeout for any "
+"SageMaker job."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/sagemaker_hook/index.rst:346
+msgid "A response to training job creation"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/sagemaker_hook/index.rst:355
+msgid "Create a tuning job"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/sagemaker_hook/index.rst:357
+msgid "the config for tuning"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/sagemaker_hook/index.rst:368
+msgid "A response to tuning job creation"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/sagemaker_hook/index.rst:377
+msgid "Create a transform job"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/sagemaker_hook/index.rst:379
+msgid "the config for transform job"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/sagemaker_hook/index.rst:390
+msgid "A response to transform job creation"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/sagemaker_hook/index.rst:399
+msgid "Create a model job"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/sagemaker_hook/index.rst:401
+msgid "the config for model"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/sagemaker_hook/index.rst:403
+msgid "A response to model creation"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/sagemaker_hook/index.rst:412
+msgid "Create an endpoint config"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/sagemaker_hook/index.rst:414
+msgid "the config for endpoint-config"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/sagemaker_hook/index.rst:416
+msgid "A response to endpoint config creation"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/sagemaker_hook/index.rst:425
+msgid "Create an endpoint"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/sagemaker_hook/index.rst:427
+#: ../../_api/airflow/contrib/hooks/sagemaker_hook/index.rst:449
+msgid "the config for endpoint"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/sagemaker_hook/index.rst:438
+msgid "A response to endpoint creation"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/sagemaker_hook/index.rst:447
+msgid "Update an endpoint"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/sagemaker_hook/index.rst:460
+msgid "A response to endpoint update"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/sagemaker_hook/index.rst:469
+msgid "Return the training job info associated with the name"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/sagemaker_hook/index.rst:471
+msgid "the name of the training job"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/sagemaker_hook/index.rst:473
+msgid "A dict contains all the training job info"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/sagemaker_hook/index.rst:482
+msgid ""
+"Return the training job info associated with job_name and print "
+"CloudWatch logs"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/sagemaker_hook/index.rst:491
+msgid "Return the tuning job info associated with the name"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/sagemaker_hook/index.rst:493
+msgid "the name of the tuning job"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/sagemaker_hook/index.rst:495
+msgid "A dict contains all the tuning job info"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/sagemaker_hook/index.rst:504
+msgid "Return the SageMaker model info associated with the name"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/sagemaker_hook/index.rst:506
+msgid "the name of the SageMaker model"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/sagemaker_hook/index.rst:508
+msgid "A dict contains all the model info"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/sagemaker_hook/index.rst:517
+msgid "Return the transform job info associated with the name"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/sagemaker_hook/index.rst:519
+msgid "the name of the transform job"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/sagemaker_hook/index.rst:521
+msgid "A dict contains all the transform job info"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/sagemaker_hook/index.rst:530
+msgid "Return the endpoint config info associated with the name"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/sagemaker_hook/index.rst:532
+msgid "the name of the endpoint config"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/sagemaker_hook/index.rst:534
+msgid "A dict contains all the endpoint config info"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/sagemaker_hook/index.rst:543
+msgid "the name of the endpoint"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/sagemaker_hook/index.rst:545
+msgid "A dict contains all the endpoint info"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/sagemaker_hook/index.rst:554
+msgid "Check status of a SageMaker job"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/sagemaker_hook/index.rst:556
+msgid "name of the job to check status"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/sagemaker_hook/index.rst:558
+msgid "the key of the response dict that points to the state"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/sagemaker_hook/index.rst:561
+msgid "the function used to retrieve the status"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/sagemaker_hook/index.rst:563
+msgid "the arguments for the function"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/sagemaker_hook/index.rst:571
+msgid "the set of nonterminal states"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/sagemaker_hook/index.rst:573
+msgid "response of describe call after job is done"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/sagemaker_hook/index.rst:582
+msgid ""
+"Display the logs for a given training job, optionally tailing them until "
+"the job is complete."
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/sagemaker_hook/index.rst:585
+msgid "name of the training job to check status and display logs for"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/sagemaker_hook/index.rst:587
+msgid "the set of non_terminal states"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/sagemaker_hook/index.rst:589
+msgid "the set of failed states"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/sagemaker_hook/index.rst:591
+msgid "Whether to keep looking for new log entries until the job completes"
+msgstr ""
+
+#: ../../_api/airflow/contrib/hooks/sagemaker_hook/index.rst:594
+msgid ""
+"The interval in seconds between polling for new log entries and job "
+"completion"
+msgstr ""
+
