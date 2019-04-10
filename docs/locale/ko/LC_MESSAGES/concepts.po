@@ -526,7 +526,7 @@ msgid ""
 "operators)."
 msgstr ""
 "일부 시스템들은 너무나 많은 프로세스가 동시에 작동될 때 이것에 압도될 수 있다. "
-"에어플로우 풀은 임의의 태스크 집합에서 **병렬적 실행 제한**을 사용할 수 있다. "
+"에어플로우 풀은 임의의 태스크 집합에서 **병렬적 실행 제한**\\을 사용할 수 있다. "
 "풀의 목록은 풀의 이름을 정하고 여러 워커 슬럿에 할당하여 UI(``Menu -> Admin -> "
 "Pools``\\)에서 관리한다. 그 다음 태스크는 태스크(즉, 인스턴스화된 오퍼레이터)"
 "가 생성될 때 ``pool`` 매개변수를 사용하여 기존에 있는 풀 중 하나와 연결될 수 있"
@@ -548,7 +548,7 @@ msgstr ""
 "``priority_weight``\\의 기본값은 ``1``\\이고, 아무 숫자나 될 수 있다. 어떤 태스"
 "크가 다음에 실행되어야 할지 평가하기 위해 대기열을 정렬할 때, "
 "``priority_weight``\\을 사용하는데, 이는 이번 태스크의 다운스트림에 있는 태스크"
-"의 모든``priority_weight`` 값으로 요약된 것이다. 이를 이용하여 특정한 중요 태스"
+"의 모든 ``priority_weight`` 값으로 요약된 것이다. 이를 이용하여 특정한 중요 태스"
 "크를 처리할 수 있고, 그 태스크에 대한 전체 경로가 우선순위에 맞게 정해진다."
 
 #: ../../concepts.rst:373
@@ -561,7 +561,7 @@ msgstr ""
 "슬롯이 채워지는 동안 태스크는 평상시와 같이 스케쥴링 될 것이다. 슬롯이 모두 차"
 "면 실행중인 태스크는 대기되고 해당 태스크의 상태가 UI에서 보이게 될 것이다. 슬"
 "롯이 비워지면, 대기중이던 태스크가 (태스크와 그 자식 태스크들"
-"의)``priority_weight``\\를 기준으로 다시 실행되기 시작한다."
+"의) ``priority_weight``\\를 기준으로 다시 실행되기 시작한다."
 
 #: ../../concepts.rst:378
 msgid ""
@@ -676,7 +676,7 @@ msgid ""
 msgstr ""
 "워커들은 하나 또는 여러 개의 태스크 대기열을 들을 수 있다. (``airflow worker`` "
 "명령어를 사용하여) 워커가 시작될 때, 쉼표로 구분된 대기열 이름의 집합을 지정할 "
-"수 있다(예를 들어 ``airflow worker -q spark``). 그럼 이 워커는 지정된 대기열에"
+"수 있다(예를 들어 ``airflow worker -q spark``\\). 그럼 이 워커는 지정된 대기열에"
 "서 연결된 태스크만 선택할 것이다."
 
 #: ../../concepts.rst:434
@@ -747,7 +747,7 @@ msgid ""
 "recent XCom value from that task is returned; if a list of ``task_ids`` is "
 "passed, then a corresponding list of XCom values is returned."
 msgstr ""
-"만약 ``xcom_pull``\\이 ``task_ids``에 대한 단일 문자열을 전달받으면, 해당 태스"
+"만약 ``xcom_pull``\\이 ``task_ids``\\에 대한 단일 문자열을 전달받으면, 해당 태스"
 "크에 대한 가장 최근의 XCom 값이 반환된다; 만약 ``task_ids`` 리스트가 전달되면, "
 "XCom 값의 관련 리스트가 반환된다."
 
@@ -799,7 +799,7 @@ msgid ""
 "defined. The get function will throw a ``KeyError`` if the variable doesn't "
 "exist and no default is provided."
 msgstr ""
-"두번째 호출은 ``json`` 내용을 가정하고 ``bar`` 로 구분될 것이다. ``Variable``"
+"두번째 호출은 ``json`` 내용을 가정하고 ``bar``\\로 구분될 것이다. ``Variable``\\"
 "은 sqlalchemy 모델이고 이와 같이 사용될 수 있음에 유의하라. 세번째 호출은 "
 "``None`` 값인 ``default_var`` 파라미터를 사용하는데, 변수가 정의되어 있지 않았"
 "으면 현재 존재하는 값 또는 ``None``\\을 리턴한다. 만일 변수가 존재하지 않고 기"
@@ -1020,7 +1020,7 @@ msgstr ""
 
 #: ../../concepts.rst:696
 msgid "Email Configuration"
-msgstr "이메일 설"
+msgstr "이메일 설정"
 
 #: ../../concepts.rst:698
 msgid ""
@@ -1028,7 +1028,7 @@ msgid ""
 "setting a ``subject_template`` and/or a ``html_content_template`` in the "
 "``email`` section."
 msgstr ""
-"``email`` 섹션에 ``html_content_template``\\이나 ``subject_template``을 설정함"
+"``email`` 섹션에 ``html_content_template``\\이나 ``subject_template``\\을 설정함"
 "으로써 ``airflow.cfg``\\로 전송되는 이메일을 설정할 수 있다."
 
 #: ../../concepts.rst:711
@@ -1133,7 +1133,7 @@ msgstr ""
 "트리거 규칙과 스케쥴 레벨에서 생략된 태스크 사이의 상호작용을 잘 알아야 한다. "
 "생략된 태스크는 트리거 규칙 ``all_success``\\와 ``all_failed``\\을 차례로 통과"
 "하지만 ``all_done``\\, ``one_failed``\\, ``one_Success``\\, ``none_failed`` 그"
-"리고 ``dummy`\\는 통과하지 않는다."
+"리고 ``dummy``\\는 통과하지 않는다."
 
 #: ../../concepts.rst:755 ../../concepts.rst:827
 msgid "For example, consider the following DAG:"
@@ -1167,7 +1167,7 @@ msgstr ""
 
 #: ../../concepts.rst:813
 msgid "Latest Run Only"
-msgstr "최신 실행된 태스크"
+msgstr "최근 실행된 태스크"
 
 #: ../../concepts.rst:815
 msgid ""
@@ -1192,7 +1192,7 @@ msgid ""
 msgstr ""
 "이러한 경우를 위해, DAG를 위한 최근 스케쥴 동안에 실행되지 않은 태스크를 생략하"
 "기 위해 ``LatestOnlyOperator``\\를 사용할 수 있다. ``LatestOnlyOperator``\\는 "
-"만일 지금 당장이 현재 ``execution_time``과 다음 예정된 ``execution_time`` 사이"
+"만일 지금 당장이 현재 ``execution_time``\\과 다음 예정된 ``execution_time`` 사이"
 "가 아닌 경우일 때 모든 다운스트림 태스크를 생략한다."
 
 #: ../../concepts.rst:860
@@ -1212,7 +1212,7 @@ msgstr ""
 "고 최근 것을 제외한 모든 실행을 생략할 것이다. ``task2``\\는 ``latest_only``"
 "\\에 전적으로 독립되어 있으며 모든 예정된 기간 동안에 실행할 것이다. ``task3``"
 "\\은 ``task1``\\와 ``tast2``\\의 다운스트림이며 기본 ``trigger_rule``\\이 "
-"``all_success``\\이기 때문에 ``task1``에서부터 일괄적으로 생략될 것이다. "
+"``all_success``\\이기 때문에 ``task1``\\에서부터 일괄적으로 생략될 것이다. "
 "``task4``\\는 ``task1``\\과 ``task2``\\의 다운스트림이다. 이것은 처음에 "
 "``LatestOnlyOperator``\\에 의해 직접 생략될 것이며, ``trigger_rule``\\은 "
 "``all_done``\\으로 설정되어 있다."
@@ -1256,8 +1256,8 @@ msgstr ""
 "죽지 않은 프로세스들은 프로세스와 이에 일치하는 심장 박동이 있는 것이 특징이지"
 "만, 에어플로우는 이 태스크가 데이터베이스에서 ``running`` 상태인 것으로 알지 못"
 "한다. 이러한 불일치는 일반적으로 데이터베이스가 변경되는 상태에서 발생하며, 대"
-"부분의 경우 UI의 “태스크 인스턴스” 보기에서 행을 삭제하며 발생할 수 있다. 태스"
-"크는 심장 박동 루틴의 일부로 상태를 확인하고, “죽은” 상태인지를 판별하는 것을 "
+"부분의 경우 UI의 “Task Instances” 보기에서 행을 삭제하며 발생할 수 있다. 태스"
+"크는 심장 박동 루틴의 일부로 상태를 확인하고, “undead” 상태인지를 판별하는 것을 "
 "알게 되면 스스로 종료하도록 지시받는다."
 
 #: ../../concepts.rst:896
@@ -1272,7 +1272,7 @@ msgid ""
 "alter its attributes."
 msgstr ""
 "로컬 에어플로우 설정 파일은 DAG 속성 또는 다른 태스크에 따라 태스크 속성을 변형"
-"하는 기능을 가진``policy`` 함수를 정의할 수 있다. 테스크 객체를 참조하는 단일 "
+"하는 기능을 가진 ``policy`` 함수를 정의할 수 있다. 테스크 객체를 참조하는 단일 "
 "인자를 받으면, 해당 속성을 변경될 것으로 예상한다."
 
 #: ../../concepts.rst:903
@@ -1390,7 +1390,7 @@ msgid ""
 "For example, say you want to pass the execution date as an environment "
 "variable to a Bash script using the ``BashOperator``."
 msgstr ""
-"예를 들어, `BashOperator``\\를 사용하여 배쉬 스크립트에 실행 날짜를 환경 변수로"
+"예를 들어, `BashOperator``\\를 사용하여 bash 스크립트에 실행 날짜를 환경 변수로"
 "써 넘기고 싶다고 하자."
 
 #: ../../concepts.rst:982
@@ -1400,7 +1400,7 @@ msgid ""
 "as an environment variable named ``EXECUTION_DATE`` in your Bash script."
 msgstr ""
 "여기, ``{{ ds }}``\\는 매크로이고, ``BashOperator``\\의 ``env`` 파라미터가 "
-"Jinja 템플릿으로 되어 있기 때문에, 실행 날짜는 배쉬 스크립트에서 "
+"Jinja 템플릿으로 되어 있기 때문에, 실행 날짜는 bash 스크립트에서 "
 "``EXECUTION_DATE``\\라는 이름의 환경 변수로 사용이 가능할 것이다."
 
 #: ../../concepts.rst:986
