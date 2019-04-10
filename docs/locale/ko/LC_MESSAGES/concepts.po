@@ -19,17 +19,18 @@ msgstr ""
 
 #: ../../concepts.rst:19
 msgid "Concepts"
-msgstr ""
+msgstr "개념"
 
 #: ../../concepts.rst:21
 msgid ""
 "The Airflow platform is a tool for describing, executing, and monitoring "
 "workflows."
 msgstr ""
+"에어플로우 플랫폼은 워크플로우를 서술, 실행, 감시하는 도구이다."
 
 #: ../../concepts.rst:25
 msgid "Core Ideas"
-msgstr ""
+msgstr "핵심 개념"
 
 #: ../../concepts.rst:28
 msgid "DAGs"
