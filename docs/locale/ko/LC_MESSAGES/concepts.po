@@ -45,7 +45,7 @@ msgid ""
 "the tasks you want to run, organized in a way that reflects their "
 "relationships and dependencies."
 msgstr ""
-"에어플로우 에서, ``DAG`` -- 또는 방향성 비순환 그래프 —는 실행시키고 싶은 모든 "
+"에어플로우 에서, ``DAG`` -- 또는 방향성 비순환 그래프 --는 실행시키고 싶은 모든 "
 "태스크의 모음이며, 서로 간의 관계와 의존성을 반영하여 구조화한 것이다."
 
 #: ../../concepts.rst:34
@@ -602,7 +602,7 @@ msgid ""
 "basic load balancing and fault tolerance when used in conjunction with retries."
 msgstr ""
 "동일한 ``conn_id``\\을 가진 여러 커넥션들이 정의될 수 있고 그런 경우와, "
-"**hooks**이 ``BaseHook``\\의``get_connection`` 메소드를 사용할 때 에어플로우는 "
+"**hooks**\\이 ``BaseHook``\\의 ``get_connection`` 메소드를 사용할 때 에어플로우는 "
 "무작위적으로 하나의 커넥션만 선택하고, 연결을 재시도할 때 기본적인 로드 밸런싱"
 "과 장애 허용 범위를 어느 정도 허용하게 된다."
 
