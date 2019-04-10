@@ -34,7 +34,7 @@ msgstr "핵심 개념"
 
 #: ../../concepts.rst:28
 msgid "DAGs"
-msgstr ""
+msgstr "방향성 그래프(DAG)"
 
 #: ../../concepts.rst:30
 msgid ""
