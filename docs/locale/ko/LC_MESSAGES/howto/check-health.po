@@ -3,23 +3,25 @@
 # This file is distributed under the same license as the Airflow package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Airflow 1.10.1\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-04-03 17:47+0900\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"PO-Revision-Date: 2019-04-15 13:54+0900\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=utf-8\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.6.0\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: ko\n"
+"X-Generator: Poedit 2.2.1\n"
 
 #: ../../howto/check-health.rst:19
 msgid "Checking Airflow Health Status"
-msgstr ""
+msgstr "에어플로우 Health 상태 체크하기"
 
 #: ../../howto/check-health.rst:21
 msgid ""
@@ -27,30 +29,40 @@ msgid ""
 "access the endpoint ``/health``. It will return a JSON object in which a "
 "high-level glance is provided."
 msgstr ""
+"에어플로우 인스턴스의 health 상태를 체크하기 위해서 ``/health`` 엔드포인"
+"트에 간단히 접속해볼 수 있다. 높은 수준의 상태 정보가 JSON 객체로 제공되"
+"어 반환될 것이다."
 
 #: ../../howto/check-health.rst:36
 msgid ""
-"The ``status`` of each component can be either \"healthy\" or "
-"\"unhealthy\""
+"The ``status`` of each component can be either \"healthy\" or \"unhealthy"
+"\""
 msgstr ""
+"각 컴포넌트의 ``status``\\는 “healthy” 또는 “unhealthy” 일 수 있다."
 
 #: ../../howto/check-health.rst:38
 msgid ""
 "The status of ``metadatabase`` depends on whether a valid connection can "
 "be initiated with the database"
 msgstr ""
+"``metadatabase``\\의 상태는 데이터베이스와의 유효한 커넥션이 초기화될 수 "
+"있는지에 따라 달라진다"
 
 #: ../../howto/check-health.rst:40
 msgid ""
 "The status of ``scheduler`` depends on when the latest scheduler "
 "heartbeat was received"
 msgstr ""
+"``scheduler``\\의 상태는 가장 최근 스케쥴러의 heartbeat가 수신됐을 시점"
+"에 달려있다"
 
 #: ../../howto/check-health.rst:42
 msgid ""
 "If the last heartbeat was received more than 30 seconds (default value) "
 "earlier than the current time, the scheduler is considered unhealthy"
 msgstr ""
+"만약 마지막 heartbeat가 현재 시점보다 30초(기본값)보다 더 이전에 수신되었"
+"다면, 스케쥴러는 unhealthy한 것으로 여겨진다"
 
 #: ../../howto/check-health.rst:44
 msgid ""
@@ -58,12 +70,16 @@ msgid ""
 "``scheduler_health_check_threshold`` within the ``scheduler`` section in "
 "``airflow.cfg``"
 msgstr ""
+"이 스레스홀드(threshold) 값은 ``airflow.cfg``\\의 ``scheduler`` 섹션에 있"
+"는 ``scheduler_health_check_threshold`` 옵션을 사용하여 지정할 수 있다"
 
 #: ../../howto/check-health.rst:47
 msgid ""
 "Please keep in mind that the HTTP response code of ``/health`` endpoint "
-"**should not** be used to determine the health status of the application."
-" The return code is only indicative of the state of the rest call (200 "
-"for success)."
+"**should not** be used to determine the health status of the "
+"application. The return code is only indicative of the state of the rest "
+"call (200 for success)."
 msgstr ""
-
+"``/health`` 엔드포인트의 HTTP response 코드는 어플리케이션의 health 상태"
+"를 결정하는데 사용되어서는 *안 된다*\\. 리턴 코드는 rest call의 상태(성공"
+"일 때 200)만을 나타낸다."

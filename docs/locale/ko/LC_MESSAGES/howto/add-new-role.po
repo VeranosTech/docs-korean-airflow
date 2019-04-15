@@ -3,23 +3,25 @@
 # This file is distributed under the same license as the Airflow package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Airflow 1.10.1\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-04-03 17:47+0900\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"PO-Revision-Date: 2019-04-15 13:53+0900\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=utf-8\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.6.0\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: ko\n"
+"X-Generator: Poedit 2.2.1\n"
 
 #: ../../howto/add-new-role.rst:20
 msgid "Add a new role in RBAC UI"
-msgstr ""
+msgstr "RBAC UI에서 새로운 역할 추가"
 
 #: ../../howto/add-new-role.rst:22
 msgid ""
@@ -27,6 +29,10 @@ msgid ""
 "Viewer, and Public. The master branch adds beta support for DAG level "
 "access for RBAC UI. Each DAG comes with two permissions: read and write."
 msgstr ""
+"기본적으로 에어플로우에 대해 생성된 역할이 다섯 개가 있는데: Admin, "
+"User, Op, Viewer, 그리고 Public이다. master 브랜치는 RBAC UI에서 DAG 레"
+"벨 접근을 위한 베타 지원을 추가했다. 각 DAG는 2개의 허가(permission)가 있"
+"는데: read와 write이다."
 
 #: ../../howto/add-new-role.rst:25
 msgid ""
@@ -34,6 +40,9 @@ msgid ""
 "write certain DAGs. To configure a new role, go to ``Security`` tab and "
 "click ``List Roles`` in the new UI."
 msgstr ""
+"Admin은 특정 DAG에 대해 read / write 만을 허용하는 역할(role)을 만들 수 "
+"있다. 새로운 역할을 설정하기 위해서는 ``Security``\\탭으로 이동하여 새로"
+"운 UI의 ``List Roles``\\을 클릭하라."
 
 #: ../../howto/add-new-role.rst:31
 msgid ""
@@ -41,10 +50,13 @@ msgid ""
 "``example_python_operator``. You can also create roles via the CLI using "
 "the ``airflow roles`` command, e.g.:"
 msgstr ""
+"이미지는 ``example_python_operator``\\만을 읽을 수 있는 역할을 생성하는 "
+"것을 보여준다. ``airflow roles`` 명령어를 사용하여 CLI에서도 역할을 생성"
+"할 수 있다, 예를 들어:"
 
 #: ../../howto/add-new-role.rst:35
 msgid "airflow roles --create Role1 Role2"
-msgstr ""
+msgstr "airflow roles —create Role1 Role2"
 
 #: ../../howto/add-new-role.rst:37
 msgid ""
@@ -52,4 +64,6 @@ msgid ""
 "users --add-role`` CLI command.  Default roles(Admin, User, Viewer, Op) "
 "shipped with RBAC could view the details for every dag."
 msgstr ""
-
+"그리고 ``airflow users —add-role`` CLI 명령어를 사용하여 새로운 유저에게 "
+"주어진 역할을 할당할 수 있다.  RBAC의 기본 역할(Admin, User, Viewer, Op)"
+"은 모든 dag에서 세부 정보를 볼 수 있다."

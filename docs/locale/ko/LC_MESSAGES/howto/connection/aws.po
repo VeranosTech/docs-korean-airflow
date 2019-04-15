@@ -3,40 +3,44 @@
 # This file is distributed under the same license as the Airflow package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Airflow 1.10.1\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-04-03 17:47+0900\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"PO-Revision-Date: 2019-04-15 13:56+0900\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=utf-8\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.6.0\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: ko\n"
+"X-Generator: Poedit 2.2.1\n"
 
 #: ../../howto/connection/aws.rst:19
 msgid "Amazon Web Services Connection"
-msgstr ""
+msgstr "Amazon Web Services 연결"
 
 #: ../../howto/connection/aws.rst:21
 msgid ""
 "The Amazon Web Services connection type enables the :ref:`AWS "
 "Integrations <AWS>`."
 msgstr ""
+"Amazon Web Services 연결 유형은 :ref:`AWS Integrations <AWS>`\\을 가능하"
+"게 한다."
 
 #: ../../howto/connection/aws.rst:25
 msgid "Authenticating to AWS"
-msgstr ""
+msgstr "AWS에 인증"
 
 #: ../../howto/connection/aws.rst:27
 msgid ""
-"Authentication may be performed using any of the `boto3 options "
-"<https://boto3.amazonaws.com/v1/documentation/api/latest/guide/configuration.html"
-"#configuring-credentials>`_. Alternatively, one can pass credentials in "
-"as a Connection initialisation parameter."
+"Authentication may be performed using any of the `boto3 options <https://"
+"boto3.amazonaws.com/v1/documentation/api/latest/guide/configuration."
+"html#configuring-credentials>`_. Alternatively, one can pass credentials "
+"in as a Connection initialisation parameter."
 msgstr ""
 
 #: ../../howto/connection/aws.rst:29
@@ -79,8 +83,8 @@ msgstr ""
 
 #: ../../howto/connection/aws.rst:47
 msgid ""
-"Specify the extra parameters (as json dictionary) that can be used in AWS"
-" connection. The following parameters are supported:"
+"Specify the extra parameters (as json dictionary) that can be used in "
+"AWS connection. The following parameters are supported:"
 msgstr ""
 
 #: ../../howto/connection/aws.rst:50
@@ -110,4 +114,3 @@ msgstr ""
 #: ../../howto/connection/aws.rst:57
 msgid "Example \"extras\" field:"
 msgstr ""
-

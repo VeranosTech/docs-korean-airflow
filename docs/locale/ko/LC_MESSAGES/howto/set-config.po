@@ -3,111 +3,123 @@
 # This file is distributed under the same license as the Airflow package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Airflow 1.10.1\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-04-03 17:47+0900\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"PO-Revision-Date: 2019-04-15 13:53+0900\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=utf-8\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.6.0\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: ko\n"
+"X-Generator: Poedit 2.2.1\n"
 
 #: ../../howto/set-config.rst:19
 msgid "Setting Configuration Options"
-msgstr ""
+msgstr "Configuration 옵션 설정"
 
 #: ../../howto/set-config.rst:21
 msgid ""
-"The first time you run Airflow, it will create a file called "
-"``airflow.cfg`` in your ``$AIRFLOW_HOME`` directory (``~/airflow`` by "
-"default). This file contains Airflow's configuration and you can edit it "
-"to change any of the settings. You can also set options with environment "
-"variables by using this format: ``$AIRFLOW__{SECTION}__{KEY}`` (note the "
-"double underscores)."
+"The first time you run Airflow, it will create a file called ``airflow."
+"cfg`` in your ``$AIRFLOW_HOME`` directory (``~/airflow`` by default). "
+"This file contains Airflow's configuration and you can edit it to change "
+"any of the settings. You can also set options with environment variables "
+"by using this format: ``$AIRFLOW__{SECTION}__{KEY}`` (note the double "
+"underscores)."
 msgstr ""
+"에어플로우를 처음 실행할 때, ``$AIRFLOW_HOME`` 디렉토리(기본값 ``~/"
+"airflow``\\) 안에 ``airflow.cfg``\\라는 파일이 생성되었을 것이다. 이 파일"
+"은 에어플로우의 환경 설정을 담고 있는데, 여기에 어떤 설정도 변경이 가능하"
+"다. 또한 다음의 형식을 사용하여 환경 변수의 옵션을 설정하는 것도 가능하"
+"다: ``AIRFLOW__{SECTION}__{KEY}``\\(언더스코어가 두개임을 명심)."
 
 #: ../../howto/set-config.rst:26
 msgid ""
-"For example, the metadata database connection string can either be set in"
-" ``airflow.cfg`` like this:"
+"For example, the metadata database connection string can either be set "
+"in ``airflow.cfg`` like this:"
 msgstr ""
+"예를 들어, 메타데이터 데이터베이스 커넥션 문자열은 다음과 같이 ``airflow."
+"cfg``\\에서 설정할 수 있다:"
 
 #: ../../howto/set-config.rst:34
 msgid "or by creating a corresponding environment variable:"
-msgstr ""
+msgstr "또는 대응되는 환경 변수를 생성할 수도 있다:"
 
 #: ../../howto/set-config.rst:40
 msgid ""
 "You can also derive the connection string at run time by appending "
 "``_cmd`` to the key like this:"
 msgstr ""
+"아니면 다음과 같이 key에 ``_cmd``\\를 추가하여 커넥션 문자열을 가져올 수 "
+"있다:"
 
 #: ../../howto/set-config.rst:48
 msgid "The following config options support this ``_cmd`` version:"
-msgstr ""
+msgstr "아래의 config 옵션은 이 ``_cmd`` 버전을 지원한다:"
 
 #: ../../howto/set-config.rst:50
 msgid "``sql_alchemy_conn`` in ``[core]`` section"
-msgstr ""
+msgstr "``[core]`` 섹션의 ``sql_alchemy_conn``"
 
 #: ../../howto/set-config.rst:51
 msgid "``fernet_key`` in ``[core]`` section"
-msgstr ""
+msgstr "``[core]`` 섹션의 ``fernet_key``"
 
 #: ../../howto/set-config.rst:52
 msgid "``broker_url`` in ``[celery]`` section"
-msgstr ""
+msgstr "``[celery]`` 섹션의 ``broker_url``"
 
 #: ../../howto/set-config.rst:53
 msgid "``result_backend`` in ``[celery]`` section"
-msgstr ""
+msgstr "``[celery]`` 섹션의 ``result_backend``"
 
 #: ../../howto/set-config.rst:54
 msgid "``password`` in ``[atlas]`` section"
-msgstr ""
+msgstr "``[atlas]`` 섹션의 ``password``"
 
 #: ../../howto/set-config.rst:55
 msgid "``smtp_password`` in ``[smtp]`` section"
-msgstr ""
+msgstr "``[smtp]`` 섹션의 ``smtp_password``"
 
 #: ../../howto/set-config.rst:56
 msgid "``bind_password`` in ``[ldap]`` section"
-msgstr ""
+msgstr "``[Idap]`` 섹션의 ``bind_password``"
 
 #: ../../howto/set-config.rst:57
 msgid "``git_password`` in ``[kubernetes]`` section"
-msgstr ""
+msgstr "``[Kubernetes]`` 섹션의 ``git_password``"
 
 #: ../../howto/set-config.rst:59
 msgid ""
 "The idea behind this is to not store passwords on boxes in plain text "
 "files."
 msgstr ""
+"이 아이디어의 배경은 일반 텍스트 파일의 박스 안에 패스워드를 저장하지 않"
+"는 것이다."
 
 #: ../../howto/set-config.rst:61
 msgid ""
 "The universal order of precedence for all configuration options is as "
 "follows:"
-msgstr ""
+msgstr "모든 환경 구성 옵션의 전체적 우선 순서는 다음과 같다:"
 
 #: ../../howto/set-config.rst:63
 msgid "set as an environment variable"
-msgstr ""
+msgstr "환경 변수로 설정"
 
 #: ../../howto/set-config.rst:64
 msgid "set in ``airflow.cfg``"
-msgstr ""
+msgstr "``airflow.cfg`의 설정"
 
 #: ../../howto/set-config.rst:65
 msgid "command in ``airflow.cfg``"
-msgstr ""
+msgstr "``airflow.cfg``\\의 명령어"
 
 #: ../../howto/set-config.rst:66
 msgid "Airflow's built in defaults"
-msgstr ""
-
+msgstr "에어플로우의 기본값으로 설정"
