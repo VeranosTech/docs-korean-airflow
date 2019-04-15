@@ -141,7 +141,7 @@ msgstr ""
 "Amazon Web Services 연결 유형은 :ref:`AWS Integrations <AWS>`\\을 가능하게 한다."
 
 #: ../../howto/connection/aws.rst:25
-msgid "Authenticating to AWS"
+msgid "AWS에 인증"
 msgstr ""
 
 #: ../../howto/connection/aws.rst:27
