@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: Airflow 1.10.1\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-04-03 15:37+0900\n"
-"PO-Revision-Date: 2019-04-03 17:02+0900\n"
+"PO-Revision-Date: 2019-04-15 12:02+0900\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -29,6 +29,9 @@ msgid ""
 "and Public. The master branch adds beta support for DAG level access for RBAC "
 "UI. Each DAG comes with two permissions: read and write."
 msgstr ""
+"기본적으로 에어플로우에 대해 생성된 역할이 다섯 개가 있는데: Admin, User, Op, "
+"Viewer, 그리고 Public이다. master 브랜치는 RBAC UI에서 DAG 레벨 접근을 위한 베"
+"타 지원을 추가했다. 각 DAG는 2개의 허가(permission)가 있는데: read와 write이다."
 
 #: ../../howto/add-new-role.rst:25
 msgid ""
@@ -36,6 +39,9 @@ msgid ""
 "certain DAGs. To configure a new role, go to ``Security`` tab and click ``List "
 "Roles`` in the new UI."
 msgstr ""
+"Admin은 특정 DAG에 대해 read / write 만을 허용하는 역할(role)을 만들 수 있다. 새"
+"로운 역할을 설정하기 위해서는 ``Security``\\탭으로 이동하여 새로운 UI의 ``List "
+"Roles``\\을 클릭하라."
 
 #: ../../howto/add-new-role.rst:31
 msgid ""
@@ -43,10 +49,13 @@ msgid ""
 "``example_python_operator``. You can also create roles via the CLI using the "
 "``airflow roles`` command, e.g.:"
 msgstr ""
+"이미지는 ``example_python_operator``\\만을 읽을 수 있는 역할을 생성하는 것을 보"
+"여준다. ``airflow roles`` 명령어를 사용하여 CLI에서도 역할을 생성할 수 있다, 예"
+"를 들어:"
 
 #: ../../howto/add-new-role.rst:35
 msgid "airflow roles --create Role1 Role2"
-msgstr ""
+msgstr "airflow roles —create Role1 Role2"
 
 #: ../../howto/add-new-role.rst:37
 msgid ""
@@ -54,10 +63,13 @@ msgid ""
 "add-role`` CLI command.  Default roles(Admin, User, Viewer, Op) shipped with "
 "RBAC could view the details for every dag."
 msgstr ""
+"그리고 ``airflow users —add-role`` CLI 명령어를 사용하여 새로운 유저에게 주어진 "
+"역할을 할당할 수 있다.  RBAC의 기본 역할(Admin, User, Viewer, Op)은 모든 dag에"
+"서 세부 정보를 볼 수 있다."
 
 #: ../../howto/check-health.rst:19
 msgid "Checking Airflow Health Status"
-msgstr ""
+msgstr "에어플로우 Health 상태 체크하기"
 
 #: ../../howto/check-health.rst:21
 msgid ""
@@ -65,29 +77,38 @@ msgid ""
 "endpoint ``/health``. It will return a JSON object in which a high-level glance "
 "is provided."
 msgstr ""
+"에어플로우 인스턴스의 health 상태를 체크하기 위해서 ``/health`` 엔드포인트에 간"
+"단히 접속해볼 수 있다. 높은 수준의 상태 정보가 JSON 객체로 제공되어 반환될 것이"
+"다."
 
 #: ../../howto/check-health.rst:36
 msgid ""
 "The ``status`` of each component can be either \"healthy\" or \"unhealthy\""
-msgstr ""
+msgstr "각 컴포넌트의 ``status``\\는 “healthy” 또는 “unhealthy” 일 수 있다."
 
 #: ../../howto/check-health.rst:38
 msgid ""
 "The status of ``metadatabase`` depends on whether a valid connection can be "
 "initiated with the database"
 msgstr ""
+"``metadatabase``\\의 상태는 데이터베이스와의 유효한 커넥션이 초기화될 수 있는지"
+"에 따라 달라진다"
 
 #: ../../howto/check-health.rst:40
 msgid ""
 "The status of ``scheduler`` depends on when the latest scheduler heartbeat was "
 "received"
 msgstr ""
+"``scheduler``\\의 상태는 가장 최근 스케쥴러의 heartbeat가 수신됐을 시점에 달려있"
+"다"
 
 #: ../../howto/check-health.rst:42
 msgid ""
 "If the last heartbeat was received more than 30 seconds (default value) earlier "
 "than the current time, the scheduler is considered unhealthy"
 msgstr ""
+"만약 마지막 heartbeat가 현재 시점보다 30초(기본값)보다 더 이전에 수신되었다면, "
+"스케쥴러는 unhealthy한 것으로 여겨진다"
 
 #: ../../howto/check-health.rst:44
 msgid ""
@@ -95,6 +116,8 @@ msgid ""
 "``scheduler_health_check_threshold`` within the ``scheduler`` section in "
 "``airflow.cfg``"
 msgstr ""
+"이 스레스홀드(threshold) 값은 ``airflow.cfg``\\의 ``scheduler`` 섹션에 있는 "
+"``scheduler_health_check_threshold`` 옵션을 사용하여 지정할 수 있다"
 
 #: ../../howto/check-health.rst:47
 msgid ""
@@ -102,16 +125,20 @@ msgid ""
 "**should not** be used to determine the health status of the application. The "
 "return code is only indicative of the state of the rest call (200 for success)."
 msgstr ""
+"``/health`` 엔드포인트의 HTTP response 코드는 어플리케이션의 health 상태를 결정"
+"하는데 사용되어서는 *안 된다*\\. 리턴 코드는 rest call의 상태(성공일 때 200)만"
+"을 나타낸다."
 
 #: ../../howto/connection/aws.rst:19
 msgid "Amazon Web Services Connection"
-msgstr ""
+msgstr "Amazon Web Services 연결"
 
 #: ../../howto/connection/aws.rst:21
 msgid ""
 "The Amazon Web Services connection type enables the :ref:`AWS Integrations "
 "<AWS>`."
 msgstr ""
+"Amazon Web Services 연결 유형은 :ref:`AWS Integrations <AWS>`\\을 가능하게 한다."
 
 #: ../../howto/connection/aws.rst:25
 msgid "Authenticating to AWS"
@@ -3418,7 +3445,7 @@ msgstr ""
 
 #: ../../howto/set-config.rst:19
 msgid "Setting Configuration Options"
-msgstr ""
+msgstr "Configuration 옵션 설정"
 
 #: ../../howto/set-config.rst:21
 msgid ""
@@ -3428,84 +3455,94 @@ msgid ""
 "can also set options with environment variables by using this format: ``"
 "$AIRFLOW__{SECTION}__{KEY}`` (note the double underscores)."
 msgstr ""
+"에어플로우를 처음 실행할 때, ``$AIRFLOW_HOME`` 디렉토리(기본값 ``~/airflow``\\) "
+"안에 ``airflow.cfg``\\라는 파일이 생성되었을 것이다. 이 파일은 에어플로우의 환"
+"경 설정을 담고 있는데, 여기에 어떤 설정도 변경이 가능하다. 또한 다음의 형식을 사"
+"용하여 환경 변수의 옵션을 설정하는 것도 가능하다: ``AIRFLOW__{SECTION}__{KEY}``"
+"\\(언더스코어가 두개임을 명심)."
 
 #: ../../howto/set-config.rst:26
 msgid ""
 "For example, the metadata database connection string can either be set in "
 "``airflow.cfg`` like this:"
 msgstr ""
+"예를 들어, 메타데이터 데이터베이스 커넥션 문자열은 다음과 같이 ``airflow.cfg``"
+"\\에서 설정할 수 있다:"
 
 #: ../../howto/set-config.rst:34
 msgid "or by creating a corresponding environment variable:"
-msgstr ""
+msgstr "또는 대응되는 환경 변수를 생성할 수도 있다:"
 
 #: ../../howto/set-config.rst:40
 msgid ""
 "You can also derive the connection string at run time by appending ``_cmd`` to "
 "the key like this:"
 msgstr ""
+"아니면 다음과 같이 key에 ``_cmd``\\를 추가하여 커넥션 문자열을 가져올 수 있다:"
 
 #: ../../howto/set-config.rst:48
 msgid "The following config options support this ``_cmd`` version:"
-msgstr ""
+msgstr "아래의 config 옵션은 이 ``_cmd`` 버전을 지원한다:"
 
 #: ../../howto/set-config.rst:50
 msgid "``sql_alchemy_conn`` in ``[core]`` section"
-msgstr ""
+msgstr "``[core]`` 섹션의 ``sql_alchemy_conn``"
 
 #: ../../howto/set-config.rst:51
 msgid "``fernet_key`` in ``[core]`` section"
-msgstr ""
+msgstr "``[core]`` 섹션의 ``fernet_key``"
 
 #: ../../howto/set-config.rst:52
 msgid "``broker_url`` in ``[celery]`` section"
-msgstr ""
+msgstr "``[celery]`` 섹션의 ``broker_url``"
 
 #: ../../howto/set-config.rst:53
 msgid "``result_backend`` in ``[celery]`` section"
-msgstr ""
+msgstr "``[celery]`` 섹션의 ``result_backend``"
 
 #: ../../howto/set-config.rst:54
 msgid "``password`` in ``[atlas]`` section"
-msgstr ""
+msgstr "``[atlas]`` 섹션의 ``password``"
 
 #: ../../howto/set-config.rst:55
 msgid "``smtp_password`` in ``[smtp]`` section"
-msgstr ""
+msgstr "``[smtp]`` 섹션의 ``smtp_password``"
 
 #: ../../howto/set-config.rst:56
 msgid "``bind_password`` in ``[ldap]`` section"
-msgstr ""
+msgstr "``[Idap]`` 섹션의 ``bind_password``"
 
 #: ../../howto/set-config.rst:57
 msgid "``git_password`` in ``[kubernetes]`` section"
-msgstr ""
+msgstr "``[Kubernetes]`` 섹션의 ``git_password``"
 
 #: ../../howto/set-config.rst:59
 msgid ""
 "The idea behind this is to not store passwords on boxes in plain text files."
 msgstr ""
+"이 아이디어의 배경은 일반 텍스트 파일의 박스 안에 패스워드를 저장하지 않는 것이"
+"다."
 
 #: ../../howto/set-config.rst:61
 msgid ""
 "The universal order of precedence for all configuration options is as follows:"
-msgstr ""
+msgstr "모든 환경 구성 옵션의 전체적 우선 순서는 다음과 같다:"
 
 #: ../../howto/set-config.rst:63
 msgid "set as an environment variable"
-msgstr ""
+msgstr "환경 변수로 설정"
 
 #: ../../howto/set-config.rst:64
 msgid "set in ``airflow.cfg``"
-msgstr ""
+msgstr "``airflow.cfg`의 설정"
 
 #: ../../howto/set-config.rst:65
 msgid "command in ``airflow.cfg``"
-msgstr ""
+msgstr "``airflow.cfg``\\의 명령어"
 
 #: ../../howto/set-config.rst:66
 msgid "Airflow's built in defaults"
-msgstr ""
+msgstr "에어플로우의 기본값으로 설정"
 
 #: ../../howto/use-test-config.rst:19
 msgid "Using the Test Mode Configuration"
