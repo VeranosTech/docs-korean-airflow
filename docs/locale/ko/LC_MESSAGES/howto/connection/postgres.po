@@ -3,67 +3,69 @@
 # This file is distributed under the same license as the Airflow package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Airflow 1.10.1\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-04-03 17:47+0900\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"PO-Revision-Date: 2019-04-19 13:37+0900\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=utf-8\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.6.0\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: ko\n"
+"X-Generator: Poedit 2.2.1\n"
 
 #: ../../howto/connection/postgres.rst:19
 msgid "PostgresSQL Connection"
-msgstr ""
+msgstr "PostgresSQL 커넥션"
 
 #: ../../howto/connection/postgres.rst:20
 msgid "The Postgres connection type provides connection to a Postgres database."
-msgstr ""
+msgstr "Postgres 커넥션 타입은 Postgres 데이터베이스 커넥션을 제공한다."
 
 #: ../../howto/connection/postgres.rst:23
 msgid "Configuring the Connection"
-msgstr ""
+msgstr "커넥션 구성 설정"
 
 #: ../../howto/connection/postgres.rst:25
 msgid "Host (required)"
-msgstr ""
+msgstr "Host(필수)"
 
 #: ../../howto/connection/postgres.rst:25
 msgid "The host to connect to."
-msgstr ""
+msgstr "연결할 호스트이다."
 
 #: ../../howto/connection/postgres.rst:28
 msgid "Schema (optional)"
-msgstr ""
+msgstr "Schema (선택)"
 
 #: ../../howto/connection/postgres.rst:28
 msgid "Specify the schema name to be used in the database."
-msgstr ""
+msgstr "데이버테이스에서 사용할 스키마 이름을 명시한다."
 
 #: ../../howto/connection/postgres.rst:31
 msgid "Login (required)"
-msgstr ""
+msgstr "Login (필수)"
 
 #: ../../howto/connection/postgres.rst:31
 msgid "Specify the user name to connect."
-msgstr ""
+msgstr "연결할 유저 이름을 명시한다."
 
 #: ../../howto/connection/postgres.rst:34
 msgid "Password (required)"
-msgstr ""
+msgstr "Password (필수)"
 
 #: ../../howto/connection/postgres.rst:34
 msgid "Specify the password to connect."
-msgstr ""
+msgstr "연결을 위한 비밀번호 명시한다."
 
 #: ../../howto/connection/postgres.rst:78
 msgid "Extra (optional)"
-msgstr ""
+msgstr "Extra (선택)"
 
 #: ../../howto/connection/postgres.rst:37
 msgid ""
@@ -71,71 +73,91 @@ msgid ""
 "postgres connection. The following parameters out of the standard python "
 "parameters are supported:"
 msgstr ""
+"Postgres 커넥션에서 사용할 수 있는 추가 파라미터(json dictionary 형태) 명시한"
+"다. 표준 파이썬 파라미터 중 다음과 같은 파라미터가 지원된다:"
 
 #: ../../howto/connection/postgres.rst:41
 msgid ""
-"**sslmode** - This option determines whether or with what priority a "
-"secure SSL TCP/IP connection will be negotiated with the server. There "
-"are six modes: 'disable', 'allow', 'prefer', 'require', 'verify-ca', "
-"'verify-full'."
+"**sslmode** - This option determines whether or with what priority a secure "
+"SSL TCP/IP connection will be negotiated with the server. There are six "
+"modes: 'disable', 'allow', 'prefer', 'require', 'verify-ca', 'verify-full'."
 msgstr ""
+"**sslmode** - 이 옵션은 서버에 대한 보안 SSL TCP/IP의 연결 여부와 우선순위를 "
+"결정한다. 여기에는 6개의 모드가 있다: `disable`, `allow`, `prefer`, "
+"`require`, `verify-ca`, `verify-full`."
 
 #: ../../howto/connection/postgres.rst:44
 msgid ""
 "**sslcert** - This parameter specifies the file name of the client SSL "
 "certificate, replacing the default."
 msgstr ""
+"**sslcert** - 이 파라미터는 기본값을 대체하여 클라이언트 SSL 인증서의 파일 이"
+"름을 명시한다."
 
 #: ../../howto/connection/postgres.rst:46
 msgid ""
-"**sslkey** - This parameter specifies the file name of the client SSL "
-"key, replacing the default."
+"**sslkey** - This parameter specifies the file name of the client SSL key, "
+"replacing the default."
 msgstr ""
+"**sslkey** - 이 파라미터는 기본값을 대체하여 클라이언트 SSL key 파일 이름을 명"
+"시한다."
 
 #: ../../howto/connection/postgres.rst:48
 msgid ""
-"**sslrootcert** - This parameter specifies the name of a file containing "
-"SSL certificate authority (CA) certificate(s)."
+"**sslrootcert** - This parameter specifies the name of a file containing SSL "
+"certificate authority (CA) certificate(s)."
 msgstr ""
+"**sslrootcert** - 이 파라미터는 SSL 인증 권한(CA: certificate authority) 인증"
+"서 파일 이름을 명시한다."
 
 #: ../../howto/connection/postgres.rst:50
 msgid ""
-"**sslcrl** - This parameter specifies the file name of the SSL "
-"certificate revocation list (CRL)."
+"**sslcrl** - This parameter specifies the file name of the SSL certificate "
+"revocation list (CRL)."
 msgstr ""
+"**sslcrl** - 이 파라미터는 SSL 인증 철회 목록 (CRL: certificate revocation "
+"list) 파일 이름을 명시한다."
 
 #: ../../howto/connection/postgres.rst:52
 msgid ""
 "**application_name** - Specifies a value for the application_name "
 "configuration parameter."
 msgstr ""
+"**application_name** - application_name 구성 설정 파라미터 값을 명시한다."
 
 #: ../../howto/connection/postgres.rst:54
 msgid ""
 "**keepalives_idle** - Controls the number of seconds of inactivity after "
 "which TCP should send a keepalive message to the server."
 msgstr ""
+"**keepalives_idle** - TCP가 서버로 keepalive 메세지를 전송하기까지 몇 초 동안 "
+"정지 상태로 있을지를 제어한다."
 
 #: ../../howto/connection/postgres.rst:57
 msgid ""
-"More details on all Postgres parameters supported can be found in "
-"`Postgres documentation <https://www.postgresql.org/docs/current/static"
-"/libpq-connect.html#LIBPQ-CONNSTRING>`_."
+"More details on all Postgres parameters supported can be found in `Postgres "
+"documentation <https://www.postgresql.org/docs/current/static/libpq-connect."
+"html#LIBPQ-CONNSTRING>`_."
 msgstr ""
+"Postgres 파라미터 전체에 대한 보다 자세한 정보는 `Postgres documentation "
+"<https://www.postgresql.org/docs/current/static/libpq-connect.html#LIBPQ-"
+"CONNSTRING>`_\\에서 찾아 볼 수 있다."
 
 #: ../../howto/connection/postgres.rst:60
 msgid "Example \"extras\" field:"
-msgstr ""
+msgstr "“extras” 필드 예시:"
 
 #: ../../howto/connection/postgres.rst:71
 msgid ""
-"When specifying the connection as URI (in AIRFLOW_CONN_* variable) you "
-"should specify it following the standard syntax of DB connections, where "
-"extras are passed as parameters of the URI (note that all components of "
-"the URI should be URL-encoded)."
+"When specifying the connection as URI (in AIRFLOW_CONN_* variable) you should "
+"specify it following the standard syntax of DB connections, where extras are "
+"passed as parameters of the URI (note that all components of the URI should "
+"be URL-encoded)."
 msgstr ""
+"(AIRFLOW_CONN_* 변수로) URI 형태로 커넥션을 명시할 때 extras가 URI의 파라미터"
+"로 전달되는 DB 커넥션의 표준 문법(syntax)를 따라서 명시하여야 한다(URI의 모든 "
+"컴포넌트는 URL 인코딩되어야 함을 유의하라)."
 
 #: ../../howto/connection/postgres.rst:75
 msgid "For example:"
-msgstr ""
-
+msgstr "예를 들어:"
