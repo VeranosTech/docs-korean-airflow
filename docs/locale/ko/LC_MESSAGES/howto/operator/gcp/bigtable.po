@@ -3,19 +3,21 @@
 # This file is distributed under the same license as the Airflow package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Airflow 1.10.1\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-04-03 17:47+0900\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"PO-Revision-Date: 2019-04-24 13:07+0900\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=utf-8\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.6.0\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: ko\n"
+"X-Generator: Poedit 2.2.1\n"
 
 #: ../../howto/operator/gcp/bigtable.rst:19
 msgid "Google Cloud Bigtable Operators"
@@ -33,9 +35,9 @@ msgstr ""
 
 #: ../../howto/operator/gcp/bigtable.rst:37
 msgid ""
-"Use the "
-":class:`~airflow.contrib.operators.gcp_bigtable_operator.BigtableInstanceCreateOperator`"
-" to create a Google Cloud Bigtable instance."
+"Use the :class:`~airflow.contrib.operators.gcp_bigtable_operator."
+"BigtableInstanceCreateOperator` to create a Google Cloud Bigtable "
+"instance."
 msgstr ""
 
 #: ../../howto/operator/gcp/bigtable.rst:40
@@ -72,9 +74,9 @@ msgstr ""
 
 #: ../../howto/operator/gcp/bigtable.rst:60
 msgid ""
-"Use the "
-":class:`~airflow.contrib.operators.gcp_bigtable_operator.BigtableInstanceDeleteOperator`"
-" to delete a Google Cloud Bigtable instance."
+"Use the :class:`~airflow.contrib.operators.gcp_bigtable_operator."
+"BigtableInstanceDeleteOperator` to delete a Google Cloud Bigtable "
+"instance."
 msgstr ""
 
 #: ../../howto/operator/gcp/bigtable.rst:78
@@ -83,9 +85,9 @@ msgstr ""
 
 #: ../../howto/operator/gcp/bigtable.rst:80
 msgid ""
-"Use the "
-":class:`~airflow.contrib.operators.gcp_bigtable_operator.BigtableClusterUpdateOperator`"
-" to modify number of nodes in a Cloud Bigtable cluster."
+"Use the :class:`~airflow.contrib.operators.gcp_bigtable_operator."
+"BigtableClusterUpdateOperator` to modify number of nodes in a Cloud "
+"Bigtable cluster."
 msgstr ""
 
 #: ../../howto/operator/gcp/bigtable.rst:98
@@ -113,10 +115,9 @@ msgid ""
 "When creating a table, you can specify the optional "
 "``initial_split_keys`` and ``column_families``. Please refer to the "
 "Python Client for Google Cloud Bigtable documentation `for Table "
-"<https://googleapis.github.io/google-cloud-"
-"python/latest/bigtable/table.html>`_ and `for Column Families "
-"<https://googleapis.github.io/google-cloud-python/latest/bigtable/column-"
-"family.html>`_."
+"<https://googleapis.github.io/google-cloud-python/latest/bigtable/table."
+"html>`_ and `for Column Families <https://googleapis.github.io/google-"
+"cloud-python/latest/bigtable/column-family.html>`_."
 msgstr ""
 
 #: ../../howto/operator/gcp/bigtable.rst:130
@@ -125,9 +126,8 @@ msgstr ""
 
 #: ../../howto/operator/gcp/bigtable.rst:132
 msgid ""
-"Use the "
-":class:`~airflow.contrib.operators.gcp_bigtable_operator.BigtableTableDeleteOperator`"
-" to delete a table in Google Cloud Bigtable."
+"Use the :class:`~airflow.contrib.operators.gcp_bigtable_operator."
+"BigtableTableDeleteOperator` to delete a table in Google Cloud Bigtable."
 msgstr ""
 
 #: ../../howto/operator/gcp/bigtable.rst:150
@@ -136,9 +136,9 @@ msgstr ""
 
 #: ../../howto/operator/gcp/bigtable.rst:155
 msgid ""
-"Use the "
-":class:`~airflow.contrib.operators.gcp_bigtable_operator.BigtableTableWaitForReplicationSensor`"
-" to wait for the table to replicate fully."
+"Use the :class:`~airflow.contrib.operators.gcp_bigtable_operator."
+"BigtableTableWaitForReplicationSensor` to wait for the table to "
+"replicate fully."
 msgstr ""
 
 #: ../../howto/operator/gcp/bigtable.rst:158
@@ -150,7 +150,6 @@ msgstr ""
 #: ../../howto/operator/gcp/bigtable.rst:160
 msgid ""
 "**Note:** If the table or the Cloud Bigtable instance does not exist, "
-"this sensor waits for the table until timeout hits and does not raise any"
-" exception."
+"this sensor waits for the table until timeout hits and does not raise "
+"any exception."
 msgstr ""
-

@@ -3,29 +3,33 @@
 # This file is distributed under the same license as the Airflow package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Airflow 1.10.1\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-04-03 17:47+0900\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"PO-Revision-Date: 2019-04-24 11:27+0900\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=utf-8\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.6.0\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: ko\n"
+"X-Generator: Poedit 2.2.1\n"
 
 #: ../../howto/operator/index.rst:19
 msgid "Using Operators"
-msgstr ""
+msgstr "오퍼레이터 사용"
 
 #: ../../howto/operator/index.rst:21
 msgid ""
 "An operator represents a single, ideally idempotent, task. Operators "
 "determine what actually executes when your DAG runs."
 msgstr ""
+"오퍼레이터는 단일, 독립적이며 멱등(idempotent)한 태스크를 나타낸다. 오퍼"
+"레이터는 DAG가 작동할 때 실제 어떤 것이 실행될지 결정한다."
 
 #: ../../howto/operator/index.rst:24
 msgid ""
@@ -33,4 +37,5 @@ msgid ""
 "the :doc:`Operators API Reference <../../_api/index>` for more "
 "information."
 msgstr ""
-
+":ref:`Operators Concepts <concepts-operators>` 문서와  :doc:`Operators "
+"API Reference <../../_api/index>`\\에서 보다 자세한 정보를 확인하라."
