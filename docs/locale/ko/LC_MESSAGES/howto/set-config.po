@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: Airflow 1.10.1\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-04-03 17:47+0900\n"
-"PO-Revision-Date: 2019-04-24 11:29+0900\n"
+"PO-Revision-Date: 2019-04-24 15:49+0900\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -106,15 +106,15 @@ msgstr ""
 msgid ""
 "The universal order of precedence for all configuration options is as "
 "follows:"
-msgstr "모든 환경 구성 옵션의 전체적 우선 순서는 다음과 같다:"
+msgstr "설정(configuration) 옵션의 우선 순서는 다음과 같다:"
 
 #: ../../howto/set-config.rst:63
 msgid "set as an environment variable"
-msgstr "환경 변수로 설정"
+msgstr "환경 변수 설정값"
 
 #: ../../howto/set-config.rst:64
 msgid "set in ``airflow.cfg``"
-msgstr "``airflow.cfg``\\의 설정"
+msgstr "``airflow.cfg`` 파일 내의 설정값"
 
 #: ../../howto/set-config.rst:65
 msgid "command in ``airflow.cfg``"
@@ -122,4 +122,4 @@ msgstr "``airflow.cfg``\\의 명령어"
 
 #: ../../howto/set-config.rst:66
 msgid "Airflow's built in defaults"
-msgstr "에어플로우의 기본값으로 설정"
+msgstr "에어플로우의 설정 기본값"
