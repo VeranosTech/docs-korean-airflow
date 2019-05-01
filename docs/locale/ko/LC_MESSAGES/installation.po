@@ -3,467 +3,489 @@
 # This file is distributed under the same license as the Airflow package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Airflow 1.10.1\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-04-03 15:37+0900\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"PO-Revision-Date: 2019-05-01 15:47+0900\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.6.0\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: ko\n"
+"X-Generator: Poedit 2.2.1\n"
 
 #: ../../installation.rst:19
 msgid "Installation"
-msgstr ""
+msgstr "설치"
 
 #: ../../installation.rst:22
 msgid "Getting Airflow"
-msgstr ""
+msgstr "에어플로우 얻기"
 
 #: ../../installation.rst:24
 msgid ""
 "The easiest way to install the latest stable version of Airflow is with "
 "``pip``:"
 msgstr ""
+"에어플로우의 최신의 안정된 버전(stable version)을 설치하기 가장 쉬운 방법은 "
+"``pip``\\를 이용하는 것이다:"
 
 #: ../../installation.rst:30
 msgid ""
-"You can also install Airflow with support for extra features like ``gcp``"
-" or ``postgres``:"
+"You can also install Airflow with support for extra features like ``gcp`` "
+"or ``postgres``:"
 msgstr ""
+"또한 ``gcp`` 또는 ``postgres``\\와 같은 추가적인 기능을 지원하는 에어플로우"
+"를 설치할 수도 있다:"
 
 #: ../../installation.rst:37
 msgid "Extra Packages"
-msgstr ""
+msgstr "추가적 패키지(Extra Packages)"
 
 #: ../../installation.rst:39
 msgid ""
 "The ``apache-airflow`` PyPI basic package only installs what's needed to "
-"get started. Subpackages can be installed depending on what will be "
-"useful in your environment. For instance, if you don't need connectivity "
-"with Postgres, you won't have to go through the trouble of installing the"
-" ``postgres-devel`` yum package, or whatever equivalent applies on the "
+"get started. Subpackages can be installed depending on what will be useful "
+"in your environment. For instance, if you don't need connectivity with "
+"Postgres, you won't have to go through the trouble of installing the "
+"``postgres-devel`` yum package, or whatever equivalent applies on the "
 "distribution you are using."
 msgstr ""
+"``apache-airflow`` PYPI의 기본 패키지는 시작할 때 필요한 것만 설치한다. 서브"
+"패키지는 설치될 환경(environment)에서 유용할 것들에 따라 설치될 수 있다. 예"
+"를 들어, Postgres와 연결할 필요가 없다면, ``postgres-devel`` yum 패키지를 설"
+"치하는 수고를 겪지 않아도 되고, 또는 사용하고 있는 배포판(distribution)에도 "
+"동등하게 적용될 것이다."
 
 #: ../../installation.rst:45
 msgid ""
 "Behind the scenes, Airflow does conditional imports of operators that "
 "require these extra dependencies."
 msgstr ""
+"에어플로우는 뒤에서 이러한 추가적인 의존성을 요구하는 오퍼레이터(operator)"
+"에 대해 조건적으로 가져오기(import)를 한다."
 
 #: ../../installation.rst:48
 msgid "Here's the list of the subpackages and what they enable:"
 msgstr ""
+"서브패키지(subpackage)와 각 서브패키지에서 할 수 있는 것(enable)에 대한 목록"
+"이다:"
 
 #: ../../installation.rst:51
 msgid "subpackage"
-msgstr ""
+msgstr "서브패키지"
 
 #: ../../installation.rst:51
 msgid "install command"
-msgstr ""
+msgstr "설치 명령"
 
 #: ../../installation.rst:51
 msgid "enables"
-msgstr ""
+msgstr "할 수 있는 것"
 
 #: ../../installation.rst:53
 msgid "all"
-msgstr ""
+msgstr "all"
 
 #: ../../installation.rst:53
 msgid "``pip install 'apache-airflow[all]'``"
-msgstr ""
+msgstr "``pip install ‘apache-airflow[all]’``"
 
 #: ../../installation.rst:53
 msgid "All Airflow features known to man"
-msgstr ""
+msgstr "알려져 있는 에어플로우의 기능 전체"
 
 #: ../../installation.rst:55
 msgid "all_dbs"
-msgstr ""
+msgstr "all_dbs"
 
 #: ../../installation.rst:55
 msgid "``pip install 'apache-airflow[all_dbs]'``"
-msgstr ""
+msgstr "``pip install ‘apache-airflow[all_dbs]’``"
 
 #: ../../installation.rst:55
 msgid "All databases integrations"
-msgstr ""
+msgstr "모든 데이터베이스 통합(integrations)"
 
 #: ../../installation.rst:57
 msgid "async"
-msgstr ""
+msgstr "async"
 
 #: ../../installation.rst:57
 msgid "``pip install 'apache-airflow[async]'``"
-msgstr ""
+msgstr "``pip install ‘apache-airflow[async]’``"
 
 #: ../../installation.rst:57
 msgid "Async worker classes for Gunicorn"
-msgstr ""
+msgstr "구니콘(Gunicorn)을 위한 비동기적(Async) 워커(worker) 클래스"
 
 #: ../../installation.rst:59
 msgid "azure"
-msgstr ""
+msgstr "azure"
 
 #: ../../installation.rst:59
 msgid "``pip install 'apache-airflow[azure]'``"
-msgstr ""
+msgstr "``pip install ‘apache-airflow[azure]’``"
 
 #: ../../installation.rst:59
 msgid "Microsoft Azure"
-msgstr ""
+msgstr "마이크로소프트 애저(Microsoft Azure)"
 
 #: ../../installation.rst:61
 msgid "aws"
-msgstr ""
+msgstr "aws"
 
 #: ../../installation.rst:61
 msgid "``pip install 'apache-airflow[aws]'``"
-msgstr ""
+msgstr "``pip install ‘apache-airflow[aws]’``"
 
 #: ../../installation.rst:61
 msgid "Amazon Web Services"
-msgstr ""
+msgstr "아마존 웹 서비스(Amazon Web Services)"
 
 #: ../../installation.rst:63
 msgid "celery"
-msgstr ""
+msgstr "celery"
 
 #: ../../installation.rst:63
 msgid "``pip install 'apache-airflow[celery]'``"
-msgstr ""
+msgstr "``pip install ‘apache-airflow[celery]’``"
 
 #: ../../installation.rst:63
 msgid "CeleryExecutor"
-msgstr ""
+msgstr "셀러리 실행자(CeleryExecutor)"
 
 #: ../../installation.rst:65
 msgid "cloudant"
-msgstr ""
+msgstr "cloudant"
 
 #: ../../installation.rst:65
 msgid "``pip install 'apache-airflow[cloudant]'``"
-msgstr ""
+msgstr "``pip install ‘apache-airflow[cloudant]’``"
 
 #: ../../installation.rst:65
 msgid "Cloudant hook"
-msgstr ""
+msgstr "Cloudant 훅(hook)"
 
 #: ../../installation.rst:67
 msgid "crypto"
-msgstr ""
+msgstr "crypto"
 
 #: ../../installation.rst:67
 msgid "``pip install 'apache-airflow[crypto]'``"
-msgstr ""
+msgstr "``pip install ‘apache-airflow[crypto]’``"
 
 #: ../../installation.rst:67
 msgid "Encrypt connection passwords in metadata db"
-msgstr ""
+msgstr "메타데이터(metadata) db에서 연결(connection) 비밀번호 암호화"
 
 #: ../../installation.rst:69
 msgid "devel"
-msgstr ""
+msgstr "devel"
 
 #: ../../installation.rst:69
 msgid "``pip install 'apache-airflow[devel]'``"
-msgstr ""
+msgstr "``pip install ‘apache-airflow[devel]’``"
 
 #: ../../installation.rst:69
 msgid "Minimum dev tools requirements"
-msgstr ""
+msgstr "요구되는 최소한의 개발 도구(dev tool)"
 
 #: ../../installation.rst:71
 msgid "devel_hadoop"
-msgstr ""
+msgstr "devel_hadoop"
 
 #: ../../installation.rst:71
 msgid "``pip install 'apache-airflow[devel_hadoop]'``"
-msgstr ""
+msgstr "``pip install ‘apache-airflow[devel_hadoop]’``"
 
 #: ../../installation.rst:71
 msgid "Airflow + dependencies on the Hadoop stack"
-msgstr ""
+msgstr "에어플로우 + 하둡(Hadoop) 스택(stack)의 의존"
 
 #: ../../installation.rst:73
 msgid "druid"
-msgstr ""
+msgstr "druid"
 
 #: ../../installation.rst:73
 msgid "``pip install 'apache-airflow[druid]'``"
-msgstr ""
+msgstr "``pip install ‘apache-airflow[druid]’``"
 
 #: ../../installation.rst:73
 msgid "Druid related operators & hooks"
-msgstr ""
+msgstr "오퍼레이터(operators)와 훅(hooks)과 관련된 드루이드(Druid)"
 
 #: ../../installation.rst:75
 msgid "gcp"
-msgstr ""
+msgstr "gcp"
 
 #: ../../installation.rst:75
 msgid "``pip install 'apache-airflow[gcp]'``"
-msgstr ""
+msgstr "``pip install ‘apache-airflow[gcp]’``"
 
 #: ../../installation.rst:75
 msgid "Google Cloud Platform"
-msgstr ""
+msgstr "구글 클라우드 플랫폼(Google Cloud Platform)"
 
 #: ../../installation.rst:77
 msgid "github_enterprise"
-msgstr ""
+msgstr "github_enterprise"
 
 #: ../../installation.rst:77
 msgid "``pip install 'apache-airflow[github_enterprise]'``"
-msgstr ""
+msgstr "``pip install ‘apache-airflow[github_enterprise]’``"
 
 #: ../../installation.rst:77
 msgid "GitHub Enterprise auth backend"
-msgstr ""
+msgstr "깃헙 엔터프라이즈 인증 백엔드(GitHub Enterprise auth backend)"
 
 #: ../../installation.rst:79
 msgid "google_auth"
-msgstr ""
+msgstr "google_auth"
 
 #: ../../installation.rst:79
 msgid "``pip install 'apache-airflow[google_auth]'``"
-msgstr ""
+msgstr "``pip install ‘apache-airflow[google_auth]’``"
 
 #: ../../installation.rst:79
 msgid "Google auth backend"
-msgstr ""
+msgstr "구글 인증 백엔드(Google auth backend)"
 
 #: ../../installation.rst:81
 msgid "hdfs"
-msgstr ""
+msgstr "hdfs"
 
 #: ../../installation.rst:81
 msgid "``pip install 'apache-airflow[hdfs]'``"
-msgstr ""
+msgstr "``pip install ‘apache-airflow[hdfs]’``"
 
 #: ../../installation.rst:81
 msgid "HDFS hooks and operators"
-msgstr ""
+msgstr "HDFS 훅(hooks)과 오퍼레이터(operators)"
 
 #: ../../installation.rst:83
 msgid "hive"
-msgstr ""
+msgstr "hive"
 
 #: ../../installation.rst:83
 msgid "``pip install 'apache-airflow[hive]'``"
-msgstr ""
+msgstr "``pip install ‘apache-airflow[hive]’``"
 
 #: ../../installation.rst:83
 msgid "All Hive related operators"
-msgstr ""
+msgstr "오퍼레이터(operators)와 관련된 모든 하이브(Hive)"
 
 #: ../../installation.rst:85
 msgid "jdbc"
-msgstr ""
+msgstr "jdbc"
 
 #: ../../installation.rst:85
 msgid "``pip install 'apache-airflow[jdbc]'``"
-msgstr ""
+msgstr "``pip install ‘apache-airflow[jdbc]’``"
 
 #: ../../installation.rst:85
 msgid "JDBC hooks and operators"
-msgstr ""
+msgstr "JDBC 훅(hooks)과 오퍼레이터(operators)"
 
 #: ../../installation.rst:87
 msgid "kerberos"
-msgstr ""
+msgstr "kerberos"
 
 #: ../../installation.rst:87
 msgid "``pip install 'apache-airflow[kerberos]'``"
-msgstr ""
+msgstr "``pip install ‘apache-airflow[kerberos]’``"
 
 #: ../../installation.rst:87
 msgid "Kerberos integration for Kerberized Hadoop"
 msgstr ""
+"커베로스 하둡(Kerberized Hadoop)을 위한 커베로스(Kerberos) 통합(integration)"
 
 #: ../../installation.rst:89
 msgid "kubernetes"
-msgstr ""
+msgstr "kubernetes"
 
 #: ../../installation.rst:89
 msgid "``pip install 'apache-airflow[kubernetes]'``"
-msgstr ""
+msgstr "``pip install ‘apache-airflow[kubernetes]’``"
 
 #: ../../installation.rst:89
 msgid "Kubernetes Executor and operator"
-msgstr ""
+msgstr "큐버네티스(Kubernetes) 실행자(Executor)와 오퍼레이터(operator)"
 
 #: ../../installation.rst:91
 msgid "ldap"
-msgstr ""
+msgstr "ldap"
 
 #: ../../installation.rst:91
 msgid "``pip install 'apache-airflow[ldap]'``"
-msgstr ""
+msgstr "``pip install ‘apache-airflow[ldap]’``"
 
 #: ../../installation.rst:91
 msgid "LDAP authentication for users"
-msgstr ""
+msgstr "사용자를 위한 LDAP 인증(authentication)"
 
 #: ../../installation.rst:93
 msgid "mssql"
-msgstr ""
+msgstr "mssql"
 
 #: ../../installation.rst:93
 msgid "``pip install 'apache-airflow[mssql]'``"
-msgstr ""
+msgstr "``pip install ‘apache-airflow[mssql]’``"
 
 #: ../../installation.rst:93
 msgid "Microsoft SQL Server operators and hook, support as an Airflow backend"
 msgstr ""
+"마이크로소프트(Microsoft) SQL 오퍼레이(operators)와 훅(hook), 에어플로우 백"
+"엔드로 지원"
 
 #: ../../installation.rst:96
 msgid "mysql"
-msgstr ""
+msgstr "mysql"
 
 #: ../../installation.rst:96
 msgid "``pip install 'apache-airflow[mysql]'``"
-msgstr ""
+msgstr "``pip install ‘apache-airflow[mysql]’``"
 
 #: ../../installation.rst:96
 msgid ""
 "MySQL operators and hook, support as an Airflow backend. The version of "
 "MySQL server has to be 5.6.4+. The exact version upper bound depends on "
-"version of ``mysqlclient`` package. For example, ``mysqlclient`` 1.3.12 "
-"can only be used with MySQL server 5.6.4 through 5.7."
+"version of ``mysqlclient`` package. For example, ``mysqlclient`` 1.3.12 can "
+"only be used with MySQL server 5.6.4 through 5.7."
 msgstr ""
+"MySQL 오퍼레이터(operator)와 훅(hook), 에어플로우 백엔드 지원. MySQL 서버 버"
+"전은 5.6.4+이어야 한다. 정확한 버전 상한선을 ``mysqlclient`` 패키지에 달려있"
+"다. 예를 들어, ``mysqlclient`` 1.3.12는 MySQL 서버 5.4에서 5.7까지 사용할 "
+"수 있다."
 
 #: ../../installation.rst:103
 msgid "oracle"
-msgstr ""
+msgstr "oracle"
 
 #: ../../installation.rst:103
 msgid "``pip install 'apache-airflow[oracle]'``"
-msgstr ""
+msgstr "``pip install ‘apache-airflow[oracle]’``"
 
 #: ../../installation.rst:103
 msgid "Oracle hooks and operators"
-msgstr ""
+msgstr "오라클(Oracle) 훅(hooks)과 오퍼레이터(operators)"
 
 #: ../../installation.rst:105
 msgid "password"
-msgstr ""
+msgstr "password"
 
 #: ../../installation.rst:105
 msgid "``pip install 'apache-airflow[password]'``"
-msgstr ""
+msgstr "``pip install ‘apache-airflow[password]’``"
 
 #: ../../installation.rst:105
 msgid "Password authentication for users"
-msgstr ""
+msgstr "사용자를 위한 비밀번호 인증"
 
 #: ../../installation.rst:107
 msgid "postgres"
-msgstr ""
+msgstr "postgres"
 
 #: ../../installation.rst:107
 msgid "``pip install 'apache-airflow[postgres]'``"
-msgstr ""
+msgstr "``pip install ‘apache-airflow[postgres]’``"
 
 #: ../../installation.rst:107
 msgid "PostgreSQL operators and hook, support as an Airflow backend"
 msgstr ""
+"PostgreSQL 오퍼레이터(operators)와 훅(hooks), 에어플로우 백엔드로 지원"
 
 #: ../../installation.rst:110
 msgid "qds"
-msgstr ""
+msgstr "qds"
 
 #: ../../installation.rst:110
 msgid "``pip install 'apache-airflow[qds]'``"
-msgstr ""
+msgstr "``pip install ‘apache-airflow[qds]’``"
 
 #: ../../installation.rst:110
 msgid "Enable QDS (Qubole Data Service) support"
-msgstr ""
+msgstr "QDS (Qubole Data Service) 지원 사용"
 
 #: ../../installation.rst:112
 msgid "rabbitmq"
-msgstr ""
+msgstr "rabbitmq"
 
 #: ../../installation.rst:112
 msgid "``pip install 'apache-airflow[rabbitmq]'``"
-msgstr ""
+msgstr "``pip install ‘apache-airflow[rabbitmq]’``"
 
 #: ../../installation.rst:112
 msgid "RabbitMQ support as a Celery backend"
-msgstr ""
+msgstr "셀러리 백엔드(Celery backend)로서 RabbitMQ 지원"
 
 #: ../../installation.rst:114
 msgid "redis"
-msgstr ""
+msgstr "redis"
 
 #: ../../installation.rst:114
 msgid "``pip install 'apache-airflow[redis]'``"
-msgstr ""
+msgstr "``pip install ‘apache-airflow[redis]’``"
 
 #: ../../installation.rst:114
 msgid "Redis hooks and sensors"
-msgstr ""
+msgstr "레디스(Redis) 훅(hooks)과 센서(sensors)"
 
 #: ../../installation.rst:116
 msgid "samba"
-msgstr ""
+msgstr "samba"
 
 #: ../../installation.rst:116
 msgid "``pip install 'apache-airflow[samba]'``"
-msgstr ""
+msgstr "``pip install ‘apache-airflow[samba]’``"
 
 #: ../../installation.rst:116
 msgid ":class:`airflow.operators.hive_to_samba_operator.Hive2SambaOperator`"
-msgstr ""
+msgstr ":class:`airflow.operators.hive_to_samba_operator.Hive2SambaOperator`"
 
 #: ../../installation.rst:118
 msgid "slack"
-msgstr ""
+msgstr "slack"
 
 #: ../../installation.rst:118
 msgid "``pip install 'apache-airflow[slack]'``"
-msgstr ""
+msgstr "``pip install ‘apache-airflow[slack]’``"
 
 #: ../../installation.rst:118
 msgid ":class:`airflow.operators.slack_operator.SlackAPIOperator`"
-msgstr ""
+msgstr ":class:`airflow.operators.slack_operator.SlackAPIOperator`"
 
 #: ../../installation.rst:120
 msgid "ssh"
-msgstr ""
+msgstr "ssh"
 
 #: ../../installation.rst:120
 msgid "``pip install 'apache-airflow[ssh]'``"
-msgstr ""
+msgstr "``pip install ‘apache-airflow[ssh]’``"
 
 #: ../../installation.rst:120
 msgid "SSH hooks and Operator"
-msgstr ""
+msgstr "SSH 훅(hooks)과 오퍼레이터(Operator)"
 
 #: ../../installation.rst:122
 msgid "vertica"
-msgstr ""
+msgstr "vertica"
 
 #: ../../installation.rst:122
 msgid "``pip install 'apache-airflow[vertica]'``"
-msgstr ""
+msgstr "``pip install ‘apache-airflow[vertica]’``"
 
 #: ../../installation.rst:122
 msgid "Vertica hook support as an Airflow backend"
-msgstr ""
+msgstr "에어플로우 백엔드로서 버티카(Vertica) 훅(hook) 지원"
 
 #: ../../installation.rst:126
 msgid "Initiating Airflow Database"
-msgstr ""
+msgstr "에어플로우 데이터베이스 초기"
 
 #: ../../installation.rst:128
 msgid ""
@@ -472,10 +494,15 @@ msgid ""
 "default SQLite option. If you don't want to use SQLite, then take a look "
 "at :doc:`howto/initialize-database` to setup a different database."
 msgstr ""
+"에어플로우는 태스크를 실행이 가능하기 전에 초기화 된 데이터베이스를 필요로 "
+"한다. 만약 에어플로우를 방금 막 배우고 실험해보는 중이라면, 기본 SQLite 옵션"
+"을 사용할 수 있다. SQLite 사용하는 것을 원치 않는다면, 다른 데이터베이스로 "
+"설정하기 위해 :doc:`howto/initialize-database`\\를 살펴보라."
 
 #: ../../installation.rst:133
 msgid ""
-"After configuration, you'll need to initialize the database before you "
-"can run tasks:"
+"After configuration, you'll need to initialize the database before you can "
+"run tasks:"
 msgstr ""
-
+"환경 설정을 하고 난 후, 태스크를 실행하기 전 데이터 베이스를 초기화해야 한"
+"다:"
