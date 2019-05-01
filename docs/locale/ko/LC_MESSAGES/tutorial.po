@@ -3,43 +3,48 @@
 # This file is distributed under the same license as the Airflow package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Airflow 1.10.1\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-04-03 15:37+0900\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"PO-Revision-Date: 2019-05-01 19:13+0900\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.6.0\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: ko\n"
+"X-Generator: Poedit 2.2.1\n"
 
 #: ../../tutorial.rst:20
 msgid "Tutorial"
-msgstr ""
+msgstr "튜토리얼(Tutorial)"
 
 #: ../../tutorial.rst:22
 msgid ""
-"This tutorial walks you through some of the fundamental Airflow concepts,"
-" objects, and their usage while writing your first pipeline."
+"This tutorial walks you through some of the fundamental Airflow "
+"concepts, objects, and their usage while writing your first pipeline."
 msgstr ""
+"이 튜토리얼에서는 첫 파이프라인을 작성하는 동안 기본적인 에어플로우 개념"
+"(concept), 객체(object) 그리고 사용 방법(usage)에 대해 안내한다."
 
 #: ../../tutorial.rst:26
 msgid "Example Pipeline definition"
-msgstr ""
+msgstr "파이프라인 정의(Pipleline definition) 예시"
 
 #: ../../tutorial.rst:28
 msgid ""
 "Here is an example of a basic pipeline definition. Do not worry if this "
 "looks complicated, a line by line explanation follows below."
 msgstr ""
+"기본적인 파이프라인 정의에 대한 예시가 있다. 복잡해 보여도 걱정하지 말"
+"고, 아래에 있는 한 줄 한 줄의 설명을 따라오라."
 
 #: ../../tutorial.rst:90
 msgid "It's a DAG definition file"
-msgstr ""
+msgstr "DAG 정의 파일"
 
 #: ../../tutorial.rst:92
 msgid ""
@@ -47,11 +52,18 @@ msgid ""
 "everyone at first) is that this Airflow Python script is really just a "
 "configuration file specifying the DAG's structure as code. The actual "
 "tasks defined here will run in a different context from the context of "
-"this script. Different tasks run on different workers at different points"
-" in time, which means that this script cannot be used to cross "
+"this script. Different tasks run on different workers at different "
+"points in time, which means that this script cannot be used to cross "
 "communicate between tasks. Note that for this purpose we have a more "
 "advanced feature called ``XCom``."
 msgstr ""
+"제대로 파악해야 할 한 가지는 (처음에는 모든 사람에게 그다지 직관적이지 않"
+"을 수도 있지만) 이 에어플로우 파이썬 스크립트가 실제로 DAG의 구조를 코드"
+"로 작성한 환경 설정 파일이라는 것이다. 여기서 정의된 실제 태스크(task)는 "
+"이 스크립트와는 다른 맥락(context)에서 실행될 것이다. 서로 다른 태스크는 "
+"서로 다른 워커(worker)에서 각각 다른 시점에 실행되는데, 이 말은 스크립트"
+"가 태스크 간의 상호 통신하는데 사용할 수 없다는 의미이다. 이러한 목적을 "
+"위해서는 ``XCom``\\이라는 보다 발전된 기능을 가지고 있다."
 
 #: ../../tutorial.rst:101
 msgid ""
@@ -61,20 +73,27 @@ msgid ""
 "(seconds, not minutes) since the scheduler will execute it periodically "
 "to reflect the changes if any."
 msgstr ""
+"사람들은 때때로 DAG 정의 파일을 실제 데이터 프로세싱을 하는 장소로 생각하"
+"는데 전혀 그렇지 않다! 이 스크립트의 목적은 DAG 객체를 정의하는 것이다. "
+"스케쥴러(scheduler)가 어떤 변경 사항이든 반영하기 위해 주기적으로 실행하"
+"기 때문에 스크립트를 신속하게(분 단위가 아닌 초 단위로) 평가할 필요가 있"
+"다."
 
 #: ../../tutorial.rst:109
 msgid "Importing Modules"
-msgstr ""
+msgstr "모듈 가져오기(Import)"
 
 #: ../../tutorial.rst:111
 msgid ""
 "An Airflow pipeline is just a Python script that happens to define an "
 "Airflow DAG object. Let's start by importing the libraries we will need."
 msgstr ""
+"에어플로우 파이프라인은 에어플로우 DAG 객체를 정의는 파이썬 스크립트일 뿐"
+"이다. 이제 필요한 라이브러리 가져오기(import)를 시작해보자."
 
 #: ../../tutorial.rst:123
 msgid "Default Arguments"
-msgstr ""
+msgstr "인자 기본값(Default Arguments)"
 
 #: ../../tutorial.rst:124
 msgid ""
@@ -83,12 +102,18 @@ msgid ""
 "would become redundant), or (better!) we can define a dictionary of "
 "default parameters that we can use when creating tasks."
 msgstr ""
+"DAG와 몇 가지 태스크(task)를 생성하려고 하는데, 각 태스크의 (중복될 수도 "
+"있는) 생성자(constructor)에 대한 인자(arguments) 집합을 명시적으로 넘겨"
+"줄 수 도 있고, 또는 태스크를 생성할 때 사용할 수 있는 기본 인자의 딕셔너"
+"리(dictionary)를 정의할 수 있다(더 나은 방법일 수 있다!)."
 
 #: ../../tutorial.rst:148
 msgid ""
 "For more information about the BaseOperator's parameters and what they "
 "do, refer to the :py:class:`airflow.models.BaseOperator` documentation."
 msgstr ""
+"BaseOperator의 인자와 이것이 무슨 일을 하는지에 대한 더 많은 정보는 :py:"
+"class:`airflow.models.BaseOperator` 문서를 참조하라."
 
 #: ../../tutorial.rst:151
 msgid ""
@@ -96,29 +121,39 @@ msgid ""
 "would serve different purposes. An example of that would be to have "
 "different settings between a production and development environment."
 msgstr ""
+"또한, 다른 목적을 제공할 수 있는 다른 인자들의 집합을 쉽게 정의할 수 있음"
+"에 유의하라. 예를 들어 제품(production) 환경과 개발(development) 환경 간"
+"의 설정을 다르게 할 수 있다."
 
 #: ../../tutorial.rst:157
 msgid "Instantiate a DAG"
-msgstr ""
+msgstr "DAG 인스턴스화(Instantiate)"
 
 #: ../../tutorial.rst:159
 msgid ""
 "We'll need a DAG object to nest our tasks into. Here we pass a string "
-"that defines the ``dag_id``, which serves as a unique identifier for your"
-" DAG. We also pass the default argument dictionary that we just defined "
-"and define a ``schedule_interval`` of 1 day for the DAG."
+"that defines the ``dag_id``, which serves as a unique identifier for "
+"your DAG. We also pass the default argument dictionary that we just "
+"defined and define a ``schedule_interval`` of 1 day for the DAG."
 msgstr ""
+"태스크들을 잘 포개 놓기 위해 DAG 객체가 필요할 것이다. 여기에 DAG의 고유 "
+"식별자로서의 ``dag_id``\\를 정의하는 문자열을 전달한. 또한 방금 정의한 인"
+"자 기본값 딕셔너리를 전달하고 DAG에 위한 1일의 ``schedule_interval``\\를 "
+"정의한다."
 
 #: ../../tutorial.rst:170
 msgid "Tasks"
-msgstr ""
+msgstr "태스크(Tasks)"
 
 #: ../../tutorial.rst:171
 msgid ""
 "Tasks are generated when instantiating operator objects. An object "
-"instantiated from an operator is called a constructor. The first argument"
-" ``task_id`` acts as a unique identifier for the task."
+"instantiated from an operator is called a constructor. The first "
+"argument ``task_id`` acts as a unique identifier for the task."
 msgstr ""
+"태스크는 오퍼레이터(operator) 객체를 인스턴스화 할 때 생성된다. 오퍼레이"
+"터로부터 인스턴스화 된 객체는 생성자(constuctor)라고 불린다. 첫번째 인자 "
+"``task_id`` \\는 태스크의 고유한 식별자로 역할을 한다."
 
 #: ../../tutorial.rst:188
 msgid ""
@@ -126,44 +161,54 @@ msgid ""
 "(``bash_command``) and an argument common to all operators (``retries``) "
 "inherited from BaseOperator to the operator's constructor. This is "
 "simpler than passing every argument for every constructor call. Also, "
-"notice that in the second task we override the ``retries`` parameter with"
-" ``3``."
+"notice that in the second task we override the ``retries`` parameter "
+"with ``3``."
 msgstr ""
+"BasoOperator에서 오퍼레이터 생성자로 상속된 모든 오퍼레이터들의 공통된 인"
+"자(``retries``\\)와 오퍼레이터의 특별한 인자(``bash_command``\\)를 어떻"
+"게 넘겨주는지 주목하라. 생성자를 호출할 때마다 모든 인자를 넘겨주는 것보"
+"다 훨씬 더 간단하다. 또한,  두번째 태스크에서 ``retries`` 인자를 ``3``"
+"\\으로 오버라이드 한 점에 주목하라."
 
 #: ../../tutorial.rst:194
 msgid "The precedence rules for a task are as follows:"
-msgstr ""
+msgstr "태스크를 위한 우선 순위 규칙은 다음과 같다:"
 
 #: ../../tutorial.rst:196
 msgid "Explicitly passed arguments"
-msgstr ""
+msgstr "명시적으로 넘겨준 인"
 
 #: ../../tutorial.rst:197
 msgid "Values that exist in the ``default_args`` dictionary"
-msgstr ""
+msgstr "``default_args`` 딕셔너리 안에 존재하는 값"
 
 #: ../../tutorial.rst:198
 msgid "The operator's default value, if one exists"
-msgstr ""
+msgstr "기본값이 있는 경우, 오퍼레이터의 기본 값"
 
 #: ../../tutorial.rst:200
 msgid ""
 "A task must include or inherit the arguments ``task_id`` and ``owner``, "
 "otherwise Airflow will raise an exception."
 msgstr ""
+"태스크는 ``task_id``\\와 ``owner`` 인자를 반드시 포함하거나 상속받아야 한"
+"다, 아니면 에어플로우는 예외(exception)을 발생시킬 것이다."
 
 #: ../../tutorial.rst:204
 msgid "Templating with Jinja"
-msgstr ""
+msgstr "Jinja를 사용한 템플릿화(Templating)"
 
 #: ../../tutorial.rst:205
 msgid ""
-"Airflow leverages the power of `Jinja Templating "
-"<http://jinja.pocoo.org/docs/dev/>`_  and provides the pipeline author "
-"with a set of built-in parameters and macros. Airflow also provides hooks"
-" for the pipeline author to define their own parameters, macros and "
-"templates."
+"Airflow leverages the power of `Jinja Templating <http://jinja.pocoo.org/"
+"docs/dev/>`_  and provides the pipeline author with a set of built-in "
+"parameters and macros. Airflow also provides hooks for the pipeline "
+"author to define their own parameters, macros and templates."
 msgstr ""
+"에어플로우는 `Jinja Templating <http://jinja.pocoo.org/docs/dev/>`_\\의 "
+"힘을 이용하여 파이프라인 작성자에게 내장된 인자와 매크로(macros)의 집합"
+"을 제공한다. 또한 에어플로우는 파이프라인 작성자가 자체 인자, 매크로, 템"
+"플릿을 정의할 수 있 훅(hooks)을 제공한다."
 
 #: ../../tutorial.rst:212
 msgid ""
@@ -173,15 +218,23 @@ msgid ""
 "point to the most common template variable: ``{{ ds }}`` (today's \"date "
 "stamp\")."
 msgstr ""
+"이 튜토리얼은 에어플로우에서 템플릿을 이용해 할 수 있는 것을 가볍게 보여"
+"주지만, 이 섹션의 목적은 이러한 기능이 존재하고, 이중 중괄호에 익숙해지"
+"게 하고, 가장 일반적인 템플릿 변수 ``{{ ds }}``\\(오늘의 “date stamp”)를 "
+"가리키는 것이다."
 
 #: ../../tutorial.rst:234
 #, python-format
 msgid ""
 "Notice that the ``templated_command`` contains code logic in ``{% %}`` "
 "blocks, references parameters like ``{{ ds }}``, calls a function as in "
-"``{{ macros.ds_add(ds, 7)}}``, and references a user-defined parameter in"
-" ``{{ params.my_param }}``."
+"``{{ macros.ds_add(ds, 7)}}``, and references a user-defined parameter "
+"in ``{{ params.my_param }}``."
 msgstr ""
+"``templated_command``\\에는 ``{% %}`` 블록 내부에 코드 로직을 담고 있고, "
+"``{{ ds }}``\\와 같이 매개 변수(parameters)를 참조하고, ``{{ macros."
+"ds_add(ds, 7) }}``\\에서와 같이 함수를 호출하고, ``{{ params.my_param }}"
+"``\\에서 사용자 정의 매개변수를 참조한다는 점에 유의하라."
 
 #: ../../tutorial.rst:239
 msgid ""
@@ -190,6 +243,9 @@ msgid ""
 "understand how the parameter ``my_param`` makes it through to the "
 "template."
 msgstr ""
+"``BaseOperator`` 내부의 ``params`` 훅(hook)은 매개 변수 및/또는 객체의 딕"
+"셔너리를 템플릿에 전달할 수 있게 한다. 시간을 들여 템플릿을 통해 "
+"``my_param`` 매개 변수를 어떻게 만드는지 이해하길 바란다."
 
 #: ../../tutorial.rst:243
 msgid ""
@@ -203,6 +259,12 @@ msgid ""
 "``template_searchpath`` as pointing to any folder locations in the DAG "
 "constructor call."
 msgstr ""
+"``bash_command=‘templated_command.sh’``\\처럼 파일들은 ``bash_command`` "
+"인자를 통해 전달이 가능한데, 여기서 파일 위치는 파이프라인 파일이 들어 있"
+"는 디렉토리에 대해 상대적이다(이 경우에서는 ``tutorial.py``\\). 스크립트"
+"의 로직과 파이프라인 코드를 분리하고, 서로 다른 언어로 구성된 파일에서 적"
+"절한 코드 강조를 허용하고, 파이프라인 구조화에 일반적인 유연성과 같이 많"
+"은 이유로 봤을 때 바람직할 수 있다."
 
 #: ../../tutorial.rst:252
 #, python-format
@@ -217,22 +279,35 @@ msgid ""
 "For more information regarding custom filters have a look at the `Jinja "
 "Documentation <http://jinja.pocoo.org/docs/dev/api/#writing-filters>`_"
 msgstr ""
+"같은 DAG 생성자(constructor) 호출을 사용하면, 자신의 변수(variables)를 명"
+"시할 수 있는 ``user_defined_macros`` 정의가 가능하다. 예를 들어, "
+"``dict(foo=‘bar’)``\\를 인자로 전달하면 템플릿에서 ``{{ foo }}``\\를 사용"
+"할 수 있다. 게다가, ``user_defined_filters``\\를 명시하는 것은 자체 필터"
+"(filters)를 등록할 수 있게 한다. 예를 들어, ``dict(hello=lambda name: "
+"‘Hello %s’ % name)``\\을 인자에 전달하면 템플릿에서 ``{{ ‘world’ | "
+"hello }}``\\를 사용할 수 있다. 사용자 정의 필터에 대해 더 많은 정보는 여"
+"기에서 볼 수 있다`Jinja Documentation <http://jinja.pocoo.org/docs/dev/"
+"api/#writing-filters>`_"
 
 #: ../../tutorial.rst:262
 msgid ""
 "For more information on the variables and macros that can be referenced "
 "in templates, make sure to read through the :doc:`macros`"
 msgstr ""
+"템플릿에서 참조될 수 있는 변수(variables)과 매크로(macros)에 대한 더 많"
+"은 정보는 :doc:`macros`\\를 읽어보라"
 
 #: ../../tutorial.rst:266
 msgid "Setting up Dependencies"
-msgstr ""
+msgstr "종속(Dependencies) 설정"
 
 #: ../../tutorial.rst:267
 msgid ""
 "We have tasks `t1`, `t2` and `t3` that do not depend on each other. "
 "Here's a few ways you can define dependencies between them:"
 msgstr ""
+"서로 독립적인 `t1`\\, `t2` 그리고 `t3` 태스크가 있다고 하자. 서로 간의 종"
+"속성을 정의할 수 있는 몇 가지 방법이 있다:"
 
 #: ../../tutorial.rst:298
 msgid ""
@@ -240,37 +315,46 @@ msgid ""
 "it finds cycles in your DAG or when a dependency is referenced more than "
 "once."
 msgstr ""
+"스크립트를 실행할 때, 에어플로우는 DAG 내부에 순환(cycle)이 발견되거나 종"
+"속성이 두 번 이상 참조될 때 예외를 발생시킨다는 점에 유의하라."
 
 #: ../../tutorial.rst:303
 msgid "Recap"
-msgstr ""
+msgstr "리캡(Recap)"
 
 #: ../../tutorial.rst:304
 msgid ""
 "Alright, so we have a pretty basic DAG. At this point your code should "
 "look something like this:"
 msgstr ""
+"꽤나 기본적인 DAG를 가지고 있다. 이 시점에서 코드는 다음과 같이 보일 것이"
+"다:"
 
 #: ../../tutorial.rst:366 ../../tutorial.rst:403
 msgid "Testing"
-msgstr ""
+msgstr "테스팅(Testing)"
 
 #: ../../tutorial.rst:369
 msgid "Running the Script"
-msgstr ""
+msgstr "스크립트 실행"
 
 #: ../../tutorial.rst:371
 msgid ""
 "Time to run some tests. First, let's make sure the pipeline is parsed "
 "successfully."
 msgstr ""
+"테스트를 시작할 시간이다. 우선, 파이프라인이 성공적으로 파싱되었는지 확인"
+"한다."
 
 #: ../../tutorial.rst:374
 msgid ""
-"Let's assume we're saving the code from the previous step in "
-"``tutorial.py`` in the DAGs folder referenced in your ``airflow.cfg``. "
-"The default location for your DAGs is ``~/airflow/dags``."
+"Let's assume we're saving the code from the previous step in ``tutorial."
+"py`` in the DAGs folder referenced in your ``airflow.cfg``. The default "
+"location for your DAGs is ``~/airflow/dags``."
 msgstr ""
+"``airflow.cfg``에서 참조된 DAG 폴더에 있는 ``tutorial.py``\\의 이전 단계"
+"에서 코드를 저장하고 있다고 가정한다. DAG의 기본 위치는 ``~/airflow/"
+"dags``\\이다."
 
 #: ../../tutorial.rst:382
 msgid ""
@@ -278,14 +362,16 @@ msgid ""
 "anything horribly wrong, and that your Airflow environment is somewhat "
 "sound."
 msgstr ""
+"만약 스크립트가 예외(exception)을 발생시키지 않는다면 뭔가 잘못은 저지르"
+"지 않았다는 의미이며, 에어플로우 환경이 어느정도 괜찮다는 것을 의미한다."
 
 #: ../../tutorial.rst:387
 msgid "Command Line Metadata Validation"
-msgstr ""
+msgstr "커맨드 라인(Command Line) 메타데이터 검증(Validation)"
 
 #: ../../tutorial.rst:388
 msgid "Let's run a few commands to validate this script further."
-msgstr ""
+msgstr "이 스크립트를 더 검증하기 위해 몇 가지 명령을 실행해보자."
 
 #: ../../tutorial.rst:404
 msgid ""
@@ -293,30 +379,42 @@ msgid ""
 "date specified in this context is an ``execution_date``, which simulates "
 "the scheduler running your task or dag at a specific date + time:"
 msgstr ""
+"특정 날짜에 실제로 태스크 인스턴스를 실행하여 테스트해보자. 이 컨텍스트에"
+"서 명시된 날짜는 ``execution_date``\\인데, 이것은 특정 날짜 + 시간에 dag "
+"또는 태스크를 실행하는 스케쥴러를 시뮬레이션한다:"
 
 #: ../../tutorial.rst:418
 msgid ""
 "Now remember what we did with templating earlier? See how this template "
 "gets rendered and executed by running this command:"
 msgstr ""
+"앞서 템플릿화해서 한 것을 기억하는가? 이 명령어로 템플릿이 어떻게 렌더링"
+"되고 실행되는지 보라:"
 
 #: ../../tutorial.rst:426
 msgid ""
 "This should result in displaying a verbose log of events and ultimately "
 "running your bash command and printing the result."
 msgstr ""
+"이것은 이벤트에 대한 상세(verbose) 로그를 표시하고 궁금적으로는 배쉬"
+"(bash) 명령어를 실행하고 결과를 출력한다."
 
 #: ../../tutorial.rst:429
 msgid ""
 "Note that the ``airflow test`` command runs task instances locally, "
 "outputs their log to stdout (on screen), doesn't bother with "
-"dependencies, and doesn't communicate state (running, success, failed, "
-"...) to the database. It simply allows testing a single task instance."
+"dependencies, and doesn't communicate state (running, success, "
+"failed, ...) to the database. It simply allows testing a single task "
+"instance."
 msgstr ""
+"``airflow test`` 명령어가 로컬에서 태스크 인스턴스를 실행하고, (화면에"
+"서) stdout으로 로그를 출력하고, 종속성에 구애받지 않으며, 상태(running, "
+"success, failed, …)를 데이터베이스에 전달하지 않는다는 것을 유의하라. 간"
+"단히 단일 태스크 인스턴스를 테스트할 수도 있다."
 
 #: ../../tutorial.rst:435
 msgid "Backfill"
-msgstr ""
+msgstr "백(Backfill)"
 
 #: ../../tutorial.rst:436
 msgid ""
@@ -327,13 +425,22 @@ msgid ""
 "web server if you are interested in tracking the progress visually as "
 "your backfill progresses."
 msgstr ""
+"모든 것이 잘 동작하는 것처럼 보이니, 백필(backfill)을 실행하자. "
+"``backfill``\\은 종속성을 유지하고, 로그를 파일로 내보내고 데이터베이스"
+"에 상태를 기록하기 위해 통신한다. 만약 웹서버를 가지고 있다면, 프로그레스"
+"(progress)를 추적할 수 있을 것이다. 백필이 진행됨에 따라 시각적으로 진행 "
+"상황을 추적하고 싶다면 ``airflow webserver``\\가 웹 서버를 시작할 것이다."
 
 #: ../../tutorial.rst:442
 msgid ""
 "Note that if you use ``depends_on_past=True``, individual task instances "
-"will depend on the success of the preceding task instance, except for the"
-" start_date specified itself, for which this dependency is disregarded."
+"will depend on the success of the preceding task instance, except for "
+"the start_date specified itself, for which this dependency is "
+"disregarded."
 msgstr ""
+"``depends_on_past=True``\\를 사용한다면, 종속성이 무시되는 start_date를 "
+"제외하고 개별 태스크 인스턴스는 이전 태스크 인스턴스의 성공 여부에 의해 "
+"결정된다는 점에 유의하라."
 
 #: ../../tutorial.rst:446
 msgid ""
@@ -341,44 +448,48 @@ msgid ""
 "``end_date``, which are used to populate the run schedule with task "
 "instances from this dag."
 msgstr ""
+"이 맥락에서 날짜 범위는 ``start_date``\\과 선택적으로 ``end_date``\\이"
+"며, 실행 스케쥴을 dag의 태스크 인스턴스로 채우는데 사용된다."
 
 #: ../../tutorial.rst:458
 msgid "What's Next?"
-msgstr ""
+msgstr "다음은 무엇인가?"
 
 #: ../../tutorial.rst:459
 msgid ""
 "That's it, you've written, tested and backfilled your very first Airflow "
 "pipeline. Merging your code into a code repository that has a master "
-"scheduler running against it should get it to get triggered and run every"
-" day."
+"scheduler running against it should get it to get triggered and run "
+"every day."
 msgstr ""
+"첫 에어플로우 파이프라인을 작성하고, 테스트하고, 백필한 것으로 다 됐다. "
+"마스터 스케쥴러가 실행되는 레포지토리(repository)에 코드를 병합(merge)하"
+"고면 매일 코드를 트리거하고 실행해야 한다."
 
 #: ../../tutorial.rst:463
 msgid "Here's a few things you might want to do next:"
-msgstr ""
+msgstr "다음에 해야 할 몇 가지 사항이 있다:"
 
 #: ../../tutorial.rst:465
 msgid "Take an in-depth tour of the UI - click all the things!"
-msgstr ""
+msgstr "UI를 자세하게 둘러보라 - 모든 항목을 클릭!"
 
 #: ../../tutorial.rst:466
 msgid "Keep reading the docs! Especially the sections on:"
-msgstr ""
+msgstr "문서를 계속 읽어라! 특히 다음 섹션:"
 
 #: ../../tutorial.rst:468
 msgid "Command line interface"
-msgstr ""
+msgstr "커맨드 라인 인터페이스(Command line interface)"
 
 #: ../../tutorial.rst:469
 msgid "Operators"
-msgstr ""
+msgstr "오퍼레이터(Operators)"
 
 #: ../../tutorial.rst:470
 msgid "Macros"
-msgstr ""
+msgstr "매크로(Macros)"
 
 #: ../../tutorial.rst:472
 msgid "Write your first pipeline!"
-msgstr ""
-
+msgstr "당신의 첫번째 파이프라인을 작성하라!"

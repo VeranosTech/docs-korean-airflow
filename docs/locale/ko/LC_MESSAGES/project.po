@@ -3,165 +3,180 @@
 # This file is distributed under the same license as the Airflow package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Airflow 1.10.1\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-04-03 15:37+0900\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"PO-Revision-Date: 2019-05-01 17:15+0900\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.6.0\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: ko\n"
+"X-Generator: Poedit 2.2.1\n"
 
 #: ../../project.rst:19
 msgid "Project"
-msgstr ""
+msgstr "프로젝트(Project)"
 
 #: ../../project.rst:22
 msgid "History"
-msgstr ""
+msgstr "히스토리(History)"
 
 #: ../../project.rst:24
 msgid ""
-"Airflow was started in October 2014 by Maxime Beauchemin at Airbnb. It "
-"was open source from the very first commit and officially brought under "
-"the Airbnb GitHub and announced in June 2015."
+"Airflow was started in October 2014 by Maxime Beauchemin at Airbnb. It was open "
+"source from the very first commit and officially brought under the Airbnb "
+"GitHub and announced in June 2015."
 msgstr ""
+"에어플로우는 2014년 10월 에어비앤비(Airbnb)의 Maxime Beauchemin에 의해 시작되었"
+"다. 에어플로우는 가장 첫번째 커밋(commit)에서부터 오픈 소스였으며, 에어비앤비 깃"
+"헙(Airbnb GitHub)에 속해 있고 2015년 6월에 발표되었다."
 
 #: ../../project.rst:28
 msgid ""
-"The project joined the Apache Software Foundation's Incubator program in "
-"March 2016 and the Foundation `announced Apache Airflow as a Top-Level "
-"Project <https://blogs.apache.org/foundation/entry/the-apache-software-"
-"foundation-announces44>`_ in January 2019."
+"The project joined the Apache Software Foundation's Incubator program in March "
+"2016 and the Foundation `announced Apache Airflow as a Top-Level Project "
+"<https://blogs.apache.org/foundation/entry/the-apache-software-foundation-"
+"announces44>`_ in January 2019."
 msgstr ""
+"이 프로젝트는 2016년 3월 아파치 소프트웨어 재단(Apache Software Foundation)의 인"
+"큐베이터(Incubator) 프로그램과 2019년 1월 `announced Apache Airflow as a Top-"
+"Level Project <https://blogs.apache.org/foundation/entry/the-apache-software-"
+"foundation-announces44>`_ \\재단에 참여했다."
 
 #: ../../project.rst:35
 msgid "Committers"
-msgstr ""
+msgstr "커밋터(Committers)"
 
 #: ../../project.rst:37
 msgid "@mistercrunch (Maxime \"Max\" Beauchemin)"
-msgstr ""
+msgstr "@mistercrunch (Maxime “Max” Beauchemin)"
 
 #: ../../project.rst:38
 msgid "@r39132 (Siddharth \"Sid\" Anand)"
-msgstr ""
+msgstr "@r39132 (Siddharth “Sid” Anand)"
 
 #: ../../project.rst:39
 msgid "@criccomini (Chris Riccomini)"
-msgstr ""
+msgstr "@criccomini (Chris Riccomini)"
 
 #: ../../project.rst:40
 msgid "@bolkedebruin (Bolke de Bruin)"
-msgstr ""
+msgstr "@bolkedebruin (Bolke de Bruin)"
 
 #: ../../project.rst:41
 msgid "@artwr (Arthur Wiedmer)"
-msgstr ""
+msgstr "@artwr (Arthur Wiedmer)"
 
 #: ../../project.rst:42
 msgid "@jlowin (Jeremiah Lowin)"
-msgstr ""
+msgstr "@jlowin (Jeremiah Lowin)"
 
 #: ../../project.rst:43
 msgid "@aoen (Dan Davydov)"
-msgstr ""
+msgstr "@aoen (Dan Davydov)"
 
 #: ../../project.rst:44
 msgid "@msumit (Sumit Maheshwari)"
-msgstr ""
+msgstr "@msumit (Sumit Maheshwari)"
 
 #: ../../project.rst:45
 msgid "@alexvanboxel (Alex Van Boxel)"
-msgstr ""
+msgstr "@alexvanboxel (Alex Van Boxel)"
 
 #: ../../project.rst:46
 msgid "@saguziel (Alex Guziel)"
-msgstr ""
+msgstr "@saguziel (Alex Guziel)"
 
 #: ../../project.rst:47
 msgid "@joygao (Joy Gao)"
-msgstr ""
+msgstr "@joygao (Joy Gao)"
 
 #: ../../project.rst:48
 msgid "@fokko (Fokko Driesprong)"
-msgstr ""
+msgstr "@fokko (Fokko Driesprong)"
 
 #: ../../project.rst:49
 msgid "@ash (Ash Berlin-Taylor)"
-msgstr ""
+msgstr "@ash (Ash Berlin-Taylor)"
 
 #: ../../project.rst:50
 msgid "@kaxilnaik (Kaxil Naik)"
-msgstr ""
+msgstr "@kaxilnaik (Kaxil Naik)"
 
 #: ../../project.rst:51
 msgid "@feng-tao (Tao Feng)"
-msgstr ""
+msgstr "@feng-tao (Tao Feng)"
 
 #: ../../project.rst:52
 msgid "@hiteshs (Hitesh Shah)"
-msgstr ""
+msgstr "@hiteshs (Hitesh Shah)"
 
 #: ../../project.rst:53
 msgid "@jghoman (Jakob Homan)"
-msgstr ""
+msgstr "@jghoman (Jakob Homan)"
 
 #: ../../project.rst:54
 msgid "@XD-DENG (Xiaodong Deng)"
-msgstr ""
+msgstr "@XD-DENG (Xiaodong Deng)"
 
 #: ../../project.rst:55
 msgid "@dimberman (Daniel Imberman)"
-msgstr ""
+msgstr "@dimberman (Daniel Imberman)"
 
 #: ../../project.rst:57
 msgid ""
-"For the full list of contributors, take a look at `Airflow's Github "
-"Contributor page: "
-"<https://github.com/apache/airflow/graphs/contributors>`_"
+"For the full list of contributors, take a look at `Airflow's Github Contributor "
+"page: <https://github.com/apache/airflow/graphs/contributors>`_"
 msgstr ""
+"전체 공헌자(contributors) 목록은 이 곳에서 보라 `Airflow’s Github Contributor "
+"page: <https://github.com/apache/airflow/graphs/contributors>`_"
 
 #: ../../project.rst:63
 msgid "Resources & links"
-msgstr ""
+msgstr "리소스(Resources) & 링크(Links)"
 
 #: ../../project.rst:65
 msgid "`Airflow's official documentation <http://airflow.apache.org/>`_"
-msgstr ""
+msgstr "`Airflow’s official documentation <http://airflow.apache.org/>`_"
 
 #: ../../project.rst:66
 msgid ""
 "Mailing list (send emails to ``dev-subscribe@airflow.apache.org`` and/or "
 "``commits-subscribe@airflow.apache.org`` to subscribe to each)"
 msgstr ""
+"메일 목록(``dev-subscribe@airflow.apache.org`` 및/또는 ``commits-"
+"subscribe@airflow.apache.org`` 각각 구독하도록  이메일 보내기)"
 
 #: ../../project.rst:70
 msgid "`Issues on Apache's Jira <https://issues.apache.org/jira/browse/AIRFLOW>`_"
 msgstr ""
+"`Issues on Apache’s Jira <https://issues.apache.org/jira/browse/AIRFLOW>`_"
 
 #: ../../project.rst:71
 msgid "`Slack (chat) Channel <https://apache-airflow-slack.herokuapp.com/>`_"
-msgstr ""
+msgstr "`Slack (chat) Channel <https://apache-airflow-slack.herokuapp.com/>`_"
 
 #: ../../project.rst:72
 msgid ""
-"`More resources and links to Airflow related content on the Wiki "
-"<https://cwiki.apache.org/confluence/display/AIRFLOW/Airflow+Links>`_"
+"`More resources and links to Airflow related content on the Wiki <https://cwiki."
+"apache.org/confluence/display/AIRFLOW/Airflow+Links>`_"
 msgstr ""
+"`More resources and links to Airflow related content on the Wiki <https://cwiki."
+"apache.org/confluence/display/AIRFLOW/Airflow+Links>`_"
 
 #: ../../project.rst:77
 msgid "Roadmap"
-msgstr ""
+msgstr "로드맵(Roadmap)"
 
 #: ../../project.rst:79
 msgid ""
-"Please refer to the Roadmap on `the wiki "
-"<https://cwiki.apache.org/confluence/display/AIRFLOW/Airflow+Home>`_"
+"Please refer to the Roadmap on `the wiki <https://cwiki.apache.org/confluence/"
+"display/AIRFLOW/Airflow+Home>`_"
 msgstr ""
-
+"여에서 로드맵을 참조하라 `the wiki <https://cwiki.apache.org/confluence/display/"
+"AIRFLOW/Airflow+Home>`_"
