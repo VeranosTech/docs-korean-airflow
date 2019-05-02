@@ -3,23 +3,24 @@
 # This file is distributed under the same license as the Airflow package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Airflow 1.10.1\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-04-03 15:37+0900\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"PO-Revision-Date: 2019-05-02 11:00+0900\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.6.0\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: ko\n"
+"X-Generator: Poedit 2.2.1\n"
 
 #: ../../ui.rst:19
 msgid "UI / Screenshots"
-msgstr ""
+msgstr "UI / 스크린샷(Screenshots)"
 
 #: ../../ui.rst:20
 msgid ""
@@ -27,10 +28,13 @@ msgid ""
 "pipelines. Here's a quick overview of some of the features and "
 "visualizations you can find in the Airflow UI."
 msgstr ""
+"에어플로우 UI는 데이터 파이프라인을 모니터하고 수정(troubleshooting)하기 "
+"쉽게 만든다. 다음은 에어플로우 UI에서 볼 수 있는 몇 가지 기능과 시각화에 "
+"대한 간략한 개요이다."
 
 #: ../../ui.rst:26
 msgid "DAGs View"
-msgstr ""
+msgstr "DAGs 보기"
 
 #: ../../ui.rst:27
 msgid ""
@@ -38,40 +42,49 @@ msgid ""
 "pages. You can see exactly how many tasks succeeded, failed, or are "
 "currently running at a glance."
 msgstr ""
+"사용자 환경에서 DAG 목록 및 유용한 페이지로의 바로 가기(shortcuts) 세트이"
+"다. 한 눈에 얼마나 많은 태스크가 성공했고, 실패했는지, 또는 실행중인지 "
+"알 수 있다."
 
 #: ../../ui.rst:39
 msgid "Tree View"
-msgstr ""
+msgstr "트리(Tree) 보기"
 
 #: ../../ui.rst:40
 msgid ""
-"A tree representation of the DAG that spans across time. If a pipeline is"
-" late, you can quickly see where the different steps are and identify the"
-" blocking ones."
+"A tree representation of the DAG that spans across time. If a pipeline "
+"is late, you can quickly see where the different steps are and identify "
+"the blocking ones."
 msgstr ""
+"시간 전체에 걸쳐 있는 DAG의 트리 표시. 파이프라인이 늦으면, 어떤 스텝에"
+"서 다른지와 막혀있는 것이 뭔지 빠르게 찾아볼 수 있다."
 
 #: ../../ui.rst:51
 msgid "Graph View"
-msgstr ""
+msgstr "그래프 보기"
 
 #: ../../ui.rst:52
 msgid ""
 "The graph view is perhaps the most comprehensive. Visualize your DAG's "
 "dependencies and their current status for a specific run."
 msgstr ""
+"그래프 뷰는 아마도 가장 종합적인 것이다. DAG의 종속성과 특정 실행에 대한 "
+"현재 상태를 시각화한다."
 
 #: ../../ui.rst:62
 msgid "Variable View"
-msgstr ""
+msgstr "변수(Variable) 보기"
 
 #: ../../ui.rst:63
 msgid ""
 "The variable view allows you to list, create, edit or delete the key-"
 "value pair of a variable used during jobs. Value of a variable will be "
 "hidden if the key contains any words in ('password', 'secret', 'passwd', "
-"'authorization', 'api_key', 'apikey', 'access_token') by default, but can"
-" be configured to show in clear-text."
+"'authorization', 'api_key', 'apikey', 'access_token') by default, but "
+"can be configured to show in clear-text."
 msgstr ""
+"변수 뷰는 작업 중에 사용되는 키-값의 쌍의 변수를 목록화하고, 생성, 편집, "
+"삭제할 수 있게 한다."
 
 #: ../../ui.rst:75
 msgid "Gantt Chart"
@@ -90,9 +103,9 @@ msgstr ""
 
 #: ../../ui.rst:88
 msgid ""
-"The duration of your different tasks over the past N runs. This view lets"
-" you find outliers and quickly understand where the time is spent in your"
-" DAG over many runs."
+"The duration of your different tasks over the past N runs. This view "
+"lets you find outliers and quickly understand where the time is spent in "
+"your DAG over many runs."
 msgstr ""
 
 #: ../../ui.rst:100
@@ -101,9 +114,9 @@ msgstr ""
 
 #: ../../ui.rst:101
 msgid ""
-"Transparency is everything. While the code for your pipeline is in source"
-" control, this is a quick way to get to the code that generates the DAG "
-"and provide yet more context."
+"Transparency is everything. While the code for your pipeline is in "
+"source control, this is a quick way to get to the code that generates "
+"the DAG and provide yet more context."
 msgstr ""
 
 #: ../../ui.rst:112
@@ -113,8 +126,7 @@ msgstr ""
 #: ../../ui.rst:113
 msgid ""
 "From the pages seen above (tree view, graph view, gantt, ...), it is "
-"always possible to click on a task instance, and get to this rich context"
-" menu that can take you to more detailed metadata, and perform some "
-"actions."
+"always possible to click on a task instance, and get to this rich "
+"context menu that can take you to more detailed metadata, and perform "
+"some actions."
 msgstr ""
-

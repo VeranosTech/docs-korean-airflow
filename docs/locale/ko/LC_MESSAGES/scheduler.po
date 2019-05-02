@@ -3,335 +3,414 @@
 # This file is distributed under the same license as the Airflow package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Airflow 1.10.1\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-04-03 15:37+0900\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"PO-Revision-Date: 2019-05-02 10:45+0900\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.6.0\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: ko\n"
+"X-Generator: Poedit 2.2.1\n"
 
 #: ../../scheduler.rst:19
 msgid "Scheduling & Triggers"
-msgstr ""
+msgstr "스케쥴링(Scheduling)& 트리거(Triggers)"
 
 #: ../../scheduler.rst:21
 msgid ""
-"The Airflow scheduler monitors all tasks and all DAGs, and triggers the "
-"task instances whose dependencies have been met. Behind the scenes, it "
-"spins up a subprocess, which monitors and stays in sync with a folder for"
-" all DAG objects it may contain, and periodically (every minute or so) "
-"collects DAG parsing results and inspects active tasks to see whether "
-"they can be triggered."
+"The Airflow scheduler monitors all tasks and all DAGs, and triggers the task "
+"instances whose dependencies have been met. Behind the scenes, it spins up a "
+"subprocess, which monitors and stays in sync with a folder for all DAG "
+"objects it may contain, and periodically (every minute or so) collects DAG "
+"parsing results and inspects active tasks to see whether they can be "
+"triggered."
 msgstr ""
+"에어플로우 스케쥴러는 모든 DAG와 모든 태스크를 모니터하고, 종속성이 충족된 태"
+"스크 인스턴스를 트리거한다. 에어플로우 스케쥴러는 백그라운드에서 서브 프로세스"
+"(subprocess)를 돌리고, 서브 프로세스에서 포함할 수 있는 모든 DAG 객체를 모니터"
+"링하고 폴더와 동기화 상태를 유지하며, 주기적으로(매 분마다) DAG파싱 결과를 수"
+"집하고 활성화된 태스크를 검사하여 트리거 할 수 있는지 확인한다."
 
 #: ../../scheduler.rst:28
 msgid ""
 "The Airflow scheduler is designed to run as a persistent service in an "
-"Airflow production environment. To kick it off, all you need to do is "
-"execute ``airflow scheduler``. It will use the configuration specified in"
-" ``airflow.cfg``."
+"Airflow production environment. To kick it off, all you need to do is execute "
+"``airflow scheduler``. It will use the configuration specified in ``airflow."
+"cfg``."
 msgstr ""
+"에어플로우 스케쥴러는 에어플로우 제품 환경(production environment)에서 영구적"
+"인 서비스로 동작하도록 설계되었다. 이를 시작하기 위해서, ``airflow scheduler``"
+"\\를 실행하기만 하면 된다. 에어플로우 스케쥴러는 ``airflow.cfg``에서 명시된 구"
+"성 설정을 사용할 것이다."
 
 #: ../../scheduler.rst:33
 msgid ""
-"Note that if you run a DAG on a ``schedule_interval`` of one day, the run"
-" stamped ``2016-01-01`` will be triggered soon after "
-"``2016-01-01T23:59``. In other words, the job instance is started once "
-"the period it covers has ended."
+"Note that if you run a DAG on a ``schedule_interval`` of one day, the run "
+"stamped ``2016-01-01`` will be triggered soon after ``2016-01-01T23:59``. In "
+"other words, the job instance is started once the period it covers has ended."
 msgstr ""
+"하루 동안의 ``schedule_interval``\\에서 DAG를 실행하면 ``2016-01-01T23:59`` 직"
+"후에 곧바로 실행 스탬프``2016-01-01``\\가 트리거 된다는 점에 유의하라. 다시 말"
+"해, 작업 인스턴스(job instance)가 그것이 적용되는 기간이 끝났을 때 시작된다."
 
 #: ../../scheduler.rst:38
 msgid ""
-"**Let's Repeat That** The scheduler runs your job one "
-"``schedule_interval`` AFTER the start date, at the END of the period."
+"**Let's Repeat That** The scheduler runs your job one ``schedule_interval`` "
+"AFTER the start date, at the END of the period."
 msgstr ""
+"**다시 반복하자면** 스케쥴러가 해당 기간의 끝(END)에서 시작 날짜 이후(AFTER)"
+"에 하나의 ``schedule_intervall`` 작업을 실행한다."
 
 #: ../../scheduler.rst:41
 msgid ""
 "The scheduler starts an instance of the executor specified in the your "
-"``airflow.cfg``. If it happens to be the "
-":class:`airflow.contrib.executors.local_executor.LocalExecutor`, tasks "
-"will be executed as subprocesses; in the case of "
-":class:`airflow.executors.celery_executor.CeleryExecutor`, "
-":class:`airflow.executors.dask_executor.DaskExecutor``, and "
-":class:`airflow.contrib.executors.mesos_executor.MesosExecutor`, tasks "
-"are executed remotely."
+"``airflow.cfg``. If it happens to be the :class:`airflow.contrib.executors."
+"local_executor.LocalExecutor`, tasks will be executed as subprocesses; in the "
+"case of :class:`airflow.executors.celery_executor.CeleryExecutor`, :class:"
+"`airflow.executors.dask_executor.DaskExecutor``, and :class:`airflow.contrib."
+"executors.mesos_executor.MesosExecutor`, tasks are executed remotely."
 msgstr ""
+"스케쥴러는 ``airflow.cfg``\\에서 명시된 실행자(executor)의 인스턴스를 시작한"
+"다. 만약에 :class:`airflow.contrib.executors.local_executor.LocalExecutor`"
+"\\가 된다면, 태스크들은 서브프로세스로(subprocesses)로 실행될 것이다; :class:"
+"`airflow.executors.celery_executor.CeleryExecutor`, :class:`airflow.executors."
+"dask_executor.DaskExecutor``, 그리고 :class:`airflow.contrib.executors."
+"mesos_executor.MesosExecutor`\\의 경우에는 원격으로 태스크가 실행된다."
 
 #: ../../scheduler.rst:46
 msgid "To start a scheduler, simply run the command:"
-msgstr ""
+msgstr "스케쥴러를 시작하기 위해, 간단히 다음의 명령을 실행한다:"
 
 #: ../../scheduler.rst:54
 msgid "DAG Runs"
-msgstr ""
+msgstr "DAG Run"
 
 #: ../../scheduler.rst:56
 msgid "A DAG Run is an object representing an instantiation of the DAG in time."
-msgstr ""
+msgstr "DAG Run은 DAG의 인스턴스화를 나타내는 객체이다."
 
 #: ../../scheduler.rst:58
 msgid ""
-"Each DAG may or may not have a schedule, which informs how ``DAG Runs`` "
-"are created. ``schedule_interval`` is defined as a DAG arguments, and "
-"receives preferably a `cron expression "
-"<https://en.wikipedia.org/wiki/Cron#CRON_expression>`_ as a ``str``, or a"
-" ``datetime.timedelta`` object. Alternatively, you can also use one of "
-"these cron \"preset\":"
+"Each DAG may or may not have a schedule, which informs how ``DAG Runs`` are "
+"created. ``schedule_interval`` is defined as a DAG arguments, and receives "
+"preferably a `cron expression <https://en.wikipedia.org/wiki/"
+"Cron#CRON_expression>`_ as a ``str``, or a ``datetime.timedelta`` object. "
+"Alternatively, you can also use one of these cron \"preset\":"
 msgstr ""
+"각 DAG에는 ``DAG Runs``\\가 어떻게 생성되었는지 알려주는 스케쥴이 있을 수도 있"
+"고 없을 수도 있다. ``schedule_intervall``\\은 DAG 인자로서 정의되고, 가급적이"
+"면 `cron expression <https://en.wikipedia.org/wiki/Cron#CRON_expression>`_\\로"
+"서 ``str``\\, 또는 ``datetime.timedelta`` 객체로 받아들인다. 그렇지 않으면, "
+"cron “preset” 중 하나를 사용할 수도 있다:"
 
 #: ../../scheduler.rst:66
 msgid "preset"
-msgstr ""
+msgstr "preset"
 
 #: ../../scheduler.rst:66
 msgid "meaning"
-msgstr ""
+msgstr "meaning"
 
 #: ../../scheduler.rst:66
 msgid "cron"
-msgstr ""
+msgstr "cron"
 
 #: ../../scheduler.rst:68
 msgid "``None``"
-msgstr ""
+msgstr "``None``"
 
 #: ../../scheduler.rst:68
 msgid "Don't schedule, use for exclusively \"externally triggered\" DAGs"
-msgstr ""
+msgstr "스케쥴하지 말고, 단독 “외부 트리거” DAG에 사용"
 
 #: ../../scheduler.rst:71
 msgid "``@once``"
-msgstr ""
+msgstr "``@once``"
 
 #: ../../scheduler.rst:71
 msgid "Schedule once and only once"
-msgstr ""
+msgstr "한 번 예약하고 실행"
 
 #: ../../scheduler.rst:73
 msgid "``@hourly``"
-msgstr ""
+msgstr "``@hourly``"
 
 #: ../../scheduler.rst:73
 msgid "Run once an hour at the beginning of the hour"
-msgstr ""
+msgstr "시작 시간부터 한 시간마다 실행"
 
 #: ../../scheduler.rst:73
 msgid "``0 * * * *``"
-msgstr ""
+msgstr "``0 * * * *``"
 
 #: ../../scheduler.rst:75
 msgid "``@daily``"
-msgstr ""
+msgstr "``@daily``"
 
 #: ../../scheduler.rst:75
 msgid "Run once a day at midnight"
-msgstr ""
+msgstr "하루 한 번 자정(midnight)에 실행"
 
 #: ../../scheduler.rst:75
 msgid "``0 0 * * *``"
-msgstr ""
+msgstr "``0 0 * * *``"
 
 #: ../../scheduler.rst:77
 msgid "``@weekly``"
-msgstr ""
+msgstr "``@weekly``"
 
 #: ../../scheduler.rst:77
 msgid "Run once a week at midnight on Sunday morning"
-msgstr ""
+msgstr "일주일에 한 번 일요일 오전 자정(midnight)에 실행"
 
 #: ../../scheduler.rst:77
 msgid "``0 0 * * 0``"
-msgstr ""
+msgstr "``0 0 * * 0``"
 
 #: ../../scheduler.rst:79
 msgid "``@monthly``"
-msgstr ""
+msgstr "``@monthly``"
 
 #: ../../scheduler.rst:79
 msgid "Run once a month at midnight of the first day of the month"
-msgstr ""
+msgstr "한 달에 한 번 첫 날 자정에 실행"
 
 #: ../../scheduler.rst:79
 msgid "``0 0 1 * *``"
-msgstr ""
+msgstr "``0 0 1 * *``"
 
 #: ../../scheduler.rst:81
 msgid "``@yearly``"
-msgstr ""
+msgstr "``@yearly``"
 
 #: ../../scheduler.rst:81
 msgid "Run once a year at midnight of January 1"
-msgstr ""
+msgstr "일 년에 한 번 1월 1일 자정에 실행"
 
 #: ../../scheduler.rst:81
 msgid "``0 0 1 1 *``"
-msgstr ""
+msgstr "``0 0 1 1 *``"
 
 #: ../../scheduler.rst:84
 msgid ""
-"**Note**: Use ``schedule_interval=None`` and not "
-"``schedule_interval='None'`` when you don't want to schedule your DAG."
+"**Note**: Use ``schedule_interval=None`` and not ``schedule_interval='None'`` "
+"when you don't want to schedule your DAG."
 msgstr ""
+"**유의 사항**\\: DAG 스케쥴을 지정하지 않으려면 ``schedule_interval=None``"
+"\\을 사용하고 ``schedule_interval=‘None’``\\을 사용하지 마라."
 
 #: ../../scheduler.rst:87
 msgid ""
-"Your DAG will be instantiated for each schedule, while creating a ``DAG "
-"Run`` entry for each schedule."
+"Your DAG will be instantiated for each schedule, while creating a ``DAG Run`` "
+"entry for each schedule."
 msgstr ""
+"DAG는 각 스케쥴에 따라 인스턴스화 될 것이며, 각 스케쥴에 대해 ``DAG Run`` 항목"
+"을 생성할 것이다."
 
 #: ../../scheduler.rst:90
 msgid ""
 "DAG runs have a state associated to them (running, failed, success) and "
-"informs the scheduler on which set of schedules should be evaluated for "
-"task submissions. Without the metadata at the DAG run level, the Airflow "
-"scheduler would have much more work to do in order to figure out what "
-"tasks should be triggered and come to a crawl. It might also create "
-"undesired processing when changing the shape of your DAG, by say adding "
-"in new tasks."
+"informs the scheduler on which set of schedules should be evaluated for task "
+"submissions. Without the metadata at the DAG run level, the Airflow scheduler "
+"would have much more work to do in order to figure out what tasks should be "
+"triggered and come to a crawl. It might also create undesired processing when "
+"changing the shape of your DAG, by say adding in new tasks."
 msgstr ""
+"DAG run은 그들과 관련된 상태(running, failed, success)를 가지고 스케쥴러에게 "
+"어떤 스케쥴 집합(set)이 태스크 서브미션(submission)에 대한 평가 해야하는지 알"
+"려준다. DAG run 수준의 메타데이터가 없으면, 에어플로우 스케쥴러는 어떤 태스크"
+"가 트리거되고 크롤 작업을 해야하는지 알아내기 위하여 많은 작업을 수행해야 할 "
+"것이다. 또한 DAG의 모양이 변경될 때 새로운 태스크를 추가하여, 원치 않은 처리"
+"를 생성할 수 있다."
 
 #: ../../scheduler.rst:99
 msgid "Backfill and Catchup"
-msgstr ""
+msgstr "백필(Backfill)과 캐치업(Catchup)"
 
 #: ../../scheduler.rst:101
 msgid ""
 "An Airflow DAG with a ``start_date``, possibly an ``end_date``, and a "
-"``schedule_interval`` defines a series of intervals which the scheduler "
-"turn into individual Dag Runs and execute. A key capability of Airflow is"
-" that these DAG Runs are atomic, idempotent items, and the scheduler, by "
-"default, will examine the lifetime of the DAG (from start to end/now, one"
-" interval at a time) and kick off a DAG Run for any interval that has not"
-" been run (or has been cleared). This concept is called Catchup."
+"``schedule_interval`` defines a series of intervals which the scheduler turn "
+"into individual Dag Runs and execute. A key capability of Airflow is that "
+"these DAG Runs are atomic, idempotent items, and the scheduler, by default, "
+"will examine the lifetime of the DAG (from start to end/now, one interval at "
+"a time) and kick off a DAG Run for any interval that has not been run (or has "
+"been cleared). This concept is called Catchup."
 msgstr ""
+"``start_date``\\, ``end_date`` 그리고 ``schedule_interval``\\이 있는 에어플로"
+"우 DAG는 스케쥴러가 개별 Dag Runs과 실행(execute)이 되는 일련의 간격(interval)"
+"을 정의한다. 에어플로우의 주요 기능은 이러한 DAG Run들이 원자적(atomic)이고, "
+"\b멱등한 아이템이며, 기본적으로 스케쥴러는 DAG의 수명(시작에서 종료/현재, 한 "
+"번에 한 간격만큼)을 검사하고 실행되지 않았거나 (삭제된) 모든 간격 동안의 DAG "
+"실행을 시작한다는 것이다. 이러한 개념을 캐치업(Catchup)이라고 한다."
 
 #: ../../scheduler.rst:107
 msgid ""
 "If your DAG is written to handle its own catchup (IE not limited to the "
-"interval, but instead to \"Now\" for instance.), then you will want to "
-"turn catchup off (Either on the DAG itself with ``dag.catchup = False``) "
-"or by default at the configuration file level with ``catchup_by_default ="
-" False``. What this will do, is to instruct the scheduler to only create "
-"a DAG Run for the most current instance of the DAG interval series."
+"interval, but instead to \"Now\" for instance.), then you will want to turn "
+"catchup off (Either on the DAG itself with ``dag.catchup = False``) or by "
+"default at the configuration file level with ``catchup_by_default = False``. "
+"What this will do, is to instruct the scheduler to only create a DAG Run for "
+"the most current instance of the DAG interval series."
 msgstr ""
+"DAG가 자체 캐치업을 처리하도록 작성됐다면(예를 들어 인스턴스의 경우 인터벌"
+"(interval)에 제한을 두지 않는 대신 “Now”로 제한), 캐치업 기능을 끄거나(DAG 자"
+"체에서 ``dag.catchup = False``\\) 또는 환경 설정(configuration) 파일 수준에서 "
+"``catchup_by_default = False``\\로 기본 설정한다. 이렇게 하면, 스케쥴러가 연속"
+"된 DAG 인터벌(interval series)의 가장 최신의 인스턴스에 대해서만 DAG Run을 생"
+"성하도록 지시할 것이다."
 
 #: ../../scheduler.rst:142
 msgid ""
 "In the example above, if the DAG is picked up by the scheduler daemon on "
 "2016-01-02 at 6 AM, (or from the command line), a single DAG Run will be "
-"created, with an ``execution_date`` of 2016-01-01, and the next one will "
-"be created just after midnight on the morning of 2016-01-03 with an "
-"execution date of 2016-01-02."
+"created, with an ``execution_date`` of 2016-01-01, and the next one will be "
+"created just after midnight on the morning of 2016-01-03 with an execution "
+"date of 2016-01-02."
 msgstr ""
+"위의 예시에서, 2016-01-02 오전 6시에 스케쥴러 데몬(daemon)에 의해 DAG가 선택되"
+"면, 2016-01-01에 ``execution_date``\\로 단일 DAG Run이 생성될 것이고, 다음 실"
+"행은 2016-01-02의 실행 날짜로 2016-01-03 자정이 지나고 난 후 생성될 것이다."
 
 #: ../../scheduler.rst:146
 msgid ""
-"If the ``dag.catchup`` value had been True instead, the scheduler would "
-"have created a DAG Run for each completed interval between 2015-12-01 and"
-" 2016-01-02 (but not yet one for 2016-01-02, as that interval hasn't "
-"completed) and the scheduler will execute them sequentially. This "
-"behavior is great for atomic datasets that can easily be split into "
-"periods. Turning catchup off is great if your DAG Runs perform backfill "
-"internally."
+"If the ``dag.catchup`` value had been True instead, the scheduler would have "
+"created a DAG Run for each completed interval between 2015-12-01 and "
+"2016-01-02 (but not yet one for 2016-01-02, as that interval hasn't "
+"completed) and the scheduler will execute them sequentially. This behavior is "
+"great for atomic datasets that can easily be split into periods. Turning "
+"catchup off is great if your DAG Runs perform backfill internally."
 msgstr ""
+"만약 ``dag.catchup`` 값이 True였다면, 스케쥴러는 2015-12-01과 2016-01-02 사이"
+"의 이미 완료된 인터벌(그러나 아직 2016-01-02에 대한 인터벌은 완료되지 않음)에 "
+"대해 DAG Run을 생성했을 것이고 스케쥴러는 순차적으로 이를 실행할 것이다. 이런 "
+"행동은 시기 별로 쉽게 분할될 수 있는 원자적(atomic) 데이터셋에 좋다. DAG Run "
+"내부적으로 백필(backfill)을 실행하는 경우라면 캐치업 기능을 해제하는 것이 좋"
+"다."
 
 #: ../../scheduler.rst:153
 msgid "External Triggers"
-msgstr ""
+msgstr "외부적 트리거"
 
 #: ../../scheduler.rst:155
 msgid ""
-"Note that ``DAG Runs`` can also be created manually through the CLI while"
-" running an ``airflow trigger_dag`` command, where you can define a "
-"specific ``run_id``. The ``DAG Runs`` created externally to the scheduler"
-" get associated to the trigger's timestamp, and will be displayed in the "
-"UI alongside scheduled ``DAG runs``."
+"Note that ``DAG Runs`` can also be created manually through the CLI while "
+"running an ``airflow trigger_dag`` command, where you can define a specific "
+"``run_id``. The ``DAG Runs`` created externally to the scheduler get "
+"associated to the trigger's timestamp, and will be displayed in the UI "
+"alongside scheduled ``DAG runs``."
 msgstr ""
+"``DAG Runs``\\는 특정 ``run_id``\\를 정의할 수 있는 ``airflow trigger_dag`` 명"
+"령어를 실행하는 동안 CLI를 통해 수동으로 생성할 수도 있다는 점에 유의하라. 스"
+"케쥴러의 외부에서 생성된 ``DAG Runs``\\은 트리거의 타임스탬프와 연결되고, 예약"
+"된 ``DAG runs``\\와 함께 UI에 표시된다."
 
 #: ../../scheduler.rst:161
 msgid ""
-"In addition, you can also manually trigger a ``DAG Run`` using the web UI"
-" (tab \"DAGs\" -> column \"Links\" -> button \"Trigger Dag\")."
+"In addition, you can also manually trigger a ``DAG Run`` using the web UI "
+"(tab \"DAGs\" -> column \"Links\" -> button \"Trigger Dag\")."
 msgstr ""
+"추가적으로, 웹 UI를 사용하여 ``DAG Run``\\을 수동으로 트리거 할 수 있다"
+"(“DAGs” 탭 -> “Links” 컬럼 -> “Trigger Dag” 버튼)."
 
 #: ../../scheduler.rst:165
 msgid "To Keep in Mind"
-msgstr ""
+msgstr "명심할 것"
 
 #: ../../scheduler.rst:166
 msgid ""
-"The first ``DAG Run`` is created based on the minimum ``start_date`` for "
-"the tasks in your DAG."
+"The first ``DAG Run`` is created based on the minimum ``start_date`` for the "
+"tasks in your DAG."
 msgstr ""
+"첫번째 ``DAG Run``\\은 DAG의 태스크\b에 대한 최소 ``start_date``\\를 기준으로 "
+"생성된다."
 
 #: ../../scheduler.rst:168
 msgid ""
-"Subsequent ``DAG Runs`` are created by the scheduler process, based on "
-"your DAG's ``schedule_interval``, sequentially."
+"Subsequent ``DAG Runs`` are created by the scheduler process, based on your "
+"DAG's ``schedule_interval``, sequentially."
 msgstr ""
+"차후의 ``DAG Runs``\\은 스케쥴러 프로세스에 의해 생성되며, DAG의 "
+"``schedule_interval``\\을 기반으로 순서대로 생성된다."
 
 #: ../../scheduler.rst:170
 msgid ""
-"When clearing a set of tasks' state in hope of getting them to re-run, it"
-" is important to keep in mind the ``DAG Run``'s state too as it defines "
-"whether the scheduler should look into triggering tasks for that run."
+"When clearing a set of tasks' state in hope of getting them to re-run, it is "
+"important to keep in mind the ``DAG Run``'s state too as it defines whether "
+"the scheduler should look into triggering tasks for that run."
 msgstr ""
+"태스크를 다시 실행하길(re-run) 바라며 태스크의 상태(state)를 지울 때, 이 "
+"``DAG Run``\\의 상태 역시 중요하게 살펴야 한다. 왜냐하면 스케쥴러가 해당 실행"
+"(run)을 위하여 태스크를 트리거해야 하는지 여부를 정의하기 때문이다."
 
 #: ../../scheduler.rst:174
 msgid "Here are some of the ways you can **unblock tasks**:"
-msgstr ""
+msgstr "다음은 **태스크 차단 해제(unblock)**\\할 수 있는 방법이다:"
 
 #: ../../scheduler.rst:176
 msgid ""
-"From the UI, you can **clear** (as in delete the status of) individual "
-"task instances from the task instances dialog, while defining whether you"
-" want to includes the past/future and the upstream/downstream "
-"dependencies. Note that a confirmation window comes next and allows you "
-"to see the set you are about to clear. You can also clear all task "
-"instances associated with the dag."
+"From the UI, you can **clear** (as in delete the status of) individual task "
+"instances from the task instances dialog, while defining whether you want to "
+"includes the past/future and the upstream/downstream dependencies. Note that "
+"a confirmation window comes next and allows you to see the set you are about "
+"to clear. You can also clear all task instances associated with the dag."
 msgstr ""
+"UI에서 보면, 태스크 인스턴스 대화 상자(dialog)에서 개별적인 태스크 인스턴스를 "
+"삭제하는 동시에 과거/미래 및 업스트립(upstream)/다운스트림(downstream) 종속성"
+"을 포함할지 여부를 정의할 수 있다. 확인 창이 뜨면 지우려는 세트(set)를 볼 수 "
+"있다는 점에 유의하라. 또한 dag와 관련된 모든 태스크 인스턴스를 지울 수 있다."
 
 #: ../../scheduler.rst:181
 msgid ""
-"The CLI command ``airflow clear -h`` has lots of options when it comes to"
-" clearing task instance states, including specifying date ranges, "
-"targeting task_ids by specifying a regular expression, flags for "
-"including upstream and downstream relatives, and targeting task instances"
-" in specific states (``failed``, or ``success``)"
+"The CLI command ``airflow clear -h`` has lots of options when it comes to "
+"clearing task instance states, including specifying date ranges, targeting "
+"task_ids by specifying a regular expression, flags for including upstream and "
+"downstream relatives, and targeting task instances in specific states "
+"(``failed``, or ``success``)"
 msgstr ""
+"``airflow clear -h`` CLI 명령어는 날짜 범위를 지정하고, 특정 정규 표현식으로 "
+"task_ids를 가리키고, 업스트림과 다운스트림 관계성을 포함하는 플래그와 특정 상"
+"태(``failed`` 또는 ``success``\\)의 태스크 인스턴스를 타겟팅하는 등 태스크 인"
+"스턴스 상태를 지우기 위한 많은 옵션을 가지고 있다."
 
 #: ../../scheduler.rst:185
 msgid ""
 "Clearing a task instance will no longer delete the task instance record. "
-"Instead it updates max_tries and set the current task instance state to "
-"be None."
+"Instead it updates max_tries and set the current task instance state to be "
+"None."
 msgstr ""
+"태스크 인스턴스를 지우는 것은 더 이상 태스크 인스턴스 레코드(record)를 삭제하"
+"지 못 한다. 대신 max_tries를 업데이트하고 현재 태스크 인스턴스 상태를 None으"
+"로 설정하라."
 
 #: ../../scheduler.rst:187
 msgid ""
-"Marking task instances as failed can be done through the UI. This can be "
-"used to stop running task instances."
+"Marking task instances as failed can be done through the UI. This can be used "
+"to stop running task instances."
 msgstr ""
+"태스크 인스턴스를 실패(failed)로 표시하는 것은 UI를 통해 할 수 있다. 이는 태스"
+"크 인스턴스의 실행을 중지하는데 사용할 수 있다."
 
 #: ../../scheduler.rst:188
 msgid ""
 "Marking task instances as successful can be done through the UI. This is "
-"mostly to fix false negatives, or for instance when the fix has been "
-"applied outside of Airflow."
+"mostly to fix false negatives, or for instance when the fix has been applied "
+"outside of Airflow."
 msgstr ""
+"태스크 인스턴스를 성공(successful)으로 표시하는 것은 UI를 통해 할 수 있다. 대"
+"부분 거짓 부정(false negatives)를 수정할 때 사용하며, 인스턴스에 에어플로우 외"
+"부에 수정(fix)을 적용할 때 사용한다."
 
 #: ../../scheduler.rst:190
 msgid ""
-"The ``airflow backfill`` CLI subcommand has a flag to ``--mark_success`` "
-"and allows selecting subsections of the DAG as well as specifying date "
-"ranges."
+"The ``airflow backfill`` CLI subcommand has a flag to ``--mark_success`` and "
+"allows selecting subsections of the DAG as well as specifying date ranges."
 msgstr ""
-
+"``airflow backfill`` CLI 서브 명령어는 ``—mark_success`` 플래그가 있으며 DAG"
+"의 서브 섹션을 선택은 물론 날짜 범위도 지정할 수 있다."
