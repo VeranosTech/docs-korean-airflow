@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: Airflow 1.10.1\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-04-03 15:37+0900\n"
-"PO-Revision-Date: 2019-05-02 11:00+0900\n"
+"PO-Revision-Date: 2019-05-02 11:45+0900\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -84,11 +84,14 @@ msgid ""
 "can be configured to show in clear-text."
 msgstr ""
 "변수 뷰는 작업 중에 사용되는 키-값의 쌍의 변수를 목록화하고, 생성, 편집, "
-"삭제할 수 있게 한다."
+"삭제할 수 있게 한다. 기본적으로 변수의 키에 (‘password’, ‘secret’, "
+"‘passwd’, ‘authorization’, ‘api_key’, ‘apikey’, ‘access_token’) 단어가 포"
+"함되어 있으면 변수 값이 숨겨지지만, clear-text로 표시되도록 설정할 수 있"
+"다."
 
 #: ../../ui.rst:75
 msgid "Gantt Chart"
-msgstr ""
+msgstr "간트 차트(Gantt Chart)"
 
 #: ../../ui.rst:76
 msgid ""
@@ -96,10 +99,13 @@ msgid ""
 "quickly identify bottlenecks and where the bulk of the time is spent for "
 "specific DAG runs."
 msgstr ""
+"간트 차트는 태스크가 걸리는 시간과 겹침(overlap) 상태를 분석할 수 있게 한"
+"다. 병목이 어디서 발생하는지와 특정 DAG run에 소요되는 대부분의 시간을 빠"
+"르게 파악할 수 있다."
 
 #: ../../ui.rst:87
 msgid "Task Duration"
-msgstr ""
+msgstr "태스크 작업 기간"
 
 #: ../../ui.rst:88
 msgid ""
@@ -107,10 +113,13 @@ msgid ""
 "lets you find outliers and quickly understand where the time is spent in "
 "your DAG over many runs."
 msgstr ""
+"지난 N번 동안의 서로 다른 태스크들의 작업 시간. 이 뷰를 통해 아웃라이어"
+"(outliers)를 찾고 여러 실행 동안 DAG에서 시간이 소요되는지 빠르게 파악할 "
+"수 있다."
 
 #: ../../ui.rst:100
 msgid "Code View"
-msgstr ""
+msgstr "코드(Code) 뷰"
 
 #: ../../ui.rst:101
 msgid ""
@@ -118,10 +127,12 @@ msgid ""
 "source control, this is a quick way to get to the code that generates "
 "the DAG and provide yet more context."
 msgstr ""
+"투명성이 전부이다. 파이프라인의 코드가 소스코드를 제어하는 동안에, DAG를 "
+"생성하는 코드를 빠르게 볼 수 있는 방법이며, 더 많은 컨텐스트를 제공한다."
 
 #: ../../ui.rst:112
 msgid "Task Instance Context Menu"
-msgstr ""
+msgstr "태스크 인스턴스 컨텍스트 메뉴"
 
 #: ../../ui.rst:113
 msgid ""
@@ -130,3 +141,6 @@ msgid ""
 "context menu that can take you to more detailed metadata, and perform "
 "some actions."
 msgstr ""
+"위에서 보여준 페이지(트리 뷰, 그래프 뷰, 간트, …)에서 태스크 인스턴스를 "
+"클릭하고, 보다 자세한 메타데이터를 제공하는 리치 컨텍스트 메뉴(rich "
+"context menu)로 이동하여 몇 가지 작업을 수행할 수 있다."
