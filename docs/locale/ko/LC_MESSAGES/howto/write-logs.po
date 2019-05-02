@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: Airflow 1.10.1\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-04-03 17:47+0900\n"
-"PO-Revision-Date: 2019-05-01 23:28+0900\n"
+"PO-Revision-Date: 2019-05-02 20:39+0900\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -79,7 +79,7 @@ msgstr ""
 
 #: ../../howto/write-logs.rst:46
 msgid "Writing Logs to Amazon S3"
-msgstr "로그를 아마존(Amazon) S3에 쓰기"
+msgstr "아마존(Amazon) S3에 로그 쓰기"
 
 #: ../../howto/write-logs.rst:50
 msgid "Enabling remote logging"
