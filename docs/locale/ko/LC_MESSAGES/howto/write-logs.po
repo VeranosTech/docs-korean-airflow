@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: Airflow 1.10.1\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-04-03 17:47+0900\n"
-"PO-Revision-Date: 2019-05-02 20:39+0900\n"
+"PO-Revision-Date: 2019-05-02 21:39+0900\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -92,7 +92,7 @@ msgstr "이 기능을 사용하기 위해, ``airflow.cfg``\\는 다음과 같이
 #: ../../howto/write-logs.rst:66
 msgid "In the above example, Airflow will try to use ``S3Hook('MyS3Conn')``."
 msgstr ""
-"위의 예시에서, 에어플로우는 ``S3Hook(‘MyS3Conn’)``\\을 사하려고 할 것이다."
+"위의 예시에서, 에어플로우는 ``S3Hook(‘MyS3Conn’)``\\을 사용하려고 할 것이다."
 
 #: ../../howto/write-logs.rst:71
 msgid "Writing Logs to Azure Blob Storage"
