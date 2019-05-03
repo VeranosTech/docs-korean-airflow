@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: Airflow 1.10.1\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-04-03 15:37+0900\n"
-"PO-Revision-Date: 2019-05-01 19:13+0900\n"
+"PO-Revision-Date: 2019-05-03 10:26+0900\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -286,7 +286,7 @@ msgstr ""
 "(filters)를 등록할 수 있게 한다. 예를 들어, ``dict(hello=lambda name: "
 "‘Hello %s’ % name)``\\을 인자에 전달하면 템플릿에서 ``{{ ‘world’ | "
 "hello }}``\\를 사용할 수 있다. 사용자 정의 필터에 대해 더 많은 정보는 여"
-"기에서 볼 수 있다`Jinja Documentation <http://jinja.pocoo.org/docs/dev/"
+"기에서 볼 수 있다 `Jinja Documentation <http://jinja.pocoo.org/docs/dev/"
 "api/#writing-filters>`_"
 
 #: ../../tutorial.rst:262
@@ -352,8 +352,8 @@ msgid ""
 "py`` in the DAGs folder referenced in your ``airflow.cfg``. The default "
 "location for your DAGs is ``~/airflow/dags``."
 msgstr ""
-"``airflow.cfg``에서 참조된 DAG 폴더에 있는 ``tutorial.py``\\의 이전 단계"
-"에서 코드를 저장하고 있다고 가정한다. DAG의 기본 위치는 ``~/airflow/"
+"``airflow.cfg``\\에서 참조된 DAG 폴더에 있는 ``tutorial.py``\\의 이전 단"
+"계에서 코드를 저장하고 있다고 가정한다. DAG의 기본 위치는 ``~/airflow/"
 "dags``\\이다."
 
 #: ../../tutorial.rst:382
@@ -414,7 +414,7 @@ msgstr ""
 
 #: ../../tutorial.rst:435
 msgid "Backfill"
-msgstr "백(Backfill)"
+msgstr "백필(Backfill)"
 
 #: ../../tutorial.rst:436
 msgid ""
