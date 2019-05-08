@@ -3,111 +3,139 @@
 # This file is distributed under the same license as the Airflow package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Airflow 1.10.1\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-04-03 15:37+0900\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"PO-Revision-Date: 2019-05-08 10:40+0900\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.6.0\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: ko\n"
+"X-Generator: Poedit 2.2.1\n"
 
 #: ../../security.rst:19
 msgid "Security"
-msgstr ""
+msgstr "보안"
 
 #: ../../security.rst:21
 msgid ""
 "By default, Airflow requires users to specify a password prior to login. "
 "You can use the following CLI commands to create an account:"
 msgstr ""
+"기본적으로, 에어플로우는 로그인하기 전에 사용자가 암호를 지정할 것을 요구한"
+"다. 다음의 CLI 명령어를 이용해 계정을 생성할 수 있다:"
 
 #: ../../security.rst:29
 msgid ""
-"It is however possible to switch on authentication by either using one of"
-" the supplied backends or creating your own."
+"It is however possible to switch on authentication by either using one of "
+"the supplied backends or creating your own."
 msgstr ""
+"하지만 제공된 백엔드 중 하나를 사용하거나 직접 생성하는 방법으로 인증"
+"(authentication)을 사용하는 것이 가능하다."
 
 #: ../../security.rst:32
 msgid "Be sure to checkout :doc:`api` for securing the API."
-msgstr ""
+msgstr "API 보안을 위해 반드시 :doc:`api`\\를 확인하라."
 
 #: ../../security.rst:36
 #, python-format
 msgid ""
-"Airflow uses the config parser of Python. This config parser interpolates"
-" '%'-signs.  Make sure escape any ``%`` signs in your config file (but "
-"not environment variables) as ``%%``, otherwise Airflow might leak these "
+"Airflow uses the config parser of Python. This config parser interpolates "
+"'%'-signs.  Make sure escape any ``%`` signs in your config file (but not "
+"environment variables) as ``%%``, otherwise Airflow might leak these "
 "passwords on a config parser exception to a log."
 msgstr ""
+"에어플로우는 파이썬의 구성 파서(config parser)를 사용한다. 이 파서는 ‘%’-기"
+"호를 대입하여 값을 넣는다.  (환경 변수가 아닌) 구성 파일 안의 ``%`` 기호를 "
+"``%%``\\로 변경하여야 한다, 그렇지 않으면 에어플로우에서 이러한 암호가 구"
+"성 파서 예외(config parser exception)에서 로그로 노출될 수 있다."
 
 #: ../../security.rst:42
 msgid "Reporting Vulnerabilities"
-msgstr ""
+msgstr "보고 취약성(Reporting Vulnerabilities)"
 
 #: ../../security.rst:44
 msgid ""
 "The Apache Software Foundation takes security issues very seriously. "
-"Apache Airflow specifically offers security features and is responsive to"
-" issues around its features. If you have any concern around Airflow "
+"Apache Airflow specifically offers security features and is responsive to "
+"issues around its features. If you have any concern around Airflow "
 "Security or believe you have uncovered a vulnerability, we suggest that "
 "you get in touch via the e-mail address security@apache.org. In the "
 "message, try to provide a description of the issue and ideally a way of "
-"reproducing it. The security team will get back to you after assessing "
-"the description."
+"reproducing it. The security team will get back to you after assessing the "
+"description."
 msgstr ""
+"아파치 소프트웨어 재단(Apache Software Foundation)은 보안 이슈를 매우 중요"
+"하게 받아들인다. 특히 아파치 에어플로우는 보안 기능을 제공하고 이 기능과 관"
+"련된 이슈에 대응한다. 에어플로우 보안에 대해 문제가 있거나 취약성이 발견되"
+"었을 때, 이메일 주소 security@apache.org를 통해 연락하는 것을 제안한다. 이"
+"메일 메세지에서 이슈에 대한 설명과 재현하는 방법을 제공하도록 한다. 보안팀"
+"에서  설명 메세지를 판단한 후 다시 연락을 취할 것이다."
 
 #: ../../security.rst:52
 msgid ""
 "Note that this security address should be used only for undisclosed "
-"vulnerabilities. Dealing with fixed issues or general questions on how to"
-" use the security features should be handled regularly via the user and "
-"the dev lists. Please report any security problems to the project "
-"security address before disclosing it publicly."
+"vulnerabilities. Dealing with fixed issues or general questions on how to "
+"use the security features should be handled regularly via the user and the "
+"dev lists. Please report any security problems to the project security "
+"address before disclosing it publicly."
 msgstr ""
+"이 보안 주소는 공개되지 않은 취약성에 대해서만 사용되어야 한다는 점을 유의"
+"하라. 보안 기능 사용 방법에 대한 고정된 이슈나 일반적인 문제를 다루는 것은 "
+"개발 목록(dev lists)와 사용자를 통해 정기적으로 처리될 것이다. 어떤 보안 문"
+"제가 있으면 프로젝트 보안 주소에 보고한 후 공개하길 부탁한다."
 
 #: ../../security.rst:58
 msgid ""
 "The `ASF Security team's page <https://www.apache.org/security/>`_ "
-"describes how vulnerability reports are handled, and includes PGP keys if"
-" you wish to use that."
+"describes how vulnerability reports are handled, and includes PGP keys if "
+"you wish to use that."
 msgstr ""
+"`ASF Security team’s page <https://www.apache.org/security/>`_ \\는 취약성 "
+"보고서를 처리하는 방법을 설명하고, 이를 사용할 때 필요한 PGP 키를 포함한다."
 
 #: ../../security.rst:63
 msgid "Web Authentication"
-msgstr ""
+msgstr "웹 보안(Web Authentication)"
 
 #: ../../security.rst:66
 msgid "Password"
-msgstr ""
+msgstr "비밀번호"
 
 #: ../../security.rst:68
 msgid ""
 "One of the simplest mechanisms for authentication is requiring users to "
 "specify a password before logging in."
 msgstr ""
+"인증을 위한 가장 간단한 방법 중 하나는 로그인 하기 전에 특정 비밀번호를 지"
+"정하도록 사용자에게 요구하는 것이다."
 
 #: ../../security.rst:70
 msgid ""
 "Please use command line interface ``airflow users --create`` to create "
 "accounts, or do that in the UI."
 msgstr ""
+"계정을 생성하기 위해 ``airflow users —create`` 커맨드 라인 인터페이스를 사"
+"용하거나, UI에서 생성하라."
 
 #: ../../security.rst:74
 msgid "LDAP"
-msgstr ""
+msgstr "LDAP"
 
 #: ../../security.rst:76
 msgid ""
-"To turn on LDAP authentication configure your ``airflow.cfg`` as follows."
-" Please note that the example uses an encrypted connection to the ldap "
+"To turn on LDAP authentication configure your ``airflow.cfg`` as follows. "
+"Please note that the example uses an encrypted connection to the ldap "
 "server as we do not want passwords be readable on the network level."
 msgstr ""
+"LDAP 인증을 켜려면 다음과 같이 ``airflow.cfg``\\를 구성하라. 이 예시에서는 "
+"네트워크 수준에서 암호를 읽을 수 없도록 ldap 서버에 암호화된 연결을 사용한"
+"다는 점에 유의하라."
 
 #: ../../security.rst:79
 msgid ""
@@ -115,37 +143,47 @@ msgid ""
 "specifying an OU that your users are in, you will need to change "
 "``search_scope`` to \"SUBTREE\"."
 msgstr ""
+"추가적으로, 만약 Active Directory를 사용하고 사용자가 속한 OU를 명시적으로 "
+"지정하지 않았을 경우, ``search_scope``\\을 “SUBTREE”로 변경하여야 한다."
 
 #: ../../security.rst:82
 msgid ""
 "Valid search_scope options can be found in the `ldap3 Documentation "
 "<http://ldap3.readthedocs.org/searches.html?highlight=search_scope>`_"
 msgstr ""
+"사용 가능한 seach_scope 옵션은 다음에서 찾을 수 있다 `ldap3 Documentation "
+"<http://ldap3.readthedocs.org/searches.html?highlight=search_scope>`_"
 
 #: ../../security.rst:115
 msgid ""
 "The superuser_filter and data_profiler_filter are optional. If defined, "
 "these configurations allow you to specify LDAP groups that users must "
 "belong to in order to have superuser (admin) and data-profiler "
-"permissions. If undefined, all users will be superusers and data "
-"profilers."
+"permissions. If undefined, all users will be superusers and data profilers."
 msgstr ""
+"이 superuser_filter와 data_profiler_filter는 선택 사항이다. 이것이 정의되었"
+"을 경우, 이러한 구성 설정은 사용자가 슈퍼유저(admin) 및 데이터 프로파일러"
+"(data-profiler) 권한을 가지기 위해 반드시 속해야 하는 LDAP 그룹을 지정할 "
+"수 있게 한다. 만약 정의되지 않았다면, 모든 유저들이 슈퍼유저(superuser)와 "
+"데이터 프로파일러가 될 것이다."
 
 #: ../../security.rst:118
 msgid "Roll your own"
-msgstr ""
+msgstr "Roll your own"
 
 #: ../../security.rst:120
 msgid ""
-"Airflow uses ``flask_login`` and exposes a set of hooks in the "
-"``airflow.default_login`` module. You can alter the content and make it "
-"part of the ``PYTHONPATH`` and configure it as a backend in "
-"``airflow.cfg``."
+"Airflow uses ``flask_login`` and exposes a set of hooks in the ``airflow."
+"default_login`` module. You can alter the content and make it part of the "
+"``PYTHONPATH`` and configure it as a backend in ``airflow.cfg``."
 msgstr ""
+"에어플로우는 ``flask_login``\\을 사용하고 ``airflow.default_login`` 모듈 내"
+"의 훅(hook) 집합에 노출되어 있다. 이를 변경하여 ``PYTHONPATH``\\의 일부로 "
+"만들고 ``airflow.cfg``\\에서 백엔드를 구성할 수 있다."
 
 #: ../../security.rst:132
 msgid "Kerberos"
-msgstr ""
+msgstr "커버러스(Kerberos)"
 
 #: ../../security.rst:134
 msgid ""
@@ -154,18 +192,25 @@ msgid ""
 "hooks and dags can make use of ticket to authenticate against kerberized "
 "services."
 msgstr ""
+"에어플로우는 커버러스(Kerberos)에 대한 초기 지원이 있었다. 이는 에어플로우"
+"가 커버러스 티켓(ticket)을 스스로 갱신하고 티켓 캐쉬(ticket cache)에 저장"
+"할 수 있다는 것을 의미한다. 훅(hooks)과 dags는 커버러스 서비스에 대한 인증"
+"을 위하여 티켓을 사용할 수 있다."
 
 #: ../../security.rst:139
 msgid "Limitations"
-msgstr ""
+msgstr "한계"
 
 #: ../../security.rst:141
 msgid ""
 "Please note that at this time, not all hooks have been adjusted to make "
 "use of this functionality. Also it does not integrate kerberos into the "
-"web interface and you will have to rely on network level security for now"
-" to make sure your service remains secure."
+"web interface and you will have to rely on network level security for now "
+"to make sure your service remains secure."
 msgstr ""
+"이 시점에서는 모든 훅(hook)이 이 기능을 사용하도록 조정된 것이 아님을 유의"
+"하라. 또한 이는 커버러스를 웹 인터페이스로 통합하지 않고 서비스가 안전하게 "
+"유지될 수 있도록 네트워크 수준의 보안에 의존해야 할 것이다."
 
 #: ../../security.rst:145
 msgid ""
@@ -173,183 +218,219 @@ msgid ""
 "generate a key tab for every host and launch a ticket renewer next to "
 "every worker it will most likely work."
 msgstr ""
+"셀러리(Celery) 통합은 아직 시도되지 않고 테스트되지 않았다. 하지만, 모든 호"
+"스트를 위한 키 탭을 생성하고 모든 워커(worker) 옆에 티켓 리뉴얼(ticket "
+"renewer)을 실행하면 아마도 잘 작동할 것이다."
 
 #: ../../security.rst:149
 msgid "Enabling kerberos"
-msgstr ""
+msgstr "커버러스(kerberos) 사용"
 
 #: ../../security.rst:152
 msgid "Airflow"
-msgstr ""
+msgstr "에어플로우"
 
 #: ../../security.rst:154
 msgid "To enable kerberos you will need to generate a (service) key tab."
-msgstr ""
+msgstr "커버러스를 활성화하려면 (service) 키 탭을 생성해야 한다."
 
 #: ../../security.rst:164
 msgid ""
 "Now store this file in a location where the airflow user can read it "
 "(chmod 600). And then add the following to your ``airflow.cfg``"
 msgstr ""
+"이 파일을 에어플로우 사용자가 읽을 수 있는 위치에 저장하라(chmod 600). 그리"
+"고 나서 다음의 내용을 ``airflow.cfg``\\에 추가하라"
 
 #: ../../security.rst:177
 msgid "Launch the ticket renewer by"
-msgstr ""
+msgstr "티켓 리뉴얼(ticket renewer) 시작"
 
 #: ../../security.rst:185
 msgid "Hadoop"
-msgstr ""
+msgstr "하둡(Hadoop)"
 
 #: ../../security.rst:187
 msgid ""
-"If want to use impersonation this needs to be enabled in ``core-"
-"site.xml`` of your hadoop config."
+"If want to use impersonation this needs to be enabled in ``core-site.xml`` "
+"of your hadoop config."
 msgstr ""
+"만약 impersonation을 사용하려면 하둡(hadoop) 구성의 ``core-site.xml``\\에"
+"서 이를 활성화해야 한다."
 
 #: ../../security.rst:206
 msgid ""
 "Of course if you need to tighten your security replace the asterisk with "
 "something more appropriate."
 msgstr ""
+"물론 보안을 강화해야 한다면 별표(asterisk)를 좀 더 적절한 것으로 대체하라."
 
 #: ../../security.rst:209
 msgid "Using kerberos authentication"
-msgstr ""
+msgstr "커버러스 인증(kerneros authentication) 사용"
 
 #: ../../security.rst:211
 msgid ""
 "The hive hook has been updated to take advantage of kerberos "
-"authentication. To allow your DAGs to use it, simply update the "
-"connection details with, for example:"
+"authentication. To allow your DAGs to use it, simply update the connection "
+"details with, for example:"
 msgstr ""
+"하이브 훅(hive hook)은 커버러스 인증을 이용하기 위해 업데이트 되었다. DAG"
+"가 이를 이용할 수 있도록 다음과 같이 커넥션 세부 정보를 업데이트하라, 예를 "
+"들어:"
 
 #: ../../security.rst:218
 msgid ""
-"Adjust the principal to your settings. The _HOST part will be replaced by"
-" the fully qualified domain name of the server."
+"Adjust the principal to your settings. The _HOST part will be replaced by "
+"the fully qualified domain name of the server."
 msgstr ""
+"설정에 맞게 principal를 조정하라. _HOST 부분은 서버의 정규화된 도메인 이름"
+"으로 대체된다."
 
 #: ../../security.rst:221
 msgid ""
-"You can specify if you would like to use the dag owner as the user for "
-"the connection or the user specified in the login section of the "
-"connection. For the login user, specify the following as extra:"
+"You can specify if you would like to use the dag owner as the user for the "
+"connection or the user specified in the login section of the connection. "
+"For the login user, specify the following as extra:"
 msgstr ""
+"만약 커넥션을 위한 사용자로서 dag 소유자(owner)를 사용하거나 커넥션의 로그"
+"인 섹션에서 지정된 사용자를 이용할지 지정할 수 있다. 로그인 사용자의 경우 "
+"다음과 같이 추가로 지정하라:"
 
 #: ../../security.rst:228
 msgid "For the DAG owner use:"
-msgstr ""
+msgstr "DAG 소유자의 경우:"
 
 #: ../../security.rst:234
 msgid "and in your DAG, when initializing the HiveOperator, specify:"
-msgstr ""
+msgstr "그리고 DAG에서 HiveOperator를 초기화 할 때, 다음처럼 지정하라:"
 
 #: ../../security.rst:240
 msgid ""
 "To use kerberos authentication, you must install Airflow with the "
 "`kerberos` extras group:"
 msgstr ""
+"커버러스 인증을 사용하려면 `kerberos` 추가 그룹과 함께 에어플로우를 설치해"
+"야 한다:"
 
 #: ../../security.rst:247
 msgid "OAuth Authentication"
-msgstr ""
+msgstr "OAuth 인증"
 
 #: ../../security.rst:250
 msgid "GitHub Enterprise (GHE) Authentication"
-msgstr ""
+msgstr "GitHub Enterprise (GHE) 인증"
 
 #: ../../security.rst:252
 msgid ""
 "The GitHub Enterprise authentication backend can be used to authenticate "
 "users against an installation of GitHub Enterprise using OAuth2. You can "
-"optionally specify a team whitelist (composed of slug cased team names) "
-"to restrict login to only members of those teams."
+"optionally specify a team whitelist (composed of slug cased team names) to "
+"restrict login to only members of those teams."
 msgstr ""
+"GitHub 엔터프라이즈 인증 백엔드는 OAuth2를 사용하는 GitHub Enterprise의 설"
+"치에 대해 사용자를 인증하는데 사용할 수 있다. 선택적으로 화이트리스트 팀"
+"(slug 케이스로 된 팀 이름으로 구성)을 지정하여 해당 팀의 멤버들만 로그인 하"
+"도록 제한할 수 있다."
 
 #: ../../security.rst:270
 msgid ""
 "If you do not specify a team whitelist, anyone with a valid account on "
 "your GHE installation will be able to login to Airflow."
 msgstr ""
+"화이트리스트 팀을 지정하지 않으면, GHE 설치에 유효한 계정은 누구나 에어플로"
+"우에 로그인 할 수 있다."
 
 #: ../../security.rst:273
 msgid ""
 "To use GHE authentication, you must install Airflow with the "
 "`github_enterprise` extras group:"
 msgstr ""
+"GHE 인증을 사용하기 위해서, 에어플로우 `github_enterprise` 추가 그룹을 설치"
+"해야만 한다:"
 
 #: ../../security.rst:280
 msgid "Setting up GHE Authentication"
-msgstr ""
+msgstr "GHE 인증 설정"
 
 #: ../../security.rst:282
 msgid ""
 "An application must be setup in GHE before you can use the GHE "
 "authentication backend. In order to setup an application:"
 msgstr ""
+"GHE 인증 백엔드를 사용하기 전에 GHE에서 어플리케이션이 반드시 설정되어야 한"
+"다. 어플리케이션을 설정하기 위해서:"
 
 #: ../../security.rst:285
 msgid "Navigate to your GHE profile"
-msgstr ""
+msgstr "GHE 프로필로 이동"
 
 #: ../../security.rst:286
 msgid "Select 'Applications' from the left hand nav"
-msgstr ""
+msgstr "왼쪽 탐색에서 ’Application’ 선택"
 
 #: ../../security.rst:287
 msgid "Select the 'Developer Applications' tab"
-msgstr ""
+msgstr "‘Developer Applications’ 탭 선택"
 
 #: ../../security.rst:288
 msgid "Click 'Register new application'"
-msgstr ""
+msgstr "‘Register new application’ 클릭"
 
 #: ../../security.rst:289
 msgid ""
-"Fill in the required information (the 'Authorization callback URL' must "
-"be fully qualified e.g. "
-"http://airflow.example.com/example/ghe_oauth/callback)"
+"Fill in the required information (the 'Authorization callback URL' must be "
+"fully qualified e.g. http://airflow.example.com/example/ghe_oauth/callback)"
 msgstr ""
+"필요한 정보를 입력하라 (‘Authorization callback URL’는 완전히 정규화되어야 "
+"한다 예를 들어 http://airflow.example.com/example/ghe_oauth/callback)"
 
 #: ../../security.rst:290
 msgid "Click 'Register application'"
-msgstr ""
+msgstr "‘Register application’ 클릭"
 
 #: ../../security.rst:291
 msgid ""
-"Copy 'Client ID', 'Client Secret', and your callback route to your "
-"airflow.cfg according to the above example"
+"Copy 'Client ID', 'Client Secret', and your callback route to your airflow."
+"cfg according to the above example"
 msgstr ""
+"위의 예시에 따라서 ‘Client ID’, ‘Client Secret’, 그리고 콜백 라우트"
+"(callback route)를 airflow.cfg로 복사하라"
 
 #: ../../security.rst:294
 msgid "Using GHE Authentication with github.com"
-msgstr ""
+msgstr "GHE 인증 github.com에서 사용"
 
 #: ../../security.rst:296
 msgid "It is possible to use GHE authentication with github.com:"
-msgstr ""
+msgstr "여기 github.com에서 GHE 인증을 사용할 수 있다:"
 
 #: ../../security.rst:298
 msgid ""
 "`Create an Oauth App <https://developer.github.com/apps/building-oauth-"
 "apps/creating-an-oauth-app/>`_"
 msgstr ""
+"`Create an Oauth App <https://developer.github.com/apps/building-oauth-"
+"apps/creating-an-oauth-app/>`_"
 
 #: ../../security.rst:299
 msgid ""
 "Copy 'Client ID', 'Client Secret' to your airflow.cfg according to the "
 "above example"
 msgstr ""
+"위의 예시에 따라서 ‘Client ID’, ‘Client Secret’를 airflow.cfg로 복사하라"
 
 #: ../../security.rst:300
 msgid ""
 "Set ``host = github.com`` and ``oauth_callback_route = /oauth/callback`` "
 "in airflow.cfg"
 msgstr ""
+"``host = github.com`` 그리고 ``oauth_callback_route = /oauth/callback``"
+"\\를 airflow.cfg에 설정하라"
 
 #: ../../security.rst:303
 msgid "Google Authentication"
-msgstr ""
+msgstr "구글 인증(Google Authentication)"
 
 #: ../../security.rst:305
 msgid ""
@@ -357,64 +438,76 @@ msgid ""
 "against Google using OAuth2. You must specify the email domains to "
 "restrict login, separated with a comma, to only members of those domains."
 msgstr ""
+"구글 인증 백엔드는 OAuth2를 사용하는 구글에 대한 사용자 인증에 사용할 수 있"
+"다. 쉼표(comma)로 구분된, 해당 도메인의 멤버들만 로그인하도록 제한하려면 이"
+"메일 도메인을 지정해야 한다."
 
 #: ../../security.rst:321
 msgid ""
 "To use Google authentication, you must install Airflow with the "
 "`google_auth` extras group:"
 msgstr ""
+"구글 인증을 사용하기 위해, `google_auth` 추가 그룹이 있는 에어플로우를 설치"
+"해야만 한다:"
 
 #: ../../security.rst:328
 msgid "Setting up Google Authentication"
-msgstr ""
+msgstr "구글 인증 설정"
 
 #: ../../security.rst:330
 msgid ""
-"An application must be setup in the Google API Console before you can use"
-" the Google authentication backend. In order to setup an application:"
+"An application must be setup in the Google API Console before you can use "
+"the Google authentication backend. In order to setup an application:"
 msgstr ""
+"구글 인증 백엔드를 사용하기 전에 구글 API 콘솔에서 어플리케이션을 설정해야"
+"만 한다. 어플리케이션을 설정하기 위해서는:"
 
 #: ../../security.rst:333
 msgid "Navigate to https://console.developers.google.com/apis/"
-msgstr ""
+msgstr "여기로 이동하라. https://console.developers.google.com/apis/"
 
 #: ../../security.rst:334
 msgid "Select 'Credentials' from the left hand nav"
-msgstr ""
+msgstr "왼쪽 탐색에서 ‘Credentials’를 선택하라"
 
 #: ../../security.rst:335
 msgid "Click 'Create credentials' and choose 'OAuth client ID'"
-msgstr ""
+msgstr "‘Create credentials’ 클릭하고 ‘OAuth client ID’ 선택하라"
 
 #: ../../security.rst:336
 msgid "Choose 'Web application'"
-msgstr ""
+msgstr "‘Web application’ 선택하라"
 
 #: ../../security.rst:337
 msgid ""
 "Fill in the required information (the 'Authorized redirect URIs' must be "
 "fully qualified e.g. http://airflow.example.com/oauth2callback)"
 msgstr ""
+"필요한 정보 입력(‘Authorized redirect URIs’는 반드시 정규화되어야 한다 예"
+"를 들어 http://airflow.example.com/oauth2callback)"
 
 #: ../../security.rst:338
 msgid "Click 'Create'"
-msgstr ""
+msgstr "‘Create’ 클릭"
 
 #: ../../security.rst:339
 msgid ""
-"Copy 'Client ID', 'Client Secret', and your redirect URI to your "
-"airflow.cfg according to the above example"
+"Copy 'Client ID', 'Client Secret', and your redirect URI to your airflow."
+"cfg according to the above example"
 msgstr ""
+"위의 예시에 따라서 ‘Client ID’, ‘Client Secret’를 airflow.cfg로 복사하라"
 
 #: ../../security.rst:342
 msgid "SSL"
-msgstr ""
+msgstr "SSL"
 
 #: ../../security.rst:344
 msgid ""
 "SSL can be enabled by providing a certificate and key. Once enabled, be "
 "sure to use \"https://\" in your browser."
 msgstr ""
+"SSL은 인증서(certificate)와 키(key)를 제공함으로서 활성화할 수 있다. 활성화"
+"되면 브라우저에서 “https://“를 사용하라."
 
 #: ../../security.rst:353
 msgid ""
@@ -423,16 +516,22 @@ msgid ""
 "aware that super user privileges (or cap_net_bind_service on Linux) are "
 "required to listen on port 443."
 msgstr ""
+"SSL가 활성화되면 웹 서버 포트가 자동적으로 변경되지는 않는다. 기본 포트 443"
+"을 사용하고 싶다면, 해당 포트를 구성해야 한다. 포트 443을 수신 대기(listen)"
+"하는 것은 슈퍼 유저 권한 (또는 리눅스에서 cap_net_bind_service)가 요구된다"
+"는 것을 알아두어야 한다."
 
 #: ../../security.rst:363
 msgid ""
 "Enable CeleryExecutor with SSL. Ensure you properly generate client and "
 "server certs and keys."
 msgstr ""
+"SSL에서 CeleryExecutor를 사용하도록 설정하라. 클라이언트 및 서버 인증서와 "
+"키를 적절하게 생성하라."
 
 #: ../../security.rst:375
 msgid "Impersonation"
-msgstr ""
+msgstr "Impersonation"
 
 #: ../../security.rst:377
 msgid ""
@@ -440,6 +539,9 @@ msgid ""
 "instances based on the task's ``run_as_user`` parameter, which takes a "
 "user's name."
 msgstr ""
+"에어플로우는 사용자 이름을 사용하는 태스크의 ``run_as_user`` 파라미터를 기"
+"반으로 하는 태스크 인스턴스가 실행되는 동안에 유닉스(unix) 사용자를 가장하"
+"는 기능을 가지고 있다."
 
 #: ../../security.rst:380
 msgid ""
@@ -450,17 +552,26 @@ msgid ""
 "airflow is running as the `airflow` user. Note that this means that the "
 "airflow user must be trusted and treated the same way as the root user."
 msgstr ""
+"**참고:** impersonation이 동작하기 위해서, 에어플로우는 `sudo -u`\\로 서브"
+"태스크를 실행하고 파일의 사용 권한도 변경하기 때문에 반드시 `sudo`\\로 에어"
+"플로우를 실행해야 한다. 게다가, 유닉스 사용자는 워커(worker) 위에 존재해야 "
+"한다. 에어플로우가 `airflow` 사용자로 실행되고 있다고 가정할 때, 이를 달성"
+"하기 위해 간단한 sudoers 파일 엔트리가 어떤 모습일지 보여준다. 이는 에어플"
+"로우 사용자는 신뢰할 수 있고 루트(root) 사용자와 같은 방식으로 대우해야 함"
+"을 의미한다."
 
 #: ../../security.rst:391
 msgid ""
-"Subtasks with impersonation will still log to the same folder, except "
-"that the files they log to will have permissions changed such that only "
-"the unix user can write to it."
+"Subtasks with impersonation will still log to the same folder, except that "
+"the files they log to will have permissions changed such that only the "
+"unix user can write to it."
 msgstr ""
+"Impersonation이 있는 서브태스크는 같은 폴더에 로그인 하지만, 유닉스 사용자"
+"만 로그 파일에 쓸 수 있도록 권한이 변경되는 경우는 제외한다."
 
 #: ../../security.rst:395
 msgid "Default Impersonation"
-msgstr ""
+msgstr "기본 Impersonation"
 
 #: ../../security.rst:396
 msgid ""
@@ -468,120 +579,137 @@ msgid ""
 "privileges, you can set the ``core:default_impersonation`` config which "
 "sets a default user impersonate if `run_as_user` is not set."
 msgstr ""
+"Imersonation을 사용하지 않는 태스크가 `sudo` 권한으로 실행되는 것을 막기 위"
+"해, `run_as_user`\\가 설정되지 않았을 때 기본 사용자가 impersonate하도록 "
+"``core:default_impersonation`` 설정할 수 있다."
 
 #: ../../security.rst:407
 msgid "Flower Authentication"
-msgstr ""
+msgstr "Flower 인증"
 
 #: ../../security.rst:409
 msgid "Basic authentication for Celery Flower is supported."
-msgstr ""
+msgstr "셀러리 플라워(Celery Flower)에 대한 기본 인증이 지원된다."
 
 #: ../../security.rst:411
 msgid ""
 "You can specify the details either as an optional argument in the Flower "
-"process launching command, or as a configuration item in your "
-"``airflow.cfg``. For both cases, please provide `user:password` pairs "
-"separated by a comma."
+"process launching command, or as a configuration item in your ``airflow."
+"cfg``. For both cases, please provide `user:password` pairs separated by a "
+"comma."
 msgstr ""
+"자세한 사항은 플라워 프로세스 시작 명령의 선택적 인자(argument), 또는 "
+"``airflow.cfg``\\안에 있는 구성 설정 항목으로 지정할 수 있다. 두 가지 경우 "
+"모두, 쉼표(comma)로 구분된 `user:password` 쌍을 제공하길 바란다."
 
 #: ../../security.rst:426
 msgid "RBAC UI Security"
-msgstr ""
+msgstr "RBAC UI 보안"
 
 #: ../../security.rst:428
 msgid ""
 "Security of Airflow Webserver UI is handled by Flask AppBuilder (FAB). "
-"Please read its related `security document <http://flask-"
-"appbuilder.readthedocs.io/en/latest/security.html>`_ regarding its "
-"security model."
+"Please read its related `security document <http://flask-appbuilder."
+"readthedocs.io/en/latest/security.html>`_ regarding its security model."
 msgstr ""
+"에어플로우 웹서버 UI의 보안은 Flask AppBuilder(FAB)에 의해 처리된다. 이에 "
+"대한 보안 모델에 관하여 관련 문서 `security document <http://flask-"
+"appbuilder.readthedocs.io/en/latest/security.html>`_\\를 읽어보라."
 
 #: ../../security.rst:433
 msgid "Default Roles"
-msgstr ""
+msgstr "기본 역할(Default Roles)"
 
 #: ../../security.rst:434
 msgid ""
-"Airflow ships with a set of roles by default: Admin, User, Op, Viewer, "
-"and Public. Only ``Admin`` users could configure/alter the permissions "
-"for other roles. But it is not recommended that ``Admin`` users alter "
-"these default roles in any way by removing or adding permissions to these"
-" roles."
+"Airflow ships with a set of roles by default: Admin, User, Op, Viewer, and "
+"Public. Only ``Admin`` users could configure/alter the permissions for "
+"other roles. But it is not recommended that ``Admin`` users alter these "
+"default roles in any way by removing or adding permissions to these roles."
 msgstr ""
+"에어플로우는 기본적으로 역할의 집합과 함께 제정괸다: Admin, User, Op, "
+"Viewer, 그리고 Public. 오직 ``Admin`` 사용자만 다른 역할에 대한 권한을 설"
+"정/변경할 수 있다. 하지만 ``Admin`` 사용자가 다른 역할의 권한을 삭제 또는 "
+"추가하는 식으로 기본 역할들을 변경하지 않는 것을 추천한다."
 
 #: ../../security.rst:440
 msgid "Admin"
-msgstr ""
+msgstr "Admin"
 
 #: ../../security.rst:441
 msgid ""
 "``Admin`` users have all possible permissions, including granting or "
 "revoking permissions from other users."
 msgstr ""
+"``Admin`` 사용자는 다른 사용자에게 권한을 제공하고나 회수하는 것을 포함하"
+"여, 모든 권한을 가진다."
 
 #: ../../security.rst:445
 msgid "Public"
-msgstr ""
+msgstr "Public"
 
 #: ../../security.rst:446
 msgid "``Public`` users (anonymous) don't have any permissions."
-msgstr ""
+msgstr "``Public`` 사용자(익명)는 다른 권한을 가지지 않는다."
 
 #: ../../security.rst:449
 msgid "Viewer"
-msgstr ""
+msgstr "Viewer"
 
 #: ../../security.rst:450
 msgid "``Viewer`` users have limited viewer permissions"
-msgstr ""
+msgstr "``Viewer`` 사용자는 제한된 뷰어 권한을 가진다"
 
 #: ../../security.rst:481
 msgid "on limited web views"
-msgstr ""
+msgstr "제한된 웹 뷰로"
 
 #: ../../security.rst:508
 msgid "User"
-msgstr ""
+msgstr "User"
 
 #: ../../security.rst:509
 msgid ""
-"``User`` users have ``Viewer`` permissions plus additional user "
-"permissions"
-msgstr ""
+"``User`` users have ``Viewer`` permissions plus additional user permissions"
+msgstr "``User`` 사용자는 ``Viewer`` 권한에 추가적인 사용자 권한을 가진다"
 
 #: ../../security.rst:532
 msgid "on User web views which is the same as Viewer web views."
-msgstr ""
+msgstr "뷰어(Viewer) 웹 보기와 동일한 User 웹 보기."
 
 #: ../../security.rst:535
 msgid "Op"
-msgstr ""
+msgstr "Op"
 
 #: ../../security.rst:536
 msgid "``Op`` users have ``User`` permissions plus additional op permissions"
-msgstr ""
+msgstr "``Op`` 사용자는 ``User`` 권한에 추가적인 op 권한을 가진다"
 
 #: ../../security.rst:545
 msgid "on ``User`` web views plus these additional op web views"
-msgstr ""
+msgstr "``User`` 웹 보기에 추가적인 op 웹 보기"
 
 #: ../../security.rst:564
 msgid "Custom Roles"
-msgstr ""
+msgstr "사용자 지정 역할"
 
 #: ../../security.rst:567
 msgid "DAG Level Role"
-msgstr ""
+msgstr "DAG 수준의 역할"
 
 #: ../../security.rst:568
 msgid ""
 "``Admin`` can create a set of roles which are only allowed to view a "
-"certain set of dags. This is called DAG level access. Each dag defined in"
-" the dag model table is treated as a ``View`` which has two permissions "
+"certain set of dags. This is called DAG level access. Each dag defined in "
+"the dag model table is treated as a ``View`` which has two permissions "
 "associated with it (``can_dag_read`` and ``can_dag_edit``). There is a "
 "special view called ``all_dags`` which allows the role to access all the "
 "dags. The default ``Admin``, ``Viewer``, ``User``, ``Op`` roles can all "
 "access ``all_dags`` view."
 msgstr ""
-
+"``Admin``\\은 특정 dag 집합만 볼 수 있도록 하는 일련의 역할들을 생성할 수 "
+"있다. 이를 DAG 수준의 접근(access)이라고 부른다. dag 모델 테이블에서 정의"
+"된 각 dag는 두 가지 권한(``can_dag_read`` 그리고 ``can_dag_edit``\\)으로 결"
+"합된 ``View``\\로 다뤄진다. ``all_dags``\\라고 불리는 특별한 뷰가 있는데 모"
+"든 dag에 접근할 수 있는 역할이다. 기본적인 ``Admin``\\, ``Viewer``\\, "
+"``User``\\, ``Op``\\역할은 모두 ``all_dags`` 뷰로 접근할 수 있다."
