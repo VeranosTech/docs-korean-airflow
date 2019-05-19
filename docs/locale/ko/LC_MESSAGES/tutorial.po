@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: Airflow 1.10.1\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-04-03 15:37+0900\n"
-"PO-Revision-Date: 2019-05-03 10:26+0900\n"
+"PO-Revision-Date: 2019-05-17 15:57+0900\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -137,9 +137,9 @@ msgid ""
 "defined and define a ``schedule_interval`` of 1 day for the DAG."
 msgstr ""
 "태스크들을 잘 포개 놓기 위해 DAG 객체가 필요할 것이다. 여기에 DAG의 고유 "
-"식별자로서의 ``dag_id``\\를 정의하는 문자열을 전달한. 또한 방금 정의한 인"
-"자 기본값 딕셔너리를 전달하고 DAG에 위한 1일의 ``schedule_interval``\\를 "
-"정의한다."
+"식별자로서의 ``dag_id``\\를 정의하는 문자열을 전달한다. 또한 방금 정의한 "
+"인자 기본값 딕셔너리를 전달하고 DAG에 위한 1일(1 day)의 "
+"``schedule_interval``\\를 정의한다."
 
 #: ../../tutorial.rst:170
 msgid "Tasks"
@@ -164,10 +164,10 @@ msgid ""
 "notice that in the second task we override the ``retries`` parameter "
 "with ``3``."
 msgstr ""
-"BasoOperator에서 오퍼레이터 생성자로 상속된 모든 오퍼레이터들의 공통된 인"
-"자(``retries``\\)와 오퍼레이터의 특별한 인자(``bash_command``\\)를 어떻"
-"게 넘겨주는지 주목하라. 생성자를 호출할 때마다 모든 인자를 넘겨주는 것보"
-"다 훨씬 더 간단하다. 또한,  두번째 태스크에서 ``retries`` 인자를 ``3``"
+"BaseOperator에서 오퍼레이터 생성자로 상속된 모든 오퍼레이터들의 일반적인 "
+"인수(``retries``\\)와 오퍼레이터의 특별한 인자(``bash_command``\\)를 어떻"
+"게 넘겨주는지 주목하라. 생성자를 호출할 때마다 모든 인자를 각각 넘겨주는 "
+"것보다 훨씬 더 간단하다. 또한, 두번째 태스크에서 ``retries`` 인자를 ``3``"
 "\\으로 오버라이드 한 점에 주목하라."
 
 #: ../../tutorial.rst:194
@@ -176,7 +176,7 @@ msgstr "태스크를 위한 우선 순위 규칙은 다음과 같다:"
 
 #: ../../tutorial.rst:196
 msgid "Explicitly passed arguments"
-msgstr "명시적으로 넘겨준 인"
+msgstr "명시적으로 넘겨준 인자"
 
 #: ../../tutorial.rst:197
 msgid "Values that exist in the ``default_args`` dictionary"
@@ -192,7 +192,7 @@ msgid ""
 "otherwise Airflow will raise an exception."
 msgstr ""
 "태스크는 ``task_id``\\와 ``owner`` 인자를 반드시 포함하거나 상속받아야 한"
-"다, 아니면 에어플로우는 예외(exception)을 발생시킬 것이다."
+"다, 아니면 에어플로우는 예외(exception)를 발생시킬 것이다."
 
 #: ../../tutorial.rst:204
 msgid "Templating with Jinja"
@@ -220,8 +220,8 @@ msgid ""
 msgstr ""
 "이 튜토리얼은 에어플로우에서 템플릿을 이용해 할 수 있는 것을 가볍게 보여"
 "주지만, 이 섹션의 목적은 이러한 기능이 존재하고, 이중 중괄호에 익숙해지"
-"게 하고, 가장 일반적인 템플릿 변수 ``{{ ds }}``\\(오늘의 “date stamp”)를 "
-"가리키는 것이다."
+"게 하고, 가장 일반적인 템플릿 변수인 ``{{ ds }}``\\(오늘의 “date stamp”)"
+"를 가리키는 것이다."
 
 #: ../../tutorial.rst:234
 #, python-format
