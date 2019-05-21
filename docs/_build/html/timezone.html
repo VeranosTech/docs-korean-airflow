@@ -1,0 +1,432 @@
+<!--
+Javascript to render AIRFLOW-XXX and PR references in text
+as HTML links.
+
+Overrides extrahead block from sphinx_rtd_theme
+https://www.sphinx-doc.org/en/master/templating.html
+-->
+
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="ko" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="ko" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>타임 존(Time zones) &mdash; Airflow Documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+    <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="index" title="색인" href="genindex.html" />
+    <link rel="search" title="검색" href="search.html" />
+    <link rel="next" title="Experimental Rest API" href="api.html" />
+    <link rel="prev" title="보안" href="security.html" />
+   
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      var el = document.getElementById('changelog');
+      if (el !== null ) {
+        // [AIRFLOW-...]
+        el.innerHTML = el.innerHTML.replace(
+            /\[(AIRFLOW-[\d]+)\]/g,
+            `<a href="https://issues.apache.org/jira/browse/$1">[$1]</a>`
+        );
+        // (#...)
+        el.innerHTML = el.innerHTML.replace(
+            /\(#([\d]+)\)/g,
+            `<a href="https://github.com/apache/airflow/pull/$1">(#$1)</a>`
+        );
+      };
+    })
+  </script>
+  <style>
+    .example-header {
+      position: relative;
+      background: #9AAA7A;
+      padding: 8px 16px;
+      margin-bottom: 0;
+    }
+    .example-header--with-button {
+      padding-right: 166px;
+    }
+    .example-header:after{
+      content: '';
+      display: table;
+      clear: both;
+    }
+    .example-title {
+      display:block;
+      padding: 4px;
+      margin-right: 16px;
+      color: white;
+      overflow-x: auto;
+    }
+    .example-header-button {
+      top: 8px;
+      right: 16px;
+      position: absolute;
+    }
+    .example-header + .highlight-python {
+      margin-top: 0 !important;
+    }
+    .viewcode-button {
+      display: inline-block;
+      padding: 8px 16px;
+      border: 0;
+      margin: 0;
+      outline: 0;
+      border-radius: 2px;
+      -webkit-box-shadow: 0 3px 5px 0 rgba(0,0,0,.3);
+      box-shadow: 0 3px 6px 0 rgba(0,0,0,.3);
+      color: #404040;
+      background-color: #e7e7e7;
+      cursor: pointer;
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 1;
+      text-decoration: none;
+      text-overflow: ellipsis;
+      overflow: hidden;
+      text-transform: uppercase;
+      -webkit-transition: background-color .2s;
+      transition: background-color .2s;
+      vertical-align: middle;
+      white-space: nowrap;
+    }
+    .viewcode-button:visited {
+      color: #404040;
+    }
+    .viewcode-button:hover, .viewcode-button:focus {
+      color: #404040;
+      background-color: #d6d6d6;
+    }
+  </style>
+
+
+  
+  <script src="_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="index.html" class="icon icon-home"> Airflow
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                1.10.1
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="project.html">프로젝트(Project)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="license.html">라이센스(License)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="start.html">빠른 시작(Quick Start)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="installation.html">설치</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tutorial.html">튜토리얼(Tutorial)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="howto/index.html">사용 가이드</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ui.html">UI / 스크린샷(Screenshots)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="concepts.html">개념</a></li>
+<li class="toctree-l1"><a class="reference internal" href="cli.html">Command Line Interface</a></li>
+<li class="toctree-l1"><a class="reference internal" href="scheduler.html">스케쥴링(Scheduling)&amp; 트리거(Triggers)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="plugins.html">Plugins</a></li>
+<li class="toctree-l1"><a class="reference internal" href="security.html">보안</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">타임 존(Time zones)</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#concepts">개념</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#naive-and-aware-datetime-objects">순진하고(Naïve) 자각적인(aware) datetime 객체</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#interpretation-of-naive-datetime-objects">인식되지 못한 datetime 객체 해석(Interpretation)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#default-time-zone">기본 타임존</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#time-zone-aware-dags">타임존 인식 DAG</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#templates">템플릿(Templates)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#cron-schedules">크론 스케쥴(Cron schedules)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#time-deltas">타임 델타(Time deltas)</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="api.html">Experimental Rest API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="integration.html">Integration</a></li>
+<li class="toctree-l1"><a class="reference internal" href="metrics.html">Metrics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="kubernetes.html">Kubernetes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="lineage.html">Lineage</a></li>
+<li class="toctree-l1"><a class="reference internal" href="changelog.html">Changelog</a></li>
+<li class="toctree-l1"><a class="reference internal" href="faq.html">FAQ</a></li>
+<li class="toctree-l1"><a class="reference internal" href="macros.html">Macros reference</a></li>
+<li class="toctree-l1"><a class="reference internal" href="_api/index.html">API Reference</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Airflow</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+      <li>타임 존(Time zones)</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/timezone.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="time-zones">
+<h1>타임 존(Time zones)<a class="headerlink" href="#time-zones" title="제목 주소">¶</a></h1>
+<p>기본적으로 타임존(time zone)에 대해 지원되고 사용 가능하다. 에어플로우는 날짜 정보를 내부 및 데이터베이스에 UTC로 저장한다. 예정된 대로 타임존에 따라 DAG를 실행할 수 있다. 현재 에어플로우는 사용자 인터페이스에서 최종 사용자의 타임존으 변환하지 않는다. UI에서는 항상 UTC로 표시될 것이다. 또한 오퍼레이터에서 사용되는 템플릿은 변환되지 않는다. 타임존 정보는 노출되고 DAG 작성자에게 달려있다.</p>
+<p>이 기능은 사용자가 둘 이상의 시간대에 살고 있는데, 각 사용자마다 자신의 벽에 걸린 시계와 같은 날짜 정보를 보여주기를 원할 때 유용하다.</p>
+<p>에어플로우를 단일 시간대에서만 사용하는 경우라도 데이터베이스에서 UTC로 데이터를 저장하는 것이 좋다(또한 에어플로우가 타임존 의식하기 전에 권장 또는 요구되는 설정 사항이다). 주된 이유는 바로 일광 절약 시간제(Daylight Saving Time, DST) 때문이다. 많은 나라에서 봄에는 원래 시간보다 앞당기고 가을에는 다시 되돌리는 DST 시스템을 사용하고 있다. 현지 시간으로 작업한다면, 이러한 시간 변경 때문에 1년에 두 차례 정도 에러가 발생할 수 있다(pendulum과 pytz 문서에서 이에 대해 자세히 설명한다.). 이것은 아마도 단순한 DAG에는 문제가 되지 않겠지만, 예를 들어, 매일 종료 시점을 맞춰야 하는 금융 서비스의 경우 문제가 될 수 있다.</p>
+<p>타임존은 <code class="docutils literal notranslate"><span class="pre">airflow.cfg</span></code>에서 설정한다. 기본적으로 utc로 설정되어 있지만, 시스템 설정이나 예를 들어 <cite>Europe/Amsterdam</cite>과 같이 임의의 IANA 타임존을 사용하기 위해 변경한다. 이는 <cite>pyz</cite>보다 정확도가 높은 <cite>pendulum</cite>에 의존한다. Pendulum은 에어플로우 설치와 함께 설치된다.</p>
+<p>웹 UI는 현재 UTC로만 실행된다는 점에 유의하라.</p>
+<div class="section" id="concepts">
+<h2>개념<a class="headerlink" href="#concepts" title="제목 주소">¶</a></h2>
+<div class="section" id="naive-and-aware-datetime-objects">
+<h3>순진하고(Naïve) 자각적인(aware) datetime 객체<a class="headerlink" href="#naive-and-aware-datetime-objects" title="제목 주소">¶</a></h3>
+<p>파이썬의 datetime.datetime 객체는 datetime.tzinfo의 하위 클래스의 인스턴스로 표현된는 타임존 정보를 저장하기 위해 사용되는 tzinfo 속성을 가지고 있다. 이 속성을 설정하고 오프셋을 설명하면, datetime 객체가 인식(aware)된다. 그렇지 않으면 naive하게 된다.</p>
+<p>그리고 timezone.is_localized() 그리고 timezone.is_naive()를 사용하여 datetime이 인식 여부를 결정할 수 있다.</p>
+<p>에어플로우가 time-zone-aware datetime 객체를 사용하기 때문이다. 만약 코드에서 datetime 객체를 생성한다면 이것도 인식되어야 한다.</p>
+<div class="code python highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">airflow.utils</span> <span class="k">import</span> <span class="n">timezone</span>
+
+<span class="n">now</span> <span class="o">=</span> <span class="n">timezone</span><span class="o">.</span><span class="n">utcnow</span><span class="p">()</span>
+<span class="n">a_date</span> <span class="o">=</span> <span class="n">timezone</span><span class="o">.</span><span class="n">datetime</span><span class="p">(</span><span class="mi">2017</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="interpretation-of-naive-datetime-objects">
+<h3>인식되지 못한 datetime 객체 해석(Interpretation)<a class="headerlink" href="#interpretation-of-naive-datetime-objects" title="제목 주소">¶</a></h3>
+<p>에어플로우는 전체 타임존을 인식하여 작동하지만, DAG 정의에서 <cite>start_dates</cite>와 <cite>end_dates</cite>에 대한 naive datetime 객체를 그대로 받아들인다. 이는 대부분의 경우 역호환성(backwards compatibility)를 보존하기 위함이다. naive <cite>start_date</cite> 또는 <cite>end_date</cite>가 발생할 경우 기본 타임존이 적용된다. naive datetime이 이미 기본 타임존에 있다고 가정하는 방식으로 적용된다. 즉, 기본 타임존을 <cite>Europe/Amsterdam</cite>으로 설정했고 naive 날짜 시간으로 <cite>datetime(2017,1,1)</cite>을 <cite>start_date</cite>로 생성하면 <cite>start_date</cite>가 암스테르담 시간으로 2017년 1월 1일이 될 것이라고 가정한다.</p>
+<div class="code python highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">default_args</span><span class="o">=</span><span class="nb">dict</span><span class="p">(</span>
+    <span class="n">start_date</span><span class="o">=</span><span class="n">datetime</span><span class="p">(</span><span class="mi">2016</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">),</span>
+    <span class="n">owner</span><span class="o">=</span><span class="s1">&#39;Airflow&#39;</span>
+<span class="p">)</span>
+
+<span class="n">dag</span> <span class="o">=</span> <span class="n">DAG</span><span class="p">(</span><span class="s1">&#39;my_dag&#39;</span><span class="p">,</span> <span class="n">default_args</span><span class="o">=</span><span class="n">default_args</span><span class="p">)</span>
+<span class="n">op</span> <span class="o">=</span> <span class="n">DummyOperator</span><span class="p">(</span><span class="n">task_id</span><span class="o">=</span><span class="s1">&#39;dummy&#39;</span><span class="p">,</span> <span class="n">dag</span><span class="o">=</span><span class="n">dag</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">op</span><span class="o">.</span><span class="n">owner</span><span class="p">)</span> <span class="c1"># Airflow</span>
+</pre></div>
+</div>
+<p>불행히도, DST 변환을 사용하는 동안에는, 어떤 datetime은 존재하지 않거나 모호하다. 이러한 상황에서 pendulum은 예외를 발생한다. 따라서 타임존 지원이 가능한 경우에는 항상 인식 가능한(aware) datetime 객체를 생성해야 한다.</p>
+<p>실제로 이런 문제는 거의 발생하지 않는다. 에어플로우는 모델과 DAG에서 aware datetime 객체를 제공하며, 거의 대부분, 새로운 datetime 객체는 timedelta 계산을 통하여 이미 존재하는 것으로 부터 생성된다. 어플리케이션 코드에서 자주 생성되는 유일한 datetime은 현재 시간이며, 자동적으로 timezone.utcnow()가 올바른 작업을 수행한다.</p>
+</div>
+<div class="section" id="default-time-zone">
+<h3>기본 타임존<a class="headerlink" href="#default-time-zone" title="제목 주소">¶</a></h3>
+<p>기본 표준 시간대는 <cite>[core]</cite> 아래에 <cite>default_timezone</cite> 설정에 의해 정의된 타임존이다. 만약 에어플로우를 막 설치했다면 권장한대로 <cite>utc</cite>가 설정되어 있을 것이다. 또한 <cite>system</cite> 또는 IANA 타임존(예를 들어 <cite>Europe/Amsterdam</cite>)으로 설정할 수 있다. DAG는 에어플로우 워커(worker)로 평가되고, 따라서 모든 에어플로우 노드에서이러한 설정이 동일한지 확인하는 것이 중요하다.</p>
+<div class="code python highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">[</span><span class="n">core</span><span class="p">]</span>
+<span class="n">default_timezone</span> <span class="o">=</span> <span class="n">utc</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="time-zone-aware-dags">
+<h2>타임존 인식 DAG<a class="headerlink" href="#time-zone-aware-dags" title="제목 주소">¶</a></h2>
+<p>DAG를 인지하는 타임존을 생성하는 것은 꽤 간단하다. 반드시 <cite>start_date</cite>을 인식한(aware) 타임존을 제공하면 된다. 이를 위하여 <cite>pendulum</cite>을 사용하는 것이 권장되며, (수동으로 설치하는) <cite>pytz</cite>도 사용할 수 있다.</p>
+<div class="code python highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pendulum</span>
+
+<span class="n">local_tz</span> <span class="o">=</span> <span class="n">pendulum</span><span class="o">.</span><span class="n">timezone</span><span class="p">(</span><span class="s2">&quot;Europe/Amsterdam&quot;</span><span class="p">)</span>
+
+<span class="n">default_args</span><span class="o">=</span><span class="nb">dict</span><span class="p">(</span>
+    <span class="n">start_date</span><span class="o">=</span><span class="n">datetime</span><span class="p">(</span><span class="mi">2016</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="n">tzinfo</span><span class="o">=</span><span class="n">local_tz</span><span class="p">),</span>
+    <span class="n">owner</span><span class="o">=</span><span class="s1">&#39;Airflow&#39;</span>
+<span class="p">)</span>
+
+<span class="n">dag</span> <span class="o">=</span> <span class="n">DAG</span><span class="p">(</span><span class="s1">&#39;my_tz_dag&#39;</span><span class="p">,</span> <span class="n">default_args</span><span class="o">=</span><span class="n">default_args</span><span class="p">)</span>
+<span class="n">op</span> <span class="o">=</span> <span class="n">DummyOperator</span><span class="p">(</span><span class="n">task_id</span><span class="o">=</span><span class="s1">&#39;dummy&#39;</span><span class="p">,</span> <span class="n">dag</span><span class="o">=</span><span class="n">dag</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">dag</span><span class="o">.</span><span class="n">timezone</span><span class="p">)</span> <span class="c1"># &lt;Timezone [Europe/Amsterdam]&gt;</span>
+</pre></div>
+</div>
+<p>항상 (이 순서에 따라) DAG 타임존 또는 글로벌 타임존을 사용하여 다음 실행일을 계산할 수 있기 때문에 태스크에 대해 <cite>start_date</cite>와 <cite>end_date</cite>를 설정할 수 있다. 처음 발생할 때 시작 날짜 또는 종료 날짜는 start_date, end_date와 연관된 타임존을 사용하여 UTC로 변환되, 다음 계산을 위해 타임존 정보가 무시된다.</p>
+<div class="section" id="templates">
+<h3>템플릿(Templates)<a class="headerlink" href="#templates" title="제목 주소">¶</a></h3>
+<p>에어플로우는 템플릿에서 타임존을 인식하는 datetime을 반환하지만, 로컬 시간으로 변환하지 않고 UTC로 유지된다. 이 문제를 처리하려면 DAG에 남겨두어라.</p>
+<div class="code python highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pendulum</span>
+
+<span class="n">local_tz</span> <span class="o">=</span> <span class="n">pendulum</span><span class="o">.</span><span class="n">timezone</span><span class="p">(</span><span class="s2">&quot;Europe/Amsterdam&quot;</span><span class="p">)</span>
+<span class="n">local_tz</span><span class="o">.</span><span class="n">convert</span><span class="p">(</span><span class="n">execution_date</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="cron-schedules">
+<h3>크론 스케쥴(Cron schedules)<a class="headerlink" href="#cron-schedules" title="제목 주소">¶</a></h3>
+<p>크론 스케쥴을 설정하는 경우, 에어플로우는 항상 정확히 동일한 시간에 실행하길 원하는 것으로 가정한다. 이는 일광 절약 시간(DST)을 무시할 것이다. 따라서, 매일 08:00 GMT+1에 인터벌이 종료되도록 실행하는 스케쥴이 있을 때, 일광 절약 시간이 적용되는 지역인지와 관계없이 항상 08:00 GMT+1 간격 끝에서 실행될 것이다.</p>
+</div>
+<div class="section" id="time-deltas">
+<h3>타임 델타(Time deltas)<a class="headerlink" href="#time-deltas" title="제목 주소">¶</a></h3>
+<p>타임 델타가 있는 스케쥴의 경우 에어플로우는 항상 지정된 인터벌로 실행하길 원한다고 가정한다. 따라서 만약 timedelta(hours=2)로 명시할 경우 2시간 후에 항상 실행되기를 원할 것이다. 이 경우에는 일광 절약 시간이 고려된다.</p>
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="api.html" class="btn btn-neutral float-right" title="Experimental Rest API" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="security.html" class="btn btn-neutral" title="보안" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'./',
+            VERSION:'1.10.1',
+            LANGUAGE:'ko',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
+        };
+    </script>
+      <script type="text/javascript" src="_static/jquery.js"></script>
+      <script type="text/javascript" src="_static/underscore.js"></script>
+      <script type="text/javascript" src="_static/doctools.js"></script>
+      <script type="text/javascript" src="_static/language_data.js"></script>
+      <script type="text/javascript" src="_static/translations.js"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          
+          SphinxRtdTheme.Navigation.enableSticky();
+          
+      });
+  </script> 
+
+</body>
+</html>

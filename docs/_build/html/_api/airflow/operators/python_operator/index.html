@@ -1,0 +1,571 @@
+<!--
+Javascript to render AIRFLOW-XXX and PR references in text
+as HTML links.
+
+Overrides extrahead block from sphinx_rtd_theme
+https://www.sphinx-doc.org/en/master/templating.html
+-->
+
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="ko" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="ko" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>airflow.operators.python_operator &mdash; Airflow Documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+    <link rel="stylesheet" href="../../../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../../../_static/pygments.css" type="text/css" />
+    <link rel="index" title="색인" href="../../../../genindex.html" />
+    <link rel="search" title="검색" href="../../../../search.html" />
+    <link rel="next" title="airflow.operators.redshift_to_s3_operator" href="../redshift_to_s3_operator/index.html" />
+    <link rel="prev" title="airflow.operators.presto_to_mysql" href="../presto_to_mysql/index.html" />
+   
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      var el = document.getElementById('changelog');
+      if (el !== null ) {
+        // [AIRFLOW-...]
+        el.innerHTML = el.innerHTML.replace(
+            /\[(AIRFLOW-[\d]+)\]/g,
+            `<a href="https://issues.apache.org/jira/browse/$1">[$1]</a>`
+        );
+        // (#...)
+        el.innerHTML = el.innerHTML.replace(
+            /\(#([\d]+)\)/g,
+            `<a href="https://github.com/apache/airflow/pull/$1">(#$1)</a>`
+        );
+      };
+    })
+  </script>
+  <style>
+    .example-header {
+      position: relative;
+      background: #9AAA7A;
+      padding: 8px 16px;
+      margin-bottom: 0;
+    }
+    .example-header--with-button {
+      padding-right: 166px;
+    }
+    .example-header:after{
+      content: '';
+      display: table;
+      clear: both;
+    }
+    .example-title {
+      display:block;
+      padding: 4px;
+      margin-right: 16px;
+      color: white;
+      overflow-x: auto;
+    }
+    .example-header-button {
+      top: 8px;
+      right: 16px;
+      position: absolute;
+    }
+    .example-header + .highlight-python {
+      margin-top: 0 !important;
+    }
+    .viewcode-button {
+      display: inline-block;
+      padding: 8px 16px;
+      border: 0;
+      margin: 0;
+      outline: 0;
+      border-radius: 2px;
+      -webkit-box-shadow: 0 3px 5px 0 rgba(0,0,0,.3);
+      box-shadow: 0 3px 6px 0 rgba(0,0,0,.3);
+      color: #404040;
+      background-color: #e7e7e7;
+      cursor: pointer;
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 1;
+      text-decoration: none;
+      text-overflow: ellipsis;
+      overflow: hidden;
+      text-transform: uppercase;
+      -webkit-transition: background-color .2s;
+      transition: background-color .2s;
+      vertical-align: middle;
+      white-space: nowrap;
+    }
+    .viewcode-button:visited {
+      color: #404040;
+    }
+    .viewcode-button:hover, .viewcode-button:focus {
+      color: #404040;
+      background-color: #d6d6d6;
+    }
+  </style>
+
+
+  
+  <script src="../../../../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../../../../index.html" class="icon icon-home"> Airflow
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                1.10.1
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../../../project.html">프로젝트(Project)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../license.html">라이센스(License)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../start.html">빠른 시작(Quick Start)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../installation.html">설치</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../tutorial.html">튜토리얼(Tutorial)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../howto/index.html">사용 가이드</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../ui.html">UI / 스크린샷(Screenshots)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../concepts.html">개념</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../cli.html">Command Line Interface</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../scheduler.html">스케쥴링(Scheduling)&amp; 트리거(Triggers)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../plugins.html">Plugins</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../security.html">보안</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../timezone.html">타임 존(Time zones)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../api.html">Experimental Rest API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../integration.html">Integration</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../metrics.html">Metrics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../kubernetes.html">Kubernetes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../lineage.html">Lineage</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../changelog.html">Changelog</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../faq.html">FAQ</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../macros.html">Macros reference</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../../../index.html">API Reference</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="../../../index.html#operators">Operators</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="../../../index.html#baseoperator">BaseOperator</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../index.html#basesensoroperator">BaseSensorOperator</a></li>
+<li class="toctree-l3 current"><a class="reference internal" href="../../../index.html#operators-packages">Operators packages</a><ul class="current">
+<li class="toctree-l4 current"><a class="reference internal" href="../index.html"><code class="docutils literal notranslate"><span class="pre">airflow.operators</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../sensors/index.html"><code class="docutils literal notranslate"><span class="pre">airflow.sensors</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../contrib/operators/index.html"><code class="docutils literal notranslate"><span class="pre">airflow.contrib.operators</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../contrib/sensors/index.html"><code class="docutils literal notranslate"><span class="pre">airflow.contrib.sensors</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../../index.html#hooks">Hooks</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../index.html#executors">Executors</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../index.html#models">Models</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../index.html#core-and-community-package">Core and community package</a></li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../../index.html">Airflow</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../../../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="../../../index.html">API Reference</a> &raquo;</li>
+        
+          <li><a href="../index.html"><code class="docutils literal notranslate"><span class="pre">airflow.operators</span></code></a> &raquo;</li>
+        
+      <li><code class="docutils literal notranslate"><span class="pre">airflow.operators.python_operator</span></code></li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../../../../_sources/_api/airflow/operators/python_operator/index.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="module-airflow.operators.python_operator">
+<span id="airflow-operators-python-operator"></span><h1><a class="reference internal" href="#module-airflow.operators.python_operator" title="airflow.operators.python_operator"><code class="xref py py-mod docutils literal notranslate"><span class="pre">airflow.operators.python_operator</span></code></a><a class="headerlink" href="#module-airflow.operators.python_operator" title="제목 주소">¶</a></h1>
+<div class="section" id="module-contents">
+<h2>Module Contents<a class="headerlink" href="#module-contents" title="제목 주소">¶</a></h2>
+<dl class="class">
+<dt id="airflow.operators.python_operator.PythonOperator">
+<em class="property">class </em><code class="descclassname">airflow.operators.python_operator.</code><code class="descname">PythonOperator</code><span class="sig-paren">(</span><em>python_callable</em>, <em>op_args=None</em>, <em>op_kwargs=None</em>, <em>provide_context=False</em>, <em>templates_dict=None</em>, <em>templates_exts=None</em>, <em>*args</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="reference internal" href="../../../../_modules/airflow/operators/python_operator.html#PythonOperator"><span class="viewcode-link">[소스]</span></a><a class="headerlink" href="#airflow.operators.python_operator.PythonOperator" title="정의 주소">¶</a></dt>
+<dd><p>Bases:<a class="reference internal" href="../../models/index.html#airflow.models.BaseOperator" title="airflow.models.BaseOperator"><code class="xref py py-class docutils literal notranslate"><span class="pre">airflow.models.BaseOperator</span></code></a></p>
+<p>Executes a Python callable</p>
+<div class="admonition seealso">
+<p class="first admonition-title">더 보기</p>
+<p class="last">For more information on how to use this operator, take a look at the guide:
+<a class="reference internal" href="../../../../howto/operator/python.html#howto-operator-pythonoperator"><span class="std std-ref">PythonOperator</span></a></p>
+</div>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">매개 변수:</th><td class="field-body"><ul class="first last simple">
+<li><strong>python_callable</strong> (<em>python callable</em>) -- A reference to an object that is callable</li>
+<li><strong>op_kwargs</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#dict" title="(in Python v3.7)"><em>dict</em></a><em> (</em><em>templated</em><em>)</em>) -- a dictionary of keyword arguments that will get unpacked
+in your function</li>
+<li><strong>op_args</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#list" title="(in Python v3.7)"><em>list</em></a><em> (</em><em>templated</em><em>)</em>) -- a list of positional arguments that will get unpacked when
+calling your callable</li>
+<li><strong>provide_context</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.7)"><em>bool</em></a>) -- if set to true, Airflow will pass a set of
+keyword arguments that can be used in your function. This set of
+kwargs correspond exactly to what you can use in your jinja
+templates. For this to work, you need to define <cite>**kwargs</cite> in your
+function header.</li>
+<li><strong>templates_dict</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#dict" title="(in Python v3.7)"><em>dict</em></a><em>[</em><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.7)"><em>str</em></a><em>]</em>) -- a dictionary where the values are templates that
+will get templated by the Airflow engine sometime between
+<code class="docutils literal notranslate"><span class="pre">__init__</span></code> and <code class="docutils literal notranslate"><span class="pre">execute</span></code> takes place and are made available
+in your callable's context after the template has been applied. (templated)</li>
+<li><strong>templates_exts</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#list" title="(in Python v3.7)"><em>list</em></a><em>[</em><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.7)"><em>str</em></a><em>]</em>) -- a list of file extensions to resolve while
+processing templated fields, for examples <code class="docutils literal notranslate"><span class="pre">['.sql',</span> <span class="pre">'.hql']</span></code></li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<dl class="attribute">
+<dt id="airflow.operators.python_operator.PythonOperator.template_fields">
+<code class="descname">template_fields</code><em class="property"> = ['templates_dict', 'op_args', 'op_kwargs']</em><a class="reference internal" href="../../../../_modules/airflow/operators/python_operator.html#PythonOperator.template_fields"><span class="viewcode-link">[소스]</span></a><a class="headerlink" href="#airflow.operators.python_operator.PythonOperator.template_fields" title="정의 주소">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="airflow.operators.python_operator.PythonOperator.ui_color">
+<code class="descname">ui_color</code><em class="property"> = #ffefeb</em><a class="reference internal" href="../../../../_modules/airflow/operators/python_operator.html#PythonOperator.ui_color"><span class="viewcode-link">[소스]</span></a><a class="headerlink" href="#airflow.operators.python_operator.PythonOperator.ui_color" title="정의 주소">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="airflow.operators.python_operator.PythonOperator.shallow_copy_attrs">
+<code class="descname">shallow_copy_attrs</code><em class="property"> = ['python_callable', 'op_kwargs']</em><a class="reference internal" href="../../../../_modules/airflow/operators/python_operator.html#PythonOperator.shallow_copy_attrs"><span class="viewcode-link">[소스]</span></a><a class="headerlink" href="#airflow.operators.python_operator.PythonOperator.shallow_copy_attrs" title="정의 주소">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="airflow.operators.python_operator.PythonOperator.execute">
+<code class="descname">execute</code><span class="sig-paren">(</span><em>self</em>, <em>context</em><span class="sig-paren">)</span><a class="reference internal" href="../../../../_modules/airflow/operators/python_operator.html#PythonOperator.execute"><span class="viewcode-link">[소스]</span></a><a class="headerlink" href="#airflow.operators.python_operator.PythonOperator.execute" title="정의 주소">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="airflow.operators.python_operator.PythonOperator.execute_callable">
+<code class="descname">execute_callable</code><span class="sig-paren">(</span><em>self</em><span class="sig-paren">)</span><a class="reference internal" href="../../../../_modules/airflow/operators/python_operator.html#PythonOperator.execute_callable"><span class="viewcode-link">[소스]</span></a><a class="headerlink" href="#airflow.operators.python_operator.PythonOperator.execute_callable" title="정의 주소">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="airflow.operators.python_operator.BranchPythonOperator">
+<em class="property">class </em><code class="descclassname">airflow.operators.python_operator.</code><code class="descname">BranchPythonOperator</code><a class="reference internal" href="../../../../_modules/airflow/operators/python_operator.html#BranchPythonOperator"><span class="viewcode-link">[소스]</span></a><a class="headerlink" href="#airflow.operators.python_operator.BranchPythonOperator" title="정의 주소">¶</a></dt>
+<dd><p>Bases:<a class="reference internal" href="#airflow.operators.python_operator.PythonOperator" title="airflow.operators.python_operator.PythonOperator"><code class="xref py py-class docutils literal notranslate"><span class="pre">airflow.operators.python_operator.PythonOperator</span></code></a>, <a class="reference internal" href="../../models/skipmixin/index.html#airflow.models.skipmixin.SkipMixin" title="airflow.models.skipmixin.SkipMixin"><code class="xref py py-class docutils literal notranslate"><span class="pre">airflow.models.skipmixin.SkipMixin</span></code></a></p>
+<p>Allows a workflow to &quot;branch&quot; or follow a path following the execution
+of this task.</p>
+<p>It derives the PythonOperator and expects a Python function that returns
+a single task_id or list of task_ids to follow. The task_id(s) returned
+should point to a task directly downstream from {self}. All other &quot;branches&quot;
+or directly downstream tasks are marked with a state of <code class="docutils literal notranslate"><span class="pre">skipped</span></code> so that
+these paths can't move forward. The <code class="docutils literal notranslate"><span class="pre">skipped</span></code> states are propagated
+downstream to allow for the DAG state to fill up and the DAG run's state
+to be inferred.</p>
+<dl class="method">
+<dt id="airflow.operators.python_operator.BranchPythonOperator.execute">
+<code class="descname">execute</code><span class="sig-paren">(</span><em>self</em>, <em>context</em><span class="sig-paren">)</span><a class="reference internal" href="../../../../_modules/airflow/operators/python_operator.html#BranchPythonOperator.execute"><span class="viewcode-link">[소스]</span></a><a class="headerlink" href="#airflow.operators.python_operator.BranchPythonOperator.execute" title="정의 주소">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="airflow.operators.python_operator.ShortCircuitOperator">
+<em class="property">class </em><code class="descclassname">airflow.operators.python_operator.</code><code class="descname">ShortCircuitOperator</code><a class="reference internal" href="../../../../_modules/airflow/operators/python_operator.html#ShortCircuitOperator"><span class="viewcode-link">[소스]</span></a><a class="headerlink" href="#airflow.operators.python_operator.ShortCircuitOperator" title="정의 주소">¶</a></dt>
+<dd><p>Bases:<a class="reference internal" href="#airflow.operators.python_operator.PythonOperator" title="airflow.operators.python_operator.PythonOperator"><code class="xref py py-class docutils literal notranslate"><span class="pre">airflow.operators.python_operator.PythonOperator</span></code></a>, <a class="reference internal" href="../../models/skipmixin/index.html#airflow.models.skipmixin.SkipMixin" title="airflow.models.skipmixin.SkipMixin"><code class="xref py py-class docutils literal notranslate"><span class="pre">airflow.models.skipmixin.SkipMixin</span></code></a></p>
+<p>Allows a workflow to continue only if a condition is met. Otherwise, the
+workflow &quot;short-circuits&quot; and downstream tasks are skipped.</p>
+<p>The ShortCircuitOperator is derived from the PythonOperator. It evaluates a
+condition and short-circuits the workflow if the condition is False. Any
+downstream tasks are marked with a state of &quot;skipped&quot;. If the condition is
+True, downstream tasks proceed as normal.</p>
+<p>The condition is determined by the result of <cite>python_callable</cite>.</p>
+<dl class="method">
+<dt id="airflow.operators.python_operator.ShortCircuitOperator.execute">
+<code class="descname">execute</code><span class="sig-paren">(</span><em>self</em>, <em>context</em><span class="sig-paren">)</span><a class="reference internal" href="../../../../_modules/airflow/operators/python_operator.html#ShortCircuitOperator.execute"><span class="viewcode-link">[소스]</span></a><a class="headerlink" href="#airflow.operators.python_operator.ShortCircuitOperator.execute" title="정의 주소">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="airflow.operators.python_operator.PythonVirtualenvOperator">
+<em class="property">class </em><code class="descclassname">airflow.operators.python_operator.</code><code class="descname">PythonVirtualenvOperator</code><span class="sig-paren">(</span><em>python_callable</em>, <em>requirements=None</em>, <em>python_version=None</em>, <em>use_dill=False</em>, <em>system_site_packages=True</em>, <em>op_args=None</em>, <em>op_kwargs=None</em>, <em>provide_context=False</em>, <em>string_args=None</em>, <em>templates_dict=None</em>, <em>templates_exts=None</em>, <em>*args</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="reference internal" href="../../../../_modules/airflow/operators/python_operator.html#PythonVirtualenvOperator"><span class="viewcode-link">[소스]</span></a><a class="headerlink" href="#airflow.operators.python_operator.PythonVirtualenvOperator" title="정의 주소">¶</a></dt>
+<dd><p>Bases:<a class="reference internal" href="#airflow.operators.python_operator.PythonOperator" title="airflow.operators.python_operator.PythonOperator"><code class="xref py py-class docutils literal notranslate"><span class="pre">airflow.operators.python_operator.PythonOperator</span></code></a></p>
+<p>Allows one to run a function in a virtualenv that is created and destroyed
+automatically (with certain caveats).</p>
+<p>The function must be defined using def, and not be
+part of a class. All imports must happen inside the function
+and no variables outside of the scope may be referenced. A global scope
+variable named virtualenv_string_args will be available (populated by
+string_args). In addition, one can pass stuff through op_args and op_kwargs, and one
+can use a return value.
+Note that if your virtualenv runs in a different Python major version than Airflow,
+you cannot use return values, op_args, or op_kwargs. You can use string_args though.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">매개 변수:</th><td class="field-body"><ul class="first last simple">
+<li><strong>python_callable</strong> (<em>function</em>) -- A python function with no references to outside variables,
+defined with def, which will be run in a virtualenv</li>
+<li><strong>requirements</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#list" title="(in Python v3.7)"><em>list</em></a><em>[</em><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.7)"><em>str</em></a><em>]</em>) -- A list of requirements as specified in a pip install command</li>
+<li><strong>python_version</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.7)"><em>str</em></a>) -- The Python version to run the virtualenv with. Note that
+both 2 and 2.7 are acceptable forms.</li>
+<li><strong>use_dill</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.7)"><em>bool</em></a>) -- Whether to use dill to serialize
+the args and result (pickle is default). This allow more complex types
+but requires you to include dill in your requirements.</li>
+<li><strong>system_site_packages</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.7)"><em>bool</em></a>) -- Whether to include
+system_site_packages in your virtualenv.
+See virtualenv documentation for more information.</li>
+<li><strong>op_args</strong> -- A list of positional arguments to pass to python_callable.</li>
+<li><strong>op_kwargs</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#dict" title="(in Python v3.7)"><em>dict</em></a>) -- A dict of keyword arguments to pass to python_callable.</li>
+<li><strong>provide_context</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.7)"><em>bool</em></a>) -- if set to true, Airflow will pass a set of
+keyword arguments that can be used in your function. This set of
+kwargs correspond exactly to what you can use in your jinja
+templates. For this to work, you need to define <cite>**kwargs</cite> in your
+function header.</li>
+<li><strong>string_args</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#list" title="(in Python v3.7)"><em>list</em></a><em>[</em><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.7)"><em>str</em></a><em>]</em>) -- Strings that are present in the global var virtualenv_string_args,
+available to python_callable at runtime as a list[str]. Note that args are split
+by newline.</li>
+<li><strong>templates_dict</strong> (<em>dict of str</em>) -- a dictionary where the values are templates that
+will get templated by the Airflow engine sometime between
+<code class="docutils literal notranslate"><span class="pre">__init__</span></code> and <code class="docutils literal notranslate"><span class="pre">execute</span></code> takes place and are made available
+in your callable's context after the template has been applied</li>
+<li><strong>templates_exts</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#list" title="(in Python v3.7)"><em>list</em></a><em>[</em><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.7)"><em>str</em></a><em>]</em>) -- a list of file extensions to resolve while
+processing templated fields, for examples <code class="docutils literal notranslate"><span class="pre">['.sql',</span> <span class="pre">'.hql']</span></code></li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<dl class="method">
+<dt id="airflow.operators.python_operator.PythonVirtualenvOperator.execute_callable">
+<code class="descname">execute_callable</code><span class="sig-paren">(</span><em>self</em><span class="sig-paren">)</span><a class="reference internal" href="../../../../_modules/airflow/operators/python_operator.html#PythonVirtualenvOperator.execute_callable"><span class="viewcode-link">[소스]</span></a><a class="headerlink" href="#airflow.operators.python_operator.PythonVirtualenvOperator.execute_callable" title="정의 주소">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="airflow.operators.python_operator.PythonVirtualenvOperator._pass_op_args">
+<code class="descname">_pass_op_args</code><span class="sig-paren">(</span><em>self</em><span class="sig-paren">)</span><a class="reference internal" href="../../../../_modules/airflow/operators/python_operator.html#PythonVirtualenvOperator._pass_op_args"><span class="viewcode-link">[소스]</span></a><a class="headerlink" href="#airflow.operators.python_operator.PythonVirtualenvOperator._pass_op_args" title="정의 주소">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="airflow.operators.python_operator.PythonVirtualenvOperator._execute_in_subprocess">
+<code class="descname">_execute_in_subprocess</code><span class="sig-paren">(</span><em>self</em>, <em>cmd</em><span class="sig-paren">)</span><a class="reference internal" href="../../../../_modules/airflow/operators/python_operator.html#PythonVirtualenvOperator._execute_in_subprocess"><span class="viewcode-link">[소스]</span></a><a class="headerlink" href="#airflow.operators.python_operator.PythonVirtualenvOperator._execute_in_subprocess" title="정의 주소">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="airflow.operators.python_operator.PythonVirtualenvOperator._write_string_args">
+<code class="descname">_write_string_args</code><span class="sig-paren">(</span><em>self</em>, <em>filename</em><span class="sig-paren">)</span><a class="reference internal" href="../../../../_modules/airflow/operators/python_operator.html#PythonVirtualenvOperator._write_string_args"><span class="viewcode-link">[소스]</span></a><a class="headerlink" href="#airflow.operators.python_operator.PythonVirtualenvOperator._write_string_args" title="정의 주소">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="airflow.operators.python_operator.PythonVirtualenvOperator._write_args">
+<code class="descname">_write_args</code><span class="sig-paren">(</span><em>self</em>, <em>input_filename</em><span class="sig-paren">)</span><a class="reference internal" href="../../../../_modules/airflow/operators/python_operator.html#PythonVirtualenvOperator._write_args"><span class="viewcode-link">[소스]</span></a><a class="headerlink" href="#airflow.operators.python_operator.PythonVirtualenvOperator._write_args" title="정의 주소">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="airflow.operators.python_operator.PythonVirtualenvOperator._read_result">
+<code class="descname">_read_result</code><span class="sig-paren">(</span><em>self</em>, <em>output_filename</em><span class="sig-paren">)</span><a class="reference internal" href="../../../../_modules/airflow/operators/python_operator.html#PythonVirtualenvOperator._read_result"><span class="viewcode-link">[소스]</span></a><a class="headerlink" href="#airflow.operators.python_operator.PythonVirtualenvOperator._read_result" title="정의 주소">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="airflow.operators.python_operator.PythonVirtualenvOperator._write_script">
+<code class="descname">_write_script</code><span class="sig-paren">(</span><em>self</em>, <em>script_filename</em><span class="sig-paren">)</span><a class="reference internal" href="../../../../_modules/airflow/operators/python_operator.html#PythonVirtualenvOperator._write_script"><span class="viewcode-link">[소스]</span></a><a class="headerlink" href="#airflow.operators.python_operator.PythonVirtualenvOperator._write_script" title="정의 주소">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="airflow.operators.python_operator.PythonVirtualenvOperator._generate_virtualenv_cmd">
+<code class="descname">_generate_virtualenv_cmd</code><span class="sig-paren">(</span><em>self</em>, <em>tmp_dir</em><span class="sig-paren">)</span><a class="reference internal" href="../../../../_modules/airflow/operators/python_operator.html#PythonVirtualenvOperator._generate_virtualenv_cmd"><span class="viewcode-link">[소스]</span></a><a class="headerlink" href="#airflow.operators.python_operator.PythonVirtualenvOperator._generate_virtualenv_cmd" title="정의 주소">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="airflow.operators.python_operator.PythonVirtualenvOperator._generate_pip_install_cmd">
+<code class="descname">_generate_pip_install_cmd</code><span class="sig-paren">(</span><em>self</em>, <em>tmp_dir</em><span class="sig-paren">)</span><a class="reference internal" href="../../../../_modules/airflow/operators/python_operator.html#PythonVirtualenvOperator._generate_pip_install_cmd"><span class="viewcode-link">[소스]</span></a><a class="headerlink" href="#airflow.operators.python_operator.PythonVirtualenvOperator._generate_pip_install_cmd" title="정의 주소">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="staticmethod">
+<dt id="airflow.operators.python_operator.PythonVirtualenvOperator._generate_python_cmd">
+<em class="property">static </em><code class="descname">_generate_python_cmd</code><span class="sig-paren">(</span><em>tmp_dir</em>, <em>script_filename</em>, <em>input_filename</em>, <em>output_filename</em>, <em>string_args_filename</em><span class="sig-paren">)</span><a class="reference internal" href="../../../../_modules/airflow/operators/python_operator.html#PythonVirtualenvOperator._generate_python_cmd"><span class="viewcode-link">[소스]</span></a><a class="headerlink" href="#airflow.operators.python_operator.PythonVirtualenvOperator._generate_python_cmd" title="정의 주소">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="airflow.operators.python_operator.PythonVirtualenvOperator._generate_python_code">
+<code class="descname">_generate_python_code</code><span class="sig-paren">(</span><em>self</em><span class="sig-paren">)</span><a class="reference internal" href="../../../../_modules/airflow/operators/python_operator.html#PythonVirtualenvOperator._generate_python_code"><span class="viewcode-link">[소스]</span></a><a class="headerlink" href="#airflow.operators.python_operator.PythonVirtualenvOperator._generate_python_code" title="정의 주소">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../redshift_to_s3_operator/index.html" class="btn btn-neutral float-right" title="airflow.operators.redshift_to_s3_operator" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="../presto_to_mysql/index.html" class="btn btn-neutral" title="airflow.operators.presto_to_mysql" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'../../../../',
+            VERSION:'1.10.1',
+            LANGUAGE:'ko',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
+        };
+    </script>
+      <script type="text/javascript" src="../../../../_static/jquery.js"></script>
+      <script type="text/javascript" src="../../../../_static/underscore.js"></script>
+      <script type="text/javascript" src="../../../../_static/doctools.js"></script>
+      <script type="text/javascript" src="../../../../_static/language_data.js"></script>
+      <script type="text/javascript" src="../../../../_static/translations.js"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="../../../../_static/js/theme.js"></script>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          
+          SphinxRtdTheme.Navigation.enableSticky();
+          
+      });
+  </script> 
+
+</body>
+</html>

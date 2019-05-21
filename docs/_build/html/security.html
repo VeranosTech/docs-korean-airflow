@@ -1,0 +1,805 @@
+<!--
+Javascript to render AIRFLOW-XXX and PR references in text
+as HTML links.
+
+Overrides extrahead block from sphinx_rtd_theme
+https://www.sphinx-doc.org/en/master/templating.html
+-->
+
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="ko" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="ko" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>보안 &mdash; Airflow Documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+    <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="index" title="색인" href="genindex.html" />
+    <link rel="search" title="검색" href="search.html" />
+    <link rel="next" title="타임 존(Time zones)" href="timezone.html" />
+    <link rel="prev" title="Plugins" href="plugins.html" />
+   
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      var el = document.getElementById('changelog');
+      if (el !== null ) {
+        // [AIRFLOW-...]
+        el.innerHTML = el.innerHTML.replace(
+            /\[(AIRFLOW-[\d]+)\]/g,
+            `<a href="https://issues.apache.org/jira/browse/$1">[$1]</a>`
+        );
+        // (#...)
+        el.innerHTML = el.innerHTML.replace(
+            /\(#([\d]+)\)/g,
+            `<a href="https://github.com/apache/airflow/pull/$1">(#$1)</a>`
+        );
+      };
+    })
+  </script>
+  <style>
+    .example-header {
+      position: relative;
+      background: #9AAA7A;
+      padding: 8px 16px;
+      margin-bottom: 0;
+    }
+    .example-header--with-button {
+      padding-right: 166px;
+    }
+    .example-header:after{
+      content: '';
+      display: table;
+      clear: both;
+    }
+    .example-title {
+      display:block;
+      padding: 4px;
+      margin-right: 16px;
+      color: white;
+      overflow-x: auto;
+    }
+    .example-header-button {
+      top: 8px;
+      right: 16px;
+      position: absolute;
+    }
+    .example-header + .highlight-python {
+      margin-top: 0 !important;
+    }
+    .viewcode-button {
+      display: inline-block;
+      padding: 8px 16px;
+      border: 0;
+      margin: 0;
+      outline: 0;
+      border-radius: 2px;
+      -webkit-box-shadow: 0 3px 5px 0 rgba(0,0,0,.3);
+      box-shadow: 0 3px 6px 0 rgba(0,0,0,.3);
+      color: #404040;
+      background-color: #e7e7e7;
+      cursor: pointer;
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 1;
+      text-decoration: none;
+      text-overflow: ellipsis;
+      overflow: hidden;
+      text-transform: uppercase;
+      -webkit-transition: background-color .2s;
+      transition: background-color .2s;
+      vertical-align: middle;
+      white-space: nowrap;
+    }
+    .viewcode-button:visited {
+      color: #404040;
+    }
+    .viewcode-button:hover, .viewcode-button:focus {
+      color: #404040;
+      background-color: #d6d6d6;
+    }
+  </style>
+
+
+  
+  <script src="_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="index.html" class="icon icon-home"> Airflow
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                1.10.1
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="project.html">프로젝트(Project)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="license.html">라이센스(License)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="start.html">빠른 시작(Quick Start)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="installation.html">설치</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tutorial.html">튜토리얼(Tutorial)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="howto/index.html">사용 가이드</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ui.html">UI / 스크린샷(Screenshots)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="concepts.html">개념</a></li>
+<li class="toctree-l1"><a class="reference internal" href="cli.html">Command Line Interface</a></li>
+<li class="toctree-l1"><a class="reference internal" href="scheduler.html">스케쥴링(Scheduling)&amp; 트리거(Triggers)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="plugins.html">Plugins</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">보안</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#reporting-vulnerabilities">보고 취약성(Reporting Vulnerabilities)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#web-authentication">웹 보안(Web Authentication)</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#password">비밀번호</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#ldap">LDAP</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#roll-your-own">Roll your own</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#kerberos">커버러스(Kerberos)</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#limitations">한계(Limitations)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#enabling-kerberos">커버러스(kerberos) 사용</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#airflow">에어플로우</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#hadoop">하둡(Hadoop)</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#using-kerberos-authentication">커버러스 인증(kerneros authentication) 사용</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#oauth-authentication">OAuth 인증</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#github-enterprise-ghe-authentication">GitHub Enterprise (GHE) 인증</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#setting-up-ghe-authentication">GHE 인증 설정</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#using-ghe-authentication-with-github-com">GHE 인증 github.com에서 사용</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#google-authentication">구글 인증(Google Authentication)</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#setting-up-google-authentication">구글 인증 설정</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#ssl">SSL</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#impersonation">Impersonation</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#default-impersonation">기본 Impersonation</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#flower-authentication">Flower 인증</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#rbac-ui-security">RBAC UI 보안</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#default-roles">기본 역할(Default Roles)</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#admin">Admin</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#public">Public</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#viewer">Viewer</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#user">User</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#op">Op</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#custom-roles">사용자 지정 역할</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#dag-level-role">DAG 수준의 역할</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="timezone.html">타임 존(Time zones)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="api.html">Experimental Rest API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="integration.html">Integration</a></li>
+<li class="toctree-l1"><a class="reference internal" href="metrics.html">Metrics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="kubernetes.html">Kubernetes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="lineage.html">Lineage</a></li>
+<li class="toctree-l1"><a class="reference internal" href="changelog.html">Changelog</a></li>
+<li class="toctree-l1"><a class="reference internal" href="faq.html">FAQ</a></li>
+<li class="toctree-l1"><a class="reference internal" href="macros.html">Macros reference</a></li>
+<li class="toctree-l1"><a class="reference internal" href="_api/index.html">API Reference</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Airflow</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+      <li>보안</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/security.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="security">
+<h1>보안<a class="headerlink" href="#security" title="제목 주소">¶</a></h1>
+<p>기본적으로, 에어플로우는 로그인하기 전에 사용자가 암호를 지정할 것을 요구한다. 다음의 CLI 명령어를 이용해 계정을 생성할 수 있다:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="c1"># create an admin user</span>
+airflow users -c --username admin --firstname Peter --lastname Parker --role Admin --email spiderman@superhero.org
+</pre></div>
+</div>
+<p>하지만 제공된 백엔드 중 하나를 사용하거나 직접 생성하는 방법으로 인증(authentication)을 사용하는 것 또한 가능하다.</p>
+<p>API 보안을 위해 반드시 <a class="reference internal" href="api.html"><span class="doc">Experimental Rest API</span></a>를 확인하라.</p>
+<div class="admonition note">
+<p class="first admonition-title">주석</p>
+<p class="last">에어플로우는 파이썬의 구성 파서(config parser)를 사용한다. 이 파서는 ‘%’-기호에 값을 대입하여 넣는다.  (환경 변수가 아닌) 구성 파일 안의 <code class="docutils literal notranslate"><span class="pre">%</span></code> 기호를 <code class="docutils literal notranslate"><span class="pre">%%</span></code>로 반드시 변경해야 하는데, 그렇지 않으면 에어플로우에서 암호가 구성 파서의 예외(exception)로 로그에서 노출될 수 있다.</p>
+</div>
+<div class="section" id="reporting-vulnerabilities">
+<h2>보고 취약성(Reporting Vulnerabilities)<a class="headerlink" href="#reporting-vulnerabilities" title="제목 주소">¶</a></h2>
+<p>아파치 소프트웨어 재단(Apache Software Foundation)은 보안 이슈를 매우 중요하게 받아들인다. 아파치 에어플로우는 특별히 보안 기능을 제공하고 이 기능과 관련된 이슈에 대응한다. 에어플로우 보안에 대해 문제가 있거나 취약성이 발견되었을 때, 이메일 <a class="reference external" href="mailto:security&#37;&#52;&#48;apache">security<span>&#64;</span>apache</a>.org를 통해 연락할 것을 제안한다. 이메일 메세지에서 이슈에 대한 설명과 재현하는 방법을 제공하도록 한다. 보안팀에서 판단한 후 다시 연락을 취할 것이다.</p>
+<p>이 보안 주소는 공개되지 않은 취약성에 대해서만 사용해야 한다는 점에 유의하라. 보안 기능 사용 방법에 대한 고정된 이슈나 일반적인 문제를 다루는 것은 개발 목록(dev lists)과 사용자를 통해 정기적으로 처리될 것이다. 어떤 보안 문제가 있으면 프로젝트 보안 주소에 보고한 후 공개하길 바란다.</p>
+<p><a class="reference external" href="https://www.apache.org/security/">ASF Security team’s page</a>는 취약성 보고서를 처리하는 방법을 설명하고, 이를 사용할 때 필요한 PGP 키를 포함한다.</p>
+</div>
+<div class="section" id="web-authentication">
+<h2>웹 보안(Web Authentication)<a class="headerlink" href="#web-authentication" title="제목 주소">¶</a></h2>
+<div class="section" id="password">
+<h3>비밀번호<a class="headerlink" href="#password" title="제목 주소">¶</a></h3>
+<p>인증을 위한 가장 간단한 방법 중 하나는 로그인 하기 전에 사용자에게 특정 비밀번호를 지정하도록 요구하는 것이다.</p>
+<p>계정을 생성하기 위하여 <code class="docutils literal notranslate"><span class="pre">airflow</span> <span class="pre">users</span> <span class="pre">—create</span></code> 커맨드 라인 인터페이스를 사용하거나, 또는 UI에서 생성한다.</p>
+</div>
+<div class="section" id="ldap">
+<h3>LDAP<a class="headerlink" href="#ldap" title="제목 주소">¶</a></h3>
+<p>LDAP 인증을 켜려면 다음과 같이 <code class="docutils literal notranslate"><span class="pre">airflow.cfg</span></code>를 구성한다. 이 예시에서는 네트워크 수준에서 암호를 읽을 수 없도록 ldap 서버에 암호화된 연결을 사용한다는 점에 유의하라.</p>
+<p>추가적으로, 만약 Active Directory를 사용하고 사용자가 속한 OU를 명시적으로 지정하지 않았을 경우, <code class="docutils literal notranslate"><span class="pre">search_scope</span></code>을 “SUBTREE”로 변경하여야 한다.</p>
+<p>사용 가능한 seach_scope 옵션은 이 문서에서 찾을 수 있다 <a class="reference external" href="http://ldap3.readthedocs.org/searches.html?highlight=search_scope">ldap3 Documentation</a></p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="o">[</span>webserver<span class="o">]</span>
+<span class="nv">authenticate</span> <span class="o">=</span> True
+<span class="nv">auth_backend</span> <span class="o">=</span> airflow.contrib.auth.backends.ldap_auth
+
+<span class="o">[</span>ldap<span class="o">]</span>
+<span class="c1"># set a connection without encryption: uri = ldap://&lt;your.ldap.server&gt;:&lt;port&gt;</span>
+<span class="nv">uri</span> <span class="o">=</span> ldaps://&lt;your.ldap.server&gt;:&lt;port&gt;
+<span class="nv">user_filter</span> <span class="o">=</span> <span class="nv">objectClass</span><span class="o">=</span>*
+<span class="c1"># in case of Active Directory you would use: user_name_attr = sAMAccountName</span>
+<span class="nv">user_name_attr</span> <span class="o">=</span> uid
+<span class="c1"># group_member_attr should be set accordingly with *_filter</span>
+<span class="c1"># eg :</span>
+<span class="c1">#     group_member_attr = groupMembership</span>
+<span class="c1">#     superuser_filter = groupMembership=CN=airflow-super-users...</span>
+<span class="nv">group_member_attr</span> <span class="o">=</span> memberOf
+<span class="nv">superuser_filter</span> <span class="o">=</span> <span class="nv">memberOf</span><span class="o">=</span><span class="nv">CN</span><span class="o">=</span>airflow-super-users,OU<span class="o">=</span>Groups,OU<span class="o">=</span>RWC,OU<span class="o">=</span>US,OU<span class="o">=</span>NORAM,DC<span class="o">=</span>example,DC<span class="o">=</span>com
+<span class="nv">data_profiler_filter</span> <span class="o">=</span> <span class="nv">memberOf</span><span class="o">=</span><span class="nv">CN</span><span class="o">=</span>airflow-data-profilers,OU<span class="o">=</span>Groups,OU<span class="o">=</span>RWC,OU<span class="o">=</span>US,OU<span class="o">=</span>NORAM,DC<span class="o">=</span>example,DC<span class="o">=</span>com
+<span class="nv">bind_user</span> <span class="o">=</span> <span class="nv">cn</span><span class="o">=</span>Manager,dc<span class="o">=</span>example,dc<span class="o">=</span>com
+<span class="nv">bind_password</span> <span class="o">=</span> insecure
+<span class="nv">basedn</span> <span class="o">=</span> <span class="nv">dc</span><span class="o">=</span>example,dc<span class="o">=</span>com
+<span class="nv">cacert</span> <span class="o">=</span> /etc/ca/ldap_ca.crt
+<span class="c1"># Set search_scope to one of them:  BASE, LEVEL , SUBTREE</span>
+<span class="c1"># Set search_scope to SUBTREE if using Active Directory, and not specifying an Organizational Unit</span>
+<span class="nv">search_scope</span> <span class="o">=</span> LEVEL
+
+<span class="c1"># This option tells ldap3 to ignore schemas that are considered malformed. This sometimes comes up</span>
+<span class="c1"># when using hosted ldap services.</span>
+<span class="nv">ignore_malformed_schema</span> <span class="o">=</span> False
+</pre></div>
+</div>
+<p>여기서 superuser_filter와 data_profiler_filter는 선택 사항이다. 이것이 정의되었을 경우, 사용자가 슈퍼유저(admin) 및 데이터 프로파일러(data-profiler) 권한을 가지기 위해 반드시 속해야 하는 LDAP 그룹을 지정할 수 있게 한다. 만약 정의되지 않았다면, 모든 유저들이 슈퍼유저(superuser)와 데이터 프로파일러가 될 것이다.</p>
+</div>
+<div class="section" id="roll-your-own">
+<h3>Roll your own<a class="headerlink" href="#roll-your-own" title="제목 주소">¶</a></h3>
+<p>에어플로우는 <code class="docutils literal notranslate"><span class="pre">flask_login</span></code>을 사용하고 <code class="docutils literal notranslate"><span class="pre">airflow.default_login</span></code> 모듈 내의 일련의 훅(hook)들을 드러낸다. 내용을 변경하여 <code class="docutils literal notranslate"><span class="pre">PYTHONPATH</span></code>의 부분으로 만들고 <code class="docutils literal notranslate"><span class="pre">airflow.cfg</span></code>에서 백엔드를 구성할 수 있다.</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="o">[</span>webserver<span class="o">]</span>
+<span class="nv">authenticate</span> <span class="o">=</span> True
+<span class="nv">auth_backend</span> <span class="o">=</span> mypackage.auth
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="kerberos">
+<h2>커버러스(Kerberos)<a class="headerlink" href="#kerberos" title="제목 주소">¶</a></h2>
+<p>에어플로우에서는 커버러스(Kerberos)에 대한 초기 지원을 가지고 있다. 이는 에어플로우가 커버러스 티켓(kerberos ticket)을 스스로 갱신하여 티켓 캐쉬(ticket cache)에 저장할 수 있음을 의미한다. 훅(hooks)과 dags는 커버러스 서비스에 대한 인증을 위해 티켓을 사용할 수 있다.</p>
+<div class="section" id="limitations">
+<h3>한계(Limitations)<a class="headerlink" href="#limitations" title="제목 주소">¶</a></h3>
+<p>이 때 유의할 점은, 모든 훅(hook)이 이 기능을 사용하도록 조정된 것이 아니라는 것이다. 또한 이것은 커버러스를 웹 인터페이스로 통합하지 않으며, 현재로는 서비스가 안전하게 유지될 수 있도록 네트워크 수준의 보안에 의존해야 할 것이다.</p>
+<p>셀러리(Celery) 통합은 아직 시도되지 않고 테스트되지 않았다. 하지만, 모든 호스트를 위한 키 탭을 생성하고 모든 워커(worker) 옆에 티켓 리뉴얼(ticket renewer)을 실행하면 아마도 잘 작동할 것이다.</p>
+</div>
+<div class="section" id="enabling-kerberos">
+<h3>커버러스(kerberos) 사용<a class="headerlink" href="#enabling-kerberos" title="제목 주소">¶</a></h3>
+<div class="section" id="airflow">
+<h4>에어플로우<a class="headerlink" href="#airflow" title="제목 주소">¶</a></h4>
+<p>커버러스를 활성화하려면 (service) 키 탭을 생성해야 한다.</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="c1"># in the kadmin.local or kadmin shell, create the airflow principal</span>
+kadmin:  addprinc -randkey airflow/fully.qualified.domain.name@YOUR-REALM.COM
+
+<span class="c1"># Create the airflow keytab file that will contain the airflow principal</span>
+kadmin:  xst -norandkey -k airflow.keytab airflow/fully.qualified.domain.name
+</pre></div>
+</div>
+<p>이 파일을 에어플로우 사용자가 읽을 수 있는 위치에 저장하라(chmod 600). 그리고 나서 다음의 내용을 <code class="docutils literal notranslate"><span class="pre">airflow.cfg</span></code>에 추가하라</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="o">[</span>core<span class="o">]</span>
+<span class="nv">security</span> <span class="o">=</span> kerberos
+
+<span class="o">[</span>kerberos<span class="o">]</span>
+<span class="nv">keytab</span> <span class="o">=</span> /etc/airflow/airflow.keytab
+<span class="nv">reinit_frequency</span> <span class="o">=</span> <span class="m">3600</span>
+<span class="nv">principal</span> <span class="o">=</span> airflow
+</pre></div>
+</div>
+<p>티켓 리뉴얼(ticket renewer) 시작</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="c1"># run ticket renewer</span>
+airflow kerberos
+</pre></div>
+</div>
+</div>
+<div class="section" id="hadoop">
+<h4>하둡(Hadoop)<a class="headerlink" href="#hadoop" title="제목 주소">¶</a></h4>
+<p>만약 impersonation을 사용하려면 하둡(hadoop) 구성의 <code class="docutils literal notranslate"><span class="pre">core-site.xml</span></code>에서 이를 활성화해야 한다.</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>&lt;property&gt;
+  &lt;name&gt;hadoop.proxyuser.airflow.groups&lt;/name&gt;
+  &lt;value&gt;*&lt;/value&gt;
+&lt;/property&gt;
+
+&lt;property&gt;
+  &lt;name&gt;hadoop.proxyuser.airflow.users&lt;/name&gt;
+  &lt;value&gt;*&lt;/value&gt;
+&lt;/property&gt;
+
+&lt;property&gt;
+  &lt;name&gt;hadoop.proxyuser.airflow.hosts&lt;/name&gt;
+  &lt;value&gt;*&lt;/value&gt;
+&lt;/property&gt;
+</pre></div>
+</div>
+<p>물론 보안을 강화해야 한다면 별표(asterisk)를 좀 더 적절한 것으로 대체하라.</p>
+</div>
+</div>
+<div class="section" id="using-kerberos-authentication">
+<h3>커버러스 인증(kerneros authentication) 사용<a class="headerlink" href="#using-kerberos-authentication" title="제목 주소">¶</a></h3>
+<p>하이브 훅(hive hook)은 커버러스 인증을 이용하기 위해 업데이트 되었다. DAG가 이를 이용할 수 있도록 다음과 같이 커넥션 세부 정보를 업데이트하라, 예를 들어:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="o">{</span> <span class="s2">&quot;use_beeline&quot;</span>: true, <span class="s2">&quot;principal&quot;</span>: <span class="s2">&quot;hive/_HOST@EXAMPLE.COM&quot;</span><span class="o">}</span>
+</pre></div>
+</div>
+<p>설정에 맞게 principal를 조정하라. _HOST 부분은 서버의 정규화된 도메인 이름으로 대체된다.</p>
+<p>만약 커넥션을 위한 사용자로서 dag 소유자(owner)를 사용하거나 커넥션의 로그인 섹션에서 지정된 사용자를 이용할지 지정할 수 있다. 로그인 사용자의 경우 다음과 같이 추가로 지정하라:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="o">{</span> <span class="s2">&quot;use_beeline&quot;</span>: true, <span class="s2">&quot;principal&quot;</span>: <span class="s2">&quot;hive/_HOST@EXAMPLE.COM&quot;</span>, <span class="s2">&quot;proxy_user&quot;</span>: <span class="s2">&quot;login&quot;</span><span class="o">}</span>
+</pre></div>
+</div>
+<p>DAG 소유자의 경우:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="o">{</span> <span class="s2">&quot;use_beeline&quot;</span>: true, <span class="s2">&quot;principal&quot;</span>: <span class="s2">&quot;hive/_HOST@EXAMPLE.COM&quot;</span>, <span class="s2">&quot;proxy_user&quot;</span>: <span class="s2">&quot;owner&quot;</span><span class="o">}</span>
+</pre></div>
+</div>
+<p>그리고 DAG에서 HiveOperator를 초기화 할 때, 다음처럼 지정하라:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nv">run_as_owner</span><span class="o">=</span>True
+</pre></div>
+</div>
+<p>커버러스 인증을 사용하려면 <cite>kerberos</cite> 추가 그룹과 함께 에어플로우를 설치해야 한다:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>pip install <span class="s1">&#39;apache-airflow[kerberos]&#39;</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="oauth-authentication">
+<h2>OAuth 인증<a class="headerlink" href="#oauth-authentication" title="제목 주소">¶</a></h2>
+<div class="section" id="github-enterprise-ghe-authentication">
+<h3>GitHub Enterprise (GHE) 인증<a class="headerlink" href="#github-enterprise-ghe-authentication" title="제목 주소">¶</a></h3>
+<p>GitHub 엔터프라이즈 인증 백엔드는 OAuth2를 사용하는 GitHub Enterprise의 설치에 대해 사용자를 인증하는데 사용할 수 있다. 선택적으로 화이트리스트 팀(slug 케이스로 된 팀 이름으로 구성)을 지정하여 해당 팀의 멤버들만 로그인 하도록 제한할 수 있다.</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="o">[</span>webserver<span class="o">]</span>
+<span class="nv">authenticate</span> <span class="o">=</span> True
+<span class="nv">auth_backend</span> <span class="o">=</span> airflow.contrib.auth.backends.github_enterprise_auth
+
+<span class="o">[</span>github_enterprise<span class="o">]</span>
+<span class="nv">host</span> <span class="o">=</span> github.example.com
+<span class="nv">client_id</span> <span class="o">=</span> oauth_key_from_github_enterprise
+<span class="nv">client_secret</span> <span class="o">=</span> oauth_secret_from_github_enterprise
+<span class="nv">oauth_callback_route</span> <span class="o">=</span> /example/ghe_oauth/callback
+<span class="nv">allowed_teams</span> <span class="o">=</span> <span class="m">1</span>, <span class="m">345</span>, <span class="m">23</span>
+</pre></div>
+</div>
+<div class="admonition note">
+<p class="first admonition-title">주석</p>
+<p class="last">화이트리스트 팀을 지정하지 않으면, GHE 설치에 유효한 계정은 누구나 에어플로우에 로그인 할 수 있다.</p>
+</div>
+<p>GHE 인증을 사용하기 위해서, 에어플로우 <cite>github_enterprise</cite> 추가 그룹을 설치해야만 한다:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>pip install <span class="s1">&#39;apache-airflow[github_enterprise]&#39;</span>
+</pre></div>
+</div>
+<div class="section" id="setting-up-ghe-authentication">
+<h4>GHE 인증 설정<a class="headerlink" href="#setting-up-ghe-authentication" title="제목 주소">¶</a></h4>
+<p>GHE 인증 백엔드를 사용하기 전에 GHE에서 어플리케이션이 반드시 설정되어야 한다. 어플리케이션을 설정하기 위해서:</p>
+<ol class="arabic simple">
+<li>GHE 프로필로 이동</li>
+<li>왼쪽 탐색에서 ’Application’ 선택</li>
+<li>‘Developer Applications’ 탭 선택</li>
+<li>‘Register new application’ 클릭</li>
+<li>필요한 정보를 입력하라 (‘Authorization callback URL’는 완전히 정규화되어야 한다 예를 들어 <a class="reference external" href="http://airflow.example.com/example/ghe_oauth/callback">http://airflow.example.com/example/ghe_oauth/callback</a>)</li>
+<li>‘Register application’ 클릭</li>
+<li>위의 예시에 따라서 ‘Client ID’, ‘Client Secret’, 그리고 콜백 라우트(callback route)를 airflow.cfg로 복사하라</li>
+</ol>
+</div>
+<div class="section" id="using-ghe-authentication-with-github-com">
+<h4>GHE 인증 github.com에서 사용<a class="headerlink" href="#using-ghe-authentication-with-github-com" title="제목 주소">¶</a></h4>
+<p>여기 github.com에서 GHE 인증을 사용할 수 있다:</p>
+<ol class="arabic simple">
+<li><a class="reference external" href="https://developer.github.com/apps/building-oauth-apps/creating-an-oauth-app/">Create an Oauth App</a></li>
+<li>위의 예시에 따라서 ‘Client ID’, ‘Client Secret’를 airflow.cfg로 복사하라</li>
+<li><code class="docutils literal notranslate"><span class="pre">host</span> <span class="pre">=</span> <span class="pre">github.com</span></code> 그리고 <code class="docutils literal notranslate"><span class="pre">oauth_callback_route</span> <span class="pre">=</span> <span class="pre">/oauth/callback</span></code>를 airflow.cfg에 설정하라</li>
+</ol>
+</div>
+</div>
+<div class="section" id="google-authentication">
+<h3>구글 인증(Google Authentication)<a class="headerlink" href="#google-authentication" title="제목 주소">¶</a></h3>
+<p>구글 인증 백엔드는 OAuth2를 사용하는 구글에 대한 사용자 인증에 사용할 수 있다. 쉼표(comma)로 구분된, 해당 도메인의 멤버들만 로그인하도록 제한하려면 이메일 도메인을 지정해야 한다.</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="o">[</span>webserver<span class="o">]</span>
+<span class="nv">authenticate</span> <span class="o">=</span> True
+<span class="nv">auth_backend</span> <span class="o">=</span> airflow.contrib.auth.backends.google_auth
+
+<span class="o">[</span>google<span class="o">]</span>
+<span class="nv">client_id</span> <span class="o">=</span> google_client_id
+<span class="nv">client_secret</span> <span class="o">=</span> google_client_secret
+<span class="nv">oauth_callback_route</span> <span class="o">=</span> /oauth2callback
+<span class="nv">domain</span> <span class="o">=</span> example1.com,example2.com
+</pre></div>
+</div>
+<p>구글 인증을 사용하기 위해, <cite>google_auth</cite> 추가 그룹이 있는 에어플로우를 설치해야만 한다:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>pip install <span class="s1">&#39;apache-airflow[google_auth]&#39;</span>
+</pre></div>
+</div>
+<div class="section" id="setting-up-google-authentication">
+<h4>구글 인증 설정<a class="headerlink" href="#setting-up-google-authentication" title="제목 주소">¶</a></h4>
+<p>구글 인증 백엔드를 사용하기 전에 구글 API 콘솔에서 어플리케이션을 설정해야만 한다. 어플리케이션을 설정하기 위해서는:</p>
+<ol class="arabic simple">
+<li>여기로 이동하라. <a class="reference external" href="https://console.developers.google.com/apis/">https://console.developers.google.com/apis/</a></li>
+<li>왼쪽 탐색에서 ‘Credentials’를 선택하라</li>
+<li>‘Create credentials’ 클릭하고 ‘OAuth client ID’ 선택하라</li>
+<li>‘Web application’ 선택하라</li>
+<li>필요한 정보 입력(‘Authorized redirect URIs’는 반드시 정규화되어야 한다 예를 들어 <a class="reference external" href="http://airflow.example.com/oauth2callback">http://airflow.example.com/oauth2callback</a>)</li>
+<li>‘Create’ 클릭</li>
+<li>위의 예시에 따라서 ‘Client ID’, ‘Client Secret’를 airflow.cfg로 복사하라</li>
+</ol>
+</div>
+</div>
+</div>
+<div class="section" id="ssl">
+<h2>SSL<a class="headerlink" href="#ssl" title="제목 주소">¶</a></h2>
+<p>SSL은 인증서(certificate)와 키(key)를 제공함으로서 활성화할 수 있다. 활성화되면 브라우저에서 “<a class="reference external" href="https://">https://</a>“를 사용하라.</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="o">[</span>webserver<span class="o">]</span>
+<span class="nv">web_server_ssl_cert</span> <span class="o">=</span> &lt;path to cert&gt;
+<span class="nv">web_server_ssl_key</span> <span class="o">=</span> &lt;path to key&gt;
+</pre></div>
+</div>
+<p>SSL가 활성화되면 웹 서버 포트가 자동적으로 변경되지는 않는다. 기본 포트 443을 사용하고 싶다면, 해당 포트를 구성해야 한다. 포트 443을 수신 대기(listen)하는 것은 슈퍼 유저 권한 (또는 리눅스에서 cap_net_bind_service)가 요구된다는 것을 알아두어야 한다.</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="c1"># Optionally, set the server to listen on the standard SSL port.</span>
+<span class="nv">web_server_port</span> <span class="o">=</span> <span class="m">443</span>
+<span class="nv">base_url</span> <span class="o">=</span> http://&lt;hostname or IP&gt;:443
+</pre></div>
+</div>
+<p>SSL에서 CeleryExecutor를 사용하도록 설정하라. 클라이언트 및 서버 인증서와 키를 적절하게 생성하라.</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="o">[</span>celery<span class="o">]</span>
+<span class="nv">ssl_active</span> <span class="o">=</span> True
+<span class="nv">ssl_key</span> <span class="o">=</span> &lt;path to key&gt;
+<span class="nv">ssl_cert</span> <span class="o">=</span> &lt;path to cert&gt;
+<span class="nv">ssl_cacert</span> <span class="o">=</span> &lt;path to cacert&gt;
+</pre></div>
+</div>
+</div>
+<div class="section" id="impersonation">
+<h2>Impersonation<a class="headerlink" href="#impersonation" title="제목 주소">¶</a></h2>
+<p>에어플로우는 사용자 이름을 사용하는 태스크의 <code class="docutils literal notranslate"><span class="pre">run_as_user</span></code> 파라미터를 기반으로 하는 태스크 인스턴스가 실행되는 동안에 유닉스(unix) 사용자를 가장하는 기능을 가지고 있다.</p>
+<p><strong>참고:</strong> impersonation이 동작하기 위해서, 에어플로우는 <cite>sudo -u</cite>로 서브태스크를 실행하고 파일의 사용 권한도 변경하기 때문에 반드시 <cite>sudo</cite>로 에어플로우를 실행해야 한다. 게다가, 유닉스 사용자는 워커(worker) 위에 존재해야 한다. 에어플로우가 <cite>airflow</cite> 사용자로 실행되고 있다고 가정할 때, 이를 달성하기 위해 간단한 sudoers 파일 엔트리가 어떤 모습일지 보여준다. 이는 에어플로우 사용자는 신뢰할 수 있고 루트(root) 사용자와 같은 방식으로 대우해야 함을 의미한다.</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>airflow ALL=(ALL) NOPASSWD: ALL
+</pre></div>
+</div>
+<p>Impersonation이 있는 서브태스크는 같은 폴더에 로그인 하지만, 유닉스 사용자만 로그 파일에 쓸 수 있도록 권한이 변경되는 경우는 제외한다.</p>
+<div class="section" id="default-impersonation">
+<h3>기본 Impersonation<a class="headerlink" href="#default-impersonation" title="제목 주소">¶</a></h3>
+<p>Imersonation을 사용하지 않는 태스크가 <cite>sudo</cite> 권한으로 실행되는 것을 막기 위해, <cite>run_as_user</cite>가 설정되지 않았을 때 기본 사용자가 impersonate하도록 <code class="docutils literal notranslate"><span class="pre">core:default_impersonation</span></code> 설정할 수 있다.</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="o">[</span>core<span class="o">]</span>
+<span class="nv">default_impersonation</span> <span class="o">=</span> airflow
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="flower-authentication">
+<h2>Flower 인증<a class="headerlink" href="#flower-authentication" title="제목 주소">¶</a></h2>
+<p>셀러리 플라워(Celery Flower)에 대한 기본 인증이 지원된다.</p>
+<p>자세한 사항은 플라워 프로세스 시작 명령의 선택적 인자(argument), 또는 <code class="docutils literal notranslate"><span class="pre">airflow.cfg</span></code>안에 있는 구성 설정 항목으로 지정할 수 있다. 두 가지 경우 모두, 쉼표(comma)로 구분된 <cite>user:password</cite> 쌍을 제공하길 바란다.</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>airflow flower --basic_auth<span class="o">=</span>user1:password1,user2:password2
+</pre></div>
+</div>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="o">[</span>celery<span class="o">]</span>
+<span class="nv">flower_basic_auth</span> <span class="o">=</span> user1:password1,user2:password2
+</pre></div>
+</div>
+</div>
+<div class="section" id="rbac-ui-security">
+<h2>RBAC UI 보안<a class="headerlink" href="#rbac-ui-security" title="제목 주소">¶</a></h2>
+<p>에어플로우 웹서버 UI의 보안은 Flask AppBuilder(FAB)에 의해 처리된다. 이에 대한 보안 모델에 관하여 관련 문서 <a class="reference external" href="http://flask-appbuilder.readthedocs.io/en/latest/security.html">security document</a>를 읽어보라.</p>
+<div class="section" id="default-roles">
+<h3>기본 역할(Default Roles)<a class="headerlink" href="#default-roles" title="제목 주소">¶</a></h3>
+<p>에어플로우는 기본적으로 역할의 집합과 함께 제정괸다: Admin, User, Op, Viewer, 그리고 Public. 오직 <code class="docutils literal notranslate"><span class="pre">Admin</span></code> 사용자만 다른 역할에 대한 권한을 설정/변경할 수 있다. 하지만 <code class="docutils literal notranslate"><span class="pre">Admin</span></code> 사용자가 다른 역할의 권한을 삭제 또는 추가하는 식으로 기본 역할들을 변경하지 않는 것을 추천한다.</p>
+<div class="section" id="admin">
+<h4>Admin<a class="headerlink" href="#admin" title="제목 주소">¶</a></h4>
+<p><code class="docutils literal notranslate"><span class="pre">Admin</span></code> 사용자는 다른 사용자에게 권한을 제공하고나 회수하는 것을 포함하여, 모든 권한을 가진다.</p>
+</div>
+<div class="section" id="public">
+<h4>Public<a class="headerlink" href="#public" title="제목 주소">¶</a></h4>
+<p><code class="docutils literal notranslate"><span class="pre">Public</span></code> 사용자(익명)는 다른 권한을 가지지 않는다.</p>
+</div>
+<div class="section" id="viewer">
+<h4>Viewer<a class="headerlink" href="#viewer" title="제목 주소">¶</a></h4>
+<p><code class="docutils literal notranslate"><span class="pre">Viewer</span></code> 사용자는 제한된 뷰어 권한을 가진다</p>
+<div class="code python highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">VIEWER_PERMS</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s1">&#39;menu_access&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;can_index&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;can_list&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;can_show&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;can_chart&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;can_dag_stats&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;can_dag_details&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;can_task_stats&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;can_code&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;can_log&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;can_get_logs_with_metadata&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;can_tries&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;can_graph&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;can_tree&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;can_task&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;can_task_instances&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;can_xcom&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;can_gantt&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;can_landing_times&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;can_duration&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;can_blocked&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;can_rendered&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;can_pickle_info&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;can_version&#39;</span><span class="p">,</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<p>제한된 웹 뷰로</p>
+<div class="code python highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">VIEWER_VMS</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s1">&#39;Airflow&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;DagModelView&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;Browse&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;DAG Runs&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;DagRunModelView&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;Task Instances&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;TaskInstanceModelView&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;SLA Misses&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;SlaMissModelView&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;Jobs&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;JobModelView&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;Logs&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;LogModelView&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;Docs&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;Documentation&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;GitHub&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;About&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;Version&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;VersionView&#39;</span><span class="p">,</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="user">
+<h4>User<a class="headerlink" href="#user" title="제목 주소">¶</a></h4>
+<p><code class="docutils literal notranslate"><span class="pre">User</span></code> 사용자는 <code class="docutils literal notranslate"><span class="pre">Viewer</span></code> 권한에 추가적인 사용자 권한을 가진다</p>
+<div class="code python highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">USER_PERMS</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s1">&#39;can_dagrun_clear&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;can_run&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;can_trigger&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;can_add&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;can_edit&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;can_delete&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;can_paused&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;can_refresh&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;can_success&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;muldelete&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;set_failed&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;set_running&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;set_success&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;clear&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;can_clear&#39;</span><span class="p">,</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<p>뷰어(Viewer) 웹 보기와 동일한 User 웹 보기.</p>
+</div>
+<div class="section" id="op">
+<h4>Op<a class="headerlink" href="#op" title="제목 주소">¶</a></h4>
+<p><code class="docutils literal notranslate"><span class="pre">Op</span></code> 사용자는 <code class="docutils literal notranslate"><span class="pre">User</span></code> 권한에 추가적인 op 권한을 가진다</p>
+<div class="code python highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">OP_PERMS</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s1">&#39;can_conf&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;can_varimport&#39;</span><span class="p">,</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<p><code class="docutils literal notranslate"><span class="pre">User</span></code> 웹 보기에 추가적인 op 웹 보기</p>
+<div class="code python highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">OP_VMS</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s1">&#39;Admin&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;Configurations&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;ConfigurationView&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;Connections&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;ConnectionModelView&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;Pools&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;PoolModelView&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;Variables&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;VariableModelView&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;XComs&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;XComModelView&#39;</span><span class="p">,</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="custom-roles">
+<h3>사용자 지정 역할<a class="headerlink" href="#custom-roles" title="제목 주소">¶</a></h3>
+<div class="section" id="dag-level-role">
+<h4>DAG 수준의 역할<a class="headerlink" href="#dag-level-role" title="제목 주소">¶</a></h4>
+<p><code class="docutils literal notranslate"><span class="pre">Admin</span></code>은 특정 dag 집합만 볼 수 있도록 하는 일련의 역할들을 생성할 수 있다. 이를 DAG 수준의 접근(access)이라고 부른다. dag 모델 테이블에서 정의된 각 dag는 두 가지 권한(<code class="docutils literal notranslate"><span class="pre">can_dag_read</span></code> 그리고 <code class="docutils literal notranslate"><span class="pre">can_dag_edit</span></code>)으로 결합된 <code class="docutils literal notranslate"><span class="pre">View</span></code>로 다뤄진다. <code class="docutils literal notranslate"><span class="pre">all_dags</span></code>라고 불리는 특별한 뷰가 있는데 모든 dag에 접근할 수 있는 역할이다. 기본적인 <code class="docutils literal notranslate"><span class="pre">Admin</span></code>, <code class="docutils literal notranslate"><span class="pre">Viewer</span></code>, <code class="docutils literal notranslate"><span class="pre">User</span></code>, <code class="docutils literal notranslate"><span class="pre">Op</span></code>역할은 모두 <code class="docutils literal notranslate"><span class="pre">all_dags</span></code> 뷰로 접근할 수 있다.</p>
+</div>
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="timezone.html" class="btn btn-neutral float-right" title="타임 존(Time zones)" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="plugins.html" class="btn btn-neutral" title="Plugins" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'./',
+            VERSION:'1.10.1',
+            LANGUAGE:'ko',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
+        };
+    </script>
+      <script type="text/javascript" src="_static/jquery.js"></script>
+      <script type="text/javascript" src="_static/underscore.js"></script>
+      <script type="text/javascript" src="_static/doctools.js"></script>
+      <script type="text/javascript" src="_static/language_data.js"></script>
+      <script type="text/javascript" src="_static/translations.js"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          
+          SphinxRtdTheme.Navigation.enableSticky();
+          
+      });
+  </script> 
+
+</body>
+</html>

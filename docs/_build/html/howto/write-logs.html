@@ -1,0 +1,468 @@
+<!--
+Javascript to render AIRFLOW-XXX and PR references in text
+as HTML links.
+
+Overrides extrahead block from sphinx_rtd_theme
+https://www.sphinx-doc.org/en/master/templating.html
+-->
+
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="ko" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="ko" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>로그 쓰기(Writing Logs) &mdash; Airflow Documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+    <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="index" title="색인" href="../genindex.html" />
+    <link rel="search" title="검색" href="../search.html" />
+    <link rel="next" title="Scaling Out with Celery" href="executor/use-celery.html" />
+    <link rel="prev" title="커넥션 보안" href="secure-connections.html" />
+   
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      var el = document.getElementById('changelog');
+      if (el !== null ) {
+        // [AIRFLOW-...]
+        el.innerHTML = el.innerHTML.replace(
+            /\[(AIRFLOW-[\d]+)\]/g,
+            `<a href="https://issues.apache.org/jira/browse/$1">[$1]</a>`
+        );
+        // (#...)
+        el.innerHTML = el.innerHTML.replace(
+            /\(#([\d]+)\)/g,
+            `<a href="https://github.com/apache/airflow/pull/$1">(#$1)</a>`
+        );
+      };
+    })
+  </script>
+  <style>
+    .example-header {
+      position: relative;
+      background: #9AAA7A;
+      padding: 8px 16px;
+      margin-bottom: 0;
+    }
+    .example-header--with-button {
+      padding-right: 166px;
+    }
+    .example-header:after{
+      content: '';
+      display: table;
+      clear: both;
+    }
+    .example-title {
+      display:block;
+      padding: 4px;
+      margin-right: 16px;
+      color: white;
+      overflow-x: auto;
+    }
+    .example-header-button {
+      top: 8px;
+      right: 16px;
+      position: absolute;
+    }
+    .example-header + .highlight-python {
+      margin-top: 0 !important;
+    }
+    .viewcode-button {
+      display: inline-block;
+      padding: 8px 16px;
+      border: 0;
+      margin: 0;
+      outline: 0;
+      border-radius: 2px;
+      -webkit-box-shadow: 0 3px 5px 0 rgba(0,0,0,.3);
+      box-shadow: 0 3px 6px 0 rgba(0,0,0,.3);
+      color: #404040;
+      background-color: #e7e7e7;
+      cursor: pointer;
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 1;
+      text-decoration: none;
+      text-overflow: ellipsis;
+      overflow: hidden;
+      text-transform: uppercase;
+      -webkit-transition: background-color .2s;
+      transition: background-color .2s;
+      vertical-align: middle;
+      white-space: nowrap;
+    }
+    .viewcode-button:visited {
+      color: #404040;
+    }
+    .viewcode-button:hover, .viewcode-button:focus {
+      color: #404040;
+      background-color: #d6d6d6;
+    }
+  </style>
+
+
+  
+  <script src="../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> Airflow
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                1.10.1
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../project.html">프로젝트(Project)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../license.html">라이센스(License)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../start.html">빠른 시작(Quick Start)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../installation.html">설치</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tutorial.html">튜토리얼(Tutorial)</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">사용 가이드</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="add-new-role.html">RBAC UI에서 새로운 역할 추가</a></li>
+<li class="toctree-l2"><a class="reference internal" href="set-config.html">Configuration 옵션 설정</a></li>
+<li class="toctree-l2"><a class="reference internal" href="initialize-database.html">데이터베이스 백엔드 초기화</a></li>
+<li class="toctree-l2"><a class="reference internal" href="operator/index.html">오퍼레이터 사용</a></li>
+<li class="toctree-l2"><a class="reference internal" href="connection/index.html">커넥션(Connection) 관리</a></li>
+<li class="toctree-l2"><a class="reference internal" href="secure-connections.html">커넥션 보안</a></li>
+<li class="toctree-l2"><a class="reference internal" href="secure-connections.html#rotating-encryption-keys">암호화 키 회전(rotating)</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">로그 쓰기(Writing Logs)</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#writing-logs-locally">로컬에 로그 쓰기</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#before-you-begin">시작하기 전</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#writing-logs-to-amazon-s3">아마존(Amazon) S3에 로그 쓰기</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#enabling-remote-logging">원격 로깅(remote logging) 사용</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#writing-logs-to-azure-blob-storage">애저(Azure) Blob 저장소에 로그 쓰기</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#writing-logs-to-google-cloud-storage">구글 클라우드 저장소(Google Cloud Storage)에 로그 쓰기</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="executor/use-celery.html">Scaling Out with Celery</a></li>
+<li class="toctree-l2"><a class="reference internal" href="executor/use-dask.html">Scaling Out with Dask</a></li>
+<li class="toctree-l2"><a class="reference internal" href="executor/use-mesos.html">Scaling Out with Mesos (community contributed)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="run-behind-proxy.html">Running Airflow behind a reverse proxy</a></li>
+<li class="toctree-l2"><a class="reference internal" href="run-with-systemd.html">에어플로우 systemd로 실행</a></li>
+<li class="toctree-l2"><a class="reference internal" href="run-with-upstart.html">Running Airflow with upstart</a></li>
+<li class="toctree-l2"><a class="reference internal" href="use-test-config.html">Using the Test Mode Configuration</a></li>
+<li class="toctree-l2"><a class="reference internal" href="check-health.html">에어플로우 Health 상태 체크하기</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../ui.html">UI / 스크린샷(Screenshots)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../concepts.html">개념</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../cli.html">Command Line Interface</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../scheduler.html">스케쥴링(Scheduling)&amp; 트리거(Triggers)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../plugins.html">Plugins</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../security.html">보안</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../timezone.html">타임 존(Time zones)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../api.html">Experimental Rest API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../integration.html">Integration</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../metrics.html">Metrics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../kubernetes.html">Kubernetes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../lineage.html">Lineage</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../changelog.html">Changelog</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../faq.html">FAQ</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../macros.html">Macros reference</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../_api/index.html">API Reference</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Airflow</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="index.html">사용 가이드</a> &raquo;</li>
+        
+      <li>로그 쓰기(Writing Logs)</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/howto/write-logs.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="writing-logs">
+<h1>로그 쓰기(Writing Logs)<a class="headerlink" href="#writing-logs" title="제목 주소">¶</a></h1>
+<div class="section" id="writing-logs-locally">
+<h2>로컬에 로그 쓰기<a class="headerlink" href="#writing-logs-locally" title="제목 주소">¶</a></h2>
+<p>사용자는 <code class="docutils literal notranslate"><span class="pre">airflow.cfg</span></code> 안에 <code class="docutils literal notranslate"><span class="pre">base_log_folder</span></code>를 사용하여 로그 파일이 위치할 디렉토리를 명시할 수 있다. 기본값으로, 로그는 <code class="docutils literal notranslate"><span class="pre">AIRFLOW_HOME</span></code> 디렉토리 안에 위치한다.</p>
+<p>로그 이름을 지정하는데 다음의 컨벤션(convention)을 따른다: <code class="docutils literal notranslate"><span class="pre">{dag_id}/{task_id}/{execution_date}/{try_number}.log</span></code></p>
+<p>또, 사용자는 현재 로그와 백업(backup)을 저장하는 원격 위치(remote location)을 제공할 수 있다.</p>
+<p>에어플로우 웹 UI에서, 로컬 로그는 원격 로그보다 우선시 된다. 로컬 로그를 찾을 수 없거나 접근할 수 없으면, 원격 로그가 표시될 것이다. 로그는 태스크가 (실패를 포함하여) 완료되었을 때에 원격 저장소로 전송된다는 것에 유의하라; 즉, 실행중인 태스크를 위한 원격 로그는 사용할 수 없다.</p>
+<div class="section" id="before-you-begin">
+<h3>시작하기 전<a class="headerlink" href="#before-you-begin" title="제목 주소">¶</a></h3>
+<p>원격 로깅은 로그를 읽거나 쓰기 위해 현재 존재하는 에어플로우 커넥션(connection)을 사용한다. 커넥션이 제대로 설정되지 않으면, 이 프로세스는 실패할 것이다.</p>
+</div>
+</div>
+<div class="section" id="writing-logs-to-amazon-s3">
+<span id="write-logs-amazon"></span><h2>아마존(Amazon) S3에 로그 쓰기<a class="headerlink" href="#writing-logs-to-amazon-s3" title="제목 주소">¶</a></h2>
+<div class="section" id="enabling-remote-logging">
+<h3>원격 로깅(remote logging) 사용<a class="headerlink" href="#enabling-remote-logging" title="제목 주소">¶</a></h3>
+<p>이 기능을 사용하기 위해, <code class="docutils literal notranslate"><span class="pre">airflow.cfg</span></code>는 다음과 같이 설정되어야 한다:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="o">[</span>core<span class="o">]</span>
+<span class="c1"># Airflow can store logs remotely in AWS S3. Users must supply a remote</span>
+<span class="c1"># location URL (starting with either &#39;s3://...&#39;) and an Airflow connection</span>
+<span class="c1"># id that provides access to the storage location.</span>
+<span class="nv">remote_logging</span> <span class="o">=</span> True
+<span class="nv">remote_base_log_folder</span> <span class="o">=</span> s3://my-bucket/path/to/logs
+<span class="nv">remote_log_conn_id</span> <span class="o">=</span> MyS3Conn
+<span class="c1"># Use server-side encryption for logs stored in S3</span>
+<span class="nv">encrypt_s3_logs</span> <span class="o">=</span> False
+</pre></div>
+</div>
+<p>위의 예시에서, 에어플로우는 <code class="docutils literal notranslate"><span class="pre">S3Hook(‘MyS3Conn’)</span></code>을 사용하려고 할 것이다.</p>
+</div>
+</div>
+<div class="section" id="writing-logs-to-azure-blob-storage">
+<span id="write-logs-azure"></span><h2>애저(Azure) Blob 저장소에 로그 쓰기<a class="headerlink" href="#writing-logs-to-azure-blob-storage" title="제목 주소">¶</a></h2>
+<p>에어플로우는 애저(Azure) Blob 저장소에서 태스크 로그를 읽거나 적도록 설정할 수 있다.</p>
+<p>Azure Blob 저장소 로깅을 사용하기 위해 아래의 스텝을 따른다:</p>
+<ol class="arabic">
+<li><p class="first">에어플로우의 로깅 시스템은 <code class="docutils literal notranslate"><span class="pre">PYTHONPATH</span></code> 안에 위치한 사용자 정의된 <cite>.py</cite> 파일을 요구하는데, 따라서 에어플로우에서 이를 임포트할 수 있어야 한다. 설정 파일을 저장하기 위한 디렉토리를 생성하는 것으로 시작하라, 이 디렉토리는 <code class="docutils literal notranslate"><span class="pre">$AIRFLOW_HOME/config</span></code>과 같이 하는 것을 권장한다.</p>
+</li>
+<li><p class="first"><code class="docutils literal notranslate"><span class="pre">$AIRFLOW_HOME/config/log_config.py</span></code> 그리고 <code class="docutils literal notranslate"><span class="pre">$AIRFLOW_HOME/config/__init__.py</span></code> 이름의 빈 파일을 생성하라.</p>
+</li>
+<li><p class="first"><code class="docutils literal notranslate"><span class="pre">airflow/config_templates/airflow_local_settings.py</span></code>의 내용을 <cite>Step 2</cite>에서 생성한 <code class="docutils literal notranslate"><span class="pre">log_config.py</span></code> 파일로 복사하라.</p>
+</li>
+<li><p class="first">템플릿의 다음 부분을 사용자 정의하라:</p>
+<blockquote>
+<div><div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="c1"># wasb buckets should start with &quot;wasb&quot; just to help Airflow select correct handler</span>
+<span class="nv">REMOTE_BASE_LOG_FOLDER</span> <span class="o">=</span> <span class="s1">&#39;wasb-&lt;whatever you want here&gt;&#39;</span>
+
+<span class="c1"># Rename DEFAULT_LOGGING_CONFIG to LOGGING CONFIG</span>
+<span class="nv">LOGGING_CONFIG</span> <span class="o">=</span> ...
+</pre></div>
+</div>
+</div></blockquote>
+</li>
+<li><p class="first">Azure Blob 저장소(Wasb) 커넥션 훅가 에어플로우에서 정의되었는지 확인하라. 훅(hook)은 위의 <code class="docutils literal notranslate"><span class="pre">REMOTE_BASE_LOG_FOLDER</span></code>에 정의된 Azure Blob 저장소 버킷(bucket)에 대한 읽기 및 쓰기 접근 권한을 가졌을 것이다.</p>
+</li>
+<li><p class="first">다음을 포함하도록 <code class="docutils literal notranslate"><span class="pre">$AIRFLOW_HOME/airflow.cfg</span></code>를 업데이트 하라:</p>
+<blockquote>
+<div><div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nv">remote_logging</span> <span class="o">=</span> True
+<span class="nv">logging_config_class</span> <span class="o">=</span> log_config.LOGGING_CONFIG
+<span class="nv">remote_log_conn_id</span> <span class="o">=</span> &lt;name of the Azure Blob Storage connection&gt;
+</pre></div>
+</div>
+</div></blockquote>
+</li>
+<li><p class="first">에어플로우 웹서버(webserver)와 스케쥴러(scheduler)를 재시작하고, 새로운 태스크 실행(execution)을 트리거(또는 대기)한다.</p>
+</li>
+<li><p class="first">정의한 버킷에서 태스크가 새롭게 실행된 것에 대한 로그가 표시되는지 확인하라.</p>
+</li>
+</ol>
+</div>
+<div class="section" id="writing-logs-to-google-cloud-storage">
+<span id="write-logs-gcp"></span><h2>구글 클라우드 저장소(Google Cloud Storage)에 로그 쓰기<a class="headerlink" href="#writing-logs-to-google-cloud-storage" title="제목 주소">¶</a></h2>
+<p>구글 클라우드 저장소 로깅을 사용하기 위해 다음의 스텝을 따라라.</p>
+<p>이 기능을 사용하기 위하여, 이 예시와 같이 <code class="docutils literal notranslate"><span class="pre">airflow.cfg</span></code>를 구성해야 한다:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="o">[</span>core<span class="o">]</span>
+<span class="c1"># Airflow can store logs remotely in AWS S3, Google Cloud Storage or Elastic Search.</span>
+<span class="c1"># Users must supply an Airflow connection id that provides access to the storage</span>
+<span class="c1"># location. If remote_logging is set to true, see UPDATING.md for additional</span>
+<span class="c1"># configuration requirements.</span>
+<span class="nv">remote_logging</span> <span class="o">=</span> True
+<span class="nv">remote_base_log_folder</span> <span class="o">=</span> gs://my-bucket/path/to/logs
+<span class="nv">remote_log_conn_id</span> <span class="o">=</span> MyGCSConn
+</pre></div>
+</div>
+<ol class="arabic simple">
+<li><code class="docutils literal notranslate"><span class="pre">pip</span> <span class="pre">install</span> <span class="pre">‘apache-airflow[gcp]’</span></code>와 같이, 먼저 <code class="docutils literal notranslate"><span class="pre">gcp</span></code> 패키지를 설치하라.</li>
+<li>구글 클라우드 플랫폼 커넥션 훅이 에어플로우에 정의되어 있는지 확인하라. <code class="docutils literal notranslate"><span class="pre">remote_base_log_folder</span></code>의 상단에 정의된 구글 클라우드 스토리지 버킷에 대한 읽기 및 쓰기 접근 권한을 가져야 한다.</li>
+<li>에어플로우 웹서버(webserver)와 스케쥴러(scheduler)를 재시작하고, 새로운 태스크 실행(execution)을 트리거(또는 대기)한다.</li>
+<li>정의한 버킷에서 태스크가 새롭게 실행된 것에 대한 로그가 표시되는지 확인하라.</li>
+<li>구글 클라우드 스토리지 뷰어(viewer)가 UI상에서 작동하는지 확인하라. 새로 실행된 태스크를 끌어올리고, 다음과 같은 항목이 표시되는지 확인하라:</li>
+</ol>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>*** Reading remote log from gs://&lt;bucket where logs should be persisted&gt;/example_bash_operator/run_this_last/2017-10-03T00:00:00/16.log.
+<span class="o">[</span><span class="m">2017</span>-10-03 <span class="m">21</span>:57:50,056<span class="o">]</span> <span class="o">{</span>cli.py:377<span class="o">}</span> INFO - Running on host chrisr-00532
+<span class="o">[</span><span class="m">2017</span>-10-03 <span class="m">21</span>:57:50,093<span class="o">]</span> <span class="o">{</span>base_task_runner.py:115<span class="o">}</span> INFO - Running: <span class="o">[</span><span class="s1">&#39;bash&#39;</span>, <span class="s1">&#39;-c&#39;</span>, u<span class="s1">&#39;airflow run example_bash_operator run_this_last 2017-10-03T00:00:00 --job_id 47 --raw -sd DAGS_FOLDER/example_dags/example_bash_operator.py&#39;</span><span class="o">]</span>
+<span class="o">[</span><span class="m">2017</span>-10-03 <span class="m">21</span>:57:51,264<span class="o">]</span> <span class="o">{</span>base_task_runner.py:98<span class="o">}</span> INFO - Subtask: <span class="o">[</span><span class="m">2017</span>-10-03 <span class="m">21</span>:57:51,263<span class="o">]</span> <span class="o">{</span>__init__.py:45<span class="o">}</span> INFO - Using executor SequentialExecutor
+<span class="o">[</span><span class="m">2017</span>-10-03 <span class="m">21</span>:57:51,306<span class="o">]</span> <span class="o">{</span>base_task_runner.py:98<span class="o">}</span> INFO - Subtask: <span class="o">[</span><span class="m">2017</span>-10-03 <span class="m">21</span>:57:51,306<span class="o">]</span> <span class="o">{</span>models.py:186<span class="o">}</span> INFO - Filling up the DagBag from /airflow/dags/example_dags/example_bash_operator.py
+</pre></div>
+</div>
+<p>원격 로그 파일의 경로가 첫번째 줄에 나열되어 있다는 점에 <strong>유의</strong>하라.</p>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="executor/use-celery.html" class="btn btn-neutral float-right" title="Scaling Out with Celery" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="secure-connections.html" class="btn btn-neutral" title="커넥션 보안" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'../',
+            VERSION:'1.10.1',
+            LANGUAGE:'ko',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
+        };
+    </script>
+      <script type="text/javascript" src="../_static/jquery.js"></script>
+      <script type="text/javascript" src="../_static/underscore.js"></script>
+      <script type="text/javascript" src="../_static/doctools.js"></script>
+      <script type="text/javascript" src="../_static/language_data.js"></script>
+      <script type="text/javascript" src="../_static/translations.js"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          
+          SphinxRtdTheme.Navigation.enableSticky();
+          
+      });
+  </script> 
+
+</body>
+</html>

@@ -1,0 +1,460 @@
+<!--
+Javascript to render AIRFLOW-XXX and PR references in text
+as HTML links.
+
+Overrides extrahead block from sphinx_rtd_theme
+https://www.sphinx-doc.org/en/master/templating.html
+-->
+
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="ko" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="ko" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>스케쥴링(Scheduling)&amp; 트리거(Triggers) &mdash; Airflow Documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+    <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="index" title="색인" href="genindex.html" />
+    <link rel="search" title="검색" href="search.html" />
+    <link rel="next" title="Plugins" href="plugins.html" />
+    <link rel="prev" title="Command Line Interface" href="cli.html" />
+   
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      var el = document.getElementById('changelog');
+      if (el !== null ) {
+        // [AIRFLOW-...]
+        el.innerHTML = el.innerHTML.replace(
+            /\[(AIRFLOW-[\d]+)\]/g,
+            `<a href="https://issues.apache.org/jira/browse/$1">[$1]</a>`
+        );
+        // (#...)
+        el.innerHTML = el.innerHTML.replace(
+            /\(#([\d]+)\)/g,
+            `<a href="https://github.com/apache/airflow/pull/$1">(#$1)</a>`
+        );
+      };
+    })
+  </script>
+  <style>
+    .example-header {
+      position: relative;
+      background: #9AAA7A;
+      padding: 8px 16px;
+      margin-bottom: 0;
+    }
+    .example-header--with-button {
+      padding-right: 166px;
+    }
+    .example-header:after{
+      content: '';
+      display: table;
+      clear: both;
+    }
+    .example-title {
+      display:block;
+      padding: 4px;
+      margin-right: 16px;
+      color: white;
+      overflow-x: auto;
+    }
+    .example-header-button {
+      top: 8px;
+      right: 16px;
+      position: absolute;
+    }
+    .example-header + .highlight-python {
+      margin-top: 0 !important;
+    }
+    .viewcode-button {
+      display: inline-block;
+      padding: 8px 16px;
+      border: 0;
+      margin: 0;
+      outline: 0;
+      border-radius: 2px;
+      -webkit-box-shadow: 0 3px 5px 0 rgba(0,0,0,.3);
+      box-shadow: 0 3px 6px 0 rgba(0,0,0,.3);
+      color: #404040;
+      background-color: #e7e7e7;
+      cursor: pointer;
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 1;
+      text-decoration: none;
+      text-overflow: ellipsis;
+      overflow: hidden;
+      text-transform: uppercase;
+      -webkit-transition: background-color .2s;
+      transition: background-color .2s;
+      vertical-align: middle;
+      white-space: nowrap;
+    }
+    .viewcode-button:visited {
+      color: #404040;
+    }
+    .viewcode-button:hover, .viewcode-button:focus {
+      color: #404040;
+      background-color: #d6d6d6;
+    }
+  </style>
+
+
+  
+  <script src="_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="index.html" class="icon icon-home"> Airflow
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                1.10.1
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="project.html">프로젝트(Project)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="license.html">라이센스(License)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="start.html">빠른 시작(Quick Start)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="installation.html">설치</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tutorial.html">튜토리얼(Tutorial)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="howto/index.html">사용 가이드</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ui.html">UI / 스크린샷(Screenshots)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="concepts.html">개념</a></li>
+<li class="toctree-l1"><a class="reference internal" href="cli.html">Command Line Interface</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">스케쥴링(Scheduling)&amp; 트리거(Triggers)</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#dag-runs">DAG Run</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#backfill-and-catchup">백필(Backfill)과 캐치업(Catchup)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#external-triggers">외부적 트리거</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#to-keep-in-mind">명심할 것</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="plugins.html">Plugins</a></li>
+<li class="toctree-l1"><a class="reference internal" href="security.html">보안</a></li>
+<li class="toctree-l1"><a class="reference internal" href="timezone.html">타임 존(Time zones)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="api.html">Experimental Rest API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="integration.html">Integration</a></li>
+<li class="toctree-l1"><a class="reference internal" href="metrics.html">Metrics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="kubernetes.html">Kubernetes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="lineage.html">Lineage</a></li>
+<li class="toctree-l1"><a class="reference internal" href="changelog.html">Changelog</a></li>
+<li class="toctree-l1"><a class="reference internal" href="faq.html">FAQ</a></li>
+<li class="toctree-l1"><a class="reference internal" href="macros.html">Macros reference</a></li>
+<li class="toctree-l1"><a class="reference internal" href="_api/index.html">API Reference</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Airflow</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+      <li>스케쥴링(Scheduling)&amp; 트리거(Triggers)</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/scheduler.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="scheduling-triggers">
+<h1>스케쥴링(Scheduling)&amp; 트리거(Triggers)<a class="headerlink" href="#scheduling-triggers" title="제목 주소">¶</a></h1>
+<p>에어플로우 스케쥴러는 모든 DAG와 모든 태스크를 모니터하고, 종속성이 충족된 태스크 인스턴스를 트리거한다. 에어플로우 스케쥴러는 백그라운드에서 서브 프로세스(subprocess)를 돌리고, 서브 프로세스에서 포함할 수 있는 모든 DAG 객체를 모니터링하고 폴더와 동기화 상태를 유지하며, 주기적으로(매 분마다) DAG파싱 결과를 수집하고 활성화된 태스크를 검사하여 트리거 할 수 있는지 확인한다.</p>
+<p>에어플로우 스케쥴러는 에어플로우 제품 환경(production environment)에서 영구적인 서비스로 동작하도록 설계되었다. 이를 시작하기 위해서, <code class="docutils literal notranslate"><span class="pre">airflow</span> <span class="pre">scheduler</span></code>를 실행하기만 하면 된다. 에어플로우 스케쥴러는 <code class="docutils literal notranslate"><span class="pre">airflow.cfg</span></code>에서 명시된 구성 설정을 사용할 것이다.</p>
+<p>하루 동안의 <code class="docutils literal notranslate"><span class="pre">schedule_interval</span></code>에서 DAG를 실행하면 <code class="docutils literal notranslate"><span class="pre">2016-01-01T23:59</span></code> 직후에 곧바로 실행 스탬프 <code class="docutils literal notranslate"><span class="pre">2016-01-01</span></code>가 트리거 된다는 점에 유의하라. 다시 말해, 작업 인스턴스(job instance)가 그것이 적용되는 기간이 끝났을 때 시작된다.</p>
+<p><strong>다시 반복하자면</strong> 스케쥴러가 해당 기간의 끝(END)에서 시작 날짜 이후(AFTER)에 하나의 <code class="docutils literal notranslate"><span class="pre">schedule_intervall</span></code> 작업을 실행한다.</p>
+<p>스케쥴러는 <code class="docutils literal notranslate"><span class="pre">airflow.cfg</span></code>에서 명시된 실행자(executor)의 인스턴스를 시작한다. 만약에 <code class="xref py py-class docutils literal notranslate"><span class="pre">airflow.contrib.executors.local_executor.LocalExecutor</span></code>가 된다면, 태스크들은 서브프로세스로(subprocesses)로 실행될 것이다; <a class="reference internal" href="_api/airflow/executors/celery_executor/index.html#airflow.executors.celery_executor.CeleryExecutor" title="airflow.executors.celery_executor.CeleryExecutor"><code class="xref py py-class docutils literal notranslate"><span class="pre">airflow.executors.celery_executor.CeleryExecutor</span></code></a>, <code class="xref py py-class docutils literal notranslate"><span class="pre">airflow.executors.dask_executor.DaskExecutor`</span></code>, 그리고 <a class="reference internal" href="_api/airflow/contrib/executors/mesos_executor/index.html#airflow.contrib.executors.mesos_executor.MesosExecutor" title="airflow.contrib.executors.mesos_executor.MesosExecutor"><code class="xref py py-class docutils literal notranslate"><span class="pre">airflow.contrib.executors.mesos_executor.MesosExecutor</span></code></a>의 경우에는 원격으로 태스크가 실행된다.</p>
+<p>스케쥴러를 시작하기 위해, 간단히 다음의 명령을 실행한다:</p>
+<div class="code bash highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">airflow</span> <span class="n">scheduler</span>
+</pre></div>
+</div>
+<div class="section" id="dag-runs">
+<h2>DAG Run<a class="headerlink" href="#dag-runs" title="제목 주소">¶</a></h2>
+<p>DAG Run은 DAG의 인스턴스화를 나타내는 객체이다.</p>
+<p>각 DAG에는 <code class="docutils literal notranslate"><span class="pre">DAG</span> <span class="pre">Runs</span></code>가 어떻게 생성되었는지 알려주는 스케쥴이 있을 수도 있고 없을 수도 있다. <code class="docutils literal notranslate"><span class="pre">schedule_intervall</span></code>은 DAG 인자로서 정의되고, 가급적이면 <a class="reference external" href="https://en.wikipedia.org/wiki/Cron#CRON_expression">cron expression</a>로서 <code class="docutils literal notranslate"><span class="pre">str</span></code>, 또는 <code class="docutils literal notranslate"><span class="pre">datetime.timedelta</span></code> 객체로 받아들인다. 그렇지 않으면, cron “preset” 중 하나를 사용할 수도 있다:</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="15%" />
+<col width="69%" />
+<col width="16%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">preset</th>
+<th class="head">meaning</th>
+<th class="head">cron</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">None</span></code></td>
+<td>스케쥴하지 말고, 단독 “외부 트리거” DAG에 사용</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal notranslate"><span class="pre">&#64;once</span></code></td>
+<td>한 번 예약하고 실행</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">&#64;hourly</span></code></td>
+<td>시작 시간부터 한 시간마다 실행</td>
+<td><code class="docutils literal notranslate"><span class="pre">0</span> <span class="pre">*</span> <span class="pre">*</span> <span class="pre">*</span> <span class="pre">*</span></code></td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal notranslate"><span class="pre">&#64;daily</span></code></td>
+<td>하루 한 번 자정(midnight)에 실행</td>
+<td><code class="docutils literal notranslate"><span class="pre">0</span> <span class="pre">0</span> <span class="pre">*</span> <span class="pre">*</span> <span class="pre">*</span></code></td>
+</tr>
+<tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">&#64;weekly</span></code></td>
+<td>일주일에 한 번 일요일 오전 자정(midnight)에 실행</td>
+<td><code class="docutils literal notranslate"><span class="pre">0</span> <span class="pre">0</span> <span class="pre">*</span> <span class="pre">*</span> <span class="pre">0</span></code></td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal notranslate"><span class="pre">&#64;monthly</span></code></td>
+<td>한 달에 한 번 첫 날 자정에 실행</td>
+<td><code class="docutils literal notranslate"><span class="pre">0</span> <span class="pre">0</span> <span class="pre">1</span> <span class="pre">*</span> <span class="pre">*</span></code></td>
+</tr>
+<tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">&#64;yearly</span></code></td>
+<td>일 년에 한 번 1월 1일 자정에 실행</td>
+<td><code class="docutils literal notranslate"><span class="pre">0</span> <span class="pre">0</span> <span class="pre">1</span> <span class="pre">1</span> <span class="pre">*</span></code></td>
+</tr>
+</tbody>
+</table>
+<p><strong>유의 사항</strong>: DAG 스케쥴을 지정하지 않으려면 <code class="docutils literal notranslate"><span class="pre">schedule_interval=None</span></code>을 사용하고 <code class="docutils literal notranslate"><span class="pre">schedule_interval=‘None’</span></code>을 사용하지 마라.</p>
+<p>DAG는 각 스케쥴에 따라 인스턴스화 될 것이며, 각 스케쥴에 대해 <code class="docutils literal notranslate"><span class="pre">DAG</span> <span class="pre">Run</span></code> 항목을 생성할 것이다.</p>
+<p>DAG run은 그들과 관련된 상태(running, failed, success)를 가지고 스케쥴러에게 어떤 스케쥴 집합(set)이 태스크 서브미션(submission)에 대한 평가 해야하는지 알려준다. DAG run 수준의 메타데이터가 없으면, 에어플로우 스케쥴러는 어떤 태스크가 트리거되고 크롤 작업을 해야하는지 알아내기 위하여 많은 작업을 수행해야 할 것이다. 또한 DAG의 모양이 변경될 때 새로운 태스크를 추가하여, 원치 않은 처리를 생성할 수 있다.</p>
+</div>
+<div class="section" id="backfill-and-catchup">
+<h2>백필(Backfill)과 캐치업(Catchup)<a class="headerlink" href="#backfill-and-catchup" title="제목 주소">¶</a></h2>
+<p><code class="docutils literal notranslate"><span class="pre">start_date</span></code>, <code class="docutils literal notranslate"><span class="pre">end_date</span></code> 그리고 <code class="docutils literal notranslate"><span class="pre">schedule_interval</span></code>이 있는 에어플로우 DAG는 스케쥴러가 개별 Dag Runs과 실행(execute)이 되는 일련의 간격(interval)을 정의한다. 에어플로우의 주요 기능은 이러한 DAG Run들이 원자적(atomic)이고, b멱등한 아이템이며, 기본적으로 스케쥴러는 DAG의 수명(시작에서 종료/현재, 한 번에 한 간격만큼)을 검사하고 실행되지 않았거나 (삭제된) 모든 간격 동안의 DAG 실행을 시작한다는 것이다. 이러한 개념을 캐치업(Catchup)이라고 한다.</p>
+<p>DAG가 자체 캐치업을 처리하도록 작성됐다면(예를 들어 인스턴스의 경우 인터벌(interval)에 제한을 두지 않는 대신 “Now”로 제한), 캐치업 기능을 끄거나(DAG 자체에서 <code class="docutils literal notranslate"><span class="pre">dag.catchup</span> <span class="pre">=</span> <span class="pre">False</span></code>) 또는 환경 설정(configuration) 파일 수준에서 <code class="docutils literal notranslate"><span class="pre">catchup_by_default</span> <span class="pre">=</span> <span class="pre">False</span></code>로 기본 설정한다. 이렇게 하면, 스케쥴러가 연속된 DAG 인터벌(interval series)의 가장 최신의 인스턴스에 대해서만 DAG Run을 생성하도록 지시할 것이다.</p>
+<div class="code python highlight-default notranslate"><div class="highlight"><pre><span></span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">Code that goes along with the Airflow tutorial located at:</span>
+<span class="sd">https://github.com/apache/airflow/blob/master/airflow/example_dags/tutorial.py</span>
+<span class="sd">&quot;&quot;&quot;</span>
+<span class="kn">from</span> <span class="nn">airflow</span> <span class="k">import</span> <span class="n">DAG</span>
+<span class="kn">from</span> <span class="nn">airflow.operators.bash_operator</span> <span class="k">import</span> <span class="n">BashOperator</span>
+<span class="kn">from</span> <span class="nn">datetime</span> <span class="k">import</span> <span class="n">datetime</span><span class="p">,</span> <span class="n">timedelta</span>
+
+
+<span class="n">default_args</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s1">&#39;owner&#39;</span><span class="p">:</span> <span class="s1">&#39;airflow&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;depends_on_past&#39;</span><span class="p">:</span> <span class="kc">False</span><span class="p">,</span>
+    <span class="s1">&#39;start_date&#39;</span><span class="p">:</span> <span class="n">datetime</span><span class="p">(</span><span class="mi">2015</span><span class="p">,</span> <span class="mi">12</span><span class="p">,</span> <span class="mi">1</span><span class="p">),</span>
+    <span class="s1">&#39;email&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;airflow@example.com&#39;</span><span class="p">],</span>
+    <span class="s1">&#39;email_on_failure&#39;</span><span class="p">:</span> <span class="kc">False</span><span class="p">,</span>
+    <span class="s1">&#39;email_on_retry&#39;</span><span class="p">:</span> <span class="kc">False</span><span class="p">,</span>
+    <span class="s1">&#39;retries&#39;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
+    <span class="s1">&#39;retry_delay&#39;</span><span class="p">:</span> <span class="n">timedelta</span><span class="p">(</span><span class="n">minutes</span><span class="o">=</span><span class="mi">5</span><span class="p">)</span>
+<span class="p">}</span>
+
+<span class="n">dag</span> <span class="o">=</span> <span class="n">DAG</span><span class="p">(</span>
+    <span class="s1">&#39;tutorial&#39;</span><span class="p">,</span>
+    <span class="n">default_args</span><span class="o">=</span><span class="n">default_args</span><span class="p">,</span>
+    <span class="n">description</span><span class="o">=</span><span class="s1">&#39;A simple tutorial DAG&#39;</span><span class="p">,</span>
+    <span class="n">schedule_interval</span><span class="o">=</span><span class="s1">&#39;@daily&#39;</span><span class="p">,</span>
+    <span class="n">catchup</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>위의 예시에서, 2016-01-02 오전 6시에 스케쥴러 데몬(daemon)에 의해 DAG가 선택되면, 2016-01-01에 <code class="docutils literal notranslate"><span class="pre">execution_date</span></code>로 단일 DAG Run이 생성될 것이고, 다음 실행은 2016-01-02의 실행 날짜로 2016-01-03 자정이 지나고 난 후 생성될 것이다.</p>
+<p>만약 <code class="docutils literal notranslate"><span class="pre">dag.catchup</span></code> 값이 True였다면, 스케쥴러는 2015-12-01과 2016-01-02 사이의 이미 완료된 인터벌(그러나 아직 2016-01-02에 대한 인터벌은 완료되지 않음)에 대해 DAG Run을 생성했을 것이고 스케쥴러는 순차적으로 이를 실행할 것이다. 이런 행동은 시기 별로 쉽게 분할될 수 있는 원자적(atomic) 데이터셋에 좋다. DAG Run 내부적으로 백필(backfill)을 실행하는 경우라면 캐치업 기능을 해제하는 것이 좋다.</p>
+</div>
+<div class="section" id="external-triggers">
+<h2>외부적 트리거<a class="headerlink" href="#external-triggers" title="제목 주소">¶</a></h2>
+<p><code class="docutils literal notranslate"><span class="pre">DAG</span> <span class="pre">Runs</span></code>는 특정 <code class="docutils literal notranslate"><span class="pre">run_id</span></code>를 정의할 수 있는 <code class="docutils literal notranslate"><span class="pre">airflow</span> <span class="pre">trigger_dag</span></code> 명령어를 실행하는 동안 CLI를 통해 수동으로 생성할 수도 있다는 점에 유의하라. 스케쥴러의 외부에서 생성된 <code class="docutils literal notranslate"><span class="pre">DAG</span> <span class="pre">Runs</span></code>은 트리거의 타임스탬프와 연결되고, 예약된 <code class="docutils literal notranslate"><span class="pre">DAG</span> <span class="pre">runs</span></code>와 함께 UI에 표시된다.</p>
+<p>추가적으로, 웹 UI를 사용하여 <code class="docutils literal notranslate"><span class="pre">DAG</span> <span class="pre">Run</span></code>을 수동으로 트리거 할 수 있다(“DAGs” 탭 -&gt; “Links” 컬럼 -&gt; “Trigger Dag” 버튼).</p>
+</div>
+<div class="section" id="to-keep-in-mind">
+<h2>명심할 것<a class="headerlink" href="#to-keep-in-mind" title="제목 주소">¶</a></h2>
+<ul class="simple">
+<li>첫번째 <code class="docutils literal notranslate"><span class="pre">DAG</span> <span class="pre">Run</span></code>은 DAG의 태스크b에 대한 최소 <code class="docutils literal notranslate"><span class="pre">start_date</span></code>를 기준으로 생성된다.</li>
+<li>차후의 <code class="docutils literal notranslate"><span class="pre">DAG</span> <span class="pre">Runs</span></code>은 스케쥴러 프로세스에 의해 생성되며, DAG의 <code class="docutils literal notranslate"><span class="pre">schedule_interval</span></code>을 기반으로 순서대로 생성된다.</li>
+<li>태스크를 다시 실행하길(re-run) 바라며 태스크의 상태(state)를 지울 때, 이 <code class="docutils literal notranslate"><span class="pre">DAG</span> <span class="pre">Run</span></code>의 상태 역시 중요하게 살펴야 한다. 왜냐하면 스케쥴러가 해당 실행(run)을 위하여 태스크를 트리거해야 하는지 여부를 정의하기 때문이다.</li>
+</ul>
+<p>다음은 <strong>태스크 차단 해제(unblock)</strong>할 수 있는 방법이다:</p>
+<ul class="simple">
+<li>UI에서 보면, 태스크 인스턴스 대화 상자(dialog)에서 개별적인 태스크 인스턴스를 삭제하는 동시에 과거/미래 및 업스트립(upstream)/다운스트림(downstream) 종속성을 포함할지 여부를 정의할 수 있다. 확인 창이 뜨면 지우려는 세트(set)를 볼 수 있다는 점에 유의하라. 또한 dag와 관련된 모든 태스크 인스턴스를 지울 수 있다.</li>
+<li><code class="docutils literal notranslate"><span class="pre">airflow</span> <span class="pre">clear</span> <span class="pre">-h</span></code> CLI 명령어는 날짜 범위를 지정하고, 특정 정규 표현식으로 task_ids를 가리키고, 업스트림과 다운스트림 관계성을 포함하는 플래그와 특정 상태(<code class="docutils literal notranslate"><span class="pre">failed</span></code> 또는 <code class="docutils literal notranslate"><span class="pre">success</span></code>)의 태스크 인스턴스를 타겟팅하는 등 태스크 인스턴스 상태를 지우기 위한 많은 옵션을 가지고 있다.</li>
+<li>태스크 인스턴스를 지우는 것은 더 이상 태스크 인스턴스 레코드(record)를 삭제하지 못 한다. 대신 max_tries를 업데이트하고 현재 태스크 인스턴스 상태를 None으로 설정하라.</li>
+<li>태스크 인스턴스를 실패(failed)로 표시하는 것은 UI를 통해 할 수 있다. 이는 태스크 인스턴스의 실행을 중지하는데 사용할 수 있다.</li>
+<li>태스크 인스턴스를 성공(successful)으로 표시하는 것은 UI를 통해 할 수 있다. 대부분 거짓 부정(false negatives)를 수정할 때 사용하며, 인스턴스에 에어플로우 외부에 수정(fix)을 적용할 때 사용한다.</li>
+<li><code class="docutils literal notranslate"><span class="pre">airflow</span> <span class="pre">backfill</span></code> CLI 서브 명령어는 <code class="docutils literal notranslate"><span class="pre">—mark_success</span></code> 플래그가 있으며 DAG의 서브 섹션을 선택은 물론 날짜 범위도 지정할 수 있다.</li>
+</ul>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="plugins.html" class="btn btn-neutral float-right" title="Plugins" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="cli.html" class="btn btn-neutral" title="Command Line Interface" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'./',
+            VERSION:'1.10.1',
+            LANGUAGE:'ko',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
+        };
+    </script>
+      <script type="text/javascript" src="_static/jquery.js"></script>
+      <script type="text/javascript" src="_static/underscore.js"></script>
+      <script type="text/javascript" src="_static/doctools.js"></script>
+      <script type="text/javascript" src="_static/language_data.js"></script>
+      <script type="text/javascript" src="_static/translations.js"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          
+          SphinxRtdTheme.Navigation.enableSticky();
+          
+      });
+  </script> 
+
+</body>
+</html>

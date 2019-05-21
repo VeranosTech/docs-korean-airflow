@@ -1,0 +1,682 @@
+<!--
+Javascript to render AIRFLOW-XXX and PR references in text
+as HTML links.
+
+Overrides extrahead block from sphinx_rtd_theme
+https://www.sphinx-doc.org/en/master/templating.html
+-->
+
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="ko" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="ko" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>airflow.contrib.operators.qubole_operator &mdash; Airflow Documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+    <link rel="stylesheet" href="../../../../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../../../../_static/pygments.css" type="text/css" />
+    <link rel="index" title="색인" href="../../../../../genindex.html" />
+    <link rel="search" title="검색" href="../../../../../search.html" />
+    <link rel="next" title="airflow.contrib.operators.s3_copy_object_operator" href="../s3_copy_object_operator/index.html" />
+    <link rel="prev" title="airflow.contrib.operators.qubole_check_operator" href="../qubole_check_operator/index.html" />
+   
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      var el = document.getElementById('changelog');
+      if (el !== null ) {
+        // [AIRFLOW-...]
+        el.innerHTML = el.innerHTML.replace(
+            /\[(AIRFLOW-[\d]+)\]/g,
+            `<a href="https://issues.apache.org/jira/browse/$1">[$1]</a>`
+        );
+        // (#...)
+        el.innerHTML = el.innerHTML.replace(
+            /\(#([\d]+)\)/g,
+            `<a href="https://github.com/apache/airflow/pull/$1">(#$1)</a>`
+        );
+      };
+    })
+  </script>
+  <style>
+    .example-header {
+      position: relative;
+      background: #9AAA7A;
+      padding: 8px 16px;
+      margin-bottom: 0;
+    }
+    .example-header--with-button {
+      padding-right: 166px;
+    }
+    .example-header:after{
+      content: '';
+      display: table;
+      clear: both;
+    }
+    .example-title {
+      display:block;
+      padding: 4px;
+      margin-right: 16px;
+      color: white;
+      overflow-x: auto;
+    }
+    .example-header-button {
+      top: 8px;
+      right: 16px;
+      position: absolute;
+    }
+    .example-header + .highlight-python {
+      margin-top: 0 !important;
+    }
+    .viewcode-button {
+      display: inline-block;
+      padding: 8px 16px;
+      border: 0;
+      margin: 0;
+      outline: 0;
+      border-radius: 2px;
+      -webkit-box-shadow: 0 3px 5px 0 rgba(0,0,0,.3);
+      box-shadow: 0 3px 6px 0 rgba(0,0,0,.3);
+      color: #404040;
+      background-color: #e7e7e7;
+      cursor: pointer;
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 1;
+      text-decoration: none;
+      text-overflow: ellipsis;
+      overflow: hidden;
+      text-transform: uppercase;
+      -webkit-transition: background-color .2s;
+      transition: background-color .2s;
+      vertical-align: middle;
+      white-space: nowrap;
+    }
+    .viewcode-button:visited {
+      color: #404040;
+    }
+    .viewcode-button:hover, .viewcode-button:focus {
+      color: #404040;
+      background-color: #d6d6d6;
+    }
+  </style>
+
+
+  
+  <script src="../../../../../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../../../../../index.html" class="icon icon-home"> Airflow
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                1.10.1
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../../../../project.html">프로젝트(Project)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../license.html">라이센스(License)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../start.html">빠른 시작(Quick Start)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../installation.html">설치</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../tutorial.html">튜토리얼(Tutorial)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../howto/index.html">사용 가이드</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../ui.html">UI / 스크린샷(Screenshots)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../concepts.html">개념</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../cli.html">Command Line Interface</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../scheduler.html">스케쥴링(Scheduling)&amp; 트리거(Triggers)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../plugins.html">Plugins</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../security.html">보안</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../timezone.html">타임 존(Time zones)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../api.html">Experimental Rest API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../integration.html">Integration</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../metrics.html">Metrics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../kubernetes.html">Kubernetes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../lineage.html">Lineage</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../changelog.html">Changelog</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../faq.html">FAQ</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../macros.html">Macros reference</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../../../../index.html">API Reference</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="../../../../index.html#operators">Operators</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="../../../../index.html#baseoperator">BaseOperator</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../index.html#basesensoroperator">BaseSensorOperator</a></li>
+<li class="toctree-l3 current"><a class="reference internal" href="../../../../index.html#operators-packages">Operators packages</a><ul class="current">
+<li class="toctree-l4"><a class="reference internal" href="../../../operators/index.html"><code class="docutils literal notranslate"><span class="pre">airflow.operators</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../sensors/index.html"><code class="docutils literal notranslate"><span class="pre">airflow.sensors</span></code></a></li>
+<li class="toctree-l4 current"><a class="reference internal" href="../index.html"><code class="docutils literal notranslate"><span class="pre">airflow.contrib.operators</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../sensors/index.html"><code class="docutils literal notranslate"><span class="pre">airflow.contrib.sensors</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../../../index.html#hooks">Hooks</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../../index.html#executors">Executors</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../../index.html#models">Models</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../../index.html#core-and-community-package">Core and community package</a></li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../../../index.html">Airflow</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../../../../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="../../../../index.html">API Reference</a> &raquo;</li>
+        
+          <li><a href="../index.html"><code class="docutils literal notranslate"><span class="pre">airflow.contrib.operators</span></code></a> &raquo;</li>
+        
+      <li><code class="docutils literal notranslate"><span class="pre">airflow.contrib.operators.qubole_operator</span></code></li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../../../../../_sources/_api/airflow/contrib/operators/qubole_operator/index.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="module-airflow.contrib.operators.qubole_operator">
+<span id="airflow-contrib-operators-qubole-operator"></span><h1><a class="reference internal" href="#module-airflow.contrib.operators.qubole_operator" title="airflow.contrib.operators.qubole_operator"><code class="xref py py-mod docutils literal notranslate"><span class="pre">airflow.contrib.operators.qubole_operator</span></code></a><a class="headerlink" href="#module-airflow.contrib.operators.qubole_operator" title="제목 주소">¶</a></h1>
+<div class="section" id="module-contents">
+<h2>Module Contents<a class="headerlink" href="#module-contents" title="제목 주소">¶</a></h2>
+<dl class="class">
+<dt id="airflow.contrib.operators.qubole_operator.QuboleOperator">
+<em class="property">class </em><code class="descclassname">airflow.contrib.operators.qubole_operator.</code><code class="descname">QuboleOperator</code><span class="sig-paren">(</span><em>qubole_conn_id='qubole_default'</em>, <em>*args</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="reference internal" href="../../../../../_modules/airflow/contrib/operators/qubole_operator.html#QuboleOperator"><span class="viewcode-link">[소스]</span></a><a class="headerlink" href="#airflow.contrib.operators.qubole_operator.QuboleOperator" title="정의 주소">¶</a></dt>
+<dd><p>Bases:<a class="reference internal" href="../../../models/index.html#airflow.models.BaseOperator" title="airflow.models.BaseOperator"><code class="xref py py-class docutils literal notranslate"><span class="pre">airflow.models.BaseOperator</span></code></a></p>
+<p>Execute tasks (commands) on QDS (<a class="reference external" href="https://qubole.com">https://qubole.com</a>).</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">매개 변수:</th><td class="field-body"><strong>qubole_conn_id</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.7)"><em>str</em></a>) -- Connection id which consists of qds auth_token</td>
+</tr>
+</tbody>
+</table>
+<dl class="docutils">
+<dt>kwargs:</dt>
+<dd><table class="first docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">command_type:</th><td class="field-body">type of command to be executed, e.g. hivecmd, shellcmd, hadoopcmd</td>
+</tr>
+<tr class="field-even field"><th class="field-name">tags:</th><td class="field-body">array of tags to be assigned with the command</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">cluster_label:</th><td class="field-body">cluster label on which the command will be executed</td>
+</tr>
+<tr class="field-even field"><th class="field-name">name:</th><td class="field-body">name to be given to command</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">notify:</th><td class="field-body">whether to send email on command completion or not (default is False)</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Arguments specific to command types</strong></p>
+<dl class="last docutils">
+<dt>hivecmd:</dt>
+<dd><table class="first last docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">query:</th><td class="field-body">inline query statement</td>
+</tr>
+<tr class="field-even field"><th class="field-name" colspan="2">script_location:</th></tr>
+<tr class="field-even field"><td>&#160;</td><td class="field-body">s3 location containing query statement</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">sample_size:</th><td class="field-body">size of sample in bytes on which to run query</td>
+</tr>
+<tr class="field-even field"><th class="field-name">macros:</th><td class="field-body">macro values which were used in query</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">sample_size:</th><td class="field-body">size of sample in bytes on which to run query</td>
+</tr>
+<tr class="field-even field"><th class="field-name">hive-version:</th><td class="field-body">Specifies the hive version to be used. eg: 0.13,1.2,etc.</td>
+</tr>
+</tbody>
+</table>
+</dd>
+<dt>prestocmd:</dt>
+<dd><table class="first last docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">query:</th><td class="field-body">inline query statement</td>
+</tr>
+<tr class="field-even field"><th class="field-name" colspan="2">script_location:</th></tr>
+<tr class="field-even field"><td>&#160;</td><td class="field-body">s3 location containing query statement</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">macros:</th><td class="field-body">macro values which were used in query</td>
+</tr>
+</tbody>
+</table>
+</dd>
+<dt>hadoopcmd:</dt>
+<dd><table class="first last docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">sub_commnad:</th><td class="field-body">must be one these [&quot;jar&quot;, &quot;s3distcp&quot;, &quot;streaming&quot;] followed by
+1 or more args</td>
+</tr>
+</tbody>
+</table>
+</dd>
+<dt>shellcmd:</dt>
+<dd><table class="first last docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">script:</th><td class="field-body">inline command with args</td>
+</tr>
+<tr class="field-even field"><th class="field-name" colspan="2">script_location:</th></tr>
+<tr class="field-even field"><td>&#160;</td><td class="field-body">s3 location containing query statement</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">files:</th><td class="field-body">list of files in s3 bucket as file1,file2 format. These files will be
+copied into the working directory where the qubole command is being
+executed.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">archives:</th><td class="field-body">list of archives in s3 bucket as archive1,archive2 format. These
+will be unarchived into the working directory where the qubole command is
+being executed</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">parameters:</th><td class="field-body">any extra args which need to be passed to script (only when
+script_location is supplied)</td>
+</tr>
+</tbody>
+</table>
+</dd>
+<dt>pigcmd:</dt>
+<dd><table class="first last docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">script:</th><td class="field-body">inline query statement (latin_statements)</td>
+</tr>
+<tr class="field-even field"><th class="field-name" colspan="2">script_location:</th></tr>
+<tr class="field-even field"><td>&#160;</td><td class="field-body">s3 location containing pig query</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">parameters:</th><td class="field-body">any extra args which need to be passed to script (only when
+script_location is supplied</td>
+</tr>
+</tbody>
+</table>
+</dd>
+<dt>sparkcmd:</dt>
+<dd><table class="first last docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">program:</th><td class="field-body">the complete Spark Program in Scala, SQL, Command, R, or Python</td>
+</tr>
+<tr class="field-even field"><th class="field-name">cmdline:</th><td class="field-body">spark-submit command line, all required information must be specify
+in cmdline itself.</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">sql:</th><td class="field-body">inline sql query</td>
+</tr>
+<tr class="field-even field"><th class="field-name" colspan="2">script_location:</th></tr>
+<tr class="field-even field"><td>&#160;</td><td class="field-body">s3 location containing query statement</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">language:</th><td class="field-body">language of the program, Scala, SQL, Command, R, or Python</td>
+</tr>
+<tr class="field-even field"><th class="field-name">app_id:</th><td class="field-body">ID of an Spark job server app</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">arguments:</th><td class="field-body">spark-submit command line arguments</td>
+</tr>
+<tr class="field-even field"><th class="field-name" colspan="2">user_program_arguments:</th></tr>
+<tr class="field-even field"><td>&#160;</td><td class="field-body">arguments that the user program takes in</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">macros:</th><td class="field-body">macro values which were used in query</td>
+</tr>
+<tr class="field-even field"><th class="field-name">note_id:</th><td class="field-body">Id of the Notebook to run</td>
+</tr>
+</tbody>
+</table>
+</dd>
+<dt>dbtapquerycmd:</dt>
+<dd><table class="first last docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">db_tap_id:</th><td class="field-body">data store ID of the target database, in Qubole.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">query:</th><td class="field-body">inline query statement</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">macros:</th><td class="field-body">macro values which were used in query</td>
+</tr>
+</tbody>
+</table>
+</dd>
+<dt>dbexportcmd:</dt>
+<dd><table class="first last docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">mode:</th><td class="field-body">Can be 1 for Hive export or 2 for HDFS/S3 export</td>
+</tr>
+<tr class="field-even field"><th class="field-name">schema:</th><td class="field-body">Db schema name assumed accordingly by database if not specified</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">hive_table:</th><td class="field-body">Name of the hive table</td>
+</tr>
+<tr class="field-even field"><th class="field-name">partition_spec:</th><td class="field-body">partition specification for Hive table.</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">dbtap_id:</th><td class="field-body">data store ID of the target database, in Qubole.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">db_table:</th><td class="field-body">name of the db table</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">db_update_mode:</th><td class="field-body">allowinsert or updateonly</td>
+</tr>
+<tr class="field-even field"><th class="field-name">db_update_keys:</th><td class="field-body">columns used to determine the uniqueness of rows</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">export_dir:</th><td class="field-body">HDFS/S3 location from which data will be exported.</td>
+</tr>
+<tr class="field-even field"><th class="field-name" colspan="2">fields_terminated_by:</th></tr>
+<tr class="field-even field"><td>&#160;</td><td class="field-body">hex of the char used as column separator in the dataset</td>
+</tr>
+<tr class="field-odd field"><th class="field-name" colspan="2">use_customer_cluster:</th></tr>
+<tr class="field-odd field"><td>&#160;</td><td class="field-body">To use cluster to run command</td>
+</tr>
+<tr class="field-even field"><th class="field-name" colspan="2">customer_cluster_label:</th></tr>
+<tr class="field-even field"><td>&#160;</td><td class="field-body">the label of the cluster to run the command on</td>
+</tr>
+<tr class="field-odd field"><th class="field-name" colspan="2">additional_options:</th></tr>
+<tr class="field-odd field"><td>&#160;</td><td class="field-body">Additional Sqoop options which are needed enclose options in
+double or single quotes e.g. '--map-column-hive id=int,data=string'</td>
+</tr>
+</tbody>
+</table>
+</dd>
+<dt>dbimportcmd:</dt>
+<dd><table class="first last docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">mode:</th><td class="field-body">1 (simple), 2 (advance)</td>
+</tr>
+<tr class="field-even field"><th class="field-name">hive_table:</th><td class="field-body">Name of the hive table</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">schema:</th><td class="field-body">Db schema name assumed accordingly by database if not specified</td>
+</tr>
+<tr class="field-even field"><th class="field-name">hive_serde:</th><td class="field-body">Output format of the Hive Table</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">dbtap_id:</th><td class="field-body">data store ID of the target database, in Qubole.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">db_table:</th><td class="field-body">name of the db table</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">where_clause:</th><td class="field-body">where clause, if any</td>
+</tr>
+<tr class="field-even field"><th class="field-name">parallelism:</th><td class="field-body">number of parallel db connections to use for extracting data</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">extract_query:</th><td class="field-body">SQL query to extract data from db. $CONDITIONS must be part
+of the where clause.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">boundary_query:</th><td class="field-body">Query to be used get range of row IDs to be extracted</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">split_column:</th><td class="field-body">Column used as row ID to split data into ranges (mode 2)</td>
+</tr>
+<tr class="field-even field"><th class="field-name" colspan="2">use_customer_cluster:</th></tr>
+<tr class="field-even field"><td>&#160;</td><td class="field-body">To use cluster to run command</td>
+</tr>
+<tr class="field-odd field"><th class="field-name" colspan="2">customer_cluster_label:</th></tr>
+<tr class="field-odd field"><td>&#160;</td><td class="field-body">the label of the cluster to run the command on</td>
+</tr>
+<tr class="field-even field"><th class="field-name" colspan="2">additional_options:</th></tr>
+<tr class="field-even field"><td>&#160;</td><td class="field-body">Additional Sqoop options which are needed enclose options in
+double or single quotes</td>
+</tr>
+</tbody>
+</table>
+</dd>
+</dl>
+</dd>
+</dl>
+<dl class="attribute">
+<dt id="airflow.contrib.operators.qubole_operator.QuboleOperator.template_fields">
+<code class="descname">template_fields</code><em class="property"> = ['query', 'script_location', 'sub_command', 'script', 'files', 'archives', 'program', 'cmdline', 'sql', 'where_clause', 'tags', 'extract_query', 'boundary_query', 'macros', 'name', 'parameters', 'dbtap_id', 'hive_table', 'db_table', 'split_column', 'note_id', 'db_update_keys', 'export_dir', 'partition_spec', 'qubole_conn_id', 'arguments', 'user_program_arguments', 'cluster_label']</em><a class="reference internal" href="../../../../../_modules/airflow/contrib/operators/qubole_operator.html#QuboleOperator.template_fields"><span class="viewcode-link">[소스]</span></a><a class="headerlink" href="#airflow.contrib.operators.qubole_operator.QuboleOperator.template_fields" title="정의 주소">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="airflow.contrib.operators.qubole_operator.QuboleOperator.template_ext">
+<code class="descname">template_ext</code><em class="property"> = ['.txt']</em><a class="reference internal" href="../../../../../_modules/airflow/contrib/operators/qubole_operator.html#QuboleOperator.template_ext"><span class="viewcode-link">[소스]</span></a><a class="headerlink" href="#airflow.contrib.operators.qubole_operator.QuboleOperator.template_ext" title="정의 주소">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="airflow.contrib.operators.qubole_operator.QuboleOperator.ui_color">
+<code class="descname">ui_color</code><em class="property"> = #3064A1</em><a class="reference internal" href="../../../../../_modules/airflow/contrib/operators/qubole_operator.html#QuboleOperator.ui_color"><span class="viewcode-link">[소스]</span></a><a class="headerlink" href="#airflow.contrib.operators.qubole_operator.QuboleOperator.ui_color" title="정의 주소">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="airflow.contrib.operators.qubole_operator.QuboleOperator.ui_fgcolor">
+<code class="descname">ui_fgcolor</code><em class="property"> = #fff</em><a class="reference internal" href="../../../../../_modules/airflow/contrib/operators/qubole_operator.html#QuboleOperator.ui_fgcolor"><span class="viewcode-link">[소스]</span></a><a class="headerlink" href="#airflow.contrib.operators.qubole_operator.QuboleOperator.ui_fgcolor" title="정의 주소">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="airflow.contrib.operators.qubole_operator.QuboleOperator.qubole_hook_allowed_args_list">
+<code class="descname">qubole_hook_allowed_args_list</code><em class="property"> = ['command_type', 'qubole_conn_id', 'fetch_logs']</em><a class="reference internal" href="../../../../../_modules/airflow/contrib/operators/qubole_operator.html#QuboleOperator.qubole_hook_allowed_args_list"><span class="viewcode-link">[소스]</span></a><a class="headerlink" href="#airflow.contrib.operators.qubole_operator.QuboleOperator.qubole_hook_allowed_args_list" title="정의 주소">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="airflow.contrib.operators.qubole_operator.QuboleOperator._get_filtered_args">
+<code class="descname">_get_filtered_args</code><span class="sig-paren">(</span><em>self</em>, <em>all_kwargs</em><span class="sig-paren">)</span><a class="reference internal" href="../../../../../_modules/airflow/contrib/operators/qubole_operator.html#QuboleOperator._get_filtered_args"><span class="viewcode-link">[소스]</span></a><a class="headerlink" href="#airflow.contrib.operators.qubole_operator.QuboleOperator._get_filtered_args" title="정의 주소">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="airflow.contrib.operators.qubole_operator.QuboleOperator.execute">
+<code class="descname">execute</code><span class="sig-paren">(</span><em>self</em>, <em>context</em><span class="sig-paren">)</span><a class="reference internal" href="../../../../../_modules/airflow/contrib/operators/qubole_operator.html#QuboleOperator.execute"><span class="viewcode-link">[소스]</span></a><a class="headerlink" href="#airflow.contrib.operators.qubole_operator.QuboleOperator.execute" title="정의 주소">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="airflow.contrib.operators.qubole_operator.QuboleOperator.on_kill">
+<code class="descname">on_kill</code><span class="sig-paren">(</span><em>self</em>, <em>ti=None</em><span class="sig-paren">)</span><a class="reference internal" href="../../../../../_modules/airflow/contrib/operators/qubole_operator.html#QuboleOperator.on_kill"><span class="viewcode-link">[소스]</span></a><a class="headerlink" href="#airflow.contrib.operators.qubole_operator.QuboleOperator.on_kill" title="정의 주소">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="airflow.contrib.operators.qubole_operator.QuboleOperator.get_results">
+<code class="descname">get_results</code><span class="sig-paren">(</span><em>self</em>, <em>ti=None</em>, <em>fp=None</em>, <em>inline=True</em>, <em>delim=None</em>, <em>fetch=True</em><span class="sig-paren">)</span><a class="reference internal" href="../../../../../_modules/airflow/contrib/operators/qubole_operator.html#QuboleOperator.get_results"><span class="viewcode-link">[소스]</span></a><a class="headerlink" href="#airflow.contrib.operators.qubole_operator.QuboleOperator.get_results" title="정의 주소">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="airflow.contrib.operators.qubole_operator.QuboleOperator.get_log">
+<code class="descname">get_log</code><span class="sig-paren">(</span><em>self</em>, <em>ti</em><span class="sig-paren">)</span><a class="reference internal" href="../../../../../_modules/airflow/contrib/operators/qubole_operator.html#QuboleOperator.get_log"><span class="viewcode-link">[소스]</span></a><a class="headerlink" href="#airflow.contrib.operators.qubole_operator.QuboleOperator.get_log" title="정의 주소">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="airflow.contrib.operators.qubole_operator.QuboleOperator.get_jobs_id">
+<code class="descname">get_jobs_id</code><span class="sig-paren">(</span><em>self</em>, <em>ti</em><span class="sig-paren">)</span><a class="reference internal" href="../../../../../_modules/airflow/contrib/operators/qubole_operator.html#QuboleOperator.get_jobs_id"><span class="viewcode-link">[소스]</span></a><a class="headerlink" href="#airflow.contrib.operators.qubole_operator.QuboleOperator.get_jobs_id" title="정의 주소">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="airflow.contrib.operators.qubole_operator.QuboleOperator.get_hook">
+<code class="descname">get_hook</code><span class="sig-paren">(</span><em>self</em><span class="sig-paren">)</span><a class="reference internal" href="../../../../../_modules/airflow/contrib/operators/qubole_operator.html#QuboleOperator.get_hook"><span class="viewcode-link">[소스]</span></a><a class="headerlink" href="#airflow.contrib.operators.qubole_operator.QuboleOperator.get_hook" title="정의 주소">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="airflow.contrib.operators.qubole_operator.QuboleOperator.__getattribute__">
+<code class="descname">__getattribute__</code><span class="sig-paren">(</span><em>self</em>, <em>name</em><span class="sig-paren">)</span><a class="reference internal" href="../../../../../_modules/airflow/contrib/operators/qubole_operator.html#QuboleOperator.__getattribute__"><span class="viewcode-link">[소스]</span></a><a class="headerlink" href="#airflow.contrib.operators.qubole_operator.QuboleOperator.__getattribute__" title="정의 주소">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="airflow.contrib.operators.qubole_operator.QuboleOperator.__setattr__">
+<code class="descname">__setattr__</code><span class="sig-paren">(</span><em>self</em>, <em>name</em>, <em>value</em><span class="sig-paren">)</span><a class="reference internal" href="../../../../../_modules/airflow/contrib/operators/qubole_operator.html#QuboleOperator.__setattr__"><span class="viewcode-link">[소스]</span></a><a class="headerlink" href="#airflow.contrib.operators.qubole_operator.QuboleOperator.__setattr__" title="정의 주소">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../s3_copy_object_operator/index.html" class="btn btn-neutral float-right" title="airflow.contrib.operators.s3_copy_object_operator" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="../qubole_check_operator/index.html" class="btn btn-neutral" title="airflow.contrib.operators.qubole_check_operator" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'../../../../../',
+            VERSION:'1.10.1',
+            LANGUAGE:'ko',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
+        };
+    </script>
+      <script type="text/javascript" src="../../../../../_static/jquery.js"></script>
+      <script type="text/javascript" src="../../../../../_static/underscore.js"></script>
+      <script type="text/javascript" src="../../../../../_static/doctools.js"></script>
+      <script type="text/javascript" src="../../../../../_static/language_data.js"></script>
+      <script type="text/javascript" src="../../../../../_static/translations.js"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="../../../../../_static/js/theme.js"></script>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          
+          SphinxRtdTheme.Navigation.enableSticky();
+          
+      });
+  </script> 
+
+</body>
+</html>

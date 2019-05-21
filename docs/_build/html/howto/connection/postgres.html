@@ -1,0 +1,416 @@
+<!--
+Javascript to render AIRFLOW-XXX and PR references in text
+as HTML links.
+
+Overrides extrahead block from sphinx_rtd_theme
+https://www.sphinx-doc.org/en/master/templating.html
+-->
+
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="ko" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="ko" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>PostgresSQL 커넥션 &mdash; Airflow Documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+    <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <link rel="index" title="색인" href="../../genindex.html" />
+    <link rel="search" title="검색" href="../../search.html" />
+    <link rel="next" title="SSH Connection" href="ssh.html" />
+    <link rel="prev" title="Oracle Connection" href="oracle.html" />
+   
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      var el = document.getElementById('changelog');
+      if (el !== null ) {
+        // [AIRFLOW-...]
+        el.innerHTML = el.innerHTML.replace(
+            /\[(AIRFLOW-[\d]+)\]/g,
+            `<a href="https://issues.apache.org/jira/browse/$1">[$1]</a>`
+        );
+        // (#...)
+        el.innerHTML = el.innerHTML.replace(
+            /\(#([\d]+)\)/g,
+            `<a href="https://github.com/apache/airflow/pull/$1">(#$1)</a>`
+        );
+      };
+    })
+  </script>
+  <style>
+    .example-header {
+      position: relative;
+      background: #9AAA7A;
+      padding: 8px 16px;
+      margin-bottom: 0;
+    }
+    .example-header--with-button {
+      padding-right: 166px;
+    }
+    .example-header:after{
+      content: '';
+      display: table;
+      clear: both;
+    }
+    .example-title {
+      display:block;
+      padding: 4px;
+      margin-right: 16px;
+      color: white;
+      overflow-x: auto;
+    }
+    .example-header-button {
+      top: 8px;
+      right: 16px;
+      position: absolute;
+    }
+    .example-header + .highlight-python {
+      margin-top: 0 !important;
+    }
+    .viewcode-button {
+      display: inline-block;
+      padding: 8px 16px;
+      border: 0;
+      margin: 0;
+      outline: 0;
+      border-radius: 2px;
+      -webkit-box-shadow: 0 3px 5px 0 rgba(0,0,0,.3);
+      box-shadow: 0 3px 6px 0 rgba(0,0,0,.3);
+      color: #404040;
+      background-color: #e7e7e7;
+      cursor: pointer;
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 1;
+      text-decoration: none;
+      text-overflow: ellipsis;
+      overflow: hidden;
+      text-transform: uppercase;
+      -webkit-transition: background-color .2s;
+      transition: background-color .2s;
+      vertical-align: middle;
+      white-space: nowrap;
+    }
+    .viewcode-button:visited {
+      color: #404040;
+    }
+    .viewcode-button:hover, .viewcode-button:focus {
+      color: #404040;
+      background-color: #d6d6d6;
+    }
+  </style>
+
+
+  
+  <script src="../../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../../index.html" class="icon icon-home"> Airflow
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                1.10.1
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../project.html">프로젝트(Project)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../license.html">라이센스(License)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../start.html">빠른 시작(Quick Start)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../installation.html">설치</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../tutorial.html">튜토리얼(Tutorial)</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../index.html">사용 가이드</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../add-new-role.html">RBAC UI에서 새로운 역할 추가</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../set-config.html">Configuration 옵션 설정</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../initialize-database.html">데이터베이스 백엔드 초기화</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../operator/index.html">오퍼레이터 사용</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="index.html">커넥션(Connection) 관리</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="index.html#creating-a-connection-with-the-ui">UI를 이용한 커넥션 생성</a></li>
+<li class="toctree-l3"><a class="reference internal" href="index.html#editing-a-connection-with-the-ui">UI를 이용한 커넥션 편집</a></li>
+<li class="toctree-l3"><a class="reference internal" href="index.html#creating-a-connection-with-environment-variables">환경 변수를 이용한 커넥션 생성</a></li>
+<li class="toctree-l3 current"><a class="reference internal" href="index.html#connection-types">커넥션 타입</a><ul class="current">
+<li class="toctree-l4"><a class="reference internal" href="aws.html">Amazon Web Services 연결</a></li>
+<li class="toctree-l4"><a class="reference internal" href="gcp.html">Google Cloud Platform Connection</a></li>
+<li class="toctree-l4"><a class="reference internal" href="gcp_sql.html">Google Cloud SQL Connection</a></li>
+<li class="toctree-l4"><a class="reference internal" href="grpc.html">gRPC</a></li>
+<li class="toctree-l4"><a class="reference internal" href="mysql.html">MySQL Connection</a></li>
+<li class="toctree-l4"><a class="reference internal" href="oracle.html">Oracle Connection</a></li>
+<li class="toctree-l4 current"><a class="current reference internal" href="#">PostgresSQL 커넥션</a></li>
+<li class="toctree-l4"><a class="reference internal" href="ssh.html">SSH Connection</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../secure-connections.html">커넥션 보안</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../secure-connections.html#rotating-encryption-keys">암호화 키 회전(rotating)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../write-logs.html">로그 쓰기(Writing Logs)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../executor/use-celery.html">Scaling Out with Celery</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../executor/use-dask.html">Scaling Out with Dask</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../executor/use-mesos.html">Scaling Out with Mesos (community contributed)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../run-behind-proxy.html">Running Airflow behind a reverse proxy</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../run-with-systemd.html">에어플로우 systemd로 실행</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../run-with-upstart.html">Running Airflow with upstart</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../use-test-config.html">Using the Test Mode Configuration</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../check-health.html">에어플로우 Health 상태 체크하기</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../ui.html">UI / 스크린샷(Screenshots)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../concepts.html">개념</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../cli.html">Command Line Interface</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../scheduler.html">스케쥴링(Scheduling)&amp; 트리거(Triggers)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../plugins.html">Plugins</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../security.html">보안</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../timezone.html">타임 존(Time zones)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../api.html">Experimental Rest API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../integration.html">Integration</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../metrics.html">Metrics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../kubernetes.html">Kubernetes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../lineage.html">Lineage</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../changelog.html">Changelog</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../faq.html">FAQ</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../macros.html">Macros reference</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../_api/index.html">API Reference</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">Airflow</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="../index.html">사용 가이드</a> &raquo;</li>
+        
+          <li><a href="index.html">커넥션(Connection) 관리</a> &raquo;</li>
+        
+      <li>PostgresSQL 커넥션</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../../_sources/howto/connection/postgres.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="postgressql-connection">
+<h1>PostgresSQL 커넥션<a class="headerlink" href="#postgressql-connection" title="제목 주소">¶</a></h1>
+<p>Postgres 커넥션 타입은 Postgres 데이터베이스 커넥션을 제공한다.</p>
+<div class="section" id="configuring-the-connection">
+<h2>커넥션 구성 설정<a class="headerlink" href="#configuring-the-connection" title="제목 주소">¶</a></h2>
+<dl class="docutils">
+<dt>Host(필수)</dt>
+<dd>연결할 호스트이다.</dd>
+<dt>Schema (선택)</dt>
+<dd>데이버테이스에서 사용할 스키마 이름을 명시한다.</dd>
+<dt>Login (필수)</dt>
+<dd>연결할 유저 이름을 명시한다.</dd>
+<dt>Password (필수)</dt>
+<dd>연결을 위한 비밀번호 명시한다.</dd>
+<dt>Extra (선택)</dt>
+<dd><p class="first">Postgres 커넥션에서 사용할 수 있는 추가 파라미터(json dictionary 형태) 명시한다. 표준 파이썬 파라미터 중 다음과 같은 파라미터가 지원된다:</p>
+<ul class="simple">
+<li><strong>sslmode</strong> - 이 옵션은 서버에 대한 보안 SSL TCP/IP의 연결 여부와 우선순위를 결정한다. 여기에는 6개의 모드가 있다: <cite>disable</cite>, <cite>allow</cite>, <cite>prefer</cite>, <cite>require</cite>, <cite>verify-ca</cite>, <cite>verify-full</cite>.</li>
+<li><strong>sslcert</strong> - 이 파라미터는 기본값을 대체하여 클라이언트 SSL 인증서의 파일 이름을 명시한다.</li>
+<li><strong>sslkey</strong> - 이 파라미터는 기본값을 대체하여 클라이언트 SSL key 파일 이름을 명시한다.</li>
+<li><strong>sslrootcert</strong> - 이 파라미터는 SSL 인증 권한(CA: certificate authority) 인증서 파일 이름을 명시한다.</li>
+<li><strong>sslcrl</strong> - 이 파라미터는 SSL 인증 철회 목록 (CRL: certificate revocation list) 파일 이름을 명시한다.</li>
+<li><strong>application_name</strong> - application_name 구성 설정 파라미터 값을 명시한다.</li>
+<li><strong>keepalives_idle</strong> - TCP가 서버로 keepalive 메세지를 전송하기까지 몇 초 동안 정지 상태로 있을지를 제어한다.</li>
+</ul>
+<p>Postgres 파라미터 전체에 대한 보다 자세한 정보는 <a class="reference external" href="https://www.postgresql.org/docs/current/static/libpq-connect.html#LIBPQ-CONNSTRING">Postgres documentation</a>에서 찾아 볼 수 있다.</p>
+<p>“extras” 필드 예시:</p>
+<div class="highlight-json notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
+   <span class="nt">&quot;sslmode&quot;</span><span class="p">:</span> <span class="s2">&quot;verify-ca&quot;</span><span class="p">,</span>
+   <span class="nt">&quot;sslcert&quot;</span><span class="p">:</span> <span class="s2">&quot;/tmp/client-cert.pem&quot;</span><span class="p">,</span>
+   <span class="nt">&quot;sslca&quot;</span><span class="p">:</span> <span class="s2">&quot;/tmp/server-ca.pem&quot;</span><span class="p">,</span>
+   <span class="nt">&quot;sslkey&quot;</span><span class="p">:</span> <span class="s2">&quot;/tmp/client-key.pem&quot;</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<p>(AIRFLOW_CONN_* 변수로) URI 형태로 커넥션을 명시할 때 extras가 URI의 파라미터로 전달되는 DB 커넥션의 표준 문법(syntax)를 따라서 명시하여야 한다(URI의 모든 컴포넌트는 URL 인코딩되어야 함을 유의하라).</p>
+<p>예를 들어:</p>
+<div class="last highlight-bash notranslate"><div class="highlight"><pre><span></span>postgresql://postgres_user:XXXXXXXXXXXX@1.1.1.1:5432/postgresdb?sslmode<span class="o">=</span>verify-ca<span class="p">&amp;</span><span class="nv">sslcert</span><span class="o">=</span>%2Ftmp%2Fclient-cert.pem<span class="p">&amp;</span><span class="nv">sslkey</span><span class="o">=</span>%2Ftmp%2Fclient-key.pem<span class="p">&amp;</span><span class="nv">sslrootcert</span><span class="o">=</span>%2Ftmp%2Fserver-ca.pem
+</pre></div>
+</div>
+</dd>
+</dl>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="ssh.html" class="btn btn-neutral float-right" title="SSH Connection" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="oracle.html" class="btn btn-neutral" title="Oracle Connection" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'../../',
+            VERSION:'1.10.1',
+            LANGUAGE:'ko',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
+        };
+    </script>
+      <script type="text/javascript" src="../../_static/jquery.js"></script>
+      <script type="text/javascript" src="../../_static/underscore.js"></script>
+      <script type="text/javascript" src="../../_static/doctools.js"></script>
+      <script type="text/javascript" src="../../_static/language_data.js"></script>
+      <script type="text/javascript" src="../../_static/translations.js"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          
+          SphinxRtdTheme.Navigation.enableSticky();
+          
+      });
+  </script> 
+
+</body>
+</html>

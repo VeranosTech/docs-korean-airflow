@@ -1,0 +1,464 @@
+<!--
+Javascript to render AIRFLOW-XXX and PR references in text
+as HTML links.
+
+Overrides extrahead block from sphinx_rtd_theme
+https://www.sphinx-doc.org/en/master/templating.html
+-->
+
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="ko" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="ko" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>airflow.models.xcom &mdash; Airflow Documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+    <link rel="stylesheet" href="../../../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../../../_static/pygments.css" type="text/css" />
+    <link rel="index" title="색인" href="../../../../genindex.html" />
+    <link rel="search" title="검색" href="../../../../search.html" />
+    <link rel="prev" title="airflow.models.taskreschedule" href="../taskreschedule/index.html" />
+   
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      var el = document.getElementById('changelog');
+      if (el !== null ) {
+        // [AIRFLOW-...]
+        el.innerHTML = el.innerHTML.replace(
+            /\[(AIRFLOW-[\d]+)\]/g,
+            `<a href="https://issues.apache.org/jira/browse/$1">[$1]</a>`
+        );
+        // (#...)
+        el.innerHTML = el.innerHTML.replace(
+            /\(#([\d]+)\)/g,
+            `<a href="https://github.com/apache/airflow/pull/$1">(#$1)</a>`
+        );
+      };
+    })
+  </script>
+  <style>
+    .example-header {
+      position: relative;
+      background: #9AAA7A;
+      padding: 8px 16px;
+      margin-bottom: 0;
+    }
+    .example-header--with-button {
+      padding-right: 166px;
+    }
+    .example-header:after{
+      content: '';
+      display: table;
+      clear: both;
+    }
+    .example-title {
+      display:block;
+      padding: 4px;
+      margin-right: 16px;
+      color: white;
+      overflow-x: auto;
+    }
+    .example-header-button {
+      top: 8px;
+      right: 16px;
+      position: absolute;
+    }
+    .example-header + .highlight-python {
+      margin-top: 0 !important;
+    }
+    .viewcode-button {
+      display: inline-block;
+      padding: 8px 16px;
+      border: 0;
+      margin: 0;
+      outline: 0;
+      border-radius: 2px;
+      -webkit-box-shadow: 0 3px 5px 0 rgba(0,0,0,.3);
+      box-shadow: 0 3px 6px 0 rgba(0,0,0,.3);
+      color: #404040;
+      background-color: #e7e7e7;
+      cursor: pointer;
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 1;
+      text-decoration: none;
+      text-overflow: ellipsis;
+      overflow: hidden;
+      text-transform: uppercase;
+      -webkit-transition: background-color .2s;
+      transition: background-color .2s;
+      vertical-align: middle;
+      white-space: nowrap;
+    }
+    .viewcode-button:visited {
+      color: #404040;
+    }
+    .viewcode-button:hover, .viewcode-button:focus {
+      color: #404040;
+      background-color: #d6d6d6;
+    }
+  </style>
+
+
+  
+  <script src="../../../../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../../../../index.html" class="icon icon-home"> Airflow
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                1.10.1
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../../../project.html">프로젝트(Project)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../license.html">라이센스(License)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../start.html">빠른 시작(Quick Start)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../installation.html">설치</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../tutorial.html">튜토리얼(Tutorial)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../howto/index.html">사용 가이드</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../ui.html">UI / 스크린샷(Screenshots)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../concepts.html">개념</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../cli.html">Command Line Interface</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../scheduler.html">스케쥴링(Scheduling)&amp; 트리거(Triggers)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../plugins.html">Plugins</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../security.html">보안</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../timezone.html">타임 존(Time zones)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../api.html">Experimental Rest API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../integration.html">Integration</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../metrics.html">Metrics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../kubernetes.html">Kubernetes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../lineage.html">Lineage</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../changelog.html">Changelog</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../faq.html">FAQ</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../macros.html">Macros reference</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../../../index.html">API Reference</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../../../index.html#operators">Operators</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../index.html#hooks">Hooks</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../index.html#executors">Executors</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="../../../index.html#models">Models</a><ul class="current">
+<li class="toctree-l3 current"><a class="reference internal" href="../index.html"><code class="docutils literal notranslate"><span class="pre">airflow.models</span></code></a><ul class="current">
+<li class="toctree-l4 current"><a class="reference internal" href="../index.html#submodules">Submodules</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../index.html#package-contents">Package Contents</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../../index.html#core-and-community-package">Core and community package</a></li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../../index.html">Airflow</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../../../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="../../../index.html">API Reference</a> &raquo;</li>
+        
+          <li><a href="../index.html"><code class="docutils literal notranslate"><span class="pre">airflow.models</span></code></a> &raquo;</li>
+        
+      <li><code class="docutils literal notranslate"><span class="pre">airflow.models.xcom</span></code></li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../../../../_sources/_api/airflow/models/xcom/index.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="module-airflow.models.xcom">
+<span id="airflow-models-xcom"></span><h1><a class="reference internal" href="#module-airflow.models.xcom" title="airflow.models.xcom"><code class="xref py py-mod docutils literal notranslate"><span class="pre">airflow.models.xcom</span></code></a><a class="headerlink" href="#module-airflow.models.xcom" title="제목 주소">¶</a></h1>
+<div class="section" id="module-contents">
+<h2>Module Contents<a class="headerlink" href="#module-contents" title="제목 주소">¶</a></h2>
+<dl class="class">
+<dt id="airflow.models.xcom.XCom">
+<em class="property">class </em><code class="descclassname">airflow.models.xcom.</code><code class="descname">XCom</code><a class="reference internal" href="../../../../_modules/airflow/models/xcom.html#XCom"><span class="viewcode-link">[소스]</span></a><a class="headerlink" href="#airflow.models.xcom.XCom" title="정의 주소">¶</a></dt>
+<dd><p>Bases:<a class="reference internal" href="../base/index.html#airflow.models.base.Base" title="airflow.models.base.Base"><code class="xref py py-class docutils literal notranslate"><span class="pre">airflow.models.base.Base</span></code></a>, <code class="xref py py-class docutils literal notranslate"><span class="pre">airflow.utils.log.logging_mixin.LoggingMixin</span></code></p>
+<p>Base class for XCom objects.</p>
+<dl class="attribute">
+<dt id="airflow.models.xcom.XCom.__tablename__">
+<code class="descname">__tablename__</code><em class="property"> = xcom</em><a class="reference internal" href="../../../../_modules/airflow/models/xcom.html#XCom.__tablename__"><span class="viewcode-link">[소스]</span></a><a class="headerlink" href="#airflow.models.xcom.XCom.__tablename__" title="정의 주소">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="airflow.models.xcom.XCom.id">
+<code class="descname">id</code><a class="reference internal" href="../../../../_modules/airflow/models/xcom.html#XCom.id"><span class="viewcode-link">[소스]</span></a><a class="headerlink" href="#airflow.models.xcom.XCom.id" title="정의 주소">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="airflow.models.xcom.XCom.key">
+<code class="descname">key</code><a class="reference internal" href="../../../../_modules/airflow/models/xcom.html#XCom.key"><span class="viewcode-link">[소스]</span></a><a class="headerlink" href="#airflow.models.xcom.XCom.key" title="정의 주소">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="airflow.models.xcom.XCom.value">
+<code class="descname">value</code><a class="reference internal" href="../../../../_modules/airflow/models/xcom.html#XCom.value"><span class="viewcode-link">[소스]</span></a><a class="headerlink" href="#airflow.models.xcom.XCom.value" title="정의 주소">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="airflow.models.xcom.XCom.timestamp">
+<code class="descname">timestamp</code><a class="reference internal" href="../../../../_modules/airflow/models/xcom.html#XCom.timestamp"><span class="viewcode-link">[소스]</span></a><a class="headerlink" href="#airflow.models.xcom.XCom.timestamp" title="정의 주소">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="airflow.models.xcom.XCom.execution_date">
+<code class="descname">execution_date</code><a class="reference internal" href="../../../../_modules/airflow/models/xcom.html#XCom.execution_date"><span class="viewcode-link">[소스]</span></a><a class="headerlink" href="#airflow.models.xcom.XCom.execution_date" title="정의 주소">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="airflow.models.xcom.XCom.task_id">
+<code class="descname">task_id</code><a class="reference internal" href="../../../../_modules/airflow/models/xcom.html#XCom.task_id"><span class="viewcode-link">[소스]</span></a><a class="headerlink" href="#airflow.models.xcom.XCom.task_id" title="정의 주소">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="airflow.models.xcom.XCom.dag_id">
+<code class="descname">dag_id</code><a class="reference internal" href="../../../../_modules/airflow/models/xcom.html#XCom.dag_id"><span class="viewcode-link">[소스]</span></a><a class="headerlink" href="#airflow.models.xcom.XCom.dag_id" title="정의 주소">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="airflow.models.xcom.XCom.__table_args__">
+<code class="descname">__table_args__</code><a class="reference internal" href="../../../../_modules/airflow/models/xcom.html#XCom.__table_args__"><span class="viewcode-link">[소스]</span></a><a class="headerlink" href="#airflow.models.xcom.XCom.__table_args__" title="정의 주소">¶</a></dt>
+<dd><p>TODO: &quot;pickling&quot; has been deprecated and JSON is preferred.
+&quot;pickling&quot; will be removed in Airflow 2.0.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="airflow.models.xcom.XCom.init_on_load">
+<code class="descname">init_on_load</code><span class="sig-paren">(</span><em>self</em><span class="sig-paren">)</span><a class="reference internal" href="../../../../_modules/airflow/models/xcom.html#XCom.init_on_load"><span class="viewcode-link">[소스]</span></a><a class="headerlink" href="#airflow.models.xcom.XCom.init_on_load" title="정의 주소">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="airflow.models.xcom.XCom.__repr__">
+<code class="descname">__repr__</code><span class="sig-paren">(</span><em>self</em><span class="sig-paren">)</span><a class="reference internal" href="../../../../_modules/airflow/models/xcom.html#XCom.__repr__"><span class="viewcode-link">[소스]</span></a><a class="headerlink" href="#airflow.models.xcom.XCom.__repr__" title="정의 주소">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="classmethod">
+<dt id="airflow.models.xcom.XCom.set">
+<em class="property">classmethod </em><code class="descname">set</code><span class="sig-paren">(</span><em>cls</em>, <em>key</em>, <em>value</em>, <em>execution_date</em>, <em>task_id</em>, <em>dag_id</em>, <em>session=None</em><span class="sig-paren">)</span><a class="reference internal" href="../../../../_modules/airflow/models/xcom.html#XCom.set"><span class="viewcode-link">[소스]</span></a><a class="headerlink" href="#airflow.models.xcom.XCom.set" title="정의 주소">¶</a></dt>
+<dd><p>Store an XCom value.
+TODO: &quot;pickling&quot; has been deprecated and JSON is preferred.
+&quot;pickling&quot; will be removed in Airflow 2.0.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">반환:</th><td class="field-body">None</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="classmethod">
+<dt id="airflow.models.xcom.XCom.get_one">
+<em class="property">classmethod </em><code class="descname">get_one</code><span class="sig-paren">(</span><em>cls</em>, <em>execution_date</em>, <em>key=None</em>, <em>task_id=None</em>, <em>dag_id=None</em>, <em>include_prior_dates=False</em>, <em>session=None</em><span class="sig-paren">)</span><a class="reference internal" href="../../../../_modules/airflow/models/xcom.html#XCom.get_one"><span class="viewcode-link">[소스]</span></a><a class="headerlink" href="#airflow.models.xcom.XCom.get_one" title="정의 주소">¶</a></dt>
+<dd><p>Retrieve an XCom value, optionally meeting certain criteria.
+TODO: &quot;pickling&quot; has been deprecated and JSON is preferred.
+&quot;pickling&quot; will be removed in Airflow 2.0.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">반환:</th><td class="field-body">XCom value</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="classmethod">
+<dt id="airflow.models.xcom.XCom.get_many">
+<em class="property">classmethod </em><code class="descname">get_many</code><span class="sig-paren">(</span><em>cls</em>, <em>execution_date</em>, <em>key=None</em>, <em>task_ids=None</em>, <em>dag_ids=None</em>, <em>include_prior_dates=False</em>, <em>limit=100</em>, <em>session=None</em><span class="sig-paren">)</span><a class="reference internal" href="../../../../_modules/airflow/models/xcom.html#XCom.get_many"><span class="viewcode-link">[소스]</span></a><a class="headerlink" href="#airflow.models.xcom.XCom.get_many" title="정의 주소">¶</a></dt>
+<dd><p>Retrieve an XCom value, optionally meeting certain criteria
+TODO: &quot;pickling&quot; has been deprecated and JSON is preferred.
+&quot;pickling&quot; will be removed in Airflow 2.0.</p>
+</dd></dl>
+
+<dl class="classmethod">
+<dt id="airflow.models.xcom.XCom.delete">
+<em class="property">classmethod </em><code class="descname">delete</code><span class="sig-paren">(</span><em>cls</em>, <em>xcoms</em>, <em>session=None</em><span class="sig-paren">)</span><a class="reference internal" href="../../../../_modules/airflow/models/xcom.html#XCom.delete"><span class="viewcode-link">[소스]</span></a><a class="headerlink" href="#airflow.models.xcom.XCom.delete" title="정의 주소">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+      
+        <a href="../taskreschedule/index.html" class="btn btn-neutral" title="airflow.models.taskreschedule" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'../../../../',
+            VERSION:'1.10.1',
+            LANGUAGE:'ko',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
+        };
+    </script>
+      <script type="text/javascript" src="../../../../_static/jquery.js"></script>
+      <script type="text/javascript" src="../../../../_static/underscore.js"></script>
+      <script type="text/javascript" src="../../../../_static/doctools.js"></script>
+      <script type="text/javascript" src="../../../../_static/language_data.js"></script>
+      <script type="text/javascript" src="../../../../_static/translations.js"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="../../../../_static/js/theme.js"></script>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          
+          SphinxRtdTheme.Navigation.enableSticky();
+          
+      });
+  </script> 
+
+</body>
+</html>

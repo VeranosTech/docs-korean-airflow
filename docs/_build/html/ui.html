@@ -1,0 +1,403 @@
+<!--
+Javascript to render AIRFLOW-XXX and PR references in text
+as HTML links.
+
+Overrides extrahead block from sphinx_rtd_theme
+https://www.sphinx-doc.org/en/master/templating.html
+-->
+
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="ko" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="ko" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>UI / 스크린샷(Screenshots) &mdash; Airflow Documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+    <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="index" title="색인" href="genindex.html" />
+    <link rel="search" title="검색" href="search.html" />
+    <link rel="next" title="개념" href="concepts.html" />
+    <link rel="prev" title="에어플로우 Health 상태 체크하기" href="howto/check-health.html" />
+   
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      var el = document.getElementById('changelog');
+      if (el !== null ) {
+        // [AIRFLOW-...]
+        el.innerHTML = el.innerHTML.replace(
+            /\[(AIRFLOW-[\d]+)\]/g,
+            `<a href="https://issues.apache.org/jira/browse/$1">[$1]</a>`
+        );
+        // (#...)
+        el.innerHTML = el.innerHTML.replace(
+            /\(#([\d]+)\)/g,
+            `<a href="https://github.com/apache/airflow/pull/$1">(#$1)</a>`
+        );
+      };
+    })
+  </script>
+  <style>
+    .example-header {
+      position: relative;
+      background: #9AAA7A;
+      padding: 8px 16px;
+      margin-bottom: 0;
+    }
+    .example-header--with-button {
+      padding-right: 166px;
+    }
+    .example-header:after{
+      content: '';
+      display: table;
+      clear: both;
+    }
+    .example-title {
+      display:block;
+      padding: 4px;
+      margin-right: 16px;
+      color: white;
+      overflow-x: auto;
+    }
+    .example-header-button {
+      top: 8px;
+      right: 16px;
+      position: absolute;
+    }
+    .example-header + .highlight-python {
+      margin-top: 0 !important;
+    }
+    .viewcode-button {
+      display: inline-block;
+      padding: 8px 16px;
+      border: 0;
+      margin: 0;
+      outline: 0;
+      border-radius: 2px;
+      -webkit-box-shadow: 0 3px 5px 0 rgba(0,0,0,.3);
+      box-shadow: 0 3px 6px 0 rgba(0,0,0,.3);
+      color: #404040;
+      background-color: #e7e7e7;
+      cursor: pointer;
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 1;
+      text-decoration: none;
+      text-overflow: ellipsis;
+      overflow: hidden;
+      text-transform: uppercase;
+      -webkit-transition: background-color .2s;
+      transition: background-color .2s;
+      vertical-align: middle;
+      white-space: nowrap;
+    }
+    .viewcode-button:visited {
+      color: #404040;
+    }
+    .viewcode-button:hover, .viewcode-button:focus {
+      color: #404040;
+      background-color: #d6d6d6;
+    }
+  </style>
+
+
+  
+  <script src="_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="index.html" class="icon icon-home"> Airflow
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                1.10.1
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="project.html">프로젝트(Project)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="license.html">라이센스(License)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="start.html">빠른 시작(Quick Start)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="installation.html">설치</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tutorial.html">튜토리얼(Tutorial)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="howto/index.html">사용 가이드</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">UI / 스크린샷(Screenshots)</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#dags-view">DAGs 보기</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#tree-view">트리(Tree) 보기</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#graph-view">그래프 보기</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#variable-view">변수(Variable) 보기</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#gantt-chart">간트 차트(Gantt Chart)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#task-duration">태스크 작업 기간</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#code-view">코드(Code) 보기</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#task-instance-context-menu">태스크 인스턴스 컨텍스트 메뉴</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="concepts.html">개념</a></li>
+<li class="toctree-l1"><a class="reference internal" href="cli.html">Command Line Interface</a></li>
+<li class="toctree-l1"><a class="reference internal" href="scheduler.html">스케쥴링(Scheduling)&amp; 트리거(Triggers)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="plugins.html">Plugins</a></li>
+<li class="toctree-l1"><a class="reference internal" href="security.html">보안</a></li>
+<li class="toctree-l1"><a class="reference internal" href="timezone.html">타임 존(Time zones)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="api.html">Experimental Rest API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="integration.html">Integration</a></li>
+<li class="toctree-l1"><a class="reference internal" href="metrics.html">Metrics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="kubernetes.html">Kubernetes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="lineage.html">Lineage</a></li>
+<li class="toctree-l1"><a class="reference internal" href="changelog.html">Changelog</a></li>
+<li class="toctree-l1"><a class="reference internal" href="faq.html">FAQ</a></li>
+<li class="toctree-l1"><a class="reference internal" href="macros.html">Macros reference</a></li>
+<li class="toctree-l1"><a class="reference internal" href="_api/index.html">API Reference</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Airflow</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+      <li>UI / 스크린샷(Screenshots)</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/ui.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="ui-screenshots">
+<h1>UI / 스크린샷(Screenshots)<a class="headerlink" href="#ui-screenshots" title="제목 주소">¶</a></h1>
+<p>에어플로우 UI는 데이터 파이프라인을 모니터하고 수정(troubleshooting)하기 쉽게 만든다. 다음은 에어플로우 UI에서 볼 수 있는 몇 가지 기능과 시각화에 대한 간략한 개요이다.</p>
+<div class="section" id="dags-view">
+<h2>DAGs 보기<a class="headerlink" href="#dags-view" title="제목 주소">¶</a></h2>
+<p>사용자 환경에서 DAG 목록 및 유용한 페이지로의 바로 가기(shortcuts) 세트이다. 한 눈에 얼마나 많은 태스크가 성공했고, 실패했는지, 또는 실행중인지 알 수 있다.</p>
+<hr class="docutils" />
+<img alt="_images/dags.png" src="_images/dags.png" />
+</div>
+<hr class="docutils" />
+<div class="section" id="tree-view">
+<h2>트리(Tree) 보기<a class="headerlink" href="#tree-view" title="제목 주소">¶</a></h2>
+<p>시간 전체에 걸쳐 있는 DAG의 트리 표시. 파이프라인이 늦으면, 어떤 스텝에서 다른지와 막혀있는 것이 뭔지 빠르게 찾아볼 수 있다.</p>
+<hr class="docutils" />
+<img alt="_images/tree.png" src="_images/tree.png" />
+</div>
+<hr class="docutils" />
+<div class="section" id="graph-view">
+<h2>그래프 보기<a class="headerlink" href="#graph-view" title="제목 주소">¶</a></h2>
+<p>그래프 뷰는 아마도 가장 종합적인 것이다. DAG의 종속성과 특정 실행에 대한 현재 상태를 시각화한다.</p>
+<hr class="docutils" />
+<img alt="_images/graph.png" src="_images/graph.png" />
+</div>
+<hr class="docutils" />
+<div class="section" id="variable-view">
+<h2>변수(Variable) 보기<a class="headerlink" href="#variable-view" title="제목 주소">¶</a></h2>
+<p>변수 뷰는 작업 중에 사용되는 키-값의 쌍의 변수를 목록화하고, 생성, 편집, 삭제할 수 있게 한다. 기본적으로 변수의 키에 (‘password’, ‘secret’, ‘passwd’, ‘authorization’, ‘api_key’, ‘apikey’, ‘access_token’) 단어가 포함되어 있으면 변수 값이 숨겨지지만, clear-text로 표시되도록 설정할 수 있다.</p>
+<hr class="docutils" />
+<img alt="_images/variable_hidden.png" src="_images/variable_hidden.png" />
+</div>
+<hr class="docutils" />
+<div class="section" id="gantt-chart">
+<h2>간트 차트(Gantt Chart)<a class="headerlink" href="#gantt-chart" title="제목 주소">¶</a></h2>
+<p>간트 차트는 태스크가 걸리는 시간과 겹침(overlap) 상태를 분석할 수 있게 한다. 병목이 어디서 발생하는지와 특정 DAG run에 소요되는 대부분의 시간을 빠르게 파악할 수 있다.</p>
+<hr class="docutils" />
+<img alt="_images/gantt.png" src="_images/gantt.png" />
+</div>
+<hr class="docutils" />
+<div class="section" id="task-duration">
+<h2>태스크 작업 기간<a class="headerlink" href="#task-duration" title="제목 주소">¶</a></h2>
+<p>지난 N번 동안의 서로 다른 태스크들의 작업 시간. 이 뷰를 통해 아웃라이어(outliers)를 찾고 여러 실행 동안 DAG에서 시간이 소요되는지 빠르게 파악할 수 있다.</p>
+<hr class="docutils" />
+<img alt="_images/duration.png" src="_images/duration.png" />
+</div>
+<hr class="docutils" />
+<div class="section" id="code-view">
+<h2>코드(Code) 보기<a class="headerlink" href="#code-view" title="제목 주소">¶</a></h2>
+<p>투명성이 전부이다. 파이프라인의 코드가 소스코드를 제어하는 동안에, DAG를 생성하는 코드를 빠르게 볼 수 있는 방법이며, 더 많은 컨텐스트를 제공한다.</p>
+<hr class="docutils" />
+<img alt="_images/code.png" src="_images/code.png" />
+</div>
+<hr class="docutils" />
+<div class="section" id="task-instance-context-menu">
+<h2>태스크 인스턴스 컨텍스트 메뉴<a class="headerlink" href="#task-instance-context-menu" title="제목 주소">¶</a></h2>
+<p>위에서 보여준 페이지(트리 뷰, 그래프 뷰, 간트, …)에서 태스크 인스턴스를 클릭하고, 보다 자세한 메타데이터를 제공하는 리치 컨텍스트 메뉴(rich context menu)로 이동하여 몇 가지 작업을 수행할 수 있다.</p>
+<hr class="docutils" />
+<img alt="_images/context.png" src="_images/context.png" />
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="concepts.html" class="btn btn-neutral float-right" title="개념" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="howto/check-health.html" class="btn btn-neutral" title="에어플로우 Health 상태 체크하기" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'./',
+            VERSION:'1.10.1',
+            LANGUAGE:'ko',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
+        };
+    </script>
+      <script type="text/javascript" src="_static/jquery.js"></script>
+      <script type="text/javascript" src="_static/underscore.js"></script>
+      <script type="text/javascript" src="_static/doctools.js"></script>
+      <script type="text/javascript" src="_static/language_data.js"></script>
+      <script type="text/javascript" src="_static/translations.js"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          
+          SphinxRtdTheme.Navigation.enableSticky();
+          
+      });
+  </script> 
+
+</body>
+</html>
